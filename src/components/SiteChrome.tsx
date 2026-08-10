@@ -37,14 +37,13 @@ export function LanguageSwitcher() {
     </div>
   );
 }
-
 export function SiteHeader() {
   const { t } = useI18n();
   return (
     <header className="site-header">
       <nav className="site-nav">
         <Link to="/" className="logo">
-          Grad Navigat
+          Grad Navigator
           <span className="logo-o">
             <CompassMark />
           </span>
@@ -52,10 +51,10 @@ export function SiteHeader() {
         </Link>
         <div className="navlinks">
           <Link to="/" hash="understand">
-            {t("nav.understand")}
+            Understand
           </Link>
-          <Link to="/educational-resources">{t("nav.loans101")}</Link>
-          <Link to="/apply">{t("nav.apply")}</Link>
+          <Link to="/educational-resources">Learn</Link>
+          <Link to="/apply">Apply</Link>
         </div>
         <div className="nav-right">
           <LanguageSwitcher />
