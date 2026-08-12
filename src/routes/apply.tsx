@@ -35,32 +35,38 @@ function ApplyPage() {
       <SiteHeader />
 
       <main className="wrap apply-page">
-        <div className="apply-gradbridge">
-          <div className="gb-logo">
-            <img
-              src={gradbridgeLogo}
-              alt="GradBridge"
-              loading="eager"
-            />
-          </div>
-          <h1>
-            {t("apply.headline")}
+        <div className="apply-hero">
+          <div className="eyebrow">{t("apply.eyebrow")}</div>
+          <h1>{t("apply.pageTitle")}</h1>
+          <p className="apply-subtext">{t("apply.pageSubtitle")}</p>
+        </div>
+
+        <div className="apply-card-list">
+          <div className="apply-gradbridge">
+            <div className="gb-logo">
+              <img
+                src={gradbridgeLogo}
+                alt="GradBridge"
+                loading="eager"
+              />
+            </div>
+            <h2>{t("apply.headline")}</h2>
             <img
               className="gb-script"
               src={brighterFutures}
               alt={t("apply.headline.alt")}
               loading="eager"
             />
-          </h1>
-          <p>{t("apply.body")}</p>
-          <a
-            className="gb-cta"
-            href="https://www.campusdoor.com/gradbridge/qualify.aspx"
-            target="_blank"
-            rel="noopener"
-          >
-            {t("apply.cta")}
-          </a>
+            <p>{t("apply.body")}</p>
+            <a
+              className="gb-cta"
+              href="https://www.campusdoor.com/gradbridge/qualify.aspx"
+              target="_blank"
+              rel="noopener"
+            >
+              {t("apply.cta")}
+            </a>
+          </div>
         </div>
       </main>
 

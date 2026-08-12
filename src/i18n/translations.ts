@@ -1,6 +1,9 @@
 export const en = {
   /* ---------- header / footer ---------- */
-  "nav.understand": "Understand",
+  "nav.understand": "Understand Loans",
+  "nav.pay": "Pay for School",
+  "nav.approved": "Get Approved",
+  "nav.manage": "Manage Loans",
   "nav.loans101": "Educational Resources",
   "nav.apply": "Need a second chance? Try GradBridge!",
   "nav.cta": "Chart your path",
@@ -11,7 +14,7 @@ export const en = {
     "An independent guide to graduate borrowing, built for the post–Grad PLUS landscape. Reviewed for accuracy, updated as the rules change.",
   "footer.learn": "Learn",
   "er.eyebrow": "Learn",
-  "er.h1": "Educational Resources",
+  "er.h1": "The Navigation hub",
   "er.sub":
     "Two ways in, depending on how you like to learn — pick whichever fits how you're feeling today.",
   "er.card1.sub": "Presented by Experian",
@@ -67,7 +70,6 @@ export const en = {
   "contact.sent.body": "Thanks for reaching out — we'll reply to the email you gave us.",
   "contact.privacy": "We only use your email to reply to this message.",
 
-
   /* ---------- homepage hero ---------- */
   "home.eyebrow": "Grad PLUS ended July 1, 2026",
   "home.h1.line1": "Federal grad loans just got smaller.",
@@ -76,7 +78,7 @@ export const en = {
   "home.h1.line2b": " what to do next.",
   "home.sub":
     "A plain-language guide to the new borrowing caps, the grandfather rules, and how to fill the gap — built by people who read the fine print so you don't have to.",
-  "home.cta.rate": "Find your rate ↓",
+  "home.cta.rate": "Chart your path ↓",
   "home.cta.loans101": "Educational Resources",
 
   /* ---------- assessment form ---------- */
@@ -132,7 +134,7 @@ export const en = {
     "Thanks for sharing where you stand. Explore our educational resources to see what your answers mean for your borrowing options.",
 
   /* ---------- understand station ---------- */
-  "station.understand": "Understand",
+  "station.understand": "Understand ",
   "understand.h2": "Understand the Long-Term Value of Your Degree",
   "understand.desc":
     "Education is an investment. These research-backed statistics show how earning a degree can impact lifetime income.",
@@ -175,6 +177,9 @@ export const en = {
   "error.sub.post": ".",
 
   /* ---------- apply page ---------- */
+  "apply.eyebrow": "Apply",
+  "apply.pageTitle": "Browse Lenders",
+  "apply.pageSubtitle": "More lenders coming soon...",
   "apply.body":
     "We bridge the gap when traditional lenders have denied your student loan, providing the financial support you need to continue your education and build a brighter future.",
   "apply.cta": "Apply Now",
@@ -277,7 +282,10 @@ export const en = {
 export type TranslationKey = keyof typeof en;
 
 export const es: Partial<Record<TranslationKey, string>> = {
-  "nav.understand": "Entender",
+  "nav.understand": "Entender préstamos",
+  "nav.pay": "Pagar la escuela",
+  "nav.approved": "Obtener aprobación",
+  "nav.manage": "Gestionar préstamos",
   "nav.loans101": "Recursos Educativos",
   "nav.apply": "¿Necesitas una segunda oportunidad? ¡Prueba GradBridge!",
   "nav.cta": "Traza tu camino",
@@ -343,7 +351,6 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "contact.sent.title": "Mensaje recibido",
   "contact.sent.body": "Gracias por escribirnos. Te responderemos al correo que nos diste.",
   "contact.privacy": "Solo usamos tu correo para responder a este mensaje.",
-
 
   "home.eyebrow": "Grad PLUS terminó el 1 de julio de 2026",
   "home.h1.line1": "Los préstamos federales de posgrado se redujeron.",
@@ -423,6 +430,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "understand.stat3.source": "Fuente: Informe salarial 2026 de OnlineMastersColleges",
   "understand.cta": "Descubre lo que tu título puede significar →",
 
+  /* ---------- learn station ---------- */
   "station.learn": "Aprender",
   "learn.h2": "Explicaciones para cada punto de decisión",
   "learn.desc": "Breves y concretas — escritas para encontrarte justo donde estás.",
@@ -436,17 +444,22 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "learn.card.fallback": "Abre este tema en Préstamos 101 para leer las explicaciones.",
   "learn.card.aria": "Explora el tema:",
 
+  /* ---------- apply station ---------- */
   "station.apply": "Solicitar",
   "applyStation.h2": "Listos cuando tú lo estés",
   "applyStation.desc":
     "Una vez que conozcas tus números, la mayoría de los prestamistas tardan menos de 10 minutos en procesar la solicitud. Te diremos qué tener listo primero.",
   "applyStation.cta": "Comienza tu solicitud ↗",
 
+  /* ---------- errors ---------- */
   "error.title": "Algo salió mal",
   "error.sub.pre": "Actualiza la página o ",
   "error.sub.link": "explora Préstamos 101",
   "error.sub.post": ".",
 
+  "apply.eyebrow": "Solicitar",
+  "apply.pageTitle": "Ver prestamistas",
+  "apply.pageSubtitle": "Más prestamistas próximamente...",
   "apply.body":
     "Cubrimos la diferencia cuando los prestamistas tradicionales han rechazado tu préstamo estudiantil, brindándote el apoyo financiero que necesitas para continuar tus estudios y construir un futuro mejor.",
   "apply.cta": "Solicitar ahora",
