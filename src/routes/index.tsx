@@ -63,7 +63,7 @@ const DEGREE_TIERS: { labelKey: string; options: string[] }[] = [
   { labelKey: "form.degree.tier4", options: ["Ph.D.", "J.D.", "M.D."] },
 ];
 
-function Index() {
+export function Index() {
   const { t } = useI18n();
   const [submitted, setSubmitted] = useState(false);
   const [step, setStep] = useState(1);

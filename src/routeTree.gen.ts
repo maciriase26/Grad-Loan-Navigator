@@ -12,10 +12,12 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ApplyRouteImport } from './routes/apply'
 import { Route as BlogRouteImport } from './routes/blog'
+import { Route as ChartYourPathRouteImport } from './routes/chart-your-path'
 import { Route as EditorialStandardsRouteImport } from './routes/editorial-standards'
 import { Route as EducationalResourcesRouteImport } from './routes/educational-resources'
 import { Route as InDepthAnalysisRouteImport } from './routes/in-depth-analysis'
 import { Route as Loans101RouteImport } from './routes/loans-101'
+import { Route as ManageLoansRouteImport } from './routes/manage-loans'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
@@ -39,6 +41,11 @@ const BlogRoute = BlogRouteImport.update({
   path: '/blog',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ChartYourPathRoute = ChartYourPathRouteImport.update({
+  id: '/chart-your-path',
+  path: '/chart-your-path',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EditorialStandardsRoute = EditorialStandardsRouteImport.update({
   id: '/editorial-standards',
   path: '/editorial-standards',
@@ -57,6 +64,11 @@ const InDepthAnalysisRoute = InDepthAnalysisRouteImport.update({
 const Loans101Route = Loans101RouteImport.update({
   id: '/loans-101',
   path: '/loans-101',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ManageLoansRoute = ManageLoansRouteImport.update({
+  id: '/manage-loans',
+  path: '/manage-loans',
   getParentRoute: () => rootRouteImport,
 } as any)
 const McpRoute = McpRouteImport.update({
@@ -103,10 +115,12 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/apply': typeof ApplyRoute
   '/blog': typeof BlogRoute
+  '/chart-your-path': typeof ChartYourPathRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/educational-resources': typeof EducationalResourcesRoute
   '/in-depth-analysis': typeof InDepthAnalysisRoute
   '/loans-101': typeof Loans101Route
+  '/manage-loans': typeof ManageLoansRoute
   '/mcp': typeof McpRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -119,10 +133,12 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/apply': typeof ApplyRoute
   '/blog': typeof BlogRoute
+  '/chart-your-path': typeof ChartYourPathRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/educational-resources': typeof EducationalResourcesRoute
   '/in-depth-analysis': typeof InDepthAnalysisRoute
   '/loans-101': typeof Loans101Route
+  '/manage-loans': typeof ManageLoansRoute
   '/mcp': typeof McpRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -136,10 +152,12 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/apply': typeof ApplyRoute
   '/blog': typeof BlogRoute
+  '/chart-your-path': typeof ChartYourPathRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/educational-resources': typeof EducationalResourcesRoute
   '/in-depth-analysis': typeof InDepthAnalysisRoute
   '/loans-101': typeof Loans101Route
+  '/manage-loans': typeof ManageLoansRoute
   '/mcp': typeof McpRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -154,10 +172,12 @@ export interface FileRouteTypes {
     | '/'
     | '/apply'
     | '/blog'
+    | '/chart-your-path'
     | '/editorial-standards'
     | '/educational-resources'
     | '/in-depth-analysis'
     | '/loans-101'
+    | '/manage-loans'
     | '/mcp'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
@@ -170,10 +190,12 @@ export interface FileRouteTypes {
     | '/'
     | '/apply'
     | '/blog'
+    | '/chart-your-path'
     | '/editorial-standards'
     | '/educational-resources'
     | '/in-depth-analysis'
     | '/loans-101'
+    | '/manage-loans'
     | '/mcp'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
@@ -186,10 +208,12 @@ export interface FileRouteTypes {
     | '/'
     | '/apply'
     | '/blog'
+    | '/chart-your-path'
     | '/editorial-standards'
     | '/educational-resources'
     | '/in-depth-analysis'
     | '/loans-101'
+    | '/manage-loans'
     | '/mcp'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
@@ -203,10 +227,12 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ApplyRoute: typeof ApplyRoute
   BlogRoute: typeof BlogRoute
+  ChartYourPathRoute: typeof ChartYourPathRoute
   EditorialStandardsRoute: typeof EditorialStandardsRoute
   EducationalResourcesRoute: typeof EducationalResourcesRoute
   InDepthAnalysisRoute: typeof InDepthAnalysisRoute
   Loans101Route: typeof Loans101Route
+  ManageLoansRoute: typeof ManageLoansRoute
   McpRoute: typeof McpRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -239,6 +265,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/chart-your-path': {
+      id: '/chart-your-path'
+      path: '/chart-your-path'
+      fullPath: '/chart-your-path'
+      preLoaderRoute: typeof ChartYourPathRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/editorial-standards': {
       id: '/editorial-standards'
       path: '/editorial-standards'
@@ -265,6 +298,13 @@ declare module '@tanstack/react-router' {
       path: '/loans-101'
       fullPath: '/loans-101'
       preLoaderRoute: typeof Loans101RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/manage-loans': {
+      id: '/manage-loans'
+      path: '/manage-loans'
+      fullPath: '/manage-loans'
+      preLoaderRoute: typeof ManageLoansRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mcp': {
@@ -323,10 +363,12 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ApplyRoute: ApplyRoute,
   BlogRoute: BlogRoute,
+  ChartYourPathRoute: ChartYourPathRoute,
   EditorialStandardsRoute: EditorialStandardsRoute,
   EducationalResourcesRoute: EducationalResourcesRoute,
   InDepthAnalysisRoute: InDepthAnalysisRoute,
   Loans101Route: Loans101Route,
+  ManageLoansRoute: ManageLoansRoute,
   McpRoute: McpRoute,
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:

@@ -50,15 +50,13 @@ export function SiteHeader() {
           r
         </Link>
         <div className="navlinks">
-          <Link to="/" hash="understand">
-            Understand
-          </Link>
-          <Link to="/educational-resources">Learn</Link>
-          <Link to="/apply">Apply</Link>
+          <Link to="/educational-resources">{t("nav.understand")}</Link>
+          <Link to="/apply">{t("nav.pay")}</Link>
+          <Link to="/manage-loans">{t("nav.manage")}</Link>
         </div>
         <div className="nav-right">
           <LanguageSwitcher />
-          <Link className="nav-cta" to="/apply">
+          <Link className="nav-cta" to="/" hash="quiz">
             {t("nav.cta")}
           </Link>
         </div>
