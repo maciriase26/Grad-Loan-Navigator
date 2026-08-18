@@ -43,7 +43,7 @@ export function SiteHeader() {
     <header className="site-header">
       <nav className="site-nav">
         <Link to="/" className="logo">
-          Grad Navigator
+          Grad Navigat
           <span className="logo-o">
             <CompassMark />
           </span>
