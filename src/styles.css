@@ -2571,4 +2571,252 @@ a.article-card {
   background: color-mix(in srgb, var(--ink) 85%, #000);
 }
 
+/* ---------- Experian In-Depth Analysis & Syndication Mockup Styles ---------- */
+.depth-section {
+  margin-bottom: 48px;
+}
+.depth-section-title {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3vw, 26px);
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+.depth-section-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0 0 24px;
+}
+
+.depth-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .depth-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.depth-card {
+  background: var(--card-paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.depth-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--teal) 60%, var(--line));
+}
+.depth-card-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--teal);
+  background: color-mix(in srgb, var(--teal) 10%, transparent);
+  padding: 4px 10px;
+  border-radius: 4px;
+  align-self: flex-start;
+  margin-bottom: 12px;
+}
+.depth-card h3 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+.depth-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0 0 16px;
+}
+.depth-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--gold);
+  margin-top: auto;
+  align-self: flex-start;
+  padding-bottom: 2px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.depth-card-link:hover {
+  color: var(--gold);
+}
+
+/* Syndicated Article Mockup Block */
+.syndicated-mockup-wrap {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--card-paper);
+  margin: 48px 0 32px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px -6px color-mix(in srgb, var(--ink) 6%, transparent);
+}
+
+.syndicated-mockup-wrap .wrap.meta {
+  padding: 32px 36px 24px;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 40%, var(--card-paper));
+}
+.syndicated-mockup-wrap .wrap.meta .tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 10px;
+}
+.syndicated-mockup-wrap .wrap.meta h1 {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 3.5vw, 32px);
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 20px;
+  line-height: 1.25;
+}
+
+.source-block {
+  background: color-mix(in srgb, var(--teal) 8%, var(--card-paper));
+  border: 1px solid color-mix(in srgb, var(--teal) 30%, var(--line));
+  border-radius: 6px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.exp-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 800;
+  color: #fff;
+  background: var(--ink);
+  padding: 4px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+.source-block .text {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+.source-block .text a {
+  color: var(--teal);
+  font-weight: 600;
+  margin-left: 6px;
+  text-decoration: none;
+}
+.source-block .text a:hover {
+  text-decoration: underline;
+}
+
+.byline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  flex-wrap: wrap;
+}
+.byline .avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--ink) 12%, transparent);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+}
+.byline .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--ink-soft);
+  opacity: 0.5;
+}
+
+article.syndicated-body {
+  padding: 32px 36px;
+}
+.placeholder-note {
+  background: color-mix(in srgb, var(--gold) 15%, var(--card-paper));
+  border: 1px dashed color-mix(in srgb, var(--gold) 60%, var(--line));
+  border-radius: 6px;
+  padding: 16px 20px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--ink);
+  font-style: italic;
+  margin-bottom: 28px;
+}
+.syndicated-body h2 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 28px 0 12px;
+}
+.syndicated-body h2:first-of-type {
+  margin-top: 0;
+}
+.syndicated-body p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin: 0 0 16px;
+}
+
+.end-attribution {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  margin-top: 36px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.end-attribution a {
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: none;
+}
+.end-attribution a:hover {
+  text-decoration: underline;
+}
+
+.layout-review-footer {
+  background: color-mix(in srgb, var(--paper) 70%, var(--card-paper));
+  border-top: 1px solid var(--line);
+  padding: 14px 24px;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+
 

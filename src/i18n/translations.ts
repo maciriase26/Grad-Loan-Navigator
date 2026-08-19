@@ -27,8 +27,57 @@ export const en = {
   "er.card2.desc":
     "Short, punchy takes on the stuff you're actually wondering about right now — written in plain language by people who are in your shoes.",
   "er.card2.cta": "Browse the blog",
+  "depth.eyebrow": "Presented by Experian",
   "depth.h1": "In-Depth Analysis",
-  "depth.sub": "Long-form explainers are on the way. Check back soon.",
+  "depth.sub":
+    "Comprehensive breakdowns, PDF brochures, and syndicated guides on credit, student borrowing, and repayment — powered by Experian.",
+
+  "depth.consumer.title": "Consumer Education Resources",
+  "depth.consumer.desc":
+    "Free downloadable PDF brochures from Experian covering credit score fundamentals, essential guidelines, and common borrower questions.",
+
+  "depth.pdf1.tag": "PDF Brochure · Download",
+  "depth.pdf1.title": "Credit Score Basics",
+  "depth.pdf1.desc":
+    "Learn how credit scores are calculated, key rating factors, and how to build strong credit during school.",
+
+  "depth.pdf2.tag": "PDF Guide · Download",
+  "depth.pdf2.title": "Credit Essentials Flipbook",
+  "depth.pdf2.desc":
+    "An all-in-one interactive guide covering credit reports, history building, and debt management.",
+
+  "depth.pdf3.tag": "PDF Q&A · Download",
+  "depth.pdf3.title": "12 Common Questions",
+  "depth.pdf3.desc":
+    "Clear answers to the 12 most frequent questions about credit scores, hard inquiries, and credit monitoring.",
+
+  "depth.pdf4.tag": "PDF Guide · Download",
+  "depth.pdf4.title": "New Credit",
+  "depth.pdf4.desc":
+    "A beginner's guide to opening your first credit accounts, managing credit lines responsibly, and establishing history.",
+
+  "depth.ask.title": "Ask Experian Articles",
+  "depth.ask.desc": "Updated to reflect recent borrowing rules and student loan guidelines.",
+
+  "depth.article1.tag": "Ask Experian · Guide",
+  "depth.article1.title": "Types of Student Loans and How to Choose One",
+  "depth.article1.desc":
+    "A comprehensive breakdown of federal direct subsidized, unsubsidized, PLUS, and private loan options.",
+
+  "depth.article2.tag": "Ask Experian · Guide",
+  "depth.article2.title": "Student Loan Repayment: Everything You Need to Know",
+  "depth.article2.desc":
+    "Understand repayment plans, interest accrual, income-driven strategies, and loan consolidation.",
+
+  "depth.article3.tag": "Ask Experian · Guide",
+  "depth.article3.title": "How to Get a Student Loan",
+  "depth.article3.desc":
+    "Step-by-step guide on filling out FAFSA, evaluating financial aid packages, and applying for loans.",
+
+  "depth.article4.tag": "Ask Experian · Guide",
+  "depth.article4.title": "How Do Student Loans Work",
+  "depth.article4.desc":
+    "Everything about principal balances, daily compounding interest formulas, grace periods, and servicer management.",
   "blog.eyebrow": "Student Perspectives",
   "blog.h1": "Grad Navigator Blog",
   "blog.sub":
@@ -632,8 +681,57 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "er.card2.desc":
     "Textos breves y directos sobre lo que realmente te preguntas ahora mismo — en lenguaje claro y escritos por personas que están en tu misma situación.",
   "er.card2.cta": "Ver el blog",
-  "depth.h1": "Análisis a fondo",
-  "depth.sub": "Las explicaciones extensas están en camino. Vuelve pronto.",
+  "depth.eyebrow": "Presentado por Experian",
+  "depth.h1": "Análisis a Fondo",
+  "depth.sub":
+    "Desgloses exhaustivos, folletos en PDF y guías sobre crédito, préstamos estudiantiles y pagos — en colaboración con Experian.",
+
+  "depth.consumer.title": "Recursos de Educación al Consumidor",
+  "depth.consumer.desc":
+    "Folletos en PDF gratuitos de Experian sobre conceptos básicos del puntaje de crédito, guías esenciales y preguntas frecuentes.",
+
+  "depth.pdf1.tag": "Folleto PDF · Descargar",
+  "depth.pdf1.title": "Conceptos Básicos del Puntaje de Crédito",
+  "depth.pdf1.desc":
+    "Aprende cómo se calculan los puntajes de crédito, los factores principales y cómo construir un buen crédito durante tus estudios.",
+
+  "depth.pdf2.tag": "Guía PDF · Descargar",
+  "depth.pdf2.title": "Libro Interactivo de Esenciales de Crédito",
+  "depth.pdf2.desc":
+    "Una guía interactiva completa sobre informes de crédito, creación de historial y gestión responsable de deudas.",
+
+  "depth.pdf3.tag": "Preguntas Frecuentes PDF · Descargar",
+  "depth.pdf3.title": "12 Preguntas Frecuentes de Crédito",
+  "depth.pdf3.desc":
+    "Respuestas claras a las 12 preguntas más comunes sobre puntajes de crédito, consultas en el historial y monitoreo.",
+
+  "depth.pdf4.tag": "Guía PDF · Descargar",
+  "depth.pdf4.title": "Nuevo Crédito",
+  "depth.pdf4.desc":
+    "Una guía para principiantes sobre cómo abrir tus primeras cuentas de crédito, manejar líneas de crédito de forma responsable y crear historial.",
+
+  "depth.ask.title": "Artículos de Ask Experian",
+  "depth.ask.desc": "Actualizados para reflejar las normas de endeudamiento y guías de préstamos recientes.",
+
+  "depth.article1.tag": "Ask Experian · Guía",
+  "depth.article1.title": "Tipos de Préstamos Estudiantiles y Cómo Elegir Uno",
+  "depth.article1.desc":
+    "Un desglose completo de préstamos federales directos subsidiados, no subsidiados, PLUS y opciones privadas.",
+
+  "depth.article2.tag": "Ask Experian · Guía",
+  "depth.article2.title": "Pago de Préstamos Estudiantiles: Todo lo que Necesitas Saber",
+  "depth.article2.desc":
+    "Comprende los planes de pago, la acumulación de intereses, las estrategias basadas en ingresos y la consolidación.",
+
+  "depth.article3.tag": "Ask Experian · Guía",
+  "depth.article3.title": "Cómo Obtener un Préstamo Estudiantil",
+  "depth.article3.desc":
+    "Guía paso a paso sobre cómo completar la FAFSA, evaluar paquetes de ayuda financiera y solicitar préstamos.",
+
+  "depth.article4.tag": "Ask Experian · Guía",
+  "depth.article4.title": "Cómo Funcionan los Préstamos Estudiantiles",
+  "depth.article4.desc":
+    "Todo sobre saldos principales, fórmulas de interés diario, períodos de gracia y gestión de administradores de préstamos.",
   "blog.eyebrow": "Perspectivas de Estudiantes",
   "blog.h1": "Blog de Grad Navigator",
   "blog.sub":
