@@ -408,12 +408,53 @@ export function Index() {
             <div className="station-tag">{t("station.learn")}</div>
             <h2>{t("learn.h2")}</h2>
             <p className="desc">{t("learn.desc")}</p>
-            <div className="card-row">
-              <Link className="article-card" to="/educational-resources">
-                <span className="tag">{t("nav.loans101")}</span>
-                <h3>{t("learn.card.title")}</h3>
-                <p>{t("learn.card.body")}</p>
-                <span className="card-more">{t("learn.card.cta")}</span>
+
+            <div className="card-row" style={{ maxWidth: "960px" }}>
+              <Link className="article-card" to="/blog/refinancing-student-loans">
+                <span className="tag">{t("blog.card1.tag")}</span>
+                <h3>{t("blog.card1.title")}</h3>
+                <p>{t("blog.card1.excerpt")}</p>
+                <span className="card-more" style={{ marginTop: "14px", display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  {t("blog.card1.cta")} →
+                </span>
+              </Link>
+
+              <Link className="article-card" to="/blog/student-loan-interest-by-the-numbers">
+                <span className="tag">{t("blog.card2.tag")}</span>
+                <h3>{t("blog.card2.title")}</h3>
+                <p>{t("blog.card2.excerpt")}</p>
+                <span className="card-more" style={{ marginTop: "14px", display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  {t("blog.card2.cta")} →
+                </span>
+              </Link>
+
+              <Link className="article-card" to="/blog/student-loan-types">
+                <span className="tag">{t("blog.card3.tag")}</span>
+                <h3>{t("blog.card3.title")}</h3>
+                <p>{t("blog.card3.excerpt")}</p>
+                <span className="card-more" style={{ marginTop: "14px", display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  {t("blog.card3.cta")} →
+                </span>
+              </Link>
+            </div>
+
+            <div style={{ marginTop: "24px" }}>
+              <Link className="btn-secondary" to="/educational-resources" style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}>
+                <span>{t("learn.navHub.cta")}</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  width="15"
+                  height="15"
+                  aria-hidden="true"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
               </Link>
             </div>
           </div>

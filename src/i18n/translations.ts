@@ -70,6 +70,7 @@ export const en = {
   "learn.card.body":
     "Two ways in: long-form explainers, or short posts written by students who are in your shoes.",
   "learn.card.cta": "Explore resources →",
+  "learn.navHub.cta": "Explore all resources in the Navigation Hub",
   "footer.learn.how": "How grad loans actually work",
   "footer.learn.changed": "What changed with Grad PLUS",
   "footer.learn.qualifying": "Qualifying & getting approved",
@@ -673,6 +674,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "learn.card.body":
     "Dos caminos: explicaciones extensas o textos breves escritos por estudiantes como tú.",
   "learn.card.cta": "Explorar recursos →",
+  "learn.navHub.cta": "Explorar todos los recursos en el Centro de Navegación",
   "footer.learn.how": "Cómo funcionan realmente los préstamos de posgrado",
   "footer.learn.changed": "Qué cambió con Grad PLUS",
   "footer.learn.qualifying": "Calificar y obtener aprobación",
