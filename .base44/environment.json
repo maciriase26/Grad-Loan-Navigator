@@ -1,0 +1,17 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
+  "secrets": [
+    {
+      "name": "LOVABLE_API_KEY",
+      "description": "Lovable AI Gateway API key for the /api/chat route (chat assistant). Get it from your Lovable project settings → Integrations / AI.",
+      "requiredAtBoot": false
+    },
+    {
+      "name": "SUPABASE_SERVICE_ROLE_KEY",
+      "description": "Supabase service_role (secret) key for the server-side admin client used by the regenerate-category-summary webhook. Get it from your Supabase project → Settings → API → service_role key.",
+      "requiredAtBoot": false
+    }
+  ]
+}
