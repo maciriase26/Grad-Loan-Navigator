@@ -39,14 +39,18 @@ export const en = {
     "Refinancing can cut your interest rate or lower your monthly payment, but can also cost you protections you can't get back once they're gone. Here's the actual tradeoff.",
   "blog.card1.author": "Student Editorial Board · Updated 2026",
   "blog.card1.cta": "Read article",
-  "blog.card2.tag": "Borrowing 101 · Coming Soon",
-  "blog.card2.title": "Direct Unsubsidized Loans: How Interest Accrues While in School",
+  "blog.card2.tag": "Interest Rates · 4 min read",
+  "blog.card2.title": "Student Loan Interest: by the numbers",
   "blog.card2.excerpt":
-    "A practical breakdown of capitalization, daily interest formulas, and simple steps to prevent balance growth during graduate school.",
-  "blog.card3.tag": "Perspective · Coming Soon",
-  "blog.card3.title": "Federal vs. Private Loans: What I Wish I Knew Before Starting My Master's",
+    "Federal student loan rates went up again this year, the third straight year they've climbed. Here's what that actually costs you, and the one loan type that's now gone for good.",
+  "blog.card2.author": "Student Editorial Board · Updated 2026",
+  "blog.card2.cta": "Read article",
+  "blog.card3.tag": "Borrowing 101 · 3 min read",
+  "blog.card3.title": "Student Loan Types",
   "blog.card3.excerpt":
-    "Real-world reflections from a first-generation graduate student navigating the post-Grad PLUS borrowing landscape.",
+    "There are three federal loan programs and multiple private options. Here is a cheat sheet breakdown of subsidized, unsubsidized, PLUS, and private loans.",
+  "blog.card3.author": "Student Editorial Board · Updated 2026",
+  "blog.card3.cta": "Read article",
 
   "manage.eyebrow": "Manage",
   "manage.h1": "Existing loans & refinance",
@@ -304,6 +308,176 @@ export const en = {
   "chat.section.understand": "Understand",
   "chat.section.learn": "Loans 101",
   "chat.section.compare": "Compare",
+  "chat.section.apply": "Apply",
+  "chat.section.quiz": "the borrowing quiz",
+
+  /* ---------- student loan interest rates blog post ---------- */
+  "rates.meta.title": "Student Loan Interest: by the numbers — Grad Loan Navigator",
+  "rates.meta.desc":
+    "Federal student loan rates climbed for the third straight year. Here's what that actually costs you, how rates are set, and what changed for graduate borrowers.",
+  "rates.eyebrow": "Student Perspectives · Guide",
+  "rates.h1": "Student Loan Interest: by the numbers",
+  "rates.sub":
+    "Federal student loan rates went up again this year, the third straight year they've climbed. Here's what that actually costs you, and the one loan type that's now gone for good.",
+  "rates.updated": "Updated for 2026–27 Academic Year",
+
+  "rates.why.title": "Why it matters",
+  "rates.why.p":
+    "Every loan disbursed since July 1, 2026 locks in a fixed rate for the life of that loan. Get it wrong now, and you're paying for it for a decade or more.",
+
+  "rates.nav.numbers": "1. By the numbers",
+  "rates.nav.catch": "2. The catch for grad students",
+  "rates.nav.vs": "3. Grad PLUS vs. Parent PLUS",
+  "rates.nav.costs": "4. What it costs in real terms",
+  "rates.nav.bottomline": "5. The bottom line",
+
+  "rates.part1": "Part 01",
+  "rates.numbers.h2": "By the numbers",
+  "rates.card1.label": "Undergrad Direct Loans",
+  "rates.card1.rate": "6.52%",
+  "rates.card1.sub": "2026–27 fixed rate",
+  "rates.card2.label": "Grad Direct Unsubsidized Loans",
+  "rates.card2.rate": "8.07%",
+  "rates.card2.sub": "2026–27 fixed rate",
+  "rates.card3.label": "Parent PLUS & Grad PLUS Loans",
+  "rates.card3.rate": "9.07%",
+  "rates.card3.sub": "2026–27 fixed rate",
+
+  "rates.howset.p":
+    "Rates are set once a year, in May, based on a Treasury auction plus a fixed markup Congress sets for each loan type. Undergrad gets a 2.05 point markup. Grad loans get 3.60 points. PLUS loans get 4.60 points, the biggest of the three.",
+
+  "rates.zoom.title": "Zoom out:",
+  "rates.zoom.p":
+    "Rates have climbed three years running. The undergrad rate alone is up roughly 65% since 2021.",
+
+  "rates.mean.title": "What does this mean for you?",
+  "rates.mean.p":
+    "Apply for your loan BEFORE rates go up if you can. Talk to your financial aid office about how early you can apply for aid if you know you're going to need another loan for your next semester.",
+
+  "rates.catch.h2": "The catch for grad students",
+  "rates.catch.p":
+    "Grad PLUS loans are gone. As of July 1, 2026, new borrowers can no longer take one out. Grad students are now capped at $100,000 in total federal borrowing, or $200,000 for professional programs like law or medicine.",
+  "rates.chip1.label": "General Master's & Grad",
+  "rates.chip1.val": "$100,000 Cap",
+  "rates.chip2.label": "Professional (Law / Med)",
+  "rates.chip2.val": "$200,000 Cap",
+
+  "rates.part3": "Part 03",
+  "rates.vs.h2": "Grad PLUS vs. Parent PLUS, quickly",
+  "rates.vs.lead": "These two get confused constantly. Here's the actual difference.",
+
+  "rates.vs.r1.title": "Who borrows",
+  "rates.vs.r1.desc":
+    "Grad PLUS was for grad and professional students borrowing for their own education. Parent PLUS is for parents borrowing on behalf of a dependent undergrad.",
+
+  "rates.vs.r2.title": "Status",
+  "rates.vs.r2.desc":
+    "Grad PLUS has been eliminated for new borrowers. Parent PLUS is still around, now capped at $20,500 a year and $65,000 total per student.",
+
+  "rates.vs.r3.title": "Who owes the money",
+  "rates.vs.r3.desc":
+    "The person who signs is the person who owes it. A parent's Parent PLUS balance never transfers to the student, even after graduation.",
+
+  "rates.vs.r4.title": "Eligibility",
+  "rates.vs.r4.desc":
+    "Both require a credit check. Neither is based on financial need.",
+
+  "rates.part4": "Part 04",
+  "rates.costs.h2": "What it costs in real terms",
+  "rates.costs.p1":
+    "A private lender might offer a fixed rate in the mid-4% range to a borrower with strong credit. On a $10,000 loan over 10 years, the gap between a 6.52% federal rate and a 4.25% private rate adds up to roughly $1,345 in extra interest. For grad borrowers, the gap is wider still, since federal grad rates start nearly two points higher than undergrad.",
+  "rates.calc.label": "10-Year Extra Interest Gap (Federal 6.52% vs. Private 4.25% on $10k):",
+
+  "rates.part5": "Conclusion",
+  "rates.bottomline.h2": "The bottom line",
+  "rates.bottomline.quote":
+    "Federal loans are easier to qualify for. Private loans can be cheaper, if your credit supports it. Know which situation you're actually in before you sign anything.",
+
+  "rates.cta.h2": "Ready to plan your borrowing?",
+  "rates.cta.p":
+    "Use our step-by-step calculator to find your exact borrowing limits and explore your options under the 2026 rules.",
+  "rates.cta.btn": "Chart your path",
+
+  "rates.sources.label": "Sources:",
+  "rates.sources.text":
+    "Experian; U.S. Department of Education, Federal Student Aid; The Institute for College Access & Success (TICAS)",
+
+  /* ---------- student loan types blog post ---------- */
+  "types.meta.title": "Student Loan Types — Grad Loan Navigator",
+  "types.meta.desc":
+    "There are three federal student loan programs and multiple private options. Here is a cheat sheet breakdown of subsidized, unsubsidized, PLUS, and private loans.",
+  "types.eyebrow": "Student Perspectives · Cheat Sheet",
+  "types.h1": "Student Loan Types",
+  "types.sub":
+    "There are many types of student loans and it can get confusing quick. There are three federal student loan programs that are each designed for different types of students. To complicate matters further, there are multiple types of private loans. Below is a cheat sheet to help you choose.",
+  "types.updated": "Updated for 2026 Borrowing Rules",
+
+  "types.nav.sub": "1. Subsidized vs. Unsubsidized",
+  "types.nav.plus": "2. Grad PLUS vs. Parent PLUS",
+  "types.nav.private": "3. Private vs. Federal",
+  "types.nav.bottomline": "4. The bottom line",
+
+  "types.part1": "Part 01",
+  "types.sub.h2": "Federal Direct Subsidized and Unsubsidized Loans",
+  "types.sub.card1.badge": "Need-Based · Undergrad Only",
+  "types.sub.card1.title": "Subsidized Federal Loans",
+  "types.sub.card1.p1":
+    "Subsidized federal loans are only for undergraduate students with demonstrated financial need. With these loans, the federal government pays accruing interest while you're enrolled in school.",
+  "types.sub.card1.p2":
+    "These have limits and strict eligibility rules that you can find out more about from Experian.",
+  "types.sub.card1.link": "Learn more about subsidized loans on Experian →",
+
+  "types.sub.card2.badge": "Available to All Students",
+  "types.sub.card2.title": "Unsubsidized Federal Loans",
+  "types.sub.card2.p1":
+    "Unsubsidized loans are available to all students but also have borrowing limits and the interest is fixed and accrues immediately.",
+  "types.sub.card2.p2":
+    "There are also special loans for Grad and Parent borrowers.",
+
+  "types.part2": "Part 02",
+  "types.plus.h2": "Grad PLUS vs. Parent PLUS, quickly",
+  "types.plus.lead": "These two get confused constantly. Here's the actual difference.",
+
+  "types.plus.r1.title": "Who borrows",
+  "types.plus.r1.desc":
+    "Grad PLUS was for grad and professional students borrowing for their own education. Parent PLUS is for parents borrowing on behalf of a dependent undergrad.",
+
+  "types.plus.r2.title": "Status",
+  "types.plus.r2.desc":
+    "Grad PLUS has been eliminated for new borrowers. Parent PLUS is still around, now capped at $20,500 a year and $65,000 total per student.",
+
+  "types.plus.r3.title": "Who owes the money",
+  "types.plus.r3.desc":
+    "The person who signs is the person who owes it. A parent's Parent PLUS balance never transfers to the student, even after graduation.",
+
+  "types.plus.r4.title": "Eligibility",
+  "types.plus.r4.desc":
+    "Both require a credit check. Neither is based on financial need.",
+
+  "types.part3": "Part 03",
+  "types.private.h2": "Private Student Loans vs. Federal",
+  "types.private.p1":
+    "A private lender might offer a fixed rate in the mid-4% range to a borrower with strong credit. On a $10,000 loan over 10 years, the gap between a 6.52% federal rate and a 4.25% private rate adds up to roughly $1,345 in extra interest. For grad borrowers, the gap is wider still, since federal grad rates start nearly two points higher than undergrad.",
+
+  "types.part4": "Conclusion",
+  "types.bottomline.h2": "The bottom line",
+  "types.bottomline.quote":
+    "Federal loans are easier to qualify for. Private loans can be cheaper, if your credit supports it. Know which situation you're actually in before you sign anything.",
+
+  "types.experian.title": "Looking for a deeper dive?",
+  "types.experian.text":
+    "Experian provides detailed breakdowns on student loan programs, credit qualifications, and repayment options.",
+  "types.experian.link": "Read the Experian deep dive →",
+
+  "types.cta.h2": "Ready to explore your options?",
+  "types.cta.p":
+    "Use our step-by-step calculator to find your exact borrowing limits and explore your options under the 2026 rules.",
+  "types.cta.btn": "Chart your path",
+
+  "types.sources.label": "Sources:",
+  "types.sources.text":
+    "Experian; U.S. Department of Education, Federal Student Aid; The Institute for College Access & Success (TICAS)",
+
   /* ---------- refinancing loans page ---------- */
   "refi.meta.title": "Refinancing Student Loans, Explained — Grad Loan Navigator",
   "refi.meta.desc":
@@ -468,17 +642,18 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card1.excerpt":
     "La refinanciación puede reducir tu tasa de interés o bajar tu pago mensual, pero también puede costarte protecciones que no podrás recuperar una vez que se pierdan. Este es el verdadero dilema.",
   "blog.card1.author": "Equipo Editorial Estudiantil · Actualizado 2026",
-  "blog.card1.cta": "Leer artículo",
-  "blog.card2.tag": "Conceptos Básicos · Próximamente",
-  "blog.card2.title":
-    "Préstamos Directos no Subsidiados: Cómo se acumulan los intereses mientras estudias",
+  "blog.card2.tag": "Tasas de Interés · 4 min de lectura",
+  "blog.card2.title": "Intereses de Préstamos Estudiantiles: En Cifras",
   "blog.card2.excerpt":
-    "Un desglose práctico sobre capitalización, fórmulas de interés diario y pasos sencillos para evitar el crecimiento del saldo durante el posgrado.",
-  "blog.card3.tag": "Perspectiva · Próximamente",
-  "blog.card3.title":
-    "Préstamos Federales vs. Privados: Lo que desearía haber sabido antes de empezar mi maestría",
+    "Las tasas de los préstamos estudiantiles federales aumentaron nuevamente este año, por tercer año consecutivo. Esto es lo que realmente te cuesta y el tipo de préstamo que ha desaparecido definitivamente.",
+  "blog.card2.author": "Equipo Editorial Estudiantil · Actualizado 2026",
+  "blog.card2.cta": "Leer artículo",
+  "blog.card3.tag": "Conceptos Básicos · 3 min de lectura",
+  "blog.card3.title": "Tipos de Préstamos Estudiantiles",
   "blog.card3.excerpt":
-    "Reflexiones reales de un estudiante de posgrado de primera generación sobre el nuevo panorama tras el fin de Grad PLUS.",
+    "Existen tres programas federales y diversas opciones privadas. Esta es una guía rápida de préstamos subsidiados, no subsidiados, PLUS y privados.",
+  "blog.card3.author": "Equipo Editorial Estudiantil · Actualizado 2026",
+  "blog.card3.cta": "Leer artículo",
 
   "manage.eyebrow": "Gestionar",
   "manage.h1": "Préstamos existentes y refinanciación",
@@ -736,6 +911,173 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "chat.section.compare": "Comparar",
   "chat.section.apply": "Solicitar",
   "chat.section.quiz": "el test de límites",
+
+  /* ---------- student loan interest rates blog post (Spanish) ---------- */
+  "rates.meta.title": "Intereses de Préstamos Estudiantiles: En Cifras — Grad Loan Navigator",
+  "rates.meta.desc":
+    "Las tasas de préstamos federales subieron por tercer año consecutivo. Esto es lo que cuesta, cómo se fijan las tasas y qué cambió para prestatarios de posgrado.",
+  "rates.eyebrow": "Perspectivas de Estudiantes · Guía",
+  "rates.h1": "Intereses de Préstamos Estudiantiles, En Cifras",
+  "rates.sub":
+    "Las tasas de los préstamos estudiantiles federales subieron nuevamente este año, por tercer año consecutivo. Esto es lo que realmente te cuesta y el tipo de préstamo que ha desaparecido definitivamente.",
+  "rates.updated": "Actualizado para el año académico 2026–27",
+
+  "rates.why.title": "Por qué es importante",
+  "rates.why.p":
+    "Cada préstamo desembolsado a partir del 1 de julio de 2026 fija una tasa de interés para toda la vida de ese préstamo. Si te equivocas ahora, pagarás por ello durante una década o más.",
+
+  "rates.nav.numbers": "1. En cifras",
+  "rates.nav.catch": "2. La trampa para posgrado",
+  "rates.nav.vs": "3. Grad PLUS vs. Parent PLUS",
+  "rates.nav.costs": "4. Lo que cuesta en términos reales",
+  "rates.nav.bottomline": "5. En conclusión",
+
+  "rates.part1": "Primera parte",
+  "rates.numbers.h2": "En cifras",
+  "rates.card1.label": "Préstamos Directos de Pregrado",
+  "rates.card1.rate": "6.52%",
+  "rates.card1.sub": "Tasa fija 2026–27",
+  "rates.card2.label": "Directos No Subsidiados de Posgrado",
+  "rates.card2.rate": "8.07%",
+  "rates.card2.sub": "Tasa fija 2026–27",
+  "rates.card3.label": "Préstamos Parent PLUS y Grad PLUS",
+  "rates.card3.rate": "9.07%",
+  "rates.card3.sub": "Tasa fija 2026–27",
+
+  "rates.howset.p":
+    "Las tasas se fijan una vez al año, en mayo, con base en una subasta del Tesoro más un margen fijo establecido por el Congreso para cada tipo de préstamo. Pregrado tiene un margen de 2.05 puntos. Los préstamos de posgrado obtienen 3.60 puntos. Los préstamos PLUS obtienen 4.60 puntos, el mayor de los tres.",
+
+  "rates.zoom.title": "Panorama general:",
+  "rates.zoom.p":
+    "Las tasas han subido tres años consecutivos. La tasa de pregrado por sí sola ha aumentado aproximadamente un 65% desde 2021.",
+
+  "rates.mean.title": "¿Qué significa esto para ti?",
+  "rates.mean.p":
+    "Solicita tu préstamo ANTES de que las tasas suban si te es posible. Habla con tu oficina de ayuda financiera sobre con cuánta anticipación puedes solicitar ayuda si sabes que necesitarás otro préstamo para el próximo semestre.",
+
+  "rates.catch.h2": "La trampa para estudiantes de posgrado",
+  "rates.catch.p":
+    "Los préstamos Grad PLUS desaparecieron. A partir del 1 de julio de 2026, los nuevos prestatarios ya no pueden solicitar uno. Los estudiantes de posgrado ahora tienen un límite de $100,000 en endeudamiento federal total, o $200,000 para programas profesionales como derecho o medicina.",
+  "rates.chip1.label": "Maestría General y Posgrado",
+  "rates.chip1.val": "Límite de $100,000",
+  "rates.chip2.label": "Programas Profesionales (Derecho / Med)",
+  "rates.chip2.val": "Límite de $200,000",
+
+  "rates.part3": "Tercera parte",
+  "rates.vs.h2": "Grad PLUS vs. Parent PLUS, en resumen",
+  "rates.vs.lead": "Estos dos préstamos se confunden constantemente. Esta es la diferencia real.",
+
+  "rates.vs.r1.title": "Quién solicita el préstamo",
+  "rates.vs.r1.desc":
+    "Grad PLUS era para estudiantes de posgrado y profesionales que pedían prestado para su propia educación. Parent PLUS es para padres que piden prestado en nombre de un dependiente de pregrado.",
+
+  "rates.vs.r2.title": "Estado actual",
+  "rates.vs.r2.desc":
+    "Grad PLUS fue eliminado para nuevos prestatarios. Parent PLUS sigue disponible, ahora limitado a $20,500 al año y $65,000 en total por estudiante.",
+
+  "rates.vs.r3.title": "Quién debe el dinero",
+  "rates.vs.r3.desc":
+    "La persona que firma es la persona que lo debe. El saldo de Parent PLUS de un padre nunca se transfiere al estudiante, ni siquiera después de graduarse.",
+
+  "rates.vs.r4.title": "Elegibilidad",
+  "rates.vs.r4.desc":
+    "Ambos requieren verificación de crédito. Ninguno se basa en la necesidad financiera.",
+
+  "rates.part4": "Cuarta parte",
+  "rates.costs.h2": "Lo que cuesta en términos reales",
+  "rates.costs.p1":
+    "Un prestamista privado podría ofrecer una tasa fija de alrededor del 4% a un prestatario con buen crédito. En un préstamo de $10,000 a 10 años, la diferencia entre una tasa federal del 6.52% y una tasa privada del 4.25% suma aproximadamente $1,345 en intereses adicionales. Para los prestatarios de posgrado, la brecha es aún más amplia, ya que las tasas federales de posgrado comienzan casi dos puntos más altas que las de pregrado.",
+  "rates.calc.label": "Diferencia de interés adicional a 10 años (Federal 6.52% vs. Privado 4.25% en $10k):",
+
+  "rates.part5": "Conclusión",
+  "rates.bottomline.h2": "En conclusión",
+  "rates.bottomline.quote":
+    "Los préstamos federales son más fáciles de calificar. Los préstamos privados pueden ser más económicos si tu crédito lo respalda. Ten claro en qué situación te encuentras antes de firmar cualquier documento.",
+
+  "rates.cta.h2": "¿Listo para planificar tu financiamiento?",
+  "rates.cta.p":
+    "Usa nuestra calculadora paso a paso para conocer tus límites de préstamo exactos y explorar tus opciones bajo las reglas de 2026.",
+  "rates.cta.btn": "Traza tu camino",
+
+  "rates.sources.label": "Fuentes:",
+  "rates.sources.text":
+    "Experian; U.S. Department of Education, Federal Student Aid; The Institute for College Access & Success (TICAS)",
+
+  /* ---------- student loan types blog post (Spanish) ---------- */
+  "types.meta.title": "Tipos de Préstamos Estudiantiles — Grad Loan Navigator",
+  "types.meta.desc":
+    "Existen tres programas de préstamos federales y diversas opciones privadas. Esta es una guía rápida de préstamos subsidiados, no subsidiados, PLUS y privados.",
+  "types.eyebrow": "Perspectivas de Estudiantes · Guía Rápida",
+  "types.h1": "Tipos de Préstamos Estudiantiles",
+  "types.sub":
+    "Hay muchos tipos de préstamos estudiantiles y puede volverse confuso rápidamente. Hay tres programas de préstamos federales, cada uno diseñado para diferentes tipos de estudiantes. Para complicar aún más las cosas, existen múltiples tipos de préstamos privados. A continuación te presentamos una guía rápida para ayudarte a elegir.",
+  "types.updated": "Actualizado para las normas de 2026",
+
+  "types.nav.sub": "1. Subsidiados vs. No Subsidiados",
+  "types.nav.plus": "2. Grad PLUS vs. Parent PLUS",
+  "types.nav.private": "3. Privados vs. Federales",
+  "types.nav.bottomline": "4. En conclusión",
+
+  "types.part1": "Primera parte",
+  "types.sub.h2": "Préstamos Federales Directos Subsidiados y No Subsidiados",
+  "types.sub.card1.badge": "Basado en necesidad · Solo pregrado",
+  "types.sub.card1.title": "Préstamos Federales Subsidiados",
+  "types.sub.card1.p1":
+    "Los préstamos federales subsidiados son únicamente para estudiantes de pregrado con necesidad económica demostrada. Con estos préstamos, el gobierno federal paga los intereses acumulados mientras estás matriculado en la institución.",
+  "types.sub.card1.p2":
+    "Tienen límites y estrictos requisitos de elegibilidad sobre los que puedes obtener más información a través de Experian.",
+  "types.sub.card1.link": "Más información sobre préstamos subsidiados en Experian →",
+
+  "types.sub.card2.badge": "Disponible para todos los estudiantes",
+  "types.sub.card2.title": "Préstamos Federales No Subsidiados",
+  "types.sub.card2.p1":
+    "Los préstamos no subsidiados están disponibles para todos los estudiantes pero también tienen límites de endeudamiento y el interés es fijo y se acumula de inmediato.",
+  "types.sub.card2.p2":
+    "También existen préstamos especiales para estudiantes de posgrado y padres.",
+
+  "types.part2": "Segunda parte",
+  "types.plus.h2": "Grad PLUS vs. Parent PLUS, en resumen",
+  "types.plus.lead": "Estos dos préstamos se confunden constantemente. Esta es la diferencia real.",
+
+  "types.plus.r1.title": "Quién solicita el préstamo",
+  "types.plus.r1.desc":
+    "Grad PLUS era para estudiantes de posgrado y profesionales que pedían prestado para su propia educación. Parent PLUS es para padres que piden prestado en nombre de un dependiente de pregrado.",
+
+  "types.plus.r2.title": "Estado actual",
+  "types.plus.r2.desc":
+    "Grad PLUS fue eliminado para nuevos prestatarios. Parent PLUS sigue disponible, ahora limitado a $20,500 al año y $65,000 en total por estudiante.",
+
+  "types.plus.r3.title": "Quién debe el dinero",
+  "types.plus.r3.desc":
+    "La persona que firma es la persona que lo debe. El saldo de Parent PLUS de un padre nunca se transfiere al estudiante, ni siquiera después de graduarse.",
+
+  "types.plus.r4.title": "Elegibilidad",
+  "types.plus.r4.desc":
+    "Ambos requieren verificación de crédito. Ninguno se basa en la necesidad financiera.",
+
+  "types.part3": "Tercera parte",
+  "types.private.h2": "Préstamos Estudiantiles Privados vs. Federales",
+  "types.private.p1":
+    "Un prestamista privado podría ofrecer una tasa fija de alrededor del 4% a un prestatario con buen crédito. En un préstamo de $10,000 a 10 años, la diferencia entre una tasa federal del 6.52% y una tasa privada del 4.25% suma aproximadamente $1,345 en intereses adicionales. Para los prestatarios de posgrado, la brecha es aún más amplia, ya que las tasas federales de posgrado comienzan casi dos puntos más altas que las de pregrado.",
+
+  "types.part4": "Conclusión",
+  "types.bottomline.h2": "En conclusión",
+  "types.bottomline.quote":
+    "Los préstamos federales son más fáciles de calificar. Los préstamos privados pueden ser más económicos si tu crédito lo respalda. Ten claro en qué situación te encuentras antes de firmar cualquier documento.",
+
+  "types.experian.title": "¿Buscas más detalles?",
+  "types.experian.text":
+    "Experian ofrece análisis detallados sobre los programas de préstamos estudiantiles, requisitos de crédito y opciones de pago.",
+  "types.experian.link": "Leer el análisis a fondo en Experian →",
+
+  "types.cta.h2": "¿Listo para explorar tus opciones?",
+  "types.cta.p":
+    "Usa nuestra calculadora paso a paso para conocer tus límites de préstamo exactos y explorar tus opciones bajo las reglas de 2026.",
+  "types.cta.btn": "Traza tu camino",
+
+  "types.sources.label": "Fuentes:",
+  "types.sources.text":
+    "Experian; U.S. Department of Education, Federal Student Aid; The Institute for College Access & Success (TICAS)",
 
   /* ---------- refinancing loans page (Spanish) ---------- */
   "refi.meta.title": "Refinanciación de Préstamos Estudiantiles, Explicada — Grad Loan Navigator",

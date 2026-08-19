@@ -132,19 +132,83 @@ function BlogPage() {
               </div>
             </Link>
 
-            {/* Upcoming Post Preview 1 */}
-            <div className="path-card card-a" style={{ opacity: 0.88 }}>
+            {/* Live Student Loan Interest Article */}
+            <Link
+              className="path-card card-a"
+              to="/blog/student-loan-interest-by-the-numbers"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
               <span className="path-subheader">{t("blog.card2.tag")}</span>
               <h2>{t("blog.card2.title")}</h2>
               <p className="desc">{t("blog.card2.excerpt")}</p>
-            </div>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                  }}
+                >
+                  {t("blog.card2.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card2.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
 
-            {/* Upcoming Post Preview 2 */}
-            <div className="path-card card-a" style={{ opacity: 0.88 }}>
+            {/* Live Student Loan Types Article */}
+            <Link
+              className="path-card card-a"
+              to="/blog/student-loan-types"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
               <span className="path-subheader">{t("blog.card3.tag")}</span>
               <h2>{t("blog.card3.title")}</h2>
               <p className="desc">{t("blog.card3.excerpt")}</p>
-            </div>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                  }}
+                >
+                  {t("blog.card3.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card3.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
           </div>
         </section>
       </main>
