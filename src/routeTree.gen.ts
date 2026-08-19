@@ -22,6 +22,7 @@ import { Route as McpRouteImport } from './routes/mcp'
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
+import { Route as BlogRefinancingStudentLoansRouteImport } from './routes/blog_.refinancing-student-loans'
 import { Route as FaqSlugRouteImport } from './routes/faq/$slug'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 import { Route as ApiPublicHooksRegenerateCategorySummaryRouteImport } from './routes/api/public/hooks/regenerate-category-summary'
@@ -93,6 +94,12 @@ const ApiChatRoute = ApiChatRouteImport.update({
   path: '/api/chat',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogRefinancingStudentLoansRoute =
+  BlogRefinancingStudentLoansRouteImport.update({
+    id: '/blog_/refinancing-student-loans',
+    path: '/blog/refinancing-student-loans',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const FaqSlugRoute = FaqSlugRouteImport.update({
   id: '/faq/$slug',
   path: '/faq/$slug',
@@ -125,6 +132,7 @@ export interface FileRoutesByFullPath {
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/api/chat': typeof ApiChatRoute
+  '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/faq/$slug': typeof FaqSlugRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/api/public/hooks/regenerate-category-summary': typeof ApiPublicHooksRegenerateCategorySummaryRoute
@@ -143,6 +151,7 @@ export interface FileRoutesByTo {
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/api/chat': typeof ApiChatRoute
+  '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/faq/$slug': typeof FaqSlugRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/api/public/hooks/regenerate-category-summary': typeof ApiPublicHooksRegenerateCategorySummaryRoute
@@ -162,6 +171,7 @@ export interface FileRoutesById {
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/api/chat': typeof ApiChatRoute
+  '/blog_/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/faq/$slug': typeof FaqSlugRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/api/public/hooks/regenerate-category-summary': typeof ApiPublicHooksRegenerateCategorySummaryRoute
@@ -182,6 +192,7 @@ export interface FileRouteTypes {
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/api/chat'
+    | '/blog/refinancing-student-loans'
     | '/faq/$slug'
     | '/.mcp/invoke-tool/$tool'
     | '/api/public/hooks/regenerate-category-summary'
@@ -200,6 +211,7 @@ export interface FileRouteTypes {
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/api/chat'
+    | '/blog/refinancing-student-loans'
     | '/faq/$slug'
     | '/.mcp/invoke-tool/$tool'
     | '/api/public/hooks/regenerate-category-summary'
@@ -218,6 +230,7 @@ export interface FileRouteTypes {
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/api/chat'
+    | '/blog_/refinancing-student-loans'
     | '/faq/$slug'
     | '/.mcp/invoke-tool/$tool'
     | '/api/public/hooks/regenerate-category-summary'
@@ -237,6 +250,7 @@ export interface RootRouteChildren {
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   ApiChatRoute: typeof ApiChatRoute
+  BlogRefinancingStudentLoansRoute: typeof BlogRefinancingStudentLoansRoute
   FaqSlugRoute: typeof FaqSlugRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
   ApiPublicHooksRegenerateCategorySummaryRoute: typeof ApiPublicHooksRegenerateCategorySummaryRoute
@@ -335,6 +349,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiChatRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog_/refinancing-student-loans': {
+      id: '/blog_/refinancing-student-loans'
+      path: '/blog/refinancing-student-loans'
+      fullPath: '/blog/refinancing-student-loans'
+      preLoaderRoute: typeof BlogRefinancingStudentLoansRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/faq/$slug': {
       id: '/faq/$slug'
       path: '/faq/$slug'
@@ -374,6 +395,7 @@ const rootRouteChildren: RootRouteChildren = {
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
   ApiChatRoute: ApiChatRoute,
+  BlogRefinancingStudentLoansRoute: BlogRefinancingStudentLoansRoute,
   FaqSlugRoute: FaqSlugRoute,
   Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
   ApiPublicHooksRegenerateCategorySummaryRoute:

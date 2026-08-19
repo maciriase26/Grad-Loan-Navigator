@@ -29,8 +29,38 @@ export const en = {
   "er.card2.cta": "Browse the blog",
   "depth.h1": "In-Depth Analysis",
   "depth.sub": "Long-form explainers are on the way. Check back soon.",
-  "blog.h1": "Blog",
-  "blog.sub": "Student-written posts are coming soon. Check back shortly.",
+  "blog.eyebrow": "Student Perspectives",
+  "blog.h1": "Grad Navigator Blog",
+  "blog.sub":
+    "Short, punchy takes on graduate borrowing, refinancing, and repayment — written in plain language by students for students.",
+  "blog.card1.tag": "Refinancing · 5 min read",
+  "blog.card1.title": "Refinancing Student Loans, Explained",
+  "blog.card1.excerpt":
+    "Refinancing can cut your interest rate or lower your monthly payment, but can also cost you protections you can't get back once they're gone. Here's the actual tradeoff.",
+  "blog.card1.author": "Student Editorial Board · Updated 2026",
+  "blog.card1.cta": "Read article",
+  "blog.card2.tag": "Borrowing 101 · Coming Soon",
+  "blog.card2.title": "Direct Unsubsidized Loans: How Interest Accrues While in School",
+  "blog.card2.excerpt":
+    "A practical breakdown of capitalization, daily interest formulas, and simple steps to prevent balance growth during graduate school.",
+  "blog.card3.tag": "Perspective · Coming Soon",
+  "blog.card3.title": "Federal vs. Private Loans: What I Wish I Knew Before Starting My Master's",
+  "blog.card3.excerpt":
+    "Real-world reflections from a first-generation graduate student navigating the post-Grad PLUS borrowing landscape.",
+
+  "manage.eyebrow": "Manage",
+  "manage.h1": "Existing loans & refinance",
+  "manage.sub": "Explore your options and plan your next steps.",
+  "manage.card1.sub": "Coming Soon",
+  "manage.card1.title": "Existing Loans",
+  "manage.card1.desc":
+    "Track your current loans, review terms, and understand your repayment options.",
+  "manage.card1.cta": "Learn more",
+  "manage.card2.sub": "Student Explainer",
+  "manage.card2.title": "Refinance",
+  "manage.card2.desc":
+    "Explore refinancing options to potentially lower your rates and simplify payments.",
+  "manage.card2.cta": "Learn more",
   "footer.learn.resources": "Educational Resources",
   "learn.card.title": "Educational Resources",
   "learn.card.body":
@@ -239,8 +269,7 @@ export const en = {
   "ed.choose.li1":
     "Whether their rates and terms are genuinely competitive for the borrower situation the page is about",
   "ed.choose.li2": "Credit-flexibility, especially for borrowers who may need a cosigner",
-  "ed.choose.li3":
-    "How clearly the lender discloses its own rates, fees, and eligibility criteria",
+  "ed.choose.li3": "How clearly the lender discloses its own rates, fees, and eligibility criteria",
   "ed.nochange.h3": "What doesn't change based on our relationship with a lender",
   "ed.nochange.p":
     "Your interest rate, your approval odds, and your loan terms are set entirely by the lender based on your application. We have no ability to influence any of that, and being a partner of ours never results in a better or worse rate for you.",
@@ -275,8 +304,127 @@ export const en = {
   "chat.section.understand": "Understand",
   "chat.section.learn": "Loans 101",
   "chat.section.compare": "Compare",
-  "chat.section.apply": "Apply",
-  "chat.section.quiz": "the cap quiz",
+  /* ---------- refinancing loans page ---------- */
+  "refi.meta.title": "Refinancing Student Loans, Explained — Grad Loan Navigator",
+  "refi.meta.desc":
+    "Refinancing can cut your interest rate or lower monthly payments, but permanently costs federal protections. Understand the tradeoffs, steps, rates, and alternatives.",
+  "refi.eyebrow": "Manage Loans · Explainer",
+  "refi.h1": "Refinancing Student Loans, Explained",
+  "refi.sub":
+    "Refinancing can cut your interest rate or lower your monthly payment but can also cost you protections you can't get back once they're gone. Here's the actual tradeoff.",
+  "refi.updated": "Updated for 2026 Guidelines",
+  "refi.why.title": "Why it matters",
+  "refi.why.p":
+    "Refinancing a federal loan into a private one is permanent. There's no undo button once the new lender pays off your old loans.",
+
+  "refi.nav.how": "1. How it works",
+  "refi.nav.catch": "2. The federal catch",
+  "refi.nav.who": "3. Who it's for",
+  "refi.nav.consolidation": "4. Consolidation alternative",
+  "refi.nav.bottomline": "5. The bottom line",
+
+  "refi.part1": "Part One",
+  "refi.how.h2": "How it actually works",
+  "refi.how.lead":
+    "Refinancing replaces one or more existing student loans with a brand-new private loan featuring new terms, a new interest rate, and a new lender. Here is the step-by-step process:",
+
+  "refi.step1.title": "Check credit, income & current rates",
+  "refi.step1.desc":
+    "Check your credit, income, and current rates on your federal loans first. This determines whether refinancing would make sense as an option to consolidate debt.",
+
+  "refi.step2.title": "Compare private lenders & prequalify",
+  "refi.step2.desc":
+    "Compare private lenders and prequalify. This step doesn't affect your credit score but can give you an idea of how much you might save.",
+
+  "refi.step3.title": "Decide your savings strategy",
+  "refi.step3.desc":
+    "Decide if you want to refinance to lower your monthly payment OR to save on the total cost of the loan over its lifetime.",
+
+  "refi.step4.title": "Pick a rate type (Fixed vs. Variable)",
+  "refi.step4.desc":
+    "Pick a rate type (fixed or variable). Fixed rates give you a known payment over the entire term of the loan. A variable rate could be a good choice if you want a lower starting interest rate and plan to pay off the balance quickly.",
+
+  "refi.step5.title": "Pick a repayment term for your budget",
+  "refi.step5.desc":
+    "Pick a repayment term that best meets your budget. Longer terms lower your monthly payment but can cost you a lot more in the long run.",
+
+  "refi.step6.title": "Apply & let the lender pay off old loans",
+  "refi.step6.desc":
+    "Apply. If approved, the new lender pays off your existing loans directly and you start repaying them instead.",
+
+  "refi.numbers.eyebrow": "By the numbers",
+  "refi.numbers.h3": "Private refinance rates run ~4% to 14%",
+  "refi.numbers.desc":
+    "Private lender refinance rates currently run roughly 4% to 14%, depending on your credit, income, and loan term. Advertised rates below that range usually come from smaller lenders with narrow eligibility and often only super prime people can qualify.",
+
+  "refi.part2": "Part Two",
+  "refi.catch.h2": "The catch, if you refinance federal loans",
+  "refi.catch.lead":
+    "The government doesn't refinance federal loans directly. The only way to get a lower rate is through a private lender, and that converts your debt into a private loan. Once that happens, you permanently lose:",
+
+  "refi.lost.idr.title": "Income-driven repayment plans",
+  "refi.lost.idr.desc":
+    "Federal income-driven plans (like SAVE, IBR, and PAYE) that cap your monthly payment based on income and family size.",
+
+  "refi.lost.pslf.title": "Public Service Loan Forgiveness (PSLF)",
+  "refi.lost.pslf.desc":
+    "Eligibility for complete tax-free forgiveness after 10 years of public service and non-profit employment.",
+
+  "refi.lost.defer.title": "Deferment & forbearance options",
+  "refi.lost.defer.desc":
+    "Statutory relief programs to pause payments during economic hardship, unemployment, or health emergencies.",
+
+  "refi.lost.discharge.title": "Certain federal discharge protections",
+  "refi.lost.discharge.desc":
+    "Discharge safeguards in events of school closure, total and permanent disability, or borrower defense claims.",
+
+  "refi.who.title": "Who this actually makes sense for",
+  "refi.who.desc":
+    "Borrowers with stable income, strong credit, and no real need for federal safety nets.",
+  "refi.who.check": "Make sure you don't qualify for any of those and you can check here:",
+  "refi.who.linkText": "Check federal repayment options on StudentAid.gov →",
+
+  "refi.part3": "Part Three",
+  "refi.consolidation.h2": "The alternative: consolidation, not refinancing",
+  "refi.consolidation.lead":
+    "A Direct Consolidation Loan combines multiple federal loans into one monthly payment and keeps every federal protection intact.",
+  "refi.consolidation.tradeoff":
+    "The tradeoff runs the other direction here: it doesn't lower your rate. Your new fixed rate is just a weighted average of what you already had.",
+  "refi.consolidation.action":
+    "To consolidate your federal student loans into a single Direct Consolidation Loan, visit the official Federal Student Aid website to submit a free application.",
+  "refi.consolidation.linkText": "Visit Federal Student Aid for Direct Consolidation →",
+
+  "refi.compare.title": "Refinancing vs. Federal Consolidation",
+  "refi.compare.feature": "Feature",
+  "refi.compare.refi": "Private Refinancing",
+  "refi.compare.consol": "Direct Consolidation",
+  "refi.compare.r1.feat": "Loan Structure",
+  "refi.compare.r1.refi": "Converts to Private Loan",
+  "refi.compare.r1.consol": "Remains Federal Loan",
+  "refi.compare.r2.feat": "Interest Rate",
+  "refi.compare.r2.refi": "Can lower rate (based on credit)",
+  "refi.compare.r2.consol": "Weighted average (no reduction)",
+  "refi.compare.r3.feat": "Federal Protections",
+  "refi.compare.r3.refi": "Permanently forfeited",
+  "refi.compare.r3.consol": "100% kept intact",
+  "refi.compare.r4.feat": "IDR & PSLF Access",
+  "refi.compare.r4.refi": "Ineligible",
+  "refi.compare.r4.consol": "Fully eligible",
+  "refi.compare.r5.feat": "Application Cost",
+  "refi.compare.r5.refi": "$0 fee with top lenders",
+  "refi.compare.r5.consol": "Free on StudentAid.gov",
+
+  "refi.part4": "Conclusion",
+  "refi.bottomline.h2": "The bottom line",
+  "refi.bottomline.quote":
+    "A lower rate now, or your federal safety net later. Once you refinance, you don't get to choose both.",
+  "refi.cta.h2": "Ready to plan your borrowing journey?",
+  "refi.cta.p":
+    "Use our step-by-step calculator to find your borrowing caps and explore tailored loan options.",
+  "refi.cta.btn": "Chart Your Path",
+  "refi.sources.label": "Sources:",
+  "refi.sources.text":
+    "U.S. Department of Education, Federal Student Aid; U.S. News & World Report",
 } as const;
 
 export type TranslationKey = keyof typeof en;
@@ -311,8 +459,40 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "er.card2.cta": "Ver el blog",
   "depth.h1": "Análisis a fondo",
   "depth.sub": "Las explicaciones extensas están en camino. Vuelve pronto.",
-  "blog.h1": "Blog",
-  "blog.sub": "Las publicaciones escritas por estudiantes llegarán pronto. Vuelve en breve.",
+  "blog.eyebrow": "Perspectivas de Estudiantes",
+  "blog.h1": "Blog de Grad Navigator",
+  "blog.sub":
+    "Artículos breves y directos sobre financiamiento de posgrado, refinanciación y pagos, escritos por estudiantes para estudiantes.",
+  "blog.card1.tag": "Refinanciación · 5 min de lectura",
+  "blog.card1.title": "Refinanciación de Préstamos Estudiantiles, Explicada",
+  "blog.card1.excerpt":
+    "La refinanciación puede reducir tu tasa de interés o bajar tu pago mensual, pero también puede costarte protecciones que no podrás recuperar una vez que se pierdan. Este es el verdadero dilema.",
+  "blog.card1.author": "Equipo Editorial Estudiantil · Actualizado 2026",
+  "blog.card1.cta": "Leer artículo",
+  "blog.card2.tag": "Conceptos Básicos · Próximamente",
+  "blog.card2.title":
+    "Préstamos Directos no Subsidiados: Cómo se acumulan los intereses mientras estudias",
+  "blog.card2.excerpt":
+    "Un desglose práctico sobre capitalización, fórmulas de interés diario y pasos sencillos para evitar el crecimiento del saldo durante el posgrado.",
+  "blog.card3.tag": "Perspectiva · Próximamente",
+  "blog.card3.title":
+    "Préstamos Federales vs. Privados: Lo que desearía haber sabido antes de empezar mi maestría",
+  "blog.card3.excerpt":
+    "Reflexiones reales de un estudiante de posgrado de primera generación sobre el nuevo panorama tras el fin de Grad PLUS.",
+
+  "manage.eyebrow": "Gestionar",
+  "manage.h1": "Préstamos existentes y refinanciación",
+  "manage.sub": "Explora tus opciones y planifica tus próximos pasos.",
+  "manage.card1.sub": "Próximamente",
+  "manage.card1.title": "Préstamos Existentes",
+  "manage.card1.desc":
+    "Haz un seguimiento de tus préstamos actuales, revisa las condiciones y comprende tus opciones de pago.",
+  "manage.card1.cta": "Más información",
+  "manage.card2.sub": "Guía Estudiantil",
+  "manage.card2.title": "Refinanciación",
+  "manage.card2.desc":
+    "Explora opciones de refinanciación para reducir potencialmente tus tasas y simplificar los pagos.",
+  "manage.card2.cta": "Leer guía",
   "footer.learn.resources": "Recursos educativos",
   "learn.card.title": "Recursos educativos",
   "learn.card.body":
@@ -556,6 +736,128 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "chat.section.compare": "Comparar",
   "chat.section.apply": "Solicitar",
   "chat.section.quiz": "el test de límites",
+
+  /* ---------- refinancing loans page (Spanish) ---------- */
+  "refi.meta.title": "Refinanciación de Préstamos Estudiantiles, Explicada — Grad Loan Navigator",
+  "refi.meta.desc":
+    "La refinanciación puede reducir tu tasa de interés o bajar tu pago mensual, pero cuesta permanentemente las protecciones federales. Comprende los pros, contras, pasos y alternativas.",
+  "refi.eyebrow": "Gestionar Préstamos · Guía",
+  "refi.h1": "Refinanciación de Préstamos Estudiantiles, Explicada",
+  "refi.sub":
+    "La refinanciación puede reducir tu tasa de interés o bajar tu pago mensual, pero también puede costarte protecciones que no podrás recuperar una vez que se pierdan. Este es el verdadero dilema.",
+  "refi.updated": "Actualizado según las normas de 2026",
+  "refi.why.title": "Por qué es importante",
+  "refi.why.p":
+    "Refinanciar un préstamo federal a uno privado es permanente. No hay botón de deshacer una vez que el nuevo prestamista liquida tus préstamos anteriores.",
+
+  "refi.nav.how": "1. Cómo funciona",
+  "refi.nav.catch": "2. La trampa federal",
+  "refi.nav.who": "3. Para quién es",
+  "refi.nav.consolidation": "4. Alternativa de consolidación",
+  "refi.nav.bottomline": "5. En conclusión",
+
+  "refi.part1": "Primera parte",
+  "refi.how.h2": "Cómo funciona realmente",
+  "refi.how.lead":
+    "La refinanciación reemplaza uno o más préstamos estudiantiles existentes con un nuevo préstamo privado con nuevas condiciones, una nueva tasa de interés y un nuevo prestamista. Este es el proceso paso a paso:",
+
+  "refi.step1.title": "Revisa tu crédito, ingresos y tasas actuales",
+  "refi.step1.desc":
+    "Revisa primero tu crédito, ingresos y las tasas actuales de tus préstamos federales. Esto determina si refinanciar tendría sentido como una opción para consolidar deuda.",
+
+  "refi.step2.title": "Compara prestamistas privados y precalifica",
+  "refi.step2.desc":
+    "Compara prestamistas privados y solicita una precalificación. Este paso no afecta tu puntaje de crédito pero puede darte una idea de cuánto podrías ahorrar.",
+
+  "refi.step3.title": "Decide tu estrategia de ahorro",
+  "refi.step3.desc":
+    "Decide si deseas refinanciar para reducir tu pago mensual O para ahorrar en el costo total del préstamo a lo largo del tiempo.",
+
+  "refi.step4.title": "Elige un tipo de tasa (fija o variable)",
+  "refi.step4.desc":
+    "Elige un tipo de tasa (fija o variable). Las tasas fijas te dan un pago conocido durante todo el plazo del préstamo. Una tasa variable puede ser una buena opción si buscas una tasa inicial más baja y planeas liquidar el saldo rápidamente.",
+
+  "refi.step5.title": "Elige un plazo de pago según tu presupuesto",
+  "refi.step5.desc":
+    "Elige un plazo de pago que mejor se ajuste a tu presupuesto. Los plazos más largos reducen tu pago mensual pero pueden costarte mucho más a largo plazo.",
+
+  "refi.step6.title": "Solicita y deja que liquiden tus préstamos",
+  "refi.step6.desc":
+    "Envía tu solicitud. Si te aprueban, el nuevo prestamista liquida tus préstamos existentes directamente y comienzas a pagarle a él.",
+
+  "refi.numbers.eyebrow": "En cifras",
+  "refi.numbers.h3": "Las tasas de refinanciación privada rondan del 4% al 14%",
+  "refi.numbers.desc":
+    "Las tasas de refinanciación de prestamistas privados actualmente oscilan entre el 4% y el 14%, dependiendo de tu crédito, ingresos y plazo del préstamo. Las tasas anunciadas por debajo de ese rango suelen provenir de prestamistas más pequeños con criterios muy estrictos donde solo personas con crédito excelente califican.",
+
+  "refi.part2": "Segunda parte",
+  "refi.catch.h2": "La trampa, si refinancias préstamos federales",
+  "refi.catch.lead":
+    "El gobierno no refinancia préstamos federales directamente. La única forma de obtener una tasa más baja es mediante un prestamista privado, y eso convierte tu deuda en un préstamo privado. Una vez que eso sucede, pierdes de forma permanente:",
+
+  "refi.lost.idr.title": "Planes de pago basados en los ingresos",
+  "refi.lost.idr.desc":
+    "Acceso a planes federales (como SAVE, IBR y PAYE) que limitan tu pago mensual según tus ingresos y el tamaño de tu familia.",
+
+  "refi.lost.pslf.title": "Condonación de Préstamos por Servicio Público (PSLF)",
+  "refi.lost.pslf.desc":
+    "Elegibilidad para la condonación total libre de impuestos después de 10 años de servicio público o empleo sin fines de lucro.",
+
+  "refi.lost.defer.title": "Opciones de aplazamiento y suspensión temporal",
+  "refi.lost.defer.desc":
+    "Programas de alivio legales para pausar pagos durante dificultades económicas, desempleo o emergencias de salud.",
+
+  "refi.lost.discharge.title": "Ciertas protecciones de condonación federal",
+  "refi.lost.discharge.desc":
+    "Protecciones de condonación en casos de cierre de la institución educativa, discapacidad total o permanente, o defensa del prestatario.",
+
+  "refi.who.title": "Para quién tiene sentido realmente",
+  "refi.who.desc":
+    "Personas con ingresos estables, crédito sólido y sin necesidad real de redes de seguridad federales.",
+  "refi.who.check": "Asegúrate de no calificar para ninguno de esos programas antes de decidirte:",
+  "refi.who.linkText": "Consulta las opciones de pago federales en StudentAid.gov →",
+
+  "refi.part3": "Tercera parte",
+  "refi.consolidation.h2": "La alternativa: consolidación, no refinanciación",
+  "refi.consolidation.lead":
+    "Un Préstamo de Consolidación Directa combina múltiples préstamos federales en un solo pago mensual y mantiene intactas todas las protecciones federales.",
+  "refi.consolidation.tradeoff":
+    "El compromiso aquí va en la otra dirección: no reduce tu tasa. Tu nueva tasa fija es simplemente un promedio ponderado de lo que ya tenías.",
+  "refi.consolidation.action":
+    "Para consolidar tus préstamos federales en un solo Préstamo de Consolidación Directa, visita el sitio oficial de Federal Student Aid para presentar una solicitud gratuita.",
+  "refi.consolidation.linkText": "Visitar Federal Student Aid para Consolidación Directa →",
+
+  "refi.compare.title": "Refinanciación vs. Consolidación Federal",
+  "refi.compare.feature": "Característica",
+  "refi.compare.refi": "Refinanciación Privada",
+  "refi.compare.consol": "Consolidación Directa",
+  "refi.compare.r1.feat": "Estructura del préstamo",
+  "refi.compare.r1.refi": "Se convierte en privado",
+  "refi.compare.r1.consol": "Permanece 100% federal",
+  "refi.compare.r2.feat": "Tasa de interés",
+  "refi.compare.r2.refi": "Puede bajar (según crédito)",
+  "refi.compare.r2.consol": "Promedio ponderado (sin rebaja)",
+  "refi.compare.r3.feat": "Protecciones federales",
+  "refi.compare.r3.refi": "Se pierden permanentemente",
+  "refi.compare.r3.consol": "Se conservan al 100%",
+  "refi.compare.r4.feat": "Acceso a IDR y PSLF",
+  "refi.compare.r4.refi": "No elegible",
+  "refi.compare.r4.consol": "Totalmente elegible",
+  "refi.compare.r5.feat": "Costo de solicitud",
+  "refi.compare.r5.refi": "$0 con prestamistas líderes",
+  "refi.compare.r5.consol": "Gratis en StudentAid.gov",
+
+  "refi.part4": "Conclusión",
+  "refi.bottomline.h2": "En conclusión",
+  "refi.bottomline.quote":
+    "Una tasa más baja ahora, o tu red de seguridad federal después. Una vez que refinancias, no puedes elegir ambas cosas.",
+  "refi.cta.h2": "¿Listo para planificar tu financiamiento?",
+  "refi.cta.p":
+    "Usa nuestra calculadora paso a paso para encontrar tus límites de préstamo y explorar opciones personalizadas.",
+  "refi.cta.btn": "Traza tu camino",
+  "refi.sources.label": "Fuentes:",
+  "refi.sources.text":
+    "U.S. Department of Education, Federal Student Aid; U.S. News & World Report",
 };
 
 export const LANGUAGES = [
