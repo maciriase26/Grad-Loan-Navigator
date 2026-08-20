@@ -75,6 +75,14 @@ function ManageLoansPage() {
               </span>
             </Link>
           </div>
+
+          {/* Ready to Compare Refinance Lenders Banner */}
+          <div className="manage-refi-banner">
+            <h3>{t("manage.refiBanner.title")}</h3>
+            <Link to="/apply" className="manage-refi-btn">
+              {t("manage.refiBanner.btn")}
+            </Link>
+          </div>
         </section>
       </main>
 

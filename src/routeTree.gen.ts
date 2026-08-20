@@ -16,12 +16,15 @@ import { Route as ChartYourPathRouteImport } from './routes/chart-your-path'
 import { Route as EditorialStandardsRouteImport } from './routes/editorial-standards'
 import { Route as EducationalResourcesRouteImport } from './routes/educational-resources'
 import { Route as InDepthAnalysisRouteImport } from './routes/in-depth-analysis'
+import { Route as LendersRouteImport } from './routes/lenders'
 import { Route as Loans101RouteImport } from './routes/loans-101'
 import { Route as ManageLoansRouteImport } from './routes/manage-loans'
 import { Route as McpRouteImport } from './routes/mcp'
+import { Route as PayForSchoolRouteImport } from './routes/pay-for-school'
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
+import { Route as ApiContactRouteImport } from './routes/api/contact'
 import { Route as BlogRefinancingStudentLoansRouteImport } from './routes/blog_.refinancing-student-loans'
 import { Route as BlogStudentLoanInterestByTheNumbersRouteImport } from './routes/blog_.student-loan-interest-by-the-numbers'
 import { Route as BlogStudentLoanTypesRouteImport } from './routes/blog_.student-loan-types'
@@ -64,6 +67,11 @@ const InDepthAnalysisRoute = InDepthAnalysisRouteImport.update({
   path: '/in-depth-analysis',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LendersRoute = LendersRouteImport.update({
+  id: '/lenders',
+  path: '/lenders',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const Loans101Route = Loans101RouteImport.update({
   id: '/loans-101',
   path: '/loans-101',
@@ -77,6 +85,11 @@ const ManageLoansRoute = ManageLoansRouteImport.update({
 const McpRoute = McpRouteImport.update({
   id: '/mcp',
   path: '/mcp',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PayForSchoolRoute = PayForSchoolRouteImport.update({
+  id: '/pay-for-school',
+  path: '/pay-for-school',
   getParentRoute: () => rootRouteImport,
 } as any)
 const Char91DotmcpChar93ListToolsRoute =
@@ -94,6 +107,11 @@ const Char91DotwellKnownChar93OauthProtectedResourceRoute =
 const ApiChatRoute = ApiChatRouteImport.update({
   id: '/api/chat',
   path: '/api/chat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiContactRoute = ApiContactRouteImport.update({
+  id: '/api/contact',
+  path: '/api/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogRefinancingStudentLoansRoute =
@@ -139,12 +157,15 @@ export interface FileRoutesByFullPath {
   '/editorial-standards': typeof EditorialStandardsRoute
   '/educational-resources': typeof EducationalResourcesRoute
   '/in-depth-analysis': typeof InDepthAnalysisRoute
+  '/lenders': typeof LendersRoute
   '/loans-101': typeof Loans101Route
   '/manage-loans': typeof ManageLoansRoute
   '/mcp': typeof McpRoute
+  '/pay-for-school': typeof PayForSchoolRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/api/chat': typeof ApiChatRoute
+  '/api/contact': typeof ApiContactRoute
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
   '/blog/student-loan-types': typeof BlogStudentLoanTypesRoute
@@ -160,12 +181,15 @@ export interface FileRoutesByTo {
   '/editorial-standards': typeof EditorialStandardsRoute
   '/educational-resources': typeof EducationalResourcesRoute
   '/in-depth-analysis': typeof InDepthAnalysisRoute
+  '/lenders': typeof LendersRoute
   '/loans-101': typeof Loans101Route
   '/manage-loans': typeof ManageLoansRoute
   '/mcp': typeof McpRoute
+  '/pay-for-school': typeof PayForSchoolRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/api/chat': typeof ApiChatRoute
+  '/api/contact': typeof ApiContactRoute
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
   '/blog/student-loan-types': typeof BlogStudentLoanTypesRoute
@@ -182,12 +206,15 @@ export interface FileRoutesById {
   '/editorial-standards': typeof EditorialStandardsRoute
   '/educational-resources': typeof EducationalResourcesRoute
   '/in-depth-analysis': typeof InDepthAnalysisRoute
+  '/lenders': typeof LendersRoute
   '/loans-101': typeof Loans101Route
   '/manage-loans': typeof ManageLoansRoute
   '/mcp': typeof McpRoute
+  '/pay-for-school': typeof PayForSchoolRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/api/chat': typeof ApiChatRoute
+  '/api/contact': typeof ApiContactRoute
   '/blog_/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog_/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
   '/blog_/student-loan-types': typeof BlogStudentLoanTypesRoute
@@ -205,12 +232,15 @@ export interface FileRouteTypes {
     | '/editorial-standards'
     | '/educational-resources'
     | '/in-depth-analysis'
+    | '/lenders'
     | '/loans-101'
     | '/manage-loans'
     | '/mcp'
+    | '/pay-for-school'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/api/chat'
+    | '/api/contact'
     | '/blog/refinancing-student-loans'
     | '/blog/student-loan-interest-by-the-numbers'
     | '/blog/student-loan-types'
@@ -226,12 +256,15 @@ export interface FileRouteTypes {
     | '/editorial-standards'
     | '/educational-resources'
     | '/in-depth-analysis'
+    | '/lenders'
     | '/loans-101'
     | '/manage-loans'
     | '/mcp'
+    | '/pay-for-school'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/api/chat'
+    | '/api/contact'
     | '/blog/refinancing-student-loans'
     | '/blog/student-loan-interest-by-the-numbers'
     | '/blog/student-loan-types'
@@ -247,12 +280,15 @@ export interface FileRouteTypes {
     | '/editorial-standards'
     | '/educational-resources'
     | '/in-depth-analysis'
+    | '/lenders'
     | '/loans-101'
     | '/manage-loans'
     | '/mcp'
+    | '/pay-for-school'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/api/chat'
+    | '/api/contact'
     | '/blog_/refinancing-student-loans'
     | '/blog_/student-loan-interest-by-the-numbers'
     | '/blog_/student-loan-types'
@@ -269,12 +305,15 @@ export interface RootRouteChildren {
   EditorialStandardsRoute: typeof EditorialStandardsRoute
   EducationalResourcesRoute: typeof EducationalResourcesRoute
   InDepthAnalysisRoute: typeof InDepthAnalysisRoute
+  LendersRoute: typeof LendersRoute
   Loans101Route: typeof Loans101Route
   ManageLoansRoute: typeof ManageLoansRoute
   McpRoute: typeof McpRoute
+  PayForSchoolRoute: typeof PayForSchoolRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   ApiChatRoute: typeof ApiChatRoute
+  ApiContactRoute: typeof ApiContactRoute
   BlogRefinancingStudentLoansRoute: typeof BlogRefinancingStudentLoansRoute
   BlogStudentLoanInterestByTheNumbersRoute: typeof BlogStudentLoanInterestByTheNumbersRoute
   BlogStudentLoanTypesRoute: typeof BlogStudentLoanTypesRoute
@@ -334,6 +373,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof InDepthAnalysisRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/lenders': {
+      id: '/lenders'
+      path: '/lenders'
+      fullPath: '/lenders'
+      preLoaderRoute: typeof LendersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/loans-101': {
       id: '/loans-101'
       path: '/loans-101'
@@ -355,6 +401,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof McpRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/pay-for-school': {
+      id: '/pay-for-school'
+      path: '/pay-for-school'
+      fullPath: '/pay-for-school'
+      preLoaderRoute: typeof PayForSchoolRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/.mcp/list-tools': {
       id: '/.mcp/list-tools'
       path: '/.mcp/list-tools'
@@ -374,6 +427,13 @@ declare module '@tanstack/react-router' {
       path: '/api/chat'
       fullPath: '/api/chat'
       preLoaderRoute: typeof ApiChatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/contact': {
+      id: '/api/contact'
+      path: '/api/contact'
+      fullPath: '/api/contact'
+      preLoaderRoute: typeof ApiContactRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog_/refinancing-student-loans': {
@@ -429,13 +489,16 @@ const rootRouteChildren: RootRouteChildren = {
   EditorialStandardsRoute: EditorialStandardsRoute,
   EducationalResourcesRoute: EducationalResourcesRoute,
   InDepthAnalysisRoute: InDepthAnalysisRoute,
+  LendersRoute: LendersRoute,
   Loans101Route: Loans101Route,
   ManageLoansRoute: ManageLoansRoute,
   McpRoute: McpRoute,
+  PayForSchoolRoute: PayForSchoolRoute,
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
   ApiChatRoute: ApiChatRoute,
+  ApiContactRoute: ApiContactRoute,
   BlogRefinancingStudentLoansRoute: BlogRefinancingStudentLoansRoute,
   BlogStudentLoanInterestByTheNumbersRoute:
     BlogStudentLoanInterestByTheNumbersRoute,

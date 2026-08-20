@@ -51,12 +51,12 @@ export function SiteHeader() {
         </Link>
         <div className="navlinks">
           <Link to="/educational-resources">{t("nav.understand")}</Link>
-          <Link to="/apply">{t("nav.pay")}</Link>
+          <Link to="/pay-for-school">{t("nav.pay")}</Link>
           <Link to="/manage-loans">{t("nav.manage")}</Link>
         </div>
         <div className="nav-right">
           <LanguageSwitcher />
-          <Link className="nav-cta" to="/" hash="quiz">
+          <Link className="nav-cta" to="/chart-your-path">
             {t("nav.cta")}
           </Link>
         </div>

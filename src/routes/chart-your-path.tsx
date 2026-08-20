@@ -1,8 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Index } from "./index";
+import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
+import { ChatWidget } from "@/components/chat/ChatWidget";
+import { ChartYourPathMockup } from "@/components/calculator/ChartYourPathMockup";
+import { CollegeLoanNeedCalculator } from "@/components/calculator/CollegeLoanNeedCalculator";
 
-const TITLE = "Chart Your Path — Grad Loan Navigator";
-const DESCRIPTION = "Check what your degree could mean and explore the next steps in your borrowing plan.";
+const TITLE = "Chart Your Path — How Much Do You Need to Borrow?";
+const DESCRIPTION =
+  "Calculate your annual funding gap, estimated total borrowing, and monthly payment while checking against 2026 federal loan limits.";
 const URL = "https://graduationnavigator.com/chart-your-path";
 
 export const Route = createFileRoute("/chart-your-path")({
@@ -22,5 +26,20 @@ export const Route = createFileRoute("/chart-your-path")({
 });
 
 function ChartYourPathPage() {
-  return <Index />;
+  return (
+    <>
+      <SiteHeader />
+      <main>
+        <div className="wrap" style={{ paddingTop: "20px", paddingBottom: "40px" }}>
+          {/* Main Mockup Design */}
+          <ChartYourPathMockup />
+
+          {/* Detailed Itemized Need & Repayment Calculator */}
+          <CollegeLoanNeedCalculator />
+        </div>
+      </main>
+      <SiteFooter />
+      <ChatWidget />
+    </>
+  );
 }

@@ -64,22 +64,58 @@ export function ContactDialog() {
         return;
       }
       setStatus("sending");
-      const { error } = await supabase.from("contact_messages").insert({
+
+      const payload = {
+        id: typeof crypto !== "undefined" && crypto.randomUUID ? crypto.randomUUID() : undefined,
         name: parsed.data.name,
         email: parsed.data.email,
         reason: parsed.data.reason,
         message: parsed.data.message || null,
-      });
-      if (error) {
-        setStatus("error");
-        setErrorText(t("contact.failed"));
+        created_at: new Date().toISOString(),
+      };
+
+      // 1. Try direct Supabase client insertion
+      const { error } = await supabase.from("contact_messages").insert(payload);
+
+      if (!error) {
+        setStatus("sent");
+        setName("");
+        setEmail("");
+        setMessage("");
+        setReason(REASONS[0].value);
         return;
       }
-      setStatus("sent");
-      setName("");
-      setEmail("");
-      setMessage("");
-      setReason(REASONS[0].value);
+
+      console.warn("[ContactDialog] Direct Supabase insert error, attempting /api/contact endpoint...", error);
+
+      // 2. Fallback to /api/contact server route handler
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: parsed.data.name,
+            email: parsed.data.email,
+            reason: parsed.data.reason,
+            message: parsed.data.message || null,
+          }),
+        });
+        const json = await res.json();
+        if (res.ok && json.success) {
+          setStatus("sent");
+          setName("");
+          setEmail("");
+          setMessage("");
+          setReason(REASONS[0].value);
+          return;
+        }
+        setStatus("error");
+        setErrorText(json?.error || error.message || t("contact.failed"));
+      } catch (fallbackErr: any) {
+        console.error("[ContactDialog Fallback Error]:", fallbackErr);
+        setStatus("error");
+        setErrorText(error.message || t("contact.failed"));
+      }
     },
     [name, email, reason, message, t],
   );

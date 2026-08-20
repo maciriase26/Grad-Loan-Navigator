@@ -398,9 +398,6 @@ export function Index() {
                 <p className="stat-source">{t("understand.stat3.source")}</p>
               </div>
             </div>
-            <a className="btn-primary" href="#quiz" style={{ marginTop: "28px" }}>
-              {t("understand.cta")}
-            </a>
           </div>
 
           <div className={stationClass("learn")} id="learn">
