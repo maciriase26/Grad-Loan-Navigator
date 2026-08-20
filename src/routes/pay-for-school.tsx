@@ -72,14 +72,19 @@ function PayForSchoolPage() {
             </Link>
 
             {/* Card 2: How to get a student loan */}
-            <Link to="/apply" className="pfs-card">
+            <a
+              href="https://www.experian.com/blogs/ask-experian/how-to-get-a-student-loan/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="pfs-card"
+            >
               <span className="pfs-tag">{t("pfs.card2.tag")}</span>
               <h2>{t("pfs.card2.title")}</h2>
               <p className="pfs-desc">{t("pfs.card2.desc")}</p>
               <span className="pfs-arrow">
                 <Arrow />
               </span>
-            </Link>
+            </a>
 
             {/* Card 3: Browse lenders */}
             <Link to="/apply" className="pfs-card">
