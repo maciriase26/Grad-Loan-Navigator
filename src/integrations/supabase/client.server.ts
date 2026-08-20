@@ -27,6 +27,8 @@ function createSupabaseFetch(supabaseKey: string): typeof fetch {
     headers.set('apikey', supabaseKey);
     return fetch(input, { ...init, headers });
   };
+}
+
 function createSupabaseAdminClient() {
   const SUPABASE_URL = process.env['SUPABASE_URL'] || "https://oqgqltnqjinytcerdpwx.supabase.co";
   const SUPABASE_SERVICE_ROLE_KEY = process.env['SUPABASE_SERVICE_ROLE_KEY'] || "sb_publishable_Ot7FWfHF0g8xauDpbAjWDQ_GQo2NG5C";

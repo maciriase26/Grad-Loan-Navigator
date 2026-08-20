@@ -55,7 +55,7 @@ export const listFaqCategories = createServerFn({ method: "GET" }).handler(
 );
 
 export const getFaqArticle = createServerFn({ method: "GET" })
-  .inputValidator((data: { slug: string }) => data)
+  .validator((data: { slug: string }) => data)
   .handler(async ({ data }) => {
     const supabase = publicClient();
     const { data: article } = await supabase
