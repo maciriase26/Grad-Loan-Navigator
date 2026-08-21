@@ -88,7 +88,7 @@ export function SiteHeader() {
         </button>
       </nav>
 
-      {/* Mobile Drawer Menu */}
+      {/* Mobile Drawer Menu (Contains only the 3 main nav links) */}
       {mobileOpen && (
         <div className="mobile-nav-drawer">
           <div className="mobile-nav-links">
@@ -101,13 +101,6 @@ export function SiteHeader() {
             <Link to="/manage-loans" onClick={() => setMobileOpen(false)}>
               {t("nav.manage")}
             </Link>
-            <div className="mobile-nav-divider" />
-            <div className="mobile-nav-actions">
-              <LanguageSwitcher />
-              <Link className="nav-cta" to="/chart-your-path" onClick={() => setMobileOpen(false)}>
-                {t("nav.cta")}
-              </Link>
-            </div>
           </div>
         </div>
       )}
