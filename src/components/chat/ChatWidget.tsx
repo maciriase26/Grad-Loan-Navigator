@@ -88,6 +88,8 @@ async function resilientFetch(input: RequestInfo | URL, init?: RequestInit): Pro
 }
 
 export function ChatWidget() {
+  return null;
+
   const { t } = useI18n();
   const [open, setOpen] = useState(false);
   const [hydrated, setHydrated] = useState(false);

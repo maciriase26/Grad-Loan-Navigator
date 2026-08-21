@@ -65,6 +65,9 @@ const DEGREE_TIERS: { labelKey: string; options: string[] }[] = [
 
 export function Index() {
   const { t } = useI18n();
+
+  /*
+  // Form State (commented out for now)
   const [submitted, setSubmitted] = useState(false);
   const [step, setStep] = useState(1);
   const [form, setForm] = useState({
@@ -75,24 +78,7 @@ export function Index() {
     email: "",
   });
   const [yearOptions, setYearOptions] = useState<number[]>([]);
-
-  const stepValid =
-    step === 1
-      ? /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)
-      : step === 2
-        ? !!form.gradYear
-        : step === 3
-          ? !!form.degree
-          : step === 4
-            ? !!form.creditUse
-            : !!form.savings;
-
-
-  useEffect(() => {
-    const currentYear = new Date().getFullYear();
-    setYearOptions(Array.from({ length: 9 }, (_, i) => currentYear + i));
-  }, []);
-
+  */
 
   const [activeIds, setActiveIds] = useState<string[]>(["understand"]);
   const [revealed, setRevealed] = useState<string[]>([]);
@@ -183,186 +169,59 @@ export function Index() {
           </h1>
           <p className="sub">{t("home.sub")}</p>
           <div className="hero-actions">
-            <a className="btn-primary" href="#quiz">
+            <Link className="btn-primary" to="/chart-your-path">
               {t("home.cta.rate")}
-            </a>
+            </Link>
             <Link className="btn-secondary" to="/educational-resources">
               {t("home.cta.loans101")}
             </Link>
-
           </div>
 
+          {/*
+          // Form Component (commented out for now)
           <div className="quiz-card" id="quiz">
-            {!submitted ? (
-              <div className="assess-form">
-                <div className="progress-track">
-                  <div className="progress-fill" style={{ width: `${(step / 5) * 100}%` }} />
+            <div className="assess-form">
+              <div className="progress-track">
+                <div className="progress-fill" style={{ width: `20%` }} />
+              </div>
+              <div className="step-count">{t("form.step.count").replace("{n}", "1")}</div>
+              <div className="steps-wrap">
+                <div>
+                  <div className="qlabel">
+                    <span className="qlabel-badge">
+                      <span style={{ width: 28, height: 28, display: "block" }}>
+                        <CompassMark />
+                      </span>
+                    </span>
+                    {t("form.title")}
+                  </div>
+                  <p className="step-sub">{t("form.email.sub")}</p>
+                  <div className="assess-field">
+                    <input
+                      type="email"
+                      id="emailCapture"
+                      placeholder={t("form.email.placeholder")}
+                    />
+                  </div>
+                  <p className="assess-disclosure">
+                    {t("form.disclosure.pre")}
+                    <Link to="/editorial-standards">{t("form.disclosure.link")}</Link>
+                    {t("form.disclosure.post")}
+                  </p>
                 </div>
-                <div className="step-count">{t("form.step.count").replace("{n}", String(step))}</div>
 
-                <div className="steps-wrap">
-                  <div>
-                    {step === 1 && (
-                      <>
-                        <div className="qlabel">
-                          <span className="qlabel-badge">
-                            <span style={{ width: 28, height: 28, display: "block" }}>
-                              <CompassMark />
-                            </span>
-                          </span>
-                          {t("form.title")}
-                        </div>
-                        <p className="step-sub">{t("form.email.sub")}</p>
-                        <div className="assess-field">
-                          <input
-                            type="email"
-                            id="emailCapture"
-                            placeholder={t("form.email.placeholder")}
-                            value={form.email}
-                            onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
-                          />
-                        </div>
-                        <p className="assess-disclosure">
-                          {t("form.disclosure.pre")}
-                          <Link to="/editorial-standards">{t("form.disclosure.link")}</Link>
-                          {t("form.disclosure.post")}
-                        </p>
-                      </>
-                    )}
-
-                    {step === 2 && (
-                      <>
-                        <div className="qlabel">{t("form.gradYear.q")}</div>
-                        <p className="step-sub">{t("form.gradYear.sub")}</p>
-                        <div className="assess-field">
-                          <select
-                            id="gradYear"
-                            value={form.gradYear}
-                            onChange={(e) => setForm((f) => ({ ...f, gradYear: e.target.value }))}
-                          >
-                            <option value="">{t("form.gradYear.placeholder")}</option>
-                            {yearOptions.map((y) => (
-                              <option key={y} value={y}>
-                                {y}
-                              </option>
-                            ))}
-                          </select>
-                        </div>
-                      </>
-                    )}
-
-                    {step === 3 && (
-                      <>
-                        <div className="qlabel">{t("form.degree.q")}</div>
-                        <p className="step-sub">{t("form.degree.sub")}</p>
-                        {DEGREE_TIERS.map((tier) => (
-                          <div className="tier-group" key={tier.labelKey}>
-                            <div className="tier-label">{t(tier.labelKey as Parameters<typeof t>[0])}</div>
-                            <div className="chip-row">
-                              {tier.options.map((opt) => {
-                                const label = opt.startsWith("form.") ? t(opt as Parameters<typeof t>[0]) : opt;
-                                return (
-                                  <button
-                                    type="button"
-                                    key={opt}
-                                    className={`chip${form.degree === label ? " active" : ""}`}
-                                    onClick={() => setForm((f) => ({ ...f, degree: label }))}
-                                  >
-                                    {label}
-                                  </button>
-                                );
-                              })}
-                            </div>
-                          </div>
-                        ))}
-                        <div className="chip-row" style={{ marginTop: 12 }}>
-                          <button
-                            type="button"
-                            className={`chip${form.degree === t("form.degree.other") ? " active" : ""}`}
-                            onClick={() =>
-                              setForm((f) => ({ ...f, degree: t("form.degree.other") }))
-                            }
-                          >
-                            {t("form.degree.other")}
-                          </button>
-                        </div>
-                      </>
-                    )}
-
-                    {step === 4 && (
-                      <>
-                        <div className="qlabel">{t("form.creditUse.q")}</div>
-                        <p className="step-sub">{t("form.creditUse.sub")}</p>
-                        <div className="assess-field">
-                          <select
-                            id="creditUse"
-                            value={form.creditUse}
-                            onChange={(e) => setForm((f) => ({ ...f, creditUse: e.target.value }))}
-                          >
-                            <option value="">{t("form.creditUse.placeholder")}</option>
-                            <option>{t("form.creditUse.none")}</option>
-                            <option>{t("form.creditUse.light")}</option>
-                            <option>{t("form.creditUse.moderate")}</option>
-                            <option>{t("form.creditUse.heavy")}</option>
-                          </select>
-                        </div>
-                      </>
-                    )}
-
-                    {step === 5 && (
-                      <>
-                        <div className="qlabel">{t("form.savings.q")}</div>
-                        <p className="step-sub">{t("form.savings.sub")}</p>
-                        <div className="assess-field">
-                          <select
-                            id="savings"
-                            value={form.savings}
-                            onChange={(e) => setForm((f) => ({ ...f, savings: e.target.value }))}
-                          >
-                            <option value="">{t("form.savings.placeholder")}</option>
-                            <option>$0 – $10,000</option>
-                            <option>$10,000 – $25,000</option>
-                            <option>$26,500 – $50,000</option>
-                            <option>$50,000 – $75,000</option>
-                            <option>$75,000+</option>
-                          </select>
-                        </div>
-                      </>
-                    )}
-                  </div>
-
-                  <div className="nav-row">
-                    <button
-                      type="button"
-                      className="btn-back"
-                      style={{ visibility: step === 1 ? "hidden" : "visible" }}
-                      onClick={() => setStep((s) => Math.max(1, s - 1))}
-                    >
-                      {t("form.back")}
-                    </button>
-                    <button
-                      type="button"
-                      className="btn-next"
-                      disabled={!stepValid}
-                      onClick={() => (step === 5 ? setSubmitted(true) : setStep((s) => s + 1))}
-                    >
-                      {step === 5 ? t("form.finish") : t("form.next")}
-                    </button>
-                  </div>
+                <div className="nav-row">
+                  <button type="button" className="btn-back" style={{ visibility: "hidden" }}>
+                    {t("form.back")}
+                  </button>
+                  <button type="button" className="btn-next">
+                    {t("form.next")}
+                  </button>
                 </div>
               </div>
-            ) : (
-              <div className="assess-thanks">
-                <span style={{ width: 46, height: 46, display: "block" }}>
-                  <CompassMark />
-                </span>
-                <h2>{t("form.thanks.title")}</h2>
-                <p>{t("form.thanks.body")}</p>
-              </div>
-            )}
+            </div>
           </div>
-
-
+          */}
         </section>
 
         <div className="wrap route-section" ref={routeRef}>
