@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { useState } from "react";
 import { LANGUAGES, useI18n } from "@/i18n";
 import { ContactDialog, openContactDialog } from "@/components/contact/ContactDialog";
 
@@ -18,15 +19,15 @@ export function CompassMark() {
   );
 }
 
-export function LanguageSwitcher() {
-  const { lang, setLang, t } = useI18n();
+function LanguageSwitcher() {
+  const { lang, setLang } = useI18n();
   return (
-    <div className="lang-switch" role="group" aria-label={t("nav.language")}>
+    <div className="lang-switcher" aria-label="Language selector">
       {LANGUAGES.map((l) => (
         <button
           key={l.code}
           type="button"
-          className={l.code === lang ? "active" : ""}
+          className={`lang-btn${l.code === lang ? " active" : ""}`}
           aria-pressed={l.code === lang}
           title={l.name}
           onClick={() => setLang(l.code)}
@@ -37,12 +38,15 @@ export function LanguageSwitcher() {
     </div>
   );
 }
+
 export function SiteHeader() {
   const { t } = useI18n();
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   return (
     <header className="site-header">
       <nav className="site-nav">
-        <Link to="/" className="logo">
+        <Link to="/" className="logo" onClick={() => setMobileOpen(false)}>
           Grad Navigat
           <span className="logo-o">
             <CompassMark />
@@ -60,7 +64,53 @@ export function SiteHeader() {
             {t("nav.cta")}
           </Link>
         </div>
+
+        {/* Mobile Hamburger Toggle */}
+        <button
+          type="button"
+          className="mobile-hamburger-btn"
+          onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          aria-expanded={mobileOpen}
+        >
+          {mobileOpen ? (
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2.5" fill="none">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          ) : (
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2.5" fill="none">
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          )}
+        </button>
       </nav>
+
+      {/* Mobile Drawer Menu */}
+      {mobileOpen && (
+        <div className="mobile-nav-drawer">
+          <div className="mobile-nav-links">
+            <Link to="/educational-resources" onClick={() => setMobileOpen(false)}>
+              {t("nav.understand")}
+            </Link>
+            <Link to="/pay-for-school" onClick={() => setMobileOpen(false)}>
+              {t("nav.pay")}
+            </Link>
+            <Link to="/manage-loans" onClick={() => setMobileOpen(false)}>
+              {t("nav.manage")}
+            </Link>
+            <div className="mobile-nav-divider" />
+            <div className="mobile-nav-actions">
+              <LanguageSwitcher />
+              <Link className="nav-cta" to="/chart-your-path" onClick={() => setMobileOpen(false)}>
+                {t("nav.cta")}
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
