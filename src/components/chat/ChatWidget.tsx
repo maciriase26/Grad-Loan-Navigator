@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useMemo, useCallback } from "react";
+/*
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport, type UIMessage } from "ai";
 import {
@@ -10,6 +11,7 @@ import {
   RotateCcw,
   PenLine,
 } from "lucide-react";
+*/
 /*
 import {
   Conversation,

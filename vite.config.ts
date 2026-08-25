@@ -15,6 +15,11 @@ export default defineConfig({
   },
   vite: {
     plugins: [mcpPlugin()],
+    build: {
+      minify: "esbuild",
+      target: "esnext",
+      chunkSizeWarningLimit: 2000,
+    },
     server: {
       allowedHosts: true, 
     },
