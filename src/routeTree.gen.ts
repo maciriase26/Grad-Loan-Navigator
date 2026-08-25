@@ -21,6 +21,7 @@ import { Route as Loans101RouteImport } from './routes/loans-101'
 import { Route as ManageLoansRouteImport } from './routes/manage-loans'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as PayForSchoolRouteImport } from './routes/pay-for-school'
+import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
@@ -91,6 +92,11 @@ const McpRoute = McpRouteImport.update({
 const PayForSchoolRoute = PayForSchoolRouteImport.update({
   id: '/pay-for-school',
   path: '/pay-for-school',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RobotsDottxtRoute = RobotsDottxtRouteImport.update({
+  id: '/robots.txt',
+  path: '/robots.txt',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -168,6 +174,7 @@ export interface FileRoutesByFullPath {
   '/manage-loans': typeof ManageLoansRoute
   '/mcp': typeof McpRoute
   '/pay-for-school': typeof PayForSchoolRoute
+  '/robots.txt': typeof RobotsDottxtRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -193,6 +200,7 @@ export interface FileRoutesByTo {
   '/manage-loans': typeof ManageLoansRoute
   '/mcp': typeof McpRoute
   '/pay-for-school': typeof PayForSchoolRoute
+  '/robots.txt': typeof RobotsDottxtRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -219,6 +227,7 @@ export interface FileRoutesById {
   '/manage-loans': typeof ManageLoansRoute
   '/mcp': typeof McpRoute
   '/pay-for-school': typeof PayForSchoolRoute
+  '/robots.txt': typeof RobotsDottxtRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -246,6 +255,7 @@ export interface FileRouteTypes {
     | '/manage-loans'
     | '/mcp'
     | '/pay-for-school'
+    | '/robots.txt'
     | '/sitemap.xml'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
@@ -271,6 +281,7 @@ export interface FileRouteTypes {
     | '/manage-loans'
     | '/mcp'
     | '/pay-for-school'
+    | '/robots.txt'
     | '/sitemap.xml'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
@@ -296,6 +307,7 @@ export interface FileRouteTypes {
     | '/manage-loans'
     | '/mcp'
     | '/pay-for-school'
+    | '/robots.txt'
     | '/sitemap.xml'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
@@ -322,6 +334,7 @@ export interface RootRouteChildren {
   ManageLoansRoute: typeof ManageLoansRoute
   McpRoute: typeof McpRoute
   PayForSchoolRoute: typeof PayForSchoolRoute
+  RobotsDottxtRoute: typeof RobotsDottxtRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -421,6 +434,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PayForSchoolRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/robots.txt': {
+      id: '/robots.txt'
+      path: '/robots.txt'
+      fullPath: '/robots.txt'
+      preLoaderRoute: typeof RobotsDottxtRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
@@ -514,6 +534,7 @@ const rootRouteChildren: RootRouteChildren = {
   ManageLoansRoute: ManageLoansRoute,
   McpRoute: McpRoute,
   PayForSchoolRoute: PayForSchoolRoute,
+  RobotsDottxtRoute: RobotsDottxtRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
