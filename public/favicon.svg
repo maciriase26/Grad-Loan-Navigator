@@ -1,6 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
-  <circle cx="32" cy="32" r="30" fill="#0f172a" stroke="#0d9488" stroke-width="3" />
-  <path d="M32 10 L37 32 L32 54 L27 32 Z" fill="#0d9488" />
-  <path d="M10 32 L32 27 L54 32 L32 37 Z" fill="#38bdf8" opacity="0.8" />
-  <circle cx="32" cy="32" r="4" fill="#ffffff" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <!-- Outer Ring -->
+  <circle cx="50" cy="50" r="41" fill="#ffffff" stroke="#179c78" stroke-width="9.5" />
+  
+  <!-- Compass Needle Top Half (Green Left, Dark Right) -->
+  <!-- Center circle cutout/notch -->
+  <g transform="rotate(30 50 50)">
+    <!-- North Top-Left (Green) -->
+    <path d="M50 14 L50 44 A 6 6 0 0 0 44 50 L37 50 Z" fill="#179c78" />
+    <!-- North Top-Right (Dark Navy) -->
+    <path d="M50 14 L63 50 L56 50 A 6 6 0 0 0 50 44 Z" fill="#1f2438" />
+    <!-- South Bottom-Left (Dark Navy) -->
+    <path d="M50 86 L37 50 L44 50 A 6 6 0 0 0 50 56 Z" fill="#1f2438" />
+    <!-- South Bottom-Right (Green) -->
+    <path d="M50 86 L50 56 A 6 6 0 0 0 56 50 L63 50 Z" fill="#179c78" />
+    <!-- Center Pivot Circle -->
+    <circle cx="50" cy="50" r="6" fill="#1f2438" />
+  </g>
 </svg>
