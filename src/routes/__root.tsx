@@ -90,8 +90,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Grad" },
       { name: "twitter:title", content: "Grad Loan Navigator — Life After Grad PLUS" },
       { name: "twitter:description", content: "Plain-language guide to the new graduate borrowing caps, grandfather rules, and how to compare private lenders after Grad PLUS ended." },
-      { property: "og:image", content: "https://graduationnavigator.com/favicon.svg" },
-      { name: "twitter:image", content: "https://graduationnavigator.com/favicon.svg" },
+      { property: "og:image", content: "https://www.graduationnavigator.com/favicon-512x512.png" },
+      { name: "twitter:image", content: "https://www.graduationnavigator.com/favicon-512x512.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },

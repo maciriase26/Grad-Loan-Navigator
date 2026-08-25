@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://graduationnavigator.com/sitemap.xml
+Sitemap: https://www.graduationnavigator.com/sitemap.xml

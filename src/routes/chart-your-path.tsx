@@ -7,7 +7,7 @@ import { CollegeLoanNeedCalculator } from "@/components/calculator/CollegeLoanNe
 const TITLE = "Chart Your Path — How Much Do You Need to Borrow?";
 const DESCRIPTION =
   "Calculate your annual funding gap, estimated total borrowing, and monthly payment while checking against 2026 federal loan limits.";
-const URL = "https://graduationnavigator.com/chart-your-path";
+const URL = "https://www.graduationnavigator.com/chart-your-path";
 
 export const Route = createFileRoute("/chart-your-path")({
   head: () => ({

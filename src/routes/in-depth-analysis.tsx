@@ -6,7 +6,7 @@ import { useI18n } from "@/i18n";
 const TITLE = "In-Depth Analysis — Grad Loan Navigator";
 const DESCRIPTION =
   "Long-form explainers, PDF consumer guides, and syndicated Experian resources on credit, borrowing, and repayment.";
-const URL = "https://graduationnavigator.com/in-depth-analysis";
+const URL = "https://www.graduationnavigator.com/in-depth-analysis";
 
 export const Route = createFileRoute("/in-depth-analysis")({
   head: () => ({

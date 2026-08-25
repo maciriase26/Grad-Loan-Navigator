@@ -6,7 +6,7 @@ import { useI18n } from "@/i18n";
 const TITLE = "Pay for School — Grad Loan Navigator";
 const DESCRIPTION =
   "Start with the question that matches where you are: estimate your funding gap, prepare your loan checklist, or browse graduate student lenders.";
-const URL = "https://graduationnavigator.com/pay-for-school";
+const URL = "https://www.graduationnavigator.com/pay-for-school";
 
 export const Route = createFileRoute("/pay-for-school")({
   head: () => ({

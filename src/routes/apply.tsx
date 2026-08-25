@@ -8,7 +8,7 @@ import { useI18n } from "@/i18n";
 const TITLE = "Apply — Grad Loan Navigator";
 const DESCRIPTION =
   "Applications open soon. Grad Loan Navigator will guide you from your borrowing cap to a completed grad loan application.";
-const URL = "https://graduationnavigator.com/apply";
+const URL = "https://www.graduationnavigator.com/apply";
 
 export const Route = createFileRoute("/apply")({
   head: () => ({

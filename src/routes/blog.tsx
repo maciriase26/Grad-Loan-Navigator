@@ -6,7 +6,7 @@ import { useI18n } from "@/i18n";
 const TITLE = "Grad Navigator Blog — Student Perspectives & Guides";
 const DESCRIPTION =
   "Short, plain-language posts about graduate borrowing, refinancing, and repayment, written by students for students.";
-const URL = "https://graduationnavigator.com/blog";
+const URL = "https://www.graduationnavigator.com/blog";
 
 export const Route = createFileRoute("/blog")({
   head: () => ({

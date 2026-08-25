@@ -3,7 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 const ROBOTS_TXT = `User-agent: *
 Allow: /
 
-Sitemap: https://graduationnavigator.com/sitemap.xml
+Sitemap: https://www.graduationnavigator.com/sitemap.xml
 `;
 
 export const Route = createFileRoute("/robots.txt")({

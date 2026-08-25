@@ -6,7 +6,7 @@ import { useI18n } from "@/i18n";
 const TITLE = "Student Loan Interest: by the numbers — Grad Loan Navigator";
 const DESCRIPTION =
   "Federal student loan rates climbed for the third straight year. Here's what that actually costs you, how rates are set, and what changed for graduate borrowers.";
-const URL = "https://graduationnavigator.com/blog/student-loan-interest-by-the-numbers";
+const URL = "https://www.graduationnavigator.com/blog/student-loan-interest-by-the-numbers";
 
 export const Route = createFileRoute("/blog_/student-loan-interest-by-the-numbers")({
   head: () => ({

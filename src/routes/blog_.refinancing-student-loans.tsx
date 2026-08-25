@@ -6,7 +6,7 @@ import { useI18n } from "@/i18n";
 const TITLE = "Refinancing Student Loans, Explained — Grad Loan Navigator";
 const DESCRIPTION =
   "Refinancing can cut your interest rate or lower monthly payments, but permanently costs federal protections. Understand the tradeoffs, steps, rates, and alternatives.";
-const URL = "https://graduationnavigator.com/blog/refinancing-student-loans";
+const URL = "https://www.graduationnavigator.com/blog/refinancing-student-loans";
 
 export const Route = createFileRoute("/blog_/refinancing-student-loans")({
   head: () => ({

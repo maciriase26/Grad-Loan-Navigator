@@ -7,7 +7,7 @@ import { openContactDialog } from "@/components/contact/ContactDialog";
 const TITLE = "Editorial Standards & Disclosure Policy — Grad Loan Navigator";
 const DESCRIPTION =
   "How we decide what to publish, how we choose which lenders to show you, and exactly how we get paid.";
-const URL = "https://graduationnavigator.com/editorial-standards";
+const URL = "https://www.graduationnavigator.com/editorial-standards";
 
 export const Route = createFileRoute("/editorial-standards")({
   head: () => ({

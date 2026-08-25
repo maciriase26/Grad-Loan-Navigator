@@ -5,7 +5,7 @@ import { useI18n } from "@/i18n";
 
 const TITLE = "Manage Loans — Grad Loan Navigator";
 const DESCRIPTION = "Manage your loans, explore refinancing, and track what is coming next.";
-const URL = "https://graduationnavigator.com/manage-loans";
+const URL = "https://www.graduationnavigator.com/manage-loans";
 
 export const Route = createFileRoute("/manage-loans")({
   head: () => ({

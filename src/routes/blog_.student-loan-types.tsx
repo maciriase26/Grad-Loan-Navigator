@@ -6,7 +6,7 @@ import { useI18n } from "@/i18n";
 const TITLE = "Student Loan Types — Grad Loan Navigator";
 const DESCRIPTION =
   "There are three federal student loan programs and multiple private options. Here is a cheat sheet breakdown of subsidized, unsubsidized, PLUS, and private loans.";
-const URL = "https://graduationnavigator.com/blog/student-loan-types";
+const URL = "https://www.graduationnavigator.com/blog/student-loan-types";
 
 export const Route = createFileRoute("/blog_/student-loan-types")({
   head: () => ({

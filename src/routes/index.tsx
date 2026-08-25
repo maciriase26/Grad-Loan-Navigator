@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://graduationnavigator.com/" }],
+    links: [{ rel: "canonical", href: "https://www.graduationnavigator.com/" }],
   }),
   component: Index,
   errorComponent: () => <IndexError />,
