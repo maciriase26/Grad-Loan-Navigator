@@ -10,6 +10,7 @@ import {
   RotateCcw,
   PenLine,
 } from "lucide-react";
+/*
 import {
   Conversation,
   ConversationContent,
@@ -23,6 +24,7 @@ import {
   PromptInputSubmit,
 } from "@/components/ai-elements/prompt-input";
 import { Shimmer } from "@/components/ai-elements/shimmer";
+*/
 import { useI18n } from "@/i18n";
 import type { TranslationKey } from "@/i18n/translations";
 
