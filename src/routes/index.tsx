@@ -266,15 +266,6 @@ export function Index() {
             <p className="desc">{t("learn.desc")}</p>
 
             <div className="card-row" style={{ maxWidth: "960px" }}>
-              <Link className="article-card" to="/blog/refinancing-student-loans">
-                <span className="tag">{t("blog.card1.tag")}</span>
-                <h3>{t("blog.card1.title")}</h3>
-                <p>{t("blog.card1.excerpt")}</p>
-                <span className="card-more" style={{ marginTop: "14px", display: "inline-flex", alignItems: "center", gap: "4px" }}>
-                  {t("blog.card1.cta")} →
-                </span>
-              </Link>
-
               <Link className="article-card" to="/blog/student-loan-interest-by-the-numbers">
                 <span className="tag">{t("blog.card2.tag")}</span>
                 <h3>{t("blog.card2.title")}</h3>
@@ -290,6 +281,15 @@ export function Index() {
                 <p>{t("blog.card3.excerpt")}</p>
                 <span className="card-more" style={{ marginTop: "14px", display: "inline-flex", alignItems: "center", gap: "4px" }}>
                   {t("blog.card3.cta")} →
+                </span>
+              </Link>
+
+              <Link className="article-card" to="/blog/refinancing-student-loans">
+                <span className="tag">{t("blog.card1.tag")}</span>
+                <h3>{t("blog.card1.title")}</h3>
+                <p>{t("blog.card1.excerpt")}</p>
+                <span className="card-more" style={{ marginTop: "14px", display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  {t("blog.card1.cta")} →
                 </span>
               </Link>
             </div>
@@ -322,7 +322,7 @@ export function Index() {
             <div className="station-tag">{t("station.apply")}</div>
             <h2>{t("applyStation.h2")}</h2>
             <p className="desc">{t("applyStation.desc")}</p>
-            <Link className="btn-primary" to="/apply">
+            <Link className="btn-primary" to="/chart-your-path">
               {t("applyStation.cta")}
             </Link>
           </div>

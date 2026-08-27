@@ -1,7 +1,27 @@
 import { Link } from "@tanstack/react-router";
 import { LANGUAGES, useI18n } from "@/i18n";
 import { ContactDialog, openContactDialog } from "@/components/contact/ContactDialog";
+import { SearchNavigationDialog } from "@/components/search/SearchNavigationDialog";
+import { openSearchDialog } from "@/components/search/searchEvents";
 
+function SearchIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      width="15"
+      height="15"
+      aria-hidden="true"
+    >
+      <circle cx="11" cy="11" r="8" />
+      <line x1="21" y1="21" x2="16.65" y2="16.65" />
+    </svg>
+  );
+}
 
 export function CompassMark() {
   return (
@@ -38,30 +58,42 @@ export function LanguageSwitcher() {
   );
 }
 export function SiteHeader() {
-  const { t } = useI18n();
+  const { lang, t } = useI18n();
   return (
-    <header className="site-header">
-      <nav className="site-nav">
-        <Link to="/" className="logo">
-          Grad Navigat
-          <span className="logo-o">
-            <CompassMark />
-          </span>
-          r
-        </Link>
-        <div className="navlinks">
-          <Link to="/educational-resources">{t("nav.understand")}</Link>
-          <Link to="/pay-for-school">{t("nav.pay")}</Link>
-          <Link to="/manage-loans">{t("nav.manage")}</Link>
-        </div>
-        <div className="nav-right">
-          <LanguageSwitcher />
-          <Link className="nav-cta" to="/chart-your-path">
-            {t("nav.cta")}
+    <>
+      <header className="site-header">
+        <nav className="site-nav">
+          <Link to="/" className="logo">
+            Grad Navigat
+            <span className="logo-o">
+              <CompassMark />
+            </span>
+            r
           </Link>
-        </div>
-      </nav>
-    </header>
+          <div className="navlinks">
+            <Link to="/educational-resources">{t("nav.understand")}</Link>
+            <Link to="/pay-for-school">{t("nav.pay")}</Link>
+            <Link to="/manage-loans">{t("nav.manage")}</Link>
+          </div>
+          <div className="nav-right">
+            <button
+              type="button"
+              className="nav-search-btn"
+              onClick={() => openSearchDialog()}
+              title={lang === "es" ? "Buscar en el sitio (⌘K)" : "Search site (⌘K)"}
+              aria-label={lang === "es" ? "Buscar en el sitio" : "Search site"}
+            >
+              <SearchIcon />
+            </button>
+            <LanguageSwitcher />
+            <Link className="nav-cta" to="/chart-your-path">
+              {t("nav.cta")}
+            </Link>
+          </div>
+        </nav>
+      </header>
+      <SearchNavigationDialog />
+    </>
   );
 }
 
@@ -95,7 +127,6 @@ export function SiteFooter() {
             <button type="button" className="foot-link-btn" onClick={openContactDialog}>
               {t("footer.about.contact")}
             </button>
-
           </div>
         </div>
       </div>
@@ -104,7 +135,6 @@ export function SiteFooter() {
         <span>{t("footer.rates")}</span>
       </div>
       <ContactDialog />
-
     </footer>
   );
 }

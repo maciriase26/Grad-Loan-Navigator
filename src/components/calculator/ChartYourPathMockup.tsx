@@ -350,12 +350,17 @@ export function ChartYourPathMockup() {
       <div className="cyp-topics-section">
         <h3>{t("cyp.topics.h2")}</h3>
         <div className="cyp-topics-grid">
-          <Link to="/blog/refinancing-student-loans" className="cyp-topic-card">
+          <a
+            href="https://www.experian.com/blogs/ask-experian/how-do-student-loans-work/"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="cyp-topic-card"
+          >
             <span className="topic-badge">{t("cyp.topicBadge1")}</span>
             <h4>{t("cyp.topic1.title")}</h4>
             <p>{t("cyp.topic1.desc")}</p>
             <span className="topic-more">{t("cyp.readExplainer")}</span>
-          </Link>
+          </a>
 
           <Link to="/blog/student-loan-types" className="cyp-topic-card">
             <span className="topic-badge">{t("cyp.topicBadge2")}</span>

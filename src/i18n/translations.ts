@@ -8,6 +8,9 @@ export const en = {
   "nav.apply": "Need a second chance? Try GradBridge!",
   "nav.cta": "Chart your path",
   "nav.language": "Language",
+  "search.title": "Search Navigation",
+  "search.placeholder": "Search pages, calculators, guides, or topics...",
+  "search.btn": "Search...",
 
   "footer.brand": "Grad Loan Navigator",
   "footer.blurb":
@@ -24,8 +27,7 @@ export const en = {
   "er.card1.cta": "Start reading",
   "er.card2.sub": "Written by students, for students",
   "er.card2.title": "Grad Navigator Blog",
-  "er.card2.desc":
-    "Direct, visual explainers – written in plain language by people in your shoes",
+  "er.card2.desc": "Direct, visual explainers – written in plain language by people in your shoes",
   "er.card2.cta": "Browse the blog",
 
   "mfa.tag": "MOST FREQUENTLY ASKED",
@@ -55,7 +57,8 @@ export const en = {
 
   /* Browse Lenders Page */
   "lenders.h1": "Browse & Compare Graduate Lenders",
-  "lenders.sub": "Compare interest rate ranges, loan limits, repayment terms, and cosigner rules from top private graduate lenders.",
+  "lenders.sub":
+    "Compare interest rate ranges, loan limits, repayment terms, and cosigner rules from top private graduate lenders.",
   "lenders.filter.all": "All Lenders",
   "lenders.filter.fixed": "Lowest Fixed Rates",
   "lenders.filter.cosigner": "Cosigner Release Available",
@@ -289,7 +292,7 @@ export const en = {
   "applyStation.h2": "Ready when you are",
   "applyStation.desc":
     "Once you know your numbers, applying takes most lenders under 10 minutes. We'll tell you what to have ready first.",
-  "applyStation.cta": "Start your application ↗",
+  "applyStation.cta": "Chart your path ↗",
 
   /* ---------- errors ---------- */
   "error.title": "Something went wrong",
@@ -466,8 +469,7 @@ export const en = {
     "The person who signs is the person who owes it. A parent's Parent PLUS balance never transfers to the student, even after graduation.",
 
   "rates.vs.r4.title": "Eligibility",
-  "rates.vs.r4.desc":
-    "Both require a credit check. Neither is based on financial need.",
+  "rates.vs.r4.desc": "Both require a credit check. Neither is based on financial need.",
 
   "rates.part4": "Part 04",
   "rates.costs.h2": "What it costs in real terms",
@@ -504,11 +506,13 @@ export const en = {
     "Show the applicable annual federal borrowing limit here, then calculate what remains.",
   "cyp.topics.h2": "Recommended guides for your path",
   "cyp.topic1.title": "How loans work",
-  "cyp.topic1.desc": "Understand daily compounding interest, grace periods, and servicer management.",
+  "cyp.topic1.desc":
+    "Understand daily compounding interest, grace periods, and servicer management.",
   "cyp.topic2.title": "Types of student loans",
   "cyp.topic2.desc": "Subsidized, unsubsidized, Direct PLUS, and private loan options compared.",
   "cyp.topic3.title": "How to get a student loan",
-  "cyp.topic3.desc": "Step-by-step FAFSA guide, financial aid offer review, and application process.",
+  "cyp.topic3.desc":
+    "Step-by-step FAFSA guide, financial aid offer review, and application process.",
   "cyp.ready.title": "Ready when you are",
   "cyp.ready.desc": "Follow our step-by-step preparation checklist before applying for your loan.",
   "cyp.ready.cta": "View preparation checklist →",
@@ -580,7 +584,8 @@ export const en = {
 
   "calc.status.zero": "No borrowing needed! Your available funding covers your cost of attendance.",
   "calc.status.ok": "Within 2026 federal borrowing limits.",
-  "calc.status.exceed": "Exceeds federal borrowing cap by ${amount}. Additional gap must be covered by private loans or savings.",
+  "calc.status.exceed":
+    "Exceeds federal borrowing cap by ${amount}. Additional gap must be covered by private loans or savings.",
 
   /* ---------- student loan types blog post ---------- */
   "types.meta.title": "Student Loan Types — Grad Loan Navigator",
@@ -611,8 +616,7 @@ export const en = {
   "types.sub.card2.title": "Unsubsidized Federal Loans",
   "types.sub.card2.p1":
     "Unsubsidized loans are available to all students but also have borrowing limits and the interest is fixed and accrues immediately.",
-  "types.sub.card2.p2":
-    "There are also special loans for Grad and Parent borrowers.",
+  "types.sub.card2.p2": "There are also special loans for Grad and Parent borrowers.",
 
   "types.part2": "Part 02",
   "types.plus.h2": "Grad PLUS vs. Parent PLUS, quickly",
@@ -631,8 +635,7 @@ export const en = {
     "The person who signs is the person who owes it. A parent's Parent PLUS balance never transfers to the student, even after graduation.",
 
   "types.plus.r4.title": "Eligibility",
-  "types.plus.r4.desc":
-    "Both require a credit check. Neither is based on financial need.",
+  "types.plus.r4.desc": "Both require a credit check. Neither is based on financial need.",
 
   "types.part3": "Part 03",
   "types.private.h2": "Private Student Loans vs. Federal",
@@ -792,6 +795,9 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "nav.apply": "¿Necesitas una segunda oportunidad? ¡Prueba GradBridge!",
   "nav.cta": "Traza tu camino",
   "nav.language": "Idioma",
+  "search.title": "Navegación de Búsqueda",
+  "search.placeholder": "Buscar páginas, calculadoras, guías o temas...",
+  "search.btn": "Buscar...",
 
   "footer.brand": "Grad Loan Navigator",
   "footer.blurb":
@@ -839,7 +845,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
 
   /* Browse Lenders Page (Spanish) */
   "lenders.h1": "Explorar y Comparar Prestamistas de Posgrado",
-  "lenders.sub": "Compara rangos de tasas de interés, límites de préstamos, plazos de pago y reglas de aval de los principales prestamistas privados de posgrado.",
+  "lenders.sub":
+    "Compara rangos de tasas de interés, límites de préstamos, plazos de pago y reglas de aval de los principales prestamistas privados de posgrado.",
   "lenders.filter.all": "Todos los Prestamistas",
   "lenders.filter.fixed": "Tasas Fijas Más Bajas",
   "lenders.filter.cosigner": "Liberación de Aval Disponible",
@@ -878,7 +885,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
     "Una guía para principiantes sobre cómo abrir tus primeras cuentas de crédito, manejar líneas de crédito de forma responsable y crear historial.",
 
   "depth.ask.title": "Artículos de Ask Experian",
-  "depth.ask.desc": "Actualizados para reflejar las normas de endeudamiento y guías de préstamos recientes.",
+  "depth.ask.desc":
+    "Actualizados para reflejar las normas de endeudamiento y guías de préstamos recientes.",
 
   "depth.article1.tag": "Ask Experian · Guía",
   "depth.article1.title": "Tipos de Préstamos Estudiantiles y Cómo Elegir Uno",
@@ -1071,7 +1079,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "applyStation.h2": "Listos cuando tú lo estés",
   "applyStation.desc":
     "Una vez que conozcas tus números, la mayoría de los prestamistas tardan menos de 10 minutos en procesar la solicitud. Te diremos qué tener listo primero.",
-  "applyStation.cta": "Comienza tu solicitud ↗",
+  "applyStation.cta": "Traza tu camino ↗",
 
   /* ---------- errors ---------- */
   "error.title": "Algo salió mal",
@@ -1254,7 +1262,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "rates.costs.h2": "Lo que cuesta en términos reales",
   "rates.costs.p1":
     "Un prestamista privado podría ofrecer una tasa fija de alrededor del 4% a un prestatario con buen crédito. En un préstamo de $10,000 a 10 años, la diferencia entre una tasa federal del 6.52% y una tasa privada del 4.25% suma aproximadamente $1,345 en intereses adicionales. Para los prestatarios de posgrado, la brecha es aún más amplia, ya que las tasas federales de posgrado comienzan casi dos puntos más altas que las de pregrado.",
-  "rates.calc.label": "Diferencia de interés adicional a 10 años (Federal 6.52% vs. Privado 4.25% en $10k):",
+  "rates.calc.label":
+    "Diferencia de interés adicional a 10 años (Federal 6.52% vs. Privado 4.25% en $10k):",
 
   "rates.part5": "Conclusión",
   "rates.bottomline.h2": "En conclusión",
@@ -1285,13 +1294,16 @@ export const es: Partial<Record<TranslationKey, string>> = {
     "Muestra el límite federal de endeudamiento anual aplicable aquí y calcula lo restante.",
   "cyp.topics.h2": "Guías recomendadas para tu camino",
   "cyp.topic1.title": "Cómo funcionan los préstamos",
-  "cyp.topic1.desc": "Comprende el interés diario compuesto, los períodos de gracia y los administradores.",
+  "cyp.topic1.desc":
+    "Comprende el interés diario compuesto, los períodos de gracia y los administradores.",
   "cyp.topic2.title": "Tipos de préstamos estudiantiles",
-  "cyp.topic2.desc": "Comparación entre subsidiados, no subsidiados, Direct PLUS y opciones privadas.",
+  "cyp.topic2.desc":
+    "Comparación entre subsidiados, no subsidiados, Direct PLUS y opciones privadas.",
   "cyp.topic3.title": "Cómo obtener un préstamo estudiantil",
   "cyp.topic3.desc": "Guía paso a paso sobre FAFSA, evaluación de ofertas de ayuda y solicitudes.",
   "cyp.ready.title": "Listo cuando tú lo estés",
-  "cyp.ready.desc": "Sigue nuestra lista de preparación paso a paso antes de solicitar tu préstamo.",
+  "cyp.ready.desc":
+    "Sigue nuestra lista de preparación paso a paso antes de solicitar tu préstamo.",
   "cyp.ready.cta": "Ver lista de preparación →",
 
   "cyp.res.h2": "Tu brecha de financiamiento",
@@ -1301,7 +1313,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "cyp.res.savings": "Becas, ahorros y contribuciones",
   "cyp.res.gap": "Brecha de Financiamiento",
   "cyp.next.tag": "¿QUÉ SIGUE?",
-  "cyp.next.text": "Mira cómo los límites de préstamos federales afectan la cantidad que aún podrías necesitar.",
+  "cyp.next.text":
+    "Mira cómo los límites de préstamos federales afectan la cantidad que aún podrías necesitar.",
   "cyp.next.btn": "Explorar opciones de préstamos",
 
   "cyp.summary.cost": "Costos Anuales de Universidad:",
@@ -1361,7 +1374,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
 
   "calc.status.zero": "¡No necesitas pedir prestado! Tus fondos cubren el costo de asistencia.",
   "calc.status.ok": "Dentro de los límites federales de endeudamiento de 2026.",
-  "calc.status.exceed": "Excede el límite federal por ${amount}. La brecha restante deberá cubrirse con préstamos privados o ahorros.",
+  "calc.status.exceed":
+    "Excede el límite federal por ${amount}. La brecha restante deberá cubrirse con préstamos privados o ahorros.",
 
   /* ---------- student loan types blog post (Spanish) ---------- */
   "types.meta.title": "Tipos de Préstamos Estudiantiles — Grad Loan Navigator",

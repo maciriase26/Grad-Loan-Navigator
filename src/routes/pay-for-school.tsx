@@ -103,20 +103,30 @@ function PayForSchoolPage() {
           <span className="mfa-tag">{t("mfa.tag")}</span>
 
           <div className="mfa-grid">
-            <Link to="/blog/refinancing-student-loans" className="mfa-card">
+            <a
+              href="https://www.experian.com/blogs/ask-experian/how-do-student-loans-work/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="mfa-card"
+            >
               <h3>{t("mfa.card1.title")}</h3>
               <span className="mfa-arrow">→</span>
-            </Link>
+            </a>
 
             <Link to="/blog/student-loan-types" className="mfa-card">
               <h3>{t("mfa.card2.title")}</h3>
               <span className="mfa-arrow">→</span>
             </Link>
 
-            <Link to="/blog/student-loan-interest-by-the-numbers" className="mfa-card">
+            <a
+              href="https://www.experian.com/blogs/ask-experian/student-loan-repayment/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="mfa-card"
+            >
               <h3>{t("mfa.card3.title")}</h3>
               <span className="mfa-arrow">→</span>
-            </Link>
+            </a>
 
             <a
               href="https://www.experian.com/blogs/ask-experian/how-to-get-a-student-loan/"
