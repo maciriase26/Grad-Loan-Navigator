@@ -484,6 +484,7 @@ export const en = {
   "footer.about.editorial": "Editorial standards",
   "footer.about.disclosure": "Disclosure policy",
   "footer.about.contact": "Contact",
+  "footer.social": "Social",
   "footer.copyright":
     "© 2026 Grad Loan Navigator. Not affiliated with the U.S. Department of Education.",
   "footer.rates": "Rates shown are illustrative for this preview.",
@@ -1289,6 +1290,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "footer.about.editorial": "Estándares editoriales",
   "footer.about.disclosure": "Política de divulgación",
   "footer.about.contact": "Contacto",
+  "footer.social": "Redes sociales",
   "footer.copyright":
     "© 2026 Grad Loan Navigator. No está afiliado al Departamento de Educación de EE. UU.",
   "footer.rates": "Las tasas mostradas son ilustrativas para esta vista previa.",
