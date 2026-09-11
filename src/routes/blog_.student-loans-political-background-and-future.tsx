@@ -156,7 +156,7 @@ function StudentLoansPoliticalBackgroundPage() {
             </div>
             <div className="rates-callout-zoom-content">
               <p style={{ fontSize: "16.5px", lineHeight: "1.5" }}>
-                <strong>By the numbers:</strong> In 2025 almost <strong>54%</strong> of student loan borrowers were a part of federal student loan programs.
+                {t("pol.stat.banner")}
               </p>
             </div>
           </div>

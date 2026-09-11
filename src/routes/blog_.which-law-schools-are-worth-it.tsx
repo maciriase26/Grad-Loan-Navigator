@@ -180,7 +180,7 @@ function LawSchoolsWorthItArticlePage() {
             </div>
             <div className="rates-callout-zoom-content">
               <p style={{ fontSize: "16.5px", lineHeight: "1.5" }}>
-                <strong>By the numbers:</strong> On average, a J.D. offers a <strong>41% lifetime earnings boost</strong>, even after adjusting for the cost of the degree.
+                {t("law.stat.banner")}
               </p>
             </div>
           </div>
@@ -195,12 +195,12 @@ function LawSchoolsWorthItArticlePage() {
               <table className="roi-table">
                 <thead>
                   <tr>
-                    <th className="roi-rank-cell">ROI Rank</th>
-                    <th>Institution Name</th>
-                    <th>Acceptance Rate</th>
-                    <th>All Years Tuition</th>
-                    <th>Est. Earnings at Age 60</th>
-                    <th>Lifetime ROI</th>
+                    <th className="roi-rank-cell">{t("table.roiRank")}</th>
+                    <th>{t("table.institution")}</th>
+                    <th>{t("table.acceptance")}</th>
+                    <th>{t("table.tuition")}</th>
+                    <th>{t("table.earnings60")}</th>
+                    <th>{t("table.lifetimeRoi")}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -240,12 +240,12 @@ function LawSchoolsWorthItArticlePage() {
               <table className="roi-table">
                 <thead>
                   <tr>
-                    <th className="roi-rank-cell">ROI Rank</th>
-                    <th>Institution Name</th>
-                    <th>Acceptance Rate</th>
-                    <th>All Years Tuition</th>
-                    <th>Est. Earnings at Age 60</th>
-                    <th>Lifetime ROI</th>
+                    <th className="roi-rank-cell">{t("table.roiRank")}</th>
+                    <th>{t("table.institution")}</th>
+                    <th>{t("table.acceptance")}</th>
+                    <th>{t("table.tuition")}</th>
+                    <th>{t("table.earnings60")}</th>
+                    <th>{t("table.lifetimeRoi")}</th>
                   </tr>
                 </thead>
                 <tbody>

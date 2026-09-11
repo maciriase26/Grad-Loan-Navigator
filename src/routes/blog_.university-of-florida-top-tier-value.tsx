@@ -167,7 +167,7 @@ function UniversityOfFloridaArticlePage() {
             </div>
             <div className="rates-callout-zoom-content">
               <p style={{ fontSize: "16.5px", lineHeight: "1.5" }}>
-                <strong>By the Numbers:</strong> UF is ranked <strong>No. 7</strong> among all public universities, while its education program is ranked <strong>No. 2</strong>, its real estate program <strong>No. 4</strong>, its tax law program <strong>No. 3</strong> and its accounting program <strong>No. 16</strong> in the country.
+                {t("uf.stat.banner")}
               </p>
             </div>
           </div>
@@ -251,13 +251,13 @@ function UniversityOfFloridaArticlePage() {
               <table className="roi-table">
                 <thead>
                   <tr>
-                    <th className="roi-rank-cell">Rank</th>
-                    <th>Institution Name</th>
-                    <th>Acceptance Rate</th>
-                    <th>In-State Tuition & Fees</th>
-                    <th>Out-of-State Tuition & Fees</th>
-                    <th>Est. Earnings (8 Yrs)</th>
-                    <th>Median Student Debt</th>
+                    <th className="roi-rank-cell">{t("table.rank")}</th>
+                    <th>{t("table.institution")}</th>
+                    <th>{t("table.acceptance")}</th>
+                    <th>{t("table.inState")}</th>
+                    <th>{t("table.outState")}</th>
+                    <th>{t("table.earnings8yr")}</th>
+                    <th>{t("table.studentDebt")}</th>
                   </tr>
                 </thead>
                 <tbody>

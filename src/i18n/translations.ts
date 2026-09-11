@@ -12,6 +12,22 @@ export const en = {
   "search.placeholder": "Search pages, calculators, guides, or topics...",
   "search.btn": "Search...",
 
+  /* ---------- Shared Table Headers ---------- */
+  "table.rank": "Rank",
+  "table.roiRank": "ROI Rank",
+  "table.institution": "Institution Name",
+  "table.acceptance": "Acceptance Rate",
+  "table.tuition": "All Years Tuition",
+  "table.earnings60": "Est. Earnings at Age 60",
+  "table.lifetimeRoi": "Lifetime ROI",
+  "table.inState": "In-State Tuition & Fees",
+  "table.outState": "Out-of-State Tuition & Fees",
+  "table.earnings8yr": "Est. Earnings (8 Yrs)",
+  "table.studentDebt": "Median Student Debt",
+  "table.phdProgram": "Ph.D. Program",
+  "table.medianSalary": "Median Annual Salary",
+  "table.projectedGrowth": "Projected Employment Growth",
+
   "footer.brand": "Grad Loan Navigator",
   "footer.blurb":
     "An independent guide to graduate borrowing, built for the post–Grad PLUS landscape. Reviewed for accuracy, updated as the rules change.",
@@ -720,6 +736,7 @@ export const en = {
   "rates.nav.bottomline": "5. The bottom line",
 
   "rates.part1": "Part 01",
+  "rates.part2": "Part 02",
   "rates.numbers.h2": "By the numbers",
   "rates.card1.label": "Undergrad Direct Loans",
   "rates.card1.rate": "6.52%",
@@ -1096,6 +1113,22 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "search.title": "Navegación de Búsqueda",
   "search.placeholder": "Buscar páginas, calculadoras, guías o temas...",
   "search.btn": "Buscar...",
+
+  /* ---------- Shared Table Headers (Spanish) ---------- */
+  "table.rank": "Rango",
+  "table.roiRank": "Rango ROI",
+  "table.institution": "Nombre de la Institución",
+  "table.acceptance": "Tasa de Aceptación",
+  "table.tuition": "Matrícula Todos los Años",
+  "table.earnings60": "Ganancias Est. a los 60 Años",
+  "table.lifetimeRoi": "ROI Vitalicio",
+  "table.inState": "Matrícula Estatal",
+  "table.outState": "Matrícula Fuera del Estado",
+  "table.earnings8yr": "Ganancias Est. (8 Años)",
+  "table.studentDebt": "Deuda Mediana Estudiantil",
+  "table.phdProgram": "Programa de Doctorado",
+  "table.medianSalary": "Salario Anual Mediano",
+  "table.projectedGrowth": "Crecimiento Proyectado del Empleo",
 
   "footer.brand": "Grad Loan Navigator",
   "footer.blurb":
@@ -1506,6 +1539,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "rates.nav.bottomline": "5. En conclusión",
 
   "rates.part1": "Primera parte",
+  "rates.part2": "Segunda parte",
   "rates.numbers.h2": "En cifras",
   "rates.card1.label": "Préstamos Directos de Pregrado",
   "rates.card1.rate": "6.52%",

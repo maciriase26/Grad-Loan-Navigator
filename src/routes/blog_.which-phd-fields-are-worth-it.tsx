@@ -188,7 +188,7 @@ function WhichPhdFieldsAreWorthItArticlePage() {
             </div>
             <div className="rates-callout-zoom-content">
               <p style={{ fontSize: "16.5px", lineHeight: "1.5" }}>
-                <strong>By the numbers:</strong> On average, a Ph.D. increases median lifetime earnings by <strong>$1.2 million</strong>.
+                {t("phd.stat.banner")}
               </p>
             </div>
           </div>
@@ -203,9 +203,9 @@ function WhichPhdFieldsAreWorthItArticlePage() {
               <table className="roi-table">
                 <thead>
                   <tr>
-                    <th className="roi-rank-cell">Rank</th>
-                    <th>Ph.D. Program</th>
-                    <th>Median Annual Salary</th>
+                    <th className="roi-rank-cell">{t("table.rank")}</th>
+                    <th>{t("table.phdProgram")}</th>
+                    <th>{t("table.medianSalary")}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -237,9 +237,9 @@ function WhichPhdFieldsAreWorthItArticlePage() {
               <table className="roi-table">
                 <thead>
                   <tr>
-                    <th className="roi-rank-cell">Rank</th>
-                    <th>Ph.D. Program</th>
-                    <th>Projected Employment Growth</th>
+                    <th className="roi-rank-cell">{t("table.rank")}</th>
+                    <th>{t("table.phdProgram")}</th>
+                    <th>{t("table.projectedGrowth")}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -267,9 +267,9 @@ function WhichPhdFieldsAreWorthItArticlePage() {
               <table className="roi-table">
                 <thead>
                   <tr>
-                    <th className="roi-rank-cell">Rank</th>
-                    <th>Ph.D. Program</th>
-                    <th>Projected Employment Growth</th>
+                    <th className="roi-rank-cell">{t("table.rank")}</th>
+                    <th>{t("table.phdProgram")}</th>
+                    <th>{t("table.projectedGrowth")}</th>
                   </tr>
                 </thead>
                 <tbody>
