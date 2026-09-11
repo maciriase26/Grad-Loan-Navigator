@@ -30,6 +30,10 @@ import { Route as ApiContactRouteImport } from './routes/api/contact'
 import { Route as BlogRefinancingStudentLoansRouteImport } from './routes/blog_.refinancing-student-loans'
 import { Route as BlogStudentLoanInterestByTheNumbersRouteImport } from './routes/blog_.student-loan-interest-by-the-numbers'
 import { Route as BlogStudentLoanTypesRouteImport } from './routes/blog_.student-loan-types'
+import { Route as BlogStudentLoansPoliticalBackgroundAndFutureRouteImport } from './routes/blog_.student-loans-political-background-and-future'
+import { Route as BlogUniversityOfFloridaTopTierValueRouteImport } from './routes/blog_.university-of-florida-top-tier-value'
+import { Route as BlogWhichLawSchoolsAreWorthItRouteImport } from './routes/blog_.which-law-schools-are-worth-it'
+import { Route as BlogWhichPhdFieldsAreWorthItRouteImport } from './routes/blog_.which-phd-fields-are-worth-it'
 import { Route as FaqSlugRouteImport } from './routes/faq/$slug'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 import { Route as ApiPublicHooksRegenerateCategorySummaryRouteImport } from './routes/api/public/hooks/regenerate-category-summary'
@@ -143,6 +147,30 @@ const BlogStudentLoanTypesRoute = BlogStudentLoanTypesRouteImport.update({
   path: '/blog/student-loan-types',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogStudentLoansPoliticalBackgroundAndFutureRoute =
+  BlogStudentLoansPoliticalBackgroundAndFutureRouteImport.update({
+    id: '/blog_/student-loans-political-background-and-future',
+    path: '/blog/student-loans-political-background-and-future',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogUniversityOfFloridaTopTierValueRoute =
+  BlogUniversityOfFloridaTopTierValueRouteImport.update({
+    id: '/blog_/university-of-florida-top-tier-value',
+    path: '/blog/university-of-florida-top-tier-value',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogWhichLawSchoolsAreWorthItRoute =
+  BlogWhichLawSchoolsAreWorthItRouteImport.update({
+    id: '/blog_/which-law-schools-are-worth-it',
+    path: '/blog/which-law-schools-are-worth-it',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogWhichPhdFieldsAreWorthItRoute =
+  BlogWhichPhdFieldsAreWorthItRouteImport.update({
+    id: '/blog_/which-phd-fields-are-worth-it',
+    path: '/blog/which-phd-fields-are-worth-it',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const FaqSlugRoute = FaqSlugRouteImport.update({
   id: '/faq/$slug',
   path: '/faq/$slug',
@@ -183,6 +211,10 @@ export interface FileRoutesByFullPath {
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
   '/blog/student-loan-types': typeof BlogStudentLoanTypesRoute
+  '/blog/student-loans-political-background-and-future': typeof BlogStudentLoansPoliticalBackgroundAndFutureRoute
+  '/blog/university-of-florida-top-tier-value': typeof BlogUniversityOfFloridaTopTierValueRoute
+  '/blog/which-law-schools-are-worth-it': typeof BlogWhichLawSchoolsAreWorthItRoute
+  '/blog/which-phd-fields-are-worth-it': typeof BlogWhichPhdFieldsAreWorthItRoute
   '/faq/$slug': typeof FaqSlugRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/api/public/hooks/regenerate-category-summary': typeof ApiPublicHooksRegenerateCategorySummaryRoute
@@ -209,6 +241,10 @@ export interface FileRoutesByTo {
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
   '/blog/student-loan-types': typeof BlogStudentLoanTypesRoute
+  '/blog/student-loans-political-background-and-future': typeof BlogStudentLoansPoliticalBackgroundAndFutureRoute
+  '/blog/university-of-florida-top-tier-value': typeof BlogUniversityOfFloridaTopTierValueRoute
+  '/blog/which-law-schools-are-worth-it': typeof BlogWhichLawSchoolsAreWorthItRoute
+  '/blog/which-phd-fields-are-worth-it': typeof BlogWhichPhdFieldsAreWorthItRoute
   '/faq/$slug': typeof FaqSlugRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/api/public/hooks/regenerate-category-summary': typeof ApiPublicHooksRegenerateCategorySummaryRoute
@@ -236,6 +272,10 @@ export interface FileRoutesById {
   '/blog_/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog_/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
   '/blog_/student-loan-types': typeof BlogStudentLoanTypesRoute
+  '/blog_/student-loans-political-background-and-future': typeof BlogStudentLoansPoliticalBackgroundAndFutureRoute
+  '/blog_/university-of-florida-top-tier-value': typeof BlogUniversityOfFloridaTopTierValueRoute
+  '/blog_/which-law-schools-are-worth-it': typeof BlogWhichLawSchoolsAreWorthItRoute
+  '/blog_/which-phd-fields-are-worth-it': typeof BlogWhichPhdFieldsAreWorthItRoute
   '/faq/$slug': typeof FaqSlugRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/api/public/hooks/regenerate-category-summary': typeof ApiPublicHooksRegenerateCategorySummaryRoute
@@ -264,6 +304,10 @@ export interface FileRouteTypes {
     | '/blog/refinancing-student-loans'
     | '/blog/student-loan-interest-by-the-numbers'
     | '/blog/student-loan-types'
+    | '/blog/student-loans-political-background-and-future'
+    | '/blog/university-of-florida-top-tier-value'
+    | '/blog/which-law-schools-are-worth-it'
+    | '/blog/which-phd-fields-are-worth-it'
     | '/faq/$slug'
     | '/.mcp/invoke-tool/$tool'
     | '/api/public/hooks/regenerate-category-summary'
@@ -290,6 +334,10 @@ export interface FileRouteTypes {
     | '/blog/refinancing-student-loans'
     | '/blog/student-loan-interest-by-the-numbers'
     | '/blog/student-loan-types'
+    | '/blog/student-loans-political-background-and-future'
+    | '/blog/university-of-florida-top-tier-value'
+    | '/blog/which-law-schools-are-worth-it'
+    | '/blog/which-phd-fields-are-worth-it'
     | '/faq/$slug'
     | '/.mcp/invoke-tool/$tool'
     | '/api/public/hooks/regenerate-category-summary'
@@ -316,6 +364,10 @@ export interface FileRouteTypes {
     | '/blog_/refinancing-student-loans'
     | '/blog_/student-loan-interest-by-the-numbers'
     | '/blog_/student-loan-types'
+    | '/blog_/student-loans-political-background-and-future'
+    | '/blog_/university-of-florida-top-tier-value'
+    | '/blog_/which-law-schools-are-worth-it'
+    | '/blog_/which-phd-fields-are-worth-it'
     | '/faq/$slug'
     | '/.mcp/invoke-tool/$tool'
     | '/api/public/hooks/regenerate-category-summary'
@@ -343,6 +395,10 @@ export interface RootRouteChildren {
   BlogRefinancingStudentLoansRoute: typeof BlogRefinancingStudentLoansRoute
   BlogStudentLoanInterestByTheNumbersRoute: typeof BlogStudentLoanInterestByTheNumbersRoute
   BlogStudentLoanTypesRoute: typeof BlogStudentLoanTypesRoute
+  BlogStudentLoansPoliticalBackgroundAndFutureRoute: typeof BlogStudentLoansPoliticalBackgroundAndFutureRoute
+  BlogUniversityOfFloridaTopTierValueRoute: typeof BlogUniversityOfFloridaTopTierValueRoute
+  BlogWhichLawSchoolsAreWorthItRoute: typeof BlogWhichLawSchoolsAreWorthItRoute
+  BlogWhichPhdFieldsAreWorthItRoute: typeof BlogWhichPhdFieldsAreWorthItRoute
   FaqSlugRoute: typeof FaqSlugRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
   ApiPublicHooksRegenerateCategorySummaryRoute: typeof ApiPublicHooksRegenerateCategorySummaryRoute
@@ -497,6 +553,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogStudentLoanTypesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog_/student-loans-political-background-and-future': {
+      id: '/blog_/student-loans-political-background-and-future'
+      path: '/blog/student-loans-political-background-and-future'
+      fullPath: '/blog/student-loans-political-background-and-future'
+      preLoaderRoute: typeof BlogStudentLoansPoliticalBackgroundAndFutureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog_/university-of-florida-top-tier-value': {
+      id: '/blog_/university-of-florida-top-tier-value'
+      path: '/blog/university-of-florida-top-tier-value'
+      fullPath: '/blog/university-of-florida-top-tier-value'
+      preLoaderRoute: typeof BlogUniversityOfFloridaTopTierValueRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog_/which-law-schools-are-worth-it': {
+      id: '/blog_/which-law-schools-are-worth-it'
+      path: '/blog/which-law-schools-are-worth-it'
+      fullPath: '/blog/which-law-schools-are-worth-it'
+      preLoaderRoute: typeof BlogWhichLawSchoolsAreWorthItRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog_/which-phd-fields-are-worth-it': {
+      id: '/blog_/which-phd-fields-are-worth-it'
+      path: '/blog/which-phd-fields-are-worth-it'
+      fullPath: '/blog/which-phd-fields-are-worth-it'
+      preLoaderRoute: typeof BlogWhichPhdFieldsAreWorthItRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/faq/$slug': {
       id: '/faq/$slug'
       path: '/faq/$slug'
@@ -545,6 +629,12 @@ const rootRouteChildren: RootRouteChildren = {
   BlogStudentLoanInterestByTheNumbersRoute:
     BlogStudentLoanInterestByTheNumbersRoute,
   BlogStudentLoanTypesRoute: BlogStudentLoanTypesRoute,
+  BlogStudentLoansPoliticalBackgroundAndFutureRoute:
+    BlogStudentLoansPoliticalBackgroundAndFutureRoute,
+  BlogUniversityOfFloridaTopTierValueRoute:
+    BlogUniversityOfFloridaTopTierValueRoute,
+  BlogWhichLawSchoolsAreWorthItRoute: BlogWhichLawSchoolsAreWorthItRoute,
+  BlogWhichPhdFieldsAreWorthItRoute: BlogWhichPhdFieldsAreWorthItRoute,
   FaqSlugRoute: FaqSlugRoute,
   Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
   ApiPublicHooksRegenerateCategorySummaryRoute:

@@ -140,6 +140,304 @@ export const en = {
     "There are three federal loan programs and multiple private options. Here is a cheat sheet breakdown of subsidized, unsubsidized, PLUS, and private loans.",
   "blog.card3.author": "Student Editorial Board · Updated 2026",
   "blog.card3.cta": "Read article",
+  "blog.card4.tag": "Law School ROI · 5 min read",
+  "blog.card4.title": "Which Law Schools Are Worth It?",
+  "blog.card4.excerpt":
+    "A J.D. can lead to high future earnings but also comes at high cost. Here's a data-backed look at the law schools with the highest lifetime ROI.",
+  "blog.card4.author": "Student Editorial Board · Updated Sept 2026",
+  "blog.card4.cta": "Read article",
+  "blog.card5.tag": "Policy & Future · 4 min read",
+  "blog.card5.title": "Student Loans Political Background and Future",
+  "blog.card5.excerpt":
+    "The One Big Beautiful Bill Act made significant changes to student loan programs. Here's why that happened and what's scheduled to take effect through 2028.",
+  "blog.card5.author": "Student Editorial Board · Updated Sept 2026",
+  "blog.card5.cta": "Read article",
+  "blog.card6.tag": "UF Spotlight · 4 min read",
+  "blog.card6.title": "University of Florida: A Top-Tier Value",
+  "blog.card6.excerpt":
+    "The University of Florida (UF) offers nationally ranked academic programs, competitive post-graduation placement and a robust alumni network all at a fraction of the price.",
+  "blog.card6.author": "Student Editorial Board · Updated Sept 2026",
+  "blog.card6.cta": "Read article",
+
+  "uf.meta.title": "University of Florida: A Top-Tier Value — Grad Loan Navigator",
+  "uf.meta.desc":
+    "The University of Florida (UF) offers nationally ranked academic programs, competitive post-graduation placement and a robust alumni network all at a fraction of the price.",
+  "uf.eyebrow": "UF Spotlight · Gator Value",
+  "uf.h1": "University of Florida: A Top-Tier Value",
+  "uf.sub":
+    "The University of Florida (UF) offers nationally ranked academic programs, competitive post-graduation placement and a robust alumni network all at a fraction of the price.",
+  "uf.updated": "Reviewed as of Sept. 4, 2026",
+  "uf.why.title": "Nationally Ranked Academics",
+  "uf.why.p":
+    "Tuition at UF for the 2026-2027 academic year is $6,440 for Florida residents and $34,620 for nonresidents. Despite this low cost, the university offers great value both during college and after graduation. These rankings speak for themselves and show that UF's lower price tag does not mean a lesser education for students.",
+  "uf.stat.banner":
+    "By the Numbers: UF is ranked No. 7 among all public universities, while its education program is ranked No. 2, its real estate program No. 4, its tax law program No. 3 and its accounting program No. 16 in the country.",
+  "uf.nav.academics": "1. Ranked Academics",
+  "uf.nav.outcomes": "2. Great Outcomes",
+  "uf.nav.alumni": "3. Gator Network",
+  "uf.nav.stacksup": "4. How UF Stacks Up",
+  "uf.nav.bottomline": "5. The Bottom Line",
+
+  "uf.part1": "Part 1 of 4",
+  "uf.academics.h2": "Nationally Ranked Academics",
+  "uf.academics.lead":
+    "High national rankings across key professional fields at a fraction of traditional tuition costs.",
+  "uf.r1.title": "No. 7 Public University",
+  "uf.r1.sub": "Overall Public Ranking",
+  "uf.r2.title": "No. 2 Education",
+  "uf.r2.sub": "College of Education",
+  "uf.r3.title": "No. 3 Tax Law",
+  "uf.r3.sub": "Levin College of Law",
+  "uf.r4.title": "No. 4 Real Estate",
+  "uf.r4.sub": "Warrington Business",
+  "uf.r5.title": "No. 16 Accounting",
+  "uf.r5.sub": "Fisher School of Accounting",
+
+  "uf.part2": "Part 2 of 4",
+  "uf.outcomes.h2": "Great Outcomes",
+  "uf.outcomes.lead":
+    "UF's Career Connections report found that 73% of students seeking employment had secured a job by graduation.",
+  "uf.outcomes.p1":
+    "UF students are finding themselves in major corporations across industries. Warrington School of Business, for example, reports that graduates have gone on to positions at Goldman Sachs, JPMorgan Chase, McKinsey & Company, Bain & Company, and Deloitte.",
+
+  "uf.part3": "Part 3 of 4",
+  "uf.alumni.h2": "Gator Network",
+  "uf.alumni.lead":
+    "UF's value remains high after graduation and initial job placement.",
+  "uf.alumni.p1":
+    "The University reports that there are over 500,000 living alumni with nearly half of those living out of the state of Florida. That gives graduates a built-in and geographically diverse network to draw upon when searching for jobs, making professional connections or advancing their careers.",
+
+  "uf.part4": "Part 4 of 4",
+  "uf.stacksup.h2": "How UF Stacks Up",
+  "uf.stacksup.lead":
+    "UF stands out among other top-ranked public universities. The combination of low tuition, high estimated earnings, and low student debt makes the university especially attractive for students looking to get the most value out of their education.",
+
+  "uf.part5": "Conclusion",
+  "uf.bottomline.h2": "The Bottom Line",
+  "uf.bottomline.quote":
+    "UF offers a great package for students looking for a strong education, good professional outcomes, and a large alumni network at a relatively affordable price. UF shows that a great university can come with a reasonable price tag.",
+  "uf.cta.h2": "Planning your college funding?",
+  "uf.cta.p":
+    "Estimate your annual funding gap, total borrowing needed, and federal borrowing cap compliance.",
+  "uf.cta.btn": "Chart your path",
+  "uf.sources.label": "Sources:",
+  "uf.sources.text":
+    "University admissions and financial aid offices, Carnegie Classifications. Reviewed as of Sept. 4, 2026.",
+
+  /* ---------- Ph.D. ROI Article (English) ---------- */
+  "blog.card7.tag": "Ph.D. ROI · 5 min read",
+  "blog.card7.title": "Which Ph.D. Fields Are Worth It?",
+  "blog.card7.excerpt":
+    "A Ph.D. can significantly boost your career prospects but requires time and money. Here are the programs with the highest salaries and strongest job growth.",
+  "blog.card7.author": "Student Editorial Board · Updated Sept 2026",
+  "blog.card7.cta": "Read article",
+
+  "phd.meta.title": "Which Ph.D. Fields Are Worth It? — Grad Loan Navigator",
+  "phd.meta.desc":
+    "A Ph.D. can significantly boost your career prospects but requires time and money. Here are the programs that have the best financial outcomes.",
+  "phd.eyebrow": "Ph.D. ROI · 5 min read",
+  "phd.h1": "Which Ph.D. Fields Are Worth It?",
+  "phd.sub":
+    "A Ph.D. can significantly boost your career prospects but requires time and money. Here are the programs that have the best financial outcomes.",
+  "phd.updated": "Reviewed as of Sept. 4, 2026",
+  "phd.why.title": "Why it matters",
+  "phd.why.p":
+    "When deciding between fields of study, you need to understand the potential earnings of your degree. Understanding the potential salaries of each Ph.D. degree sets you up for success.",
+  "phd.stat.banner":
+    "By the numbers: On average, a Ph.D. increases median lifetime earnings by $1.2 million.",
+  "phd.nav.paying": "1. Highest Paying Fields",
+  "phd.nav.economy": "2. The Changing Economy",
+  "phd.nav.mind": "3. Keep In Mind…",
+  "phd.nav.bottomline": "4. The Bottom Line",
+
+  "phd.part1": "Part 1 of 3",
+  "phd.paying.h2": "Highest Paying Ph.D. Fields",
+  "phd.paying.lead":
+    "Doctoral programs in computer science, engineering, and economics lead the nation in median annual compensation.",
+
+  "phd.part2": "Part 2 of 3",
+  "phd.economy.h2": "The Changing Economy",
+  "phd.economy.lead":
+    "Especially with the advent of AI, the workforce is changing quickly. Fast growing fields with increased demand may lead to higher earnings in the future.",
+  "phd.economy.fast.title": "Fast Growing Fields (Projected Employment Growth)",
+  "phd.economy.shrink.title": "Shrinking Occupations & Stagnant Salaries",
+  "phd.economy.shrink.lead":
+    "Fields connected to shrinking occupations may lead to fewer employment opportunities and stagnant salaries.",
+
+  "phd.part3": "Part 3 of 3",
+  "phd.mind.h2": "Keep In Mind…",
+  "phd.mind.p1.title": "Funding matters",
+  "phd.mind.p1.text":
+    "While many Ph.D. programs offer tuition waivers and stipends, funding packages and expenses depend on school and location.",
+  "phd.mind.p2.title": "The opportunity cost",
+  "phd.mind.p2.text": "You sacrifice several years of potential earnings in the workforce.",
+  "phd.mind.p3.title": "Your career destination",
+  "phd.mind.p3.text":
+    "Your individual professional goals can lead to drastically different earnings with the same degree.",
+  "phd.mind.p4.title": "Program length",
+  "phd.mind.p4.text": "Consider how long the degree will take and its completion rate.",
+  "phd.mind.who.title": "Who this actually makes sense for",
+  "phd.mind.who.text":
+    "You need enough funding and a field that will reward your degree. Be willing and able to wait for a payoff.",
+
+  "phd.part4": "Conclusion",
+  "phd.bottomline.h2": "The Bottom Line",
+  "phd.bottomline.quote":
+    "Consider earnings outlook, growth projections, and specific funding packages when choosing which Ph.D. to pursue.",
+  "phd.cta.h2": "Planning for graduate school funding?",
+  "phd.cta.p":
+    "Use our step-by-step calculator to estimate your funding gap and federal borrowing limits.",
+  "phd.cta.btn": "Chart your path",
+  "phd.sources.label": "Sources:",
+  "phd.sources.text":
+    "Georgetown Center on Education and the Workforce, National Center for Science and Engineering Statistics, Bureau of Labor Statistics. Reviewed as of Sept. 4, 2026.",
+
+  "pol.meta.title": "Student Loans Political Background and Future — Grad Loan Navigator",
+  "pol.meta.desc":
+    "The One Big Beautiful Bill Act made significant changes to student loan programs. Here's why that happened, and what's to come.",
+  "pol.eyebrow": "Policy & Future · 4 min read",
+  "pol.h1": "Student Loans Political Background and Future",
+  "pol.sub":
+    "The One Big Beautiful Act made significant changes to student loan programs. Here's why that happened, and what's to come.",
+  "pol.updated": "Reviewed as of Sept. 4, 2026",
+  "pol.why.title": "Why it matters",
+  "pol.why.p":
+    "The changes to student loans made by the One Big Beautiful Bill Act are scheduled to take effect in yearly installments. The first changes took effect July 1, 2026, and the final set takes effect July 1, 2028.",
+  "pol.stat.banner":
+    "By the numbers: In 2025 almost 54% of student loan borrowers were a part of federal student loan programs.",
+  "pol.nav.history": "1. History of Federal Loans",
+  "pol.nav.july2026": "2. What Changed July 1, 2026",
+  "pol.nav.july2027": "3. Changes Coming July 1, 2027",
+  "pol.nav.july2028": "4. Changes Coming July 1, 2028",
+  "pol.nav.bottomline": "5. The Bottom Line",
+
+  "pol.part1": "Part 1 of 4",
+  "pol.history.h2": "The History of Federal Student Loans",
+  "pol.history.lead":
+    "The first major Federal student loan program was established in 1958 with the passage of the National Defense Education Act (NDEA).",
+  "pol.history.p1.title": "Sputnik & College Access",
+  "pol.history.p1.text":
+    "The first student loan program was set up to compete with the Soviet Union's launch of Sputnik, the world's first satellite, in the hopes of growing the amount of people attending college.",
+  "pol.history.p2.title": "Expansion in 1964",
+  "pol.history.p2.text":
+    "Loans were expanded in 1964 through an amendment increasing the number of programs eligible, and over the years these loans have become more accessible.",
+  "pol.history.p3.title": "Bipartisan Support",
+  "pol.history.p3.text":
+    "The bill was passed with bipartisan support at the time.",
+
+  "pol.part2": "Part 2 of 4",
+  "pol.july2026.h2": "What changed on July 1, 2026",
+  "pol.july2026.lead":
+    "The One Big Beautiful Bill eliminated Grad PLUS for anyone starting a new program on or after July 1, 2026. It's not gone for everyone, though. A legacy provision keeps it open for a limited group of continuing borrowers.",
+  "pol.july2026.rule1.title": "Current Enrolled Borrowers",
+  "pol.july2026.rule1.text":
+    "You qualify for the legacy provision only if you borrowed a federal loan for your current program before July 1, 2026, and you stay enrolled in that same program.",
+  "pol.july2026.rule2.title": "3 Academic Years Limit",
+  "pol.july2026.rule2.text":
+    "Legacy borrowers can keep using Grad PLUS for up to three more academic years, or until they finish the program, whichever comes first.",
+  "pol.july2026.rule3.title": "New Programs Barred",
+  "pol.july2026.rule3.text":
+    "Anyone starting a new program, a new school, or borrowing for the first time after July 1, 2026, cannot get a Grad PLUS Loan at all.",
+  "pol.july2026.rule4.title": "$257,500 Lifetime Cap",
+  "pol.july2026.rule4.text":
+    "Grad PLUS balances count toward the new $257,500 lifetime cap on federal student loans.",
+  "pol.july2026.politics.title": "Political Context & Party Lines",
+  "pol.july2026.politics.text":
+    "Democrats have generally opposed these changes. The One Big Beautiful Bill passed almost completely down party lines in the House of Representatives. It barely passed in the Senate with some more moderate Republicans opposing the bill. Budget hawk Republicans have opposed all federal student loans, with more moderate ones seeking to reform. Democrats have generally wanted an expansion of the system, with more leniency for borrowers. President Biden’s administration brought waves of loan repayment pauses and forgiveness.",
+  "pol.july2026.who.title": "Who this actually affects",
+  "pol.july2026.who.text":
+    "Students in high-cost programs where tuition can exceed $50,000 a year, who counted on Grad PLUS to close the gap. Without it, that gap now falls to savings, assistantships, or private loans.",
+  "pol.july2026.who.link": "Check whether you fall under the legacy provision here: StudentAid.gov →",
+
+  "pol.part3": "Part 3 of 4",
+  "pol.july2027.h2": "Changes Coming July 1, 2027",
+  "pol.july2027.lead":
+    "In 2027, there will be changes to programs that offer temporary pauses in student loan repayment.",
+  "pol.july2027.c1.title": "Removal of Eligibility Criteria",
+  "pol.july2027.c1.text": "The removal of certain eligibility criteria including unemployment and economic hardship.",
+  "pol.july2027.c2.title": "Reduced Duration of Pauses",
+  "pol.july2027.c2.text": "Reducing amount of time the pause lasts.",
+  "pol.july2027.c3.title": "Forbearance Cap Reduction",
+  "pol.july2027.c3.text": "The pause period, or forbearance will be reduced to every nine months out of a two-year period, down from 12.",
+
+  "pol.part4": "Part 4 of 4",
+  "pol.july2028.h2": "Changes coming July 1, 2028",
+  "pol.july2028.lead":
+    "The final installment takes effect in 2028.",
+  "pol.july2028.i1.title": "Ending PAYE and ICR Programs",
+  "pol.july2028.i1.text": "On July 1, 2028, the Department of Education will be ending the PAYE and Income-Contingent Repayment (ICR) programs.",
+  "pol.july2028.i2.title": "Legacy Repayment Protections",
+  "pol.july2028.i2.text": "Legacy borrowers can keep using these repayment programs, but new enrollments will not be allowed.",
+  "pol.july2028.i3.title": "Enrollment Deadline",
+  "pol.july2028.i3.text": "The final deadline for enrollment in these programs has not been set, but it will likely be in late 2027 or early 2028.",
+
+  "pol.part5": "Conclusion",
+  "pol.bottomline.h2": "The Bottom Line",
+  "pol.bottomline.quote":
+    "Major changes to federal borrowing are unfolding in staged installments through 2028. Knowing where you stand today protects your financial future.",
+  "pol.cta.h2": "Wondering how these changes impact your borrowing?",
+  "pol.cta.p":
+    "Use our interactive tool to calculate your funding gap and federal borrowing cap compliance.",
+  "pol.cta.btn": "Chart your path",
+  "pol.sources.label": "Sources:",
+  "pol.sources.text":
+    "TheCollegeInvestor.com, Encyclopedia Britannica, EducationData.com, U.S. Department of Education, Federal Student Aid; NASFAA; The Institute for College Access & Success. Reviewed as of Sept. 4, 2026.",
+
+  "law.meta.title": "Which Law Schools Are Worth It? — Grad Loan Navigator",
+  "law.meta.desc":
+    "A J.D. can lead to high future earnings but also comes at high cost. Here's where you can get the most out of your law degree.",
+  "law.eyebrow": "Law School ROI · 5 min read",
+  "law.h1": "Which Law Schools Are Worth It?",
+  "law.sub":
+    "A J.D. can lead to high future earnings but also comes at high cost. Here's where you can get the most out of your law degree.",
+  "law.updated": "Reviewed as of Sept. 4, 2026",
+  "law.why.title": "Why it matters",
+  "law.why.p":
+    "When researching law schools, you need to understand the cost and return of each program. Understanding the Return on Investment (ROI) of each school sets you up for success.",
+  "law.stat.banner":
+    "By the numbers: On average, a J.D. offers a 41% lifetime earnings boost, even after adjusting for the cost of the degree.",
+  "law.nav.heavy": "1. Aiming High: The Heavy Hitters",
+  "law.nav.value": "2. Underrated Picks: Value Schools",
+  "law.nav.mind": "3. Keep In Mind…",
+  "law.nav.bottomline": "4. The Bottom Line",
+
+  "law.part1": "Part 1 of 3",
+  "law.heavy.h2": "Aiming High: The Heavy Hitters",
+  "law.heavy.lead":
+    "The highest-ranked law schools generally have the strongest ROIs. Access to competitive employment opportunities lead to the best placements.",
+  "law.heavy.who.title": "Who this actually makes sense for",
+  "law.heavy.who.text":
+    "Highest lifetime earnings, but also highest tuitions and immediate costs. Financing options available, but you need to be able and willing to wait for payoff. These schools are also highly selective, must be a realistic option for you.",
+
+  "law.part2": "Part 2 of 3",
+  "law.value.h2": "Underrated Picks: Value Schools",
+  "law.value.lead":
+    "Fewer barriers to entry. Schools that still pack a punch, but with lower tuitions and higher acceptance rates. Public schools typically cost less than private schools, especially if you qualify for in-state tuition. They still offer strong earning potential and career opportunities.",
+
+  "law.part3": "Part 3 of 3",
+  "law.mind.h2": "Keep In Mind…",
+  "law.mind.p1.title": "Dropping out",
+  "law.mind.p1.text": "Leaving without a degree can net a negative return. If you're not sure, you may want to wait.",
+  "law.mind.p2.title": "Heavy borrowing based on best-case salary",
+  "law.mind.p2.text": "Calculate repayment using school's median salary.",
+  "law.mind.p3.title": "Low/declining bar-passage rates",
+  "law.mind.p3.text": "Struggling to pass bar can delay employment and increase costs.",
+  "law.mind.p4.title": "Unaccredited programs",
+  "law.mind.p4.text": "A non-ABA-accredited J.D. can limit practice and future career options.",
+  "law.mind.p5.title": "Don't forget about full cost",
+  "law.mind.p5.text": "Fees, materials, housing, and other living expenses, school and area dependent.",
+
+  "law.part4": "Conclusion",
+  "law.bottomline.h2": "The Bottom Line",
+  "law.bottomline.quote":
+    "When looking at high earnings, don't forget about the high costs. Be ready to wait for returns.",
+  "law.cta.h2": "Planning for law school tuition?",
+  "law.cta.p":
+    "Use our step-by-step calculator to estimate your funding gap and federal borrowing limits.",
+  "law.cta.btn": "Chart your path",
+  "law.sources.label": "Sources:",
+  "law.sources.text":
+    "Reuters, Federal Student Aid; The Foundation for Research on Equal Opportunity. Reviewed as of Sept. 4, 2026.",
 
   "manage.eyebrow": "Manage",
   "manage.h1": "Existing loans & refinance",
@@ -1574,6 +1872,303 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "refi.sources.label": "Fuentes:",
   "refi.sources.text":
     "U.S. Department of Education, Federal Student Aid; U.S. News & World Report",
+
+  /* ---------- law school ROI blog page (Spanish) ---------- */
+  "law.meta.title": "¿Qué Escuelas de Derecho Valen la Pena? — Grad Loan Navigator",
+  "law.meta.desc":
+    "Un J.D. puede generar altos ingresos futuros pero también un alto costo. Descubre dónde aprovechar al máximo tu título en derecho.",
+  "law.eyebrow": "ROI de Derecho · 5 min lectura",
+  "law.h1": "¿Qué Escuelas de Derecho Valen la Pena?",
+  "law.sub":
+    "Un J.D. puede generar altos ingresos futuros pero también viene con un alto costo. Descubre dónde aprovechar al máximo tu título en derecho.",
+  "law.updated": "Revisado al 4 de septiembre de 2026",
+  "law.why.title": "Por qué es importante",
+  "law.why.p":
+    "Al investigar escuelas de derecho, debes comprender el costo y el retorno de cada programa. Comprender el Retorno de Inversión (ROI) te prepara para el éxito.",
+  "law.stat.banner":
+    "En cifras: En promedio, un J.D. ofrece un aumento del 41% en ingresos a lo largo de la vida, incluso ajustado por el costo de la carrera.",
+  "law.nav.heavy": "1. Apuntando alto: Las grandes opciones",
+  "law.nav.value": "2. Selecciones subestimadas: Opciones de valor",
+  "law.nav.mind": "3. Ten en cuenta…",
+  "law.nav.bottomline": "4. En conclusión",
+
+  "law.part1": "Primera parte",
+  "law.heavy.h2": "Apuntando alto: Las grandes opciones",
+  "law.heavy.lead":
+    "Las escuelas de derecho mejor clasificadas generalmente ofrecen el ROI más fuerte. El acceso a oportunidades laborales competitivas conduce a los mejores puestos.",
+  "law.heavy.who.title": "Para quién tiene sentido realmente",
+  "law.heavy.who.text":
+    "Los ingresos más altos a lo largo de la vida, pero también las matrículas y costos inmediatos más altos. Hay opciones de financiamiento, pero debes estar dispuesto a esperar los retornos. Son muy selectivas, deben ser una opción realista.",
+
+  "law.part2": "Segunda parte",
+  "law.value.h2": "Selecciones subestimadas: Opciones de valor",
+  "law.value.lead":
+    "Menores barreras de entrada. Escuelas con matrículas más bajas y mayores tasas de aceptación. Las escuelas públicas suelen costar menos que las privadas, especialmente con tarifa estatal. Ofrecen un fuerte potencial de ingresos y oportunidades profesionales.",
+
+  "law.part3": "Tercera parte",
+  "law.mind.h2": "Ten en cuenta…",
+  "law.mind.p1.title": "Abandonar los estudios",
+  "law.mind.p1.text": "Salir sin un título puede resultar en un retorno negativo. Si no estás seguro, considera esperar.",
+  "law.mind.p2.title": "Endeudarse según el salario ideal",
+  "law.mind.p2.text": "Calcula el reembolso utilizando el salario mediano de la escuela.",
+  "law.mind.p3.title": "Tasas de aprobación del examen de abogacía bajas o en descenso",
+  "law.mind.p3.text": "Dificultades para aprobar el examen pueden retrasar el empleo y aumentar costos.",
+  "law.mind.p4.title": "Programas no acreditados",
+  "law.mind.p4.text": "Un J.D. no acreditado por la ABA puede limitar el ejercicio y las opciones profesionales.",
+  "law.mind.p5.title": "No olvides el costo total",
+  "law.mind.p5.text": "Cuotas, materiales, vivienda y gastos de manutención según la escuela y la zona.",
+
+  "law.part4": "Conclusión",
+  "law.bottomline.h2": "En conclusión",
+  "law.bottomline.quote":
+    "Al buscar ingresos altos, no olvides los altos costos. Prepárate para esperar los retornos.",
+  "law.cta.h2": "¿Planificando la matrícula de la escuela de derecho?",
+  "law.cta.p":
+    "Usa nuestra calculadora paso a paso para estimar tu brecha de financiamiento y límites de préstamo.",
+  "law.cta.btn": "Traza tu camino",
+  "law.sources.label": "Fuentes:",
+  "law.sources.text":
+    "Reuters, Federal Student Aid; The Foundation for Research on Equal Opportunity. Revisado al 4 de septiembre de 2026.",
+
+  /* ---------- political background blog page (Spanish) ---------- */
+  "blog.card5.tag": "Política y Futuro · 4 min lectura",
+  "blog.card5.title": "Antecedentes Políticos y Futuro de los Préstamos Estudiantiles",
+  "blog.card5.excerpt":
+    "La Ley 'One Big Beautiful Bill' realizó cambios significativos en los programas de préstamos estudiantiles. Conoce por qué sucedió y qué entrará en vigor hasta 2028.",
+  "blog.card5.author": "Consejo Editorial Estudiantil · Actualizado Sep 2026",
+  "blog.card5.cta": "Leer artículo",
+
+  "pol.meta.title": "Antecedentes Políticos y Futuro de los Préstamos Estudiantiles — Grad Loan Navigator",
+  "pol.meta.desc":
+    "La Ley 'One Big Beautiful Bill' realizó cambios significativos en los programas de préstamos estudiantiles. Explicación de las razones y lo que está por venir.",
+  "pol.eyebrow": "Política y Futuro · 4 min lectura",
+  "pol.h1": "Antecedentes Políticos y Futuro de los Préstamos Estudiantiles",
+  "pol.sub":
+    "La Ley 'One Big Beautiful Act' realizó cambios significativos en los programas de préstamos estudiantiles. Aquí explicamos por qué sucedió y qué está por venir.",
+  "pol.updated": "Revisado al 4 de septiembre de 2026",
+  "pol.why.title": "Por qué es importante",
+  "pol.why.p":
+    "Los cambios a los préstamos estudiantiles establecidos por la Ley 'One Big Beautiful Bill' están programados para entrar en vigor en plazos anuales. Los primeros cambios entraron en vigor el 1 de julio de 2026, y el conjunto final entra en vigor el 1 de julio de 2028.",
+  "pol.stat.banner":
+    "En cifras: En 2025 casi el 54% de los prestatarios de préstamos estudiantiles formaban parte de programas de préstamos federales.",
+  "pol.nav.history": "1. Historia de los Préstamos Federales",
+  "pol.nav.july2026": "2. Qué Cambió el 1 de Julio de 2026",
+  "pol.nav.july2027": "3. Cambios el 1 de Julio de 2027",
+  "pol.nav.july2028": "4. Cambios el 1 de Julio de 2028",
+  "pol.nav.bottomline": "5. En conclusión",
+
+  "pol.part1": "Primera parte",
+  "pol.history.h2": "La Historia de los Préstamos Estudiantiles Federales",
+  "pol.history.lead":
+    "El primer gran programa de préstamos estudiantiles federales se estableció en 1958 con la aprobación de la Ley de Educación de Defensa Nacional (NDEA).",
+  "pol.history.p1.title": "Sputnik y Acceso a la Universidad",
+  "pol.history.p1.text":
+    "El primer programa de préstamos se creó para competir con el lanzamiento del Sputnik de la Unión Soviética, el primer satélite del mundo, con la esperanza de aumentar el número de personas que asistían a la universidad.",
+  "pol.history.p2.title": "Expansión en 1964",
+  "pol.history.p2.text":
+    "Los préstamos se ampliaron en 1964 mediante una enmienda que aumentó el número de programas elegibles, y a lo largo de los años estos préstamos se han vuelto más accesibles.",
+  "pol.history.p3.title": "Apoyo Bipartidista",
+  "pol.history.p3.text":
+    "El proyecto de ley se aprobó con apoyo bipartidista en ese momento.",
+
+  "pol.part2": "Segunda parte",
+  "pol.july2026.h2": "Qué cambió el 1 de julio de 2026",
+  "pol.july2026.lead":
+    "La ley eliminó Grad PLUS para cualquier persona que comience un nuevo programa a partir del 1 de julio de 2026. Sin embargo, no desapareció para todos: una cláusula de legado lo mantiene abierto para un grupo limitado de prestatarios continuos.",
+  "pol.july2026.rule1.title": "Prestatarios Actualmente Inscritos",
+  "pol.july2026.rule1.text":
+    "Calificas para la cláusula de legado solo si solicitaste un préstamo federal para tu programa actual antes del 1 de julio de 2026 y permaneces inscrito en ese mismo programa.",
+  "pol.july2026.rule2.title": "Límite de 3 Años Académicos",
+  "pol.july2026.rule2.text":
+    "Los prestatarios con derechos adquiridos pueden seguir utilizando Grad PLUS hasta por tres años académicos más, o hasta finalizar el programa, lo que ocurra primero.",
+  "pol.july2026.rule3.title": "Nuevos Programas Excluidos",
+  "pol.july2026.rule3.text":
+    "Cualquier persona que comience un nuevo programa, una nueva escuela o solicite préstamos por primera vez después del 1 de julio de 2026 no podrá obtener un préstamo Grad PLUS.",
+  "pol.july2026.rule4.title": "Límite Máximo de $257,500",
+  "pol.july2026.rule4.text":
+    "Los saldos de Grad PLUS cuentan para el nuevo límite máximo vitalicio de $257,500 en préstamos estudiantiles federales.",
+  "pol.july2026.politics.title": "Contexto Político y Líneas Partidistas",
+  "pol.july2026.politics.text":
+    "Los demócratas se han opuesto a estos cambios. La ley se aprobó casi completamente siguiendo líneas partidistas en la Cámara de Representantes. En el Senado se aprobó por un margen muy estrecho con la oposición de algunos republicanos moderados. Los republicanos conservadores en materia presupuestaria se han opuesto a todos los préstamos federales, mientras que los moderados buscaban reformas. La administración Biden promovió olas de pausas de pago y condonación de préstamos.",
+  "pol.july2026.who.title": "A quién afecta realmente",
+  "pol.july2026.who.text":
+    "Estudiantes en programas de alto costo donde la matrícula puede superar los $50,000 al año, que contaban con Grad PLUS para cubrir la brecha. Sin él, esa brecha ahora recae en ahorros, asistencias académicas o préstamos privados.",
+  "pol.july2026.who.link": "Consulta si estás cubierto por la cláusula de legado en StudentAid.gov →",
+
+  "pol.part3": "Tercera parte",
+  "pol.july2027.h2": "Cambios programados para el 1 de julio de 2027",
+  "pol.july2027.lead":
+    "En 2027, habrá cambios en los programas que ofrecen pausas temporales en el pago de préstamos estudiantiles.",
+  "pol.july2027.c1.title": "Eliminación de Criterios de Elegibilidad",
+  "pol.july2027.c1.text": "Se eliminarán ciertos criterios de elegibilidad, incluyendo desempleo y dificultades económicas.",
+  "pol.july2027.c2.title": "Reducción en la Duración de las Pausas",
+  "pol.july2027.c2.text": "Reducción en el tiempo máximo que duran las pausas de pago.",
+  "pol.july2027.c3.title": "Límite de Aplazamiento (Forbearance)",
+  "pol.july2027.c3.text": "El período de aplazamiento o forbearance se reducirá a 9 meses dentro de un período de dos años, frente a los 12 anteriores.",
+
+  "pol.part4": "Cuarta parte",
+  "pol.july2028.h2": "Cambios programados para el 1 de julio de 2028",
+  "pol.july2028.lead":
+    "El conjunto final de cambios entrará en vigor en 2028.",
+  "pol.july2028.i1.title": "Fin de los Programas PAYE e ICR",
+  "pol.july2028.i1.text": "El 1 de julio de 2028, el Departamento de Educación finalizará los programas PAYE e ICR (Income-Contingent Repayment).",
+  "pol.july2028.i2.title": "Protecciones para Prestatarios Actuales",
+  "pol.july2028.i2.text": "Los prestatarios actuales pueden seguir utilizando estos programas de pago, pero no se permitirán nuevas inscripciones.",
+  "pol.july2028.i3.title": "Plazo Límite de Inscripción",
+  "pol.july2028.i3.text": "La fecha límite final para inscribirse en estos programas aún no se ha fijado, pero es probable que sea a finales de 2027 o principios de 2028.",
+
+  "pol.part5": "Conclusión",
+  "pol.bottomline.h2": "En conclusión",
+  "pol.bottomline.quote":
+    "Los cambios importantes en los préstamos federales se desarrollan en etapas hasta 2028. Saber dónde estás hoy protege tu futuro financiero.",
+  "pol.cta.h2": "¿Te preguntas cómo afectan estos cambios a tus préstamos?",
+  "pol.cta.p":
+    "Usa nuestra herramienta interactiva para calcular tu brecha de financiamiento y verificar el cumplimiento de los límites federales.",
+  "pol.cta.btn": "Traza tu camino",
+  "pol.sources.label": "Fuentes:",
+  "pol.sources.text":
+    "TheCollegeInvestor.com, Encyclopedia Britannica, EducationData.com, U.S. Department of Education, Federal Student Aid; NASFAA; The Institute for College Access & Success. Revisado al 4 de septiembre de 2026.",
+
+  /* ---------- UF article (Spanish) ---------- */
+  "blog.card6.tag": "Destacado UF · 4 min lectura",
+  "blog.card6.title": "Universidad de Florida: Valor de Primer Nivel",
+  "blog.card6.excerpt":
+    "La Universidad de Florida (UF) ofrece programas académicos clasificados a nivel nacional, colocación competitiva y una red de exalumnos sólida a una fracción del precio.",
+  "blog.card6.author": "Consejo Editorial Estudiantil · Actualizado Sep 2026",
+  "blog.card6.cta": "Leer artículo",
+
+  "uf.meta.title": "Universidad de Florida: Valor de Primer Nivel — Grad Loan Navigator",
+  "uf.meta.desc":
+    "La Universidad de Florida (UF) ofrece programas académicos clasificados a nivel nacional y excelente retorno de inversión.",
+  "uf.eyebrow": "Destacado UF · Valor Gator",
+  "uf.h1": "Universidad de Florida: Valor de Primer Nivel",
+  "uf.sub":
+    "La Universidad de Florida (UF) ofrece programas académicos clasificados a nivel nacional, colocación competitiva y una red de exalumnos sólida a una fracción del precio.",
+  "uf.updated": "Revisado al 4 de septiembre de 2026",
+  "uf.why.title": "Programas Académicos Clasificados a Nivel Nacional",
+  "uf.why.p":
+    "La matrícula en UF para el año académico 2026-2027 es de $6,440 para residentes de Florida y $34,620 para no residentes. A pesar de este bajo costo, la universidad ofrece un gran valor tanto durante la carrera como después de la graduación.",
+  "uf.stat.banner":
+    "En cifras: UF ocupa el puesto N° 7 entre todas las universidades públicas, su programa de educación es el N° 2, bienes raíces el N° 4, derecho tributario el N° 3 y contabilidad el N° 16.",
+  "uf.nav.academics": "1. Programas Clasificados",
+  "uf.nav.outcomes": "2. Excelentes Resultados",
+  "uf.nav.alumni": "3. Red Gator",
+  "uf.nav.stacksup": "4. Comparación Universitaria",
+  "uf.nav.bottomline": "5. En conclusión",
+
+  "uf.part1": "Primera parte",
+  "uf.academics.h2": "Programas Académicos Clasificados a Nivel Nacional",
+  "uf.academics.lead":
+    "Altas clasificaciones nacionales en campos profesionales clave a una fracción del costo tradicional.",
+  "uf.r1.title": "N° 7 Universidad Pública",
+  "uf.r1.sub": "Clasificación Pública General",
+  "uf.r2.title": "N° 2 Educación",
+  "uf.r2.sub": "Facultad de Educación",
+  "uf.r3.title": "N° 3 Derecho Tributario",
+  "uf.r3.sub": "Facultad de Derecho Levin",
+  "uf.r4.title": "N° 4 Bienes Raíces",
+  "uf.r4.sub": "Escuela de Negocios Warrington",
+  "uf.r5.title": "N° 16 Contabilidad",
+  "uf.r5.sub": "Escuela de Contabilidad Fisher",
+
+  "uf.part2": "Segunda parte",
+  "uf.outcomes.h2": "Excelentes Resultados Profesionales",
+  "uf.outcomes.lead":
+    "El informe Career Connections de UF reveló que el 73% de los estudiantes que buscaban empleo ya habían asegurado un trabajo al graduarse.",
+  "uf.outcomes.p1":
+    "Los estudiantes de UF están ingresando a corporaciones líderes como Goldman Sachs, JPMorgan Chase, McKinsey & Company, Bain & Company y Deloitte.",
+
+  "uf.part3": "Tercera parte",
+  "uf.alumni.h2": "Red de Exalumnos Gator",
+  "uf.alumni.lead":
+    "El valor de UF se mantiene alto tras la graduación y la inserción laboral.",
+  "uf.alumni.p1":
+    "La universidad reporta más de 500,000 exalumnos vivos, con casi la mitad residiendo fuera de Florida, ofreciendo una red diversa y accesible para avanzar profesionalmente.",
+
+  "uf.part4": "Cuarta parte",
+  "uf.stacksup.h2": "Cómo se Compara UF",
+  "uf.stacksup.lead":
+    "UF destaca entre las mejores universidades públicas por su combinación de baja matrícula, altos ingresos estimados y baja deuda estudiantil.",
+
+  "uf.part5": "Conclusión",
+  "uf.bottomline.h2": "En conclusión",
+  "uf.bottomline.quote":
+    "UF ofrece un paquete integral para estudiantes que buscan excelente educación, buenos resultados profesionales y una gran red de contactos a un precio asequible.",
+  "uf.cta.h2": "¿Planificando tu financiamiento universitario?",
+  "uf.cta.p":
+    "Estima tu brecha de financiamiento anual, el total necesario y el cumplimiento de límites federales.",
+  "uf.cta.btn": "Traza tu camino",
+  "uf.sources.label": "Fuentes:",
+  "uf.sources.text":
+    "Oficinas de admisiones y ayuda financiera universitaria, Clasificaciones Carnegie. Revisado al 4 de septiembre de 2026.",
+
+  /* ---------- Ph.D. ROI Article (Spanish) ---------- */
+  "blog.card7.tag": "ROI de Doctorado · 5 min lectura",
+  "blog.card7.title": "¿Qué Campos de Doctorado Valen la Pena?",
+  "blog.card7.excerpt":
+    "Un doctorado puede impulsar significativamente tus perspectivas profesionales, pero requiere tiempo y dinero. Conoce los programas con mejores salarios y crecimiento.",
+  "blog.card7.author": "Consejo Editorial Estudiantil · Actualizado Sep 2026",
+  "blog.card7.cta": "Leer artículo",
+
+  "phd.meta.title": "¿Qué Campos de Doctorado Valen la Pena? — Grad Loan Navigator",
+  "phd.meta.desc":
+    "Un Ph.D. puede mejorar tus perspectivas profesionales pero requiere tiempo y dinero. Estos son los programas con mejores resultados financieros.",
+  "phd.eyebrow": "ROI de Doctorado · 5 min lectura",
+  "phd.h1": "¿Qué Campos de Doctorado Valen la Pena?",
+  "phd.sub":
+    "Un Ph.D. puede mejorar significativamente tus perspectivas profesionales pero requiere tiempo y dinero. Aquí están los programas con mejores resultados financieros.",
+  "phd.updated": "Revisado al 4 de septiembre de 2026",
+  "phd.why.title": "Por qué es importante",
+  "phd.why.p":
+    "Al decidir entre áreas de estudio, debes entender los ingresos potenciales de tu título. Comprender los salarios potenciales de cada Ph.D. te prepara para el éxito.",
+  "phd.stat.banner":
+    "En cifras: En promedio, un Ph.D. aumenta los ingresos medios a lo largo de la vida en $1.2 millones.",
+  "phd.nav.paying": "1. Campos Mejor Pagados",
+  "phd.nav.economy": "2. Economía en Cambio",
+  "phd.nav.mind": "3. Ten en cuenta…",
+  "phd.nav.bottomline": "4. En conclusión",
+
+  "phd.part1": "Primera parte",
+  "phd.paying.h2": "Campos de Doctorado Mejor Pagados",
+  "phd.paying.lead":
+    "Los programas de doctorado en ciencias de la computación, ingeniería y economía lideran la nación en compensación anual mediana.",
+
+  "phd.part2": "Segunda parte",
+  "phd.economy.h2": "La Economía en Cambio",
+  "phd.economy.lead":
+    "Especialmente con la llegada de la IA, el mercado laboral está cambiando rápidamente. Los campos de rápido crecimiento pueden generar mayores ingresos en el futuro.",
+  "phd.economy.fast.title": "Campos de Rápido Crecimiento (Proyección de Crecimiento)",
+  "phd.economy.shrink.title": "Ocupaciones en Reducción y Salarios Estancados",
+  "phd.economy.shrink.lead":
+    "Los campos vinculados a ocupaciones en reducción pueden conducir a menores oportunidades de empleo y salarios estancados.",
+
+  "phd.part3": "Tercera parte",
+  "phd.mind.h2": "Ten en cuenta…",
+  "phd.mind.p1.title": "El financiamiento importa",
+  "phd.mind.p1.text":
+    "Aunque muchos programas de Ph.D. ofrecen exención de matrícula y estipendios, los paquetes de financiamiento varían según la universidad y ubicación.",
+  "phd.mind.p2.title": "El costo de oportunidad",
+  "phd.mind.p2.text": "Sacrificas varios años de ingresos potenciales en la fuerza laboral.",
+  "phd.mind.p3.title": "Tu destino profesional",
+  "phd.mind.p3.text":
+    "Tus objetivos profesionales individuales pueden llevar a ingresos drásticamente diferentes con el mismo título.",
+  "phd.mind.p4.title": "Duración del programa",
+  "phd.mind.p4.text": "Considera cuánto tiempo tomará el título y su tasa de finalización.",
+  "phd.mind.who.title": "Para quién tiene sentido realmente",
+  "phd.mind.who.text":
+    "Necesitas suficiente financiamiento y un campo que recompense tu título. Debes estar dispuesto a esperar por la recompensa.",
+
+  "phd.part4": "Conclusión",
+  "phd.bottomline.h2": "En conclusión",
+  "phd.bottomline.quote":
+    "Considera las perspectivas de ingresos, las proyecciones de crecimiento y los paquetes de financiamiento específicos al elegir qué Ph.D. seguir.",
+  "phd.cta.h2": "¿Planificando el financiamiento del doctorado?",
+  "phd.cta.p":
+    "Usa nuestra calculadora paso a paso para estimar tu brecha de financiamiento y límites de préstamo.",
+  "phd.cta.btn": "Traza tu camino",
+  "phd.sources.label": "Fuentes:",
+  "phd.sources.text":
+    "Georgetown Center on Education and the Workforce, National Center for Science and Engineering Statistics, Bureau of Labor Statistics. Revisado al 4 de septiembre de 2026.",
 };
 
 export const LANGUAGES = [

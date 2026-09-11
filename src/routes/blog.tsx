@@ -209,6 +209,165 @@ function BlogPage() {
                 </span>
               </div>
             </Link>
+
+            {/* Which Law Schools Are Worth It Article */}
+            <Link
+              className="path-card card-a"
+              to="/blog/which-law-schools-are-worth-it"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <span className="path-subheader">{t("blog.card4.tag")}</span>
+              <h2>{t("blog.card4.title")}</h2>
+              <p className="desc">{t("blog.card4.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                  }}
+                >
+                  {t("blog.card4.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card4.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
+
+            {/* Political Background & Future Article */}
+            <Link
+              className="path-card card-a"
+              to="/blog/student-loans-political-background-and-future"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <span className="path-subheader">{t("blog.card5.tag")}</span>
+              <h2>{t("blog.card5.title")}</h2>
+              <p className="desc">{t("blog.card5.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                  }}
+                >
+                  {t("blog.card5.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card5.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
+
+            {/* University of Florida Article */}
+            <Link
+              className="path-card card-a"
+              to="/blog/university-of-florida-top-tier-value"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+                borderTop: "3px solid #FA4616",
+              }}
+            >
+              <span className="path-subheader" style={{ color: "#0021A5", fontWeight: 700 }}>
+                {t("blog.card6.tag")} 🐊
+              </span>
+              <h2 style={{ color: "#0021A5" }}>{t("blog.card6.title")}</h2>
+              <p className="desc">{t("blog.card6.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                  }}
+                >
+                  {t("blog.card6.author")}
+                </span>
+                <span className="path-cta" style={{ color: "#FA4616" }}>
+                  {t("blog.card6.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
+
+            {/* Which Ph.D. Fields Are Worth It Article */}
+            <Link
+              className="path-card card-a"
+              to="/blog/which-phd-fields-are-worth-it"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <span className="path-subheader">{t("blog.card7.tag")}</span>
+              <h2>{t("blog.card7.title")}</h2>
+              <p className="desc">{t("blog.card7.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                  }}
+                >
+                  {t("blog.card7.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card7.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
           </div>
         </section>
       </main>

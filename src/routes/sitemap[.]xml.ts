@@ -58,6 +58,26 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.graduationnavigator.com/blog/which-law-schools-are-worth-it</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.graduationnavigator.com/blog/student-loans-political-background-and-future</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.graduationnavigator.com/blog/university-of-florida-top-tier-value</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.graduationnavigator.com/blog/which-phd-fields-are-worth-it</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.graduationnavigator.com/editorial-standards</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

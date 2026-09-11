@@ -2097,6 +2097,144 @@ a.article-card {
   background: color-mix(in srgb, var(--teal) 3%, transparent);
 }
 
+/* ROI Data Tables for Law Schools */
+.roi-table-wrap {
+  margin: 28px 0;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card-paper);
+}
+.roi-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+.roi-table th,
+.roi-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+}
+.roi-table tr:last-child td {
+  border-bottom: none;
+}
+.roi-table tr:hover td {
+  background: color-mix(in srgb, var(--teal) 4%, transparent);
+}
+.roi-table th {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  background: color-mix(in srgb, var(--paper) 70%, var(--card-paper));
+}
+.roi-rank-cell {
+  width: 60px;
+  text-align: center;
+}
+.roi-rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--teal) 14%, transparent);
+  color: var(--teal);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 12px;
+}
+.roi-school-name {
+  font-weight: 600;
+  color: var(--ink);
+}
+.roi-mono {
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+.roi-highlight {
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--teal);
+}
+
+/* UF Gator Theme Custom Styles */
+.uf-article-theme {
+  --uf-blue: #0021A5;
+  --uf-orange: #FA4616;
+  --uf-orange-soft: color-mix(in srgb, #FA4616 12%, transparent);
+  --uf-blue-soft: color-mix(in srgb, #0021A5 10%, transparent);
+}
+.uf-article-theme .eyebrow {
+  color: var(--uf-blue);
+  border-color: var(--uf-orange);
+  background: color-mix(in srgb, #FA4616 6%, transparent);
+}
+.uf-article-theme .eyebrow::before {
+  background: var(--uf-orange);
+}
+.uf-article-theme h1, 
+.uf-article-theme h2 {
+  color: var(--uf-blue);
+}
+.uf-article-theme .rates-callout-zoom {
+  border-left-color: var(--uf-orange);
+  background: color-mix(in srgb, #FA4616 6%, var(--card-paper));
+}
+.uf-article-theme .rates-callout-zoom-icon svg {
+  color: var(--uf-orange) !important;
+}
+.uf-article-theme .rates-action-box {
+  border-left-color: var(--uf-blue);
+  background: color-mix(in srgb, #0021A5 4%, var(--card-paper));
+}
+.uf-article-theme .rates-action-box h4 {
+  color: var(--uf-blue);
+}
+.uf-article-theme .roi-table tr.uf-row-highlight {
+  background: color-mix(in srgb, #FA4616 12%, var(--card-paper));
+}
+.uf-article-theme .roi-table tr.uf-row-highlight td {
+  border-bottom: 2px solid var(--uf-orange);
+  font-weight: 600;
+}
+.uf-article-theme .roi-table tr.uf-row-highlight .roi-rank-badge {
+  background: var(--uf-orange);
+  color: #ffffff;
+}
+.uf-article-theme .roi-table tr.uf-row-highlight .roi-school-name {
+  color: var(--uf-blue);
+  font-weight: 700;
+}
+.uf-article-theme .refi-bottom-card {
+  border-left-color: var(--uf-orange);
+  background: color-mix(in srgb, #FA4616 5%, var(--card-paper));
+}
+.uf-article-theme .refi-bottom-quote {
+  color: var(--uf-blue);
+}
+.uf-article-theme .cta-strip {
+  background: linear-gradient(135deg, #0021A5 0%, #001256 100%);
+  color: #ffffff;
+}
+.uf-article-theme .cta-strip h2,
+.uf-article-theme .cta-strip p {
+  color: #ffffff;
+}
+.uf-article-theme .cta-strip .btn-primary {
+  background: var(--uf-orange);
+  color: #ffffff;
+}
+.uf-article-theme .cta-strip .btn-primary:hover {
+  background: #e03c0c;
+}
+
 .refi-bottom-card {
   background: var(--card-paper);
   border: 1px solid var(--line);
