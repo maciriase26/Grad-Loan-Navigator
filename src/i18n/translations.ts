@@ -182,7 +182,7 @@ export const en = {
   "uf.h1": "University of Florida: A Top-Tier Value",
   "uf.sub":
     "The University of Florida (UF) offers nationally ranked academic programs, competitive post-graduation placement and a robust alumni network all at a fraction of the price.",
-  "uf.updated": "Reviewed as of Sept. 4, 2026",
+  "uf.updated": "Peter Foulke Rev. Sept. 4, 2026",
   "uf.why.title": "Nationally Ranked Academics",
   "uf.why.p":
     "Tuition at UF for the 2026-2027 academic year is $6,440 for Florida residents and $34,620 for nonresidents. Despite this low cost, the university offers great value both during college and after graduation. These rankings speak for themselves and show that UF's lower price tag does not mean a lesser education for students.",
@@ -255,7 +255,7 @@ export const en = {
   "phd.h1": "Which Ph.D. Fields Are Worth It?",
   "phd.sub":
     "A Ph.D. can significantly boost your career prospects but requires time and money. Here are the programs that have the best financial outcomes.",
-  "phd.updated": "Reviewed as of Sept. 4, 2026",
+  "phd.updated": "Jaylen Peng Rev. Sept. 4, 2026",
   "phd.why.title": "Why it matters",
   "phd.why.p":
     "When deciding between fields of study, you need to understand the potential earnings of your degree. Understanding the potential salaries of each Ph.D. degree sets you up for success.",
@@ -315,7 +315,7 @@ export const en = {
   "pol.h1": "Student Loans Political Background and Future",
   "pol.sub":
     "The One Big Beautiful Act made significant changes to student loan programs. Here's why that happened, and what's to come.",
-  "pol.updated": "Reviewed as of Sept. 4, 2026",
+  "pol.updated": "Carson Jung Rev. Sept. 4, 2026",
   "pol.why.title": "Why it matters",
   "pol.why.p":
     "The changes to student loans made by the One Big Beautiful Bill Act are scheduled to take effect in yearly installments. The first changes took effect July 1, 2026, and the final set takes effect July 1, 2028.",
@@ -406,7 +406,7 @@ export const en = {
   "law.h1": "Which Law Schools Are Worth It?",
   "law.sub":
     "A J.D. can lead to high future earnings but also comes at high cost. Here's where you can get the most out of your law degree.",
-  "law.updated": "Reviewed as of Sept. 4, 2026",
+  "law.updated": "Jaylen Peng Rev. Sept. 4, 2026",
   "law.why.title": "Why it matters",
   "law.why.p":
     "When researching law schools, you need to understand the cost and return of each program. Understanding the Return on Investment (ROI) of each school sets you up for success.",
@@ -1917,7 +1917,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "law.h1": "¿Qué Escuelas de Derecho Valen la Pena?",
   "law.sub":
     "Un J.D. puede generar altos ingresos futuros pero también viene con un alto costo. Descubre dónde aprovechar al máximo tu título en derecho.",
-  "law.updated": "Revisado al 4 de septiembre de 2026",
+  "law.updated": "Jaylen Peng Rev. Sept. 4, 2026",
   "law.why.title": "Por qué es importante",
   "law.why.p":
     "Al investigar escuelas de derecho, debes comprender el costo y el retorno de cada programa. Comprender el Retorno de Inversión (ROI) te prepara para el éxito.",
@@ -1981,7 +1981,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "pol.h1": "Antecedentes Políticos y Futuro de los Préstamos Estudiantiles",
   "pol.sub":
     "La Ley 'One Big Beautiful Act' realizó cambios significativos en los programas de préstamos estudiantiles. Aquí explicamos por qué sucedió y qué está por venir.",
-  "pol.updated": "Revisado al 4 de septiembre de 2026",
+  "pol.updated": "Carson Jung Rev. Sept. 4, 2026",
   "pol.why.title": "Por qué es importante",
   "pol.why.p":
     "Los cambios a los préstamos estudiantiles establecidos por la Ley 'One Big Beautiful Bill' están programados para entrar en vigor en plazos anuales. Los primeros cambios entraron en vigor el 1 de julio de 2026, y el conjunto final entra en vigor el 1 de julio de 2028.",
@@ -2080,7 +2080,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "uf.h1": "Universidad de Florida: Valor de Primer Nivel",
   "uf.sub":
     "La Universidad de Florida (UF) ofrece programas académicos clasificados a nivel nacional, colocación competitiva y una red de exalumnos sólida a una fracción del precio.",
-  "uf.updated": "Revisado al 4 de septiembre de 2026",
+  "uf.updated": "Peter Foulke Rev. Sept. 4, 2026",
   "uf.why.title": "Programas Académicos Clasificados a Nivel Nacional",
   "uf.why.p":
     "La matrícula en UF para el año académico 2026-2027 es de $6,440 para residentes de Florida y $34,620 para no residentes. A pesar de este bajo costo, la universidad ofrece un gran valor tanto durante la carrera como después de la graduación.",
@@ -2153,7 +2153,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "phd.h1": "¿Qué Campos de Doctorado Valen la Pena?",
   "phd.sub":
     "Un Ph.D. puede mejorar significativamente tus perspectivas profesionales pero requiere tiempo y dinero. Aquí están los programas con mejores resultados financieros.",
-  "phd.updated": "Revisado al 4 de septiembre de 2026",
+  "phd.updated": "Jaylen Peng Rev. Sept. 4, 2026",
   "phd.why.title": "Por qué es importante",
   "phd.why.p":
     "Al decidir entre áreas de estudio, debes entender los ingresos potenciales de tu título. Comprender los salarios potenciales de cada Ph.D. te prepara para el éxito.",
