@@ -26,7 +26,7 @@ function SearchIcon() {
 export function CompassMark() {
   return (
     <img
-      src="/favicon-192x192.png"
+      src="/regular-compass.png?v=2"
       alt="Grad Navigator Logo"
       width="24"
       height="24"
