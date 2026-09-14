@@ -182,7 +182,7 @@ export const en = {
   "uf.h1": "University of Florida: A Top-Tier Value",
   "uf.sub":
     "The University of Florida (UF) offers nationally ranked academic programs, competitive post-graduation placement and a robust alumni network all at a fraction of the price.",
-  "uf.updated": "Peter Foulke Rev. Sept. 4, 2026",
+  "uf.updated": "Peter Foulke Reviewed as of September 4th, 2026",
   "uf.why.title": "Nationally Ranked Academics",
   "uf.why.p":
     "Tuition at UF for the 2026-2027 academic year is $6,440 for Florida residents and $34,620 for nonresidents. Despite this low cost, the university offers great value both during college and after graduation. These rankings speak for themselves and show that UF's lower price tag does not mean a lesser education for students.",
@@ -255,7 +255,7 @@ export const en = {
   "phd.h1": "Which Ph.D. Fields Are Worth It?",
   "phd.sub":
     "A Ph.D. can significantly boost your career prospects but requires time and money. Here are the programs that have the best financial outcomes.",
-  "phd.updated": "Jaylen Peng Rev. Sept. 4, 2026",
+  "phd.updated": "Jaylen Peng Revised as of September, 2026",
   "phd.why.title": "Why it matters",
   "phd.why.p":
     "When deciding between fields of study, you need to understand the potential earnings of your degree. Understanding the potential salaries of each Ph.D. degree sets you up for success.",
@@ -315,7 +315,7 @@ export const en = {
   "pol.h1": "Student Loans Political Background and Future",
   "pol.sub":
     "The One Big Beautiful Act made significant changes to student loan programs. Here's why that happened, and what's to come.",
-  "pol.updated": "Carson Jung Rev. Sept. 4, 2026",
+  "pol.updated": "Carson Jung Reviewed as of Sept. 4, 2026",
   "pol.why.title": "Why it matters",
   "pol.why.p":
     "The changes to student loans made by the One Big Beautiful Bill Act are scheduled to take effect in yearly installments. The first changes took effect July 1, 2026, and the final set takes effect July 1, 2028.",
@@ -406,7 +406,7 @@ export const en = {
   "law.h1": "Which Law Schools Are Worth It?",
   "law.sub":
     "A J.D. can lead to high future earnings but also comes at high cost. Here's where you can get the most out of your law degree.",
-  "law.updated": "Jaylen Peng Rev. Sept. 4, 2026",
+  "law.updated": "Jaylen Peng Reviewed as of Sept. 4, 2026",
   "law.why.title": "Why it matters",
   "law.why.p":
     "When researching law schools, you need to understand the cost and return of each program. Understanding the Return on Investment (ROI) of each school sets you up for success.",
@@ -2153,7 +2153,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "phd.h1": "¿Qué Campos de Doctorado Valen la Pena?",
   "phd.sub":
     "Un Ph.D. puede mejorar significativamente tus perspectivas profesionales pero requiere tiempo y dinero. Aquí están los programas con mejores resultados financieros.",
-  "phd.updated": "Jaylen Peng Rev. Sept. 4, 2026",
+  "phd.updated": "Jaylen Peng Revised as of September, 2026",
   "phd.why.title": "Por qué es importante",
   "phd.why.p":
     "Al decidir entre áreas de estudio, debes entender los ingresos potenciales de tu título. Comprender los salarios potenciales de cada Ph.D. te prepara para el éxito.",
