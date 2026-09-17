@@ -369,7 +369,7 @@ export function ChartYourPathMockup() {
             <span className="topic-more">{t("cyp.readGuide")}</span>
           </Link>
 
-          <Link to="/blog/student-loan-interest-by-the-numbers" className="cyp-topic-card">
+          <Link to="/pay-for-school" className="cyp-topic-card">
             <span className="topic-badge">{t("cyp.topicBadge3")}</span>
             <h4>{t("cyp.topic3.title")}</h4>
             <p>{t("cyp.topic3.desc")}</p>

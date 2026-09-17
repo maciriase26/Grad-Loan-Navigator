@@ -18,6 +18,7 @@ export function CollegeLoanNeedCalculator() {
 
   const schoolNameId = useId();
   const degreeTypeId = useId();
+  const priorUndergradId = useId();
   const yearsId = useId();
   const rateId = useId();
   const termId = useId();
@@ -38,6 +39,7 @@ export function CollegeLoanNeedCalculator() {
   // 3. Program & Loan Assumptions
   const [schoolName, setSchoolName] = useState<string>("");
   const [degreeType, setDegreeType] = useState<"undergrad" | "grad" | "prof">("grad");
+  const [priorUndergradLoans, setPriorUndergradLoans] = useState<number>(0);
   const [years, setYears] = useState<number>(4);
   const [rate, setRate] = useState<number>(8.07);
   const [termYears, setTermYears] = useState<number>(10);
@@ -75,16 +77,24 @@ export function CollegeLoanNeedCalculator() {
     totalInterestPaid = Math.max(0, totalRepaid - estimatedTotalBorrowing);
   }
 
-  // 2026 Federal Lifetime Borrowing Limits
+  // 2026 Federal Aggregate & Combined Lifetime Borrowing Limits
   const FEDERAL_CAPS: Record<"undergrad" | "grad" | "prof", number> = {
     undergrad: 57500, // max aggregate independent undergrad
-    grad: 100000, // 2026 Grad lifetime cap
-    prof: 200000, // 2026 Professional (Law/Med) lifetime cap
+    grad: 100000, // 2026 Grad aggregate limit
+    prof: 200000, // 2026 Professional (Law/Med) aggregate limit
   };
+  const COMBINED_LIFETIME_CEILING = 257500; // Federal lifetime aggregate ceiling across combined undergrad + grad borrowing
 
-  const capLimit = FEDERAL_CAPS[degreeType];
-  const isExceedingCap = estimatedTotalBorrowing > capLimit;
-  const excessAmount = Math.max(0, estimatedTotalBorrowing - capLimit);
+  const degreeCapLimit = FEDERAL_CAPS[degreeType];
+  const isExceedingDegreeCap = estimatedTotalBorrowing > degreeCapLimit;
+  const degreeExcessAmount = Math.max(0, estimatedTotalBorrowing - degreeCapLimit);
+
+  const combinedTotalBorrowing = priorUndergradLoans + estimatedTotalBorrowing;
+  const isExceedingLifetimeCap =
+    (degreeType === "grad" || degreeType === "prof") && combinedTotalBorrowing > COMBINED_LIFETIME_CEILING;
+  const lifetimeExcessAmount = Math.max(0, combinedTotalBorrowing - COMBINED_LIFETIME_CEILING);
+
+  const isExceedingCap = isExceedingDegreeCap || isExceedingLifetimeCap;
 
   const formatCurrency = (val: number) =>
     new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(
@@ -289,6 +299,27 @@ export function CollegeLoanNeedCalculator() {
               </select>
             </div>
 
+            {(degreeType === "grad" || degreeType === "prof") && (
+              <div className="calc-field">
+                <label htmlFor={priorUndergradId}>{t("calc.assump.priorUndergrad")}</label>
+                <div className="calc-input-wrap">
+                  <span className="prefix">$</span>
+                  <input
+                    id={priorUndergradId}
+                    type="number"
+                    min="0"
+                    step="500"
+                    value={priorUndergradLoans || ""}
+                    placeholder="0"
+                    onChange={(e) => setPriorUndergradLoans(Number(e.target.value) || 0)}
+                  />
+                </div>
+                <small style={{ display: "block", marginTop: "4px", fontSize: "0.8rem", color: "#64748b" }}>
+                  {t("calc.assump.priorUndergrad.note")}
+                </small>
+              </div>
+            )}
+
             <div className="calc-field">
               <label htmlFor={yearsId}>{t("calc.assump.years")}</label>
               <select
@@ -388,11 +419,15 @@ export function CollegeLoanNeedCalculator() {
             <strong>{t("calc.result.statusLabel")}:</strong>
           </div>
           <p>
-            {estimatedTotalBorrowing === 0
+            {estimatedTotalBorrowing === 0 && priorUndergradLoans === 0
               ? t("calc.status.zero")
-              : isExceedingCap
-                ? t("calc.status.exceed").replace("{amount}", formatCurrency(excessAmount))
-                : t("calc.status.ok")}
+              : isExceedingLifetimeCap
+                ? t("calc.status.lifetimeExceed")
+                    .replace("{combined}", formatCurrency(combinedTotalBorrowing))
+                    .replace("{amount}", formatCurrency(lifetimeExcessAmount))
+                : isExceedingDegreeCap
+                  ? t("calc.status.exceed").replace("{amount}", formatCurrency(degreeExcessAmount))
+                  : t("calc.status.ok")}
           </p>
         </div>
       </div>

@@ -17,6 +17,7 @@ import { Route as EditorialStandardsRouteImport } from './routes/editorial-stand
 import { Route as EducationalResourcesRouteImport } from './routes/educational-resources'
 import { Route as InDepthAnalysisRouteImport } from './routes/in-depth-analysis'
 import { Route as LendersRouteImport } from './routes/lenders'
+import { Route as LlmsDottxtRouteImport } from './routes/llms[.]txt'
 import { Route as Loans101RouteImport } from './routes/loans-101'
 import { Route as ManageLoansRouteImport } from './routes/manage-loans'
 import { Route as McpRouteImport } from './routes/mcp'
@@ -76,6 +77,11 @@ const InDepthAnalysisRoute = InDepthAnalysisRouteImport.update({
 const LendersRoute = LendersRouteImport.update({
   id: '/lenders',
   path: '/lenders',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LlmsDottxtRoute = LlmsDottxtRouteImport.update({
+  id: '/llms.txt',
+  path: '/llms.txt',
   getParentRoute: () => rootRouteImport,
 } as any)
 const Loans101Route = Loans101RouteImport.update({
@@ -198,6 +204,7 @@ export interface FileRoutesByFullPath {
   '/educational-resources': typeof EducationalResourcesRoute
   '/in-depth-analysis': typeof InDepthAnalysisRoute
   '/lenders': typeof LendersRoute
+  '/llms.txt': typeof LlmsDottxtRoute
   '/loans-101': typeof Loans101Route
   '/manage-loans': typeof ManageLoansRoute
   '/mcp': typeof McpRoute
@@ -228,6 +235,7 @@ export interface FileRoutesByTo {
   '/educational-resources': typeof EducationalResourcesRoute
   '/in-depth-analysis': typeof InDepthAnalysisRoute
   '/lenders': typeof LendersRoute
+  '/llms.txt': typeof LlmsDottxtRoute
   '/loans-101': typeof Loans101Route
   '/manage-loans': typeof ManageLoansRoute
   '/mcp': typeof McpRoute
@@ -259,6 +267,7 @@ export interface FileRoutesById {
   '/educational-resources': typeof EducationalResourcesRoute
   '/in-depth-analysis': typeof InDepthAnalysisRoute
   '/lenders': typeof LendersRoute
+  '/llms.txt': typeof LlmsDottxtRoute
   '/loans-101': typeof Loans101Route
   '/manage-loans': typeof ManageLoansRoute
   '/mcp': typeof McpRoute
@@ -291,6 +300,7 @@ export interface FileRouteTypes {
     | '/educational-resources'
     | '/in-depth-analysis'
     | '/lenders'
+    | '/llms.txt'
     | '/loans-101'
     | '/manage-loans'
     | '/mcp'
@@ -321,6 +331,7 @@ export interface FileRouteTypes {
     | '/educational-resources'
     | '/in-depth-analysis'
     | '/lenders'
+    | '/llms.txt'
     | '/loans-101'
     | '/manage-loans'
     | '/mcp'
@@ -351,6 +362,7 @@ export interface FileRouteTypes {
     | '/educational-resources'
     | '/in-depth-analysis'
     | '/lenders'
+    | '/llms.txt'
     | '/loans-101'
     | '/manage-loans'
     | '/mcp'
@@ -382,6 +394,7 @@ export interface RootRouteChildren {
   EducationalResourcesRoute: typeof EducationalResourcesRoute
   InDepthAnalysisRoute: typeof InDepthAnalysisRoute
   LendersRoute: typeof LendersRoute
+  LlmsDottxtRoute: typeof LlmsDottxtRoute
   Loans101Route: typeof Loans101Route
   ManageLoansRoute: typeof ManageLoansRoute
   McpRoute: typeof McpRoute
@@ -460,6 +473,13 @@ declare module '@tanstack/react-router' {
       path: '/lenders'
       fullPath: '/lenders'
       preLoaderRoute: typeof LendersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/llms.txt': {
+      id: '/llms.txt'
+      path: '/llms.txt'
+      fullPath: '/llms.txt'
+      preLoaderRoute: typeof LlmsDottxtRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/loans-101': {
@@ -614,6 +634,7 @@ const rootRouteChildren: RootRouteChildren = {
   EducationalResourcesRoute: EducationalResourcesRoute,
   InDepthAnalysisRoute: InDepthAnalysisRoute,
   LendersRoute: LendersRoute,
+  LlmsDottxtRoute: LlmsDottxtRoute,
   Loans101Route: Loans101Route,
   ManageLoansRoute: ManageLoansRoute,
   McpRoute: McpRoute,

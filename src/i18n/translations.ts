@@ -455,19 +455,26 @@ export const en = {
   "law.sources.text":
     "Reuters, Federal Student Aid; The Foundation for Research on Equal Opportunity. Reviewed as of Sept. 4, 2026.",
 
-  "manage.eyebrow": "Manage",
-  "manage.h1": "Existing loans & refinance",
-  "manage.sub": "Explore your options and plan your next steps.",
-  "manage.card1.sub": "Coming Soon",
-  "manage.card1.title": "Existing Loans",
+  "manage.eyebrow": "Debt Management & Strategy",
+  "manage.h1": "Managing Existing Loans & Refinancing Options",
+  "manage.sub":
+    "Comprehensive guidance for organizing federal student debt, evaluating income-driven repayment plans, and deciding when to consolidate or refinance.",
+  "manage.card1.sub": "Federal & Private Loan Tracking",
+  "manage.card1.title": "Managing Existing Loans",
   "manage.card1.desc":
-    "Track your current loans, review terms, and understand your repayment options.",
-  "manage.card1.cta": "Learn more",
-  "manage.card2.sub": "Student Explainer",
-  "manage.card2.title": "Refinance",
+    "Managing existing student loan debt requires taking inventory of your federal loan servicers, cumulative principal balances, weighted interest rates, and available repayment plans. Whether you are navigating standard 10-year repayment, income-driven repayment options like SAVE, PAYE, or IBR, or evaluating interest rate caps, understanding your total debt structure is essential to minimizing total interest costs and preventing default.",
+  "manage.card1.cta": "Review Repayment Options",
+  "manage.card2.sub": "Interest Rate Optimization",
+  "manage.card2.title": "Refinancing Student Loans",
   "manage.card2.desc":
-    "Explore refinancing options to potentially lower your rates and simplify payments.",
-  "manage.card2.cta": "Learn more",
+    "Refinancing private or federal student loans into a single private loan can yield significantly lower interest rates for qualified borrowers with strong credit scores and stable income. However, converting federal loans into private debt surrenders federal protections such as Public Service Loan Forgiveness (PSLF), income-driven monthly payment adjustments, and economic hardship deferments.",
+  "manage.card2.cta": "Read Refinancing Guide",
+  "manage.section.idr.title": "Understanding Income-Driven Repayment (IDR)",
+  "manage.section.idr.text":
+    "Federal IDR plans set monthly payments based on discretionary income and family size rather than total loan balance. Remaining balances may be eligible for loan forgiveness after 20 to 25 years of qualifying payments.",
+  "manage.section.consolidation.title": "Direct Consolidation vs. Private Refinancing",
+  "manage.section.consolidation.text":
+    "Federal Direct Consolidation combines multiple federal student loans into a single direct loan with a weighted-average interest rate, preserving federal benefits. Private refinancing replaces federal or private loans with a new private loan, which may lower your interest rate but removes federal borrower safety nets.",
   "footer.learn.resources": "Educational Resources",
   "learn.card.title": "Educational Resources",
   "learn.card.body":
@@ -886,6 +893,8 @@ export const en = {
   "calc.assump.degree.undergrad": "Undergraduate ($31k-$57.5k Cap)",
   "calc.assump.degree.grad": "Graduate / Master's ($100k Cap)",
   "calc.assump.degree.prof": "Professional — Law / Medicine ($200k Cap)",
+  "calc.assump.priorUndergrad": "Prior Undergraduate Federal Borrowing",
+  "calc.assump.priorUndergrad.note": "Checked against the $257,500 lifetime aggregate ceiling for combined undergraduate and graduate federal borrowing.",
   "calc.assump.years": "Years to Graduate",
   "calc.assump.rate": "Interest Rate (%)",
   "calc.assump.term": "Repayment Term (Years)",
@@ -902,6 +911,8 @@ export const en = {
   "calc.status.ok": "Within 2026 federal borrowing limits.",
   "calc.status.exceed":
     "Exceeds federal borrowing cap by ${amount}. Additional gap must be covered by private loans or savings.",
+  "calc.status.lifetimeExceed":
+    "Combined prior undergraduate and projected borrowing (${combined}) exceeds the $257,500 lifetime federal aggregate ceiling by ${amount}. Additional gap must be covered by private loans or savings.",
 
   /* ---------- student loan types blog post ---------- */
   "types.meta.title": "Student Loan Types — Grad Loan Navigator",
@@ -1261,19 +1272,26 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card3.author": "Equipo Editorial Estudiantil · Actualizado 2026",
   "blog.card3.cta": "Leer artículo",
 
-  "manage.eyebrow": "Gestionar",
-  "manage.h1": "Préstamos existentes y refinanciación",
-  "manage.sub": "Explora tus opciones y planifica tus próximos pasos.",
-  "manage.card1.sub": "Próximamente",
-  "manage.card1.title": "Préstamos Existentes",
+  "manage.eyebrow": "Gestión de Deuda y Estrategia",
+  "manage.h1": "Gestión de Préstamos Existentes y Opciones de Refinanciación",
+  "manage.sub":
+    "Guía completa para organizar la deuda federal estudiantil, evaluar planes de pago basados en ingresos y decidir cuándo consolidar o refinanciar.",
+  "manage.card1.sub": "Seguimiento de Préstamos Federales y Privados",
+  "manage.card1.title": "Gestión de Préstamos Existentes",
   "manage.card1.desc":
-    "Haz un seguimiento de tus préstamos actuales, revisa las condiciones y comprende tus opciones de pago.",
-  "manage.card1.cta": "Más información",
-  "manage.card2.sub": "Guía Estudiantil",
-  "manage.card2.title": "Refinanciación",
+    "Gestionar la deuda de préstamos estudiantiles existentes requiere hacer un inventario de sus administradores de préstamos federales, saldos acumulados de principal, tasas de interés ponderadas y planes de pago disponibles. Ya sea que navegue por el pago estándar a 10 años, planes basados en ingresos (IDR) o evalúe topes de tasas de interés, comprender la estructura de su deuda es esencial para minimizar costos de interés y evitar incumplimientos.",
+  "manage.card1.cta": "Revisar Opciones de Pago",
+  "manage.card2.sub": "Optimización de Tasas de Interés",
+  "manage.card2.title": "Refinanciación de Préstamos Estudiantiles",
   "manage.card2.desc":
-    "Explora opciones de refinanciación para reducir potencialmente tus tasas y simplificar los pagos.",
-  "manage.card2.cta": "Leer guía",
+    "Refinanciar préstamos privados o federales en un solo préstamo privado puede generar tasas de interés significativamente más bajas para prestatarios calificados con buen crédito e ingresos estables. Sin embargo, convertir préstamos federales en deuda privada implica renunciar a protecciones federales como la Condonación de Préstamos por Servicio Público (PSLF) y ajustes de pago por ingresos.",
+  "manage.card2.cta": "Leer Guía de Refinanciación",
+  "manage.section.idr.title": "Comprensión del Pago Basado en Ingresos (IDR)",
+  "manage.section.idr.text":
+    "Los planes federales de IDR establecen pagos mensuales basados en el ingreso discrecional y el tamaño de la familia en lugar del saldo total del préstamo. Los saldos restantes pueden ser elegibles para condonación después de 20 a 25 años de pagos calificativos.",
+  "manage.section.consolidation.title": "Consolidación Directa vs. Refinanciación Privada",
+  "manage.section.consolidation.text":
+    "La Consolidación Directa Federal combina múltiples préstamos federales en un solo préstamo directo con una tasa de interés promedio ponderada, conservando los beneficios federales. La refinanciación privada reemplaza préstamos por uno nuevo privado, lo que puede reducir su tasa pero elimina las redes de seguridad federales.",
   "footer.learn.resources": "Recursos educativos",
   "learn.card.title": "Recursos educativos",
   "learn.card.body":
@@ -1694,6 +1712,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "calc.assump.degree.undergrad": "Pregrado (Límite $31k-$57.5k)",
   "calc.assump.degree.grad": "Posgrado / Maestría (Límite $100k)",
   "calc.assump.degree.prof": "Profesional — Derecho / Medicina (Límite $200k)",
+  "calc.assump.priorUndergrad": "Préstamos Federales de Pregrado Anteriores",
+  "calc.assump.priorUndergrad.note": "Se verifica contra el tope acumulado de por vida de $257,500 para endeudamiento federal combinado de pregrado y posgrado.",
   "calc.assump.years": "Años para Graduarse",
   "calc.assump.rate": "Tasa de Interés (%)",
   "calc.assump.term": "Plazo de Pago (Años)",
@@ -1710,6 +1730,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "calc.status.ok": "Dentro de los límites federales de endeudamiento de 2026.",
   "calc.status.exceed":
     "Excede el límite federal por ${amount}. La brecha restante deberá cubrirse con préstamos privados o ahorros.",
+  "calc.status.lifetimeExceed":
+    "Su endeudamiento acumulado proyectado y de pregrado anterior (${combined}) supera el tope federal de por vida de $257,500 por ${amount}. La brecha restante deberá cubrirse con préstamos privados o ahorros.",
 
   /* ---------- student loan types blog post (Spanish) ---------- */
   "types.meta.title": "Tipos de Préstamos Estudiantiles — Grad Loan Navigator",
