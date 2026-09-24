@@ -1808,6 +1808,8 @@ a.article-card {
   font-size: 13.5px;
   font-weight: 700;
   color: var(--ink);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .path-cta svg {
   width: 15px;
@@ -2264,6 +2266,73 @@ a.article-card {
 }
 .uf-article-theme .cta-strip .btn-primary:hover {
   background: #e03c0c;
+}
+
+/* Clemson Tiger Theme Custom Styles */
+.clemson-article-theme {
+  --clemson-orange: #F56600;
+  --clemson-purple: #522D80;
+}
+.clemson-banner {
+  background: linear-gradient(135deg, #F56600 0%, #522D80 100%);
+  color: #ffffff;
+  padding: 12px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 13.5px;
+  letter-spacing: 0.05em;
+  font-family: var(--font-mono);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.clemson-article-theme .eyebrow {
+  color: var(--clemson-orange);
+  border-color: var(--clemson-orange);
+  background: color-mix(in srgb, #F56600 8%, transparent);
+}
+.clemson-article-theme h1,
+.clemson-article-theme h2 {
+  color: var(--clemson-purple);
+}
+.clemson-article-theme .article-back a {
+  color: var(--clemson-purple);
+}
+.clemson-article-theme .updated .dot {
+  background: var(--clemson-orange);
+}
+.clemson-article-theme .refi-hero-callout {
+  border-left-color: var(--clemson-orange);
+  background: color-mix(in srgb, #F56600 6%, var(--card-paper));
+}
+.clemson-article-theme .refi-hero-callout-icon {
+  background: color-mix(in srgb, #F56600 18%, transparent);
+  color: var(--clemson-orange);
+}
+.clemson-article-theme .refi-hero-callout-content h4 {
+  color: var(--clemson-purple);
+}
+.clemson-article-theme .pagenav a:hover {
+  color: var(--clemson-orange);
+}
+.clemson-article-theme .doc-section .section-num {
+  color: var(--clemson-orange);
+}
+.clemson-article-theme .rates-callout-zoom {
+  border-left-color: var(--clemson-orange);
+  background: color-mix(in srgb, #F56600 6%, var(--card-paper));
+}
+.clemson-article-theme .rates-action-box {
+  border-left-color: var(--clemson-purple);
+  background: color-mix(in srgb, #522D80 4%, var(--card-paper));
+}
+.clemson-article-theme .rates-action-box h4 {
+  color: var(--clemson-purple);
+}
+.clemson-article-theme .refi-bottom-card {
+  border-left-color: var(--clemson-orange);
+  background: color-mix(in srgb, #F56600 5%, var(--card-paper));
+}
+.clemson-article-theme .refi-bottom-quote {
+  color: var(--clemson-purple);
 }
 
 .refi-bottom-card {

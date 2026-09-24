@@ -122,38 +122,34 @@ function TuitionVsInflationArticlePage() {
 
       <main style={{ paddingBottom: "64px" }}>
         {/* Hero Section */}
-        <section className="wrap doc-hero" style={{ paddingBottom: "32px" }}>
+        <section className="wrap doc-hero">
           <div className="article-back" style={{ marginBottom: "16px" }}>
-            <Link to="/blog" style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontWeight: 600 }}>
+            <Link to="/blog" style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
               ← {t("blog.h1")}
             </Link>
           </div>
           <div className="eyebrow">{t("tvi.eyebrow")}</div>
-          <h1 style={{ fontSize: "clamp(30px, 4vw, 44px)", lineHeight: "1.2", marginBottom: "16px" }}>
-            {t("tvi.h1")}
-          </h1>
-          <p className="sub" style={{ fontSize: "18px", lineHeight: "1.6", maxW: "720px", color: "var(--ink-soft)" }}>
-            {t("tvi.sub")}
-          </p>
-          <div className="updated" style={{ marginTop: "16px" }}>
+          <h1>{t("tvi.h1")}</h1>
+          <p className="sub">{t("tvi.sub")}</p>
+          <div className="updated">
             <span className="dot" />
             {t("tvi.updated")}
           </div>
 
           {/* Why it matters callout */}
-          <div className="refi-hero-callout" style={{ marginTop: "28px" }}>
+          <div className="refi-hero-callout">
             <div className="refi-hero-callout-icon">
               <AlertTriangleIcon />
             </div>
             <div className="refi-hero-callout-content">
               <h4>{t("tvi.why.title")}</h4>
-              <p style={{ fontSize: "15px", lineHeight: "1.6" }}>{t("tvi.why.p")}</p>
+              <p>{t("tvi.why.p")}</p>
             </div>
           </div>
         </section>
 
         {/* Section Jump Nav */}
-        <div className="wrap pagenav" style={{ marginBottom: "40px" }}>
+        <div className="wrap pagenav">
           <a href="#by-the-numbers">{t("tvi.nav.numbers")}</a>
           <a href="#undergrad-vs-grad">{t("tvi.nav.comparison")}</a>
           <a href="#chart-section">{t("tvi.nav.chart")}</a>
@@ -162,23 +158,15 @@ function TuitionVsInflationArticlePage() {
         </div>
 
         {/* Main Content Body */}
-        <div className="wrap doc-content" style={{ display: "flex", flexDirection: "column", gap: "48px" }}>
+        <div className="wrap doc-content">
           {/* Stat Banner & By the Numbers */}
-          <section id="by-the-numbers" style={{ scrollMarginTop: "80px" }}>
-            <div
-              className="rates-callout-zoom"
-              style={{
-                padding: "28px 32px",
-                background: "color-mix(in srgb, var(--card) 95%, var(--teal) 5%)",
-                borderRadius: "16px",
-                border: "1px solid color-mix(in srgb, var(--teal) 25%, transparent)",
-              }}
-            >
+          <section className="doc-section" id="by-the-numbers">
+            <div className="rates-callout-zoom">
               <div className="rates-callout-zoom-icon">
                 <TrendingUpIcon />
               </div>
               <div className="rates-callout-zoom-content">
-                <h3 style={{ margin: "0 0 10px 0", fontSize: "20px", fontWeight: 700 }}>
+                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700 }}>
                   By the numbers: Since 1990, inflation has increased 153.0%.
                 </h3>
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "16px", marginTop: "16px" }}>
@@ -222,38 +210,32 @@ function TuitionVsInflationArticlePage() {
                 borderLeft: "4px solid #D99B26",
               }}
             >
-              <h4 style={{ margin: "0 0 6px 0", fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.04em", color: "var(--ink)" }}>
+              <h4 style={{ margin: "0 0 6px 0", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.04em", color: "var(--ink)" }}>
                 The Short Answer
               </h4>
-              <p style={{ margin: 0, fontSize: "16.5px", lineHeight: "1.6", fontWeight: 600 }}>
+              <p style={{ margin: 0, fontSize: "16px", lineHeight: "1.6", fontWeight: 600 }}>
                 Both undergraduate and graduate education is comparatively more expensive than 30+ years ago.
               </p>
             </div>
           </section>
 
           {/* Section 1: Undergraduate vs. Graduate */}
-          <section className="doc-section" id="undergrad-vs-grad" style={{ scrollMarginTop: "80px" }}>
+          <section className="doc-section" id="undergrad-vs-grad">
             <span className="section-num">{t("tvi.part1")}</span>
             <h2>Undergraduate vs. Graduate</h2>
-            <p className="lead" style={{ fontSize: "17.5px", lineHeight: "1.65", marginBottom: "24px" }}>
+            <p className="lead">
               Tuition for both degree levels have outpaced inflation. Tuition now costs more compared to overall consumer prices.
             </p>
 
             {/* Data Table */}
-            <div style={{ overflowX: "auto", margin: "24px 0", borderRadius: "12px", border: "1px solid var(--line)" }}>
-              <table style={{ width: "100%", borderCollapse: "collapse", background: "var(--card)" }}>
+            <div className="roi-table-wrap">
+              <table className="roi-table">
                 <thead>
-                  <tr style={{ background: "color-mix(in srgb, var(--teal) 10%, transparent)", borderBottom: "2px solid var(--line)" }}>
-                    <th style={{ padding: "16px 20px", textAlign: "left", fontSize: "14px", fontWeight: 700 }}>Decade</th>
-                    <th style={{ padding: "16px 20px", textAlign: "right", fontSize: "14px", fontWeight: 700, color: "#D99B26" }}>
-                      Total Inflation Increase
-                    </th>
-                    <th style={{ padding: "16px 20px", textAlign: "right", fontSize: "14px", fontWeight: 700, color: "var(--ink)" }}>
-                      Total Undergrad Tuition Increase
-                    </th>
-                    <th style={{ padding: "16px 20px", textAlign: "right", fontSize: "14px", fontWeight: 700, color: "var(--teal)" }}>
-                      Total Graduate Tuition Increase
-                    </th>
+                  <tr>
+                    <th>Decade</th>
+                    <th style={{ textAlign: "right" }}>Total Inflation Increase</th>
+                    <th style={{ textAlign: "right" }}>Total Undergrad Tuition Increase</th>
+                    <th style={{ textAlign: "right" }}>Total Graduate Tuition Increase</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -261,21 +243,14 @@ function TuitionVsInflationArticlePage() {
                     <tr
                       key={item.decade}
                       style={{
-                        borderBottom: "1px solid var(--line)",
-                        background: item.isTotal ? "color-mix(in srgb, var(--teal) 12%, var(--card))" : "transparent",
+                        background: item.isTotal ? "color-mix(in srgb, var(--teal) 12%, var(--card))" : undefined,
                         fontWeight: item.isTotal ? 700 : 500,
                       }}
                     >
-                      <td style={{ padding: "16px 20px", fontSize: "15px" }}>{item.decade}</td>
-                      <td style={{ padding: "16px 20px", textAlign: "right", fontFamily: "var(--font-mono)", fontSize: "14.5px", color: "#D99B26", fontWeight: 700 }}>
-                        {item.inflation}
-                      </td>
-                      <td style={{ padding: "16px 20px", textAlign: "right", fontFamily: "var(--font-mono)", fontSize: "14.5px", color: "var(--ink)", fontWeight: 700 }}>
-                        {item.undergrad}
-                      </td>
-                      <td style={{ padding: "16px 20px", textAlign: "right", fontFamily: "var(--font-mono)", fontSize: "14.5px", color: "var(--teal)", fontWeight: 700 }}>
-                        {item.grad}
-                      </td>
+                      <td className="roi-school-name">{item.decade}</td>
+                      <td style={{ textAlign: "right" }} className="roi-mono">{item.inflation}</td>
+                      <td style={{ textAlign: "right" }} className="roi-mono">{item.undergrad}</td>
+                      <td style={{ textAlign: "right" }} className="roi-highlight">{item.grad}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -339,10 +314,10 @@ function TuitionVsInflationArticlePage() {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                   <svg width="36" height="12" viewBox="0 0 36 12">
-                    <line x1="0" y1="6" x2="36" y2="6" stroke="#1E293B" strokeWidth="3" strokeDasharray="6 4" />
-                    <circle cx="18" cy="6" r="3.5" fill="#1E293B" />
+                    <line x1="0" y1="6" x2="36" y2="6" stroke="#059669" strokeWidth="3" strokeDasharray="6 4" />
+                    <circle cx="18" cy="6" r="3.5" fill="#059669" />
                   </svg>
-                  <span style={{ color: "#1E293B" }}>Graduate tuition</span>
+                  <span style={{ color: "#059669" }}>Graduate tuition</span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
@@ -392,40 +367,15 @@ function TuitionVsInflationArticlePage() {
                   strokeWidth="3.2"
                   points="60,260 193,244.7 327,227.9 460,212.96 540,186.56"
                 />
-                {/* Inflation Points & Labels */}
-                <circle cx="60" cy="260" r="4" fill="#D99B26" />
 
-                <circle cx="193" cy="244.7" r="4" fill="#D99B26" />
-                <text x="193" y="258" fontSize="11" fontWeight="700" fill="#059669" textAnchor="middle">31.8%</text>
-
-                <circle cx="327" cy="227.9" r="4" fill="#D99B26" />
-                <text x="327" y="242" fontSize="11" fontWeight="700" fill="#059669" textAnchor="middle">66.9%</text>
-
-                <circle cx="460" cy="212.96" r="4" fill="#D99B26" />
-                <text x="460" y="227" fontSize="11" fontWeight="700" fill="#059669" textAnchor="middle">98.0%</text>
-
-                <circle cx="540" cy="186.56" r="4" fill="#D99B26" />
-                <text x="540" y="201" fontSize="11" fontWeight="700" fill="#059669" textAnchor="middle">153.0%</text>
-
-                {/* --- 2. Graduate Tuition Line (Navy Dashed) --- */}
+                {/* --- 2. Graduate Tuition Line (Teal Dashed) --- */}
                 <polyline
                   fill="none"
-                  stroke="#1E293B"
+                  stroke="#059669"
                   strokeWidth="3.2"
                   strokeDasharray="6 4"
                   points="60,260 193,217.8 327,147.35 460,90.37 540,59.0"
                 />
-                <circle cx="193" cy="217.8" r="4" fill="#1E293B" />
-                <text x="193" y="206" fontSize="11" fontWeight="700" fill="#059669" textAnchor="middle">87.8%</text>
-
-                <circle cx="327" cy="147.35" r="4" fill="#1E293B" />
-                <text x="327" y="134" fontSize="11" fontWeight="700" fill="#059669" textAnchor="middle">234.7%</text>
-
-                <circle cx="460" cy="90.37" r="4" fill="#1E293B" />
-                <text x="460" y="78" fontSize="11" fontWeight="700" fill="#059669" textAnchor="middle">353.4%</text>
-
-                <circle cx="540" cy="59.0" r="4" fill="#1E293B" />
-                <text x="540" y="74" fontSize="11" fontWeight="700" fill="#059669" textAnchor="middle">418.7%</text>
 
                 {/* --- 3. Undergraduate Tuition Line (Navy Solid) --- */}
                 <polyline
@@ -434,19 +384,80 @@ function TuitionVsInflationArticlePage() {
                   strokeWidth="3.2"
                   points="60,260 193,222.4 327,155.5 460,96.75 540,38.5"
                 />
+
+                {/* Point Circles */}
                 <circle cx="60" cy="260" r="4" fill="#1E293B" />
+                <circle cx="193" cy="244.7" r="4" fill="#D99B26" />
+                <circle cx="327" cy="227.9" r="4" fill="#D99B26" />
+                <circle cx="460" cy="212.96" r="4" fill="#D99B26" />
+                <circle cx="540" cy="186.56" r="4" fill="#D99B26" />
+
+                <circle cx="193" cy="217.8" r="4" fill="#059669" />
+                <circle cx="327" cy="147.35" r="4" fill="#059669" />
+                <circle cx="460" cy="90.37" r="4" fill="#059669" />
+                <circle cx="540" cy="59.0" r="4" fill="#059669" />
 
                 <circle cx="193" cy="222.4" r="4" fill="#1E293B" />
-                <text x="193" y="235" fontSize="11" fontWeight="700" fill="#1E293B" textAnchor="middle">78.3%</text>
-
                 <circle cx="327" cy="155.5" r="4" fill="#1E293B" />
-                <text x="327" y="170" fontSize="11" fontWeight="700" fill="#059669" textAnchor="middle">217.6%</text>
-
                 <circle cx="460" cy="96.75" r="4" fill="#1E293B" />
-                <text x="460" y="112" fontSize="11" fontWeight="700" fill="#059669" textAnchor="middle">340.1%</text>
-
                 <circle cx="540" cy="38.5" r="4" fill="#1E293B" />
-                <text x="540" y="25" fontSize="11" fontWeight="700" fill="#059669" textAnchor="middle">461.5%</text>
+
+                {/* --- Data Badges with Solid Masking Rect Backgrounds --- */}
+                {/* Year 2000 Badges */}
+                <g transform="translate(193, 194)">
+                  <rect x="-26" y="-9" width="52" height="18" rx="4" fill="#ffffff" stroke="#cbd5e1" strokeWidth="1" />
+                  <text x="0" y="1" fontSize="11" fontWeight="700" fill="#059669" textAnchor="middle" dominantBaseline="middle">87.8%</text>
+                </g>
+                <g transform="translate(193, 238)">
+                  <rect x="-26" y="-9" width="52" height="18" rx="4" fill="#ffffff" stroke="#cbd5e1" strokeWidth="1" />
+                  <text x="0" y="1" fontSize="11" fontWeight="700" fill="#1E293B" textAnchor="middle" dominantBaseline="middle">78.3%</text>
+                </g>
+                <g transform="translate(193, 264)">
+                  <rect x="-26" y="-9" width="52" height="18" rx="4" fill="#ffffff" stroke="#cbd5e1" strokeWidth="1" />
+                  <text x="0" y="1" fontSize="11" fontWeight="700" fill="#D99B26" textAnchor="middle" dominantBaseline="middle">31.8%</text>
+                </g>
+
+                {/* Year 2010 Badges */}
+                <g transform="translate(327, 122)">
+                  <rect x="-28" y="-9" width="56" height="18" rx="4" fill="#ffffff" stroke="#cbd5e1" strokeWidth="1" />
+                  <text x="0" y="1" fontSize="11" fontWeight="700" fill="#059669" textAnchor="middle" dominantBaseline="middle">234.7%</text>
+                </g>
+                <g transform="translate(327, 178)">
+                  <rect x="-28" y="-9" width="56" height="18" rx="4" fill="#ffffff" stroke="#cbd5e1" strokeWidth="1" />
+                  <text x="0" y="1" fontSize="11" fontWeight="700" fill="#1E293B" textAnchor="middle" dominantBaseline="middle">217.6%</text>
+                </g>
+                <g transform="translate(327, 248)">
+                  <rect x="-26" y="-9" width="52" height="18" rx="4" fill="#ffffff" stroke="#cbd5e1" strokeWidth="1" />
+                  <text x="0" y="1" fontSize="11" fontWeight="700" fill="#D99B26" textAnchor="middle" dominantBaseline="middle">66.9%</text>
+                </g>
+
+                {/* Year 2020 Badges */}
+                <g transform="translate(460, 68)">
+                  <rect x="-28" y="-9" width="56" height="18" rx="4" fill="#ffffff" stroke="#cbd5e1" strokeWidth="1" />
+                  <text x="0" y="1" fontSize="11" fontWeight="700" fill="#059669" textAnchor="middle" dominantBaseline="middle">353.4%</text>
+                </g>
+                <g transform="translate(460, 118)">
+                  <rect x="-28" y="-9" width="56" height="18" rx="4" fill="#ffffff" stroke="#cbd5e1" strokeWidth="1" />
+                  <text x="0" y="1" fontSize="11" fontWeight="700" fill="#1E293B" textAnchor="middle" dominantBaseline="middle">340.1%</text>
+                </g>
+                <g transform="translate(460, 234)">
+                  <rect x="-26" y="-9" width="52" height="18" rx="4" fill="#ffffff" stroke="#cbd5e1" strokeWidth="1" />
+                  <text x="0" y="1" fontSize="11" fontWeight="700" fill="#D99B26" textAnchor="middle" dominantBaseline="middle">98.0%</text>
+                </g>
+
+                {/* Year 2026 Badges */}
+                <g transform="translate(540, 16)">
+                  <rect x="-28" y="-9" width="56" height="18" rx="4" fill="#ffffff" stroke="#cbd5e1" strokeWidth="1" />
+                  <text x="0" y="1" fontSize="11" fontWeight="700" fill="#1E293B" textAnchor="middle" dominantBaseline="middle">461.5%</text>
+                </g>
+                <g transform="translate(540, 80)">
+                  <rect x="-28" y="-9" width="56" height="18" rx="4" fill="#ffffff" stroke="#cbd5e1" strokeWidth="1" />
+                  <text x="0" y="1" fontSize="11" fontWeight="700" fill="#059669" textAnchor="middle" dominantBaseline="middle">418.7%</text>
+                </g>
+                <g transform="translate(540, 206)">
+                  <rect x="-28" y="-9" width="56" height="18" rx="4" fill="#ffffff" stroke="#cbd5e1" strokeWidth="1" />
+                  <text x="0" y="1" fontSize="11" fontWeight="700" fill="#D99B26" textAnchor="middle" dominantBaseline="middle">153.0%</text>
+                </g>
               </svg>
 
               <p style={{ fontSize: "13px", color: "var(--ink-soft)", fontStyle: "italic", marginTop: "16px", marginBottom: 0 }}>

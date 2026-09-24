@@ -142,37 +142,37 @@ export const en = {
   "blog.card1.title": "Refinancing Student Loans, Explained",
   "blog.card1.excerpt":
     "Refinancing can cut your interest rate or lower your monthly payment, but can also cost you protections you can't get back once they're gone. Here's the actual tradeoff.",
-  "blog.card1.author": "Student Editorial Board · Updated 2026",
+  "blog.card1.author": "Student Editorial Board\nUpdated 2026",
   "blog.card1.cta": "Read article",
   "blog.card2.tag": "Interest Rates · 4 min read",
   "blog.card2.title": "Student Loan Interest: by the numbers",
   "blog.card2.excerpt":
     "Federal student loan rates went up again this year, the third straight year they've climbed. Here's what that actually costs you, and the one loan type that's now gone for good.",
-  "blog.card2.author": "Student Editorial Board · Updated 2026",
+  "blog.card2.author": "Student Editorial Board\nUpdated 2026",
   "blog.card2.cta": "Read article",
   "blog.card3.tag": "Borrowing 101 · 3 min read",
   "blog.card3.title": "Student Loan Types",
   "blog.card3.excerpt":
     "There are three federal loan programs and multiple private options. Here is a cheat sheet breakdown of subsidized, unsubsidized, PLUS, and private loans.",
-  "blog.card3.author": "Student Editorial Board · Updated 2026",
+  "blog.card3.author": "Student Editorial Board\nUpdated 2026",
   "blog.card3.cta": "Read article",
   "blog.card4.tag": "Law School ROI · 5 min read",
   "blog.card4.title": "Which Law Schools Are Worth It?",
   "blog.card4.excerpt":
     "A J.D. can lead to high future earnings but also comes at high cost. Here's a data-backed look at the law schools with the highest lifetime ROI.",
-  "blog.card4.author": "Student Editorial Board · Updated Sept 2026",
+  "blog.card4.author": "Jaylen Peng\nUpdated Sept 2026",
   "blog.card4.cta": "Read article",
   "blog.card5.tag": "Policy & Future · 4 min read",
   "blog.card5.title": "Student Loans Political Background and Future",
   "blog.card5.excerpt":
     "The One Big Beautiful Bill Act made significant changes to student loan programs. Here's why that happened and what's scheduled to take effect through 2028.",
-  "blog.card5.author": "Student Editorial Board · Updated Sept 2026",
+  "blog.card5.author": "Carson Jung\nUpdated Sept 2026",
   "blog.card5.cta": "Read article",
   "blog.card6.tag": "UF Spotlight · 4 min read",
   "blog.card6.title": "University of Florida: A Top-Tier Value",
   "blog.card6.excerpt":
     "The University of Florida (UF) offers nationally ranked academic programs, competitive post-graduation placement and a robust alumni network all at a fraction of the price.",
-  "blog.card6.author": "Student Editorial Board · Updated Sept 2026",
+  "blog.card6.author": "Peter Foulke\nUpdated Sept 2026",
   "blog.card6.cta": "Read article",
 
   "uf.meta.title": "University of Florida: A Top-Tier Value — Grad Loan Navigator",
@@ -245,7 +245,7 @@ export const en = {
   "blog.card7.title": "Which Ph.D. Fields Are Worth It?",
   "blog.card7.excerpt":
     "A Ph.D. can significantly boost your career prospects but requires time and money. Here are the programs with the highest salaries and strongest job growth.",
-  "blog.card7.author": "Student Editorial Board · Updated Sept 2026",
+  "blog.card7.author": "Jaylen Peng\nUpdated Sept 2026",
   "blog.card7.cta": "Read article",
 
   "phd.meta.title": "Which Ph.D. Fields Are Worth It? — Grad Loan Navigator",
@@ -313,7 +313,7 @@ export const en = {
   "blog.card8.title": "Tuition vs. Inflation: Which Has Grown More?",
   "blog.card8.excerpt":
     "As inflation occurs, the price of everything increases. Has the rise in higher education tuition outpaced inflation? A 1990–2026 data breakdown.",
-  "blog.card8.author": "Student Editorial Board · Updated Sept 2026",
+  "blog.card8.author": "Jaylen Peng\nUpdated Sept 2026",
   "blog.card8.cta": "Read article",
 
   "tvi.meta.title": "Tuition vs. Inflation: Which Has Grown More? — Grad Loan Navigator",
@@ -358,73 +358,94 @@ export const en = {
     "Calculate your annual funding gap, borrowing limit compliance, and total tuition costs with our free interactive tool.",
   "tvi.cta.button": "Chart Your Path Now",
 
-  /* ---------- Medical Degree ROI Article (English) ---------- */
-  "blog.card9.tag": "Medical ROI · 5 min read",
-  "blog.card9.title": "Is a Medical Degree Worth It?",
+  /* ---------- Public vs. Private Grad School Article (English) ---------- */
+  "blog.card9.tag": "Public vs. Private · 4 min read",
+  "blog.card9.title": "Graduate School: Public vs. Private",
   "blog.card9.excerpt":
-    "An in-depth analysis of medical school debt ($200k+ average), residency interest accumulation, specialty salary spreads, and PSLF strategies.",
-  "blog.card9.author": "Student Editorial Board · Updated Sept 2026",
+    "There are over 1,000 universities in the U.S. that offer graduate programs. Understanding the difference between public and private institutions can set you up for success.",
+  "blog.card9.author": "Jaylen Peng\nUpdated Sept 2026",
   "blog.card9.cta": "Read article",
 
-  "med.meta.title": "Is a Medical Degree Worth It? Debt vs. Lifetime Payoffs — Grad Loan Navigator",
-  "med.meta.desc":
-    "An in-depth analysis of medical school debt ($200k+ average), residency interest accumulation, specialty salary spreads, and PSLF strategies.",
-  "med.eyebrow": "Medical ROI · Doctor Debt",
-  "med.h1": "Is a Medical Degree Worth It? Debt vs. Lifetime Payoffs",
-  "med.sub":
-    "An in-depth analysis of medical school debt ($200k+ average), residency interest accumulation, specialty salary spreads, and PSLF strategies.",
-  "med.updated": "Maya Lin Reviewed as of Sept. 12, 2026",
-  "med.why.title": "Why it matters",
-  "med.why.p":
-    "Becoming a physician requires a huge upfront financial commitment and years of delayed gratification. Understanding how debt grows during residency and how specialties differ in ROI is critical for pre-meds and medical students.",
-  "med.nav.debt": "1. Debt Landscape",
-  "med.nav.residency": "2. Residency Trap",
-  "med.nav.specialty": "3. Specialty ROI",
-  "med.nav.pslf": "4. PSLF Strategy",
-  "med.nav.bottomline": "5. The Bottom Line",
-  "med.stat.banner":
-    "By the Numbers: 73% of medical school graduates carry educational debt, with a median balance of $200,000 at graduation. However, specialized physicians average $350k–$780k in annual compensation.",
-  "med.part1": "Part 1 of 5",
-  "med.debt.h2": "The Medical School Debt Landscape",
-  "med.debt.lead":
-    "Medical school is one of the most expensive graduate paths, but physician earnings remain among the highest in North America.",
-  "med.debt.p1":
-    "Tuition and living costs for four years of medical school frequently exceed $250,000 to $350,000 at private and out-of-state public institutions. Most students finance this through Direct Unsubsidized loans and Grad PLUS loans.",
-  "med.debt.p2":
-    "Despite these daunting balances, the default rate for physicians is under 0.5%. High guaranteed baseline salaries ensure long-term solvency, but early career financial management determines whether you build wealth quickly or stay trapped in high-interest debt.",
-  "med.part2": "Part 2 of 5",
-  "med.residency.h2": "The Residency Interest Accumulation Trap",
-  "med.residency.lead":
-    "During 3 to 7 years of residency, resident physicians earn modest stipends ($60,000–$75,000) while their six-figure loan balance accrues interest.",
-  "med.residency.c1.title": "Unsubsidized Capitalization Risk",
-  "med.residency.c1.desc":
-    "At an 8%–9% federal interest rate, a $200,000 balance accrues nearly $16,000 to $18,000 in interest per year during residency. Without income-driven subsidies, unpaid interest can capitalize into principal.",
-  "med.residency.c2.title": "Leveraging Income-Driven Repayment (IDR)",
-  "med.residency.c2.desc":
-    "Enrolling in an IDR plan during residency keeps monthly payments tied to resident salaries (often $200–$400/mo). Under SAVE or income-contingent plans, interest subsidies prevent snowballing balances.",
-  "med.part3": "Part 3 of 5",
-  "med.specialty.h2": "Specialty Salary Spreads & Lifetime ROI",
-  "med.specialty.lead":
-    "Your medical specialty dictates your break-even horizon. Surgical and procedural subspecialties offer multi-million-dollar lifetime earnings premiums.",
-  "med.part4": "Part 4 of 5",
-  "med.pslf.h2": "Public Service Loan Forgiveness (PSLF) Strategy",
-  "med.pslf.lead":
-    "Because most academic medical centers and safety-net hospitals are 501(c)(3) non-profits, residency and fellowship years count toward PSLF.",
-  "med.pslf.p1":
-    "A 3-year residency plus a 3-year fellowship completes 6 of the required 10 years (120 qualifying monthly payments) for tax-free federal loan forgiveness under PSLF.",
-  "med.pslf.p2":
-    "For doctors working 4 additional years at a non-profit or public hospital after training, hundreds of thousands of dollars in medical school loans can be completely forgiven.",
-  "med.part5": "Part 5 of 5",
-  "med.bottomline.h2": "The Bottom Line",
-  "med.bottomline.lead":
-    "Is an M.D. worth it? Financially, yes — provided you manage interest growth during residency and choose a repayment strategy aligned with your hospital setting.",
-  "med.bottomline.p1":
-    "While medical debt is intimidating, the lifetime earning power of an M.D. easily outpaces the debt burden. Use income-driven repayment during residency, pursue PSLF if working in non-profit health systems, or aggressively refinance once attending salary kicks in.",
-  "med.cta.title": "Calculate Your Medical School Borrowing Need",
-  "med.cta.desc":
-    "Model your tuition gap, expected interest accrual during residency, and federal borrowing limits with our free calculator.",
-  "med.cta.button": "Chart Your Path Now",
+  "pvp.eyebrow": "Public vs. Private · 4 min read",
+  "pvp.h1": "Graduate School: Public vs. Private",
+  "pvp.sub":
+    "There are over 1,000 universities in the U.S. that offer graduate programs. Understanding the difference between public and private institutions can set you up for success.",
+  "pvp.updated": "Jaylen Peng Reviewed as of Sept. 11, 2026",
+  "pvp.why.title": "Why it matters",
+  "pvp.why.p":
+    "A graduate degree costs time and money. Learning the pros and cons of both options helps you decide what's the best option for you.",
+  "pvp.nav.difference": "1. What's the Difference?",
+  "pvp.nav.tuition": "2. Tuition Comparison",
+  "pvp.nav.beyond": "3. Beyond Cost",
+  "pvp.nav.mind": "4. Keep In Mind…",
+  "pvp.nav.bottomline": "5. The Bottom Line",
+  "pvp.part1": "Part 1 of 4",
 
+  /* ---------- MBA Prestige ROI Article (English) ---------- */
+  "blog.card10.tag": "MBA ROI · 5 min read",
+  "blog.card10.title": "MBA Programs: Does Prestige Matter?",
+  "blog.card10.excerpt":
+    "How much does ranking and name recognition influence your MBA ROI? A data analysis comparing Top 10 highest ROI MBA programs and Top 10 Value MBA programs.",
+  "blog.card10.author": "Carson Jung\nUpdated Sept 2026",
+  "blog.card10.cta": "Read article",
+
+  "mba.eyebrow": "MBA ROI · 5 min read",
+  "mba.h1": "MBA Programs: Does Prestige Matter?",
+  "mba.sub":
+    "You may think getting your MBA from a highly prestigious university is the best option for your career. However, these schools also come at a high cost. How much does ranking and name recognition influence your ROI?",
+  "mba.updated": "Jaylen Peng Reviewed as of Sept. 17, 2026",
+  "mba.why.title": "Why it matters",
+  "mba.why.p":
+    "Understanding how prestige affects ROI can help you make the best decision: go for the name brand school, or a value pick.",
+  "mba.nav.highest": "1. Highest ROI MBA Programs",
+  "mba.nav.value": "2. Value MBA Programs",
+  "mba.nav.consider": "3. What You Should Consider",
+  "mba.nav.bottomline": "4. The Bottom Line",
+  "mba.part1": "Part 1 of 3",
+
+  /* ---------- Clemson Spotlight Article (English) ---------- */
+  "blog.card11.tag": "Clemson Spotlight · 4 min read",
+  "blog.card11.title": "Clemson: The Best of Both Worlds",
+  "blog.card11.excerpt":
+    "Clemson delivers a well-rounded college experience through excellent academics, storied traditions, and vibrant campus life. A data breakdown of enrollment growth and graduate outcomes.",
+  "blog.card11.author": "Student Editorial Board\nUpdated Sept 2026",
+  "blog.card11.cta": "Read article",
+
+  "clemson.eyebrow": "Clemson Spotlight · Tiger Value 🐾",
+  "clemson.h1": "Clemson: The Best of Both Worlds",
+  "clemson.sub":
+    "Students today are looking for a well-rounded college experience that extends beyond just the classroom. Clemson delivers that experience through excellent academics, storied traditions, and vibrant campus life.",
+  "clemson.updated": "Student Editorial Board Reviewed as of Sept. 18, 2026",
+  "clemson.nav.beyond": "1. Beyond Classroom",
+  "clemson.nav.numbers": "2. By the Numbers",
+  "clemson.nav.academics": "3. Great Academics",
+  "clemson.nav.advantage": "4. Clemson Advantage",
+  "clemson.nav.bottomline": "5. The Bottom Line",
+
+  /* ---------- AI Use in Higher Education Article (English) ---------- */
+  "blog.card12.tag": "AI & Education · 4 min read",
+  "blog.card12.title": "AI Use in Higher Education",
+  "blog.card12.excerpt":
+    "The advent of AI is not only changing the value of higher education, but also what the experience within degree-granting programs looks like. A data breakdown by Jaylen Peng.",
+  "blog.card12.author": "Jaylen Peng\nUpdated Sept 2026",
+  "blog.card12.cta": "Read article",
+
+  "ai.meta.title": "AI Use in Higher Education — Grad Loan Navigator",
+  "ai.meta.desc":
+    "Understanding how AI is being implemented into college coursework can set you up for success. Learn how students use AI, who uses it most, and how schools respond.",
+  "ai.eyebrow": "AI & Education · 4 min read",
+  "ai.h1": "AI Use in Higher Education",
+  "ai.sub":
+    "The advent of AI is not only changing the value of higher education, but also what the experience within degree-granting programs looks like.",
+  "ai.updated": "Jaylen Peng Reviewed as of Sept. 16, 2026",
+  "ai.why.title": "Why it matters",
+  "ai.why.p":
+    "Understanding how AI is being implemented into college coursework can set you up for success. You need to know how to use it, and when to use it.",
+  "ai.nav.how": "1. How Students Use AI",
+  "ai.nav.who": "2. Who Uses It Most?",
+  "ai.nav.schools": "3. How Schools Are Responding",
+  "ai.nav.mind": "4. What You Should Keep in Mind",
+  "ai.nav.bottomline": "5. The Bottom Line",
   "pol.meta.title": "Student Loans Political Background and Future — Grad Loan Navigator",
   "pol.meta.desc":
     "The One Big Beautiful Bill Act made significant changes to student loan programs. Here's why that happened, and what's to come.",
@@ -1375,18 +1396,18 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card1.title": "Refinanciación de Préstamos Estudiantiles, Explicada",
   "blog.card1.excerpt":
     "La refinanciación puede reducir tu tasa de interés o bajar tu pago mensual, pero también puede costarte protecciones que no podrás recuperar una vez que se pierdan. Este es el verdadero dilema.",
-  "blog.card1.author": "Equipo Editorial Estudiantil · Actualizado 2026",
+  "blog.card1.author": "Equipo Editorial Estudiantil\nActualizado 2026",
   "blog.card2.tag": "Tasas de Interés · 4 min de lectura",
   "blog.card2.title": "Intereses de Préstamos Estudiantiles: En Cifras",
   "blog.card2.excerpt":
     "Las tasas de los préstamos estudiantiles federales aumentaron nuevamente este año, por tercer año consecutivo. Esto es lo que realmente te cuesta y el tipo de préstamo que ha desaparecido definitivamente.",
-  "blog.card2.author": "Equipo Editorial Estudiantil · Actualizado 2026",
+  "blog.card2.author": "Equipo Editorial Estudiantil\nActualizado 2026",
   "blog.card2.cta": "Leer artículo",
   "blog.card3.tag": "Conceptos Básicos · 3 min de lectura",
   "blog.card3.title": "Tipos de Préstamos Estudiantiles",
   "blog.card3.excerpt":
     "Existen tres programas federales y diversas opciones privadas. Esta es una guía rápida de préstamos subsidiados, no subsidiados, PLUS y privados.",
-  "blog.card3.author": "Equipo Editorial Estudiantil · Actualizado 2026",
+  "blog.card3.author": "Equipo Editorial Estudiantil\nActualizado 2026",
   "blog.card3.cta": "Leer artículo",
 
   "manage.eyebrow": "Gestión de Deuda y Estrategia",
@@ -2110,7 +2131,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card5.title": "Antecedentes Políticos y Futuro de los Préstamos Estudiantiles",
   "blog.card5.excerpt":
     "La Ley 'One Big Beautiful Bill' realizó cambios significativos en los programas de préstamos estudiantiles. Conoce por qué sucedió y qué entrará en vigor hasta 2028.",
-  "blog.card5.author": "Consejo Editorial Estudiantil · Actualizado Sep 2026",
+  "blog.card5.author": "Carson Jung\nActualizado Sep 2026",
   "blog.card5.cta": "Leer artículo",
 
   "pol.meta.title": "Antecedentes Políticos y Futuro de los Préstamos Estudiantiles — Grad Loan Navigator",
@@ -2209,7 +2230,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card6.title": "Universidad de Florida: Valor de Primer Nivel",
   "blog.card6.excerpt":
     "La Universidad de Florida (UF) ofrece programas académicos clasificados a nivel nacional, colocación competitiva y una red de exalumnos sólida a una fracción del precio.",
-  "blog.card6.author": "Consejo Editorial Estudiantil · Actualizado Sep 2026",
+  "blog.card6.author": "Peter Foulke\nActualizado Sep 2026",
   "blog.card6.cta": "Leer artículo",
 
   "uf.meta.title": "Universidad de Florida: Valor de Primer Nivel — Grad Loan Navigator",
@@ -2282,7 +2303,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card7.title": "¿Qué Campos de Doctorado Valen la Pena?",
   "blog.card7.excerpt":
     "Un doctorado puede impulsar significativamente tus perspectivas profesionales, pero requiere tiempo y dinero. Conoce los programas con mejores salarios y crecimiento.",
-  "blog.card7.author": "Consejo Editorial Estudiantil · Actualizado Sep 2026",
+  "blog.card7.author": "Jaylen Peng\nActualizado Sep 2026",
   "blog.card7.cta": "Leer artículo",
 
   "phd.meta.title": "¿Qué Campos de Doctorado Valen la Pena? — Grad Loan Navigator",
@@ -2344,6 +2365,145 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "phd.sources.label": "Fuentes:",
   "phd.sources.text":
     "Georgetown Center on Education and the Workforce, National Center for Science and Engineering Statistics, Bureau of Labor Statistics. Revisado al 4 de septiembre de 2026.",
+
+  /* ---------- Tuition vs. Inflation Article (Spanish) ---------- */
+  "blog.card8.tag": "Matrícula e Inflación · 4 min de lectura",
+  "blog.card8.title": "Matrícula vs. Inflación: ¿Cuál ha Crecido Más?",
+  "blog.card8.excerpt":
+    "Con la inflación, el precio de todo aumenta. ¿Ha superado el costo de la educación superior a la inflación? Un análisis de datos de 1990 a 2026.",
+  "blog.card8.author": "Jaylen Peng\nActualizado Sep 2026",
+  "blog.card8.cta": "Leer artículo",
+
+  "tvi.meta.title": "Matrícula vs. Inflación: ¿Cuál ha Crecido Más? — Grad Loan Navigator",
+  "tvi.meta.desc":
+    "Con la inflación, el precio de todo aumenta. ¿Ha superado el aumento de la matrícula universitaria a la inflación? Desglose de datos de 1990 a 2026.",
+  "tvi.eyebrow": "Matrícula e Inflación · 4 min de lectura",
+  "tvi.h1": "Matrícula vs. Inflación: ¿Cuál ha Crecido Más?",
+  "tvi.sub":
+    "A medida que ocurre la inflación, el precio de todo aumenta. ¿Ha superado el aumento de la matrícula de educación superior a la tasa de inflación?",
+  "tvi.updated": "Jaylen Peng Rev. Sept. 11, 2026",
+  "tvi.why.title": "Por qué es importante",
+  "tvi.why.p":
+    "¿Se ha vuelto una licenciatura comparativamente más o menos costosa? ¿Qué pasa con un título de posgrado o profesional? Entender esto ofrece contexto para tomar la mejor decisión.",
+  "tvi.nav.numbers": "1. En cifras",
+  "tvi.nav.comparison": "2. Pregrado vs. Posgrado",
+  "tvi.nav.chart": "3. Gráfico de Crecimiento",
+  "tvi.nav.meaning": "4. ¿Qué Significa Esto?",
+  "tvi.nav.bottomline": "5. En conclusión",
+  "tvi.stat.title": "En cifras: Desde 1990, la inflación ha aumentado un 153.0%",
+  "tvi.stat.p":
+    "El crecimiento de la matrícula de educación superior ha superado la inflación general de precios al consumidor en cada década desde 1990.",
+  "tvi.shortanswer.title": "La respuesta corta",
+  "tvi.shortanswer.text":
+    "Tanto la educación de pregrado como la de posgrado son comparativamente más costosas que hace más de 30 años.",
+  "tvi.part1": "Primera parte",
+  "tvi.undergrad.h2": "Pregrado vs. Posgrado",
+  "tvi.undergrad.lead":
+    "La matrícula para ambos niveles de titulación ha superado a la inflación. La educación ahora cuesta más en comparación con los precios generales al consumidor.",
+  "tvi.part2": "Segunda parte",
+  "tvi.part3": "Tercera parte",
+  "tvi.meaning.h2": "¿Qué Significa Esto?",
+  "tvi.meaning.lead":
+    "El rápido avance de la IA está cambiando el mercado laboral. Un título avanzado puede hacerte destacar. Si el crecimiento de la matrícula se desacelera, el valor potencial de un posgrado podría aumentar.",
+  "tvi.part4": "Cuarta parte",
+  "tvi.bottomline.h2": "En conclusión",
+  "tvi.bottomline.lead":
+    "La matrícula ha superado a la inflación, aunque el crecimiento de posgrado se ha desacelerado. En una economía impulsada por la IA, un título avanzado vale más, pero el margen de error al elegir programa se ha reducido.",
+  "tvi.bottomline.p1":
+    "Asegúrate de evaluar el retorno del programa, los paquetes de financiamiento y los riesgos de endeudamiento antes de comprometerte.",
+  "tvi.cta.title": "Evalúa tu Necesidad de Financiamiento",
+  "tvi.cta.desc":
+    "Calcula tu brecha de financiamiento anual y límites de endeudamiento con nuestra herramienta interactiva gratuita.",
+  "tvi.cta.button": "Traza Tu Camino Ahora",
+
+  /* ---------- Public vs. Private Grad School Article (Spanish) ---------- */
+  "blog.card9.tag": "Pública vs. Privada · 4 min de lectura",
+  "blog.card9.title": "Escuela de Posgrado: Pública vs. Privada",
+  "blog.card9.excerpt":
+    "Hay más de 1,000 universidades en EE. UU. que ofrecen programas de posgrado. Comprender la diferencia entre instituciones públicas y privadas te prepara para el éxito.",
+  "blog.card9.author": "Jaylen Peng\nActualizado Sep 2026",
+  "blog.card9.cta": "Leer artículo",
+
+  "pvp.eyebrow": "Pública vs. Privada · 4 min de lectura",
+  "pvp.h1": "Escuela de Posgrado: Pública vs. Privada",
+  "pvp.sub":
+    "Hay más de 1,000 universidades en EE. UU. que ofrecen programas de posgrado. Comprender la diferencia entre instituciones públicas y privadas te prepara para el éxito.",
+  "pvp.updated": "Jaylen Peng Rev. Sept. 11, 2026",
+  "pvp.why.title": "Por qué es importante",
+  "pvp.why.p":
+    "Un título de posgrado requiere tiempo y dinero. Conocer las ventajas y desventajas de ambas opciones te ayuda a decidir cuál es la mejor alternativa para ti.",
+  "pvp.nav.difference": "1. ¿Cuál es la Diferencia?",
+  "pvp.nav.tuition": "2. Comparación de Matrícula",
+  "pvp.nav.beyond": "3. Más Allá del Costo",
+  "pvp.nav.mind": "4. Ten en Cuenta…",
+  "pvp.nav.bottomline": "5. En conclusión",
+  "pvp.part1": "Primera parte",
+
+  /* ---------- MBA Prestige ROI Article (Spanish) ---------- */
+  "blog.card10.tag": "ROI de MBA · 5 min de lectura",
+  "blog.card10.title": "Programas de MBA: ¿Importa el Prestigio?",
+  "blog.card10.excerpt":
+    "¿Cuánto influye la clasificación y el nombre en el ROI de tu MBA? Análisis comparativo entre los 10 programas con mayor ROI y los 10 mejores programas en valor.",
+  "blog.card10.author": "Carson Jung\nActualizado Sep 2026",
+  "blog.card10.cta": "Leer artículo",
+
+  "mba.eyebrow": "ROI de MBA · 5 min de lectura",
+  "mba.h1": "Programas de MBA: ¿Importa el Prestigio?",
+  "mba.sub":
+    "Podrías pensar que obtener un MBA en una universidad de gran prestigio es la mejor opción. Sin embargo, estas escuelas tienen un costo elevado. ¿Cuánto influye la clasificación y el renombre en tu retorno de inversión?",
+  "mba.updated": "Jaylen Peng Rev. Sept. 17, 2026",
+  "mba.why.title": "Por qué es importante",
+  "mba.why.p":
+    "Comprender cómo el prestigio afecta tu ROI te ayuda a decidir entre una escuela de renombre o una opción de alto valor.",
+  "mba.nav.highest": "1. Programas de MBA con Mayor ROI",
+  "mba.nav.value": "2. Programas de MBA de Valor",
+  "mba.nav.consider": "3. Lo que Debes Considerar",
+  "mba.nav.bottomline": "4. En conclusión",
+  "mba.part1": "Primera parte",
+
+  /* ---------- Clemson Spotlight Article (Spanish) ---------- */
+  "blog.card11.tag": "Destacado Clemson · 4 min de lectura",
+  "blog.card11.title": "Clemson: Lo Mejor de Ambos Mundos",
+  "blog.card11.excerpt":
+    "Clemson ofrece una experiencia universitaria integral gracias a su excelencia académica, tradiciones e intensa vida estudiantil. Desglose de crecimiento e inserción laboral.",
+  "blog.card11.author": "Equipo Editorial Estudiantil\nActualizado Sep 2026",
+  "blog.card11.cta": "Leer artículo",
+
+  "clemson.eyebrow": "Destacado Clemson · Valor Tiger",
+  "clemson.h1": "Clemson: Lo Mejor de Ambos Mundos",
+  "clemson.sub":
+    "Los estudiantes buscan una experiencia universitaria completa que vaya más allá del aula. Clemson la ofrece a través de excelencia académica, tradiciones históricas y una vida estudiantil vibrante.",
+  "clemson.updated": "Equipo Editorial Estudiantil Rev. Sept. 18, 2026",
+  "clemson.nav.beyond": "1. Más Allá del Aula",
+  "clemson.nav.numbers": "2. En Cifras",
+  "clemson.nav.academics": "3. Excelencia Académica",
+  "clemson.nav.advantage": "4. La Ventaja Clemson",
+  "clemson.nav.bottomline": "5. En conclusión",
+
+  /* ---------- AI Use in Higher Education Article (Spanish) ---------- */
+  "blog.card12.tag": "IA y Educación · 4 min de lectura",
+  "blog.card12.title": "Uso de la IA en la Educación Superior",
+  "blog.card12.excerpt":
+    "La llegada de la IA no solo está cambiando el valor de la educación superior, sino también cómo se vive la experiencia en los programas académicos. Análisis de datos por Jaylen Peng.",
+  "blog.card12.author": "Jaylen Peng\nActualizado Sep 2026",
+  "blog.card12.cta": "Leer artículo",
+
+  "ai.meta.title": "Uso de la IA en la Educación Superior — Grad Loan Navigator",
+  "ai.meta.desc":
+    "Entender cómo se implementa la IA en los cursos universitarios te prepara para el éxito. Conoce cómo la usan los estudiantes, quiénes la usan más y cómo responden las universidades.",
+  "ai.eyebrow": "IA y Educación · 4 min de lectura",
+  "ai.h1": "Uso de la IA en la Educación Superior",
+  "ai.sub":
+    "La llegada de la IA no solo está cambiando el valor de la educación superior, sino también cómo se vive la experiencia dentro de los programas académicos.",
+  "ai.updated": "Jaylen Peng Rev. Sept. 16, 2026",
+  "ai.why.title": "Por qué es importante",
+  "ai.why.p":
+    "Entender cómo se implementa la IA en los trabajos universitarios te prepara para el éxito. Necesitas saber cómo usarla y cuándo usarla.",
+  "ai.nav.how": "1. Cómo Usan la IA los Estudiantes",
+  "ai.nav.who": "2. ¿Quiénes la Usan Más?",
+  "ai.nav.schools": "3. Cómo Responden las Universidades",
+  "ai.nav.mind": "4. Lo que Debes Tener en Cuenta",
+  "ai.nav.bottomline": "5. En conclusión",
 };
 
 export const LANGUAGES = [

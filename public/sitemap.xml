@@ -81,7 +81,22 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.graduationnavigator.com/blog/is-a-medical-degree-worth-it</loc>
+    <loc>https://www.graduationnavigator.com/blog/public-vs-private-grad-school</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.graduationnavigator.com/blog/mba-prestige-roi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.graduationnavigator.com/blog/clemson-university-the-best-of-both-worlds</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.graduationnavigator.com/blog/ai-use-in-higher-education</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

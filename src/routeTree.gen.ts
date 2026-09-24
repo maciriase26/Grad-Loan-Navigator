@@ -28,6 +28,10 @@ import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as ApiContactRouteImport } from './routes/api/contact'
+import { Route as BlogAiUseInHigherEducationRouteImport } from './routes/blog_.ai-use-in-higher-education'
+import { Route as BlogClemsonUniversityTheBestOfBothWorldsRouteImport } from './routes/blog_.clemson-university-the-best-of-both-worlds'
+import { Route as BlogMbaPrestigeRoiRouteImport } from './routes/blog_.mba-prestige-roi'
+import { Route as BlogPublicVsPrivateGradSchoolRouteImport } from './routes/blog_.public-vs-private-grad-school'
 import { Route as BlogRefinancingStudentLoansRouteImport } from './routes/blog_.refinancing-student-loans'
 import { Route as BlogStudentLoanInterestByTheNumbersRouteImport } from './routes/blog_.student-loan-interest-by-the-numbers'
 import { Route as BlogStudentLoanTypesRouteImport } from './routes/blog_.student-loan-types'
@@ -137,6 +141,29 @@ const ApiContactRoute = ApiContactRouteImport.update({
   path: '/api/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogAiUseInHigherEducationRoute =
+  BlogAiUseInHigherEducationRouteImport.update({
+    id: '/blog_/ai-use-in-higher-education',
+    path: '/blog/ai-use-in-higher-education',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogClemsonUniversityTheBestOfBothWorldsRoute =
+  BlogClemsonUniversityTheBestOfBothWorldsRouteImport.update({
+    id: '/blog_/clemson-university-the-best-of-both-worlds',
+    path: '/blog/clemson-university-the-best-of-both-worlds',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogMbaPrestigeRoiRoute = BlogMbaPrestigeRoiRouteImport.update({
+  id: '/blog_/mba-prestige-roi',
+  path: '/blog/mba-prestige-roi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogPublicVsPrivateGradSchoolRoute =
+  BlogPublicVsPrivateGradSchoolRouteImport.update({
+    id: '/blog_/public-vs-private-grad-school',
+    path: '/blog/public-vs-private-grad-school',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogRefinancingStudentLoansRoute =
   BlogRefinancingStudentLoansRouteImport.update({
     id: '/blog_/refinancing-student-loans',
@@ -222,6 +249,10 @@ export interface FileRoutesByFullPath {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/api/chat': typeof ApiChatRoute
   '/api/contact': typeof ApiContactRoute
+  '/blog/ai-use-in-higher-education': typeof BlogAiUseInHigherEducationRoute
+  '/blog/clemson-university-the-best-of-both-worlds': typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
+  '/blog/mba-prestige-roi': typeof BlogMbaPrestigeRoiRoute
+  '/blog/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
   '/blog/student-loan-types': typeof BlogStudentLoanTypesRoute
@@ -254,6 +285,10 @@ export interface FileRoutesByTo {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/api/chat': typeof ApiChatRoute
   '/api/contact': typeof ApiContactRoute
+  '/blog/ai-use-in-higher-education': typeof BlogAiUseInHigherEducationRoute
+  '/blog/clemson-university-the-best-of-both-worlds': typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
+  '/blog/mba-prestige-roi': typeof BlogMbaPrestigeRoiRoute
+  '/blog/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
   '/blog/student-loan-types': typeof BlogStudentLoanTypesRoute
@@ -287,6 +322,10 @@ export interface FileRoutesById {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/api/chat': typeof ApiChatRoute
   '/api/contact': typeof ApiContactRoute
+  '/blog_/ai-use-in-higher-education': typeof BlogAiUseInHigherEducationRoute
+  '/blog_/clemson-university-the-best-of-both-worlds': typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
+  '/blog_/mba-prestige-roi': typeof BlogMbaPrestigeRoiRoute
+  '/blog_/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog_/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog_/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
   '/blog_/student-loan-types': typeof BlogStudentLoanTypesRoute
@@ -321,6 +360,10 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/api/chat'
     | '/api/contact'
+    | '/blog/ai-use-in-higher-education'
+    | '/blog/clemson-university-the-best-of-both-worlds'
+    | '/blog/mba-prestige-roi'
+    | '/blog/public-vs-private-grad-school'
     | '/blog/refinancing-student-loans'
     | '/blog/student-loan-interest-by-the-numbers'
     | '/blog/student-loan-types'
@@ -353,6 +396,10 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/api/chat'
     | '/api/contact'
+    | '/blog/ai-use-in-higher-education'
+    | '/blog/clemson-university-the-best-of-both-worlds'
+    | '/blog/mba-prestige-roi'
+    | '/blog/public-vs-private-grad-school'
     | '/blog/refinancing-student-loans'
     | '/blog/student-loan-interest-by-the-numbers'
     | '/blog/student-loan-types'
@@ -385,6 +432,10 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/api/chat'
     | '/api/contact'
+    | '/blog_/ai-use-in-higher-education'
+    | '/blog_/clemson-university-the-best-of-both-worlds'
+    | '/blog_/mba-prestige-roi'
+    | '/blog_/public-vs-private-grad-school'
     | '/blog_/refinancing-student-loans'
     | '/blog_/student-loan-interest-by-the-numbers'
     | '/blog_/student-loan-types'
@@ -418,6 +469,10 @@ export interface RootRouteChildren {
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   ApiChatRoute: typeof ApiChatRoute
   ApiContactRoute: typeof ApiContactRoute
+  BlogAiUseInHigherEducationRoute: typeof BlogAiUseInHigherEducationRoute
+  BlogClemsonUniversityTheBestOfBothWorldsRoute: typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
+  BlogMbaPrestigeRoiRoute: typeof BlogMbaPrestigeRoiRoute
+  BlogPublicVsPrivateGradSchoolRoute: typeof BlogPublicVsPrivateGradSchoolRoute
   BlogRefinancingStudentLoansRoute: typeof BlogRefinancingStudentLoansRoute
   BlogStudentLoanInterestByTheNumbersRoute: typeof BlogStudentLoanInterestByTheNumbersRoute
   BlogStudentLoanTypesRoute: typeof BlogStudentLoanTypesRoute
@@ -566,6 +621,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog_/ai-use-in-higher-education': {
+      id: '/blog_/ai-use-in-higher-education'
+      path: '/blog/ai-use-in-higher-education'
+      fullPath: '/blog/ai-use-in-higher-education'
+      preLoaderRoute: typeof BlogAiUseInHigherEducationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog_/clemson-university-the-best-of-both-worlds': {
+      id: '/blog_/clemson-university-the-best-of-both-worlds'
+      path: '/blog/clemson-university-the-best-of-both-worlds'
+      fullPath: '/blog/clemson-university-the-best-of-both-worlds'
+      preLoaderRoute: typeof BlogClemsonUniversityTheBestOfBothWorldsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog_/mba-prestige-roi': {
+      id: '/blog_/mba-prestige-roi'
+      path: '/blog/mba-prestige-roi'
+      fullPath: '/blog/mba-prestige-roi'
+      preLoaderRoute: typeof BlogMbaPrestigeRoiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog_/public-vs-private-grad-school': {
+      id: '/blog_/public-vs-private-grad-school'
+      path: '/blog/public-vs-private-grad-school'
+      fullPath: '/blog/public-vs-private-grad-school'
+      preLoaderRoute: typeof BlogPublicVsPrivateGradSchoolRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog_/refinancing-student-loans': {
       id: '/blog_/refinancing-student-loans'
       path: '/blog/refinancing-student-loans'
@@ -667,6 +750,11 @@ const rootRouteChildren: RootRouteChildren = {
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
   ApiChatRoute: ApiChatRoute,
   ApiContactRoute: ApiContactRoute,
+  BlogAiUseInHigherEducationRoute: BlogAiUseInHigherEducationRoute,
+  BlogClemsonUniversityTheBestOfBothWorldsRoute:
+    BlogClemsonUniversityTheBestOfBothWorldsRoute,
+  BlogMbaPrestigeRoiRoute: BlogMbaPrestigeRoiRoute,
+  BlogPublicVsPrivateGradSchoolRoute: BlogPublicVsPrivateGradSchoolRoute,
   BlogRefinancingStudentLoansRoute: BlogRefinancingStudentLoansRoute,
   BlogStudentLoanInterestByTheNumbersRoute:
     BlogStudentLoanInterestByTheNumbersRoute,

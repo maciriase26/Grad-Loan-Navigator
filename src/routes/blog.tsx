@@ -106,14 +106,16 @@ function BlogPage() {
               <p className="desc" style={{ fontSize: "15.5px", lineHeight: "1.65" }}>
                 {t("blog.card1.excerpt")}
               </p>
+              {/* Featured Article Card */}
               <div
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  alignItems: "center",
+                  alignItems: "flex-end",
                   marginTop: "auto",
                   paddingTop: "16px",
                   borderTop: "1px solid var(--line)",
+                  gap: "12px",
                 }}
               >
                 <span
@@ -121,6 +123,8 @@ function BlogPage() {
                     fontFamily: "var(--font-mono)",
                     fontSize: "11.5px",
                     color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
                   }}
                 >
                   {t("blog.card1.author")}
@@ -149,10 +153,11 @@ function BlogPage() {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  alignItems: "center",
+                  alignItems: "flex-end",
                   marginTop: "auto",
                   paddingTop: "16px",
                   borderTop: "1px solid var(--line)",
+                  gap: "12px",
                 }}
               >
                 <span
@@ -160,6 +165,8 @@ function BlogPage() {
                     fontFamily: "var(--font-mono)",
                     fontSize: "11.5px",
                     color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
                   }}
                 >
                   {t("blog.card2.author")}
@@ -188,10 +195,11 @@ function BlogPage() {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  alignItems: "center",
+                  alignItems: "flex-end",
                   marginTop: "auto",
                   paddingTop: "16px",
                   borderTop: "1px solid var(--line)",
+                  gap: "12px",
                 }}
               >
                 <span
@@ -199,6 +207,8 @@ function BlogPage() {
                     fontFamily: "var(--font-mono)",
                     fontSize: "11.5px",
                     color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
                   }}
                 >
                   {t("blog.card3.author")}
@@ -227,10 +237,11 @@ function BlogPage() {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  alignItems: "center",
+                  alignItems: "flex-end",
                   marginTop: "auto",
                   paddingTop: "16px",
                   borderTop: "1px solid var(--line)",
+                  gap: "12px",
                 }}
               >
                 <span
@@ -238,6 +249,8 @@ function BlogPage() {
                     fontFamily: "var(--font-mono)",
                     fontSize: "11.5px",
                     color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
                   }}
                 >
                   {t("blog.card4.author")}
@@ -266,10 +279,11 @@ function BlogPage() {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  alignItems: "center",
+                  alignItems: "flex-end",
                   marginTop: "auto",
                   paddingTop: "16px",
                   borderTop: "1px solid var(--line)",
+                  gap: "12px",
                 }}
               >
                 <span
@@ -277,6 +291,8 @@ function BlogPage() {
                     fontFamily: "var(--font-mono)",
                     fontSize: "11.5px",
                     color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
                   }}
                 >
                   {t("blog.card5.author")}
@@ -308,10 +324,11 @@ function BlogPage() {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  alignItems: "center",
+                  alignItems: "flex-end",
                   marginTop: "auto",
                   paddingTop: "16px",
                   borderTop: "1px solid var(--line)",
+                  gap: "12px",
                 }}
               >
                 <span
@@ -319,6 +336,8 @@ function BlogPage() {
                     fontFamily: "var(--font-mono)",
                     fontSize: "11.5px",
                     color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
                   }}
                 >
                   {t("blog.card6.author")}
@@ -347,10 +366,11 @@ function BlogPage() {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  alignItems: "center",
+                  alignItems: "flex-end",
                   marginTop: "auto",
                   paddingTop: "16px",
                   borderTop: "1px solid var(--line)",
+                  gap: "12px",
                 }}
               >
                 <span
@@ -358,6 +378,8 @@ function BlogPage() {
                     fontFamily: "var(--font-mono)",
                     fontSize: "11.5px",
                     color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
                   }}
                 >
                   {t("blog.card7.author")}
@@ -386,10 +408,11 @@ function BlogPage() {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  alignItems: "center",
+                  alignItems: "flex-end",
                   marginTop: "auto",
                   paddingTop: "16px",
                   borderTop: "1px solid var(--line)",
+                  gap: "12px",
                 }}
               >
                 <span
@@ -397,6 +420,8 @@ function BlogPage() {
                     fontFamily: "var(--font-mono)",
                     fontSize: "11.5px",
                     color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
                   }}
                 >
                   {t("blog.card8.author")}
@@ -408,10 +433,10 @@ function BlogPage() {
               </div>
             </Link>
 
-            {/* Is a Medical Degree Worth It Article */}
+            {/* Public vs. Private Grad School Article */}
             <Link
               className="path-card card-a"
-              to="/blog/is-a-medical-degree-worth-it"
+              to="/blog/public-vs-private-grad-school"
               style={{
                 textDecoration: "none",
                 display: "flex",
@@ -425,10 +450,11 @@ function BlogPage() {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  alignItems: "center",
+                  alignItems: "flex-end",
                   marginTop: "auto",
                   paddingTop: "16px",
                   borderTop: "1px solid var(--line)",
+                  gap: "12px",
                 }}
               >
                 <span
@@ -436,12 +462,146 @@ function BlogPage() {
                     fontFamily: "var(--font-mono)",
                     fontSize: "11.5px",
                     color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
                   }}
                 >
                   {t("blog.card9.author")}
                 </span>
                 <span className="path-cta">
                   {t("blog.card9.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
+
+            {/* MBA Prestige ROI Article */}
+            <Link
+              className="path-card card-a"
+              to="/blog/mba-prestige-roi"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <span className="path-subheader">{t("blog.card10.tag")}</span>
+              <h2>{t("blog.card10.title")}</h2>
+              <p className="desc">{t("blog.card10.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-end",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                  gap: "12px",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
+                  }}
+                >
+                  {t("blog.card10.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card10.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
+
+            {/* Clemson University Spotlight Article */}
+            <Link
+              className="path-card card-a"
+              to="/blog/clemson-university-the-best-of-both-worlds"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+                borderTop: "3px solid #F56600",
+              }}
+            >
+              <span className="path-subheader" style={{ color: "#F56600", fontWeight: 700 }}>
+                {t("blog.card11.tag")} 🐾
+              </span>
+              <h2 style={{ color: "#522D80" }}>{t("blog.card11.title")}</h2>
+              <p className="desc">{t("blog.card11.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-end",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                  gap: "12px",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
+                  }}
+                >
+                  {t("blog.card11.author")}
+                </span>
+                <span className="path-cta" style={{ color: "#F56600" }}>
+                  {t("blog.card11.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
+
+            {/* AI Use in Higher Education Article */}
+            <Link
+              className="path-card card-a"
+              to="/blog/ai-use-in-higher-education"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+                borderTop: "3px solid var(--teal)",
+              }}
+            >
+              <span className="path-subheader" style={{ color: "var(--teal)", fontWeight: 700 }}>
+                {t("blog.card12.tag")}
+              </span>
+              <h2>{t("blog.card12.title")}</h2>
+              <p className="desc">{t("blog.card12.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-end",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                  gap: "12px",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
+                  }}
+                >
+                  {t("blog.card12.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card12.cta")}
                   <Arrow />
                 </span>
               </div>
