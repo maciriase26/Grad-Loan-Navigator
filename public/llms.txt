@@ -14,3 +14,5 @@
 - [/blog/which-phd-fields-are-worth-it](https://www.graduationnavigator.com/blog/which-phd-fields-are-worth-it): Earnings and debt outcome analysis across Ph.D. fields of study.
 - [/blog/which-law-schools-are-worth-it](https://www.graduationnavigator.com/blog/which-law-schools-are-worth-it): Law school debt-to-income ROI analysis.
 - [/blog/refinancing-student-loans](https://www.graduationnavigator.com/blog/refinancing-student-loans): When and how to refinance student loans safely.
+- [/blog/tuition-vs-inflation-which-has-grown-more](https://www.graduationnavigator.com/blog/tuition-vs-inflation-which-has-grown-more): Data analysis comparing 1990–2026 tuition growth for undergraduate and graduate degrees against inflation.
+- [/blog/is-a-medical-degree-worth-it](https://www.graduationnavigator.com/blog/is-a-medical-degree-worth-it): Analysis of medical school debt, residency interest accrual, specialty salaries, and PSLF.

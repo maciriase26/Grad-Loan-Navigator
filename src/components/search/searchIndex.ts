@@ -382,6 +382,59 @@ export const SEARCH_INDEX: SearchItem[] = [
       "salarios de doctorado",
     ],
   },
+  {
+    id: "article-tuition-vs-inflation",
+    category: "articles",
+    titleEn: "Tuition vs. Inflation: Which Has Grown More?",
+    titleEs: "Matrícula vs. Inflación: ¿Cuál Ha Crecido Más?",
+    descEn:
+      "1990–2026 data comparison: Undergraduate tuition (+461.5%), Graduate tuition (+418.7%), and CPI Inflation (+153.0%).",
+    descEs:
+      "Comparación 1990–2026: Matrícula de pregrado (+461.5%), posgrado (+418.7%) e inflación CPI (+153.0%).",
+    url: "/blog/tuition-vs-inflation-which-has-grown-more",
+    badgeEn: "4 min read",
+    badgeEs: "4 min lectura",
+    keywords: [
+      "tuition vs inflation",
+      "inflation",
+      "tuition growth",
+      "CPI-U",
+      "1990 to 2026",
+      "graduate tuition growth",
+      "undergraduate tuition growth",
+      "jaylen peng",
+      "matrícula vs inflación",
+      "crecimiento de matrícula",
+      "inflación",
+    ],
+  },
+  {
+    id: "article-medical-degree",
+    category: "articles",
+    titleEn: "Is a Medical Degree Worth It? Debt vs. Lifetime Payoffs",
+    titleEs: "¿Vale la Pena un Título Médico? Deuda vs. Rendimiento",
+    descEn:
+      "Medical school debt ($200k+ average), residency interest accumulation, specialty salary spreads, and PSLF strategies.",
+    descEs:
+      "Deuda de la escuela de medicina ($200k+ promedio), acumulación de intereses en residencia y estrategias PSLF.",
+    url: "/blog/is-a-medical-degree-worth-it",
+    badgeEn: "5 min read",
+    badgeEs: "5 min lectura",
+    keywords: [
+      "medical school",
+      "MD debt",
+      "physician salary",
+      "residency interest",
+      "medical ROI",
+      "specialty salaries",
+      "doctor debt",
+      "PSLF for doctors",
+      "escuela de medicina",
+      "deuda médica",
+      "salarios médicos",
+      "residencia médica",
+    ],
+  },
 
   /* ---------- Experian In-Depth & External Resources ---------- */
   {

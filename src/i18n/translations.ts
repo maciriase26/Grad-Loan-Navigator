@@ -308,6 +308,123 @@ export const en = {
   "phd.sources.text":
     "Georgetown Center on Education and the Workforce, National Center for Science and Engineering Statistics, Bureau of Labor Statistics. Reviewed as of Sept. 4, 2026.",
 
+  /* ---------- Tuition vs. Inflation Article (English) ---------- */
+  "blog.card8.tag": "Tuition & Inflation · 4 min read",
+  "blog.card8.title": "Tuition vs. Inflation: Which Has Grown More?",
+  "blog.card8.excerpt":
+    "As inflation occurs, the price of everything increases. Has the rise in higher education tuition outpaced inflation? A 1990–2026 data breakdown.",
+  "blog.card8.author": "Student Editorial Board · Updated Sept 2026",
+  "blog.card8.cta": "Read article",
+
+  "tvi.meta.title": "Tuition vs. Inflation: Which Has Grown More? — Grad Loan Navigator",
+  "tvi.meta.desc":
+    "As inflation occurs, the price of everything increases. Has the rise in higher education tuition outpaced inflation? A 1990–2026 data breakdown.",
+  "tvi.eyebrow": "Tuition & Inflation · 4 min read",
+  "tvi.h1": "Tuition vs. Inflation: Which Has Grown More?",
+  "tvi.sub":
+    "As inflation occurs, the price of everything increases. Has the rise in higher education tuition outpaced the rate of inflation?",
+  "tvi.updated": "Jaylen Peng Reviewed as of Sept. 11, 2026",
+  "tvi.why.title": "Why it matters",
+  "tvi.why.p":
+    "Has an undergraduate degree become comparatively more or less expensive? What about a graduate or professional degree? Understanding this can provide context to help you make the best decision.",
+  "tvi.nav.numbers": "1. By the Numbers",
+  "tvi.nav.comparison": "2. Undergrad vs. Grad",
+  "tvi.nav.chart": "3. Growth Chart",
+  "tvi.nav.meaning": "4. What Does This Mean?",
+  "tvi.nav.bottomline": "5. The Bottom Line",
+  "tvi.stat.title": "By the numbers: Since 1990, inflation has increased 153.0%",
+  "tvi.stat.p":
+    "Higher education tuition growth has outpaced overall consumer price inflation across every decade since 1990.",
+  "tvi.shortanswer.title": "The short answer",
+  "tvi.shortanswer.text":
+    "Both undergraduate and graduate education is comparatively more expensive than 30+ years ago.",
+  "tvi.part1": "Part 1 of 4",
+  "tvi.undergrad.h2": "Undergraduate vs. Graduate",
+  "tvi.undergrad.lead":
+    "Tuition for both degree levels have outpaced inflation. Tuition now costs more compared to overall consumer prices.",
+  "tvi.part2": "Part 2 of 4",
+  "tvi.part3": "Part 3 of 4",
+  "tvi.meaning.h2": "What Does This Mean?",
+  "tvi.meaning.lead":
+    "The rapid rise in AI is actively changing the job market. An advanced degree can make you stand out. If tuition is also becoming relatively cheaper, that means the value of a graduate degree could potentially increase.",
+  "tvi.part4": "Part 4 of 4",
+  "tvi.bottomline.h2": "The Bottom Line",
+  "tvi.bottomline.lead":
+    "Tuition has outpaced inflation, though graduate tuition growth has slowed. In an AI-driven economy, an advanced degree could mean more, but the margin for choosing the wrong program has narrowed.",
+  "tvi.bottomline.p1":
+    "Make sure to weigh program payoff, funding packages, compounding interest debt risks, and technical certificate alternatives before committing to graduate borrowing.",
+  "tvi.cta.title": "Evaluate Your Funding Need",
+  "tvi.cta.desc":
+    "Calculate your annual funding gap, borrowing limit compliance, and total tuition costs with our free interactive tool.",
+  "tvi.cta.button": "Chart Your Path Now",
+
+  /* ---------- Medical Degree ROI Article (English) ---------- */
+  "blog.card9.tag": "Medical ROI · 5 min read",
+  "blog.card9.title": "Is a Medical Degree Worth It?",
+  "blog.card9.excerpt":
+    "An in-depth analysis of medical school debt ($200k+ average), residency interest accumulation, specialty salary spreads, and PSLF strategies.",
+  "blog.card9.author": "Student Editorial Board · Updated Sept 2026",
+  "blog.card9.cta": "Read article",
+
+  "med.meta.title": "Is a Medical Degree Worth It? Debt vs. Lifetime Payoffs — Grad Loan Navigator",
+  "med.meta.desc":
+    "An in-depth analysis of medical school debt ($200k+ average), residency interest accumulation, specialty salary spreads, and PSLF strategies.",
+  "med.eyebrow": "Medical ROI · Doctor Debt",
+  "med.h1": "Is a Medical Degree Worth It? Debt vs. Lifetime Payoffs",
+  "med.sub":
+    "An in-depth analysis of medical school debt ($200k+ average), residency interest accumulation, specialty salary spreads, and PSLF strategies.",
+  "med.updated": "Maya Lin Reviewed as of Sept. 12, 2026",
+  "med.why.title": "Why it matters",
+  "med.why.p":
+    "Becoming a physician requires a huge upfront financial commitment and years of delayed gratification. Understanding how debt grows during residency and how specialties differ in ROI is critical for pre-meds and medical students.",
+  "med.nav.debt": "1. Debt Landscape",
+  "med.nav.residency": "2. Residency Trap",
+  "med.nav.specialty": "3. Specialty ROI",
+  "med.nav.pslf": "4. PSLF Strategy",
+  "med.nav.bottomline": "5. The Bottom Line",
+  "med.stat.banner":
+    "By the Numbers: 73% of medical school graduates carry educational debt, with a median balance of $200,000 at graduation. However, specialized physicians average $350k–$780k in annual compensation.",
+  "med.part1": "Part 1 of 5",
+  "med.debt.h2": "The Medical School Debt Landscape",
+  "med.debt.lead":
+    "Medical school is one of the most expensive graduate paths, but physician earnings remain among the highest in North America.",
+  "med.debt.p1":
+    "Tuition and living costs for four years of medical school frequently exceed $250,000 to $350,000 at private and out-of-state public institutions. Most students finance this through Direct Unsubsidized loans and Grad PLUS loans.",
+  "med.debt.p2":
+    "Despite these daunting balances, the default rate for physicians is under 0.5%. High guaranteed baseline salaries ensure long-term solvency, but early career financial management determines whether you build wealth quickly or stay trapped in high-interest debt.",
+  "med.part2": "Part 2 of 5",
+  "med.residency.h2": "The Residency Interest Accumulation Trap",
+  "med.residency.lead":
+    "During 3 to 7 years of residency, resident physicians earn modest stipends ($60,000–$75,000) while their six-figure loan balance accrues interest.",
+  "med.residency.c1.title": "Unsubsidized Capitalization Risk",
+  "med.residency.c1.desc":
+    "At an 8%–9% federal interest rate, a $200,000 balance accrues nearly $16,000 to $18,000 in interest per year during residency. Without income-driven subsidies, unpaid interest can capitalize into principal.",
+  "med.residency.c2.title": "Leveraging Income-Driven Repayment (IDR)",
+  "med.residency.c2.desc":
+    "Enrolling in an IDR plan during residency keeps monthly payments tied to resident salaries (often $200–$400/mo). Under SAVE or income-contingent plans, interest subsidies prevent snowballing balances.",
+  "med.part3": "Part 3 of 5",
+  "med.specialty.h2": "Specialty Salary Spreads & Lifetime ROI",
+  "med.specialty.lead":
+    "Your medical specialty dictates your break-even horizon. Surgical and procedural subspecialties offer multi-million-dollar lifetime earnings premiums.",
+  "med.part4": "Part 4 of 5",
+  "med.pslf.h2": "Public Service Loan Forgiveness (PSLF) Strategy",
+  "med.pslf.lead":
+    "Because most academic medical centers and safety-net hospitals are 501(c)(3) non-profits, residency and fellowship years count toward PSLF.",
+  "med.pslf.p1":
+    "A 3-year residency plus a 3-year fellowship completes 6 of the required 10 years (120 qualifying monthly payments) for tax-free federal loan forgiveness under PSLF.",
+  "med.pslf.p2":
+    "For doctors working 4 additional years at a non-profit or public hospital after training, hundreds of thousands of dollars in medical school loans can be completely forgiven.",
+  "med.part5": "Part 5 of 5",
+  "med.bottomline.h2": "The Bottom Line",
+  "med.bottomline.lead":
+    "Is an M.D. worth it? Financially, yes — provided you manage interest growth during residency and choose a repayment strategy aligned with your hospital setting.",
+  "med.bottomline.p1":
+    "While medical debt is intimidating, the lifetime earning power of an M.D. easily outpaces the debt burden. Use income-driven repayment during residency, pursue PSLF if working in non-profit health systems, or aggressively refinance once attending salary kicks in.",
+  "med.cta.title": "Calculate Your Medical School Borrowing Need",
+  "med.cta.desc":
+    "Model your tuition gap, expected interest accrual during residency, and federal borrowing limits with our free calculator.",
+  "med.cta.button": "Chart Your Path Now",
+
   "pol.meta.title": "Student Loans Political Background and Future — Grad Loan Navigator",
   "pol.meta.desc":
     "The One Big Beautiful Bill Act made significant changes to student loan programs. Here's why that happened, and what's to come.",

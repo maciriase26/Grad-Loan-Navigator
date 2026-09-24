@@ -368,6 +368,84 @@ function BlogPage() {
                 </span>
               </div>
             </Link>
+
+            {/* Tuition vs. Inflation Article */}
+            <Link
+              className="path-card card-a"
+              to="/blog/tuition-vs-inflation-which-has-grown-more"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <span className="path-subheader">{t("blog.card8.tag")}</span>
+              <h2>{t("blog.card8.title")}</h2>
+              <p className="desc">{t("blog.card8.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                  }}
+                >
+                  {t("blog.card8.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card8.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
+
+            {/* Is a Medical Degree Worth It Article */}
+            <Link
+              className="path-card card-a"
+              to="/blog/is-a-medical-degree-worth-it"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <span className="path-subheader">{t("blog.card9.tag")}</span>
+              <h2>{t("blog.card9.title")}</h2>
+              <p className="desc">{t("blog.card9.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                  }}
+                >
+                  {t("blog.card9.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card9.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
           </div>
         </section>
       </main>
