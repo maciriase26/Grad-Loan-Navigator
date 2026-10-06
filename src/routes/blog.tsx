@@ -570,12 +570,9 @@ function BlogPage() {
                 textDecoration: "none",
                 display: "flex",
                 flexDirection: "column",
-                borderTop: "3px solid #000000",
               }}
             >
-              <span className="path-subheader" style={{ color: "#000000", fontWeight: 700 }}>
-                {t("blog.card12.tag")}
-              </span>
+              <span className="path-subheader">{t("blog.card12.tag")}</span>
               <h2>{t("blog.card12.title")}</h2>
               <p className="desc">{t("blog.card12.excerpt")}</p>
               <div
@@ -615,12 +612,9 @@ function BlogPage() {
                 textDecoration: "none",
                 display: "flex",
                 flexDirection: "column",
-                borderTop: "3px solid #000000",
               }}
             >
-              <span className="path-subheader" style={{ color: "#000000", fontWeight: 700 }}>
-                {t("blog.card13.tag")}
-              </span>
+              <span className="path-subheader">{t("blog.card13.tag")}</span>
               <h2>{t("blog.card13.title")}</h2>
               <p className="desc">{t("blog.card13.excerpt")}</p>
               <div
@@ -660,12 +654,9 @@ function BlogPage() {
                 textDecoration: "none",
                 display: "flex",
                 flexDirection: "column",
-                borderTop: "3px solid #000000",
               }}
             >
-              <span className="path-subheader" style={{ color: "#000000", fontWeight: 700 }}>
-                {t("blog.card14.tag")}
-              </span>
+              <span className="path-subheader">{t("blog.card14.tag")}</span>
               <h2>{t("blog.card14.title")}</h2>
               <p className="desc">{t("blog.card14.excerpt")}</p>
               <div
@@ -705,12 +696,9 @@ function BlogPage() {
                 textDecoration: "none",
                 display: "flex",
                 flexDirection: "column",
-                borderTop: "3px solid #000000",
               }}
             >
-              <span className="path-subheader" style={{ color: "#000000", fontWeight: 700 }}>
-                {t("blog.card15.tag")}
-              </span>
+              <span className="path-subheader">{t("blog.card15.tag")}</span>
               <h2>{t("blog.card15.title")}</h2>
               <p className="desc">{t("blog.card15.excerpt")}</p>
               <div
@@ -750,12 +738,9 @@ function BlogPage() {
                 textDecoration: "none",
                 display: "flex",
                 flexDirection: "column",
-                borderTop: "3px solid #000000",
               }}
             >
-              <span className="path-subheader" style={{ color: "#000000", fontWeight: 700 }}>
-                {t("blog.card16.tag")}
-              </span>
+              <span className="path-subheader">{t("blog.card16.tag")}</span>
               <h2>{t("blog.card16.title")}</h2>
               <p className="desc">{t("blog.card16.excerpt")}</p>
               <div
@@ -840,12 +825,9 @@ function BlogPage() {
                 textDecoration: "none",
                 display: "flex",
                 flexDirection: "column",
-                borderTop: "3px solid #000000",
               }}
             >
-              <span className="path-subheader" style={{ color: "#000000", fontWeight: 700 }}>
-                {t("blog.card18.tag")}
-              </span>
+              <span className="path-subheader">{t("blog.card18.tag")}</span>
               <h2>{t("blog.card18.title")}</h2>
               <p className="desc">{t("blog.card18.excerpt")}</p>
               <div

@@ -51,12 +51,13 @@ function TrendingUpIcon() {
     <svg
       viewBox="0 0 24 24"
       fill="none"
-      stroke="#000000"
+      stroke="currentColor"
       strokeWidth="2.2"
       strokeLinecap="round"
       strokeLinejoin="round"
       width="18"
       height="18"
+      style={{ color: "var(--teal)" }}
       aria-hidden="true"
     >
       <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
@@ -70,12 +71,13 @@ function CalendarClockIcon() {
     <svg
       viewBox="0 0 24 24"
       fill="none"
-      stroke="#000000"
+      stroke="currentColor"
       strokeWidth="2.2"
       strokeLinecap="round"
       strokeLinejoin="round"
       width="20"
       height="20"
+      style={{ color: "var(--teal)" }}
       aria-hidden="true"
     >
       <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
@@ -92,12 +94,13 @@ function PercentIcon() {
     <svg
       viewBox="0 0 24 24"
       fill="none"
-      stroke="#000000"
+      stroke="currentColor"
       strokeWidth="2.2"
       strokeLinecap="round"
       strokeLinejoin="round"
       width="20"
       height="20"
+      style={{ color: "var(--teal)" }}
       aria-hidden="true"
     >
       <line x1="19" y1="5" x2="5" y2="19" />
@@ -112,12 +115,13 @@ function LandmarkIcon() {
     <svg
       viewBox="0 0 24 24"
       fill="none"
-      stroke="#000000"
+      stroke="currentColor"
       strokeWidth="2.2"
       strokeLinecap="round"
       strokeLinejoin="round"
       width="20"
       height="20"
+      style={{ color: "var(--teal)" }}
       aria-hidden="true"
     >
       <line x1="3" y1="22" x2="21" y2="22" />
@@ -126,6 +130,25 @@ function LandmarkIcon() {
       <line x1="14" y1="18" x2="14" y2="11" />
       <line x1="18" y1="18" x2="18" y2="11" />
       <polygon points="12 2 20 7 4 7" />
+    </svg>
+  );
+}
+
+function ArrowRightIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      width="15"
+      height="15"
+      aria-hidden="true"
+    >
+      <line x1="5" y1="12" x2="19" y2="12" />
+      <polyline points="12 5 19 12 12 19" />
     </svg>
   );
 }
@@ -198,30 +221,22 @@ function StudentLoanInterestRatesHistoryPage() {
               ← {t("blog.h1")}
             </Link>
           </div>
-          <div className="eyebrow" style={{ color: "#000000", fontWeight: 700 }}>
-            {t("irh.eyebrow")}
-          </div>
+          <div className="eyebrow">{t("irh.eyebrow")}</div>
           <h1>{t("irh.h1")}</h1>
           <p className="sub">{t("irh.sub")}</p>
           <div className="updated">
-            <span className="dot" style={{ background: "#000000" }} />
+            <span className="dot" />
             {t("irh.updated")}
           </div>
 
           {/* Why it matters callout */}
-          <div
-            className="refi-hero-callout"
-            style={{
-              borderLeft: "4px solid #000000",
-              background: "color-mix(in srgb, #000000 4%, var(--card))",
-            }}
-          >
-            <div className="refi-hero-callout-icon" style={{ color: "#000000" }}>
+          <div className="refi-hero-callout">
+            <div className="refi-hero-callout-icon">
               <AlertTriangleIcon />
             </div>
             <div className="refi-hero-callout-content">
-              <h4 style={{ color: "#000000" }}>{t("irh.why.title")}</h4>
-              <p style={{ margin: 0 }}>{t("irh.why.p")}</p>
+              <h4>{t("irh.why.title")}</h4>
+              <p>{t("irh.why.p")}</p>
             </div>
           </div>
         </section>
@@ -239,7 +254,7 @@ function StudentLoanInterestRatesHistoryPage() {
         <div className="wrap doc-content">
           {/* Section 1: Flat Rate Era */}
           <section className="doc-section" id="flat-rate" style={{ scrollMarginTop: "80px" }}>
-            <span className="section-num" style={{ color: "#000000" }}>{t("irh.part1")}</span>
+            <span className="section-num">{t("irh.part1")}</span>
             <h2>{t("irh.flat.h2")}</h2>
             <p className="lead">{t("irh.flat.lead")}</p>
 
@@ -257,12 +272,11 @@ function StudentLoanInterestRatesHistoryPage() {
                   background: "var(--card)",
                   borderRadius: "14px",
                   border: "1px solid var(--line)",
-                  borderTop: "3px solid #000000",
                 }}
               >
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
                   <LandmarkIcon />
-                  <h3 style={{ margin: 0, fontSize: "19px", fontWeight: 700, color: "#111827" }}>
+                  <h3 style={{ margin: 0, fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("irh.flat.p1.title")}
                   </h3>
                 </div>
@@ -277,12 +291,11 @@ function StudentLoanInterestRatesHistoryPage() {
                   background: "var(--card)",
                   borderRadius: "14px",
                   border: "1px solid var(--line)",
-                  borderTop: "3px solid #000000",
                 }}
               >
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
                   <TrendingUpIcon />
-                  <h3 style={{ margin: 0, fontSize: "19px", fontWeight: 700, color: "#111827" }}>
+                  <h3 style={{ margin: 0, fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("irh.flat.p2.title")}
                   </h3>
                 </div>
@@ -297,12 +310,11 @@ function StudentLoanInterestRatesHistoryPage() {
                   background: "var(--card)",
                   borderRadius: "14px",
                   border: "1px solid var(--line)",
-                  borderTop: "3px solid #000000",
                 }}
               >
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
                   <CalendarClockIcon />
-                  <h3 style={{ margin: 0, fontSize: "19px", fontWeight: 700, color: "#111827" }}>
+                  <h3 style={{ margin: 0, fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("irh.flat.p3.title")}
                   </h3>
                 </div>
@@ -315,7 +327,7 @@ function StudentLoanInterestRatesHistoryPage() {
 
           {/* Section 2: Variable Rates with Direct Lending */}
           <section className="doc-section" id="variable-rate" style={{ scrollMarginTop: "80px" }}>
-            <span className="section-num" style={{ color: "#000000" }}>{t("irh.part2")}</span>
+            <span className="section-num">{t("irh.part2")}</span>
             <h2>{t("irh.variable.h2")}</h2>
             <p className="lead">{t("irh.variable.lead")}</p>
 
@@ -333,10 +345,9 @@ function StudentLoanInterestRatesHistoryPage() {
                   background: "var(--card)",
                   borderRadius: "14px",
                   border: "1px solid var(--line)",
-                  borderTop: "3px solid #000000",
                 }}
               >
-                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "#111827" }}>
+                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>
                   {t("irh.variable.p1.title")}
                 </h3>
                 <p style={{ margin: 0, fontSize: "15px", lineHeight: "1.65", color: "var(--ink-soft)" }}>
@@ -350,10 +361,9 @@ function StudentLoanInterestRatesHistoryPage() {
                   background: "var(--card)",
                   borderRadius: "14px",
                   border: "1px solid var(--line)",
-                  borderTop: "3px solid #000000",
                 }}
               >
-                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "#111827" }}>
+                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>
                   {t("irh.variable.p2.title")}
                 </h3>
                 <p style={{ margin: 0, fontSize: "15px", lineHeight: "1.65", color: "var(--ink-soft)" }}>
@@ -367,10 +377,9 @@ function StudentLoanInterestRatesHistoryPage() {
                   background: "var(--card)",
                   borderRadius: "14px",
                   border: "1px solid var(--line)",
-                  borderTop: "3px solid #000000",
                 }}
               >
-                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "#111827" }}>
+                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>
                   {t("irh.variable.p3.title")}
                 </h3>
                 <p style={{ margin: 0, fontSize: "15px", lineHeight: "1.65", color: "var(--ink-soft)" }}>
@@ -382,7 +391,7 @@ function StudentLoanInterestRatesHistoryPage() {
 
           {/* Section 3: Fixed Rates Return & CCRAA */}
           <section className="doc-section" id="fixed-overhaul" style={{ scrollMarginTop: "80px" }}>
-            <span className="section-num" style={{ color: "#000000" }}>{t("irh.part3")}</span>
+            <span className="section-num">{t("irh.part3")}</span>
             <h2>{t("irh.fixed.h2")}</h2>
             <p className="lead">{t("irh.fixed.lead")}</p>
 
@@ -400,10 +409,9 @@ function StudentLoanInterestRatesHistoryPage() {
                   background: "var(--card)",
                   borderRadius: "14px",
                   border: "1px solid var(--line)",
-                  borderTop: "3px solid #000000",
                 }}
               >
-                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "#111827" }}>
+                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>
                   {t("irh.fixed.p1.title")}
                 </h3>
                 <p style={{ margin: 0, fontSize: "15px", lineHeight: "1.65", color: "var(--ink-soft)" }}>
@@ -417,10 +425,9 @@ function StudentLoanInterestRatesHistoryPage() {
                   background: "var(--card)",
                   borderRadius: "14px",
                   border: "1px solid var(--line)",
-                  borderTop: "3px solid #000000",
                 }}
               >
-                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "#111827" }}>
+                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>
                   {t("irh.fixed.p2.title")}
                 </h3>
                 <p style={{ margin: 0, fontSize: "15px", lineHeight: "1.65", color: "var(--ink-soft)" }}>
@@ -434,10 +441,9 @@ function StudentLoanInterestRatesHistoryPage() {
                   background: "var(--card)",
                   borderRadius: "14px",
                   border: "1px solid var(--line)",
-                  borderTop: "3px solid #000000",
                 }}
               >
-                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "#111827" }}>
+                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>
                   {t("irh.fixed.p3.title")}
                 </h3>
                 <p style={{ margin: 0, fontSize: "15px", lineHeight: "1.65", color: "var(--ink-soft)" }}>
@@ -449,24 +455,15 @@ function StudentLoanInterestRatesHistoryPage() {
 
           {/* Section 4: The 2013 Certainty Act & Modern Swings */}
           <section className="doc-section" id="certainty-act" style={{ scrollMarginTop: "80px" }}>
-            <span className="section-num" style={{ color: "#000000" }}>{t("irh.part4")}</span>
+            <span className="section-num">{t("irh.part4")}</span>
             <h2>{t("irh.formula.h2")}</h2>
             <p className="lead">{t("irh.formula.lead")}</p>
 
             {/* Formula Callout Card */}
-            <div
-              style={{
-                margin: "28px 0",
-                padding: "28px",
-                background: "var(--card)",
-                borderRadius: "16px",
-                border: "2px solid var(--line)",
-                borderTop: "4px solid #000000",
-              }}
-            >
+            <div className="rates-action-box" style={{ margin: "28px 0", padding: "26px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
                 <PercentIcon />
-                <h3 style={{ margin: 0, fontSize: "20px", fontWeight: 800, color: "#111827" }}>
+                <h3 style={{ margin: 0, fontSize: "20px", fontWeight: 700, color: "var(--ink)" }}>
                   {t("irh.formula.box.title")}
                 </h3>
               </div>
@@ -484,7 +481,7 @@ function StudentLoanInterestRatesHistoryPage() {
                 <div
                   style={{
                     padding: "18px 20px",
-                    background: "color-mix(in srgb, var(--card) 96%, #000000)",
+                    background: "var(--card)",
                     borderRadius: "10px",
                     border: "1px solid var(--line)",
                   }}
@@ -494,7 +491,7 @@ function StudentLoanInterestRatesHistoryPage() {
                       fontFamily: "var(--font-mono)",
                       fontSize: "11px",
                       fontWeight: 700,
-                      color: "var(--ink-soft)",
+                      color: "var(--teal)",
                       textTransform: "uppercase",
                       letterSpacing: "0.05em",
                       display: "block",
@@ -503,7 +500,7 @@ function StudentLoanInterestRatesHistoryPage() {
                   >
                     {t("irh.formula.box.ug.title")}
                   </span>
-                  <strong style={{ fontSize: "15px", color: "#111827", lineHeight: "1.4", display: "block" }}>
+                  <strong style={{ fontSize: "15px", color: "var(--ink)", lineHeight: "1.4", display: "block" }}>
                     {t("irh.formula.box.ug.calc")}
                   </strong>
                 </div>
@@ -511,7 +508,7 @@ function StudentLoanInterestRatesHistoryPage() {
                 <div
                   style={{
                     padding: "18px 20px",
-                    background: "color-mix(in srgb, var(--card) 96%, #000000)",
+                    background: "var(--card)",
                     borderRadius: "10px",
                     border: "1px solid var(--line)",
                   }}
@@ -521,7 +518,7 @@ function StudentLoanInterestRatesHistoryPage() {
                       fontFamily: "var(--font-mono)",
                       fontSize: "11px",
                       fontWeight: 700,
-                      color: "var(--ink-soft)",
+                      color: "var(--teal)",
                       textTransform: "uppercase",
                       letterSpacing: "0.05em",
                       display: "block",
@@ -530,7 +527,7 @@ function StudentLoanInterestRatesHistoryPage() {
                   >
                     {t("irh.formula.box.grad.title")}
                   </span>
-                  <strong style={{ fontSize: "15px", color: "#111827", lineHeight: "1.4", display: "block" }}>
+                  <strong style={{ fontSize: "15px", color: "var(--ink)", lineHeight: "1.4", display: "block" }}>
                     {t("irh.formula.box.grad.calc")}
                   </strong>
                 </div>
@@ -538,7 +535,7 @@ function StudentLoanInterestRatesHistoryPage() {
                 <div
                   style={{
                     padding: "18px 20px",
-                    background: "color-mix(in srgb, var(--card) 96%, #000000)",
+                    background: "var(--card)",
                     borderRadius: "10px",
                     border: "1px solid var(--line)",
                   }}
@@ -548,7 +545,7 @@ function StudentLoanInterestRatesHistoryPage() {
                       fontFamily: "var(--font-mono)",
                       fontSize: "11px",
                       fontWeight: 700,
-                      color: "var(--ink-soft)",
+                      color: "var(--teal)",
                       textTransform: "uppercase",
                       letterSpacing: "0.05em",
                       display: "block",
@@ -557,7 +554,7 @@ function StudentLoanInterestRatesHistoryPage() {
                   >
                     {t("irh.formula.box.plus.title")}
                   </span>
-                  <strong style={{ fontSize: "15px", color: "#111827", lineHeight: "1.4", display: "block" }}>
+                  <strong style={{ fontSize: "15px", color: "var(--ink)", lineHeight: "1.4", display: "block" }}>
                     {t("irh.formula.box.plus.calc")}
                   </strong>
                 </div>
@@ -566,7 +563,7 @@ function StudentLoanInterestRatesHistoryPage() {
 
             {/* Historical Era Matrix Table */}
             <div style={{ margin: "32px 0" }}>
-              <h3 style={{ fontSize: "20px", fontWeight: 700, marginBottom: "16px", color: "#111827" }}>
+              <h3 style={{ fontSize: "20px", fontWeight: 700, marginBottom: "16px", color: "var(--ink)" }}>
                 {isEs ? "Resumen Histórico de Regímenes de Tasas" : "Historical Rate Regimes at a Glance"}
               </h3>
               <div style={{ overflowX: "auto" }}>
@@ -583,7 +580,7 @@ function StudentLoanInterestRatesHistoryPage() {
                   }}
                 >
                   <thead>
-                    <tr style={{ background: "color-mix(in srgb, var(--card) 92%, #000000)", textAlign: "left" }}>
+                    <tr style={{ background: "color-mix(in srgb, var(--card) 92%, var(--ink))", textAlign: "left" }}>
                       <th style={{ padding: "14px 16px", borderBottom: "1px solid var(--line)", fontWeight: 700 }}>
                         {isEs ? "Periodo" : "Era"}
                       </th>
@@ -604,7 +601,7 @@ function StudentLoanInterestRatesHistoryPage() {
                         key={era.eraEn}
                         style={{
                           borderBottom: i === HISTORICAL_ERAS.length - 1 ? "none" : "1px solid var(--line)",
-                          background: i % 2 === 0 ? "transparent" : "color-mix(in srgb, var(--card) 98%, #000000)",
+                          background: i % 2 === 0 ? "transparent" : "color-mix(in srgb, var(--card) 97%, var(--ink))",
                         }}
                       >
                         <td style={{ padding: "14px 16px", fontWeight: 700, fontFamily: "var(--font-mono)" }}>
@@ -618,7 +615,7 @@ function StudentLoanInterestRatesHistoryPage() {
                             padding: "14px 16px",
                             fontFamily: "var(--font-mono)",
                             fontWeight: 700,
-                            color: "#111827",
+                            color: "var(--ink)",
                           }}
                         >
                           {isEs ? era.rangeEs : era.rangeEn}
@@ -648,10 +645,9 @@ function StudentLoanInterestRatesHistoryPage() {
                   background: "var(--card)",
                   borderRadius: "14px",
                   border: "1px solid var(--line)",
-                  borderTop: "3px solid #000000",
                 }}
               >
-                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "#111827" }}>
+                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>
                   {t("irh.pandemic.title")}
                 </h3>
                 <p style={{ margin: 0, fontSize: "15px", lineHeight: "1.65", color: "var(--ink-soft)" }}>
@@ -665,10 +661,9 @@ function StudentLoanInterestRatesHistoryPage() {
                   background: "var(--card)",
                   borderRadius: "14px",
                   border: "1px solid var(--line)",
-                  borderTop: "3px solid #000000",
                 }}
               >
-                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "#111827" }}>
+                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>
                   {t("irh.inflation.title")}
                 </h3>
                 <p style={{ margin: 0, fontSize: "15px", lineHeight: "1.65", color: "var(--ink-soft)" }}>
@@ -682,10 +677,9 @@ function StudentLoanInterestRatesHistoryPage() {
                   background: "var(--card)",
                   borderRadius: "14px",
                   border: "1px solid var(--line)",
-                  borderTop: "3px solid #000000",
                 }}
               >
-                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "#111827" }}>
+                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>
                   {t("irh.obb.title")}
                 </h3>
                 <p style={{ margin: 0, fontSize: "15px", lineHeight: "1.65", color: "var(--ink-soft)" }}>
@@ -698,79 +692,35 @@ function StudentLoanInterestRatesHistoryPage() {
           {/* Section 5: The Bottom Line */}
           <section className="doc-section" id="bottom-line" style={{ scrollMarginTop: "80px" }}>
             <h2>{t("irh.bottomline.h2")}</h2>
-            <blockquote
-              style={{
-                borderLeft: "4px solid #000000",
-                padding: "20px 24px",
-                background: "color-mix(in srgb, #000000 4%, var(--card))",
-                borderRadius: "0 12px 12px 0",
-                margin: "24px 0",
-                fontSize: "17.5px",
-                lineHeight: "1.65",
-                fontStyle: "italic",
-                color: "#111827",
-              }}
-            >
-              "{t("irh.bottomline.quote")}"
-            </blockquote>
+
+            <div className="refi-bottom-card">
+              <blockquote className="refi-bottom-quote">
+                “{t("irh.bottomline.quote")}”
+              </blockquote>
+            </div>
 
             {/* Sources & Citations Box */}
-            <div
-              style={{
-                marginTop: "32px",
-                padding: "20px",
-                background: "var(--card)",
-                borderRadius: "12px",
-                border: "1px solid var(--line)",
-                fontSize: "13.5px",
-                lineHeight: "1.6",
-                color: "var(--ink-soft)",
-              }}
-            >
-              <strong style={{ color: "#111827", display: "block", marginBottom: "6px" }}>
-                {t("irh.sources.label")}
-              </strong>
-              {t("irh.sources.text")}
+            <div className="refi-sources">
+              <p>
+                <strong>{t("irh.sources.label")}</strong>
+                {t("irh.sources.text")}
+              </p>
             </div>
 
             {/* Next Steps CTA */}
-            <div
-              style={{
-                marginTop: "40px",
-                padding: "28px 32px",
-                background: "var(--card)",
-                borderRadius: "16px",
-                border: "1px solid var(--line)",
-                display: "flex",
-                flexDirection: "column",
-                gap: "16px",
-              }}
-            >
-              <h3 style={{ margin: 0, fontSize: "20px", fontWeight: 700, color: "#111827" }}>
-                {t("irh.cta.h2")}
-              </h3>
-              <p style={{ margin: 0, fontSize: "15px", lineHeight: "1.6", color: "var(--ink-soft)" }}>
-                {t("irh.cta.p")}
-              </p>
+            <div className="cta-strip">
               <div>
-                <Link
-                  to="/chart-your-path"
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    background: "#000000",
-                    color: "#ffffff",
-                    fontWeight: 700,
-                    fontSize: "14.5px",
-                    padding: "10px 20px",
-                    borderRadius: "8px",
-                    textDecoration: "none",
-                  }}
-                >
-                  {t("irh.cta.btn")} →
-                </Link>
+                <h2>{t("irh.cta.h2")}</h2>
+                <p>{t("irh.cta.p")}</p>
               </div>
+              <Link
+                to="/chart-your-path"
+                className="btn-primary"
+                style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}
+              >
+                <span>{t("irh.cta.btn")}</span>
+                <ArrowRightIcon />
+              </Link>
             </div>
           </section>
         </div>
