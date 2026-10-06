@@ -678,6 +678,42 @@ export const SEARCH_INDEX: SearchItem[] = [
       "perdida de prestamos",
     ],
   },
+  {
+    id: "article-ohio-state",
+    category: "articles",
+    titleEn: "Ohio State: A National Leader in Graduate Study",
+    titleEs: "Ohio State: Líder Nacional en Estudios de Posgrado",
+    descEn:
+      "The Ohio State University offers 289 graduate degrees, $1.68B in research expenditures, Moritz Law, Pharmacy, and Graduate Associateships.",
+    descEs:
+      "The Ohio State University ofrece 289 títulos de posgrado, $1.68 mil millones en investigación, derecho en Moritz, farmacia y ayudantías financiadas.",
+    url: "/blog/ohio-state-national-leader-graduate-study",
+    badgeEn: "5 min read",
+    badgeEs: "5 min lectura",
+    keywords: [
+      "ohio state university",
+      "ohio state",
+      "osu",
+      "buckeyes",
+      "peter foulke",
+      "moritz law school",
+      "moritz college of law",
+      "osu pharmacy",
+      "nuclear engineering",
+      "nuclear reactor",
+      "research spending",
+      "nsf herd survey",
+      "columbus",
+      "graduate associateship",
+      "osu stipend",
+      "double buckeye",
+      "fortune 500 ohio",
+      "universidad estatal de ohio",
+      "estudios de posgrado",
+      "lider nacional",
+      "investigacion",
+    ],
+  },
 
   /* ---------- Experian In-Depth & External Resources ---------- */
   {

@@ -832,6 +832,106 @@ export const en = {
   "aidcuts.sources.text":
     "U.S. Department of Education; Federal Student Aid; The Washington Post; Postsecondary Education & Economics Research Center at American University; Yale Tobin Center for Economic Policy; National Bureau of Economic Research. Reviewed as of Oct. 4, 2026.",
 
+  /* ---------- Ohio State Spotlight Article (English) ---------- */
+  "blog.card17.tag": "OSU Spotlight · 5 min read",
+  "blog.card17.title": "Ohio State: A National Leader in Graduate Study",
+  "blog.card17.excerpt":
+    "Ohio State is more than college gameday and tailgates. The Midwest flagship offers 289 graduate degrees, $1.68B in research spending, and top-tier career outcomes. Analysis by Peter Foulke.",
+  "blog.card17.author": "Peter Foulke\nUpdated Sept 2026",
+  "blog.card17.cta": "Read article",
+
+  "osu.meta.title": "Ohio State: A National Leader in Graduate Study — Grad Loan Navigator",
+  "osu.meta.desc":
+    "The Ohio State University offers 289 graduate degrees, $1.68B in research expenditures, top-ranked law and pharmacy programs, and competitive graduate funding. Analysis by Peter Foulke.",
+  "osu.banner": "THE OHIO STATE UNIVERSITY SPOTLIGHT · BUCKEYE EXCELLENCE",
+  "osu.eyebrow": "OSU Spotlight · Buckeye Excellence",
+  "osu.h1": "Ohio State: A National Leader in Graduate Study",
+  "osu.sub":
+    "Ohio State is more than college gameday, fraternity parties and tailgates. The Midwest flagship is home to some of the nation's top graduate programs and provides strong outcomes for students across a wide variety of disciplines.",
+  "osu.updated": "Peter Foulke Reviewed as of Sept. 25, 2026",
+
+  "osu.callout.title": "Academic Scope & Unmatched Opportunities",
+  "osu.callout.p":
+    "The Ohio State University (OSU) offers students an enormous range of academics. With 289 graduate degrees, Buckeyes can study anything from business to engineering to even entomology — the study of bugs.",
+  "osu.demographics.title": "Buckeyes Span the Strata",
+  "osu.demographics.p":
+    "Of the nearly 11,500 graduate students enrolled at OSU in 2025, more than 2,500 (22%) came from abroad, while 27% of survey respondents were first-generation college students. Meanwhile, the Fisher College of Business reported that 40% of its 2025 graduate class were Double or even Triple Buckeyes.",
+
+  "osu.nav.programs": "1. Recognized Programs",
+  "osu.nav.research": "2. Research Spending Growth",
+  "osu.nav.aid": "3. Tuition & Aid",
+  "osu.nav.outside": "4. Outside the Classroom",
+  "osu.nav.bottomline": "5. The Bottom Line",
+
+  "osu.part1": "Part 1 of 4",
+  "osu.programs.h2": "Nationally Recognized Programs",
+  "osu.programs.lead":
+    "OSU has several nationally ranked graduate programs that deliver outstanding placement and hands-on professional preparation:",
+  "osu.programs.law.title": "Moritz College of Law",
+  "osu.programs.law.rank": "#30 Nationally · 168 LSAT · 3.9 GPA",
+  "osu.programs.law.desc":
+    "Ohio State’s Law school ranks 30th in the nation with a competitive median LSAT and undergraduate GPA of 168 and 3.9 respectively. 30% of its 2024 class secured prestigious positions in Big Law or federal clerkships.",
+  "osu.programs.pharm.title": "College of Pharmacy",
+  "osu.programs.pharm.rank": "#4 in the Nation · Top 5 for 10 Years Straight",
+  "osu.programs.pharm.desc":
+    "The college is ranked #4 in the nation for 2025 and has sustained a top-5 ranking for a full decade. 96% of graduates successfully matched with their top choice residency program.",
+  "osu.programs.nuclear.title": "Nuclear Engineering Program",
+  "osu.programs.nuclear.rank": "#15 Nationally · On-Campus Nuclear Reactor",
+  "osu.programs.nuclear.desc":
+    "Ranked #15 in the nation, Ohio State provides students direct access to conduct experimental research on the university's operating nuclear reactor rather than relying purely on simulations.",
+
+  "osu.part2": "Part 2 of 4",
+  "osu.research.h2": "Increased Investment in Research",
+  "osu.research.lead":
+    "Ohio State’s commitment to research not only gives graduate students excellent opportunities to explore their passions but also translates their work into real-world problem solving. OSU is home to several world-class facilities including one of America's largest microscopy centers, multiple supercomputers, and its own nuclear reactor.",
+  "osu.research.chart.title": "Ohio State Research Spending Growth",
+  "osu.research.chart.sub": "Fiscal Year R&D Expenditures (in Billions / Millions) · 2016–2025",
+  "osu.research.chart.source": "Source: The Ohio State University / NSF HERD Survey. Reviewed as of Sept. 25, 2026.",
+  "osu.research.callout":
+    "Record Expansion: OSU research expenditures surged from $818M in 2016 to over $1.68B in 2025 — more than doubling total funding and positioning the Buckeyes among the nation's premier research hubs.",
+
+  "osu.part3": "Part 3 of 4",
+  "osu.aid.h2": "Competitive Tuition and Aid",
+  "osu.aid.lead":
+    "Ohio State offers significant funding opportunities through its competitive Graduate Associateship (GA) program, shielding graduate students from excessive educational debt.",
+  "osu.aid.stipend.title": "$26,073+ Minimum Stipend",
+  "osu.aid.stipend.desc":
+    "In 2026, a 50% Graduate Associateship appointment includes a minimum $26,073 nine-month living stipend, providing dependable financial support throughout the academic year.",
+  "osu.aid.tuition.title": "Full Tuition & Fee Authorization",
+  "osu.aid.tuition.desc":
+    "Eligible associates receive 100% tuition and fee authorization covered directly by the university, eliminating the primary cost driver of graduate school.",
+  "osu.aid.health.title": "Subsidized Health Insurance",
+  "osu.aid.health.desc":
+    "Graduate associates qualify for university-subsidized comprehensive health insurance, ensuring medical coverage and wellbeing while completing intensive degrees.",
+
+  "osu.part4": "Part 4 of 4",
+  "osu.outside.h2": "Outside the Classroom",
+  "osu.outside.lead":
+    "Ohio State provides more than just top-notch academics for its graduate students, blending midwestern affordability with major metropolitan career pipelines.",
+  "osu.outside.c1.title": "A Degree That Opens Doors",
+  "osu.outside.c1.desc":
+    "The state of Ohio is home to 28 Fortune 500 companies (including Cardinal Health, Nationwide, Progressive, and Kroger), many of which aggressively recruit new talent from its flagship university.",
+  "osu.outside.c2.title": "Gateway to the Midwest",
+  "osu.outside.c2.desc":
+    "Columbus's centrality to major midwestern economic centers places OSU graduate students in a unique position to take advantage of high-growth tech, healthcare, and finance sectors in the region.",
+  "osu.outside.c3.title": "Cosmopolitan Columbus",
+  "osu.outside.c3.desc":
+    "A vibrant city of 1 million residents, Columbus offers students thriving nightlife, culinary culture, entertainment, and historic neighborhoods while retaining trademark midwestern charm.",
+  "osu.outside.c4.title": "Game Day Atmosphere",
+  "osu.outside.c4.desc":
+    "The Buckeyes field one of college football's elite programs, bringing over 100,000 passionate fans into legendary Ohio Stadium ('The Horseshoe') every Saturday in the fall.",
+
+  "osu.bottomline.h2": "The Buckeye Bottom Line",
+  "osu.bottomline.quote":
+    "OSU combines world-class research opportunities, nationally ranked programs, and excellent career development that contribute to a premier graduate experience.",
+  "osu.sources.label": "Sources & References:",
+  "osu.sources.text":
+    "The Ohio State University, Ohio State Office of Institutional Research and Planning, Ohio State Graduate School, U.S. News & World Report, National Science Foundation, and Fortune. Reviewed as of Sept. 25, 2026.",
+  "osu.cta.h2": "Planning your graduate school funding?",
+  "osu.cta.p":
+    "Estimate your funding gap, borrowing caps, and tuition payoff timeline with our interactive calculator.",
+  "osu.cta.btn": "Chart your path",
+
   "pol.meta.title": "Student Loans Political Background and Future — Grad Loan Navigator",
   "pol.meta.desc":
     "The One Big Beautiful Bill Act made significant changes to student loan programs. Here's why that happened, and what's to come.",
@@ -3322,6 +3422,106 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "aidcuts.sources.label": "Fuentes y referencias:",
   "aidcuts.sources.text":
     "Departamento de Educación de EE. UU.; Federal Student Aid; The Washington Post; Postsecondary Education & Economics Research Center en American University; Yale Tobin Center for Economic Policy; National Bureau of Economic Research. Revisado al 4 de octubre de 2026.",
+
+  /* ---------- Ohio State Spotlight Article (Spanish) ---------- */
+  "blog.card17.tag": "Destacado OSU · Lectura de 5 min",
+  "blog.card17.title": "Ohio State: Líder Nacional en Estudios de Posgrado",
+  "blog.card17.excerpt":
+    "Ohio State es mucho más que días de partido y festejos. El buque insignia del Medio Oeste ofrece 289 títulos de posgrado, $1.68 mil millones en investigación y excelentes resultados profesionales. Análisis por Peter Foulke.",
+  "blog.card17.author": "Peter Foulke\nActualizado Sep 2026",
+  "blog.card17.cta": "Leer artículo",
+
+  "osu.meta.title": "Ohio State: Líder Nacional en Estudios de Posgrado — Grad Loan Navigator",
+  "osu.meta.desc":
+    "The Ohio State University ofrece 289 títulos de posgrado, $1.68 mil millones en investigación, facultades de derecho y farmacia de élite y financiamiento para ayudantías. Análisis por Peter Foulke.",
+  "osu.banner": "DESTACADO THE OHIO STATE UNIVERSITY · EXCELENCIA BUCKEYE",
+  "osu.eyebrow": "Destacado OSU · Excelencia Buckeye",
+  "osu.h1": "Ohio State: Líder Nacional en Estudios de Posgrado",
+  "osu.sub":
+    "Ohio State es mucho más que días de fútbol americano, fraternidades y festejos universitarios. El buque insignia del Medio Oeste alberga algunos de los programas de posgrado más prestigiosos del país y genera excelentes resultados en diversas disciplinas.",
+  "osu.updated": "Peter Foulke Revisado al 25 de sept, 2026",
+
+  "osu.callout.title": "Alcance Académico y Oportunidades Inigualables",
+  "osu.callout.p":
+    "The Ohio State University (OSU) ofrece a los estudiantes una amplitud académica excepcional. Con 289 títulos de posgrado, los Buckeyes pueden formarse desde negocios e ingeniería hasta entomología: el estudio de los insectos.",
+  "osu.demographics.title": "Diversidad Estudiantil Buckeye",
+  "osu.demographics.p":
+    "De los cerca de 11,500 estudiantes de posgrado matriculados en OSU en 2025, más de 2,500 (el 22%) provinieron del extranjero, mientras que el 27% fueron universitarios de primera generación. Además, el Fisher College of Business informó que el 40% de su promoción de posgrado de 2025 eran 'Double' o 'Triple Buckeyes', con títulos previos en la misma institución.",
+
+  "osu.nav.programs": "1. Programas Reconocidos",
+  "osu.nav.research": "2. Inversión en Investigación",
+  "osu.nav.aid": "3. Matrícula y Ayudas",
+  "osu.nav.outside": "4. Fuera del Aula",
+  "osu.nav.bottomline": "5. En Conclusión",
+
+  "osu.part1": "Parte 1 de 4",
+  "osu.programs.h2": "Programas Reconocidos a Nivel Nacional",
+  "osu.programs.lead":
+    "OSU cuenta con numerosos programas de posgrado destacados en los rankings nacionales que brindan sólida inserción laboral y formación práctica:",
+  "osu.programs.law.title": "Facultad de Derecho Moritz",
+  "osu.programs.law.rank": "#30 a Nivel Nacional · 168 LSAT · 3.9 GPA",
+  "osu.programs.law.desc":
+    "La Facultad de Derecho de Ohio State se ubica en el puesto #30 del país, con medianas competitivas de 168 en el LSAT y 3.9 en el GPA de pregrado. El 30% de la promoción de 2024 obtuvo prestigiosos puestos en Big Law o secretarías judiciales federales.",
+  "osu.programs.pharm.title": "Facultad de Farmacia",
+  "osu.programs.pharm.rank": "#4 en el País · Top 5 durante 10 Años Consecutivos",
+  "osu.programs.pharm.desc":
+    "La facultad ocupa el puesto #4 a nivel nacional para 2025 y se ha mantenido entre las 5 mejores durante una década completa. El 96% de los graduados coincidió con su programa de residencia de primera preferencia.",
+  "osu.programs.nuclear.title": "Programa de Ingeniería Nuclear",
+  "osu.programs.nuclear.rank": "#15 en el País · Reactor Nuclear Propio",
+  "osu.programs.nuclear.desc":
+    "Clasificado en el puesto #15 del país, Ohio State brinda a sus estudiantes acceso directo para realizar investigaciones experimentales en el reactor nuclear operativo del campus en lugar de depender únicamente de simulaciones.",
+
+  "osu.part2": "Parte 2 de 4",
+  "osu.research.h2": "Creciente Inversión en Investigación",
+  "osu.research.lead":
+    "El firme compromiso de Ohio State con la investigación ofrece a los posgraduados extraordinarias oportunidades para explorar sus vocaciones y traducir su trabajo en soluciones prácticas. OSU alberga instalaciones de primer nivel mundial, incluido uno de los centros de microscopía más grandes del país, múltiples supercomputadoras y su propio reactor nuclear.",
+  "osu.research.chart.title": "Crecimiento del Gasto en Investigación de Ohio State",
+  "osu.research.chart.sub": "Gastos de I+D por Año Fiscal (en Millones / Miles de Millones) · 2016–2025",
+  "osu.research.chart.source": "Fuente: The Ohio State University / Encuesta NSF HERD. Revisado al 25 de septiembre de 2026.",
+  "osu.research.callout":
+    "Expansión récord: El gasto en investigación de OSU se duplicó con creces, pasando de $818 millones en 2016 a más de $1.68 mil millones en 2025, consolidando a los Buckeyes como uno de los principales centros de investigación de EE. UU.",
+
+  "osu.part3": "Parte 3 de 4",
+  "osu.aid.h2": "Matrícula Competitiva y Ayuda Financiera",
+  "osu.aid.lead":
+    "Ohio State brinda significativas opciones de financiamiento a través de su programa de Ayudantías de Posgrado (GA), protegiendo a los alumnos de deudas educativas excesivas.",
+  "osu.aid.stipend.title": "Estipendio Mínimo de $26,073+",
+  "osu.aid.stipend.desc":
+    "En 2026, una asignación del 50% como Graduate Associate incluye un estipendio mínimo de manutención de $26,073 por nueve meses, asegurando un respaldo financiero predecible durante el curso académico.",
+  "osu.aid.tuition.title": "Cobertura Total de Matrícula y Cuotas",
+  "osu.aid.tuition.desc":
+    "Los asociados elegibles reciben el 100% de exención y autorización de matrícula y cuotas cubierta por la universidad, eliminando el principal costo del posgrado.",
+  "osu.aid.health.title": "Seguro de Salud Subsidiado",
+  "osu.aid.health.desc":
+    "Los estudiantes con ayudantía califican para cobertura médica integral subsidiada por la universidad, resguardando su salud y bienestar durante sus estudios.",
+
+  "osu.part4": "Parte 4 de 4",
+  "osu.outside.h2": "Fuera del Aula",
+  "osu.outside.lead":
+    "Ohio State aporta mucho más que excelencia académica a sus estudiantes de posgrado, combinando el costo de vida asequible del Medio Oeste con sólidas redes empresariales.",
+  "osu.outside.c1.title": "Un Título que Abre Puertas",
+  "osu.outside.c1.desc":
+    "El estado de Ohio alberga 28 empresas Fortune 500 (como Cardinal Health, Nationwide, Progressive y Kroger), muchas de las cuales reclutan talento clave directamente de la universidad insignia.",
+  "osu.outside.c2.title": "Puerta de Entrada al Medio Oeste",
+  "osu.outside.c2.desc":
+    "La ubicación céntrica de Columbus respecto a otras metrópolis del Medio Oeste sitúa a los posgraduados de OSU en una posición inmejorable para aprovechar una economía regional en constante crecimiento.",
+  "osu.outside.c3.title": "Columbus Cosmopolita",
+  "osu.outside.c3.desc":
+    "Una ciudad dinámica de 1 millón de habitantes, Columbus ofrece a los estudiantes animada vida nocturna, cultura gastronómica, entretenimiento y barrios históricos con el tradicional encanto hospitalario del Medio Oeste.",
+  "osu.outside.c4.title": "Ambiente de Gameday",
+  "osu.outside.c4.desc":
+    "Los Buckeyes cuentan con uno de los equipos de fútbol americano más destacados del país, congregando a más de 100,000 apasionados aficionados en el icónico Ohio Stadium ('The Horseshoe') cada sábado de otoño.",
+
+  "osu.bottomline.h2": "En Conclusión: La Perspectiva Buckeye",
+  "osu.bottomline.quote":
+    "OSU reúne oportunidades de investigación de primer nivel mundial, programas altamente calificados a nivel nacional y excelente desarrollo profesional que impulsan una experiencia de posgrado de excelencia.",
+  "osu.sources.label": "Fuentes y referencias:",
+  "osu.sources.text":
+    "The Ohio State University, Oficina de Investigación Institucional y Planificación de Ohio State, Escuela de Posgrado de Ohio State, U.S. News & World Report, National Science Foundation y Fortune. Revisado al 25 de septiembre de 2026.",
+  "osu.cta.h2": "¿Planificando tu financiamiento de posgrado?",
+  "osu.cta.p":
+    "Estima tu brecha de financiamiento, límites de préstamos y tiempo de amortización con nuestra calculadora interactiva.",
+  "osu.cta.btn": "Traza tu camino",
 };
 
 export const LANGUAGES = [

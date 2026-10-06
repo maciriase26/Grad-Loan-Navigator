@@ -316,7 +316,7 @@ function BlogPage() {
               }}
             >
               <span className="path-subheader" style={{ color: "#0021A5", fontWeight: 700 }}>
-                {t("blog.card6.tag")} 🐊
+                {t("blog.card6.tag")}
               </span>
               <h2 style={{ color: "#0021A5" }}>{t("blog.card6.title")}</h2>
               <p className="desc">{t("blog.card6.excerpt")}</p>
@@ -529,7 +529,7 @@ function BlogPage() {
               }}
             >
               <span className="path-subheader" style={{ color: "#F56600", fontWeight: 700 }}>
-                {t("blog.card11.tag")} 🐾
+                {t("blog.card11.tag")}
               </span>
               <h2 style={{ color: "#522D80" }}>{t("blog.card11.title")}</h2>
               <p className="desc">{t("blog.card11.excerpt")}</p>
@@ -782,6 +782,51 @@ function BlogPage() {
                 </span>
                 <span className="path-cta">
                   {t("blog.card16.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
+
+            {/* Ohio State University Spotlight Article */}
+            <Link
+              className="path-card card-a"
+              to="/blog/ohio-state-national-leader-graduate-study"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+                borderTop: "3px solid #BA0C2F",
+              }}
+            >
+              <span className="path-subheader" style={{ color: "#BA0C2F", fontWeight: 700 }}>
+                {t("blog.card17.tag")}
+              </span>
+              <h2 style={{ color: "#BA0C2F" }}>{t("blog.card17.title")}</h2>
+              <p className="desc">{t("blog.card17.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-end",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                  gap: "12px",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
+                  }}
+                >
+                  {t("blog.card17.author")}
+                </span>
+                <span className="path-cta" style={{ color: "#BA0C2F" }}>
+                  {t("blog.card17.cta")}
                   <Arrow />
                 </span>
               </div>

@@ -34,6 +34,7 @@ import { Route as BlogFafsaDeadlinesRouteImport } from './routes/blog_.fafsa-dea
 import { Route as BlogFafsaExplainedRouteImport } from './routes/blog_.fafsa-explained'
 import { Route as BlogFederalAidCutsLowEarningProgramsRouteImport } from './routes/blog_.federal-aid-cuts-low-earning-programs'
 import { Route as BlogMbaPrestigeRoiRouteImport } from './routes/blog_.mba-prestige-roi'
+import { Route as BlogOhioStateNationalLeaderGraduateStudyRouteImport } from './routes/blog_.ohio-state-national-leader-graduate-study'
 import { Route as BlogPublicVsPrivateGradSchoolRouteImport } from './routes/blog_.public-vs-private-grad-school'
 import { Route as BlogRefinancingStudentLoansRouteImport } from './routes/blog_.refinancing-student-loans'
 import { Route as BlogStudentLoanInterestByTheNumbersRouteImport } from './routes/blog_.student-loan-interest-by-the-numbers'
@@ -178,6 +179,12 @@ const BlogMbaPrestigeRoiRoute = BlogMbaPrestigeRoiRouteImport.update({
   path: '/blog/mba-prestige-roi',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogOhioStateNationalLeaderGraduateStudyRoute =
+  BlogOhioStateNationalLeaderGraduateStudyRouteImport.update({
+    id: '/blog_/ohio-state-national-leader-graduate-study',
+    path: '/blog/ohio-state-national-leader-graduate-study',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogPublicVsPrivateGradSchoolRoute =
   BlogPublicVsPrivateGradSchoolRouteImport.update({
     id: '/blog_/public-vs-private-grad-school',
@@ -280,6 +287,7 @@ export interface FileRoutesByFullPath {
   '/blog/fafsa-explained': typeof BlogFafsaExplainedRoute
   '/blog/federal-aid-cuts-low-earning-programs': typeof BlogFederalAidCutsLowEarningProgramsRoute
   '/blog/mba-prestige-roi': typeof BlogMbaPrestigeRoiRoute
+  '/blog/ohio-state-national-leader-graduate-study': typeof BlogOhioStateNationalLeaderGraduateStudyRoute
   '/blog/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
@@ -320,6 +328,7 @@ export interface FileRoutesByTo {
   '/blog/fafsa-explained': typeof BlogFafsaExplainedRoute
   '/blog/federal-aid-cuts-low-earning-programs': typeof BlogFederalAidCutsLowEarningProgramsRoute
   '/blog/mba-prestige-roi': typeof BlogMbaPrestigeRoiRoute
+  '/blog/ohio-state-national-leader-graduate-study': typeof BlogOhioStateNationalLeaderGraduateStudyRoute
   '/blog/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
@@ -361,6 +370,7 @@ export interface FileRoutesById {
   '/blog_/fafsa-explained': typeof BlogFafsaExplainedRoute
   '/blog_/federal-aid-cuts-low-earning-programs': typeof BlogFederalAidCutsLowEarningProgramsRoute
   '/blog_/mba-prestige-roi': typeof BlogMbaPrestigeRoiRoute
+  '/blog_/ohio-state-national-leader-graduate-study': typeof BlogOhioStateNationalLeaderGraduateStudyRoute
   '/blog_/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog_/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog_/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
@@ -403,6 +413,7 @@ export interface FileRouteTypes {
     | '/blog/fafsa-explained'
     | '/blog/federal-aid-cuts-low-earning-programs'
     | '/blog/mba-prestige-roi'
+    | '/blog/ohio-state-national-leader-graduate-study'
     | '/blog/public-vs-private-grad-school'
     | '/blog/refinancing-student-loans'
     | '/blog/student-loan-interest-by-the-numbers'
@@ -443,6 +454,7 @@ export interface FileRouteTypes {
     | '/blog/fafsa-explained'
     | '/blog/federal-aid-cuts-low-earning-programs'
     | '/blog/mba-prestige-roi'
+    | '/blog/ohio-state-national-leader-graduate-study'
     | '/blog/public-vs-private-grad-school'
     | '/blog/refinancing-student-loans'
     | '/blog/student-loan-interest-by-the-numbers'
@@ -483,6 +495,7 @@ export interface FileRouteTypes {
     | '/blog_/fafsa-explained'
     | '/blog_/federal-aid-cuts-low-earning-programs'
     | '/blog_/mba-prestige-roi'
+    | '/blog_/ohio-state-national-leader-graduate-study'
     | '/blog_/public-vs-private-grad-school'
     | '/blog_/refinancing-student-loans'
     | '/blog_/student-loan-interest-by-the-numbers'
@@ -524,6 +537,7 @@ export interface RootRouteChildren {
   BlogFafsaExplainedRoute: typeof BlogFafsaExplainedRoute
   BlogFederalAidCutsLowEarningProgramsRoute: typeof BlogFederalAidCutsLowEarningProgramsRoute
   BlogMbaPrestigeRoiRoute: typeof BlogMbaPrestigeRoiRoute
+  BlogOhioStateNationalLeaderGraduateStudyRoute: typeof BlogOhioStateNationalLeaderGraduateStudyRoute
   BlogPublicVsPrivateGradSchoolRoute: typeof BlogPublicVsPrivateGradSchoolRoute
   BlogRefinancingStudentLoansRoute: typeof BlogRefinancingStudentLoansRoute
   BlogStudentLoanInterestByTheNumbersRoute: typeof BlogStudentLoanInterestByTheNumbersRoute
@@ -716,6 +730,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogMbaPrestigeRoiRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog_/ohio-state-national-leader-graduate-study': {
+      id: '/blog_/ohio-state-national-leader-graduate-study'
+      path: '/blog/ohio-state-national-leader-graduate-study'
+      fullPath: '/blog/ohio-state-national-leader-graduate-study'
+      preLoaderRoute: typeof BlogOhioStateNationalLeaderGraduateStudyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog_/public-vs-private-grad-school': {
       id: '/blog_/public-vs-private-grad-school'
       path: '/blog/public-vs-private-grad-school'
@@ -839,6 +860,8 @@ const rootRouteChildren: RootRouteChildren = {
   BlogFederalAidCutsLowEarningProgramsRoute:
     BlogFederalAidCutsLowEarningProgramsRoute,
   BlogMbaPrestigeRoiRoute: BlogMbaPrestigeRoiRoute,
+  BlogOhioStateNationalLeaderGraduateStudyRoute:
+    BlogOhioStateNationalLeaderGraduateStudyRoute,
   BlogPublicVsPrivateGradSchoolRoute: BlogPublicVsPrivateGradSchoolRoute,
   BlogRefinancingStudentLoansRoute: BlogRefinancingStudentLoansRoute,
   BlogStudentLoanInterestByTheNumbersRoute:
