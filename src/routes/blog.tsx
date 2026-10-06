@@ -699,19 +699,16 @@ function BlogPage() {
 
             {/* Value Law Schools for Elite Outcomes Article */}
             <Link
-              className="path-card card-b"
+              className="path-card card-a"
               to="/blog/value-law-schools"
               style={{
                 textDecoration: "none",
                 display: "flex",
                 flexDirection: "column",
-                borderTop: "3px solid var(--navy, #1e3a8a)",
+                borderTop: "3px solid #000000",
               }}
             >
-              <span
-                className="path-subheader"
-                style={{ color: "var(--navy, #1e3a8a)", fontWeight: 700 }}
-              >
+              <span className="path-subheader" style={{ color: "#000000", fontWeight: 700 }}>
                 {t("blog.card15.tag")}
               </span>
               <h2>{t("blog.card15.title")}</h2>
@@ -747,19 +744,16 @@ function BlogPage() {
 
             {/* Federal Aid Cuts to Low-Earning Programs Article */}
             <Link
-              className="path-card card-c"
+              className="path-card card-a"
               to="/blog/federal-aid-cuts-low-earning-programs"
               style={{
                 textDecoration: "none",
                 display: "flex",
                 flexDirection: "column",
-                borderTop: "3px solid var(--amber, #d97706)",
+                borderTop: "3px solid #000000",
               }}
             >
-              <span
-                className="path-subheader"
-                style={{ color: "var(--amber, #d97706)", fontWeight: 700 }}
-              >
+              <span className="path-subheader" style={{ color: "#000000", fontWeight: 700 }}>
                 {t("blog.card16.tag")}
               </span>
               <h2>{t("blog.card16.title")}</h2>
