@@ -22,6 +22,7 @@ const LLMS_TXT = `# Graduation Navigator
 - [/blog/clemson-university-the-best-of-both-worlds](https://www.graduationnavigator.com/blog/clemson-university-the-best-of-both-worlds): Clemson University spotlight analyzing enrollment growth, engineering/business rankings, and placement success.
 - [/blog/ai-use-in-higher-education](https://www.graduationnavigator.com/blog/ai-use-in-higher-education): Data analysis of student AI usage frequency, tool adoption, major fields of study, and institutional policy response.
 - [/blog/fafsa-deadlines](https://www.graduationnavigator.com/blog/fafsa-deadlines): Guide to 2027–2028 FAFSA priority deadlines, school codes, and institutional aid policies across 10 notable graduate universities.
+- [/blog/fafsa-explained](https://www.graduationnavigator.com/blog/fafsa-explained): Plain-language guide to how the Student Aid Index (SAI) works, Pell Grant thresholds, federal borrowing caps, and unclaimed aid.
 `;
 
 export const Route = createFileRoute("/llms.txt")({

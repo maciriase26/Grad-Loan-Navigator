@@ -567,6 +567,39 @@ export const SEARCH_INDEX: SearchItem[] = [
       "fechas limite fafsa",
     ],
   },
+  {
+    id: "article-fafsa-explained",
+    category: "articles",
+    titleEn: "The FAFSA Explained",
+    titleEs: "La FAFSA Explicada",
+    descEn:
+      "How the Student Aid Index (SAI) works, Pell Grant eligibility thresholds, federal loan caps, and who still misses out.",
+    descEs:
+      "Cómo funciona el Índice de Ayuda Estudiantil (SAI), umbrales de elegibilidad para la Beca Pell, límites de préstamos federales y quiénes quedan fuera.",
+    url: "/blog/fafsa-explained",
+    badgeEn: "5 min read",
+    badgeEs: "5 min lectura",
+    keywords: [
+      "fafsa explained",
+      "fafsa explainer",
+      "the fafsa explained",
+      "student aid index",
+      "sai",
+      "pell grant",
+      "pell eligibility",
+      "carson jung",
+      "fafsa simplification act",
+      "cost of attendance",
+      "coa",
+      "subsidized loans",
+      "unsubsidized loans",
+      "57500 cap",
+      "studentaid.gov",
+      "explicacion fafsa",
+      "indice de ayuda estudiantil",
+      "beca pell",
+    ],
+  },
 
   /* ---------- Experian In-Depth & External Resources ---------- */
   {

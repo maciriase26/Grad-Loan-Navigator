@@ -31,6 +31,7 @@ import { Route as ApiContactRouteImport } from './routes/api/contact'
 import { Route as BlogAiUseInHigherEducationRouteImport } from './routes/blog_.ai-use-in-higher-education'
 import { Route as BlogClemsonUniversityTheBestOfBothWorldsRouteImport } from './routes/blog_.clemson-university-the-best-of-both-worlds'
 import { Route as BlogFafsaDeadlinesRouteImport } from './routes/blog_.fafsa-deadlines'
+import { Route as BlogFafsaExplainedRouteImport } from './routes/blog_.fafsa-explained'
 import { Route as BlogMbaPrestigeRoiRouteImport } from './routes/blog_.mba-prestige-roi'
 import { Route as BlogPublicVsPrivateGradSchoolRouteImport } from './routes/blog_.public-vs-private-grad-school'
 import { Route as BlogRefinancingStudentLoansRouteImport } from './routes/blog_.refinancing-student-loans'
@@ -159,6 +160,11 @@ const BlogFafsaDeadlinesRoute = BlogFafsaDeadlinesRouteImport.update({
   path: '/blog/fafsa-deadlines',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogFafsaExplainedRoute = BlogFafsaExplainedRouteImport.update({
+  id: '/blog_/fafsa-explained',
+  path: '/blog/fafsa-explained',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogMbaPrestigeRoiRoute = BlogMbaPrestigeRoiRouteImport.update({
   id: '/blog_/mba-prestige-roi',
   path: '/blog/mba-prestige-roi',
@@ -258,6 +264,7 @@ export interface FileRoutesByFullPath {
   '/blog/ai-use-in-higher-education': typeof BlogAiUseInHigherEducationRoute
   '/blog/clemson-university-the-best-of-both-worlds': typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
   '/blog/fafsa-deadlines': typeof BlogFafsaDeadlinesRoute
+  '/blog/fafsa-explained': typeof BlogFafsaExplainedRoute
   '/blog/mba-prestige-roi': typeof BlogMbaPrestigeRoiRoute
   '/blog/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
@@ -295,6 +302,7 @@ export interface FileRoutesByTo {
   '/blog/ai-use-in-higher-education': typeof BlogAiUseInHigherEducationRoute
   '/blog/clemson-university-the-best-of-both-worlds': typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
   '/blog/fafsa-deadlines': typeof BlogFafsaDeadlinesRoute
+  '/blog/fafsa-explained': typeof BlogFafsaExplainedRoute
   '/blog/mba-prestige-roi': typeof BlogMbaPrestigeRoiRoute
   '/blog/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
@@ -333,6 +341,7 @@ export interface FileRoutesById {
   '/blog_/ai-use-in-higher-education': typeof BlogAiUseInHigherEducationRoute
   '/blog_/clemson-university-the-best-of-both-worlds': typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
   '/blog_/fafsa-deadlines': typeof BlogFafsaDeadlinesRoute
+  '/blog_/fafsa-explained': typeof BlogFafsaExplainedRoute
   '/blog_/mba-prestige-roi': typeof BlogMbaPrestigeRoiRoute
   '/blog_/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog_/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
@@ -372,6 +381,7 @@ export interface FileRouteTypes {
     | '/blog/ai-use-in-higher-education'
     | '/blog/clemson-university-the-best-of-both-worlds'
     | '/blog/fafsa-deadlines'
+    | '/blog/fafsa-explained'
     | '/blog/mba-prestige-roi'
     | '/blog/public-vs-private-grad-school'
     | '/blog/refinancing-student-loans'
@@ -409,6 +419,7 @@ export interface FileRouteTypes {
     | '/blog/ai-use-in-higher-education'
     | '/blog/clemson-university-the-best-of-both-worlds'
     | '/blog/fafsa-deadlines'
+    | '/blog/fafsa-explained'
     | '/blog/mba-prestige-roi'
     | '/blog/public-vs-private-grad-school'
     | '/blog/refinancing-student-loans'
@@ -446,6 +457,7 @@ export interface FileRouteTypes {
     | '/blog_/ai-use-in-higher-education'
     | '/blog_/clemson-university-the-best-of-both-worlds'
     | '/blog_/fafsa-deadlines'
+    | '/blog_/fafsa-explained'
     | '/blog_/mba-prestige-roi'
     | '/blog_/public-vs-private-grad-school'
     | '/blog_/refinancing-student-loans'
@@ -484,6 +496,7 @@ export interface RootRouteChildren {
   BlogAiUseInHigherEducationRoute: typeof BlogAiUseInHigherEducationRoute
   BlogClemsonUniversityTheBestOfBothWorldsRoute: typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
   BlogFafsaDeadlinesRoute: typeof BlogFafsaDeadlinesRoute
+  BlogFafsaExplainedRoute: typeof BlogFafsaExplainedRoute
   BlogMbaPrestigeRoiRoute: typeof BlogMbaPrestigeRoiRoute
   BlogPublicVsPrivateGradSchoolRoute: typeof BlogPublicVsPrivateGradSchoolRoute
   BlogRefinancingStudentLoansRoute: typeof BlogRefinancingStudentLoansRoute
@@ -655,6 +668,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogFafsaDeadlinesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog_/fafsa-explained': {
+      id: '/blog_/fafsa-explained'
+      path: '/blog/fafsa-explained'
+      fullPath: '/blog/fafsa-explained'
+      preLoaderRoute: typeof BlogFafsaExplainedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog_/mba-prestige-roi': {
       id: '/blog_/mba-prestige-roi'
       path: '/blog/mba-prestige-roi'
@@ -774,6 +794,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogClemsonUniversityTheBestOfBothWorldsRoute:
     BlogClemsonUniversityTheBestOfBothWorldsRoute,
   BlogFafsaDeadlinesRoute: BlogFafsaDeadlinesRoute,
+  BlogFafsaExplainedRoute: BlogFafsaExplainedRoute,
   BlogMbaPrestigeRoiRoute: BlogMbaPrestigeRoiRoute,
   BlogPublicVsPrivateGradSchoolRoute: BlogPublicVsPrivateGradSchoolRoute,
   BlogRefinancingStudentLoansRoute: BlogRefinancingStudentLoansRoute,

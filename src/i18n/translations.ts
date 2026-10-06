@@ -477,6 +477,145 @@ export const en = {
   "fafsa.part2": "Part 2 of 4",
   "fafsa.part3": "Part 3 of 4",
   "fafsa.part4": "Conclusion",
+
+  /* ---------- FAFSA Explainer Article (English) ---------- */
+  "blog.card14.tag": "FAFSA 101 · 5 min read",
+  "blog.card14.title": "FAFSA Explainer",
+  "blog.card14.excerpt":
+    "The FAFSA helps determine who gets billions of dollars in grant money and federal student loans each year. Most of what it calculates comes down to one formula that most families have never heard of: the Student Aid Index.",
+  "blog.card14.author": "Carson Jung\nOct 5, 2026",
+  "blog.card14.cta": "Read article",
+
+  "fexp.meta.title": "The FAFSA Explained — Grad Loan Navigator",
+  "fexp.meta.desc":
+    "How the Student Aid Index (SAI) works, Pell Grant eligibility thresholds, federal loan caps, and who still misses out. Analysis by Carson Jung.",
+  "fexp.eyebrow": "FAFSA 101 · 5 min read",
+  "fexp.h1": "The FAFSA Explained",
+  "fexp.sub":
+    "The FAFSA helps determine who gets billions of dollars in grant money and federal student loans each year. Most of what it calculates comes down to one formula that most families have never heard of: the Student Aid Index.",
+  "fexp.updated": "Carson Jung Reviewed as of Oct. 5, 2026",
+  "fexp.why.title": "Why It Matters",
+  "fexp.why.p":
+    "Filling out the FAFSA, or not, is one of the single biggest financial decisions a family makes about college. It's the only gateway to federal grants, work-study, federal loans, and increasingly state and institutional aid as well.",
+
+  "fexp.nav.what": "1. What Is The FAFSA",
+  "fexp.nav.who": "2. Who Qualifies?",
+  "fexp.nav.formula": "3. How The Formula Works",
+  "fexp.nav.misses": "4. Who Still Misses Out",
+  "fexp.nav.apply": "5. Where Do I Apply?",
+  "fexp.nav.bottomline": "6. The Bottom Line",
+
+  "fexp.part1": "Part 1 of 5",
+  "fexp.part2": "Part 2 of 5",
+  "fexp.part3": "Part 3 of 5",
+  "fexp.part4": "Part 4 of 5",
+  "fexp.part5": "Part 5 of 5",
+  "fexp.part6": "Conclusion",
+
+  "fexp.what.h2": "What Is The FAFSA",
+  "fexp.what.lead":
+    "The Free Application for Federal Student Aid (FAFSA) began in 1992, when Congress combined two separate federal aid formulas into one, making the FAFSA the single form students need to receive any federal financial aid.",
+  "fexp.what.point1.title": "Creation in 1992",
+  "fexp.what.point1.text":
+    "Congress unified two separate federal aid formulas into a single standardized application, streamlining federal aid access for millions of college students.",
+  "fexp.what.point2.title": "Three Pools of Aid",
+  "fexp.what.point2.text":
+    "The form determines eligibility for Pell Grants (which never need to be repaid), federal work-study, and federal student loans. Many states and colleges also require it before awarding their own institutional aid.",
+  "fexp.what.point3.title": "The FAFSA Simplification Act",
+  "fexp.what.point3.text":
+    "Passed in 2020 and launched for the 2024–25 cycle, this landmark reform cut the number of questions on the form and replaced the Expected Family Contribution (EFC) with the new Student Aid Index (SAI).",
+  "fexp.what.point4.title": "Direct Link to Poverty Guidelines",
+  "fexp.what.point4.text":
+    "The new formula linked Pell Grant eligibility directly to family size and the federal poverty level, replacing the previous opaque calculation.",
+
+  "fexp.who.h2": "Who Qualifies?",
+  "fexp.who.lead":
+    "Federal financial aid reaches the vast majority of students attending four-year colleges, but eligibility differs widely depending on grant type, income, and background.",
+  "fexp.who.stat1.num": "87%",
+  "fexp.who.stat1.label": "Undergraduates with Aid",
+  "fexp.who.stat1.sub":
+    "First-time, full-time students receiving federal, state, or institutional aid",
+  "fexp.who.stat2.num": "30%",
+  "fexp.who.stat2.label": "Receive Pell Grants",
+  "fexp.who.stat2.sub":
+    "Jumped by +12.6% in the first year after the simplified formula took effect",
+  "fexp.who.stat3.num": "5.2M+",
+  "fexp.who.stat3.label": "Eligible for Max Grant",
+  "fexp.who.stat3.sub": "610K new students unlocked eligibility; 1.5M more eligible for max awards",
+  "fexp.who.race.title": "Pell Eligibility by Background",
+  "fexp.who.race.p":
+    "Pell eligibility varies sharply across race and household income levels in recent national data:",
+  "fexp.who.race.black": "Black students: 59.5% receive a Pell Grant",
+  "fexp.who.race.hispanic": "Hispanic students: 49.5% receive a Pell Grant",
+  "fexp.who.race.asian": "Asian students: 33.7% receive a Pell Grant",
+  "fexp.who.race.white": "White students: 32.1% receive a Pell Grant",
+
+  "fexp.numbers.h3": "By the numbers: Undergraduate Financial Aid in 2025–26",
+  "fexp.numbers.avgTotal": "$16,360",
+  "fexp.numbers.avgTotal.label": "Average Total Aid Received",
+  "fexp.numbers.avgTotal.sub":
+    "Split between ~$11,610 in grants and $3,900 in federal loans (2023–24)",
+  "fexp.numbers.maxPell": "$7,395",
+  "fexp.numbers.maxPell.label": "Maximum Pell Grant (2025–26)",
+  "fexp.numbers.maxPell.sub": "Available to applicants with an SAI of $0 or lower",
+  "fexp.numbers.avgPell": "$5,120",
+  "fexp.numbers.avgPell.label": "Average Pell Grant Award",
+  "fexp.numbers.avgPell.sub": "Across all undergraduate recipients nationwide",
+  "fexp.numbers.minPell": "$740",
+  "fexp.numbers.minPell.label": "Minimum Pell Grant Award",
+  "fexp.numbers.minPell.sub": "Smallest allowable Pell award under statutory guidelines",
+
+  "fexp.formula.h2": "How The Formula Works",
+  "fexp.formula.lead":
+    "The Student Aid Index (SAI) is an index number calculated by the Department of Education that college financial aid offices use to determine how much federal aid a student is eligible to receive.",
+  "fexp.formula.box.title": "The Core Need Formula",
+  "fexp.formula.box.calc": "Cost of Attendance (COA) − Student Aid Index (SAI) = Financial Need",
+  "fexp.formula.f1.title": "Inputs into the SAI",
+  "fexp.formula.f1.text":
+    "The SAI weighs household income, accessible assets, family size, and the number of family members enrolled in college simultaneously, then compares that against the school's total cost of attendance.",
+  "fexp.formula.f2.title": "The $0 and Negative Threshold",
+  "fexp.formula.f2.text":
+    "A student with an SAI at or below $0 (the SAI can drop as low as −$1,500) typically qualifies for the maximum Pell Grant of $7,395.",
+  "fexp.formula.f3.title": "The Pell Cutoff Cliff",
+  "fexp.formula.f3.text":
+    "Most applicants with an SAI score above roughly $14,790 are ineligible for any Pell Grant starting in 2026–27 under the One Big Beautiful Bill legislation.",
+  "fexp.formula.f4.title": "Federal Loans vs. Grants",
+  "fexp.formula.f4.text":
+    "Unlike Pell Grants, federal loan eligibility isn't need-based. Nearly every undergraduate filing a FAFSA qualifies for unsubsidized federal loans. Subsidized loans (where the government pays in-school interest) require demonstrated financial need.",
+  "fexp.formula.f5.title": "Lifetime Undergraduate Cap",
+  "fexp.formula.f5.text":
+    "Students max out at $57,500 in total federal undergraduate loans over their lifetime — a statutory limit that hasn't increased with tuition in over a decade.",
+
+  "fexp.miss.h2": "Who Still Misses Out",
+  "fexp.miss.lead":
+    "Despite record aid availability, billions of dollars in financial aid go unclaimed every single academic year due to persistent myths, administrative hurdles, and lack of awareness.",
+  "fexp.miss.c1.title": "The Income Overestimation Myth",
+  "fexp.miss.c1.text":
+    "Families routinely overestimate how much income disqualifies them. Financial aid offices report that eligible families, especially those earning between $60,000 and $100,000, skip filing the FAFSA under the false assumption they won't receive anything.",
+  "fexp.miss.c2.title": "1 in 5 Pell-Eligible Seniors Leave Money Behind",
+  "fexp.miss.c2.text":
+    "An estimated one in five Pell-eligible high school seniors never completes the FAFSA each year, directly leaving thousands of dollars in free federal grant money on the table.",
+  "fexp.miss.c3.title": "Mixed-Status & Undocumented Families",
+  "fexp.miss.c3.text":
+    "U.S. citizens and eligible noncitizen students with undocumented parents can still file the FAFSA. However, these students face added administrative barriers navigating identity verification and form completion.",
+
+  "fexp.apply.h2": "Where Do I Apply?",
+  "fexp.apply.lead":
+    "All applications are submitted directly through the official federal student aid portal at studentaid.gov. Never pay for the FAFSA — it is completely free to complete and submit.",
+  "fexp.apply.step1":
+    "Create an FSA ID at studentaid.gov for both the student and contributing parent/spouse.",
+  "fexp.apply.step2":
+    "Gather recent federal tax returns (or utilize the automatic IRS Direct Data Exchange).",
+  "fexp.apply.step3":
+    "List your target colleges to automatically receive your Institutional Student Information Record (ISIR).",
+  "fexp.apply.cta": "Apply on StudentAid.gov ↗",
+
+  "fexp.bottomline.h2": "The Bottom Line",
+  "fexp.bottomline.quote":
+    "The FAFSA affects every aspect of how America pays for college, yet a large share of eligible aid goes unclaimed each year because families assume they won't qualify or get confused by the form itself. The 2024 simplification was designed to close this gap.",
+  "fexp.sources.label": "Sources & References:",
+  "fexp.sources.text":
+    "U.S. Department of Education, Federal Student Aid; National Center for Education Statistics (NCES); Urban Institute; AACRAO; Center for American Progress; Bankrate; SavingForCollege.com; BestColleges; Study.com. Revised as of Oct. 5, 2026.",
   "pol.meta.title": "Student Loans Political Background and Future — Grad Loan Navigator",
   "pol.meta.desc":
     "The One Big Beautiful Bill Act made significant changes to student loan programs. Here's why that happened, and what's to come.",
@@ -2602,6 +2741,147 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "fafsa.part2": "Parte 2 de 4",
   "fafsa.part3": "Parte 3 de 4",
   "fafsa.part4": "Conclusión",
+
+  /* ---------- FAFSA Explainer Article (Spanish) ---------- */
+  "blog.card14.tag": "FAFSA 101 · Lectura de 5 min",
+  "blog.card14.title": "Explicación de FAFSA",
+  "blog.card14.excerpt":
+    "La FAFSA ayuda a determinar quién recibe miles de millones en subvenciones y préstamos federales para estudiantes cada año. Casi todo su cálculo se reduce a una fórmula poco conocida: el Índice de Ayuda Estudiantil.",
+  "blog.card14.author": "Carson Jung\n5 de oct, 2026",
+  "blog.card14.cta": "Leer artículo",
+
+  "fexp.meta.title": "La FAFSA Explicada — Grad Loan Navigator",
+  "fexp.meta.desc":
+    "Cómo funciona el Índice de Ayuda Estudiantil (SAI), umbrales de elegibilidad para la Beca Pell, límites de préstamos federales y quiénes quedan fuera. Análisis por Carson Jung.",
+  "fexp.eyebrow": "FAFSA 101 · Lectura de 5 min",
+  "fexp.h1": "La FAFSA Explicada",
+  "fexp.sub":
+    "La FAFSA ayuda a determinar quién recibe miles de millones de dólares en subvenciones y préstamos federales para estudiantes cada año. La mayor parte de lo que calcula se reduce a una fórmula de la que la mayoría de las familias nunca han oído hablar: el Índice de Ayuda Estudiantil.",
+  "fexp.updated": "Carson Jung Revisado al 5 de oct, 2026",
+  "fexp.why.title": "Por qué es importante",
+  "fexp.why.p":
+    "Llenar la FAFSA, o no hacerlo, es una de las mayores decisiones financieras que una familia toma sobre la universidad. Es la única puerta de entrada a subsidios federales, trabajo-estudio, préstamos federales y, cada vez más, ayuda estatal e institucional.",
+
+  "fexp.nav.what": "1. Qué es la FAFSA",
+  "fexp.nav.who": "2. Quiénes califican",
+  "fexp.nav.formula": "3. Cómo funciona la fórmula",
+  "fexp.nav.misses": "4. Quiénes quedan fuera",
+  "fexp.nav.apply": "5. Dónde solicitar",
+  "fexp.nav.bottomline": "6. En conclusión",
+
+  "fexp.part1": "Parte 1 de 5",
+  "fexp.part2": "Parte 2 de 5",
+  "fexp.part3": "Parte 3 de 5",
+  "fexp.part4": "Parte 4 de 5",
+  "fexp.part5": "Parte 5 de 5",
+  "fexp.part6": "Conclusión",
+
+  "fexp.what.h2": "Qué es la FAFSA",
+  "fexp.what.lead":
+    "La Solicitud Gratuita de Ayuda Federal para Estudiantes (FAFSA) comenzó en 1992, cuando el Congreso unificó dos fórmulas federales de ayuda independientes en una sola, convirtiéndola en el formulario único para recibir ayuda financiera federal.",
+  "fexp.what.point1.title": "Creación en 1992",
+  "fexp.what.point1.text":
+    "El Congreso unificó dos fórmulas de ayuda independientes en una sola solicitud estandarizada, simplificando el acceso a la ayuda federal para millones de estudiantes universitarios.",
+  "fexp.what.point2.title": "Tres fondos principales de ayuda",
+  "fexp.what.point2.text":
+    "El formulario determina la elegibilidad para Becas Pell (que no necesitan reembolso), trabajo-estudio y préstamos federales. Muchos estados y universidades también lo exigen antes de otorgar sus propios fondos.",
+  "fexp.what.point3.title": "Ley de Simplificación de la FAFSA",
+  "fexp.what.point3.text":
+    "Aprobada en 2020 y lanzada para el ciclo 2024–25, esta reforma redujo drásticamente las preguntas del formulario y reemplazó la Contribución Familiar Esperada (EFC) por el Índice de Ayuda Estudiantil (SAI).",
+  "fexp.what.point4.title": "Vínculo directo con el nivel de pobreza",
+  "fexp.what.point4.text":
+    "La nueva fórmula vinculó la elegibilidad de la Beca Pell directamente con el tamaño de la familia y el nivel federal de pobreza, reemplazando el cálculo opaco anterior.",
+
+  "fexp.who.h2": "Quiénes califican",
+  "fexp.who.lead":
+    "La ayuda financiera federal llega a la gran mayoría de los estudiantes en universidades de cuatro años, pero la elegibilidad varía según el tipo de ayuda, ingresos y antecedentes.",
+  "fexp.who.stat1.num": "87%",
+  "fexp.who.stat1.label": "Estudiantes con ayuda",
+  "fexp.who.stat1.sub":
+    "Alumnos de primer año a tiempo completo que reciben ayuda federal, estatal o institucional",
+  "fexp.who.stat2.num": "30%",
+  "fexp.who.stat2.label": "Reciben Becas Pell",
+  "fexp.who.stat2.sub":
+    "Aumentó un +12.6% en el primer año tras entrar en vigor la fórmula simplificada",
+  "fexp.who.stat3.num": "+5.2M",
+  "fexp.who.stat3.label": "Elegibles para beca máxima",
+  "fexp.who.stat3.sub":
+    "610 mil nuevos estudiantes obtuvieron elegibilidad; 1.5 millones más para el monto máximo",
+  "fexp.who.race.title": "Elegibilidad para la Beca Pell por antecedentes",
+  "fexp.who.race.p":
+    "La elegibilidad para la Beca Pell varía notablemente según el origen racial y los ingresos familiares en datos nacionales recientes:",
+  "fexp.who.race.black": "Estudiantes afroamericanos: 59.5% reciben Beca Pell",
+  "fexp.who.race.hispanic": "Estudiantes hispanos: 49.5% reciben Beca Pell",
+  "fexp.who.race.asian": "Estudiantes asiáticos: 33.7% reciben Beca Pell",
+  "fexp.who.race.white": "Estudiantes blancos: 32.1% reciben Beca Pell",
+
+  "fexp.numbers.h3": "En cifras: Ayuda financiera de pregrado en 2025–26",
+  "fexp.numbers.avgTotal": "$16,360",
+  "fexp.numbers.avgTotal.label": "Ayuda total promedio recibida",
+  "fexp.numbers.avgTotal.sub":
+    "Dividida entre aprox. $11,610 en becas y $3,900 en préstamos federales (2023–24)",
+  "fexp.numbers.maxPell": "$7,395",
+  "fexp.numbers.maxPell.label": "Beca Pell Máxima (2025–26)",
+  "fexp.numbers.maxPell.sub": "Disponible para solicitantes con un SAI de $0 o inferior",
+  "fexp.numbers.avgPell": "$5,120",
+  "fexp.numbers.avgPell.label": "Monto promedio de Beca Pell",
+  "fexp.numbers.avgPell.sub": "Entre todos los beneficiarios de pregrado a nivel nacional",
+  "fexp.numbers.minPell": "$740",
+  "fexp.numbers.minPell.label": "Monto mínimo de Beca Pell",
+  "fexp.numbers.minPell.sub": "Premio mínimo permitido según las pautas legales vigentes",
+
+  "fexp.formula.h2": "Cómo funciona la fórmula",
+  "fexp.formula.lead":
+    "El Índice de Ayuda Estudiantil (SAI) es un número calculado por el Departamento de Educación que las oficinas de ayuda financiera universitaria utilizan para determinar cuánta ayuda federal puede recibir un estudiante.",
+  "fexp.formula.box.title": "La fórmula fundamental de necesidad",
+  "fexp.formula.box.calc":
+    "Costo de Asistencia (COA) − Índice de Ayuda Estudiantil (SAI) = Necesidad Financiera",
+  "fexp.formula.f1.title": "Factores que componen el SAI",
+  "fexp.formula.f1.text":
+    "El SAI pondera los ingresos del hogar, activos disponibles, tamaño de la familia y número de familiares en la universidad simultáneamente, restando ese valor del costo total de asistencia.",
+  "fexp.formula.f2.title": "El umbral de $0 y valores negativos",
+  "fexp.formula.f2.text":
+    "Un estudiante con un SAI igual o inferior a $0 (el SAI puede descender hasta −$1,500) normalmente califica para la Beca Pell máxima de $7,395.",
+  "fexp.formula.f3.title": "El límite de exclusión de Pell",
+  "fexp.formula.f3.text":
+    "La mayoría de los solicitantes con una puntuación superior a aprox. $14,790 no califican para ninguna Beca Pell a partir de 2026–27 bajo la ley One Big Beautiful Bill.",
+  "fexp.formula.f4.title": "Préstamos federales frente a becas",
+  "fexp.formula.f4.text":
+    "A diferencia de las Becas Pell, la elegibilidad para préstamos federales no se basa únicamente en la necesidad. Casi todos los estudiantes de pregrado que presentan la FAFSA califican para préstamos directos no subsidiados.",
+  "fexp.formula.f5.title": "Límite acumulado de por vida para pregrado",
+  "fexp.formula.f5.text":
+    "Los estudiantes tienen un tope de $57,500 en préstamos federales de pregrado acumulados de por vida, un límite que no ha aumentado con la matrícula en más de una década.",
+
+  "fexp.miss.h2": "Quiénes quedan fuera",
+  "fexp.miss.lead":
+    "A pesar de los montos récord de ayuda disponibles, miles de millones de dólares quedan sin reclamar cada año debido a mitos persistentes, trabas burocráticas y desinformación.",
+  "fexp.miss.c1.title": "El mito de la descalificación por ingresos",
+  "fexp.miss.c1.text":
+    "Las familias suelen sobrestimar qué nivel de ingresos las descalifica. Las oficinas de ayuda reportan con frecuencia que familias elegibles, especialmente aquellas con ingresos entre $60,000 y $100,000, omiten la FAFSA asumiendo que no calificarán para nada.",
+  "fexp.miss.c2.title": "1 de cada 5 estudiantes con derecho a Pell no solicita",
+  "fexp.miss.c2.text":
+    "Se estima que uno de cada cinco estudiantes del último año de secundaria elegibles para la Beca Pell nunca completa la FAFSA, dejando miles de dólares en subsidios federales sin reclamar.",
+  "fexp.miss.c3.title": "Familias de estatus mixto e indocumentadas",
+  "fexp.miss.c3.text":
+    "Los ciudadanos estadounidenses y no ciudadanos elegibles con padres indocumentados pueden presentar la FAFSA. Sin embargo, estos estudiantes enfrentan barreras administrativas adicionales al verificar su identidad y completar el formulario.",
+
+  "fexp.apply.h2": "Dónde presentar la solicitud",
+  "fexp.apply.lead":
+    "Todas las solicitudes se realizan a través del portal oficial studentaid.gov. Nunca pagues por llenar la FAFSA: es completamente gratuita.",
+  "fexp.apply.step1":
+    "Crea una cuenta FSA ID en studentaid.gov tanto para el estudiante como para los padres o cónyuge contribuyentes.",
+  "fexp.apply.step2":
+    "Reúne las declaraciones de impuestos recientes (o utiliza el intercambio directo automático del IRS).",
+  "fexp.apply.step3":
+    "Incluye las universidades a las que deseas postular para que reciban tu Registro de Información Estudiantil (ISIR).",
+  "fexp.apply.cta": "Solicitar en StudentAid.gov ↗",
+
+  "fexp.bottomline.h2": "En conclusión",
+  "fexp.bottomline.quote":
+    "La FAFSA afecta todos los aspectos de cómo se financia la universidad en EE. UU., pero una gran parte de la ayuda queda sin reclamar porque las familias asumen que no calificarán o se confunden con el formulario. La simplificación de 2024 fue diseñada precisamente para cerrar esta brecha.",
+  "fexp.sources.label": "Fuentes y referencias:",
+  "fexp.sources.text":
+    "Departamento de Educación de EE. UU., Federal Student Aid; Centro Nacional de Estadísticas de Educación (NCES); Urban Institute; AACRAO; Center for American Progress; Bankrate; SavingForCollege.com; BestColleges; Study.com. Revisado al 5 de octubre de 2026.",
 };
 
 export const LANGUAGES = [
