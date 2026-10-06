@@ -24,6 +24,7 @@ const LLMS_TXT = `# Graduation Navigator
 - [/blog/fafsa-deadlines](https://www.graduationnavigator.com/blog/fafsa-deadlines): Guide to 2027–2028 FAFSA priority deadlines, school codes, and institutional aid policies across 10 notable graduate universities.
 - [/blog/fafsa-explained](https://www.graduationnavigator.com/blog/fafsa-explained): Plain-language guide to how the Student Aid Index (SAI) works, Pell Grant thresholds, federal borrowing caps, and unclaimed aid.
 - [/blog/value-law-schools](https://www.graduationnavigator.com/blog/value-law-schools): Analysis of top-value law schools delivering elite BigLaw placement and federal clerkships with low debt burden.
+- [/blog/federal-aid-cuts-low-earning-programs](https://www.graduationnavigator.com/blog/federal-aid-cuts-low-earning-programs): Breakdown of the Department of Education rule cutting federal loans and Pell Grants for programs failing earnings tests.
 `;
 
 export const Route = createFileRoute("/llms.txt")({

@@ -641,6 +641,43 @@ export const SEARCH_INDEX: SearchItem[] = [
       "becas de derecho",
     ],
   },
+  {
+    id: "article-federal-aid-cuts",
+    category: "articles",
+    titleEn: "Federal Cuts to Financial Aid for Low-Earning Programs",
+    titleEs: "Recortes Federales de Ayuda Financiera para Programas de Bajos Ingresos",
+    descEn:
+      "Department of Education final rule eliminates federal loans and Pell Grants for programs failing post-grad earnings benchmarks.",
+    descEs:
+      "Regla final del Departamento de Educación elimina préstamos federales y Becas Pell para programas que no superen las pruebas salariales.",
+    url: "/blog/federal-aid-cuts-low-earning-programs",
+    badgeEn: "5 min read",
+    badgeEs: "5 min lectura",
+    keywords: [
+      "federal aid cuts",
+      "financial aid cuts",
+      "low-earning programs",
+      "jaylen peng",
+      "one big beautiful bill act",
+      "department of education",
+      "earnings test",
+      "pell grant cuts",
+      "federal loan loss",
+      "religion masters",
+      "cosmetology",
+      "psychology roi",
+      "clinical psychology",
+      "social work roi",
+      "curriculum and instruction",
+      "high school benchmark",
+      "bachelor benchmark",
+      "recortes de ayuda federal",
+      "programas de bajos ingresos",
+      "prueba de ingresos",
+      "becas pell",
+      "perdida de prestamos",
+    ],
+  },
 
   /* ---------- Experian In-Depth & External Resources ---------- */
   {

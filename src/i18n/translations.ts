@@ -732,6 +732,106 @@ export const en = {
   "vlaw.sources.text":
     "American Bar Association (ABA 509 disclosures); U.S. News & World Report; University of Georgia School of Law; University of Alabama School of Law; University of Florida Levin College of Law; Washington and Lee University School of Law; University of Texas School of Law. Reviewed as of Sept. 25, 2026.",
 
+  /* ---------- Federal Aid Cuts to Low-Earning Programs Article (English) ---------- */
+  "blog.card16.tag": "Policy & Accountability · 5 min read",
+  "blog.card16.title": "Federal Aid Cuts to Low-Earning Programs",
+  "blog.card16.excerpt":
+    "Under a final rule under the One Big Beautiful Bill Act, college and graduate programs whose alumni fail post-grad earnings benchmarks risk losing access to federal student loans and Pell Grants.",
+  "blog.card16.author": "Jaylen Peng\nOct 4, 2026",
+  "blog.card16.cta": "Read article",
+
+  "aidcuts.meta.title":
+    "Federal Cuts to Financial Aid for Low-Earning Programs — Grad Loan Navigator",
+  "aidcuts.meta.desc":
+    "The Department of Education's final rule eliminates federal loans and Pell Grants for programs failing earnings tests. Analysis by Jaylen Peng.",
+  "aidcuts.eyebrow": "Policy & Accountability · 5 min read",
+  "aidcuts.h1": "Federal Cuts to Financial Aid for Low-Earning Programs",
+  "aidcuts.sub":
+    "On June 29, 2026, the Department of Education announced a final rule that could eliminate federal financial aid eligibility for certain programs if their graduates fail to earn more than workers with lower levels of education, as part of the One Big Beautiful Bill Act.",
+  "aidcuts.updated": "Jaylen Peng Reviewed as of Oct. 4, 2026",
+  "aidcuts.why.title": "Why it matters",
+  "aidcuts.why.p":
+    "Under this new rule, college and graduate programs with lower-earning graduates could lose federal financial aid in the next several years, shifting costs and risk onto future students.",
+
+  "aidcuts.nav.rule": "1. What the Rule Says",
+  "aidcuts.nav.who": "2. Who This Affects",
+  "aidcuts.nav.table": "3. Graduate Programs at Risk",
+  "aidcuts.nav.consider": "4. What Else to Consider",
+  "aidcuts.nav.bottomline": "5. The Bottom Line",
+
+  "aidcuts.rule.h2": "What The Rule Says",
+  "aidcuts.rule.lead":
+    "The rules establish a strict new requirement to qualify for federal student aid, creating multi-year accountability checkpoints before access to loans and grants is cut.",
+  "aidcuts.rule.loss.title": "Two-to-Three Year Elimination Window",
+  "aidcuts.rule.loss.text":
+    "College programs could lose access to federal student loans if they fail the earnings test two out of three consecutive years. Programs that fail the test for three consecutive years could also lose access to Pell Grants, which provide need-based undergraduate grant aid that does not need to be repaid. The first year of assessment results is expected in 2027.",
+  "aidcuts.rule.timeline.title": "Assessment Timeline & Penalties",
+  "aidcuts.rule.timeline.text":
+    "Although the first assessment results are expected in 2027, programs generally cannot lose aid eligibility until 2028, after failing the test for two years.",
+  "aidcuts.rule.undergrad.title": "Undergraduate Program Standard",
+  "aidcuts.rule.undergrad.text":
+    "Undergraduate programs must demonstrate that their graduates earn higher salaries than workers in the same state whose highest level of education is a high school diploma.",
+  "aidcuts.rule.grad.title": "Graduate Program Standard",
+  "aidcuts.rule.grad.text":
+    "Graduate programs must demonstrate that those who complete the program earn more than bachelor's degree holders working in comparable fields.",
+
+  "aidcuts.who.h2": "Who This Affects",
+  "aidcuts.who.lead":
+    "The Department of Education (ED) estimated the new rules could affect approximately 5% of college programs nationwide, with severe concentrations in specific disciplines and vocational tracks.",
+  "aidcuts.who.stat1.num": "5%",
+  "aidcuts.who.stat1.label": "Programs Nationwide",
+  "aidcuts.who.stat1.sub":
+    "Estimated share of all higher education programs facing potential federal aid cuts",
+  "aidcuts.who.stat2.num": "89%",
+  "aidcuts.who.stat2.label": "Religion Master's Programs",
+  "aidcuts.who.stat2.sub":
+    "And a majority of undergraduate theology and religious studies bachelor's degrees",
+  "aidcuts.who.stat3.num": "100%",
+  "aidcuts.who.stat3.label": "Cosmetology Programs",
+  "aidcuts.who.stat3.sub": "100% of associate programs and 93% of certificate programs at risk",
+
+  "aidcuts.who.impact.title": "High-Risk Program Concentrations",
+  "aidcuts.who.impact.p1":
+    "89% of religion and religious studies master's degree programs, and a majority of bachelor's programs",
+  "aidcuts.who.impact.p2":
+    "100% of cosmetology associate programs, 93% of certificate programs, and most other related personal grooming services",
+  "aidcuts.who.impact.p3":
+    "Many master's programs in film, video, photographic arts, visual and performing arts, and music",
+
+  "aidcuts.table.h2": "Graduate Degrees with Lowest Estimated Financial Returns",
+  "aidcuts.table.lead":
+    "The following graduate degrees have among the lowest estimated financial returns and may be vulnerable to aid cuts under the comparative bachelor's earnings benchmark.",
+  "aidcuts.table.col.degree": "Graduate Degree",
+  "aidcuts.table.col.tuition": "Estimated Total Tuition",
+  "aidcuts.table.col.without": "Net Lifetime Earnings Without Degree",
+  "aidcuts.table.col.with": "Net Lifetime Earnings With Degree",
+  "aidcuts.table.col.roi": "Estimated Lifetime ROI",
+  "aidcuts.table.footnote":
+    "Lifetime earnings represent the present discounted value of earnings through retirement. Tuition estimates use average public-institution tuition and assumed full-time program lengths. Calculations exclude scholarships and Ph.D. programs. Earnings records cover 1992–2019, with monetary values expressed in 2019 dollars.",
+
+  "aidcuts.consider.h2": "What Else You Should Consider",
+  "aidcuts.consider.lead":
+    "Understanding the nuances of the earnings test helps prospective students assess risk before committing to educational debt.",
+  "aidcuts.consider.c1.title": "School-Specific Differences",
+  "aidcuts.consider.c1.text":
+    "Earnings for specific programs vary across institutions, even within the same field. However, the Department of Education has indicated that programs at elite institutions are not immune and are also likely to face cuts.",
+  "aidcuts.consider.c2.title": "Shift to Private Student Loans",
+  "aidcuts.consider.c2.text":
+    "Students who lose access to federal loan eligibility can turn to private loans, which generally offer fewer borrower protections and repayment options.",
+  "aidcuts.consider.c3.title": "Delayed Consequences",
+  "aidcuts.consider.c3.text":
+    "Although the first results are expected in 2027, programs generally cannot lose aid eligibility until 2028, after failing the test for two years.",
+  "aidcuts.consider.c4.title": "The Rules Could Change",
+  "aidcuts.consider.c4.text":
+    "Implementation directives, future legislation, litigation, and other guidance could change the timeline and methodology before the penalties begin.",
+
+  "aidcuts.bottomline.h2": "The Bottom Line",
+  "aidcuts.bottomline.quote":
+    "The new rule puts federal financial aid at risk for programs with lower income graduates. Before enrolling, consider program-specific earnings, total costs, and alternative funding options.",
+  "aidcuts.sources.label": "Sources & References:",
+  "aidcuts.sources.text":
+    "U.S. Department of Education; Federal Student Aid; The Washington Post; Postsecondary Education & Economics Research Center at American University; Yale Tobin Center for Economic Policy; National Bureau of Economic Research. Reviewed as of Oct. 4, 2026.",
+
   "pol.meta.title": "Student Loans Political Background and Future — Grad Loan Navigator",
   "pol.meta.desc":
     "The One Big Beautiful Bill Act made significant changes to student loan programs. Here's why that happened, and what's to come.",
@@ -3114,6 +3214,105 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "vlaw.sources.label": "Fuentes y referencias:",
   "vlaw.sources.text":
     "American Bar Association (informes ABA 509); U.S. News & World Report; University of Georgia School of Law; University of Alabama School of Law; University of Florida Levin College of Law; Washington and Lee University School of Law; University of Texas School of Law. Revisado al 25 de septiembre de 2026.",
+
+  /* ---------- Federal Aid Cuts to Low-Earning Programs Article (Spanish) ---------- */
+  "blog.card16.tag": "Política y Rendición de Cuentas · Lectura de 5 min",
+  "blog.card16.title": "Cortes de Ayuda Federal a Programas de Bajos Ingresos",
+  "blog.card16.excerpt":
+    "Bajo una norma definitiva de la ley One Big Beautiful Bill, los programas universitarios y de posgrado cuyos graduados no superen los umbrales salariales corren el riesgo de perder acceso a préstamos federales y Becas Pell.",
+  "blog.card16.author": "Jaylen Peng\n4 de oct, 2026",
+  "blog.card16.cta": "Leer artículo",
+
+  "aidcuts.meta.title":
+    "Recortes Federales de Ayuda Financiera para Programas de Bajos Ingresos — Grad Loan Navigator",
+  "aidcuts.meta.desc":
+    "La regla final del Departamento de Educación elimina préstamos federales y Becas Pell para programas que no superen las pruebas de ingresos. Análisis por Jaylen Peng.",
+  "aidcuts.eyebrow": "Política y Rendición de Cuentas · Lectura de 5 min",
+  "aidcuts.h1": "Recortes Federales de Ayuda Financiera para Programas de Bajos Ingresos",
+  "aidcuts.sub":
+    "El 29 de junio de 2026, el Departamento de Educación anunció una norma definitiva que podría eliminar la elegibilidad de ayuda financiera federal para ciertos programas cuyos graduados no ganen más que trabajadores con menor nivel educativo, como parte de la ley One Big Beautiful Bill.",
+  "aidcuts.updated": "Jaylen Peng Revisado al 4 de oct, 2026",
+  "aidcuts.why.title": "Por qué es importante",
+  "aidcuts.why.p":
+    "Bajo esta nueva norma, los programas universitarios y de posgrado con graduados de menores ingresos podrían perder la ayuda financiera federal en los próximos años, trasladando costos y riesgos a los futuros estudiantes.",
+
+  "aidcuts.nav.rule": "1. Qué dice la norma",
+  "aidcuts.nav.who": "2. A quiénes afecta",
+  "aidcuts.nav.table": "3. Programas de posgrado en riesgo",
+  "aidcuts.nav.consider": "4. Otros factores a considerar",
+  "aidcuts.nav.bottomline": "5. En conclusión",
+
+  "aidcuts.rule.h2": "Qué Dice la Norma",
+  "aidcuts.rule.lead":
+    "Las normas establecen un nuevo requisito estricto para calificar para ayuda federal, creando evaluaciones de varios años antes de suspender préstamos y subvenciones.",
+  "aidcuts.rule.loss.title": "Ventana de eliminación de dos a tres años",
+  "aidcuts.rule.loss.text":
+    "Los programas universitarios podrían perder acceso a préstamos estudiantiles federales si reprueban la prueba de ingresos dos de cada tres años consecutivos. Los programas que reprueben tres años seguidos también podrían perder acceso a las Becas Pell, que otorgan subsidios de pregrado basados en necesidad que no requieren devolución. El primer año de resultados de evaluación se espera en 2027.",
+  "aidcuts.rule.timeline.title": "Calendario de evaluaciones y penalizaciones",
+  "aidcuts.rule.timeline.text":
+    "Aunque los primeros resultados de evaluación se esperan en 2027, los programas generalmente no podrán perder la elegibilidad de ayuda hasta 2028, tras reprobar la prueba durante dos años.",
+  "aidcuts.rule.undergrad.title": "Estándar para programas de pregrado",
+  "aidcuts.rule.undergrad.text":
+    "Los programas de pregrado deben demostrar que sus egresados perciben salarios superiores a los de trabajadores en el mismo estado cuyo nivel máximo de estudios sea un diploma de secundaria.",
+  "aidcuts.rule.grad.title": "Estándar para programas de posgrado",
+  "aidcuts.rule.grad.text":
+    "Los programas de posgrado deben demostrar que quienes completan el programa ganan más que personas con título de licenciatura que trabajan en campos comparables.",
+
+  "aidcuts.who.h2": "A Quiénes Afecta",
+  "aidcuts.who.lead":
+    "El Departamento de Educación estimó que las nuevas normas podrían afectar aproximadamente al 5% de los programas universitarios a nivel nacional, con fuertes concentraciones en disciplinas específicas y carreras vocacionales.",
+  "aidcuts.who.stat1.num": "5%",
+  "aidcuts.who.stat1.label": "Programas a nivel nacional",
+  "aidcuts.who.stat1.sub":
+    "Proporción estimada de programas de educación superior en riesgo potencial de cortes de ayuda",
+  "aidcuts.who.stat2.num": "89%",
+  "aidcuts.who.stat2.label": "Maestrías en religión",
+  "aidcuts.who.stat2.sub": "Y la mayoría de las licenciaturas en teología y estudios religiosos",
+  "aidcuts.who.stat3.num": "100%",
+  "aidcuts.who.stat3.label": "Programas de cosmetología",
+  "aidcuts.who.stat3.sub": "100% de programas asociados y 93% de certificados en riesgo",
+
+  "aidcuts.who.impact.title": "Concentraciones de programas de alto riesgo",
+  "aidcuts.who.impact.p1":
+    "El 89% de los programas de maestría en religión y estudios religiosos, y la mayoría de las licenciaturas en el campo",
+  "aidcuts.who.impact.p2":
+    "El 100% de los programas asociados de cosmetología, el 93% de los programas con certificación y la mayoría de los servicios de cuidado personal relacionados",
+  "aidcuts.who.impact.p3":
+    "Numerosos programas de maestría en cine, video, artes fotográficas, artes visuales y escénicas, y música",
+
+  "aidcuts.table.h2": "Títulos de Posgrado con Menor Rendimiento Financiero Estimado",
+  "aidcuts.table.lead":
+    "Los siguientes títulos de posgrado presentan algunos de los rendimientos financieros estimados más bajos y pueden ser especialmente vulnerables a recortes de ayuda bajo la comparativa con licenciaturas.",
+  "aidcuts.table.col.degree": "Título de Posgrado",
+  "aidcuts.table.col.tuition": "Matrícula Total Estimada",
+  "aidcuts.table.col.without": "Ingresos Netos de por Vida Sin Posgrado",
+  "aidcuts.table.col.with": "Ingresos Netos de por Vida Con Posgrado",
+  "aidcuts.table.col.roi": "Retorno de Inversión (ROI) Estimado",
+  "aidcuts.table.footnote":
+    "Los ingresos de por vida representan el valor descontado presente de ingresos hasta la jubilación. Las estimaciones de matrícula usan promedios de instituciones públicas y duración a tiempo completo. Los cálculos excluyen becas y programas de doctorado. Registros de 1992 a 2019, en dólares de 2019.",
+
+  "aidcuts.consider.h2": "Otros Factores que Debes Considerar",
+  "aidcuts.consider.lead":
+    "Comprender las particularidades de la prueba de ingresos ayuda a los futuros estudiantes a medir el riesgo antes de asumir deudas educativas.",
+  "aidcuts.consider.c1.title": "Diferencias según la institución",
+  "aidcuts.consider.c1.text":
+    "Los ingresos varían ampliamente entre universidades, incluso dentro del mismo campo académico. Sin embargo, el Departamento de Educación ha señalado que los programas en universidades de élite no son inmunes y también enfrentarán recortes.",
+  "aidcuts.consider.c2.title": "Desplazamiento hacia préstamos privados",
+  "aidcuts.consider.c2.text":
+    "Los estudiantes que pierdan la elegibilidad para préstamos federales podrían recurrir a préstamos privados, los cuales suelen ofrecer menos protecciones al prestatario y opciones de pago.",
+  "aidcuts.consider.c3.title": "Consecuencias diferidas",
+  "aidcuts.consider.c3.text":
+    "Aunque los primeros resultados se esperan en 2027, los programas generalmente no podrán perder la elegibilidad de ayuda hasta 2028, después de reprobar la prueba durante dos años.",
+  "aidcuts.consider.c4.title": "Las normas podrían modificarse",
+  "aidcuts.consider.c4.text":
+    "Directrices de implementación, futuras leyes, litigios judiciales y nuevas orientaciones regulatorias podrían alterar el cronograma y la metodología antes de que inicien las penalizaciones.",
+
+  "aidcuts.bottomline.h2": "En Conclusión",
+  "aidcuts.bottomline.quote":
+    "La nueva norma pone en riesgo la ayuda financiera federal para programas con graduados de menores ingresos. Antes de matricularte, evalúa los ingresos específicos de la titulación, los costos totales y las alternativas de financiamiento.",
+  "aidcuts.sources.label": "Fuentes y referencias:",
+  "aidcuts.sources.text":
+    "Departamento de Educación de EE. UU.; Federal Student Aid; The Washington Post; Postsecondary Education & Economics Research Center en American University; Yale Tobin Center for Economic Policy; National Bureau of Economic Research. Revisado al 4 de octubre de 2026.",
 };
 
 export const LANGUAGES = [

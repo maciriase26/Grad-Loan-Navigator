@@ -32,6 +32,7 @@ import { Route as BlogAiUseInHigherEducationRouteImport } from './routes/blog_.a
 import { Route as BlogClemsonUniversityTheBestOfBothWorldsRouteImport } from './routes/blog_.clemson-university-the-best-of-both-worlds'
 import { Route as BlogFafsaDeadlinesRouteImport } from './routes/blog_.fafsa-deadlines'
 import { Route as BlogFafsaExplainedRouteImport } from './routes/blog_.fafsa-explained'
+import { Route as BlogFederalAidCutsLowEarningProgramsRouteImport } from './routes/blog_.federal-aid-cuts-low-earning-programs'
 import { Route as BlogMbaPrestigeRoiRouteImport } from './routes/blog_.mba-prestige-roi'
 import { Route as BlogPublicVsPrivateGradSchoolRouteImport } from './routes/blog_.public-vs-private-grad-school'
 import { Route as BlogRefinancingStudentLoansRouteImport } from './routes/blog_.refinancing-student-loans'
@@ -166,6 +167,12 @@ const BlogFafsaExplainedRoute = BlogFafsaExplainedRouteImport.update({
   path: '/blog/fafsa-explained',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogFederalAidCutsLowEarningProgramsRoute =
+  BlogFederalAidCutsLowEarningProgramsRouteImport.update({
+    id: '/blog_/federal-aid-cuts-low-earning-programs',
+    path: '/blog/federal-aid-cuts-low-earning-programs',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogMbaPrestigeRoiRoute = BlogMbaPrestigeRoiRouteImport.update({
   id: '/blog_/mba-prestige-roi',
   path: '/blog/mba-prestige-roi',
@@ -271,6 +278,7 @@ export interface FileRoutesByFullPath {
   '/blog/clemson-university-the-best-of-both-worlds': typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
   '/blog/fafsa-deadlines': typeof BlogFafsaDeadlinesRoute
   '/blog/fafsa-explained': typeof BlogFafsaExplainedRoute
+  '/blog/federal-aid-cuts-low-earning-programs': typeof BlogFederalAidCutsLowEarningProgramsRoute
   '/blog/mba-prestige-roi': typeof BlogMbaPrestigeRoiRoute
   '/blog/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
@@ -310,6 +318,7 @@ export interface FileRoutesByTo {
   '/blog/clemson-university-the-best-of-both-worlds': typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
   '/blog/fafsa-deadlines': typeof BlogFafsaDeadlinesRoute
   '/blog/fafsa-explained': typeof BlogFafsaExplainedRoute
+  '/blog/federal-aid-cuts-low-earning-programs': typeof BlogFederalAidCutsLowEarningProgramsRoute
   '/blog/mba-prestige-roi': typeof BlogMbaPrestigeRoiRoute
   '/blog/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
@@ -350,6 +359,7 @@ export interface FileRoutesById {
   '/blog_/clemson-university-the-best-of-both-worlds': typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
   '/blog_/fafsa-deadlines': typeof BlogFafsaDeadlinesRoute
   '/blog_/fafsa-explained': typeof BlogFafsaExplainedRoute
+  '/blog_/federal-aid-cuts-low-earning-programs': typeof BlogFederalAidCutsLowEarningProgramsRoute
   '/blog_/mba-prestige-roi': typeof BlogMbaPrestigeRoiRoute
   '/blog_/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog_/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
@@ -391,6 +401,7 @@ export interface FileRouteTypes {
     | '/blog/clemson-university-the-best-of-both-worlds'
     | '/blog/fafsa-deadlines'
     | '/blog/fafsa-explained'
+    | '/blog/federal-aid-cuts-low-earning-programs'
     | '/blog/mba-prestige-roi'
     | '/blog/public-vs-private-grad-school'
     | '/blog/refinancing-student-loans'
@@ -430,6 +441,7 @@ export interface FileRouteTypes {
     | '/blog/clemson-university-the-best-of-both-worlds'
     | '/blog/fafsa-deadlines'
     | '/blog/fafsa-explained'
+    | '/blog/federal-aid-cuts-low-earning-programs'
     | '/blog/mba-prestige-roi'
     | '/blog/public-vs-private-grad-school'
     | '/blog/refinancing-student-loans'
@@ -469,6 +481,7 @@ export interface FileRouteTypes {
     | '/blog_/clemson-university-the-best-of-both-worlds'
     | '/blog_/fafsa-deadlines'
     | '/blog_/fafsa-explained'
+    | '/blog_/federal-aid-cuts-low-earning-programs'
     | '/blog_/mba-prestige-roi'
     | '/blog_/public-vs-private-grad-school'
     | '/blog_/refinancing-student-loans'
@@ -509,6 +522,7 @@ export interface RootRouteChildren {
   BlogClemsonUniversityTheBestOfBothWorldsRoute: typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
   BlogFafsaDeadlinesRoute: typeof BlogFafsaDeadlinesRoute
   BlogFafsaExplainedRoute: typeof BlogFafsaExplainedRoute
+  BlogFederalAidCutsLowEarningProgramsRoute: typeof BlogFederalAidCutsLowEarningProgramsRoute
   BlogMbaPrestigeRoiRoute: typeof BlogMbaPrestigeRoiRoute
   BlogPublicVsPrivateGradSchoolRoute: typeof BlogPublicVsPrivateGradSchoolRoute
   BlogRefinancingStudentLoansRoute: typeof BlogRefinancingStudentLoansRoute
@@ -688,6 +702,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogFafsaExplainedRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog_/federal-aid-cuts-low-earning-programs': {
+      id: '/blog_/federal-aid-cuts-low-earning-programs'
+      path: '/blog/federal-aid-cuts-low-earning-programs'
+      fullPath: '/blog/federal-aid-cuts-low-earning-programs'
+      preLoaderRoute: typeof BlogFederalAidCutsLowEarningProgramsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog_/mba-prestige-roi': {
       id: '/blog_/mba-prestige-roi'
       path: '/blog/mba-prestige-roi'
@@ -815,6 +836,8 @@ const rootRouteChildren: RootRouteChildren = {
     BlogClemsonUniversityTheBestOfBothWorldsRoute,
   BlogFafsaDeadlinesRoute: BlogFafsaDeadlinesRoute,
   BlogFafsaExplainedRoute: BlogFafsaExplainedRoute,
+  BlogFederalAidCutsLowEarningProgramsRoute:
+    BlogFederalAidCutsLowEarningProgramsRoute,
   BlogMbaPrestigeRoiRoute: BlogMbaPrestigeRoiRoute,
   BlogPublicVsPrivateGradSchoolRoute: BlogPublicVsPrivateGradSchoolRoute,
   BlogRefinancingStudentLoansRoute: BlogRefinancingStudentLoansRoute,
