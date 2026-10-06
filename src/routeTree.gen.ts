@@ -40,6 +40,7 @@ import { Route as BlogStudentLoanTypesRouteImport } from './routes/blog_.student
 import { Route as BlogStudentLoansPoliticalBackgroundAndFutureRouteImport } from './routes/blog_.student-loans-political-background-and-future'
 import { Route as BlogTuitionVsInflationWhichHasGrownMoreRouteImport } from './routes/blog_.tuition-vs-inflation-which-has-grown-more'
 import { Route as BlogUniversityOfFloridaTopTierValueRouteImport } from './routes/blog_.university-of-florida-top-tier-value'
+import { Route as BlogValueLawSchoolsRouteImport } from './routes/blog_.value-law-schools'
 import { Route as BlogWhichLawSchoolsAreWorthItRouteImport } from './routes/blog_.which-law-schools-are-worth-it'
 import { Route as BlogWhichPhdFieldsAreWorthItRouteImport } from './routes/blog_.which-phd-fields-are-worth-it'
 import { Route as FaqSlugRouteImport } from './routes/faq/$slug'
@@ -211,6 +212,11 @@ const BlogUniversityOfFloridaTopTierValueRoute =
     path: '/blog/university-of-florida-top-tier-value',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogValueLawSchoolsRoute = BlogValueLawSchoolsRouteImport.update({
+  id: '/blog_/value-law-schools',
+  path: '/blog/value-law-schools',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogWhichLawSchoolsAreWorthItRoute =
   BlogWhichLawSchoolsAreWorthItRouteImport.update({
     id: '/blog_/which-law-schools-are-worth-it',
@@ -273,6 +279,7 @@ export interface FileRoutesByFullPath {
   '/blog/student-loans-political-background-and-future': typeof BlogStudentLoansPoliticalBackgroundAndFutureRoute
   '/blog/tuition-vs-inflation-which-has-grown-more': typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   '/blog/university-of-florida-top-tier-value': typeof BlogUniversityOfFloridaTopTierValueRoute
+  '/blog/value-law-schools': typeof BlogValueLawSchoolsRoute
   '/blog/which-law-schools-are-worth-it': typeof BlogWhichLawSchoolsAreWorthItRoute
   '/blog/which-phd-fields-are-worth-it': typeof BlogWhichPhdFieldsAreWorthItRoute
   '/faq/$slug': typeof FaqSlugRoute
@@ -311,6 +318,7 @@ export interface FileRoutesByTo {
   '/blog/student-loans-political-background-and-future': typeof BlogStudentLoansPoliticalBackgroundAndFutureRoute
   '/blog/tuition-vs-inflation-which-has-grown-more': typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   '/blog/university-of-florida-top-tier-value': typeof BlogUniversityOfFloridaTopTierValueRoute
+  '/blog/value-law-schools': typeof BlogValueLawSchoolsRoute
   '/blog/which-law-schools-are-worth-it': typeof BlogWhichLawSchoolsAreWorthItRoute
   '/blog/which-phd-fields-are-worth-it': typeof BlogWhichPhdFieldsAreWorthItRoute
   '/faq/$slug': typeof FaqSlugRoute
@@ -350,6 +358,7 @@ export interface FileRoutesById {
   '/blog_/student-loans-political-background-and-future': typeof BlogStudentLoansPoliticalBackgroundAndFutureRoute
   '/blog_/tuition-vs-inflation-which-has-grown-more': typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   '/blog_/university-of-florida-top-tier-value': typeof BlogUniversityOfFloridaTopTierValueRoute
+  '/blog_/value-law-schools': typeof BlogValueLawSchoolsRoute
   '/blog_/which-law-schools-are-worth-it': typeof BlogWhichLawSchoolsAreWorthItRoute
   '/blog_/which-phd-fields-are-worth-it': typeof BlogWhichPhdFieldsAreWorthItRoute
   '/faq/$slug': typeof FaqSlugRoute
@@ -390,6 +399,7 @@ export interface FileRouteTypes {
     | '/blog/student-loans-political-background-and-future'
     | '/blog/tuition-vs-inflation-which-has-grown-more'
     | '/blog/university-of-florida-top-tier-value'
+    | '/blog/value-law-schools'
     | '/blog/which-law-schools-are-worth-it'
     | '/blog/which-phd-fields-are-worth-it'
     | '/faq/$slug'
@@ -428,6 +438,7 @@ export interface FileRouteTypes {
     | '/blog/student-loans-political-background-and-future'
     | '/blog/tuition-vs-inflation-which-has-grown-more'
     | '/blog/university-of-florida-top-tier-value'
+    | '/blog/value-law-schools'
     | '/blog/which-law-schools-are-worth-it'
     | '/blog/which-phd-fields-are-worth-it'
     | '/faq/$slug'
@@ -466,6 +477,7 @@ export interface FileRouteTypes {
     | '/blog_/student-loans-political-background-and-future'
     | '/blog_/tuition-vs-inflation-which-has-grown-more'
     | '/blog_/university-of-florida-top-tier-value'
+    | '/blog_/value-law-schools'
     | '/blog_/which-law-schools-are-worth-it'
     | '/blog_/which-phd-fields-are-worth-it'
     | '/faq/$slug'
@@ -505,6 +517,7 @@ export interface RootRouteChildren {
   BlogStudentLoansPoliticalBackgroundAndFutureRoute: typeof BlogStudentLoansPoliticalBackgroundAndFutureRoute
   BlogTuitionVsInflationWhichHasGrownMoreRoute: typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   BlogUniversityOfFloridaTopTierValueRoute: typeof BlogUniversityOfFloridaTopTierValueRoute
+  BlogValueLawSchoolsRoute: typeof BlogValueLawSchoolsRoute
   BlogWhichLawSchoolsAreWorthItRoute: typeof BlogWhichLawSchoolsAreWorthItRoute
   BlogWhichPhdFieldsAreWorthItRoute: typeof BlogWhichPhdFieldsAreWorthItRoute
   FaqSlugRoute: typeof FaqSlugRoute
@@ -731,6 +744,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogUniversityOfFloridaTopTierValueRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog_/value-law-schools': {
+      id: '/blog_/value-law-schools'
+      path: '/blog/value-law-schools'
+      fullPath: '/blog/value-law-schools'
+      preLoaderRoute: typeof BlogValueLawSchoolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog_/which-law-schools-are-worth-it': {
       id: '/blog_/which-law-schools-are-worth-it'
       path: '/blog/which-law-schools-are-worth-it'
@@ -807,6 +827,7 @@ const rootRouteChildren: RootRouteChildren = {
     BlogTuitionVsInflationWhichHasGrownMoreRoute,
   BlogUniversityOfFloridaTopTierValueRoute:
     BlogUniversityOfFloridaTopTierValueRoute,
+  BlogValueLawSchoolsRoute: BlogValueLawSchoolsRoute,
   BlogWhichLawSchoolsAreWorthItRoute: BlogWhichLawSchoolsAreWorthItRoute,
   BlogWhichPhdFieldsAreWorthItRoute: BlogWhichPhdFieldsAreWorthItRoute,
   FaqSlugRoute: FaqSlugRoute,

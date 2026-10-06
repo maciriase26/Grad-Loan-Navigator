@@ -616,6 +616,122 @@ export const en = {
   "fexp.sources.label": "Sources & References:",
   "fexp.sources.text":
     "U.S. Department of Education, Federal Student Aid; National Center for Education Statistics (NCES); Urban Institute; AACRAO; Center for American Progress; Bankrate; SavingForCollege.com; BestColleges; Study.com. Revised as of Oct. 5, 2026.",
+
+  /* ---------- Value Law Schools Article (English) ---------- */
+  "blog.card15.tag": "Law School ROI · 5 min read",
+  "blog.card15.title": "Value Law Schools for Elite Outcomes",
+  "blog.card15.excerpt":
+    "Affordable tuition and elite outcomes are not always mutually exclusive when it comes to law school. Five top-value law schools for prospective 1Ls aiming for BigLaw, federal clerkships, and high-return legal careers.",
+  "blog.card15.author": "Peter Foulke\nSept 25, 2026",
+  "blog.card15.cta": "Read article",
+
+  "vlaw.meta.title": "Value Law Schools for Elite Outcomes — Grad Loan Navigator",
+  "vlaw.meta.desc":
+    "Top value law schools delivering BigLaw placement and federal clerkships without six-figure debt. Analysis by Peter Foulke.",
+  "vlaw.eyebrow": "Law School ROI · 5 min read",
+  "vlaw.h1": "Value Law Schools for Elite Outcomes",
+  "vlaw.sub":
+    "Affordable tuition and elite outcomes are not always mutually exclusive when it comes to law school. Here are some of the best value schools for prospective 1Ls aiming for BigLaw, federal clerkships and other prestigious legal careers.",
+  "vlaw.updated": "Peter Foulke Reviewed as of Sept. 25, 2026",
+  "vlaw.why.title": "Why Value in Legal Education Matters",
+  "vlaw.why.p":
+    "Law school tuition at top private programs now routinely exceeds $75,000 to $85,000 per year before living costs, often resulting in debt balances surpassing $300,000. Finding institutions that pair affordable in-state rates, extensive scholarships, and proven pipelines to BigLaw and clerkships is the most reliable strategy to build long-term wealth in the legal field.",
+
+  "vlaw.nav.table": "1. Comparison Overview",
+  "vlaw.nav.uga": "2. University of Georgia",
+  "vlaw.nav.ua": "3. University of Alabama",
+  "vlaw.nav.uf": "4. University of Florida",
+  "vlaw.nav.wl": "5. Washington and Lee",
+  "vlaw.nav.ut": "6. UT Austin",
+  "vlaw.nav.bottomline": "7. The Bottom Line",
+
+  "vlaw.table.title": "Top 5 Value Law Schools at a Glance",
+  "vlaw.table.sub":
+    "Comparing annual tuition, financial aid availability, BigLaw placement, and federal clerkship rates.",
+  "vlaw.table.school": "School",
+  "vlaw.table.type": "Type / Rank",
+  "vlaw.table.tuition": "Annual Tuition",
+  "vlaw.table.aid": "Scholarship Rate",
+  "vlaw.table.biglaw": "BigLaw %",
+  "vlaw.table.clerkships": "Federal Clerkships",
+
+  "vlaw.school1.rank": "#1",
+  "vlaw.school1.name": "The University of Georgia",
+  "vlaw.school1.lead":
+    "The University of Georgia (UGA) is consistently ranked among the nation's top 30 law schools while keeping costs down for its students through affordable base tuition, generous grants and extensive scholarship opportunities.",
+  "vlaw.school1.p1.title": "Elite Outcomes",
+  "vlaw.school1.p1.text":
+    "UGA punches above its weight for students pursuing BigLaw and federal clerkships. Nearly 20% of its 2025 class secured positions in law firms with 501+ attorneys while an impressive 9.4% of the class gained employment as federal clerks.",
+  "vlaw.school1.p2.title": "Outstanding Pricetag",
+  "vlaw.school1.p2.text":
+    "UGA’s annual in-state tuition is $18,240 for Georgia residents and $40,152 for out-of-state students. However, it is not uncommon for non-resident 2Ls to qualify for in-state tuition by establishing Georgia residency.",
+  "vlaw.school1.p3.title": "Generous Financial Aid",
+  "vlaw.school1.p3.text":
+    "100% of first-generation college students and veterans receive scholarships, with a minimum award of 25% of total tuition. In addition, students can pursue merit-based opportunities including the Butler Grant (full tuition for public interest law), the Cain Family Scholarship (full tuition for first-generation students), and the Justice Robert Benham Leadership Annual Scholarship for rural community service.",
+
+  "vlaw.school2.rank": "#2",
+  "vlaw.school2.name": "The University of Alabama",
+  "vlaw.school2.lead":
+    "The University of Alabama (UA) may be best known for its premier football team, party school reputation and deep southern roots, but the University of Alabama School of Law has consistently proven itself as an affordable option for great outcomes.",
+  "vlaw.school2.p1.title": "Beyond the Rankings",
+  "vlaw.school2.p1.text":
+    "While University of Alabama School of Law does not crack the T30, many of its graduates land prestigious positions typically reserved for students from much higher ranked schools. 12% of UA Law School graduating class of 2025 secured federal clerkships ranking the school 7th in the nation and beating out programs such as Duke, Vanderbilt and Washington University in St. Louis.",
+  "vlaw.school2.p2.title": "Affordability",
+  "vlaw.school2.p2.text":
+    "UA Law School annual in-state and out-of-state tuition is $25,320 and $49,710 respectively. Despite the higher price tag for non-residents, over 95% of UA Law students receive grants or scholarships with 25% awarded full tuition.",
+  "vlaw.school2.p3.title": "Real-World Experience",
+  "vlaw.school2.p3.text":
+    "UA Law School has a strong pipeline to federal positions post-graduation, no doubt due in part to its Washington, D.C. Externship Program, which gives students the opportunity to work in congressional offices or federal agencies such as the Department of Justice, SEC, and State Department while receiving academic credit.",
+
+  "vlaw.school3.rank": "#3",
+  "vlaw.school3.name": "The University of Florida",
+  "vlaw.school3.lead":
+    "The University of Florida’s (UF) Levin College of Law is an excellent option for students looking for a reasonable public university price tag and strong connections to legal markets in Florida and beyond.",
+  "vlaw.school3.p1.title": "BigLaw Access",
+  "vlaw.school3.p1.text":
+    "While University of Alabama punches above its weight for Federal Clerkships, UF distinguished itself through its proven BigLaw pipeline. 34% of UF’s 2025 class went onto BigLaw beating out higher ranked programs such as Ohio State and Minnesota.",
+  "vlaw.school3.p2.title": "Affordability in Practice",
+  "vlaw.school3.p2.text":
+    "89% of students received grants or scholarships with a median awarded price of $19,000. Furthermore, an impressive 35% of students received full scholarships.",
+  "vlaw.school3.p3.title": "The Florida Connection",
+  "vlaw.school3.p3.text":
+    "The Levin College of Law’s unique position as the top law school in one of the fastest growing states in the union creates unmatched opportunities for students looking to practice law in Florida. Roughly 65% of the Class of 2024 stayed in Florida after graduation, taking advantage of a network of nearly 23,000 living UF Law alumni. Furthermore, students pursuing BigLaw careers have access to major legal markets in Orlando, Tampa, Miami, and Jacksonville.",
+
+  "vlaw.school4.rank": "#4",
+  "vlaw.school4.name": "Washington and Lee University",
+  "vlaw.school4.lead":
+    "The only private law school on this list, the Washington and Lee University (W&L) School of Law, has a higher sticker price but offers outstanding aid and strong outcomes for its students.",
+  "vlaw.school4.p1.title": "Private School Education & Public School Price",
+  "vlaw.school4.p1.text":
+    "W&L’s annual tuition is $60,325 but over 90% of its students receive scholarships with a median average award of $34,226. Applicants with an above-average LSAT and GPA can apply for W&L Law Dean’s Scholar which guarantees full tuition for all 6 semesters.",
+  "vlaw.school4.p2.title": "Small School, Big Outcomes",
+  "vlaw.school4.p2.text":
+    "W&L has only 370 total law students with a 7:1 student-faculty ratio and average class size of 22. Despite this small student body, 35% of the employed class of 2025 secured positions in big law and 10 went onto federal clerkships.",
+  "vlaw.school4.p3.title": "Regional Advantage",
+  "vlaw.school4.p3.text":
+    "W&L might be tucked away in the small town of Lexington, Virginia but its network expands across both the region and nation. The Class of 2025 secured employment in 22 states with major destinations of NY, VA, and DC.",
+
+  "vlaw.school5.rank": "#5",
+  "vlaw.school5.name": "University of Texas at Austin",
+  "vlaw.school5.lead":
+    "The University of Texas at Austin (UT) School of Law combines T14 prestige with an affordable public university price tag.",
+  "vlaw.school5.p1.title": "Premier Law School at a Discount",
+  "vlaw.school5.p1.text":
+    "Tuition for Texas residents is just under $40,000 per year while out-of-state students pay about $56,000 annually, making it one of the lowest sticker prices for law schools in the T14.",
+  "vlaw.school5.p2.title": "Amazing BigLaw Pipeline",
+  "vlaw.school5.p2.text":
+    "About 40% of UT Students enter into BigLaw after graduation on par with much higher ranked schools such as Stanford.",
+  "vlaw.school5.p3.title": "Energy Law Specialization",
+  "vlaw.school5.p3.text":
+    "UT is located in the epicenter of the oil and gas industry and many UT graduates pursue energy law after graduation. Students can take specialized classes such as Oil and Gas, as well as contribute to the Texas Journal of Oil, Gas, and Energy Law preparing them to work in the sector after graduation.",
+
+  "vlaw.bottomline.h2": "The Bottom Line",
+  "vlaw.bottomline.quote":
+    "You do not need to take on $300,000+ in non-dischargeable debt to reach BigLaw partnership or a federal judgeship. Choosing an elite value law school allows you to maximize your career trajectory while protecting your financial freedom.",
+  "vlaw.sources.label": "Sources & References:",
+  "vlaw.sources.text":
+    "American Bar Association (ABA 509 disclosures); U.S. News & World Report; University of Georgia School of Law; University of Alabama School of Law; University of Florida Levin College of Law; Washington and Lee University School of Law; University of Texas School of Law. Reviewed as of Sept. 25, 2026.",
+
   "pol.meta.title": "Student Loans Political Background and Future — Grad Loan Navigator",
   "pol.meta.desc":
     "The One Big Beautiful Bill Act made significant changes to student loan programs. Here's why that happened, and what's to come.",
@@ -2882,6 +2998,121 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "fexp.sources.label": "Fuentes y referencias:",
   "fexp.sources.text":
     "Departamento de Educación de EE. UU., Federal Student Aid; Centro Nacional de Estadísticas de Educación (NCES); Urban Institute; AACRAO; Center for American Progress; Bankrate; SavingForCollege.com; BestColleges; Study.com. Revisado al 5 de octubre de 2026.",
+
+  /* ---------- Value Law Schools Article (Spanish) ---------- */
+  "blog.card15.tag": "Retorno de Facultad de Derecho · Lectura de 5 min",
+  "blog.card15.title": "Facultades de Derecho de Gran Valor para Resultados de Élite",
+  "blog.card15.excerpt":
+    "La matrícula asequible y los resultados de élite no siempre son mutuamente excluyentes en las facultades de derecho. Cinco programas destacados para futuros estudiantes de 1L que aspiran a BigLaw, secretarías judiciales federales y carreras legales de alto rendimiento.",
+  "blog.card15.author": "Peter Foulke\n25 de sept, 2026",
+  "blog.card15.cta": "Leer artículo",
+
+  "vlaw.meta.title": "Facultades de Derecho de Gran Valor para Resultados de Élite — Grad Loan Navigator",
+  "vlaw.meta.desc":
+    "Las mejores facultades de derecho de gran valor que ofrecen colocación en BigLaw y secretarías federales sin deudas de seis cifras. Análisis por Peter Foulke.",
+  "vlaw.eyebrow": "Retorno de Facultad de Derecho · Lectura de 5 min",
+  "vlaw.h1": "Facultades de Derecho de Gran Valor para Resultados de Élite",
+  "vlaw.sub":
+    "La matrícula asequible y los resultados de élite no siempre son mutuamente excluyentes cuando se trata de la facultad de derecho. Estas son algunas de las mejores instituciones en relación costo-beneficio para futuros estudiantes de 1L que aspiran a BigLaw, pasantías judiciales federales y otras prestigiosas carreras jurídicas.",
+  "vlaw.updated": "Peter Foulke Revisado al 25 de sept, 2026",
+  "vlaw.why.title": "Por qué es crucial el valor en la educación legal",
+  "vlaw.why.p":
+    "La matrícula de las facultades de derecho privadas de primer nivel suele superar actualmente los $75,000 a $85,000 al año antes de gastos de manutención, lo que genera deudas acumuladas superiores a los $300,000. Elegir universidades que combinan costos reducidos para residentes, becas generosas y sólidos canales de inserción en BigLaw y judicatura federal es la estrategia más confiable para proteger tu patrimonio futuro.",
+
+  "vlaw.nav.table": "1. Resumen Comparativo",
+  "vlaw.nav.uga": "2. University of Georgia",
+  "vlaw.nav.ua": "3. University of Alabama",
+  "vlaw.nav.uf": "4. University of Florida",
+  "vlaw.nav.wl": "5. Washington and Lee",
+  "vlaw.nav.ut": "6. UT Austin",
+  "vlaw.nav.bottomline": "7. En Conclusión",
+
+  "vlaw.table.title": "Las 5 Mejores Facultades de Derecho por Valor",
+  "vlaw.table.sub":
+    "Comparativa de costos anuales de matrícula, disponibilidad de becas, contratación en BigLaw y secretarías judiciales federales.",
+  "vlaw.table.school": "Institución",
+  "vlaw.table.type": "Tipo / Clasificación",
+  "vlaw.table.tuition": "Matrícula Anual",
+  "vlaw.table.aid": "Tasa de Becas",
+  "vlaw.table.biglaw": "% en BigLaw",
+  "vlaw.table.clerkships": "Secretarías Federales",
+
+  "vlaw.school1.rank": "#1",
+  "vlaw.school1.name": "The University of Georgia",
+  "vlaw.school1.lead":
+    "The University of Georgia (UGA) se sitúa sistemáticamente entre las 30 mejores facultades de derecho del país mientras mantiene costos accesibles mediante una matrícula base asequible, subvenciones generosas y amplias oportunidades de becas.",
+  "vlaw.school1.p1.title": "Resultados de élite",
+  "vlaw.school1.p1.text":
+    "UGA supera con creces las expectativas para graduados que buscan ingresar a BigLaw y secretarías judiciales federales. Casi el 20% de su promoción de 2025 obtuvo puestos en firmas de abogados de más de 501 abogados, mientras que un destacado 9.4% logró empleo como secretarios judiciales federales.",
+  "vlaw.school1.p2.title": "Costo sobresaliente",
+  "vlaw.school1.p2.text":
+    "La matrícula anual de UGA para residentes de Georgia es de $18,240 y de $40,152 para no residentes. Además, es común que los estudiantes no residentes califiquen para la tarifa estatal en su segundo año (2L) al establecer residencia en Georgia.",
+  "vlaw.school1.p3.title": "Ayuda financiera generosa",
+  "vlaw.school1.p3.text":
+    "El 100% de los estudiantes universitarios de primera generación y veteranos reciben becas, con un monto mínimo del 25% del costo de matrícula. Asimismo, pueden acceder a becas por mérito como la Beca Butler (matrícula completa para derecho de interés público), la Beca Familiar Cain (matrícula completa para primera generación) y la Beca Anual de Liderazgo Justice Robert Benham para servir en comunidades rurales.",
+
+  "vlaw.school2.rank": "#2",
+  "vlaw.school2.name": "The University of Alabama",
+  "vlaw.school2.lead":
+    "Aunque The University of Alabama (UA) es muy conocida por su equipo de fútbol americano y raíces sureñas, su Facultad de Derecho ha demostrado con creces ser una de las opciones más asequibles con resultados profesionales extraordinarios.",
+  "vlaw.school2.p1.title": "Más allá de los rankings",
+  "vlaw.school2.p1.text":
+    "A pesar de no ubicarse dentro del top 30 habitual, muchos de sus graduados acceden a prestigiosos cargos reservados para programas mejor posicionados. El 12% de la promoción de 2025 obtuvo secretarías federales, ocupando el puesto #7 a nivel nacional por encima de programas como Duke, Vanderbilt y Washington University in St. Louis.",
+  "vlaw.school2.p2.title": "Asequibilidad",
+  "vlaw.school2.p2.text":
+    "La matrícula anual de UA Law es de $25,320 para residentes y $49,710 para no residentes. Pese al costo no residente, más del 95% de los alumnos reciben subvenciones o becas, con un 25% recibiendo matrícula completa.",
+  "vlaw.school2.p3.title": "Experiencia en el mundo real",
+  "vlaw.school2.p3.text":
+    "UA Law cuenta con un sólido canal hacia puestos federales tras la graduación, en gran parte gracias a su Programa de Prácticas Externas en Washington D.C., que permite a los estudiantes trabajar en despachos del Congreso o agencias como el Departamento de Justicia, la SEC y el Departamento de Estado obteniendo créditos académicos.",
+
+  "vlaw.school3.rank": "#3",
+  "vlaw.school3.name": "The University of Florida",
+  "vlaw.school3.lead":
+    "El Levin College of Law de The University of Florida (UF) es una excelente opción para quienes buscan una matrícula universitaria pública razonable y sólidos vínculos con los mercados jurídicos de Florida y a nivel nacional.",
+  "vlaw.school3.p1.title": "Acceso a BigLaw",
+  "vlaw.school3.p1.text":
+    "Mientras Alabama destaca en secretarías federales, UF sobresale por su canal consolidado hacia BigLaw: el 34% de la promoción de 2025 ingresó a grandes despachos jurídicos, superando a programas de ranking superior como Ohio State y Minnesota.",
+  "vlaw.school3.p2.title": "Asequibilidad práctica",
+  "vlaw.school3.p2.text":
+    "El 89% de los estudiantes recibió becas o ayudas con una cuantía mediana de $19,000. Además, un notable 35% de los alumnos recibió beca completa.",
+  "vlaw.school3.p3.title": "La conexión en Florida",
+  "vlaw.school3.p3.text":
+    "Su estatus como la facultad de derecho líder en un estado en rápida expansión genera oportunidades inigualables para ejercer en Florida. Alrededor del 65% de la promoción de 2024 permaneció en Florida, aprovechando una red de casi 23,000 exalumnos de UF Law. Asimismo, los egresados tienen acceso directo a grandes mercados jurídicos en Orlando, Tampa, Miami y Jacksonville.",
+
+  "vlaw.school4.rank": "#4",
+  "vlaw.school4.name": "Washington and Lee University",
+  "vlaw.school4.lead":
+    "Siendo la única universidad privada en esta lista, la Facultad de Derecho de Washington and Lee University (W&L) tiene un precio de catálogo más elevado, pero compensa con un paquete de becas excepcional y excelentes resultados para sus estudiantes.",
+  "vlaw.school4.p1.title": "Educación privada a costo de universidad pública",
+  "vlaw.school4.p1.text":
+    "La matrícula anual de W&L es de $60,325, pero más del 90% de sus estudiantes recibe becas con una adjudicación media de $34,226. Los postulantes con puntajes destacados de LSAT y GPA pueden optar a la beca W&L Law Dean’s Scholar, que garantiza el 100% de la matrícula durante los 6 semestres.",
+  "vlaw.school4.p2.title": "Comunidad pequeña, grandes logros",
+  "vlaw.school4.p2.text":
+    "W&L cuenta con solo 370 estudiantes de derecho en total, una relación docente-alumno de 7:1 y un tamaño promedio de clase de 22 alumnos. A pesar de este tamaño reducido, el 35% de los graduados con empleo de la promoción de 2025 ingresó a BigLaw y 10 obtuvieron secretarías federales.",
+  "vlaw.school4.p3.title": "Alcance regional y nacional",
+  "vlaw.school4.p3.text":
+    "Aunque se encuentra en la pequeña ciudad de Lexington, Virginia, su red de contactos se extiende por todo el país. La promoción de 2025 aseguró puestos en 22 estados, destacando Nueva York, Virginia y Washington D.C.",
+
+  "vlaw.school5.rank": "#5",
+  "vlaw.school5.name": "University of Texas at Austin",
+  "vlaw.school5.lead":
+    "La Facultad de Derecho de la University of Texas at Austin (UT) combina el prestigio del T14 con la asequibilidad de una universidad pública de primer nivel.",
+  "vlaw.school5.p1.title": "Facultad de élite con descuento",
+  "vlaw.school5.p1.text":
+    "La matrícula para residentes de Texas es de poco menos de $40,000 anuales, mientras que los no residentes pagan cerca de $56,000 al año, representando uno de los costos de catálogo más bajos entre las facultades del selecto grupo T14.",
+  "vlaw.school5.p2.title": "Sólido canal hacia BigLaw",
+  "vlaw.school5.p2.text":
+    "Aproximadamente el 40% de los graduados de UT ingresa a BigLaw tras completar sus estudios, a la par de instituciones de ranking aún más alto como Stanford.",
+  "vlaw.school5.p3.title": "Especialización en Derecho Energético",
+  "vlaw.school5.p3.text":
+    "UT se sitúa en el epicentro mundial de la industria del petróleo, gas y energía renovable. Los alumnos pueden cursar asignaturas especializadas y colaborar en el Texas Journal of Oil, Gas, and Energy Law, preparándose para liderar en el sector energético inmediatamente tras graduarse.",
+
+  "vlaw.bottomline.h2": "En Conclusión",
+  "vlaw.bottomline.quote":
+    "No es indispensable acumular más de $300,000 en deuda no descargable para alcanzar una sociedad en BigLaw o una secretaría judicial federal. Elegir una facultad de derecho de gran valor te permite maximizar tu potencial profesional protegiendo al mismo tiempo tu solvencia y libertad financiera.",
+  "vlaw.sources.label": "Fuentes y referencias:",
+  "vlaw.sources.text":
+    "American Bar Association (informes ABA 509); U.S. News & World Report; University of Georgia School of Law; University of Alabama School of Law; University of Florida Levin College of Law; Washington and Lee University School of Law; University of Texas School of Law. Revisado al 25 de septiembre de 2026.",
 };
 
 export const LANGUAGES = [

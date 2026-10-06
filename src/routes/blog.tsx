@@ -696,6 +696,54 @@ function BlogPage() {
                 </span>
               </div>
             </Link>
+
+            {/* Value Law Schools for Elite Outcomes Article */}
+            <Link
+              className="path-card card-b"
+              to="/blog/value-law-schools"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+                borderTop: "3px solid var(--navy, #1e3a8a)",
+              }}
+            >
+              <span
+                className="path-subheader"
+                style={{ color: "var(--navy, #1e3a8a)", fontWeight: 700 }}
+              >
+                {t("blog.card15.tag")}
+              </span>
+              <h2>{t("blog.card15.title")}</h2>
+              <p className="desc">{t("blog.card15.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-end",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                  gap: "12px",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
+                  }}
+                >
+                  {t("blog.card15.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card15.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
           </div>
         </section>
       </main>
