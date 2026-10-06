@@ -714,6 +714,41 @@ export const SEARCH_INDEX: SearchItem[] = [
       "investigacion",
     ],
   },
+  {
+    id: "article-interest-rates-history",
+    category: "articles",
+    titleEn: "Student Loan Interest Rates History",
+    titleEs: "Historia de las Tasas de Interés de Préstamos Estudiantiles",
+    descEn:
+      "A 60-year history of federal student loan interest rates: from flat statutory rates in 1965 to variable formulas, the 2013 Certainty Act, pandemic 0% freeze, and 2026 rates. Analysis by Carson Jung.",
+    descEs:
+      "Una historia de 60 años de tasas de préstamos federales: de tasas legales fijas en 1965 a fórmulas variables, la Ley de Certeza de 2013, pausa al 0% y tasas de 2026. Análisis de Carson Jung.",
+    url: "/blog/student-loan-interest-rates-history",
+    badgeEn: "5 min read",
+    badgeEs: "5 min lectura",
+    keywords: [
+      "interest rates history",
+      "student loan interest rates over time",
+      "carson jung",
+      "historical interest rates",
+      "bipartisan student loan certainty act",
+      "10-year treasury yield",
+      "statutory rate",
+      "direct loans",
+      "ffel program",
+      "higher education act 1965",
+      "stafford loans",
+      "college cost reduction act",
+      "pandemic 0% interest",
+      "cares act",
+      "grad plus elimination",
+      "one big beautiful bill",
+      "tasas de interes historicas",
+      "historia de tasas de prestamos",
+      "rendimiento del tesoro",
+      "ley de certeza",
+    ],
+  },
 
   /* ---------- Experian In-Depth & External Resources ---------- */
   {

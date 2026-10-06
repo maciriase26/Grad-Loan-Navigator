@@ -26,6 +26,7 @@ const LLMS_TXT = `# Graduation Navigator
 - [/blog/value-law-schools](https://www.graduationnavigator.com/blog/value-law-schools): Analysis of top-value law schools delivering elite BigLaw placement and federal clerkships with low debt burden.
 - [/blog/federal-aid-cuts-low-earning-programs](https://www.graduationnavigator.com/blog/federal-aid-cuts-low-earning-programs): Breakdown of the Department of Education rule cutting federal loans and Pell Grants for programs failing earnings tests.
 - [/blog/ohio-state-national-leader-graduate-study](https://www.graduationnavigator.com/blog/ohio-state-national-leader-graduate-study): The Ohio State University spotlight analyzing 289 graduate degrees, $1.68B in research expenditures, Moritz Law and Pharmacy rankings, and Graduate Associateships.
+- [/blog/student-loan-interest-rates-history](https://www.graduationnavigator.com/blog/student-loan-interest-rates-history): A 60-year history of federal student loan interest rates: flat statutory rates in 1965, variable Direct Loans in 1992, the 2013 Certainty Act formula, pandemic 0% freeze, and 2026–27 rates.
 `;
 
 export const Route = createFileRoute("/llms.txt")({

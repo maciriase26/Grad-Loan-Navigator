@@ -38,6 +38,7 @@ import { Route as BlogOhioStateNationalLeaderGraduateStudyRouteImport } from './
 import { Route as BlogPublicVsPrivateGradSchoolRouteImport } from './routes/blog_.public-vs-private-grad-school'
 import { Route as BlogRefinancingStudentLoansRouteImport } from './routes/blog_.refinancing-student-loans'
 import { Route as BlogStudentLoanInterestByTheNumbersRouteImport } from './routes/blog_.student-loan-interest-by-the-numbers'
+import { Route as BlogStudentLoanInterestRatesHistoryRouteImport } from './routes/blog_.student-loan-interest-rates-history'
 import { Route as BlogStudentLoanTypesRouteImport } from './routes/blog_.student-loan-types'
 import { Route as BlogStudentLoansPoliticalBackgroundAndFutureRouteImport } from './routes/blog_.student-loans-political-background-and-future'
 import { Route as BlogTuitionVsInflationWhichHasGrownMoreRouteImport } from './routes/blog_.tuition-vs-inflation-which-has-grown-more'
@@ -203,6 +204,12 @@ const BlogStudentLoanInterestByTheNumbersRoute =
     path: '/blog/student-loan-interest-by-the-numbers',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogStudentLoanInterestRatesHistoryRoute =
+  BlogStudentLoanInterestRatesHistoryRouteImport.update({
+    id: '/blog_/student-loan-interest-rates-history',
+    path: '/blog/student-loan-interest-rates-history',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogStudentLoanTypesRoute = BlogStudentLoanTypesRouteImport.update({
   id: '/blog_/student-loan-types',
   path: '/blog/student-loan-types',
@@ -291,6 +298,7 @@ export interface FileRoutesByFullPath {
   '/blog/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
+  '/blog/student-loan-interest-rates-history': typeof BlogStudentLoanInterestRatesHistoryRoute
   '/blog/student-loan-types': typeof BlogStudentLoanTypesRoute
   '/blog/student-loans-political-background-and-future': typeof BlogStudentLoansPoliticalBackgroundAndFutureRoute
   '/blog/tuition-vs-inflation-which-has-grown-more': typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
@@ -332,6 +340,7 @@ export interface FileRoutesByTo {
   '/blog/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
+  '/blog/student-loan-interest-rates-history': typeof BlogStudentLoanInterestRatesHistoryRoute
   '/blog/student-loan-types': typeof BlogStudentLoanTypesRoute
   '/blog/student-loans-political-background-and-future': typeof BlogStudentLoansPoliticalBackgroundAndFutureRoute
   '/blog/tuition-vs-inflation-which-has-grown-more': typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
@@ -374,6 +383,7 @@ export interface FileRoutesById {
   '/blog_/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog_/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog_/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
+  '/blog_/student-loan-interest-rates-history': typeof BlogStudentLoanInterestRatesHistoryRoute
   '/blog_/student-loan-types': typeof BlogStudentLoanTypesRoute
   '/blog_/student-loans-political-background-and-future': typeof BlogStudentLoansPoliticalBackgroundAndFutureRoute
   '/blog_/tuition-vs-inflation-which-has-grown-more': typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
@@ -417,6 +427,7 @@ export interface FileRouteTypes {
     | '/blog/public-vs-private-grad-school'
     | '/blog/refinancing-student-loans'
     | '/blog/student-loan-interest-by-the-numbers'
+    | '/blog/student-loan-interest-rates-history'
     | '/blog/student-loan-types'
     | '/blog/student-loans-political-background-and-future'
     | '/blog/tuition-vs-inflation-which-has-grown-more'
@@ -458,6 +469,7 @@ export interface FileRouteTypes {
     | '/blog/public-vs-private-grad-school'
     | '/blog/refinancing-student-loans'
     | '/blog/student-loan-interest-by-the-numbers'
+    | '/blog/student-loan-interest-rates-history'
     | '/blog/student-loan-types'
     | '/blog/student-loans-political-background-and-future'
     | '/blog/tuition-vs-inflation-which-has-grown-more'
@@ -499,6 +511,7 @@ export interface FileRouteTypes {
     | '/blog_/public-vs-private-grad-school'
     | '/blog_/refinancing-student-loans'
     | '/blog_/student-loan-interest-by-the-numbers'
+    | '/blog_/student-loan-interest-rates-history'
     | '/blog_/student-loan-types'
     | '/blog_/student-loans-political-background-and-future'
     | '/blog_/tuition-vs-inflation-which-has-grown-more'
@@ -541,6 +554,7 @@ export interface RootRouteChildren {
   BlogPublicVsPrivateGradSchoolRoute: typeof BlogPublicVsPrivateGradSchoolRoute
   BlogRefinancingStudentLoansRoute: typeof BlogRefinancingStudentLoansRoute
   BlogStudentLoanInterestByTheNumbersRoute: typeof BlogStudentLoanInterestByTheNumbersRoute
+  BlogStudentLoanInterestRatesHistoryRoute: typeof BlogStudentLoanInterestRatesHistoryRoute
   BlogStudentLoanTypesRoute: typeof BlogStudentLoanTypesRoute
   BlogStudentLoansPoliticalBackgroundAndFutureRoute: typeof BlogStudentLoansPoliticalBackgroundAndFutureRoute
   BlogTuitionVsInflationWhichHasGrownMoreRoute: typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
@@ -758,6 +772,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogStudentLoanInterestByTheNumbersRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog_/student-loan-interest-rates-history': {
+      id: '/blog_/student-loan-interest-rates-history'
+      path: '/blog/student-loan-interest-rates-history'
+      fullPath: '/blog/student-loan-interest-rates-history'
+      preLoaderRoute: typeof BlogStudentLoanInterestRatesHistoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog_/student-loan-types': {
       id: '/blog_/student-loan-types'
       path: '/blog/student-loan-types'
@@ -866,6 +887,8 @@ const rootRouteChildren: RootRouteChildren = {
   BlogRefinancingStudentLoansRoute: BlogRefinancingStudentLoansRoute,
   BlogStudentLoanInterestByTheNumbersRoute:
     BlogStudentLoanInterestByTheNumbersRoute,
+  BlogStudentLoanInterestRatesHistoryRoute:
+    BlogStudentLoanInterestRatesHistoryRoute,
   BlogStudentLoanTypesRoute: BlogStudentLoanTypesRoute,
   BlogStudentLoansPoliticalBackgroundAndFutureRoute:
     BlogStudentLoansPoliticalBackgroundAndFutureRoute,

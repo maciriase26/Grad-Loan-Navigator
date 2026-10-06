@@ -932,6 +932,109 @@ export const en = {
     "Estimate your funding gap, borrowing caps, and tuition payoff timeline with our interactive calculator.",
   "osu.cta.btn": "Chart your path",
 
+  /* ---------- Student Loan Interest Rates History Article (English) ---------- */
+  "blog.card18.tag": "Interest Rates · 5 min read",
+  "blog.card18.title": "Student Loan Interest Rates History",
+  "blog.card18.excerpt":
+    "A 60-year history of federal student loan interest rates: from flat statutory rates in 1965 to variable formulas, the 2013 Certainty Act, pandemic 0% freeze, and 2026 rates. Analysis by Carson Jung.",
+  "blog.card18.author": "Carson Jung\nUpdated Sept 2026",
+  "blog.card18.cta": "Read article",
+
+  "irh.meta.title": "Student Loan Interest Rates History — Grad Loan Navigator",
+  "irh.meta.desc":
+    "A 60-year history of federal student loan interest rates: from flat statutory rates in 1965 to variable formulas, the 2013 Certainty Act, pandemic 0% freeze, and 2026 rates. Analysis by Carson Jung.",
+  "irh.eyebrow": "Historical Analysis · 5 min read",
+  "irh.h1": "Student Loan Interest Rates Over Time",
+  "irh.sub":
+    "Federal student loan rates have gone from a flat, congressionally set 6% in 1965 to a formula tied to the bond market. They have swung from a pandemic-era low of 2.75% to nearly 9% for parents and grad students in 2026–27.",
+  "irh.updated": "Carson Jung Reviewed as of Sept. 28, 2026",
+  "irh.why.title": "Why it matters",
+  "irh.why.p":
+    "Unlike other loans, a federal student loan's rate is locked in based on the year it is disbursed. Borrower's cost of college depends heavily on which year, and which Congress, they happened to borrow under.",
+  "irh.nav.flat": "1. Flat Rate to Formula (1965–1992)",
+  "irh.nav.variable": "2. Variable Rates & Direct Lending (1992–2006)",
+  "irh.nav.fixed": "3. Fixed Rates Return & Overhaul (2006–2013)",
+  "irh.nav.formula": "4. Certainty Act & Modern Swings (2013–Present)",
+  "irh.nav.bottomline": "5. The Bottom Line",
+
+  "irh.part1": "Part 1 of 4",
+  "irh.flat.h2": "From Flat Rate to Formula (1965–1992)",
+  "irh.flat.lead":
+    "When the Higher Education Act created the modern loan system in 1965, Congress simply set the rate by statute at 6% for federally backed loans issued through the Federal Family Education Loan (FFEL) Program.",
+  "irh.flat.p1.title": "Statutory 6% Baseline (1965)",
+  "irh.flat.p1.text":
+    "When the Higher Education Act created the modern loan system in 1965, Congress simply set the rate by statute at 6% for federally backed loans issued through the Federal Family Education Loan (FFEL) Program.",
+  "irh.flat.p2.title": "Reaching 10% by 1969",
+  "irh.flat.p2.text":
+    "By 1969, some FFEL borrowers were paying as much as 10%, as Congress periodically revised the statutory rate.",
+  "irh.flat.p3.title": "The 1988 In-School Split",
+  "irh.flat.p3.text":
+    "In 1988, Congress set the fixed rate to 8% while a student was in school and 10% after graduation.",
+
+  "irh.part2": "Part 2 of 4",
+  "irh.variable.h2": "Variable Rates Arrive with Direct Lending (1992–2006)",
+  "irh.variable.lead":
+    "In 1992, Congress introduced the Direct Loan pilot program with the first variable-rate federal student loans: set to the short-term Treasury bill plus 3.1%, capped at 9%.",
+  "irh.variable.p1.title": "Treasury Bill Indexing (1992)",
+  "irh.variable.p1.text":
+    "In 1992, Congress introduced the Direct Loan pilot program with the first variable-rate federal student loans: set to the short-term Treasury bill plus 3.1%, capped at 9%.",
+  "irh.variable.p2.title": "Annual July Rate Resets",
+  "irh.variable.p2.text":
+    "Rates reset every July based on the prior spring's T-bill auction, so a single loan's rate could rise or fall each year.",
+  "irh.variable.p3.title": "Subsidized Low of 3.4% (2003–04)",
+  "irh.variable.p3.text":
+    "Subsidized Stafford loans hit their lowest variable rate on record in 2003–2004, dropping to roughly 3.4%, before the formula was retired in 2006.",
+
+  "irh.part3": "Part 3 of 4",
+  "irh.fixed.h2": "Fixed Rates Return, Then Get Overhauled (2006–2013)",
+  "irh.fixed.lead":
+    "Loans first disbursed after June 30, 2006, switched back to fixed rates, locked at the year's statutory rate, initially 6.8% for undergraduate Stafford loans.",
+  "irh.fixed.p1.title": "Return to Fixed 6.8% (2006)",
+  "irh.fixed.p1.text":
+    "Loans first disbursed after June 30, 2006, switched back to fixed rates, locked at the year's statutory rate, initially 6.8% for undergraduate Stafford loans.",
+  "irh.fixed.p2.title": "College Cost Reduction Act (2007)",
+  "irh.fixed.p2.text":
+    "The College Cost Reduction and Access Act of 2007 systematically reduced rates on subsidized undergraduate loans, from 6.8% to 3.4% by 2011–12. This was a temporary cut Congress kept extending to stop it from rising again.",
+  "irh.fixed.p3.title": "The July 2013 Expiration Cliff",
+  "irh.fixed.p3.text":
+    "That rate cut was set to expire and return to 6.8% in July 2013, prompting a last-minute standoff in Congress over how to fix rates permanently.",
+
+  "irh.part4": "Part 4 of 4",
+  "irh.formula.h2": "Pandemic Dip and Climb Back Up (2020–present)",
+  "irh.formula.lead":
+    "The Bipartisan Student Loan Certainty Act of 2013 ended that standoff by tying new loans each year to the 10-year Treasury note auction plus a fixed add-on.",
+  "irh.formula.box.title": "The Bipartisan Student Loan Certainty Act of 2013 Formula",
+  "irh.formula.box.lead":
+    "By the numbers: The Bipartisan Student Loan Certainty Act of 2013 ended that standoff by tying new loans each year to the 10-year Treasury note auction plus a fixed add-on:",
+  "irh.formula.box.ug.title": "Undergraduate loans",
+  "irh.formula.box.ug.calc": "+2.05%, capped at 8.25%",
+  "irh.formula.box.grad.title": "Graduate unsubsidized loans",
+  "irh.formula.box.grad.calc": "+3.6%, capped at 9.5%",
+  "irh.formula.box.plus.title": "PLUS loans",
+  "irh.formula.box.plus.calc": "+4.6%, capped at 10.5%",
+
+  "irh.pandemic.title": "Record Lows & 0% Freeze (2020–2023)",
+  "irh.pandemic.text":
+    "Undergraduate rates fell to a record low of 2.75% for 2020–21 as Treasury yields collapsed during the pandemic. All federal loan interest was set to 0% from March 2020 through September 2023 under emergency relief.",
+  "irh.inflation.title": "Inflation Surge to 2026–27",
+  "irh.inflation.text":
+    "As Treasury yields rose with inflation, undergraduate rates more than doubled to 6.53% by 2024–25, before easing slightly to 6.52% for 2026–27. Graduate and PLUS borrowers have faced steeper rates throughout, with 2026–27 rates set at 8.07% for graduate unsubsidized loans and 9.07% for PLUS loans.",
+  "irh.obb.title": "One Big Beautiful Bill Elimination (2026)",
+  "irh.obb.text":
+    "On July 1, 2026, Grad PLUS loans were eliminated for new borrowers under the One Big Beautiful Bill, separate from the rate formula but part of the same broader overhaul of federal borrowing.",
+
+  "irh.bottomline.h2": "The bottom line",
+  "irh.bottomline.quote":
+    "Every major rate change has followed the same pattern: a crunch year forces Congress to act. Lawmakers either lock in a temporary fix or hand rate-setting off to a formula. They continuously postpone the issue only for market conditions or political pressure eventually brings it up again.",
+  "irh.sources.label": "Sources & References:",
+  "irh.sources.text":
+    "Finaid.org; The College Investor; SavingForCollege.com; EducationData.org; Federal Student Aid, U.S. Department of Education; Congress.gov; Congressional Research Service; U.S. Senate Committee on Health, Education, Labor and Pensions. Revised as of Sept. 26, 2026.",
+  "irh.cta.h2": "Explore your repayment scenarios under current rates",
+  "irh.cta.p":
+    "Model your estimated borrowing gap, payoff schedule, and total interest charges using our interactive borrowing calculator.",
+  "irh.cta.btn": "Chart your path",
+
+
   "pol.meta.title": "Student Loans Political Background and Future — Grad Loan Navigator",
   "pol.meta.desc":
     "The One Big Beautiful Bill Act made significant changes to student loan programs. Here's why that happened, and what's to come.",
@@ -3522,6 +3625,108 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "osu.cta.p":
     "Estima tu brecha de financiamiento, límites de préstamos y tiempo de amortización con nuestra calculadora interactiva.",
   "osu.cta.btn": "Traza tu camino",
+
+  /* ---------- Student Loan Interest Rates History Article (Spanish) ---------- */
+  "blog.card18.tag": "Tasas de Interés · Lectura de 5 min",
+  "blog.card18.title": "Historia de las Tasas de Interés de Préstamos Estudiantiles",
+  "blog.card18.excerpt":
+    "Una historia de 60 años de tasas de préstamos federales: de tasas legales fijas en 1965 a fórmulas variables, la Ley de Certeza de 2013, pausa al 0% y tasas de 2026. Análisis de Carson Jung.",
+  "blog.card18.author": "Carson Jung\nActualizado Sep 2026",
+  "blog.card18.cta": "Leer artículo",
+
+  "irh.meta.title": "Historia de las Tasas de Interés de Préstamos Estudiantiles — Grad Loan Navigator",
+  "irh.meta.desc":
+    "Una historia de 60 años de tasas de préstamos federales: de tasas legales fijas en 1965 a fórmulas variables, la Ley de Certeza de 2013, pausa al 0% y tasas de 2026. Análisis de Carson Jung.",
+  "irh.eyebrow": "Análisis Histórico · Lectura de 5 min",
+  "irh.h1": "Tasas de Interés de Préstamos Estudiantiles a lo Largo del Tiempo",
+  "irh.sub":
+    "Las tasas de préstamos federales para estudiantes pasaron de un 6% fijo fijado por el Congreso en 1965 a una fórmula vinculada al mercado de bonos. Han oscilado desde un mínimo de la era pandémica del 2.75% hasta casi el 9% para padres y estudiantes de posgrado en 2026–27.",
+  "irh.updated": "Carson Jung Revisado al 28 de sept, 2026",
+  "irh.why.title": "Por qué es importante",
+  "irh.why.p":
+    "A diferencia de otros préstamos, la tasa de un préstamo estudiantil federal queda bloqueada según el año en que se desembolsa. El costo universitario de un prestatario depende en gran medida de en qué año, y bajo qué Congreso, le tocó endeudarse.",
+  "irh.nav.flat": "1. De Tasa Fija a Fórmula (1965–1992)",
+  "irh.nav.variable": "2. Tasas Variables y Préstamos Directos (1992–2006)",
+  "irh.nav.fixed": "3. Regreso de Tasas Fijas y Reforma (2006–2013)",
+  "irh.nav.formula": "4. Ley de Certeza y Oscilaciones Modernas (2013–Presente)",
+  "irh.nav.bottomline": "5. En Conclusión",
+
+  "irh.part1": "Parte 1 de 4",
+  "irh.flat.h2": "De Tasa Fija a Fórmula (1965–1992)",
+  "irh.flat.lead":
+    "Cuando la Ley de Educación Superior creó el sistema moderno de préstamos en 1965, el Congreso simplemente fijó la tasa por estatuto en un 6% para los préstamos con respaldo federal emitidos a través del Programa Federal Family Education Loan (FFEL).",
+  "irh.flat.p1.title": "Base Legal del 6% (1965)",
+  "irh.flat.p1.text":
+    "Cuando la Ley de Educación Superior creó el sistema moderno de préstamos en 1965, el Congreso simplemente fijó la tasa por ley en un 6% para los préstamos con respaldo federal emitidos a través del Programa Federal Family Education Loan (FFEL).",
+  "irh.flat.p2.title": "Alcanzando el 10% en 1969",
+  "irh.flat.p2.text":
+    "Para 1969, algunos prestatarios de FFEL pagaban hasta un 10%, a medida que el Congreso revisaba periódicamente la tasa estatutaria.",
+  "irh.flat.p3.title": "La División de 1988 en Etapa de Estudio",
+  "irh.flat.p3.text":
+    "En 1988, el Congreso fijó la tasa fija en 8% mientras el estudiante asistía a clases y en 10% después de la graduación.",
+
+  "irh.part2": "Parte 2 de 4",
+  "irh.variable.h2": "Las Tasas Variables Llegan con los Préstamos Directos (1992–2006)",
+  "irh.variable.lead":
+    "En 1992, el Congreso introdujo el programa piloto Direct Loan con los primeros préstamos estudiantiles federales de tasa variable: vinculados a la letra del Tesoro a corto plazo más 3.1%, con un tope del 9%.",
+  "irh.variable.p1.title": "Indexación al Tesoro (1992)",
+  "irh.variable.p1.text":
+    "En 1992, el Congreso introdujo el programa piloto Direct Loan con los primeros préstamos estudiantiles federales de tasa variable: vinculados a la letra del Tesoro a corto plazo más 3.1%, con un tope del 9%.",
+  "irh.variable.p2.title": "Reajustes Anuales en Julio",
+  "irh.variable.p2.text":
+    "Las tasas se reajustaban cada julio según la subasta de letras del Tesoro de la primavera anterior, de modo que la tasa de un mismo préstamo podía subir o bajar cada año.",
+  "irh.variable.p3.title": "Mínimo Subsidiado del 3.4% (2003–04)",
+  "irh.variable.p3.text":
+    "Los préstamos Stafford subsidiados alcanzaron su tasa variable más baja registrada en 2003–2004, cayendo a aproximadamente el 3.4%, antes de que la fórmula fuera retirada en 2006.",
+
+  "irh.part3": "Parte 3 de 4",
+  "irh.fixed.h2": "Regresan las Tasas Fijas y Luego se Reforman (2006–2013)",
+  "irh.fixed.lead":
+    "Los préstamos desembolsados por primera vez después del 30 de junio de 2006 volvieron a tasas fijas, bloqueadas a la tasa legal del año, inicialmente del 6.8% para préstamos Stafford de pregrado.",
+  "irh.fixed.p1.title": "Regreso al 6.8% Fijo (2006)",
+  "irh.fixed.p1.text":
+    "Los préstamos desembolsados por primera vez después del 30 de junio de 2006 volvieron a tasas fijas, bloqueadas a la tasa legal del año, inicialmente del 6.8% para préstamos Stafford de pregrado.",
+  "irh.fixed.p2.title": "Ley de Reducción de Costos Universitarios (2007)",
+  "irh.fixed.p2.text":
+    "La Ley de Acceso y Reducción de Costos Universitarios de 2007 redujo sistemáticamente las tasas de los préstamos subsidiados de pregrado, del 6.8% al 3.4% para 2011–12. Este fue un recorte temporal que el Congreso continuó prorrogando para evitar que aumentara nuevamente.",
+  "irh.fixed.p3.title": "El Precipicio de Expiración de Julio de 2013",
+  "irh.fixed.p3.text":
+    "Ese recorte de tasa estaba previsto para expirar y regresar al 6.8% en julio de 2013, provocando un estancamiento de último minuto en el Congreso sobre cómo fijar las tasas de forma permanente.",
+
+  "irh.part4": "Parte 4 de 4",
+  "irh.formula.h2": "Caída Pandémica y Nueva Escalada (2020–presente)",
+  "irh.formula.lead":
+    "La Ley Bipartidista de Certeza de Préstamos Estudiantiles de 2013 puso fin a ese estancamiento al vincular los nuevos préstamos de cada año a la subasta de bonos del Tesoro a 10 años más un margen fijo.",
+  "irh.formula.box.title": "Fórmula de la Ley Bipartidista de Certeza de Préstamos Estudiantiles de 2013",
+  "irh.formula.box.lead":
+    "En cifras: La Ley Bipartidista de Certeza de Préstamos Estudiantiles de 2013 resolvió el estancamiento vinculando los nuevos préstamos anuales a la subasta de notas del Tesoro a 10 años más un adicional fijo:",
+  "irh.formula.box.ug.title": "Préstamos de pregrado",
+  "irh.formula.box.ug.calc": "+2.05%, con tope en 8.25%",
+  "irh.formula.box.grad.title": "Préstamos de posgrado no subsidiados",
+  "irh.formula.box.grad.calc": "+3.6%, con tope en 9.5%",
+  "irh.formula.box.plus.title": "Préstamos PLUS",
+  "irh.formula.box.plus.calc": "+4.6%, con tope en 10.5%",
+
+  "irh.pandemic.title": "Mínimos Históricos y Pausa al 0% (2020–2023)",
+  "irh.pandemic.text":
+    "Las tasas de pregrado cayeron a un mínimo histórico del 2.75% para 2020–21 cuando los rendimientos del Tesoro se desplomaron durante la pandemia. Todo interés de préstamos federales se estableció en 0% desde marzo de 2020 hasta septiembre de 2023 bajo alivio de emergencia.",
+  "irh.inflation.title": "Escalada por Inflación hasta 2026–27",
+  "irh.inflation.text":
+    "A medida que los rendimientos del Tesoro subieron con la inflación, las tasas de pregrado se duplicaron a más del 6.53% en 2024–25, antes de moderarse levemente a 6.52% para 2026–27. Los prestatarios de posgrado y PLUS han enfrentado tasas más altas, con tasas de 2026–27 fijadas en 8.07% para posgrado no subsidiado y 9.07% para préstamos PLUS.",
+  "irh.obb.title": "Eliminación Bajo One Big Beautiful Bill (2026)",
+  "irh.obb.text":
+    "El 1 de julio de 2026, los préstamos Grad PLUS fueron eliminados para nuevos prestatarios bajo la ley One Big Beautiful Bill, aparte de la fórmula de tasas pero como parte de la misma reestructuración general de los préstamos federales.",
+
+  "irh.bottomline.h2": "En conclusión",
+  "irh.bottomline.quote":
+    "Cada cambio importante en las tasas ha seguido el mismo patrón: un año crítico obliga al Congreso a actuar. Los legisladores aplican una solución temporal o delegan la fijación de tasas a una fórmula. Postergan continuamente el tema solo para que las condiciones del mercado o la presión política lo vuelvan a plantear.",
+  "irh.sources.label": "Fuentes y referencias:",
+  "irh.sources.text":
+    "Finaid.org; The College Investor; SavingForCollege.com; EducationData.org; Ayuda Federal para Estudiantes, Departamento de Educación de EE. UU.; Congress.gov; Servicio de Investigación del Congreso; Comité de Salud, Educación, Trabajo y Pensiones del Senado de EE. UU. Revisado al 26 de sept, 2026.",
+  "irh.cta.h2": "Explora tus escenarios de amortización con las tasas actuales",
+  "irh.cta.p":
+    "Modela tu brecha estimada de financiamiento, calendario de pago e intereses totales con nuestra calculadora de préstamos interactiva.",
+  "irh.cta.btn": "Traza tu camino",
 };
 
 export const LANGUAGES = [
