@@ -337,12 +337,8 @@ function ValueLawSchoolsArticlePage() {
                       </td>
                       <td className="roi-mono">{isEs ? item.tuitionEs : item.tuitionEn}</td>
                       <td style={{ fontSize: "13px" }}>{isEs ? item.aidEs : item.aidEn}</td>
-                      <td className="roi-highlight">
-                        {isEs ? item.biglawEs : item.biglawEn}
-                      </td>
-                      <td className="roi-mono">
-                        {isEs ? item.clerkshipsEs : item.clerkshipsEn}
-                      </td>
+                      <td className="roi-highlight">{isEs ? item.biglawEs : item.biglawEn}</td>
+                      <td className="roi-mono">{isEs ? item.clerkshipsEs : item.clerkshipsEn}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -421,13 +417,27 @@ function ValueLawSchoolsArticlePage() {
                   border: "1px solid var(--line)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    marginBottom: "10px",
+                  }}
+                >
                   <TrendingUpIcon />
                   <h4 style={{ margin: 0, fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("vlaw.school1.p1.title")}
                   </h4>
                 </div>
-                <p style={{ margin: 0, fontSize: "14.5px", color: "var(--ink-soft)", lineHeight: "1.6" }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "14.5px",
+                    color: "var(--ink-soft)",
+                    lineHeight: "1.6",
+                  }}
+                >
                   {t("vlaw.school1.p1.text")}
                 </p>
               </div>
@@ -440,13 +450,27 @@ function ValueLawSchoolsArticlePage() {
                   border: "1px solid var(--line)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    marginBottom: "10px",
+                  }}
+                >
                   <DollarSignIcon />
                   <h4 style={{ margin: 0, fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("vlaw.school1.p2.title")}
                   </h4>
                 </div>
-                <p style={{ margin: 0, fontSize: "14.5px", color: "var(--ink-soft)", lineHeight: "1.6" }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "14.5px",
+                    color: "var(--ink-soft)",
+                    lineHeight: "1.6",
+                  }}
+                >
                   {t("vlaw.school1.p2.text")}
                 </p>
               </div>
@@ -459,13 +483,27 @@ function ValueLawSchoolsArticlePage() {
                   border: "1px solid var(--line)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    marginBottom: "10px",
+                  }}
+                >
                   <AwardIcon />
                   <h4 style={{ margin: 0, fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("vlaw.school1.p3.title")}
                   </h4>
                 </div>
-                <p style={{ margin: 0, fontSize: "14.5px", color: "var(--ink-soft)", lineHeight: "1.6" }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "14.5px",
+                    color: "var(--ink-soft)",
+                    lineHeight: "1.6",
+                  }}
+                >
                   {t("vlaw.school1.p3.text")}
                 </p>
               </div>
@@ -523,7 +561,9 @@ function ValueLawSchoolsArticlePage() {
                   fontWeight: 600,
                 }}
               >
-                {isEs ? "Prácticas D.C.: DOJ, SEC, Dept. Estado" : "D.C. Externships: DOJ, SEC, State Dept"}
+                {isEs
+                  ? "Prácticas D.C.: DOJ, SEC, Dept. Estado"
+                  : "D.C. Externships: DOJ, SEC, State Dept"}
               </span>
             </div>
 
@@ -543,13 +583,27 @@ function ValueLawSchoolsArticlePage() {
                   border: "1px solid var(--line)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    marginBottom: "10px",
+                  }}
+                >
                   <AwardIcon />
                   <h4 style={{ margin: 0, fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("vlaw.school2.p1.title")}
                   </h4>
                 </div>
-                <p style={{ margin: 0, fontSize: "14.5px", color: "var(--ink-soft)", lineHeight: "1.6" }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "14.5px",
+                    color: "var(--ink-soft)",
+                    lineHeight: "1.6",
+                  }}
+                >
                   {t("vlaw.school2.p1.text")}
                 </p>
               </div>
@@ -562,13 +616,27 @@ function ValueLawSchoolsArticlePage() {
                   border: "1px solid var(--line)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    marginBottom: "10px",
+                  }}
+                >
                   <DollarSignIcon />
                   <h4 style={{ margin: 0, fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("vlaw.school2.p2.title")}
                   </h4>
                 </div>
-                <p style={{ margin: 0, fontSize: "14.5px", color: "var(--ink-soft)", lineHeight: "1.6" }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "14.5px",
+                    color: "var(--ink-soft)",
+                    lineHeight: "1.6",
+                  }}
+                >
                   {t("vlaw.school2.p2.text")}
                 </p>
               </div>
@@ -581,13 +649,27 @@ function ValueLawSchoolsArticlePage() {
                   border: "1px solid var(--line)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    marginBottom: "10px",
+                  }}
+                >
                   <ScaleIcon />
                   <h4 style={{ margin: 0, fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("vlaw.school2.p3.title")}
                   </h4>
                 </div>
-                <p style={{ margin: 0, fontSize: "14.5px", color: "var(--ink-soft)", lineHeight: "1.6" }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "14.5px",
+                    color: "var(--ink-soft)",
+                    lineHeight: "1.6",
+                  }}
+                >
                   {t("vlaw.school2.p3.text")}
                 </p>
               </div>
@@ -620,7 +702,9 @@ function ValueLawSchoolsArticlePage() {
                   fontFamily: "var(--font-mono)",
                 }}
               >
-                {isEs ? "34% BigLaw (Supera Ohio St & Minnesota)" : "34% BigLaw (Beats Ohio St & Minnesota)"}
+                {isEs
+                  ? "34% BigLaw (Supera Ohio St & Minnesota)"
+                  : "34% BigLaw (Beats Ohio St & Minnesota)"}
               </span>
               <span
                 style={{
@@ -633,7 +717,9 @@ function ValueLawSchoolsArticlePage() {
                   fontFamily: "var(--font-mono)",
                 }}
               >
-                {isEs ? "35% Becas Completas (Mediana $19,000)" : "35% Full Scholarships ($19,000 Median)"}
+                {isEs
+                  ? "35% Becas Completas (Mediana $19,000)"
+                  : "35% Full Scholarships ($19,000 Median)"}
               </span>
               <span
                 style={{
@@ -645,7 +731,9 @@ function ValueLawSchoolsArticlePage() {
                   fontWeight: 600,
                 }}
               >
-                {isEs ? "Red de 23,000 Exalumnos (65% en Florida)" : "23,000 Alumni Network (65% in FL)"}
+                {isEs
+                  ? "Red de 23,000 Exalumnos (65% en Florida)"
+                  : "23,000 Alumni Network (65% in FL)"}
               </span>
             </div>
 
@@ -665,13 +753,27 @@ function ValueLawSchoolsArticlePage() {
                   border: "1px solid var(--line)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    marginBottom: "10px",
+                  }}
+                >
                   <TrendingUpIcon />
                   <h4 style={{ margin: 0, fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("vlaw.school3.p1.title")}
                   </h4>
                 </div>
-                <p style={{ margin: 0, fontSize: "14.5px", color: "var(--ink-soft)", lineHeight: "1.6" }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "14.5px",
+                    color: "var(--ink-soft)",
+                    lineHeight: "1.6",
+                  }}
+                >
                   {t("vlaw.school3.p1.text")}
                 </p>
               </div>
@@ -684,13 +786,27 @@ function ValueLawSchoolsArticlePage() {
                   border: "1px solid var(--line)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    marginBottom: "10px",
+                  }}
+                >
                   <DollarSignIcon />
                   <h4 style={{ margin: 0, fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("vlaw.school3.p2.title")}
                   </h4>
                 </div>
-                <p style={{ margin: 0, fontSize: "14.5px", color: "var(--ink-soft)", lineHeight: "1.6" }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "14.5px",
+                    color: "var(--ink-soft)",
+                    lineHeight: "1.6",
+                  }}
+                >
                   {t("vlaw.school3.p2.text")}
                 </p>
               </div>
@@ -703,13 +819,27 @@ function ValueLawSchoolsArticlePage() {
                   border: "1px solid var(--line)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    marginBottom: "10px",
+                  }}
+                >
                   <ScaleIcon />
                   <h4 style={{ margin: 0, fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("vlaw.school3.p3.title")}
                   </h4>
                 </div>
-                <p style={{ margin: 0, fontSize: "14.5px", color: "var(--ink-soft)", lineHeight: "1.6" }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "14.5px",
+                    color: "var(--ink-soft)",
+                    lineHeight: "1.6",
+                  }}
+                >
                   {t("vlaw.school3.p3.text")}
                 </p>
               </div>
@@ -787,13 +917,27 @@ function ValueLawSchoolsArticlePage() {
                   border: "1px solid var(--line)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    marginBottom: "10px",
+                  }}
+                >
                   <DollarSignIcon />
                   <h4 style={{ margin: 0, fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("vlaw.school4.p1.title")}
                   </h4>
                 </div>
-                <p style={{ margin: 0, fontSize: "14.5px", color: "var(--ink-soft)", lineHeight: "1.6" }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "14.5px",
+                    color: "var(--ink-soft)",
+                    lineHeight: "1.6",
+                  }}
+                >
                   {t("vlaw.school4.p1.text")}
                 </p>
               </div>
@@ -806,13 +950,27 @@ function ValueLawSchoolsArticlePage() {
                   border: "1px solid var(--line)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    marginBottom: "10px",
+                  }}
+                >
                   <TrendingUpIcon />
                   <h4 style={{ margin: 0, fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("vlaw.school4.p2.title")}
                   </h4>
                 </div>
-                <p style={{ margin: 0, fontSize: "14.5px", color: "var(--ink-soft)", lineHeight: "1.6" }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "14.5px",
+                    color: "var(--ink-soft)",
+                    lineHeight: "1.6",
+                  }}
+                >
                   {t("vlaw.school4.p2.text")}
                 </p>
               </div>
@@ -825,13 +983,27 @@ function ValueLawSchoolsArticlePage() {
                   border: "1px solid var(--line)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    marginBottom: "10px",
+                  }}
+                >
                   <AwardIcon />
                   <h4 style={{ margin: 0, fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("vlaw.school4.p3.title")}
                   </h4>
                 </div>
-                <p style={{ margin: 0, fontSize: "14.5px", color: "var(--ink-soft)", lineHeight: "1.6" }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "14.5px",
+                    color: "var(--ink-soft)",
+                    lineHeight: "1.6",
+                  }}
+                >
                   {t("vlaw.school4.p3.text")}
                 </p>
               </div>
@@ -909,13 +1081,27 @@ function ValueLawSchoolsArticlePage() {
                   border: "1px solid var(--line)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    marginBottom: "10px",
+                  }}
+                >
                   <DollarSignIcon />
                   <h4 style={{ margin: 0, fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("vlaw.school5.p1.title")}
                   </h4>
                 </div>
-                <p style={{ margin: 0, fontSize: "14.5px", color: "var(--ink-soft)", lineHeight: "1.6" }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "14.5px",
+                    color: "var(--ink-soft)",
+                    lineHeight: "1.6",
+                  }}
+                >
                   {t("vlaw.school5.p1.text")}
                 </p>
               </div>
@@ -928,13 +1114,27 @@ function ValueLawSchoolsArticlePage() {
                   border: "1px solid var(--line)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    marginBottom: "10px",
+                  }}
+                >
                   <TrendingUpIcon />
                   <h4 style={{ margin: 0, fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("vlaw.school5.p2.title")}
                   </h4>
                 </div>
-                <p style={{ margin: 0, fontSize: "14.5px", color: "var(--ink-soft)", lineHeight: "1.6" }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "14.5px",
+                    color: "var(--ink-soft)",
+                    lineHeight: "1.6",
+                  }}
+                >
                   {t("vlaw.school5.p2.text")}
                 </p>
               </div>
@@ -947,13 +1147,27 @@ function ValueLawSchoolsArticlePage() {
                   border: "1px solid var(--line)",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    marginBottom: "10px",
+                  }}
+                >
                   <ScaleIcon />
                   <h4 style={{ margin: 0, fontSize: "16px", fontWeight: 700, color: "var(--ink)" }}>
                     {t("vlaw.school5.p3.title")}
                   </h4>
                 </div>
-                <p style={{ margin: 0, fontSize: "14.5px", color: "var(--ink-soft)", lineHeight: "1.6" }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "14.5px",
+                    color: "var(--ink-soft)",
+                    lineHeight: "1.6",
+                  }}
+                >
                   {t("vlaw.school5.p3.text")}
                 </p>
               </div>
@@ -966,9 +1180,7 @@ function ValueLawSchoolsArticlePage() {
             <h2>{t("vlaw.bottomline.h2")}</h2>
 
             <div className="refi-bottom-card">
-              <blockquote className="refi-bottom-quote">
-                “{t("vlaw.bottomline.quote")}”
-              </blockquote>
+              <blockquote className="refi-bottom-quote">“{t("vlaw.bottomline.quote")}”</blockquote>
             </div>
 
             {/* CTA Strip */}
@@ -1126,10 +1338,14 @@ function ValueLawSchoolsArticlePage() {
                   {isEs ? "Análisis Comparativo" : "Comparative Analysis"}
                 </span>
                 <span style={{ fontWeight: 600, color: "var(--ink)", fontSize: "15px" }}>
-                  {isEs ? "¿Qué Facultades de Derecho Valen la Pena?" : "Which Law Schools Are Worth It?"}
+                  {isEs
+                    ? "¿Qué Facultades de Derecho Valen la Pena?"
+                    : "Which Law Schools Are Worth It?"}
                 </span>
                 <span style={{ fontSize: "13px", color: "var(--ink-soft)", marginTop: "auto" }}>
-                  {isEs ? "Desglose de ROI de las 10 mejores y opciones de valor →" : "Top 10 vs. Value Law School ROI breakdown →"}
+                  {isEs
+                    ? "Desglose de ROI de las 10 mejores y opciones de valor →"
+                    : "Top 10 vs. Value Law School ROI breakdown →"}
                 </span>
               </Link>
 
@@ -1161,7 +1377,9 @@ function ValueLawSchoolsArticlePage() {
                   {isEs ? "Fechas Límite de FAFSA 2027–2028" : "2027–2028 FAFSA Deadlines"}
                 </span>
                 <span style={{ fontSize: "13px", color: "var(--ink-soft)", marginTop: "auto" }}>
-                  {isEs ? "Plazos prioritarios y códigos institucionales de 10 universidades →" : "Priority deadlines & school codes for 10 top institutions →"}
+                  {isEs
+                    ? "Plazos prioritarios y códigos institucionales de 10 universidades →"
+                    : "Priority deadlines & school codes for 10 top institutions →"}
                 </span>
               </Link>
 
@@ -1193,7 +1411,9 @@ function ValueLawSchoolsArticlePage() {
                   {isEs ? "Calculadora Traza Tu Ruta" : "Chart Your Path Tool"}
                 </span>
                 <span style={{ fontSize: "13px", color: "var(--ink-soft)", marginTop: "auto" }}>
-                  {isEs ? "Proyecta préstamos, brecha de costos y pagos futuros →" : "Project borrowing limits, funding gaps, and repayment plans →"}
+                  {isEs
+                    ? "Proyecta préstamos, brecha de costos y pagos futuros →"
+                    : "Project borrowing limits, funding gaps, and repayment plans →"}
                 </span>
               </Link>
             </div>

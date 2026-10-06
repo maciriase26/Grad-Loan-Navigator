@@ -3007,7 +3007,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card15.author": "Peter Foulke\n25 de sept, 2026",
   "blog.card15.cta": "Leer artículo",
 
-  "vlaw.meta.title": "Facultades de Derecho de Gran Valor para Resultados de Élite — Grad Loan Navigator",
+  "vlaw.meta.title":
+    "Facultades de Derecho de Gran Valor para Resultados de Élite — Grad Loan Navigator",
   "vlaw.meta.desc":
     "Las mejores facultades de derecho de gran valor que ofrecen colocación en BigLaw y secretarías federales sin deudas de seis cifras. Análisis por Peter Foulke.",
   "vlaw.eyebrow": "Retorno de Facultad de Derecho · Lectura de 5 min",
