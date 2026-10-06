@@ -483,7 +483,7 @@ export const en = {
   "blog.card14.title": "FAFSA Explainer",
   "blog.card14.excerpt":
     "The FAFSA helps determine who gets billions of dollars in grant money and federal student loans each year. Most of what it calculates comes down to one formula that most families have never heard of: the Student Aid Index.",
-  "blog.card14.author": "Carson Jung\nOct 5, 2026",
+  "blog.card14.author": "Carson Jung\nOct 2026",
   "blog.card14.cta": "Read article",
 
   "fexp.meta.title": "The FAFSA Explained — Grad Loan Navigator",
@@ -622,7 +622,7 @@ export const en = {
   "blog.card15.title": "Value Law Schools for Elite Outcomes",
   "blog.card15.excerpt":
     "Affordable tuition and elite outcomes are not always mutually exclusive when it comes to law school. Five top-value law schools for prospective 1Ls aiming for BigLaw, federal clerkships, and high-return legal careers.",
-  "blog.card15.author": "Peter Foulke\nSept 25, 2026",
+  "blog.card15.author": "Peter Foulke\nSept 2026",
   "blog.card15.cta": "Read article",
 
   "vlaw.meta.title": "Value Law Schools for Elite Outcomes — Grad Loan Navigator",
@@ -737,7 +737,7 @@ export const en = {
   "blog.card16.title": "Federal Aid Cuts to Low-Earning Programs",
   "blog.card16.excerpt":
     "Under a final rule under the One Big Beautiful Bill Act, college and graduate programs whose alumni fail post-grad earnings benchmarks risk losing access to federal student loans and Pell Grants.",
-  "blog.card16.author": "Jaylen Peng\nOct 4, 2026",
+  "blog.card16.author": "Jaylen Peng\nOct 2026",
   "blog.card16.cta": "Read article",
 
   "aidcuts.meta.title":
@@ -2963,7 +2963,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card14.title": "Explicación de FAFSA",
   "blog.card14.excerpt":
     "La FAFSA ayuda a determinar quién recibe miles de millones en subvenciones y préstamos federales para estudiantes cada año. Casi todo su cálculo se reduce a una fórmula poco conocida: el Índice de Ayuda Estudiantil.",
-  "blog.card14.author": "Carson Jung\n5 de oct, 2026",
+  "blog.card14.author": "Carson Jung\nOct 2026",
   "blog.card14.cta": "Leer artículo",
 
   "fexp.meta.title": "La FAFSA Explicada — Grad Loan Navigator",
@@ -3104,7 +3104,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card15.title": "Facultades de Derecho de Gran Valor para Resultados de Élite",
   "blog.card15.excerpt":
     "La matrícula asequible y los resultados de élite no siempre son mutuamente excluyentes en las facultades de derecho. Cinco programas destacados para futuros estudiantes de 1L que aspiran a BigLaw, secretarías judiciales federales y carreras legales de alto rendimiento.",
-  "blog.card15.author": "Peter Foulke\n25 de sept, 2026",
+  "blog.card15.author": "Peter Foulke\nSept 2026",
   "blog.card15.cta": "Leer artículo",
 
   "vlaw.meta.title":
@@ -3220,7 +3220,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card16.title": "Cortes de Ayuda Federal a Programas de Bajos Ingresos",
   "blog.card16.excerpt":
     "Bajo una norma definitiva de la ley One Big Beautiful Bill, los programas universitarios y de posgrado cuyos graduados no superen los umbrales salariales corren el riesgo de perder acceso a préstamos federales y Becas Pell.",
-  "blog.card16.author": "Jaylen Peng\n4 de oct, 2026",
+  "blog.card16.author": "Jaylen Peng\nOct 2026",
   "blog.card16.cta": "Leer artículo",
 
   "aidcuts.meta.title":
