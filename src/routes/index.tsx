@@ -5,8 +5,6 @@ import { CompassMark, SiteFooter, SiteHeader } from "@/components/SiteChrome";
 
 import { useI18n } from "@/i18n";
 
-
-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -54,7 +52,6 @@ const STATIONS = [
   { id: "learn", n: 2 },
   { id: "apply", n: 3 },
 ];
-
 
 const DEGREE_TIERS: { labelKey: string; options: string[] }[] = [
   { labelKey: "form.degree.tier1", options: ["form.degree.associate"] },
@@ -115,9 +112,7 @@ export function Index() {
       (entries) => {
         entries.forEach((e) => {
           if (e.isIntersecting) {
-            setRevealed((prev) =>
-              prev.includes(e.target.id) ? prev : [...prev, e.target.id],
-            );
+            setRevealed((prev) => (prev.includes(e.target.id) ? prev : [...prev, e.target.id]));
             observer.unobserve(e.target);
           }
         });
@@ -136,11 +131,9 @@ export function Index() {
       .filter(Boolean)
       .join(" ");
 
-
   return (
     <>
       <SiteHeader />
-
 
       <main>
         <section className="hero wrap">
@@ -270,7 +263,15 @@ export function Index() {
                 <span className="tag">{t("blog.card2.tag")}</span>
                 <h3>{t("blog.card2.title")}</h3>
                 <p>{t("blog.card2.excerpt")}</p>
-                <span className="card-more" style={{ marginTop: "14px", display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                <span
+                  className="card-more"
+                  style={{
+                    marginTop: "14px",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "4px",
+                  }}
+                >
                   {t("blog.card2.cta")} →
                 </span>
               </Link>
@@ -279,7 +280,15 @@ export function Index() {
                 <span className="tag">{t("blog.card3.tag")}</span>
                 <h3>{t("blog.card3.title")}</h3>
                 <p>{t("blog.card3.excerpt")}</p>
-                <span className="card-more" style={{ marginTop: "14px", display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                <span
+                  className="card-more"
+                  style={{
+                    marginTop: "14px",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "4px",
+                  }}
+                >
                   {t("blog.card3.cta")} →
                 </span>
               </Link>
@@ -288,14 +297,26 @@ export function Index() {
                 <span className="tag">{t("blog.card1.tag")}</span>
                 <h3>{t("blog.card1.title")}</h3>
                 <p>{t("blog.card1.excerpt")}</p>
-                <span className="card-more" style={{ marginTop: "14px", display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                <span
+                  className="card-more"
+                  style={{
+                    marginTop: "14px",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "4px",
+                  }}
+                >
                   {t("blog.card1.cta")} →
                 </span>
               </Link>
             </div>
 
             <div style={{ marginTop: "24px" }}>
-              <Link className="btn-secondary" to="/educational-resources" style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}>
+              <Link
+                className="btn-secondary"
+                to="/educational-resources"
+                style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}
+              >
                 <span>{t("learn.navHub.cta")}</span>
                 <svg
                   viewBox="0 0 24 24"
@@ -315,8 +336,6 @@ export function Index() {
             </div>
           </div>
 
-
-
           <div className={stationClass("apply")} id="apply">
             <div className="station-dot">3</div>
             <div className="station-tag">{t("station.apply")}</div>
@@ -327,12 +346,234 @@ export function Index() {
             </Link>
           </div>
         </div>
+
+        <HomeVideoEmbed />
       </main>
 
       <SiteFooter />
 
-
       <ChatWidget />
     </>
+  );
+}
+
+function HomeVideoEmbed() {
+  const { t } = useI18n();
+  const containerRef = useRef<HTMLElement>(null);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const hasTriggeredRef = useRef(false);
+  const isIframeReadyRef = useRef(false);
+  const playerRef = useRef<{
+    mute?: () => void;
+    playVideo?: () => void;
+    destroy?: () => void;
+  } | null>(null);
+
+  const startPlayback = () => {
+    if (hasTriggeredRef.current) return;
+    hasTriggeredRef.current = true;
+
+    // 1. If YouTube IFrame API player instance is available
+    if (playerRef.current && typeof playerRef.current.playVideo === "function") {
+      try {
+        playerRef.current.mute?.();
+        playerRef.current.playVideo?.();
+      } catch {
+        // ignore and fallback
+      }
+    }
+
+    // 2. Direct postMessage to YouTube iframe
+    const iframe = iframeRef.current;
+    if (iframe && iframe.contentWindow) {
+      try {
+        iframe.contentWindow.postMessage(
+          JSON.stringify({ event: "command", func: "mute", args: "" }),
+          "*",
+        );
+        iframe.contentWindow.postMessage(
+          JSON.stringify({ event: "command", func: "playVideo", args: "" }),
+          "*",
+        );
+      } catch {
+        // ignore
+      }
+    }
+  };
+
+  useEffect(() => {
+    // Dynamically load YouTube IFrame API script for robust playback control
+    const win = window as unknown as {
+      YT?: {
+        Player: new (
+          element: HTMLElement,
+          config: {
+            events?: {
+              onReady?: (e: { target: { mute: () => void; playVideo: () => void } }) => void;
+            };
+          },
+        ) => { mute: () => void; playVideo: () => void; destroy: () => void };
+      };
+      onYouTubeIframeAPIReady?: () => void;
+    };
+
+    const initPlayer = () => {
+      if (win.YT && win.YT.Player && iframeRef.current) {
+        try {
+          playerRef.current = new win.YT.Player(iframeRef.current, {
+            events: {
+              onReady: (event) => {
+                if (hasTriggeredRef.current) {
+                  try {
+                    event.target.mute();
+                    event.target.playVideo();
+                  } catch {
+                    // ignore
+                  }
+                }
+              },
+            },
+          });
+        } catch {
+          // ignore
+        }
+      }
+    };
+
+    if (!win.YT) {
+      const existingScript = document.querySelector('script[src*="youtube.com/iframe_api"]');
+      if (!existingScript) {
+        const tag = document.createElement("script");
+        tag.src = "https://www.youtube.com/iframe_api";
+        document.head.appendChild(tag);
+      }
+      const prevCallback = win.onYouTubeIframeAPIReady;
+      win.onYouTubeIframeAPIReady = () => {
+        prevCallback?.();
+        initPlayer();
+      };
+    } else {
+      initPlayer();
+    }
+
+    // Scroll and Intersection triggers: start playing when user scrolls down towards footer
+    const target = containerRef.current;
+    const footer = document.querySelector(".site-footer");
+
+    let observer: IntersectionObserver | null = null;
+    if (target && typeof IntersectionObserver !== "undefined") {
+      observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              startPlayback();
+              observer?.disconnect();
+              break;
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+          rootMargin: "0px 0px 180px 0px",
+        },
+      );
+
+      observer.observe(target);
+      if (footer) {
+        observer.observe(footer);
+      }
+    }
+
+    const onScroll = () => {
+      if (hasTriggeredRef.current) return;
+      const scrollPos = window.scrollY + window.innerHeight;
+      const docHeight = document.documentElement.scrollHeight;
+      if (docHeight - scrollPos < 700) {
+        startPlayback();
+        observer?.disconnect();
+      }
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return () => {
+      observer?.disconnect();
+      window.removeEventListener("scroll", onScroll);
+      try {
+        playerRef.current?.destroy?.();
+      } catch {
+        // ignore
+      }
+    };
+  }, []);
+
+  const handleIframeLoad = () => {
+    isIframeReadyRef.current = true;
+    if (hasTriggeredRef.current) {
+      setTimeout(() => {
+        try {
+          iframeRef.current?.contentWindow?.postMessage(
+            JSON.stringify({ event: "command", func: "mute", args: "" }),
+            "*",
+          );
+          iframeRef.current?.contentWindow?.postMessage(
+            JSON.stringify({ event: "command", func: "playVideo", args: "" }),
+            "*",
+          );
+        } catch {
+          // ignore
+        }
+      }, 250);
+    }
+  };
+
+  return (
+    <section
+      ref={containerRef}
+      className="wrap home-video-section"
+      id="video-guide"
+      aria-label={t("homeVideo.ariaLabel")}
+    >
+      <div className="home-video-card">
+        <div className="home-video-header">
+          <div className="station-tag">{t("homeVideo.tag")}</div>
+          <h2>{t("homeVideo.title")}</h2>
+          <p className="desc">{t("homeVideo.desc")}</p>
+        </div>
+        <div className="home-video-frame-wrapper">
+          <iframe
+            ref={iframeRef}
+            src="https://www.youtube.com/embed/6XUdp8cUvss?si=5AYBqWXwH0wIb1w2&enablejsapi=1&playsinline=1"
+            title={t("homeVideo.iframeTitle")}
+            width="560"
+            height="315"
+            loading="lazy"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            onLoad={handleIframeLoad}
+          />
+        </div>
+        <div className="home-video-footer">
+          <span className="home-video-hint">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+            </svg>
+            {t("homeVideo.unmuteHint")}
+          </span>
+        </div>
+      </div>
+    </section>
   );
 }

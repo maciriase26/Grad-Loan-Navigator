@@ -19,3 +19,4 @@
 - [/blog/mba-prestige-roi](https://www.graduationnavigator.com/blog/mba-prestige-roi): Comparative analysis of Top 10 highest ROI MBA programs and Top 10 Value MBA programs.
 - [/blog/clemson-university-the-best-of-both-worlds](https://www.graduationnavigator.com/blog/clemson-university-the-best-of-both-worlds): Clemson University spotlight analyzing enrollment growth, engineering/business rankings, and placement success.
 - [/blog/ai-use-in-higher-education](https://www.graduationnavigator.com/blog/ai-use-in-higher-education): Data analysis of student AI usage frequency, tool adoption, major fields of study, and institutional policy response.
+- [/blog/fafsa-deadlines](https://www.graduationnavigator.com/blog/fafsa-deadlines): Guide to 2027–2028 FAFSA priority deadlines, school codes, and institutional aid policies across 10 notable graduate universities.

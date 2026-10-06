@@ -218,8 +218,7 @@ export const en = {
 
   "uf.part3": "Part 3 of 4",
   "uf.alumni.h2": "Gator Network",
-  "uf.alumni.lead":
-    "UF's value remains high after graduation and initial job placement.",
+  "uf.alumni.lead": "UF's value remains high after graduation and initial job placement.",
   "uf.alumni.p1":
     "The University reports that there are over 500,000 living alumni with nearly half of those living out of the state of Florida. That gives graduates a built-in and geographically diverse network to draw upon when searching for jobs, making professional connections or advancing their careers.",
 
@@ -446,6 +445,38 @@ export const en = {
   "ai.nav.schools": "3. How Schools Are Responding",
   "ai.nav.mind": "4. What You Should Keep in Mind",
   "ai.nav.bottomline": "5. The Bottom Line",
+
+  /* ---------- FAFSA Deadlines Article (English) ---------- */
+  "blog.card13.tag": "Financial Aid · 5 min read",
+  "blog.card13.title": "FAFSA Deadlines",
+  "blog.card13.excerpt":
+    "Prospective graduate students for fall 2027–2028 must navigate school-specific priority deadlines that arrive months ahead of the federal cutoff. A review of 10 notable universities, school codes, and institutional aid rules by Peter Foulke.",
+  "blog.card13.author": "Peter Foulke\nUpdated Oct 2026",
+  "blog.card13.cta": "Read article",
+
+  "fafsa.meta.title":
+    "2027-2028 FAFSA: When Is Your Graduate School’s Deadline? — Grad Loan Navigator",
+  "fafsa.meta.desc":
+    "Recommended 2027-2028 FAFSA filing dates, school codes, assistantship policies, and financial aid rules for 10 notable graduate universities by Peter Foulke.",
+  "fafsa.eyebrow": "Financial Aid & Deadlines · 5 min read",
+  "fafsa.h1": "2027–2028 FAFSA: When Is Your Graduate School’s Deadline?",
+  "fafsa.sub":
+    "Prospective students aiming to attend graduate school in fall of the 2027-2028 academic year should familiarize themselves with upcoming deadlines to maximize opportunities to receive federal financial aid. The dates below reflect the recommended FAFSA filing dates for several notable universities, which can differ from the final federal FAFSA submission deadline.",
+  "fafsa.updated": "Peter Foulke Reviewed as of Oct. 5, 2026",
+  "fafsa.why.title": "Why Priority Deadlines Matter for Graduate Students",
+  "fafsa.why.p":
+    "While the final federal FAFSA submission deadline extends well into the academic year, institutional grants, departmental fellowships, tuition waivers, and university-administered awards operate on finite budgets. Missing your graduate school's priority deadline often means forfeiting free institutional aid.",
+  "fafsa.nav.overview": "1. Overview & Distinction",
+  "fafsa.nav.timeline": "2. Master Schedule",
+  "fafsa.nav.schools": "3. 10 University Profiles",
+  "fafsa.nav.rules": "4. What to Keep in Mind",
+  "fafsa.nav.bottomline": "5. The Bottom Line",
+  "fafsa.stat.banner":
+    "Key Takeaway: Graduate school priority filing deadlines range from December 1 to April 1 — months ahead of the federal June 30 submission cutoff.",
+  "fafsa.part1": "Part 1 of 4",
+  "fafsa.part2": "Part 2 of 4",
+  "fafsa.part3": "Part 3 of 4",
+  "fafsa.part4": "Conclusion",
   "pol.meta.title": "Student Loans Political Background and Future — Grad Loan Navigator",
   "pol.meta.desc":
     "The One Big Beautiful Bill Act made significant changes to student loan programs. Here's why that happened, and what's to come.",
@@ -476,8 +507,7 @@ export const en = {
   "pol.history.p2.text":
     "Loans were expanded in 1964 through an amendment increasing the number of programs eligible, and over the years these loans have become more accessible.",
   "pol.history.p3.title": "Bipartisan Support",
-  "pol.history.p3.text":
-    "The bill was passed with bipartisan support at the time.",
+  "pol.history.p3.text": "The bill was passed with bipartisan support at the time.",
 
   "pol.part2": "Part 2 of 4",
   "pol.july2026.h2": "What changed on July 1, 2026",
@@ -501,29 +531,34 @@ export const en = {
   "pol.july2026.who.title": "Who this actually affects",
   "pol.july2026.who.text":
     "Students in high-cost programs where tuition can exceed $50,000 a year, who counted on Grad PLUS to close the gap. Without it, that gap now falls to savings, assistantships, or private loans.",
-  "pol.july2026.who.link": "Check whether you fall under the legacy provision here: StudentAid.gov →",
+  "pol.july2026.who.link":
+    "Check whether you fall under the legacy provision here: StudentAid.gov →",
 
   "pol.part3": "Part 3 of 4",
   "pol.july2027.h2": "Changes Coming July 1, 2027",
   "pol.july2027.lead":
     "In 2027, there will be changes to programs that offer temporary pauses in student loan repayment.",
   "pol.july2027.c1.title": "Removal of Eligibility Criteria",
-  "pol.july2027.c1.text": "The removal of certain eligibility criteria including unemployment and economic hardship.",
+  "pol.july2027.c1.text":
+    "The removal of certain eligibility criteria including unemployment and economic hardship.",
   "pol.july2027.c2.title": "Reduced Duration of Pauses",
   "pol.july2027.c2.text": "Reducing amount of time the pause lasts.",
   "pol.july2027.c3.title": "Forbearance Cap Reduction",
-  "pol.july2027.c3.text": "The pause period, or forbearance will be reduced to every nine months out of a two-year period, down from 12.",
+  "pol.july2027.c3.text":
+    "The pause period, or forbearance will be reduced to every nine months out of a two-year period, down from 12.",
 
   "pol.part4": "Part 4 of 4",
   "pol.july2028.h2": "Changes coming July 1, 2028",
-  "pol.july2028.lead":
-    "The final installment takes effect in 2028.",
+  "pol.july2028.lead": "The final installment takes effect in 2028.",
   "pol.july2028.i1.title": "Ending PAYE and ICR Programs",
-  "pol.july2028.i1.text": "On July 1, 2028, the Department of Education will be ending the PAYE and Income-Contingent Repayment (ICR) programs.",
+  "pol.july2028.i1.text":
+    "On July 1, 2028, the Department of Education will be ending the PAYE and Income-Contingent Repayment (ICR) programs.",
   "pol.july2028.i2.title": "Legacy Repayment Protections",
-  "pol.july2028.i2.text": "Legacy borrowers can keep using these repayment programs, but new enrollments will not be allowed.",
+  "pol.july2028.i2.text":
+    "Legacy borrowers can keep using these repayment programs, but new enrollments will not be allowed.",
   "pol.july2028.i3.title": "Enrollment Deadline",
-  "pol.july2028.i3.text": "The final deadline for enrollment in these programs has not been set, but it will likely be in late 2027 or early 2028.",
+  "pol.july2028.i3.text":
+    "The final deadline for enrollment in these programs has not been set, but it will likely be in late 2027 or early 2028.",
 
   "pol.part5": "Conclusion",
   "pol.bottomline.h2": "The Bottom Line",
@@ -571,7 +606,8 @@ export const en = {
   "law.part3": "Part 3 of 3",
   "law.mind.h2": "Keep In Mind…",
   "law.mind.p1.title": "Dropping out",
-  "law.mind.p1.text": "Leaving without a degree can net a negative return. If you're not sure, you may want to wait.",
+  "law.mind.p1.text":
+    "Leaving without a degree can net a negative return. If you're not sure, you may want to wait.",
   "law.mind.p2.title": "Heavy borrowing based on best-case salary",
   "law.mind.p2.text": "Calculate repayment using school's median salary.",
   "law.mind.p3.title": "Low/declining bar-passage rates",
@@ -579,7 +615,8 @@ export const en = {
   "law.mind.p4.title": "Unaccredited programs",
   "law.mind.p4.text": "A non-ABA-accredited J.D. can limit practice and future career options.",
   "law.mind.p5.title": "Don't forget about full cost",
-  "law.mind.p5.text": "Fees, materials, housing, and other living expenses, school and area dependent.",
+  "law.mind.p5.text":
+    "Fees, materials, housing, and other living expenses, school and area dependent.",
 
   "law.part4": "Conclusion",
   "law.bottomline.h2": "The Bottom Line",
@@ -753,6 +790,15 @@ export const en = {
   "applyStation.desc":
     "Once you know your numbers, applying takes most lenders under 10 minutes. We'll tell you what to have ready first.",
   "applyStation.cta": "Chart your path ↗",
+
+  /* ---------- home video guide ---------- */
+  "homeVideo.tag": "Video Guide",
+  "homeVideo.title": "Do you know how to pay for college?",
+  "homeVideo.desc":
+    "Watch our plain-language walkthrough on borrowing caps, interest rates, and comparing private student loans.",
+  "homeVideo.iframeTitle": "YouTube video player",
+  "homeVideo.ariaLabel": "Featured Video Guide",
+  "homeVideo.unmuteHint": "Video plays muted automatically. Tap the player to unmute audio.",
 
   /* ---------- errors ---------- */
   "error.title": "Something went wrong",
@@ -1032,7 +1078,8 @@ export const en = {
   "calc.assump.degree.grad": "Graduate / Master's ($100k Cap)",
   "calc.assump.degree.prof": "Professional — Law / Medicine ($200k Cap)",
   "calc.assump.priorUndergrad": "Prior Undergraduate Federal Borrowing",
-  "calc.assump.priorUndergrad.note": "Checked against the $257,500 lifetime aggregate ceiling for combined undergraduate and graduate federal borrowing.",
+  "calc.assump.priorUndergrad.note":
+    "Checked against the $257,500 lifetime aggregate ceiling for combined undergraduate and graduate federal borrowing.",
   "calc.assump.years": "Years to Graduate",
   "calc.assump.rate": "Interest Rate (%)",
   "calc.assump.term": "Repayment Term (Years)",
@@ -1570,6 +1617,16 @@ export const es: Partial<Record<TranslationKey, string>> = {
     "Una vez que conozcas tus números, la mayoría de los prestamistas tardan menos de 10 minutos en procesar la solicitud. Te diremos qué tener listo primero.",
   "applyStation.cta": "Traza tu camino ↗",
 
+  /* ---------- home video guide ---------- */
+  "homeVideo.tag": "Guía en video",
+  "homeVideo.title": "¿Sabes cómo pagar la universidad?",
+  "homeVideo.desc":
+    "Mira nuestra explicación clara sobre límites de préstamos, tasas de interés y comparación de opciones privadas.",
+  "homeVideo.iframeTitle": "Reproductor de video de YouTube",
+  "homeVideo.ariaLabel": "Guía destacada en video",
+  "homeVideo.unmuteHint":
+    "El video se reproduce en silencio automáticamente. Toca el reproductor para activar el audio.",
+
   /* ---------- errors ---------- */
   "error.title": "Algo salió mal",
   "error.sub.pre": "Actualiza la página o ",
@@ -1851,7 +1908,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "calc.assump.degree.grad": "Posgrado / Maestría (Límite $100k)",
   "calc.assump.degree.prof": "Profesional — Derecho / Medicina (Límite $200k)",
   "calc.assump.priorUndergrad": "Préstamos Federales de Pregrado Anteriores",
-  "calc.assump.priorUndergrad.note": "Se verifica contra el tope acumulado de por vida de $257,500 para endeudamiento federal combinado de pregrado y posgrado.",
+  "calc.assump.priorUndergrad.note":
+    "Se verifica contra el tope acumulado de por vida de $257,500 para endeudamiento federal combinado de pregrado y posgrado.",
   "calc.assump.years": "Años para Graduarse",
   "calc.assump.rate": "Tasa de Interés (%)",
   "calc.assump.term": "Plazo de Pago (Años)",
@@ -2104,15 +2162,19 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "law.part3": "Tercera parte",
   "law.mind.h2": "Ten en cuenta…",
   "law.mind.p1.title": "Abandonar los estudios",
-  "law.mind.p1.text": "Salir sin un título puede resultar en un retorno negativo. Si no estás seguro, considera esperar.",
+  "law.mind.p1.text":
+    "Salir sin un título puede resultar en un retorno negativo. Si no estás seguro, considera esperar.",
   "law.mind.p2.title": "Endeudarse según el salario ideal",
   "law.mind.p2.text": "Calcula el reembolso utilizando el salario mediano de la escuela.",
   "law.mind.p3.title": "Tasas de aprobación del examen de abogacía bajas o en descenso",
-  "law.mind.p3.text": "Dificultades para aprobar el examen pueden retrasar el empleo y aumentar costos.",
+  "law.mind.p3.text":
+    "Dificultades para aprobar el examen pueden retrasar el empleo y aumentar costos.",
   "law.mind.p4.title": "Programas no acreditados",
-  "law.mind.p4.text": "Un J.D. no acreditado por la ABA puede limitar el ejercicio y las opciones profesionales.",
+  "law.mind.p4.text":
+    "Un J.D. no acreditado por la ABA puede limitar el ejercicio y las opciones profesionales.",
   "law.mind.p5.title": "No olvides el costo total",
-  "law.mind.p5.text": "Cuotas, materiales, vivienda y gastos de manutención según la escuela y la zona.",
+  "law.mind.p5.text":
+    "Cuotas, materiales, vivienda y gastos de manutención según la escuela y la zona.",
 
   "law.part4": "Conclusión",
   "law.bottomline.h2": "En conclusión",
@@ -2134,7 +2196,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card5.author": "Carson Jung\nActualizado Sep 2026",
   "blog.card5.cta": "Leer artículo",
 
-  "pol.meta.title": "Antecedentes Políticos y Futuro de los Préstamos Estudiantiles — Grad Loan Navigator",
+  "pol.meta.title":
+    "Antecedentes Políticos y Futuro de los Préstamos Estudiantiles — Grad Loan Navigator",
   "pol.meta.desc":
     "La Ley 'One Big Beautiful Bill' realizó cambios significativos en los programas de préstamos estudiantiles. Explicación de las razones y lo que está por venir.",
   "pol.eyebrow": "Política y Futuro · 4 min lectura",
@@ -2164,8 +2227,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "pol.history.p2.text":
     "Los préstamos se ampliaron en 1964 mediante una enmienda que aumentó el número de programas elegibles, y a lo largo de los años estos préstamos se han vuelto más accesibles.",
   "pol.history.p3.title": "Apoyo Bipartidista",
-  "pol.history.p3.text":
-    "El proyecto de ley se aprobó con apoyo bipartidista en ese momento.",
+  "pol.history.p3.text": "El proyecto de ley se aprobó con apoyo bipartidista en ese momento.",
 
   "pol.part2": "Segunda parte",
   "pol.july2026.h2": "Qué cambió el 1 de julio de 2026",
@@ -2189,29 +2251,34 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "pol.july2026.who.title": "A quién afecta realmente",
   "pol.july2026.who.text":
     "Estudiantes en programas de alto costo donde la matrícula puede superar los $50,000 al año, que contaban con Grad PLUS para cubrir la brecha. Sin él, esa brecha ahora recae en ahorros, asistencias académicas o préstamos privados.",
-  "pol.july2026.who.link": "Consulta si estás cubierto por la cláusula de legado en StudentAid.gov →",
+  "pol.july2026.who.link":
+    "Consulta si estás cubierto por la cláusula de legado en StudentAid.gov →",
 
   "pol.part3": "Tercera parte",
   "pol.july2027.h2": "Cambios programados para el 1 de julio de 2027",
   "pol.july2027.lead":
     "En 2027, habrá cambios en los programas que ofrecen pausas temporales en el pago de préstamos estudiantiles.",
   "pol.july2027.c1.title": "Eliminación de Criterios de Elegibilidad",
-  "pol.july2027.c1.text": "Se eliminarán ciertos criterios de elegibilidad, incluyendo desempleo y dificultades económicas.",
+  "pol.july2027.c1.text":
+    "Se eliminarán ciertos criterios de elegibilidad, incluyendo desempleo y dificultades económicas.",
   "pol.july2027.c2.title": "Reducción en la Duración de las Pausas",
   "pol.july2027.c2.text": "Reducción en el tiempo máximo que duran las pausas de pago.",
   "pol.july2027.c3.title": "Límite de Aplazamiento (Forbearance)",
-  "pol.july2027.c3.text": "El período de aplazamiento o forbearance se reducirá a 9 meses dentro de un período de dos años, frente a los 12 anteriores.",
+  "pol.july2027.c3.text":
+    "El período de aplazamiento o forbearance se reducirá a 9 meses dentro de un período de dos años, frente a los 12 anteriores.",
 
   "pol.part4": "Cuarta parte",
   "pol.july2028.h2": "Cambios programados para el 1 de julio de 2028",
-  "pol.july2028.lead":
-    "El conjunto final de cambios entrará en vigor en 2028.",
+  "pol.july2028.lead": "El conjunto final de cambios entrará en vigor en 2028.",
   "pol.july2028.i1.title": "Fin de los Programas PAYE e ICR",
-  "pol.july2028.i1.text": "El 1 de julio de 2028, el Departamento de Educación finalizará los programas PAYE e ICR (Income-Contingent Repayment).",
+  "pol.july2028.i1.text":
+    "El 1 de julio de 2028, el Departamento de Educación finalizará los programas PAYE e ICR (Income-Contingent Repayment).",
   "pol.july2028.i2.title": "Protecciones para Prestatarios Actuales",
-  "pol.july2028.i2.text": "Los prestatarios actuales pueden seguir utilizando estos programas de pago, pero no se permitirán nuevas inscripciones.",
+  "pol.july2028.i2.text":
+    "Los prestatarios actuales pueden seguir utilizando estos programas de pago, pero no se permitirán nuevas inscripciones.",
   "pol.july2028.i3.title": "Plazo Límite de Inscripción",
-  "pol.july2028.i3.text": "La fecha límite final para inscribirse en estos programas aún no se ha fijado, pero es probable que sea a finales de 2027 o principios de 2028.",
+  "pol.july2028.i3.text":
+    "La fecha límite final para inscribirse en estos programas aún no se ha fijado, pero es probable que sea a finales de 2027 o principios de 2028.",
 
   "pol.part5": "Conclusión",
   "pol.bottomline.h2": "En conclusión",
@@ -2276,8 +2343,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
 
   "uf.part3": "Tercera parte",
   "uf.alumni.h2": "Red de Exalumnos Gator",
-  "uf.alumni.lead":
-    "El valor de UF se mantiene alto tras la graduación y la inserción laboral.",
+  "uf.alumni.lead": "El valor de UF se mantiene alto tras la graduación y la inserción laboral.",
   "uf.alumni.p1":
     "La universidad reporta más de 500,000 exalumnos vivos, con casi la mitad residiendo fuera de Florida, ofreciendo una red diversa y accesible para avanzar profesionalmente.",
 
@@ -2504,6 +2570,38 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "ai.nav.schools": "3. Cómo Responden las Universidades",
   "ai.nav.mind": "4. Lo que Debes Tener en Cuenta",
   "ai.nav.bottomline": "5. En conclusión",
+
+  /* ---------- FAFSA Deadlines Article (Spanish) ---------- */
+  "blog.card13.tag": "Ayuda Financiera · 5 min de lectura",
+  "blog.card13.title": "Fechas Límite del FAFSA",
+  "blog.card13.excerpt":
+    "Los futuros estudiantes de posgrado para el año académico 2027–2028 deben conocer las fechas límite institucionales que vencen meses antes del plazo federal. Guía de 10 universidades destacadas, códigos escolares y normas de ayuda por Peter Foulke.",
+  "blog.card13.author": "Peter Foulke\nActualizado Oct 2026",
+  "blog.card13.cta": "Leer artículo",
+
+  "fafsa.meta.title":
+    "FAFSA 2027-2028: ¿Cuándo es la Fecha Límite de tu Posgrado? — Grad Loan Navigator",
+  "fafsa.meta.desc":
+    "Fechas límite recomendadas del FAFSA 2027-2028, códigos de escuela, políticas de ayudantías y ayuda financiera para 10 universidades de posgrado por Peter Foulke.",
+  "fafsa.eyebrow": "Ayuda Financiera y Fechas Límite · 5 min de lectura",
+  "fafsa.h1": "FAFSA 2027–2028: ¿Cuándo es la Fecha Límite de tu Escuela de Posgrado?",
+  "fafsa.sub":
+    "Los futuros estudiantes que planean ingresar a la escuela de posgrado en el otoño del año académico 2027-2028 deben familiarizarse con las próximas fechas límite para maximizar la ayuda financiera federal. Las fechas reflejan los plazos recomendados por universidades destacadas, los cuales difieren del plazo federal final.",
+  "fafsa.updated": "Peter Foulke Rev. Oct. 5, 2026",
+  "fafsa.why.title": "Por qué son cruciales las fechas prioritarias en el posgrado",
+  "fafsa.why.p":
+    "Aunque el plazo federal final para enviar el FAFSA se extiende hasta bien entrado el año académico, las subvenciones institucionales, becas departamentales, exenciones de matrícula y fondos del campus son limitados. No cumplir la fecha límite prioritaria a menudo significa perder ayuda gratuita.",
+  "fafsa.nav.overview": "1. Resumen y Diferencias",
+  "fafsa.nav.timeline": "2. Calendario General",
+  "fafsa.nav.schools": "3. 10 Universidades",
+  "fafsa.nav.rules": "4. Puntos a Recordar",
+  "fafsa.nav.bottomline": "5. En conclusión",
+  "fafsa.stat.banner":
+    "Dato clave: Las fechas prioritarias de posgrado van del 1 de diciembre al 1 de abril, meses antes de la fecha límite federal final del 30 de junio.",
+  "fafsa.part1": "Parte 1 de 4",
+  "fafsa.part2": "Parte 2 de 4",
+  "fafsa.part3": "Parte 3 de 4",
+  "fafsa.part4": "Conclusión",
 };
 
 export const LANGUAGES = [
