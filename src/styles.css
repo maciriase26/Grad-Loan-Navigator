@@ -1149,6 +1149,11 @@
   border-color: #e4405f;
   background-color: color-mix(in srgb, #e4405f 8%, var(--card-paper));
 }
+.foot-social-icon-btn.tt:hover {
+  color: #000000;
+  border-color: #000000;
+  background-color: color-mix(in srgb, #000000 8%, var(--card-paper));
+}
 .foot-social-icon-btn.li:hover {
   color: #0a66c2;
   border-color: #0a66c2;
