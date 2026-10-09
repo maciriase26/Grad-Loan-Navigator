@@ -1,5 +1,10 @@
-import { useState, useId } from "react";
+import { useState, useId, useRef, useEffect } from "react";
 import { useI18n } from "@/i18n";
+import {
+  searchSchools,
+  HOUSING_PRESETS,
+  type SchoolTuitionRecord,
+} from "@/data/tuitionData";
 
 export function CollegeLoanNeedCalculator() {
   const { t } = useI18n();
@@ -7,8 +12,10 @@ export function CollegeLoanNeedCalculator() {
   // Unique IDs for form inputs to comply with accessibility best practices
   const tuitionId = useId();
   const housingId = useId();
+  const housingSelectId = useId();
   const booksId = useId();
   const transportId = useId();
+  const schoolSearchId = useId();
 
   const scholarshipsId = useId();
   const savings529Id = useId();
@@ -29,6 +36,14 @@ export function CollegeLoanNeedCalculator() {
   const [books, setBooks] = useState<number>(0);
   const [transport, setTransport] = useState<number>(0);
 
+  // School lookup & residency state
+  const [schoolSearch, setSchoolSearch] = useState<string>("");
+  const [selectedSchool, setSelectedSchool] = useState<SchoolTuitionRecord | null>(null);
+  const [residency, setResidency] = useState<"inState" | "outOfState">("inState");
+  const [housingPreset, setHousingPreset] = useState<string>("");
+  const [showSchoolSuggestions, setShowSchoolSuggestions] = useState<boolean>(false);
+  const schoolDropdownRef = useRef<HTMLDivElement>(null);
+
   // 2. Money Available Each Year
   const [scholarships, setScholarships] = useState<number>(0);
   const [savings529, setSavings529] = useState<number>(0);
@@ -43,6 +58,46 @@ export function CollegeLoanNeedCalculator() {
   const [years, setYears] = useState<number>(4);
   const [rate, setRate] = useState<number>(8.07);
   const [termYears, setTermYears] = useState<number>(10);
+
+  // Close dropdown on outside click
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (schoolDropdownRef.current && !schoolDropdownRef.current.contains(event.target as Node)) {
+        setShowSchoolSuggestions(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const schoolSuggestions =
+    schoolSearch.trim().length >= 1 ? searchSchools(schoolSearch, 6) : [];
+
+  const handleSelectSchool = (rec: SchoolTuitionRecord) => {
+    setSelectedSchool(rec);
+    setSchoolSearch(rec.name);
+    setSchoolName(rec.name);
+    setShowSchoolSuggestions(false);
+    const autofilledRate = residency === "inState" ? rec.inState : rec.outOfState;
+    setTuition(autofilledRate);
+  };
+
+  const handleResidencyChange = (newResidency: "inState" | "outOfState") => {
+    setResidency(newResidency);
+    if (selectedSchool) {
+      const newRate = newResidency === "inState" ? selectedSchool.inState : selectedSchool.outOfState;
+      setTuition(newRate);
+    }
+  };
+
+  const handleHousingPresetSelect = (presetId: string) => {
+    setHousingPreset(presetId);
+    if (!presetId || presetId === "custom") return;
+    const preset = HOUSING_PRESETS.find((p) => p.id === presetId);
+    if (preset) {
+      setHousing(preset.amount);
+    }
+  };
 
   // Automatically adjust default interest rate when degree type changes
   const handleDegreeChange = (type: "undergrad" | "grad" | "prof") => {
@@ -114,6 +169,100 @@ export function CollegeLoanNeedCalculator() {
         <div className="calc-card">
           <div className="calc-card-title">{t("calc.cost.title")}</div>
           <div className="calc-fields">
+            {/* School Search & Autofill Header */}
+            <div className="calc-field" ref={schoolDropdownRef} style={{ position: "relative" }}>
+              <label htmlFor={schoolSearchId}>🎓 {t("calc.school.search")}</label>
+              {!selectedSchool ? (
+                <>
+                  <input
+                    id={schoolSearchId}
+                    type="text"
+                    className="text-input"
+                    placeholder={t("cyp.school.placeholder")}
+                    value={schoolSearch}
+                    onFocus={() => setShowSchoolSuggestions(true)}
+                    onChange={(e) => {
+                      setSchoolSearch(e.target.value);
+                      setShowSchoolSuggestions(true);
+                    }}
+                  />
+                  {showSchoolSuggestions && schoolSuggestions.length > 0 && (
+                    <div className="cyp-suggestions-dropdown" role="listbox">
+                      {schoolSuggestions.map((inst) => (
+                        <button
+                          key={inst.id}
+                          type="button"
+                          className="cyp-suggestion-item"
+                          onClick={() => handleSelectSchool(inst)}
+                        >
+                          <span className="inst-icon">🎓</span>
+                          <div className="cyp-suggestion-main">
+                            <div className="cyp-suggestion-name">{inst.name}</div>
+                            <div className="cyp-suggestion-sub">
+                              <span className={`cyp-badge ${inst.isPublic ? "public" : "private"}`}>
+                                {inst.isPublic ? t("cyp.school.public") : t("cyp.school.private")}
+                              </span>
+                              <span>In: {formatCurrency(inst.inState)}</span>
+                            </div>
+                          </div>
+                          <span className="cyp-suggestion-price">
+                            {formatCurrency(residency === "inState" ? inst.inState : inst.outOfState)}
+                          </span>
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </>
+              ) : (
+                <div className="cyp-selected-card">
+                  <div className="cyp-selected-info">
+                    <div className="cyp-selected-name" style={{ fontSize: "13px" }}>
+                      🎓 {selectedSchool.name}
+                    </div>
+                    <div className="cyp-selected-meta">
+                      <span className={`cyp-badge ${selectedSchool.isPublic ? "public" : "private"}`}>
+                        {selectedSchool.isPublic ? t("cyp.school.public") : t("cyp.school.private")}
+                      </span>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    className="cyp-clear-btn"
+                    onClick={() => {
+                      setSelectedSchool(null);
+                      setSchoolSearch("");
+                      setShowSchoolSuggestions(true);
+                    }}
+                  >
+                    {t("cyp.school.clear")}
+                  </button>
+                </div>
+              )}
+
+              {/* In-State vs Out-of-State Toggle */}
+              {selectedSchool && (
+                <div className="cyp-residency-toggle" style={{ marginTop: "6px" }}>
+                  <button
+                    type="button"
+                    className={`cyp-residency-btn ${residency === "inState" ? "active" : ""}`}
+                    onClick={() => handleResidencyChange("inState")}
+                  >
+                    <span className="cyp-residency-title">🏠 {t("cyp.residency.inState")}</span>
+                    <span className="cyp-residency-price">{formatCurrency(selectedSchool.inState)}</span>
+                  </button>
+                  <button
+                    type="button"
+                    className={`cyp-residency-btn ${residency === "outOfState" ? "active" : ""}`}
+                    onClick={() => handleResidencyChange("outOfState")}
+                  >
+                    <span className="cyp-residency-title">✈️ {t("cyp.residency.outOfState")}</span>
+                    <span className="cyp-residency-price">{formatCurrency(selectedSchool.outOfState)}</span>
+                  </button>
+                </div>
+              )}
+            </div>
+
+            {/* Tuition Input */}
             <div className="calc-field">
               <label htmlFor={tuitionId}>{t("calc.cost.tuition")}</label>
               <div className="calc-input-wrap">
@@ -127,10 +276,31 @@ export function CollegeLoanNeedCalculator() {
                   onChange={(e) => setTuition(Number(e.target.value) || 0)}
                 />
               </div>
+              {selectedSchool && (
+                <div className="cyp-autofill-badge" style={{ fontSize: "11px" }}>
+                  ✓ {t("cyp.school.autofilled")}
+                </div>
+              )}
             </div>
 
+            {/* Housing Input & Preset Dropdown */}
             <div className="calc-field">
               <label htmlFor={housingId}>{t("calc.cost.housing")}</label>
+              <select
+                id={housingSelectId}
+                className="select-input"
+                style={{ marginBottom: "6px", fontSize: "12.5px" }}
+                value={housingPreset}
+                onChange={(e) => handleHousingPresetSelect(e.target.value)}
+              >
+                <option value="">{t("calc.housing.preset")}...</option>
+                {HOUSING_PRESETS.map((preset) => (
+                  <option key={preset.id} value={preset.id}>
+                    {t(preset.labelKey)}
+                  </option>
+                ))}
+                <option value="custom">{t("cyp.housing.custom")}</option>
+              </select>
               <div className="calc-input-wrap">
                 <span className="prefix">$</span>
                 <input
@@ -139,7 +309,10 @@ export function CollegeLoanNeedCalculator() {
                   min="0"
                   step="500"
                   value={housing || ""}
-                  onChange={(e) => setHousing(Number(e.target.value) || 0)}
+                  onChange={(e) => {
+                    setHousing(Number(e.target.value) || 0);
+                    setHousingPreset("custom");
+                  }}
                 />
               </div>
             </div>
@@ -322,32 +495,32 @@ export function CollegeLoanNeedCalculator() {
 
             <div className="calc-field">
               <label htmlFor={yearsId}>{t("calc.assump.years")}</label>
-              <select
+              <input
                 id={yearsId}
-                className="select-input"
+                type="number"
+                min="1"
+                max="6"
+                className="text-input"
                 value={years}
-                onChange={(e) => setYears(Number(e.target.value))}
-              >
-                <option value={1}>1 Year</option>
-                <option value={2}>2 Years</option>
-                <option value={3}>3 Years</option>
-                <option value={4}>4 Years</option>
-                <option value={5}>5 Years</option>
-                <option value={6}>6 Years</option>
-              </select>
+                onChange={(e) => setYears(Number(e.target.value) || 1)}
+              />
             </div>
 
             <div className="calc-field">
               <label htmlFor={rateId}>{t("calc.assump.rate")}</label>
-              <input
-                id={rateId}
-                type="number"
-                step="0.05"
-                min="0"
-                max="20"
-                value={rate}
-                onChange={(e) => setRate(Number(e.target.value) || 0)}
-              />
+              <div className="calc-input-wrap">
+                <input
+                  id={rateId}
+                  type="number"
+                  step="0.01"
+                  min="0"
+                  max="25"
+                  className="text-input"
+                  value={rate}
+                  onChange={(e) => setRate(Number(e.target.value) || 0)}
+                />
+                <span className="suffix">%</span>
+              </div>
             </div>
 
             <div className="calc-field">
@@ -356,27 +529,27 @@ export function CollegeLoanNeedCalculator() {
                 id={termId}
                 className="select-input"
                 value={termYears}
-                onChange={(e) => setTermYears(Number(e.target.value))}
+                onChange={(e) => setTermYears(Number(e.target.value) || 10)}
               >
-                <option value={5}>5 Years</option>
-                <option value={10}>10 Years (Standard)</option>
-                <option value={15}>15 Years</option>
-                <option value={20}>20 Years</option>
-                <option value={25}>25 Years</option>
+                <option value="5">5 Years</option>
+                <option value="10">10 Years (Standard)</option>
+                <option value="15">15 Years</option>
+                <option value="20">20 Years (Extended)</option>
+                <option value="25">25 Years</option>
               </select>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Output / Results Dashboard Box */}
+      {/* 4. Output Results Card */}
       <div className="calc-results-panel">
         <div className="calc-results-header">
           <h3>{t("calc.result.title")}</h3>
           {schoolName && <span className="school-tag">{schoolName}</span>}
         </div>
 
-        <div className="calc-results-grid">
+        <div className="calc-stats-grid">
           <div className="res-stat">
             <span className="res-label">{t("calc.result.annualGap")}</span>
             <span className="res-val highlight">{formatCurrency(annualFundingGap)}</span>
@@ -429,6 +602,22 @@ export function CollegeLoanNeedCalculator() {
                   ? t("calc.status.exceed").replace("{amount}", formatCurrency(degreeExcessAmount))
                   : t("calc.status.ok")}
           </p>
+        </div>
+
+        {/* Tuition Tracker Citation Card */}
+        <div className="cyp-citation-card" style={{ marginTop: "20px" }}>
+          <div className="cyp-citation-header">
+            <span>📊</span>
+            <span>{t("cyp.citation.title")}</span>
+          </div>
+          <p>{t("cyp.citation.body")}</p>
+          <a
+            href="https://www.tuitiontracker.org/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            {t("cyp.citation.visitLink")}
+          </a>
         </div>
       </div>
     </div>

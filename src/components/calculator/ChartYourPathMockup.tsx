@@ -1,71 +1,12 @@
 import { useState, useId, useRef, useEffect } from "react";
 import { Link } from "@tanstack/react-router";
 import { useI18n } from "@/i18n";
-
-const US_HIGHER_ED_INSTITUTIONS = [
-  "Harvard University",
-  "Harvard Law School",
-  "Harvard Medical School",
-  "Stanford University",
-  "Stanford Graduate School of Business",
-  "Massachusetts Institute of Technology (MIT)",
-  "New York University (NYU)",
-  "NYU Stern School of Business",
-  "NYU School of Law",
-  "Columbia University",
-  "Columbia Law School",
-  "Columbia Business School",
-  "Yale University",
-  "Yale Law School",
-  "Princeton University",
-  "University of Pennsylvania (Penn)",
-  "Wharton School of the University of Pennsylvania",
-  "University of California, Berkeley (UC Berkeley)",
-  "University of California, Los Angeles (UCLA)",
-  "University of California, San Diego (UCSD)",
-  "University of California, Davis (UC Davis)",
-  "University of Chicago",
-  "University of Chicago Booth School of Business",
-  "Northwestern University",
-  "Northwestern Pritzker School of Law",
-  "Duke University",
-  "Johns Hopkins University",
-  "Cornell University",
-  "Dartmouth College",
-  "Brown University",
-  "Georgetown University",
-  "Georgetown University Law Center",
-  "University of Michigan, Ann Arbor",
-  "University of Virginia (UVA)",
-  "University of Texas at Austin (UT Austin)",
-  "Georgia Institute of Technology (Georgia Tech)",
-  "University of Florida (UF)",
-  "University of North Carolina at Chapel Hill (UNC)",
-  "University of Southern California (USC)",
-  "Vanderbilt University",
-  "Washington University in St. Louis (WashU)",
-  "Emory University",
-  "Carnegie Mellon University (CMU)",
-  "Boston University (BU)",
-  "Boston College (BC)",
-  "Northeastern University",
-  "University of Notre Dame",
-  "Purdue University",
-  "Ohio State University",
-  "Penn State University",
-  "University of Washington (UW)",
-  "University of Wisconsin-Madison",
-  "University of Maryland, College Park",
-  "University of Illinois Urbana-Champaign",
-  "Texas A&M University",
-  "Arizona State University (ASU)",
-  "Michigan State University",
-  "Rutgers University",
-  "University of Miami",
-  "Tulane University",
-  "George Washington University (GWU)",
-  "Fordham University",
-];
+import {
+  searchSchools,
+  findSchoolByName,
+  HOUSING_PRESETS,
+  type SchoolTuitionRecord,
+} from "@/data/tuitionData";
 
 export function ChartYourPathMockup() {
   const { t } = useI18n();
@@ -73,11 +14,19 @@ export function ChartYourPathMockup() {
   // Unique IDs for input element accessibility
   const schoolId = useId();
   const yearsId = useId();
+  const tuitionId = useId();
+  const housingId = useId();
+  const housingSelectId = useId();
   const expensesId = useId();
   const savingsId = useId();
 
-  // Inputs — Initialized to ZERO as requested
+  // Inputs
   const [school, setSchool] = useState("");
+  const [selectedSchool, setSelectedSchool] = useState<SchoolTuitionRecord | null>(null);
+  const [residency, setResidency] = useState<"inState" | "outOfState">("inState");
+  const [tuition, setTuition] = useState<number | "">(0);
+  const [housingPreset, setHousingPreset] = useState<string>("");
+  const [housingExpenses, setHousingExpenses] = useState<number | "">(0);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [years, setYears] = useState<number | "">(4);
   const [annualExpenses, setAnnualExpenses] = useState<number | "">(0);
@@ -98,17 +47,68 @@ export function ChartYourPathMockup() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Filter US Higher Ed institution suggestions as user types
+  // Filter school suggestions from Tuition Tracker dataset
   const filteredSuggestions =
-    school.trim().length >= 1
-      ? US_HIGHER_ED_INSTITUTIONS.filter((inst) =>
-          inst.toLowerCase().includes(school.toLowerCase()),
-        ).slice(0, 6)
-      : [];
+    school.trim().length >= 1 ? searchSchools(school, 8) : [];
+
+  const formatMoney = (val: number) =>
+    new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(val);
+
+  // When a user selects a school from the dropdown
+  const handleSelectSchool = (rec: SchoolTuitionRecord) => {
+    setSelectedSchool(rec);
+    setSchool(rec.name);
+    setShowSuggestions(false);
+
+    // Autofill tuition based on currently selected residency
+    const autofilledTuition = residency === "inState" ? rec.inState : rec.outOfState;
+    setTuition(autofilledTuition);
+
+    // Recompute total annual expenses
+    const currentHousing = typeof housingExpenses === "number" ? housingExpenses : 0;
+    setAnnualExpenses(autofilledTuition + currentHousing);
+  };
+
+  // Change residency (In-State vs Out-of-State)
+  const handleResidencyChange = (newResidency: "inState" | "outOfState") => {
+    setResidency(newResidency);
+    if (selectedSchool) {
+      const newTuition = newResidency === "inState" ? selectedSchool.inState : selectedSchool.outOfState;
+      setTuition(newTuition);
+      const currentHousing = typeof housingExpenses === "number" ? housingExpenses : 0;
+      setAnnualExpenses(newTuition + currentHousing);
+    }
+  };
+
+  // When user selects a housing preset dropdown option
+  const handleHousingPresetChange = (presetId: string) => {
+    setHousingPreset(presetId);
+    if (!presetId) return;
+
+    if (presetId === "custom") {
+      return;
+    }
+
+    const preset = HOUSING_PRESETS.find((p) => p.id === presetId);
+    if (preset) {
+      setHousingExpenses(preset.amount);
+      const currentTuition = typeof tuition === "number" ? tuition : 0;
+      setAnnualExpenses(currentTuition + preset.amount);
+    }
+  };
+
+  // Clear chosen school to re-search
+  const handleClearSchool = () => {
+    setSelectedSchool(null);
+    setSchool("");
+    setShowSuggestions(true);
+  };
 
   const expNum = typeof annualExpenses === "number" ? annualExpenses : 0;
   const savNum = typeof savingsScholarships === "number" ? savingsScholarships : 0;
   const yrNum = typeof years === "number" ? years : 0;
+  const tuiNum = typeof tuition === "number" ? tuition : 0;
+  const houseNum = typeof housingExpenses === "number" ? housingExpenses : 0;
 
   // Calculations
   const annualGap = Math.max(0, expNum - savNum);
@@ -119,9 +119,6 @@ export function ChartYourPathMockup() {
   const annualRemainingGap = Math.max(0, annualGap - annualFederalCap);
   const totalFederalCovered = Math.min(totalGap, annualFederalCap * yrNum);
   const totalRemainingPrivateGap = Math.max(0, totalGap - totalFederalCovered);
-
-  const formatMoney = (val: number) =>
-    new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(val);
 
   const handleCalculate = () => {
     setHasCalculated(true);
@@ -145,59 +142,206 @@ export function ChartYourPathMockup() {
           <div className="cyp-left-col">
             <span className="cyp-tag">{t("cyp.tag")}</span>
 
-            {/* School Input with US Higher Ed Autocomplete Suggestions */}
+            {/* School Search Input with Tuition Tracker Database Autocomplete */}
             <div className="cyp-form-group" ref={autocompleteRef} style={{ position: "relative" }}>
               <label htmlFor={schoolId}>{t("cyp.school.q")}</label>
-              <input
-                id={schoolId}
-                type="text"
-                className="cyp-input"
-                placeholder={t("cyp.school.placeholder")}
-                value={school}
-                onFocus={() => setShowSuggestions(true)}
-                onChange={(e) => {
-                  setSchool(e.target.value);
-                  setShowSuggestions(true);
-                }}
-              />
 
-              {showSuggestions && filteredSuggestions.length > 0 && (
-                <div className="cyp-suggestions-dropdown" role="listbox">
-                  {filteredSuggestions.map((inst) => (
-                    <button
-                      key={inst}
-                      type="button"
-                      className="cyp-suggestion-item"
-                      onClick={() => {
-                        setSchool(inst);
-                        setShowSuggestions(false);
-                      }}
-                    >
-                      <span className="inst-icon">🎓</span> {inst}
-                    </button>
-                  ))}
+              {!selectedSchool ? (
+                <>
+                  <input
+                    id={schoolId}
+                    type="text"
+                    className="cyp-input"
+                    placeholder={t("cyp.school.placeholder")}
+                    value={school}
+                    onFocus={() => setShowSuggestions(true)}
+                    onChange={(e) => {
+                      setSchool(e.target.value);
+                      setShowSuggestions(true);
+                    }}
+                  />
+
+                  {showSuggestions && filteredSuggestions.length > 0 && (
+                    <div className="cyp-suggestions-dropdown" role="listbox">
+                      {filteredSuggestions.map((inst) => (
+                        <button
+                          key={inst.id}
+                          type="button"
+                          className="cyp-suggestion-item"
+                          onClick={() => handleSelectSchool(inst)}
+                        >
+                          <span className="inst-icon">🎓</span>
+                          <div className="cyp-suggestion-main">
+                            <div className="cyp-suggestion-name">{inst.name}</div>
+                            <div className="cyp-suggestion-sub">
+                              <span className={`cyp-badge ${inst.isPublic ? "public" : "private"}`}>
+                                {inst.isPublic ? t("cyp.school.public") : t("cyp.school.private")}
+                              </span>
+                              <span>
+                                In: {formatMoney(inst.inState)}
+                                {inst.isPublic && ` • Out: ${formatMoney(inst.outOfState)}`}
+                              </span>
+                            </div>
+                          </div>
+                          <span className="cyp-suggestion-price">
+                            {formatMoney(residency === "inState" ? inst.inState : inst.outOfState)}
+                          </span>
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </>
+              ) : (
+                /* Selected School Pill Card */
+                <div className="cyp-selected-card">
+                  <div className="cyp-selected-info">
+                    <div className="cyp-selected-name">
+                      <span>🎓</span> {selectedSchool.name}
+                    </div>
+                    <div className="cyp-selected-meta">
+                      <span className={`cyp-badge ${selectedSchool.isPublic ? "public" : "private"}`}>
+                        {selectedSchool.isPublic ? t("cyp.school.public") : t("cyp.school.private")}
+                      </span>
+                      <span className="cyp-badge year">
+                        IPEDS 20{selectedSchool.year}
+                      </span>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    className="cyp-clear-btn"
+                    onClick={handleClearSchool}
+                  >
+                    {t("cyp.school.clear")}
+                  </button>
                 </div>
               )}
             </div>
 
+            {/* In-State vs. Out-of-State Residency Selector */}
             <div className="cyp-form-group">
-              <label htmlFor={yearsId}>{t("cyp.years.q")}</label>
-              <input
-                id={yearsId}
-                type="number"
-                min="1"
-                max="6"
-                className="cyp-input"
-                value={years}
-                onChange={(e) => {
-                  const val = e.target.value;
-                  setYears(val === "" ? "" : Number(val));
-                }}
-              />
+              <label>{t("cyp.residency.label")}</label>
+              <div className="cyp-residency-toggle" role="group">
+                <button
+                  type="button"
+                  className={`cyp-residency-btn ${residency === "inState" ? "active" : ""}`}
+                  onClick={() => handleResidencyChange("inState")}
+                >
+                  <span className="cyp-residency-title">🏠 {t("cyp.residency.inState")}</span>
+                  {selectedSchool && (
+                    <span className="cyp-residency-price">{formatMoney(selectedSchool.inState)}/yr</span>
+                  )}
+                </button>
+                <button
+                  type="button"
+                  className={`cyp-residency-btn ${residency === "outOfState" ? "active" : ""}`}
+                  onClick={() => handleResidencyChange("outOfState")}
+                >
+                  <span className="cyp-residency-title">✈️ {t("cyp.residency.outOfState")}</span>
+                  {selectedSchool && (
+                    <span className="cyp-residency-price">{formatMoney(selectedSchool.outOfState)}/yr</span>
+                  )}
+                </button>
+              </div>
+              {selectedSchool && !selectedSchool.isPublic && (
+                <div className="cyp-residency-note">
+                  ℹ️ {t("cyp.residency.privateNote")}
+                </div>
+              )}
             </div>
 
+            {/* Tuition Cost Input (Autofilled from Tuition Tracker) */}
             <div className="cyp-form-group">
-              <label htmlFor={expensesId}>{t("cyp.expenses.q")}</label>
+              <label htmlFor={tuitionId}>{t("cyp.tuition.q")}</label>
+              <div className="cyp-money-wrap">
+                <span className="prefix">$</span>
+                <input
+                  id={tuitionId}
+                  type="number"
+                  step="500"
+                  min="0"
+                  placeholder="0"
+                  className="cyp-input money-input"
+                  value={tuition === "" ? "" : tuition}
+                  onFocus={(e) => {
+                    if (tuition === 0) e.target.select();
+                  }}
+                  onChange={(e) => {
+                    const val = e.target.value === "" ? "" : Number(e.target.value);
+                    setTuition(val);
+                    const tVal = typeof val === "number" ? val : 0;
+                    setAnnualExpenses(tVal + houseNum);
+                  }}
+                />
+              </div>
+
+              {selectedSchool && (
+                <>
+                  <div className="cyp-autofill-badge">
+                    ✓ {t("cyp.school.autofilled")}
+                  </div>
+                  {selectedSchool.netPrice > 0 && (
+                    <div className="cyp-net-price-tip">
+                      💡 {t("cyp.school.netPriceNote").replace("{amount}", formatMoney(selectedSchool.netPrice))}
+                    </div>
+                  )}
+                </>
+              )}
+            </div>
+
+            {/* Housing & Living Expenses Dropdown & Input */}
+            <div className="cyp-form-group">
+              <label htmlFor={housingId}>{t("cyp.housing.q")}</label>
+              
+              {/* National Average Preset Dropdown */}
+              <select
+                id={housingSelectId}
+                className="cyp-select"
+                value={housingPreset}
+                onChange={(e) => handleHousingPresetChange(e.target.value)}
+              >
+                <option value="">{t("cyp.housing.dropdownPlaceholder")}</option>
+                {HOUSING_PRESETS.map((preset) => (
+                  <option key={preset.id} value={preset.id}>
+                    {t(preset.labelKey)}
+                  </option>
+                ))}
+                <option value="custom">{t("cyp.housing.custom")}</option>
+              </select>
+
+              <div className="cyp-money-wrap">
+                <span className="prefix">$</span>
+                <input
+                  id={housingId}
+                  type="number"
+                  step="250"
+                  min="0"
+                  placeholder="0"
+                  className="cyp-input money-input"
+                  value={housingExpenses === "" ? "" : housingExpenses}
+                  onFocus={(e) => {
+                    if (housingExpenses === 0) e.target.select();
+                  }}
+                  onChange={(e) => {
+                    const val = e.target.value === "" ? "" : Number(e.target.value);
+                    setHousingExpenses(val);
+                    setHousingPreset("custom");
+                    const hVal = typeof val === "number" ? val : 0;
+                    setAnnualExpenses(tuiNum + hVal);
+                  }}
+                />
+              </div>
+
+              {housingPreset && housingPreset !== "custom" && (
+                <div className="cyp-autofill-badge">
+                  ✓ {t("cyp.housing.appliedBadge").replace("{amount}", formatMoney(houseNum))}
+                </div>
+              )}
+            </div>
+
+            {/* Annual Total College Expenses (Combined Tuition + Living Costs) */}
+            <div className="cyp-form-group">
+              <label htmlFor={expensesId}>{t("cyp.totalExpenses.label")}</label>
               <div className="cyp-money-wrap">
                 <span className="prefix">$</span>
                 <input
@@ -207,18 +351,43 @@ export function ChartYourPathMockup() {
                   min="0"
                   placeholder="0"
                   className="cyp-input money-input"
-                  value={annualExpenses === 0 && annualExpenses !== "" ? "0" : annualExpenses}
+                  value={annualExpenses === "" ? "" : annualExpenses}
                   onFocus={(e) => {
                     if (annualExpenses === 0) e.target.select();
                   }}
                   onChange={(e) => {
-                    const val = e.target.value;
-                    setAnnualExpenses(val === "" ? "" : Number(val));
+                    const val = e.target.value === "" ? "" : Number(e.target.value);
+                    setAnnualExpenses(val);
                   }}
                 />
               </div>
+
+              {(tuiNum > 0 || houseNum > 0) && (
+                <div className="cyp-breakdown-row">
+                  <span>{t("cyp.totalExpenses.breakdown").replace("{tuition}", formatMoney(tuiNum)).replace("{housing}", formatMoney(houseNum))}</span>
+                  <strong>= {formatMoney(expNum)} / yr</strong>
+                </div>
+              )}
             </div>
 
+            {/* Years to Graduate */}
+            <div className="cyp-form-group">
+              <label htmlFor={yearsId}>{t("cyp.years.q")}</label>
+              <input
+                id={yearsId}
+                type="number"
+                min="1"
+                max="6"
+                className="cyp-input"
+                value={years === "" ? "" : years}
+                onChange={(e) => {
+                  const val = e.target.value;
+                  setYears(val === "" ? "" : Number(val));
+                }}
+              />
+            </div>
+
+            {/* Savings & Scholarships */}
             <div className="cyp-form-group">
               <label htmlFor={savingsId}>{t("cyp.savings.q")}</label>
               <div className="cyp-money-wrap">
@@ -230,13 +399,13 @@ export function ChartYourPathMockup() {
                   min="0"
                   placeholder="0"
                   className="cyp-input money-input"
-                  value={savingsScholarships === 0 && savingsScholarships !== "" ? "0" : savingsScholarships}
+                  value={savingsScholarships === "" ? "" : savingsScholarships}
                   onFocus={(e) => {
                     if (savingsScholarships === 0) e.target.select();
                   }}
                   onChange={(e) => {
-                    const val = e.target.value;
-                    setSavingsScholarships(val === "" ? "" : Number(val));
+                    const val = e.target.value === "" ? "" : Number(e.target.value);
+                    setSavingsScholarships(val);
                   }}
                 />
               </div>
@@ -258,7 +427,14 @@ export function ChartYourPathMockup() {
               <p className="cyp-limits-desc">{t("cyp.limits.desc")}</p>
 
               <div className="cyp-results-box">
-                {school && <div className="cyp-selected-school">🎓 {school}</div>}
+                {selectedSchool ? (
+                  <div className="cyp-selected-school">
+                    🎓 {selectedSchool.name} ({residency === "inState" ? t("cyp.residency.inState") : t("cyp.residency.outOfState")})
+                  </div>
+                ) : school ? (
+                  <div className="cyp-selected-school">🎓 {school}</div>
+                ) : null}
+
                 <div className="cyp-res-row">
                   <span>{t("cyp.summary.cost")}</span>
                   <strong>{formatMoney(expNum)}</strong>
@@ -301,11 +477,27 @@ export function ChartYourPathMockup() {
                 )}
               </div>
             </div>
+
+            {/* Prominent Tuition Tracker Attribution & Methodology Citation */}
+            <div className="cyp-citation-card">
+              <div className="cyp-citation-header">
+                <span>📊</span>
+                <span>{t("cyp.citation.title")}</span>
+              </div>
+              <p>{t("cyp.citation.body")}</p>
+              <a
+                href="https://www.tuitiontracker.org/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                {t("cyp.citation.visitLink")}
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* 2. FUNDING GAP RESULT SECTION (EXACT MOCKUP 2) */}
+      {/* 2. FUNDING GAP RESULT SECTION */}
       {hasCalculated && (
         <div className="cyp-result-step" ref={resultRef}>
           <div className="cyp-hero">
@@ -378,7 +570,7 @@ export function ChartYourPathMockup() {
         </div>
       </div>
 
-      {/* Ready When You Are Banner (Preparation Checklist Link) */}
+      {/* Ready When You Are Banner */}
       <div className="cyp-ready-banner">
         <div className="cyp-ready-content">
           <h3>{t("cyp.ready.title")}</h3>
