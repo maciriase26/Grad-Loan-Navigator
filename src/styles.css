@@ -3787,7 +3787,9 @@ article.syndicated-body {
   color: var(--teal);
 }
 .cyp-suggestion-item .inst-icon {
-  font-size: 14px;
+  font-size: 11px;
+  color: var(--teal);
+  line-height: 1;
 }
 
 .cyp-selected-school {
@@ -4031,6 +4033,12 @@ article.syndicated-body {
   font-size: 13px;
   color: var(--ink);
   margin-bottom: 6px;
+}
+.cyp-citation-sym {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--teal);
 }
 .cyp-citation-card p {
   margin: 0 0 8px;

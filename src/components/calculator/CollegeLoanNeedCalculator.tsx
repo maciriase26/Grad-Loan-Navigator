@@ -171,7 +171,7 @@ export function CollegeLoanNeedCalculator() {
           <div className="calc-fields">
             {/* School Search & Autofill Header */}
             <div className="calc-field" ref={schoolDropdownRef} style={{ position: "relative" }}>
-              <label htmlFor={schoolSearchId}>🎓 {t("calc.school.search")}</label>
+              <label htmlFor={schoolSearchId}>◆ {t("calc.school.search")}</label>
               {!selectedSchool ? (
                 <>
                   <input
@@ -195,7 +195,7 @@ export function CollegeLoanNeedCalculator() {
                           className="cyp-suggestion-item"
                           onClick={() => handleSelectSchool(inst)}
                         >
-                          <span className="inst-icon">🎓</span>
+                          <span className="inst-icon">◆</span>
                           <div className="cyp-suggestion-main">
                             <div className="cyp-suggestion-name">{inst.name}</div>
                             <div className="cyp-suggestion-sub">
@@ -217,7 +217,7 @@ export function CollegeLoanNeedCalculator() {
                 <div className="cyp-selected-card">
                   <div className="cyp-selected-info">
                     <div className="cyp-selected-name" style={{ fontSize: "13px" }}>
-                      🎓 {selectedSchool.name}
+                      <span className="inst-icon">◆</span> {selectedSchool.name}
                     </div>
                     <div className="cyp-selected-meta">
                       <span className={`cyp-badge ${selectedSchool.isPublic ? "public" : "private"}`}>
@@ -247,7 +247,7 @@ export function CollegeLoanNeedCalculator() {
                     className={`cyp-residency-btn ${residency === "inState" ? "active" : ""}`}
                     onClick={() => handleResidencyChange("inState")}
                   >
-                    <span className="cyp-residency-title">🏠 {t("cyp.residency.inState")}</span>
+                    <span className="cyp-residency-title">{t("cyp.residency.inState")}</span>
                     <span className="cyp-residency-price">{formatCurrency(selectedSchool.inState)}</span>
                   </button>
                   <button
@@ -255,7 +255,7 @@ export function CollegeLoanNeedCalculator() {
                     className={`cyp-residency-btn ${residency === "outOfState" ? "active" : ""}`}
                     onClick={() => handleResidencyChange("outOfState")}
                   >
-                    <span className="cyp-residency-title">✈️ {t("cyp.residency.outOfState")}</span>
+                    <span className="cyp-residency-title">{t("cyp.residency.outOfState")}</span>
                     <span className="cyp-residency-price">{formatCurrency(selectedSchool.outOfState)}</span>
                   </button>
                 </div>
@@ -588,7 +588,7 @@ export function CollegeLoanNeedCalculator() {
         {/* 2026 Federal Limit Rule Assessment Status */}
         <div className={`calc-status-box ${isExceedingCap ? "status-warning" : "status-ok"}`}>
           <div className="status-top">
-            <span className="status-badge-icon">{isExceedingCap ? "⚠️" : "✓"}</span>
+            <span className="status-badge-icon">{isExceedingCap ? "!" : "✓"}</span>
             <strong>{t("calc.result.statusLabel")}:</strong>
           </div>
           <p>
@@ -607,7 +607,7 @@ export function CollegeLoanNeedCalculator() {
         {/* Tuition Tracker Citation Card */}
         <div className="cyp-citation-card" style={{ marginTop: "20px" }}>
           <div className="cyp-citation-header">
-            <span>📊</span>
+            <span className="cyp-citation-sym">§</span>
             <span>{t("cyp.citation.title")}</span>
           </div>
           <p>{t("cyp.citation.body")}</p>

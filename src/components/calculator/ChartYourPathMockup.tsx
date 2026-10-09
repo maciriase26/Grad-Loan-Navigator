@@ -170,7 +170,7 @@ export function ChartYourPathMockup() {
                           className="cyp-suggestion-item"
                           onClick={() => handleSelectSchool(inst)}
                         >
-                          <span className="inst-icon">🎓</span>
+                          <span className="inst-icon">◆</span>
                           <div className="cyp-suggestion-main">
                             <div className="cyp-suggestion-name">{inst.name}</div>
                             <div className="cyp-suggestion-sub">
@@ -196,7 +196,7 @@ export function ChartYourPathMockup() {
                 <div className="cyp-selected-card">
                   <div className="cyp-selected-info">
                     <div className="cyp-selected-name">
-                      <span>🎓</span> {selectedSchool.name}
+                      <span className="inst-icon">◆</span> {selectedSchool.name}
                     </div>
                     <div className="cyp-selected-meta">
                       <span className={`cyp-badge ${selectedSchool.isPublic ? "public" : "private"}`}>
@@ -227,7 +227,7 @@ export function ChartYourPathMockup() {
                   className={`cyp-residency-btn ${residency === "inState" ? "active" : ""}`}
                   onClick={() => handleResidencyChange("inState")}
                 >
-                  <span className="cyp-residency-title">🏠 {t("cyp.residency.inState")}</span>
+                  <span className="cyp-residency-title">{t("cyp.residency.inState")}</span>
                   {selectedSchool && (
                     <span className="cyp-residency-price">{formatMoney(selectedSchool.inState)}/yr</span>
                   )}
@@ -237,7 +237,7 @@ export function ChartYourPathMockup() {
                   className={`cyp-residency-btn ${residency === "outOfState" ? "active" : ""}`}
                   onClick={() => handleResidencyChange("outOfState")}
                 >
-                  <span className="cyp-residency-title">✈️ {t("cyp.residency.outOfState")}</span>
+                  <span className="cyp-residency-title">{t("cyp.residency.outOfState")}</span>
                   {selectedSchool && (
                     <span className="cyp-residency-price">{formatMoney(selectedSchool.outOfState)}/yr</span>
                   )}
@@ -245,7 +245,7 @@ export function ChartYourPathMockup() {
               </div>
               {selectedSchool && !selectedSchool.isPublic && (
                 <div className="cyp-residency-note">
-                  ℹ️ {t("cyp.residency.privateNote")}
+                  * {t("cyp.residency.privateNote")}
                 </div>
               )}
             </div>
@@ -282,7 +282,7 @@ export function ChartYourPathMockup() {
                   </div>
                   {selectedSchool.netPrice > 0 && (
                     <div className="cyp-net-price-tip">
-                      💡 {t("cyp.school.netPriceNote").replace("{amount}", formatMoney(selectedSchool.netPrice))}
+                      * {t("cyp.school.netPriceNote").replace("{amount}", formatMoney(selectedSchool.netPrice))}
                     </div>
                   )}
                 </>
@@ -429,10 +429,10 @@ export function ChartYourPathMockup() {
               <div className="cyp-results-box">
                 {selectedSchool ? (
                   <div className="cyp-selected-school">
-                    🎓 {selectedSchool.name} ({residency === "inState" ? t("cyp.residency.inState") : t("cyp.residency.outOfState")})
+                    ◆ {selectedSchool.name} ({residency === "inState" ? t("cyp.residency.inState") : t("cyp.residency.outOfState")})
                   </div>
                 ) : school ? (
-                  <div className="cyp-selected-school">🎓 {school}</div>
+                  <div className="cyp-selected-school">◆ {school}</div>
                 ) : null}
 
                 <div className="cyp-res-row">
@@ -481,7 +481,7 @@ export function ChartYourPathMockup() {
             {/* Prominent Tuition Tracker Attribution & Methodology Citation */}
             <div className="cyp-citation-card">
               <div className="cyp-citation-header">
-                <span>📊</span>
+                <span className="cyp-citation-sym">§</span>
                 <span>{t("cyp.citation.title")}</span>
               </div>
               <p>{t("cyp.citation.body")}</p>
