@@ -44,6 +44,8 @@ import { Route as BlogStudentLoansPoliticalBackgroundAndFutureRouteImport } from
 import { Route as BlogTuitionVsInflationWhichHasGrownMoreRouteImport } from './routes/blog_.tuition-vs-inflation-which-has-grown-more'
 import { Route as BlogUniversityOfFloridaTopTierValueRouteImport } from './routes/blog_.university-of-florida-top-tier-value'
 import { Route as BlogValueLawSchoolsRouteImport } from './routes/blog_.value-law-schools'
+import { Route as BlogWhenShouldYouGetAMastersDegreeRouteImport } from './routes/blog_.when-should-you-get-a-masters-degree'
+import { Route as BlogWhenToGetMastersDegreeRouteImport } from './routes/blog_.when-to-get-masters-degree'
 import { Route as BlogWhichLawSchoolsAreWorthItRouteImport } from './routes/blog_.which-law-schools-are-worth-it'
 import { Route as BlogWhichPhdFieldsAreWorthItRouteImport } from './routes/blog_.which-phd-fields-are-worth-it'
 import { Route as FaqSlugRouteImport } from './routes/faq/$slug'
@@ -238,6 +240,18 @@ const BlogValueLawSchoolsRoute = BlogValueLawSchoolsRouteImport.update({
   path: '/blog/value-law-schools',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogWhenShouldYouGetAMastersDegreeRoute =
+  BlogWhenShouldYouGetAMastersDegreeRouteImport.update({
+    id: '/blog_/when-should-you-get-a-masters-degree',
+    path: '/blog/when-should-you-get-a-masters-degree',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogWhenToGetMastersDegreeRoute =
+  BlogWhenToGetMastersDegreeRouteImport.update({
+    id: '/blog_/when-to-get-masters-degree',
+    path: '/blog/when-to-get-masters-degree',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogWhichLawSchoolsAreWorthItRoute =
   BlogWhichLawSchoolsAreWorthItRouteImport.update({
     id: '/blog_/which-law-schools-are-worth-it',
@@ -304,6 +318,8 @@ export interface FileRoutesByFullPath {
   '/blog/tuition-vs-inflation-which-has-grown-more': typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   '/blog/university-of-florida-top-tier-value': typeof BlogUniversityOfFloridaTopTierValueRoute
   '/blog/value-law-schools': typeof BlogValueLawSchoolsRoute
+  '/blog/when-should-you-get-a-masters-degree': typeof BlogWhenShouldYouGetAMastersDegreeRoute
+  '/blog/when-to-get-masters-degree': typeof BlogWhenToGetMastersDegreeRoute
   '/blog/which-law-schools-are-worth-it': typeof BlogWhichLawSchoolsAreWorthItRoute
   '/blog/which-phd-fields-are-worth-it': typeof BlogWhichPhdFieldsAreWorthItRoute
   '/faq/$slug': typeof FaqSlugRoute
@@ -346,6 +362,8 @@ export interface FileRoutesByTo {
   '/blog/tuition-vs-inflation-which-has-grown-more': typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   '/blog/university-of-florida-top-tier-value': typeof BlogUniversityOfFloridaTopTierValueRoute
   '/blog/value-law-schools': typeof BlogValueLawSchoolsRoute
+  '/blog/when-should-you-get-a-masters-degree': typeof BlogWhenShouldYouGetAMastersDegreeRoute
+  '/blog/when-to-get-masters-degree': typeof BlogWhenToGetMastersDegreeRoute
   '/blog/which-law-schools-are-worth-it': typeof BlogWhichLawSchoolsAreWorthItRoute
   '/blog/which-phd-fields-are-worth-it': typeof BlogWhichPhdFieldsAreWorthItRoute
   '/faq/$slug': typeof FaqSlugRoute
@@ -389,6 +407,8 @@ export interface FileRoutesById {
   '/blog_/tuition-vs-inflation-which-has-grown-more': typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   '/blog_/university-of-florida-top-tier-value': typeof BlogUniversityOfFloridaTopTierValueRoute
   '/blog_/value-law-schools': typeof BlogValueLawSchoolsRoute
+  '/blog_/when-should-you-get-a-masters-degree': typeof BlogWhenShouldYouGetAMastersDegreeRoute
+  '/blog_/when-to-get-masters-degree': typeof BlogWhenToGetMastersDegreeRoute
   '/blog_/which-law-schools-are-worth-it': typeof BlogWhichLawSchoolsAreWorthItRoute
   '/blog_/which-phd-fields-are-worth-it': typeof BlogWhichPhdFieldsAreWorthItRoute
   '/faq/$slug': typeof FaqSlugRoute
@@ -433,6 +453,8 @@ export interface FileRouteTypes {
     | '/blog/tuition-vs-inflation-which-has-grown-more'
     | '/blog/university-of-florida-top-tier-value'
     | '/blog/value-law-schools'
+    | '/blog/when-should-you-get-a-masters-degree'
+    | '/blog/when-to-get-masters-degree'
     | '/blog/which-law-schools-are-worth-it'
     | '/blog/which-phd-fields-are-worth-it'
     | '/faq/$slug'
@@ -475,6 +497,8 @@ export interface FileRouteTypes {
     | '/blog/tuition-vs-inflation-which-has-grown-more'
     | '/blog/university-of-florida-top-tier-value'
     | '/blog/value-law-schools'
+    | '/blog/when-should-you-get-a-masters-degree'
+    | '/blog/when-to-get-masters-degree'
     | '/blog/which-law-schools-are-worth-it'
     | '/blog/which-phd-fields-are-worth-it'
     | '/faq/$slug'
@@ -517,6 +541,8 @@ export interface FileRouteTypes {
     | '/blog_/tuition-vs-inflation-which-has-grown-more'
     | '/blog_/university-of-florida-top-tier-value'
     | '/blog_/value-law-schools'
+    | '/blog_/when-should-you-get-a-masters-degree'
+    | '/blog_/when-to-get-masters-degree'
     | '/blog_/which-law-schools-are-worth-it'
     | '/blog_/which-phd-fields-are-worth-it'
     | '/faq/$slug'
@@ -560,6 +586,8 @@ export interface RootRouteChildren {
   BlogTuitionVsInflationWhichHasGrownMoreRoute: typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   BlogUniversityOfFloridaTopTierValueRoute: typeof BlogUniversityOfFloridaTopTierValueRoute
   BlogValueLawSchoolsRoute: typeof BlogValueLawSchoolsRoute
+  BlogWhenShouldYouGetAMastersDegreeRoute: typeof BlogWhenShouldYouGetAMastersDegreeRoute
+  BlogWhenToGetMastersDegreeRoute: typeof BlogWhenToGetMastersDegreeRoute
   BlogWhichLawSchoolsAreWorthItRoute: typeof BlogWhichLawSchoolsAreWorthItRoute
   BlogWhichPhdFieldsAreWorthItRoute: typeof BlogWhichPhdFieldsAreWorthItRoute
   FaqSlugRoute: typeof FaqSlugRoute
@@ -814,6 +842,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogValueLawSchoolsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog_/when-should-you-get-a-masters-degree': {
+      id: '/blog_/when-should-you-get-a-masters-degree'
+      path: '/blog/when-should-you-get-a-masters-degree'
+      fullPath: '/blog/when-should-you-get-a-masters-degree'
+      preLoaderRoute: typeof BlogWhenShouldYouGetAMastersDegreeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog_/when-to-get-masters-degree': {
+      id: '/blog_/when-to-get-masters-degree'
+      path: '/blog/when-to-get-masters-degree'
+      fullPath: '/blog/when-to-get-masters-degree'
+      preLoaderRoute: typeof BlogWhenToGetMastersDegreeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog_/which-law-schools-are-worth-it': {
       id: '/blog_/which-law-schools-are-worth-it'
       path: '/blog/which-law-schools-are-worth-it'
@@ -897,6 +939,9 @@ const rootRouteChildren: RootRouteChildren = {
   BlogUniversityOfFloridaTopTierValueRoute:
     BlogUniversityOfFloridaTopTierValueRoute,
   BlogValueLawSchoolsRoute: BlogValueLawSchoolsRoute,
+  BlogWhenShouldYouGetAMastersDegreeRoute:
+    BlogWhenShouldYouGetAMastersDegreeRoute,
+  BlogWhenToGetMastersDegreeRoute: BlogWhenToGetMastersDegreeRoute,
   BlogWhichLawSchoolsAreWorthItRoute: BlogWhichLawSchoolsAreWorthItRoute,
   BlogWhichPhdFieldsAreWorthItRoute: BlogWhichPhdFieldsAreWorthItRoute,
   FaqSlugRoute: FaqSlugRoute,

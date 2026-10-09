@@ -749,6 +749,39 @@ export const SEARCH_INDEX: SearchItem[] = [
       "ley de certeza",
     ],
   },
+  {
+    id: "article-when-to-get-masters-degree",
+    category: "articles",
+    titleEn: "When Should You Get a Master’s Degree?",
+    titleEs: "¿Cuándo Deberías Obtener una Maestría?",
+    descEn:
+      "A master’s degree can boost long-term career prospects and future earnings. But when is it not worth it? An age, opportunity cost, and payoff analysis by Jaylen Peng.",
+    descEs:
+      "Una maestría puede impulsar tus perspectivas profesionales y tus ingresos futuros. ¿Pero cuándo no vale la pena? Un análisis de edad, costo de oportunidad y amortización por Jaylen Peng.",
+    url: "/blog/when-to-get-masters-degree",
+    badgeEn: "4 min read",
+    badgeEs: "4 min lectura",
+    keywords: [
+      "when to get a master's degree",
+      "when should you get a master's degree",
+      "master's degree roi",
+      "jaylen peng",
+      "opportunity cost graduate school",
+      "forgone wages",
+      "average graduate student age",
+      "master's wage premium",
+      "payoff horizon",
+      "graduate degree at 30",
+      "graduate degree at 40",
+      "graduate degree at 50",
+      "is it too late for a master's",
+      "cuándo obtener una maestría",
+      "maestría vale la pena",
+      "costo de oportunidad maestría",
+      "edad estudiante de posgrado",
+      "prima salarial posgrado",
+    ],
+  },
 
   /* ---------- Experian In-Depth & External Resources ---------- */
   {

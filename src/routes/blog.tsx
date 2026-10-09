@@ -858,6 +858,48 @@ function BlogPage() {
                 </span>
               </div>
             </Link>
+
+            {/* When Should You Get a Master's Degree Article */}
+            <Link
+              className="path-card card-a"
+              to="/blog/when-to-get-masters-degree"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <span className="path-subheader">{t("blog.card19.tag")}</span>
+              <h2>{t("blog.card19.title")}</h2>
+              <p className="desc">{t("blog.card19.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-end",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                  gap: "12px",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
+                  }}
+                >
+                  {t("blog.card19.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card19.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
           </div>
         </section>
       </main>

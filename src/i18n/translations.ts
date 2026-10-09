@@ -1034,6 +1034,128 @@ export const en = {
     "Model your estimated borrowing gap, payoff schedule, and total interest charges using our interactive borrowing calculator.",
   "irh.cta.btn": "Chart your path",
 
+  /* ---------- When Should You Get a Master's Degree Article (English) ---------- */
+  "blog.card19.tag": "Graduate School · 4 min read",
+  "blog.card19.title": "When Should You Get a Master’s Degree?",
+  "blog.card19.excerpt":
+    "A master’s degree can boost long-term career prospects and future earnings. But when is it not worth it? An age, opportunity cost, and payoff analysis.",
+  "blog.card19.author": "Jaylen Peng\nReviewed Sept 2026",
+  "blog.card19.cta": "Read article",
+
+  "wmd.meta.title": "When Should You Get a Master’s Degree? — Grad Loan Navigator",
+  "wmd.meta.desc":
+    "A master's degree can boost long-term career prospects and future earnings. But when is it not worth it? Age, opportunity cost, and payoff analysis by Jaylen Peng.",
+  "wmd.eyebrow": "Graduate Degree ROI · 4 min read",
+  "wmd.h1": "When Should You Get a Master’s Degree?",
+  "wmd.sub":
+    "A master’s degree can boost long-term career prospects and future earnings. But when is it not worth it?",
+  "wmd.updated": "Jaylen Peng Reviewed as of Sept. 28, 2026",
+  "wmd.why.title": "Why it matters",
+  "wmd.why.p":
+    "You can go back to school for a master’s degree at any age. Knowing how the timing of your degree affects your future earnings helps you decide whether it’s right for you.",
+  "wmd.numbers.title": "By the numbers",
+  "wmd.numbers.lead":
+    "The average graduate student in the U.S. is 33 years old. 22% of graduate students are over 40.",
+  "wmd.stat.avgAge": "33 years old",
+  "wmd.stat.avgAge.label": "Average U.S. Graduate Student Age",
+  "wmd.stat.over40": "22%",
+  "wmd.stat.over40.label": "Graduate Students Over Age 40",
+  "wmd.stat.cost": "$62,820",
+  "wmd.stat.cost.label": "Average Master's Degree Cost",
+  "wmd.stat.premium": "$17,250",
+  "wmd.stat.premium.label": "Annual Master's Wage Premium",
+  "wmd.stat.payoff": "3.64 yrs",
+  "wmd.stat.payoff.label": "Baseline Direct Payoff Horizon",
+
+  "wmd.nav.payoff": "1. Payoff Horizon",
+  "wmd.nav.oppcost": "2. Opportunity Cost",
+  "wmd.nav.age": "3. How Age Matters",
+  "wmd.nav.toolate": "4. Is It Too Late?",
+  "wmd.nav.bottomline": "5. The Bottom Line",
+
+  "wmd.part1": "Part 1 of 4",
+  "wmd.payoff.h2": "How Long Will It Take You to Pay It Off?",
+  "wmd.payoff.p1":
+    "On average, a master’s degree costs $62,820 and comes with an annual $17,250 wage premium. This means, on average, it will take you 3.64 years to get a return on your investment, but this does not account for what you give up by going back to school.",
+  "wmd.oppcost.lead":
+    "You must also consider the opportunity cost of how long it takes you to complete the degree (usually two years):",
+  "wmd.oppcost.item1.title": "1. Forgone wages",
+  "wmd.oppcost.item1.desc":
+    "The income you would have received had you continued working full time instead of enrolling.",
+  "wmd.oppcost.item2.title": "2. Foregone professional development",
+  "wmd.oppcost.item2.desc":
+    "The skills, experience, relationships, and seniority you would have accumulated in your organization or industry.",
+
+  "wmd.part2": "Part 2 of 4",
+  "wmd.age.h2": "How Does Your Age Matter?",
+  "wmd.age.lead":
+    "Your age and career status impact the cost-benefit analysis of a master’s degree.",
+  "wmd.age.chart.title": "Years to Pay Off vs. Age When Starting the Degree",
+  "wmd.age.chart.formula":
+    "Estimated payoff time equals total master’s cost ($62,820 in tuition plus earnings forgone while enrolled) divided by the $17,250 annual wage premium. Foregone earnings reflect average earnings without a graduate degree at each starting age; results are rounded to the nearest 0.1 year.",
+  "wmd.age.chart.yAxis": "Years to Pay Off",
+  "wmd.age.chart.xAxis": "Age When Starting the Degree",
+  "wmd.age.chart.allMajors": "All Fields",
+  "wmd.age.chart.filterPrompt": "Click any field in the legend to highlight its trajectory:",
+
+  "wmd.age.cost.title": "Cost: Higher Opportunity Cost Later in Career",
+  "wmd.age.cost.p":
+    "On average, older people who are farther along in their career have a higher income. This means the opportunity cost is higher. Most job promotions also occur between ages 25-44. Depending on your career and employer, taking time away could potentially hurt your chances and earnings.",
+  "wmd.age.benefit.title": "Benefit: Earlier Completion Yields More Compounding Years",
+  "wmd.age.benefit.p":
+    "Getting your master’s degree earlier will give you more time to use it. It might help you enter higher-paying positions sooner and stay on an advanced career track.",
+
+  "wmd.table.title": "Estimated Payoff Timeline by Field & Starting Age",
+  "wmd.table.colField": "Field of Study",
+  "wmd.table.colAge30": "Age 30",
+  "wmd.table.colAge40": "Age 40",
+  "wmd.table.colAge50": "Age 50",
+  "wmd.table.colAge60": "Age 60",
+
+  "wmd.part3": "Part 3 of 4",
+  "wmd.toolate.h2": "Is It Too Late?",
+  "wmd.toolate.lead":
+    "Despite the higher opportunity costs, there are still benefits to getting a master’s degree later on. The degree can still lead to higher lifetime earnings. However, the outcome is less clear. You should consider:",
+  "wmd.toolate.c1.title": "Years remaining in your career",
+  "wmd.toolate.c1.desc":
+    "The fewer years you plan to work, the less time you have to recover the costs.",
+  "wmd.toolate.c2.title": "Professional advancement",
+  "wmd.toolate.c2.desc":
+    "Employers may value additional experience more than another degree. Consider whether the degree will make a meaningful difference in your specific field and career path.",
+  "wmd.toolate.c3.title": "Career change",
+  "wmd.toolate.c3.desc":
+    "If you are planning to enter a different field, a master’s degree may signal additional credentials, technical skills, and provide a strong network.",
+  "wmd.toolate.c4.title": "Debt and retirement",
+  "wmd.toolate.c4.desc":
+    "Consider whether tuition will impact your retirement savings or interfere with your other financial priorities.",
+  "wmd.toolate.c5.title": "Personal goals",
+  "wmd.toolate.c5.desc":
+    "A master’s degree can help you achieve other nonfinancial goals such as access to research or academic fulfillment.",
+
+  "wmd.part4": "Part 4 of 4",
+  "wmd.bottomline.h2": "The Bottom Line",
+  "wmd.bottomline.lead":
+    "Typically, earlier is better. You give up less and have more time to collect the benefits. However, being older doesn’t disqualify you, and a master’s degree could still offer a meaningful boost. Consider where you are in your career and both your professional and personal goals.",
+  "wmd.cta.h2": "Calculate Your Personalized Degree Payoff",
+  "wmd.cta.p":
+    "Estimate your tuition, borrowing caps, opportunity costs, and post-grad earnings using our interactive calculator.",
+  "wmd.cta.btn": "Chart your path",
+
+  "wmd.sources.label": "Sources & References:",
+  "wmd.sources.text":
+    "U.S. News & World Report, Bureau of Labor Statistics, ADP Research, Education Data Initiative, Council of Graduate Schools, FREOPP Reviewed as of Sept. 28, 2026.",
+
+  "wmd.major.business": "Business administration",
+  "wmd.major.nursing": "Nursing",
+  "wmd.major.accounting": "Accounting",
+  "wmd.major.specialEd": "Special education",
+  "wmd.major.teacherSubjects": "Teacher education (subjects)",
+  "wmd.major.eduAdmin": "Education administration",
+  "wmd.major.teacherLevels": "Teacher education (levels)",
+  "wmd.major.studentCounseling": "Student counseling",
+  "wmd.major.psychology": "Clinical/applied psychology",
+  "wmd.major.socialWork": "Social work",
+
 
   "pol.meta.title": "Student Loans Political Background and Future — Grad Loan Navigator",
   "pol.meta.desc":
@@ -3727,6 +3849,128 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "irh.cta.p":
     "Modela tu brecha estimada de financiamiento, calendario de pago e intereses totales con nuestra calculadora de préstamos interactiva.",
   "irh.cta.btn": "Traza tu camino",
+
+  /* ---------- When Should You Get a Master's Degree Article (Spanish) ---------- */
+  "blog.card19.tag": "Posgrado · Lectura de 4 min",
+  "blog.card19.title": "¿Cuándo Deberías Obtener una Maestría?",
+  "blog.card19.excerpt":
+    "Una maestría puede impulsar tus perspectivas profesionales y tus ingresos futuros. ¿Pero cuándo no vale la pena? Un análisis de edad, costo de oportunidad y amortización.",
+  "blog.card19.author": "Jaylen Peng\nRevisado Sep 2026",
+  "blog.card19.cta": "Leer artículo",
+
+  "wmd.meta.title": "¿Cuándo Deberías Obtener una Maestría? — Grad Loan Navigator",
+  "wmd.meta.desc":
+    "Una maestría puede impulsar tus perspectivas profesionales y tus ingresos futuros. ¿Pero cuándo no vale la pena? Análisis de edad, costo de oportunidad y amortización de Jaylen Peng.",
+  "wmd.eyebrow": "ROI de Posgrado · Lectura de 4 min",
+  "wmd.h1": "¿Cuándo Deberías Obtener una Maestría?",
+  "wmd.sub":
+    "Una maestría puede impulsar las perspectivas profesionales a largo plazo y los ingresos futuros. ¿Pero cuándo no vale la pena?",
+  "wmd.updated": "Jaylen Peng Revisado al 28 de sept, 2026",
+  "wmd.why.title": "Por qué es importante",
+  "wmd.why.p":
+    "Puedes volver a la universidad para cursar una maestría a cualquier edad. Saber cómo influye el momento en que obtienes tu título en tus ingresos futuros te ayuda a decidir si es adecuado para ti.",
+  "wmd.numbers.title": "En cifras",
+  "wmd.numbers.lead":
+    "El estudiante de posgrado promedio en EE. UU. tiene 33 años. El 22% de los estudiantes de posgrado tienen más de 40 años.",
+  "wmd.stat.avgAge": "33 años",
+  "wmd.stat.avgAge.label": "Edad promedio del estudiante de posgrado en EE. UU.",
+  "wmd.stat.over40": "22%",
+  "wmd.stat.over40.label": "Estudiantes de posgrado mayores de 40 años",
+  "wmd.stat.cost": "$62,820",
+  "wmd.stat.cost.label": "Costo promedio de una maestría",
+  "wmd.stat.premium": "$17,250",
+  "wmd.stat.premium.label": "Prima salarial anual promedio de maestría",
+  "wmd.stat.payoff": "3.64 años",
+  "wmd.stat.payoff.label": "Plazo base directo de amortización",
+
+  "wmd.nav.payoff": "1. Plazo de Amortización",
+  "wmd.nav.oppcost": "2. Costo de Oportunidad",
+  "wmd.nav.age": "3. Cómo Influye la Edad",
+  "wmd.nav.toolate": "4. ¿Es Demasiado Tarde?",
+  "wmd.nav.bottomline": "5. En Conclusión",
+
+  "wmd.part1": "Parte 1 de 4",
+  "wmd.payoff.h2": "¿Cuánto Tiempo Te Tomará Pagarlor?",
+  "wmd.payoff.p1":
+    "En promedio, una maestría cuesta $62,820 y conlleva una prima salarial anual de $17,250. Esto significa que, en promedio, te tomará 3.64 años recuperar tu inversión, pero esto no tiene en cuenta lo que sacrificas al volver a estudiar.",
+  "wmd.oppcost.lead":
+    "También debes considerar el costo de oportunidad del tiempo que tardas en completar el título (generalmente dos años):",
+  "wmd.oppcost.item1.title": "1. Salarios no percibidos",
+  "wmd.oppcost.item1.desc":
+    "Los ingresos que habrías recibido si hubieras continuado trabajando a tiempo completo en lugar de matricularte.",
+  "wmd.oppcost.item2.title": "2. Desarrollo profesional no acumulado",
+  "wmd.oppcost.item2.desc":
+    "Las habilidades, experiencia, relaciones y antigüedad que habrías acumulado en tu organización o industria.",
+
+  "wmd.part2": "Parte 2 de 4",
+  "wmd.age.h2": "¿Cómo Influye Tu Edad?",
+  "wmd.age.lead":
+    "Tu edad y etapa laboral impactan el análisis costo-beneficio de una maestría.",
+  "wmd.age.chart.title": "Años para Amortizar vs. Edad al Iniciar el Título",
+  "wmd.age.chart.formula":
+    "El tiempo estimado de amortización equivale al costo total de la maestría ($62,820 en matrícula más ingresos no percibidos mientras estás matriculado) dividido entre la prima salarial anual de $17,250. Los ingresos no percibidos reflejan los ingresos promedio sin título de posgrado en cada edad inicial; los resultados se redondean al 0.1 de año más cercano.",
+  "wmd.age.chart.yAxis": "Años para amortizar",
+  "wmd.age.chart.xAxis": "Edad al iniciar el título",
+  "wmd.age.chart.allMajors": "Todos los campos",
+  "wmd.age.chart.filterPrompt": "Haz clic en cualquier campo de la leyenda para destacar su trayectoria:",
+
+  "wmd.age.cost.title": "Costo: Mayor Costo de Oportunidad en Etapas Avanzadas",
+  "wmd.age.cost.p":
+    "En promedio, las personas mayores que están más avanzadas en su carrera perciben ingresos más altos. Esto significa que el costo de oportunidad es mayor. La mayoría de los ascensos laborales también ocurren entre los 25 y 44 años. Dependiendo de tu campo y empleador, apartarte del trabajo podría perjudicar tus opciones y remuneración.",
+  "wmd.age.benefit.title": "Beneficio: Obtenerlo Antes Ofrece Más Años para Acumular Ganancias",
+  "wmd.age.benefit.p":
+    "Obtener tu maestría más joven te otorgará más tiempo para aprovecharla. Podría ayudarte a acceder más pronto a puestos con salarios superiores y mantenerte en una trayectoria profesional avanzada.",
+
+  "wmd.table.title": "Cronograma Estimado de Amortización por Campo y Edad Inicial",
+  "wmd.table.colField": "Campo de Estudio",
+  "wmd.table.colAge30": "Edad 30",
+  "wmd.table.colAge40": "Edad 40",
+  "wmd.table.colAge50": "Edad 50",
+  "wmd.table.colAge60": "Edad 60",
+
+  "wmd.part3": "Parte 3 de 4",
+  "wmd.toolate.h2": "¿Es Demasiado Tarde?",
+  "wmd.toolate.lead":
+    "A pesar de los mayores costos de oportunidad, todavía existen beneficios de cursar una maestría en etapas más tardías. El título aún puede conducir a mayores ganancias a lo largo de la vida. Sin embargo, el resultado es menos predecible. Debes considerar:",
+  "wmd.toolate.c1.title": "Años restantes en tu carrera",
+  "wmd.toolate.c1.desc":
+    "Cuantos menos años planees trabajar, menos tiempo tendrás para recuperar los costos.",
+  "wmd.toolate.c2.title": "Avance profesional",
+  "wmd.toolate.c2.desc":
+    "Los empleadores pueden valorar más la experiencia práctica adicional que otro título universitario. Evalúa si el grado marcará una diferencia significativa en tu campo y trayectoria específicos.",
+  "wmd.toolate.c3.title": "Cambio de carrera",
+  "wmd.toolate.c3.desc":
+    "Si planeas cambiar de profesión, una maestría puede acreditar credenciales suplementarias, competencias técnicas y una red de contactos sólida.",
+  "wmd.toolate.c4.title": "Deuda y jubilación",
+  "wmd.toolate.c4.desc":
+    "Considera si la matrícula comprometerá tus ahorros para la jubilación o interferirá con tus otras prioridades financieras familiares.",
+  "wmd.toolate.c5.title": "Metas personales",
+  "wmd.toolate.c5.desc":
+    "Una maestría puede ayudarte a cumplir otros objetivos no financieros, como la satisfacción intelectual o el acceso a la investigación académica.",
+
+  "wmd.part4": "Parte 4 de 4",
+  "wmd.bottomline.h2": "En Conclusión",
+  "wmd.bottomline.lead":
+    "Por lo general, cuanto antes, mejor. Renuncias a menos y disfrutas de más tiempo para cosechar los beneficios. No obstante, tener más años no te descalifica, y una maestría todavía puede brindarte un salto relevante. Evalúa tu posición laboral y tus aspiraciones profesionales y personales.",
+  "wmd.cta.h2": "Calcula el Retorno Personalizado de Tu Maestría",
+  "wmd.cta.p":
+    "Estima tu matrícula, límites de endeudamiento, costo de oportunidad y salarios previstos con nuestra calculadora interactiva.",
+  "wmd.cta.btn": "Traza tu camino",
+
+  "wmd.sources.label": "Fuentes y referencias:",
+  "wmd.sources.text":
+    "U.S. News & World Report, Oficina de Estadísticas Laborales (BLS), ADP Research Institute, Education Data Initiative, Consejo de Escuelas de Posgrado, FREOPP. Revisado al 28 de sep. de 2026.",
+
+  "wmd.major.business": "Administración de empresas",
+  "wmd.major.nursing": "Enfermería",
+  "wmd.major.accounting": "Contabilidad",
+  "wmd.major.specialEd": "Educación especial",
+  "wmd.major.teacherSubjects": "Formación docente (asignaturas)",
+  "wmd.major.eduAdmin": "Administración educativa",
+  "wmd.major.teacherLevels": "Formación docente (niveles)",
+  "wmd.major.studentCounseling": "Orientación estudiantil",
+  "wmd.major.psychology": "Psicología clínica/aplicada",
+  "wmd.major.socialWork": "Trabajo social",
 };
 
 export const LANGUAGES = [
