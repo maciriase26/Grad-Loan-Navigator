@@ -165,6 +165,9 @@ export function Index() {
             <Link className="btn-primary" to="/chart-your-path">
               {t("home.cta.rate")}
             </Link>
+            <Link className="btn-secondary" to="/free-money-first">
+              {t("home.cta.freeMoney")}
+            </Link>
             <Link className="btn-secondary" to="/educational-resources">
               {t("home.cta.loans101")}
             </Link>

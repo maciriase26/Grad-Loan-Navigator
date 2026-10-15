@@ -11,10 +11,12 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ApplyRouteImport } from './routes/apply'
+import { Route as BeforeYouBorrowRouteImport } from './routes/before-you-borrow'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ChartYourPathRouteImport } from './routes/chart-your-path'
 import { Route as EditorialStandardsRouteImport } from './routes/editorial-standards'
 import { Route as EducationalResourcesRouteImport } from './routes/educational-resources'
+import { Route as FreeMoneyFirstRouteImport } from './routes/free-money-first'
 import { Route as InDepthAnalysisRouteImport } from './routes/in-depth-analysis'
 import { Route as LendersRouteImport } from './routes/lenders'
 import { Route as LlmsDottxtRouteImport } from './routes/llms[.]txt'
@@ -62,6 +64,11 @@ const ApplyRoute = ApplyRouteImport.update({
   path: '/apply',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BeforeYouBorrowRoute = BeforeYouBorrowRouteImport.update({
+  id: '/before-you-borrow',
+  path: '/before-you-borrow',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogRoute = BlogRouteImport.update({
   id: '/blog',
   path: '/blog',
@@ -80,6 +87,11 @@ const EditorialStandardsRoute = EditorialStandardsRouteImport.update({
 const EducationalResourcesRoute = EducationalResourcesRouteImport.update({
   id: '/educational-resources',
   path: '/educational-resources',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FreeMoneyFirstRoute = FreeMoneyFirstRouteImport.update({
+  id: '/free-money-first',
+  path: '/free-money-first',
   getParentRoute: () => rootRouteImport,
 } as any)
 const InDepthAnalysisRoute = InDepthAnalysisRouteImport.update({
@@ -285,10 +297,12 @@ const ApiPublicHooksRegenerateCategorySummaryRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/apply': typeof ApplyRoute
+  '/before-you-borrow': typeof BeforeYouBorrowRoute
   '/blog': typeof BlogRoute
   '/chart-your-path': typeof ChartYourPathRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/educational-resources': typeof EducationalResourcesRoute
+  '/free-money-first': typeof FreeMoneyFirstRoute
   '/in-depth-analysis': typeof InDepthAnalysisRoute
   '/lenders': typeof LendersRoute
   '/llms.txt': typeof LlmsDottxtRoute
@@ -329,10 +343,12 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/apply': typeof ApplyRoute
+  '/before-you-borrow': typeof BeforeYouBorrowRoute
   '/blog': typeof BlogRoute
   '/chart-your-path': typeof ChartYourPathRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/educational-resources': typeof EducationalResourcesRoute
+  '/free-money-first': typeof FreeMoneyFirstRoute
   '/in-depth-analysis': typeof InDepthAnalysisRoute
   '/lenders': typeof LendersRoute
   '/llms.txt': typeof LlmsDottxtRoute
@@ -374,10 +390,12 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/apply': typeof ApplyRoute
+  '/before-you-borrow': typeof BeforeYouBorrowRoute
   '/blog': typeof BlogRoute
   '/chart-your-path': typeof ChartYourPathRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/educational-resources': typeof EducationalResourcesRoute
+  '/free-money-first': typeof FreeMoneyFirstRoute
   '/in-depth-analysis': typeof InDepthAnalysisRoute
   '/lenders': typeof LendersRoute
   '/llms.txt': typeof LlmsDottxtRoute
@@ -420,10 +438,12 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/apply'
+    | '/before-you-borrow'
     | '/blog'
     | '/chart-your-path'
     | '/editorial-standards'
     | '/educational-resources'
+    | '/free-money-first'
     | '/in-depth-analysis'
     | '/lenders'
     | '/llms.txt'
@@ -464,10 +484,12 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/apply'
+    | '/before-you-borrow'
     | '/blog'
     | '/chart-your-path'
     | '/editorial-standards'
     | '/educational-resources'
+    | '/free-money-first'
     | '/in-depth-analysis'
     | '/lenders'
     | '/llms.txt'
@@ -508,10 +530,12 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/apply'
+    | '/before-you-borrow'
     | '/blog'
     | '/chart-your-path'
     | '/editorial-standards'
     | '/educational-resources'
+    | '/free-money-first'
     | '/in-depth-analysis'
     | '/lenders'
     | '/llms.txt'
@@ -553,10 +577,12 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ApplyRoute: typeof ApplyRoute
+  BeforeYouBorrowRoute: typeof BeforeYouBorrowRoute
   BlogRoute: typeof BlogRoute
   ChartYourPathRoute: typeof ChartYourPathRoute
   EditorialStandardsRoute: typeof EditorialStandardsRoute
   EducationalResourcesRoute: typeof EducationalResourcesRoute
+  FreeMoneyFirstRoute: typeof FreeMoneyFirstRoute
   InDepthAnalysisRoute: typeof InDepthAnalysisRoute
   LendersRoute: typeof LendersRoute
   LlmsDottxtRoute: typeof LlmsDottxtRoute
@@ -611,6 +637,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApplyRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/before-you-borrow': {
+      id: '/before-you-borrow'
+      path: '/before-you-borrow'
+      fullPath: '/before-you-borrow'
+      preLoaderRoute: typeof BeforeYouBorrowRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog': {
       id: '/blog'
       path: '/blog'
@@ -637,6 +670,13 @@ declare module '@tanstack/react-router' {
       path: '/educational-resources'
       fullPath: '/educational-resources'
       preLoaderRoute: typeof EducationalResourcesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/free-money-first': {
+      id: '/free-money-first'
+      path: '/free-money-first'
+      fullPath: '/free-money-first'
+      preLoaderRoute: typeof FreeMoneyFirstRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/in-depth-analysis': {
@@ -897,10 +937,12 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ApplyRoute: ApplyRoute,
+  BeforeYouBorrowRoute: BeforeYouBorrowRoute,
   BlogRoute: BlogRoute,
   ChartYourPathRoute: ChartYourPathRoute,
   EditorialStandardsRoute: EditorialStandardsRoute,
   EducationalResourcesRoute: EducationalResourcesRoute,
+  FreeMoneyFirstRoute: FreeMoneyFirstRoute,
   InDepthAnalysisRoute: InDepthAnalysisRoute,
   LendersRoute: LendersRoute,
   LlmsDottxtRoute: LlmsDottxtRoute,

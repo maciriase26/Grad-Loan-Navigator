@@ -1,4 +1,5 @@
 import { useState, useId, useRef, useEffect } from "react";
+import { Link } from "@tanstack/react-router";
 import { useI18n } from "@/i18n";
 import {
   searchSchools,
@@ -278,7 +279,7 @@ export function CollegeLoanNeedCalculator() {
               </div>
               {selectedSchool && (
                 <div className="cyp-autofill-badge" style={{ fontSize: "11px" }}>
-                  ✓ {t("cyp.school.autofilled")}
+                  ◆ {t("cyp.school.autofilled")}
                 </div>
               )}
             </div>
@@ -359,7 +360,12 @@ export function CollegeLoanNeedCalculator() {
           <div className="calc-card-title">{t("calc.funding.title")}</div>
           <div className="calc-fields">
             <div className="calc-field">
-              <label htmlFor={scholarshipsId}>{t("calc.funding.scholarships")}</label>
+              <div className="calc-label-with-link">
+                <label htmlFor={scholarshipsId}>{t("calc.funding.scholarships")}</label>
+                <Link to="/free-money-first" className="cyp-free-money-link">
+                  {t("cyp.freeMoney.link")} →
+                </Link>
+              </div>
               <div className="calc-input-wrap">
                 <span className="prefix">$</span>
                 <input
@@ -588,7 +594,7 @@ export function CollegeLoanNeedCalculator() {
         {/* 2026 Federal Limit Rule Assessment Status */}
         <div className={`calc-status-box ${isExceedingCap ? "status-warning" : "status-ok"}`}>
           <div className="status-top">
-            <span className="status-badge-icon">{isExceedingCap ? "!" : "✓"}</span>
+            <span className="status-badge-icon">{isExceedingCap ? "!" : "◆"}</span>
             <strong>{t("calc.result.statusLabel")}:</strong>
           </div>
           <p>

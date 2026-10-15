@@ -58,9 +58,19 @@ function PayForSchoolPage() {
           <p className="sub">{t("pfs.sub")}</p>
         </section>
 
-        {/* 3 Cards Row */}
+        {/* Cards Row */}
         <section className="wrap pfs-section">
           <div className="pfs-grid">
+            {/* Card 0: Free money first (Before You Borrow) */}
+            <Link to="/free-money-first" className="pfs-card pfs-card-featured">
+              <span className="pfs-tag pfs-tag-featured">{t("pfs.card0.tag")}</span>
+              <h2>{t("pfs.card0.title")}</h2>
+              <p className="pfs-desc">{t("pfs.card0.desc")}</p>
+              <span className="pfs-arrow">
+                <Arrow />
+              </span>
+            </Link>
+
             {/* Card 1: Do I need a loan? */}
             <Link to="/chart-your-path" className="pfs-card">
               <span className="pfs-tag">{t("pfs.card1.tag")}</span>

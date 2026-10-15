@@ -278,7 +278,7 @@ export function ChartYourPathMockup() {
               {selectedSchool && (
                 <>
                   <div className="cyp-autofill-badge">
-                    ✓ {t("cyp.school.autofilled")}
+                    ◆ {t("cyp.school.autofilled")}
                   </div>
                   {selectedSchool.netPrice > 0 && (
                     <div className="cyp-net-price-tip">
@@ -334,7 +334,7 @@ export function ChartYourPathMockup() {
 
               {housingPreset && housingPreset !== "custom" && (
                 <div className="cyp-autofill-badge">
-                  ✓ {t("cyp.housing.appliedBadge").replace("{amount}", formatMoney(houseNum))}
+                  ◆ {t("cyp.housing.appliedBadge").replace("{amount}", formatMoney(houseNum))}
                 </div>
               )}
             </div>
@@ -389,7 +389,12 @@ export function ChartYourPathMockup() {
 
             {/* Savings & Scholarships */}
             <div className="cyp-form-group">
-              <label htmlFor={savingsId}>{t("cyp.savings.q")}</label>
+              <div className="cyp-label-with-link">
+                <label htmlFor={savingsId}>{t("cyp.savings.q")}</label>
+                <Link to="/free-money-first" className="cyp-free-money-link">
+                  {t("cyp.freeMoney.link")} →
+                </Link>
+              </div>
               <div className="cyp-money-wrap">
                 <span className="prefix">$</span>
                 <input
