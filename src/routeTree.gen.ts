@@ -10,10 +10,12 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AidOfferComparisonRouteImport } from './routes/aid-offer-comparison'
 import { Route as ApplyRouteImport } from './routes/apply'
 import { Route as BeforeYouBorrowRouteImport } from './routes/before-you-borrow'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ChartYourPathRouteImport } from './routes/chart-your-path'
+import { Route as CompareAidOffersRouteImport } from './routes/compare-aid-offers'
 import { Route as EditorialStandardsRouteImport } from './routes/editorial-standards'
 import { Route as EducationalResourcesRouteImport } from './routes/educational-resources'
 import { Route as FreeMoneyFirstRouteImport } from './routes/free-money-first'
@@ -59,6 +61,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AidOfferComparisonRoute = AidOfferComparisonRouteImport.update({
+  id: '/aid-offer-comparison',
+  path: '/aid-offer-comparison',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApplyRoute = ApplyRouteImport.update({
   id: '/apply',
   path: '/apply',
@@ -77,6 +84,11 @@ const BlogRoute = BlogRouteImport.update({
 const ChartYourPathRoute = ChartYourPathRouteImport.update({
   id: '/chart-your-path',
   path: '/chart-your-path',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CompareAidOffersRoute = CompareAidOffersRouteImport.update({
+  id: '/compare-aid-offers',
+  path: '/compare-aid-offers',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EditorialStandardsRoute = EditorialStandardsRouteImport.update({
@@ -296,10 +308,12 @@ const ApiPublicHooksRegenerateCategorySummaryRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/aid-offer-comparison': typeof AidOfferComparisonRoute
   '/apply': typeof ApplyRoute
   '/before-you-borrow': typeof BeforeYouBorrowRoute
   '/blog': typeof BlogRoute
   '/chart-your-path': typeof ChartYourPathRoute
+  '/compare-aid-offers': typeof CompareAidOffersRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/educational-resources': typeof EducationalResourcesRoute
   '/free-money-first': typeof FreeMoneyFirstRoute
@@ -342,10 +356,12 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/aid-offer-comparison': typeof AidOfferComparisonRoute
   '/apply': typeof ApplyRoute
   '/before-you-borrow': typeof BeforeYouBorrowRoute
   '/blog': typeof BlogRoute
   '/chart-your-path': typeof ChartYourPathRoute
+  '/compare-aid-offers': typeof CompareAidOffersRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/educational-resources': typeof EducationalResourcesRoute
   '/free-money-first': typeof FreeMoneyFirstRoute
@@ -389,10 +405,12 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/aid-offer-comparison': typeof AidOfferComparisonRoute
   '/apply': typeof ApplyRoute
   '/before-you-borrow': typeof BeforeYouBorrowRoute
   '/blog': typeof BlogRoute
   '/chart-your-path': typeof ChartYourPathRoute
+  '/compare-aid-offers': typeof CompareAidOffersRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/educational-resources': typeof EducationalResourcesRoute
   '/free-money-first': typeof FreeMoneyFirstRoute
@@ -437,10 +455,12 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/aid-offer-comparison'
     | '/apply'
     | '/before-you-borrow'
     | '/blog'
     | '/chart-your-path'
+    | '/compare-aid-offers'
     | '/editorial-standards'
     | '/educational-resources'
     | '/free-money-first'
@@ -483,10 +503,12 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/aid-offer-comparison'
     | '/apply'
     | '/before-you-borrow'
     | '/blog'
     | '/chart-your-path'
+    | '/compare-aid-offers'
     | '/editorial-standards'
     | '/educational-resources'
     | '/free-money-first'
@@ -529,10 +551,12 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/aid-offer-comparison'
     | '/apply'
     | '/before-you-borrow'
     | '/blog'
     | '/chart-your-path'
+    | '/compare-aid-offers'
     | '/editorial-standards'
     | '/educational-resources'
     | '/free-money-first'
@@ -576,10 +600,12 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AidOfferComparisonRoute: typeof AidOfferComparisonRoute
   ApplyRoute: typeof ApplyRoute
   BeforeYouBorrowRoute: typeof BeforeYouBorrowRoute
   BlogRoute: typeof BlogRoute
   ChartYourPathRoute: typeof ChartYourPathRoute
+  CompareAidOffersRoute: typeof CompareAidOffersRoute
   EditorialStandardsRoute: typeof EditorialStandardsRoute
   EducationalResourcesRoute: typeof EducationalResourcesRoute
   FreeMoneyFirstRoute: typeof FreeMoneyFirstRoute
@@ -630,6 +656,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/aid-offer-comparison': {
+      id: '/aid-offer-comparison'
+      path: '/aid-offer-comparison'
+      fullPath: '/aid-offer-comparison'
+      preLoaderRoute: typeof AidOfferComparisonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/apply': {
       id: '/apply'
       path: '/apply'
@@ -656,6 +689,13 @@ declare module '@tanstack/react-router' {
       path: '/chart-your-path'
       fullPath: '/chart-your-path'
       preLoaderRoute: typeof ChartYourPathRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/compare-aid-offers': {
+      id: '/compare-aid-offers'
+      path: '/compare-aid-offers'
+      fullPath: '/compare-aid-offers'
+      preLoaderRoute: typeof CompareAidOffersRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/editorial-standards': {
@@ -936,10 +976,12 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AidOfferComparisonRoute: AidOfferComparisonRoute,
   ApplyRoute: ApplyRoute,
   BeforeYouBorrowRoute: BeforeYouBorrowRoute,
   BlogRoute: BlogRoute,
   ChartYourPathRoute: ChartYourPathRoute,
+  CompareAidOffersRoute: CompareAidOffersRoute,
   EditorialStandardsRoute: EditorialStandardsRoute,
   EducationalResourcesRoute: EducationalResourcesRoute,
   FreeMoneyFirstRoute: FreeMoneyFirstRoute,

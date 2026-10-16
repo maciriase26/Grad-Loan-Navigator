@@ -105,6 +105,16 @@ function PayForSchoolPage() {
                 <Arrow />
               </span>
             </Link>
+
+            {/* Card 4: Aid offer comparison */}
+            <Link to="/aid-offer-comparison" className="pfs-card">
+              <span className="pfs-tag">{t("pfs.card4.tag")}</span>
+              <h2>{t("pfs.card4.title")}</h2>
+              <p className="pfs-desc">{t("pfs.card4.desc")}</p>
+              <span className="pfs-arrow">
+                <Arrow />
+              </span>
+            </Link>
           </div>
         </section>
 

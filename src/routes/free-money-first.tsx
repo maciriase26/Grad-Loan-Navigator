@@ -522,6 +522,9 @@ export default function FreeMoneyFirstPage() {
               <Link to="/chart-your-path" className="btn-primary fmf-bridge-btn">
                 <span>{t("fmf.bridge.cta")}</span>
               </Link>
+              <Link to="/aid-offer-comparison" className="btn-secondary fmf-bridge-sub-btn">
+                <span>{t("pfs.card4.tag")} →</span>
+              </Link>
               <Link to="/pay-for-school" className="btn-secondary fmf-bridge-sub-btn">
                 <span>Return to Pay for School Hub →</span>
               </Link>
