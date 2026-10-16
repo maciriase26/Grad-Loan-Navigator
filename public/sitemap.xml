@@ -11,7 +11,17 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.graduationnavigator.com/free-money-first</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.graduationnavigator.com/chart-your-path</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.graduationnavigator.com/aid-offer-comparison</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
