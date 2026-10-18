@@ -7,7 +7,51 @@ import {
   type SchoolTuitionRecord,
 } from "@/data/tuitionData";
 
-export function CollegeLoanNeedCalculator() {
+export interface CollegeLoanNeedCalculatorProps {
+  schoolName?: string;
+  selectedSchool?: SchoolTuitionRecord | null;
+  residency?: "inState" | "outOfState";
+  tuition?: number | "";
+  housing?: number | "";
+  housingPreset?: string;
+  years?: number | "";
+  scholarships?: number | "";
+  rate?: number | "";
+  termYears?: number;
+  onSelectSchool?: (rec: SchoolTuitionRecord) => void;
+  onClearSchool?: () => void;
+  onResidencyChange?: (res: "inState" | "outOfState") => void;
+  onTuitionChange?: (val: number | "") => void;
+  onHousingChange?: (val: number | "", preset?: string) => void;
+  onYearsChange?: (val: number | "") => void;
+  onScholarshipsChange?: (val: number | "") => void;
+  onRateChange?: (val: number | "") => void;
+  onTermYearsChange?: (val: number) => void;
+}
+
+export function CollegeLoanNeedCalculator(props: CollegeLoanNeedCalculatorProps = {}) {
+  const {
+    schoolName: propSchoolName,
+    selectedSchool: propSelectedSchool,
+    residency: propResidency,
+    tuition: propTuition,
+    housing: propHousing,
+    housingPreset: propHousingPreset,
+    years: propYears,
+    scholarships: propScholarships,
+    rate: propRate,
+    termYears: propTermYears,
+    onSelectSchool: propOnSelectSchool,
+    onClearSchool: propOnClearSchool,
+    onResidencyChange: propOnResidencyChange,
+    onTuitionChange: propOnTuitionChange,
+    onHousingChange: propOnHousingChange,
+    onYearsChange: propOnYearsChange,
+    onScholarshipsChange: propOnScholarshipsChange,
+    onRateChange: propOnRateChange,
+    onTermYearsChange: propOnTermYearsChange,
+  } = props;
+
   const { t } = useI18n();
 
   // Unique IDs for form inputs to comply with accessibility best practices
@@ -32,33 +76,99 @@ export function CollegeLoanNeedCalculator() {
   const termId = useId();
 
   // 1. Annual Cost of Attendance
-  const [tuition, setTuition] = useState<number>(0);
-  const [housing, setHousing] = useState<number>(0);
+  const [tuition, setTuition] = useState<number | "">(propTuition ?? 0);
+  const [housing, setHousing] = useState<number | "">(propHousing ?? 0);
   const [books, setBooks] = useState<number>(0);
   const [transport, setTransport] = useState<number>(0);
 
   // School lookup & residency state
-  const [schoolSearch, setSchoolSearch] = useState<string>("");
-  const [selectedSchool, setSelectedSchool] = useState<SchoolTuitionRecord | null>(null);
-  const [residency, setResidency] = useState<"inState" | "outOfState">("inState");
-  const [housingPreset, setHousingPreset] = useState<string>("");
+  const [schoolSearch, setSchoolSearch] = useState<string>(propSchoolName ?? "");
+  const [selectedSchool, setSelectedSchool] = useState<SchoolTuitionRecord | null>(
+    propSelectedSchool ?? null
+  );
+  const [residency, setResidency] = useState<"inState" | "outOfState">(
+    propResidency ?? "inState"
+  );
+  const [housingPreset, setHousingPreset] = useState<string>(propHousingPreset ?? "");
   const [showSchoolSuggestions, setShowSchoolSuggestions] = useState<boolean>(false);
   const schoolDropdownRef = useRef<HTMLDivElement>(null);
 
   // 2. Money Available Each Year
-  const [scholarships, setScholarships] = useState<number>(0);
+  const [scholarships, setScholarships] = useState<number | "">(propScholarships ?? 0);
   const [savings529, setSavings529] = useState<number>(0);
   const [studentContrib, setStudentContrib] = useState<number>(0);
   const [parentContrib, setParentContrib] = useState<number>(0);
   const [otherAid, setOtherAid] = useState<number>(0);
 
   // 3. Program & Loan Assumptions
-  const [schoolName, setSchoolName] = useState<string>("");
+  const [schoolName, setSchoolName] = useState<string>(propSchoolName ?? "");
   const [degreeType, setDegreeType] = useState<"undergrad" | "grad" | "prof">("grad");
   const [priorUndergradLoans, setPriorUndergradLoans] = useState<number>(0);
-  const [years, setYears] = useState<number>(4);
-  const [rate, setRate] = useState<number>(8.07);
-  const [termYears, setTermYears] = useState<number>(10);
+  const [years, setYears] = useState<number | "">(propYears ?? 4);
+  const [rate, setRate] = useState<number | "">(propRate ?? 8.07);
+  const [termYears, setTermYears] = useState<number>(propTermYears ?? 10);
+
+  // Sync state if props change externally
+  useEffect(() => {
+    if (propSchoolName !== undefined) {
+      setSchoolName(propSchoolName);
+      setSchoolSearch(propSchoolName);
+    }
+  }, [propSchoolName]);
+
+  useEffect(() => {
+    if (propSelectedSchool !== undefined) {
+      setSelectedSchool(propSelectedSchool);
+    }
+  }, [propSelectedSchool]);
+
+  useEffect(() => {
+    if (propResidency !== undefined) {
+      setResidency(propResidency);
+    }
+  }, [propResidency]);
+
+  useEffect(() => {
+    if (propTuition !== undefined) {
+      setTuition(propTuition);
+    }
+  }, [propTuition]);
+
+  useEffect(() => {
+    if (propHousing !== undefined) {
+      setHousing(propHousing);
+    }
+  }, [propHousing]);
+
+  useEffect(() => {
+    if (propHousingPreset !== undefined) {
+      setHousingPreset(propHousingPreset);
+    }
+  }, [propHousingPreset]);
+
+  useEffect(() => {
+    if (propYears !== undefined) {
+      setYears(propYears);
+    }
+  }, [propYears]);
+
+  useEffect(() => {
+    if (propScholarships !== undefined) {
+      setScholarships(propScholarships);
+    }
+  }, [propScholarships]);
+
+  useEffect(() => {
+    if (propRate !== undefined) {
+      setRate(propRate);
+    }
+  }, [propRate]);
+
+  useEffect(() => {
+    if (propTermYears !== undefined) {
+      setTermYears(propTermYears);
+    }
+  }, [propTermYears]);
 
   // Close dropdown on outside click
   useEffect(() => {
@@ -81,6 +191,15 @@ export function CollegeLoanNeedCalculator() {
     setShowSchoolSuggestions(false);
     const autofilledRate = residency === "inState" ? rec.inState : rec.outOfState;
     setTuition(autofilledRate);
+    propOnSelectSchool?.(rec);
+  };
+
+  const handleClearSchool = () => {
+    setSelectedSchool(null);
+    setSchoolSearch("");
+    setSchoolName("");
+    setShowSchoolSuggestions(true);
+    propOnClearSchool?.();
   };
 
   const handleResidencyChange = (newResidency: "inState" | "outOfState") => {
@@ -89,38 +208,53 @@ export function CollegeLoanNeedCalculator() {
       const newRate = newResidency === "inState" ? selectedSchool.inState : selectedSchool.outOfState;
       setTuition(newRate);
     }
+    propOnResidencyChange?.(newResidency);
   };
 
   const handleHousingPresetSelect = (presetId: string) => {
     setHousingPreset(presetId);
-    if (!presetId || presetId === "custom") return;
+    if (!presetId || presetId === "custom") {
+      propOnHousingChange?.(housing, "custom");
+      return;
+    }
     const preset = HOUSING_PRESETS.find((p) => p.id === presetId);
     if (preset) {
       setHousing(preset.amount);
+      propOnHousingChange?.(preset.amount, presetId);
     }
   };
 
   // Automatically adjust default interest rate when degree type changes
   const handleDegreeChange = (type: "undergrad" | "grad" | "prof") => {
     setDegreeType(type);
-    if (type === "undergrad") setRate(6.52);
-    else if (type === "grad" || type === "prof") setRate(8.07);
+    let newRate = activeRate;
+    if (type === "undergrad") newRate = 6.52;
+    else if (type === "grad" || type === "prof") newRate = 8.07;
+    setRate(newRate);
+    propOnRateChange?.(newRate);
   };
 
+  const tNum = typeof tuition === "number" ? tuition : 0;
+  const hNum = typeof housing === "number" ? housing : 0;
+  const sNum = typeof scholarships === "number" ? scholarships : 0;
+  const activeYears = typeof years === "number" && years > 0 ? years : 1;
+  const activeRate = typeof rate === "number" && rate >= 0 ? rate : 0;
+  const activeTerm = typeof termYears === "number" && termYears > 0 ? termYears : 10;
+
   // Calculations
-  const totalAnnualCost = tuition + housing + books + transport;
-  const totalAvailableFunding = scholarships + savings529 + studentContrib + parentContrib + otherAid;
+  const totalAnnualCost = tNum + hNum + books + transport;
+  const totalAvailableFunding = sNum + savings529 + studentContrib + parentContrib + otherAid;
   const annualFundingGap = Math.max(0, totalAnnualCost - totalAvailableFunding);
-  const estimatedTotalBorrowing = annualFundingGap * years;
+  const estimatedTotalBorrowing = annualFundingGap * activeYears;
 
   // Monthly Payment & Amortization Formula
   let monthlyPayment = 0;
   let totalRepaid = 0;
   let totalInterestPaid = 0;
 
-  if (estimatedTotalBorrowing > 0 && termYears > 0) {
-    const monthlyRate = rate / 100 / 12;
-    const totalMonths = termYears * 12;
+  if (estimatedTotalBorrowing > 0 && activeTerm > 0) {
+    const monthlyRate = activeRate / 100 / 12;
+    const totalMonths = activeTerm * 12;
 
     if (monthlyRate === 0) {
       monthlyPayment = estimatedTotalBorrowing / totalMonths;
@@ -229,11 +363,7 @@ export function CollegeLoanNeedCalculator() {
                   <button
                     type="button"
                     className="cyp-clear-btn"
-                    onClick={() => {
-                      setSelectedSchool(null);
-                      setSchoolSearch("");
-                      setShowSchoolSuggestions(true);
-                    }}
+                    onClick={handleClearSchool}
                   >
                     {t("cyp.school.clear")}
                   </button>
@@ -273,8 +403,12 @@ export function CollegeLoanNeedCalculator() {
                   type="number"
                   min="0"
                   step="500"
-                  value={tuition || ""}
-                  onChange={(e) => setTuition(Number(e.target.value) || 0)}
+                  value={tuition === "" ? "" : tuition}
+                  onChange={(e) => {
+                    const val = e.target.value === "" ? "" : Number(e.target.value);
+                    setTuition(val);
+                    propOnTuitionChange?.(val);
+                  }}
                 />
               </div>
               {selectedSchool && (
@@ -309,10 +443,12 @@ export function CollegeLoanNeedCalculator() {
                   type="number"
                   min="0"
                   step="500"
-                  value={housing || ""}
+                  value={housing === "" ? "" : housing}
                   onChange={(e) => {
-                    setHousing(Number(e.target.value) || 0);
+                    const val = e.target.value === "" ? "" : Number(e.target.value);
+                    setHousing(val);
                     setHousingPreset("custom");
+                    propOnHousingChange?.(val, "custom");
                   }}
                 />
               </div>
@@ -373,8 +509,12 @@ export function CollegeLoanNeedCalculator() {
                   type="number"
                   min="0"
                   step="500"
-                  value={scholarships || ""}
-                  onChange={(e) => setScholarships(Number(e.target.value) || 0)}
+                  value={scholarships === "" ? "" : scholarships}
+                  onChange={(e) => {
+                    const val = e.target.value === "" ? "" : Number(e.target.value);
+                    setScholarships(val);
+                    propOnScholarshipsChange?.(val);
+                  }}
                 />
               </div>
             </div>
@@ -507,8 +647,15 @@ export function CollegeLoanNeedCalculator() {
                 min="1"
                 max="6"
                 className="text-input"
-                value={years}
-                onChange={(e) => setYears(Number(e.target.value) || 1)}
+                value={years === "" ? "" : years}
+                onFocus={(e) => {
+                  if (years === 0) e.target.select();
+                }}
+                onChange={(e) => {
+                  const val = e.target.value === "" ? "" : Number(e.target.value);
+                  setYears(val);
+                  propOnYearsChange?.(val);
+                }}
               />
             </div>
 
@@ -522,8 +669,15 @@ export function CollegeLoanNeedCalculator() {
                   min="0"
                   max="25"
                   className="text-input"
-                  value={rate}
-                  onChange={(e) => setRate(Number(e.target.value) || 0)}
+                  value={rate === "" ? "" : rate}
+                  onFocus={(e) => {
+                    if (rate === 0) e.target.select();
+                  }}
+                  onChange={(e) => {
+                    const val = e.target.value === "" ? "" : Number(e.target.value);
+                    setRate(val);
+                    propOnRateChange?.(val);
+                  }}
                 />
                 <span className="suffix">%</span>
               </div>
@@ -535,13 +689,17 @@ export function CollegeLoanNeedCalculator() {
                 id={termId}
                 className="select-input"
                 value={termYears}
-                onChange={(e) => setTermYears(Number(e.target.value) || 10)}
+                onChange={(e) => {
+                  const val = Number(e.target.value) || 10;
+                  setTermYears(val);
+                  propOnTermYearsChange?.(val);
+                }}
               >
-                <option value="5">5 Years</option>
-                <option value="10">10 Years (Standard)</option>
-                <option value="15">15 Years</option>
-                <option value="20">20 Years (Extended)</option>
-                <option value="25">25 Years</option>
+                <option value={5}>{t("calc.term.5")}</option>
+                <option value={10}>{t("calc.term.10")}</option>
+                <option value={15}>{t("calc.term.15")}</option>
+                <option value={20}>{t("calc.term.20")}</option>
+                <option value={25}>{t("calc.term.25")}</option>
               </select>
             </div>
           </div>
@@ -559,7 +717,7 @@ export function CollegeLoanNeedCalculator() {
           <div className="res-stat">
             <span className="res-label">{t("calc.result.annualGap")}</span>
             <span className="res-val highlight">{formatCurrency(annualFundingGap)}</span>
-            <span className="res-sub">Cost − Available Funding</span>
+            <span className="res-sub">{t("calc.result.sub.gap")}</span>
           </div>
 
           <div className="res-stat">
@@ -567,27 +725,33 @@ export function CollegeLoanNeedCalculator() {
             <span className="res-val highlight-gold">
               {formatCurrency(estimatedTotalBorrowing)}
             </span>
-            <span className="res-sub">{years} Years × Annual Gap</span>
+            <span className="res-sub">
+              {activeYears === 1
+                ? t("calc.result.sub.yearsSingle")
+                : t("calc.result.sub.yearsPlural").replace("{years}", String(activeYears))}
+            </span>
           </div>
 
           <div className="res-stat">
             <span className="res-label">{t("calc.result.monthlyPayment")}</span>
             <span className="res-val">{formatCurrency(monthlyPayment)}</span>
             <span className="res-sub">
-              {termYears} Yr Term @ {rate}%
+              {activeTerm === 1
+                ? t("calc.result.sub.termRateSingle").replace("{rate}", String(activeRate))
+                : t("calc.result.sub.termRatePlural").replace("{termYears}", String(activeTerm)).replace("{rate}", String(activeRate))}
             </span>
           </div>
 
           <div className="res-stat">
             <span className="res-label">{t("calc.result.totalRepaid")}</span>
             <span className="res-val">{formatCurrency(totalRepaid)}</span>
-            <span className="res-sub">Principal + Interest</span>
+            <span className="res-sub">{t("calc.result.sub.repaid")}</span>
           </div>
 
           <div className="res-stat">
             <span className="res-label">{t("calc.result.interestPaid")}</span>
             <span className="res-val">{formatCurrency(totalInterestPaid)}</span>
-            <span className="res-sub">Total Interest Cost</span>
+            <span className="res-sub">{t("calc.result.sub.interest")}</span>
           </div>
         </div>
 
