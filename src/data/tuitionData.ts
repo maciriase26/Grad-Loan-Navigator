@@ -1,4 +1,5 @@
 import rawSchools from "./tuitionSchools.json";
+import type { TranslationKey } from "@/i18n/translations";
 
 export interface SchoolTuitionRecord {
   id: string;
@@ -14,7 +15,7 @@ export const TUITION_SCHOOLS: SchoolTuitionRecord[] = rawSchools as SchoolTuitio
 
 export interface HousingPreset {
   id: string;
-  labelKey: string;
+  labelKey: TranslationKey;
   amount: number;
   monthly: number;
   type: "on_campus_public" | "on_campus_private" | "off_campus" | "with_family" | "national_avg" | "custom";
