@@ -8,43 +8,7 @@ import {
   type SchoolTuitionRecord,
 } from "@/data/tuitionData";
 
-export interface ChartYourPathMockupProps {
-  school?: string;
-  selectedSchool?: SchoolTuitionRecord | null;
-  residency?: "inState" | "outOfState";
-  tuition?: number | "";
-  housingExpenses?: number | "";
-  housingPreset?: string;
-  years?: number | "";
-  savingsScholarships?: number | "";
-  onSelectSchool?: (rec: SchoolTuitionRecord) => void;
-  onClearSchool?: () => void;
-  onResidencyChange?: (res: "inState" | "outOfState") => void;
-  onTuitionChange?: (val: number | "") => void;
-  onHousingChange?: (val: number | "", preset?: string) => void;
-  onYearsChange?: (val: number | "") => void;
-  onSavingsChange?: (val: number | "") => void;
-}
-
-export function ChartYourPathMockup(props: ChartYourPathMockupProps = {}) {
-  const {
-    school: propSchool,
-    selectedSchool: propSelectedSchool,
-    residency: propResidency,
-    tuition: propTuition,
-    housingExpenses: propHousingExpenses,
-    housingPreset: propHousingPreset,
-    years: propYears,
-    savingsScholarships: propSavingsScholarships,
-    onSelectSchool: propOnSelectSchool,
-    onClearSchool: propOnClearSchool,
-    onResidencyChange: propOnResidencyChange,
-    onTuitionChange: propOnTuitionChange,
-    onHousingChange: propOnHousingChange,
-    onYearsChange: propOnYearsChange,
-    onSavingsChange: propOnSavingsChange,
-  } = props;
-
+export function ChartYourPathMockup() {
   const { t } = useI18n();
 
   // Unique IDs for input element accessibility
@@ -57,71 +21,20 @@ export function ChartYourPathMockup(props: ChartYourPathMockupProps = {}) {
   const savingsId = useId();
 
   // Inputs
-  const [school, setSchool] = useState(propSchool ?? "");
-  const [selectedSchool, setSelectedSchool] = useState<SchoolTuitionRecord | null>(
-    propSelectedSchool ?? null
-  );
-  const [residency, setResidency] = useState<"inState" | "outOfState">(
-    propResidency ?? "inState"
-  );
-  const [tuition, setTuition] = useState<number | "">(propTuition ?? 0);
-  const [housingPreset, setHousingPreset] = useState<string>(propHousingPreset ?? "");
-  const [housingExpenses, setHousingExpenses] = useState<number | "">(
-    propHousingExpenses ?? 0
-  );
+  const [school, setSchool] = useState("");
+  const [selectedSchool, setSelectedSchool] = useState<SchoolTuitionRecord | null>(null);
+  const [residency, setResidency] = useState<"inState" | "outOfState">("inState");
+  const [tuition, setTuition] = useState<number | "">(0);
+  const [housingPreset, setHousingPreset] = useState<string>("");
+  const [housingExpenses, setHousingExpenses] = useState<number | "">(0);
   const [showSuggestions, setShowSuggestions] = useState(false);
-  const [years, setYears] = useState<number | "">(propYears ?? 4);
+  const [years, setYears] = useState<number | "">(4);
   const [annualExpenses, setAnnualExpenses] = useState<number | "">(0);
-  const [savingsScholarships, setSavingsScholarships] = useState<number | "">(
-    propSavingsScholarships ?? 0
-  );
+  const [savingsScholarships, setSavingsScholarships] = useState<number | "">(0);
   const [hasCalculated, setHasCalculated] = useState(false);
 
   const autocompleteRef = useRef<HTMLDivElement>(null);
   const resultRef = useRef<HTMLDivElement>(null);
-
-  // Sync state if props change externally
-  useEffect(() => {
-    if (propSchool !== undefined) setSchool(propSchool);
-  }, [propSchool]);
-
-  useEffect(() => {
-    if (propSelectedSchool !== undefined) setSelectedSchool(propSelectedSchool);
-  }, [propSelectedSchool]);
-
-  useEffect(() => {
-    if (propResidency !== undefined) setResidency(propResidency);
-  }, [propResidency]);
-
-  useEffect(() => {
-    if (propTuition !== undefined) {
-      setTuition(propTuition);
-      const h = typeof housingExpenses === "number" ? housingExpenses : 0;
-      const tVal = typeof propTuition === "number" ? propTuition : 0;
-      setAnnualExpenses(tVal + h);
-    }
-  }, [propTuition]);
-
-  useEffect(() => {
-    if (propHousingExpenses !== undefined) {
-      setHousingExpenses(propHousingExpenses);
-      const h = typeof propHousingExpenses === "number" ? propHousingExpenses : 0;
-      const tVal = typeof tuition === "number" ? tuition : 0;
-      setAnnualExpenses(tVal + h);
-    }
-  }, [propHousingExpenses]);
-
-  useEffect(() => {
-    if (propHousingPreset !== undefined) setHousingPreset(propHousingPreset);
-  }, [propHousingPreset]);
-
-  useEffect(() => {
-    if (propYears !== undefined) setYears(propYears);
-  }, [propYears]);
-
-  useEffect(() => {
-    if (propSavingsScholarships !== undefined) setSavingsScholarships(propSavingsScholarships);
-  }, [propSavingsScholarships]);
 
   // Close autocomplete dropdown when clicking outside
   useEffect(() => {
@@ -154,7 +67,6 @@ export function ChartYourPathMockup(props: ChartYourPathMockupProps = {}) {
     // Recompute total annual expenses
     const currentHousing = typeof housingExpenses === "number" ? housingExpenses : 0;
     setAnnualExpenses(autofilledTuition + currentHousing);
-    propOnSelectSchool?.(rec);
   };
 
   // Change residency (In-State vs Out-of-State)
@@ -166,7 +78,6 @@ export function ChartYourPathMockup(props: ChartYourPathMockupProps = {}) {
       const currentHousing = typeof housingExpenses === "number" ? housingExpenses : 0;
       setAnnualExpenses(newTuition + currentHousing);
     }
-    propOnResidencyChange?.(newResidency);
   };
 
   // When user selects a housing preset dropdown option
@@ -175,7 +86,6 @@ export function ChartYourPathMockup(props: ChartYourPathMockupProps = {}) {
     if (!presetId) return;
 
     if (presetId === "custom") {
-      propOnHousingChange?.(housingExpenses, "custom");
       return;
     }
 
@@ -184,7 +94,6 @@ export function ChartYourPathMockup(props: ChartYourPathMockupProps = {}) {
       setHousingExpenses(preset.amount);
       const currentTuition = typeof tuition === "number" ? tuition : 0;
       setAnnualExpenses(currentTuition + preset.amount);
-      propOnHousingChange?.(preset.amount, presetId);
     }
   };
 
@@ -193,7 +102,6 @@ export function ChartYourPathMockup(props: ChartYourPathMockupProps = {}) {
     setSelectedSchool(null);
     setSchool("");
     setShowSuggestions(true);
-    propOnClearSchool?.();
   };
 
   const expNum = typeof annualExpenses === "number" ? annualExpenses : 0;
@@ -363,7 +271,6 @@ export function ChartYourPathMockup(props: ChartYourPathMockupProps = {}) {
                     setTuition(val);
                     const tVal = typeof val === "number" ? val : 0;
                     setAnnualExpenses(tVal + houseNum);
-                    propOnTuitionChange?.(val);
                   }}
                 />
               </div>
@@ -421,7 +328,6 @@ export function ChartYourPathMockup(props: ChartYourPathMockupProps = {}) {
                     setHousingPreset("custom");
                     const hVal = typeof val === "number" ? val : 0;
                     setAnnualExpenses(tuiNum + hVal);
-                    propOnHousingChange?.(val, "custom");
                   }}
                 />
               </div>
@@ -475,9 +381,8 @@ export function ChartYourPathMockup(props: ChartYourPathMockupProps = {}) {
                 className="cyp-input"
                 value={years === "" ? "" : years}
                 onChange={(e) => {
-                  const val = e.target.value === "" ? "" : Number(e.target.value);
-                  setYears(val);
-                  propOnYearsChange?.(val);
+                  const val = e.target.value;
+                  setYears(val === "" ? "" : Number(val));
                 }}
               />
             </div>
@@ -506,7 +411,6 @@ export function ChartYourPathMockup(props: ChartYourPathMockupProps = {}) {
                   onChange={(e) => {
                     const val = e.target.value === "" ? "" : Number(e.target.value);
                     setSavingsScholarships(val);
-                    propOnSavingsChange?.(val);
                   }}
                 />
               </div>

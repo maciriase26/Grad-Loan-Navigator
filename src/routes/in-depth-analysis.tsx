@@ -247,7 +247,7 @@ function InDepthAnalysis() {
 
             <article className="syndicated-body">
               <p className="placeholder-note">
-                Educational reference guide adapted from published research by the Ask Experian Editorial Team covering federal loan structures, borrowing limits, and private lending considerations.
+                [This is where the licensed article content would appear, reproduced exactly as published by Experian, with their formatting, headers, and author attribution intact — pending an actual syndication agreement. Nothing below this line is real Experian content.]
               </p>
 
               <h2>Types of Federal Student Loans</h2>
@@ -273,7 +273,7 @@ function InDepthAnalysis() {
             </article>
 
             <div className="layout-review-footer">
-              © 2026 Grad Loan Navigator · Educational resources and licensing documentation
+              © 2026 Grad Loan Navigator · Layout mockup for internal review — pending syndication agreement
             </div>
           </div>
         </section>

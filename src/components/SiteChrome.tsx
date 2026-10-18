@@ -231,7 +231,6 @@ export function SiteFooter() {
       </div>
       <div className="foot-bottom">
         <span>{t("footer.copyright")}</span>
-        <span className="foot-rates-note">{t("footer.rates")}</span>
       </div>
       <ContactDialog />
     </footer>

@@ -1530,8 +1530,7 @@ export const en = {
   "footer.social": "Social",
   "footer.copyright":
     "© 2026 Grad Loan Navigator. Not affiliated with the U.S. Department of Education.",
-  "footer.rates":
-    "Federal interest rates and borrowing limits reflect 2026–2027 statutory terms. Private loan rates and terms are set by individual lenders and depend on creditworthiness and school certification.",
+  "footer.rates": "Rates shown are illustrative for this preview.",
 
   /* ---------- contact pop-up ---------- */
   "contact.title": "Contact us",
@@ -1903,7 +1902,7 @@ export const en = {
   "cyp.btn.calc": "Calculate the gap ↓",
   "cyp.limits.tag": "FEDERAL LOAN LIMITS",
   "cyp.limits.desc":
-    "Annual federal Direct Unsubsidized borrowing is capped at $20,500/year. See how much of your gap is covered before borrowing private loans.",
+    "Show the applicable annual federal borrowing limit here, then calculate what remains.",
   "cyp.topics.h2": "Recommended guides for your path",
   "cyp.topic1.title": "How loans work",
   "cyp.topic1.desc":
@@ -1976,20 +1975,6 @@ export const en = {
   "calc.assump.years": "Years to Graduate",
   "calc.assump.rate": "Interest Rate (%)",
   "calc.assump.term": "Repayment Term (Years)",
-
-  "calc.term.5": "5 Years",
-  "calc.term.10": "10 Years (Standard)",
-  "calc.term.15": "15 Years",
-  "calc.term.20": "20 Years (Extended)",
-  "calc.term.25": "25 Years",
-
-  "calc.result.sub.gap": "Cost − Available Funding",
-  "calc.result.sub.yearsSingle": "1 Year × Annual Gap",
-  "calc.result.sub.yearsPlural": "{years} Years × Annual Gap",
-  "calc.result.sub.termRateSingle": "1 Yr Term @ {rate}%",
-  "calc.result.sub.termRatePlural": "{termYears} Yr Term @ {rate}%",
-  "calc.result.sub.repaid": "Principal + Interest",
-  "calc.result.sub.interest": "Total Interest Cost",
 
   "calc.result.title": "Your Estimated Result",
   "calc.result.annualGap": "Annual Funding Gap",
@@ -2585,8 +2570,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "footer.social": "Redes sociales",
   "footer.copyright":
     "© 2026 Grad Loan Navigator. No está afiliado al Departamento de Educación de EE. UU.",
-  "footer.rates":
-    "Las tasas de interés federales y los límites de endeudamiento reflejan los términos estatutarios de 2026–2027. Las tasas y términos de préstamos privados los determinan prestamistas individuales según la solvencia crediticia y la certificación escolar.",
+  "footer.rates": "Las tasas mostradas son ilustrativas para esta vista previa.",
 
   /* ---------- contact pop-up ---------- */
   "contact.title": "Contáctanos",
@@ -2959,7 +2943,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "cyp.btn.calc": "Calcular la brecha ↓",
   "cyp.limits.tag": "LÍMITES DE PRÉSTAMOS FEDERALES",
   "cyp.limits.desc":
-    "Los préstamos federales Directos no subsidiados tienen un tope de $20,500/año. Descubre cuánto de tu brecha queda cubierto antes de recurrir a préstamos privados.",
+    "Muestra el límite federal de endeudamiento anual aplicable aquí y calcula lo restante.",
   "cyp.topics.h2": "Guías recomendadas para tu camino",
   "cyp.topic1.title": "Cómo funcionan los préstamos",
   "cyp.topic1.desc":
@@ -3034,20 +3018,6 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "calc.assump.years": "Años para Graduarse",
   "calc.assump.rate": "Tasa de Interés (%)",
   "calc.assump.term": "Plazo de Pago (Años)",
-
-  "calc.term.5": "5 Años",
-  "calc.term.10": "10 Años (Estándar)",
-  "calc.term.15": "15 Años",
-  "calc.term.20": "20 Años (Extendido)",
-  "calc.term.25": "25 Años",
-
-  "calc.result.sub.gap": "Costo − Fondos Disponibles",
-  "calc.result.sub.yearsSingle": "1 Año × Brecha Anual",
-  "calc.result.sub.yearsPlural": "{years} Años × Brecha Anual",
-  "calc.result.sub.termRateSingle": "Plazo 1 Año @ {rate}%",
-  "calc.result.sub.termRatePlural": "Plazo {termYears} Años @ {rate}%",
-  "calc.result.sub.repaid": "Capital + Intereses",
-  "calc.result.sub.interest": "Costo Total de Intereses",
 
   "calc.result.title": "Tu Resultado Estimado",
   "calc.result.annualGap": "Brecha de Financiamiento Anual",

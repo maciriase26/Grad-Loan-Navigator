@@ -333,9 +333,7 @@ Sincerely,
                 {/* School Name Input with Autocomplete */}
                 <div
                   className="aoc-name-search-wrap"
-                  ref={(el) => {
-                    searchWrapperRefs.current[idx] = el;
-                  }}
+                  ref={(el) => (searchWrapperRefs.current[idx] = el)}
                 >
                   <label className="aoc-label-sm">{t("aoc.field.schoolName")}</label>
                   <input
