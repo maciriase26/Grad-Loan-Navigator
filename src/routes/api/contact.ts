@@ -81,7 +81,7 @@ export const Route = createFileRoute("/api/contact")({
                   "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                  from: process.env.EMAIL_FROM || "Grad Loan Navigator <onboarding@resend.dev>",
+                  from: process.env.EMAIL_FROM || "Grad Loan Navigator <noreply@graduationnavigator.com>",
                   to: [parsed.data.email],
                   subject: resendSubject,
                   text: parsed.data.message || "",
