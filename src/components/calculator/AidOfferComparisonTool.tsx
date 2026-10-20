@@ -2,6 +2,7 @@ import { useState, useId, useRef, useEffect } from "react";
 import { Link } from "@tanstack/react-router";
 import { useI18n } from "@/i18n";
 import { searchSchools, type SchoolTuitionRecord, HOUSING_PRESETS } from "@/data/tuitionData";
+import { supabase } from "@/integrations/supabase/client";
 
 export interface AidOffer {
   id: string;
@@ -62,12 +63,12 @@ function PrintIcon() {
   );
 }
 
-function CopyIcon() {
+function MailIcon() {
   return (
     <svg
       viewBox="0 0 24 24"
-      width="14"
-      height="14"
+      width="15"
+      height="15"
       fill="none"
       stroke="currentColor"
       strokeWidth="2"
@@ -75,41 +76,160 @@ function CopyIcon() {
       strokeLinejoin="round"
       aria-hidden="true"
     >
-      <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
     </svg>
   );
+}
+
+function CloseIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="16"
+      height="16"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <line x1="18" y1="6" x2="6" y2="18" />
+      <line x1="6" y1="6" x2="18" y2="18" />
+    </svg>
+  );
+}
+
+function buildAppealLetter(topSchoolName: string, compSchoolName: string, lang: string): string {
+  const isEs = lang === "es";
+  const schoolTarget = topSchoolName.trim() || (isEs ? "[Nombre de la Universidad]" : "[Name of University]");
+  const schoolComp = compSchoolName.trim() || (isEs ? "[Universidad Competidora]" : "[Competing Peer University]");
+
+  if (isEs) {
+    return `Estimado Comité de Ayuda Financiera de ${schoolTarget}:
+
+Es un honor para mí haber sido admitido en el programa [Nombre del Título / Maestría] para el próximo año académico. ${schoolTarget} continúa siendo mi primera opción de estudio debido a [mencionar profesor, centro de investigación o fortaleza del plan de estudios].
+
+Me dirijo a ustedes respetuosamente para solicitar una reconsideración de mi paquete de ayuda financiera. Aunque agradezco profundamente la ayuda recibida [mencionar beca o subvención recibida, ej. beca de $5,000], el costo neto actual genera una brecha financiera significativa para mi familia.
+
+[Seleccione Opción A o B:]
+Opción A (Oferta Competitiva): He recibido una oferta de ayuda de ${schoolComp}, que proporciona [mencionar premio de ayuda, ej. beca anual de $15,000 / exención de matrícula como asistente graduado], reduciendo mi obligación restante de bolsillo a $[Monto].
+
+Opción B (Cambio en Circunstancias Económicas): Desde que presenté mis documentos de ayuda financiera, la situación económica de mi hogar ha cambiado de forma importante debido a [describir brevemente cambio de empleo, gastos médicos extraordinarios o reducción de ingresos], resultando en [indicar impacto, ej. una pérdida imprevista de $X en ingresos anuales del hogar].
+
+Si ${schoolTarget} tiene la posibilidad de reducir esta brecha de financiamiento en [monto razonable específico, ej. $4,000 a $6,000 por año], aceptaría con gran entusiasmo y enviaría mi depósito de matrícula de inmediato.
+
+Agradezco sinceramente su tiempo, consideración y dedicación en apoyar a los estudiantes de posgrado.
+
+Atentamente,
+[Nombre y Apellidos]
+[Número de Estudiante / Identificación de Solicitud]
+[Teléfono] | [Correo Electrónico]`;
+  }
+
+  return `Dear Financial Aid Committee at ${schoolTarget},
+
+I am honored to have been accepted into the [Degree / Program Name] program for the upcoming academic year. ${schoolTarget} remains my top choice due to [specific faculty, research center, or curriculum strength].
+
+I am writing to respectfully request a reconsideration of my financial aid award. While I am deeply grateful for the aid received [mention any grant/scholarship received, e.g. $5,000 scholarship], the current net cost creates a significant funding gap for my family.
+
+[Select Option A or B:]
+Option A (Competing Offer): I have received an aid offer from ${schoolComp}, which provides [mention competing award, e.g. a $15,000 annual scholarship / graduate assistantship waiver], bringing my remaining out-of-pocket tuition obligation to $[Amount].
+
+Option B (Changed Financial Circumstances): Since filing my financial aid documents, our household's financial situation has materially changed due to [briefly describe job change, extraordinary medical expenses, or reduced income], resulting in [briefly state impact, e.g., an unexpected loss of $X in annual household earnings].
+
+If ${schoolTarget} is able to narrow this funding gap by [specific reasonable amount, e.g. $4,000 to $6,000 per year], I would enthusiastically commit and submit my enrollment deposit immediately.
+
+Thank you very much for your time, consideration, and dedication to supporting graduate students.
+
+Sincerely,
+[Your Full Name]
+[Your Student ID / Application Number]
+[Phone Number] | [Email Address]`;
+}
+
+function buildComparisonSummary(calculatedOffers: any[], lang: string): string {
+  const lines: string[] = [
+    "GRAD LOAN NAVIGATOR: FINANCIAL AID OFFER COMPARISON SUMMARY",
+    `Generated: ${new Date().toLocaleDateString()}`,
+    "--------------------------------------------------",
+    "",
+  ];
+
+  calculatedOffers.forEach((item, idx) => {
+    const name = item.offer.schoolName || (lang === "es" ? `Universidad ${idx + 1}` : `School ${idx + 1}`);
+    lines.push(`[${name}] (${item.years} ${lang === "es" ? "años" : "years"})`);
+    lines.push(`  Cost of Attendance (COA): ${formatMoney(item.coa)}/yr`);
+    lines.push(`  Free Gift Aid (Scholarships + Waivers): ${formatMoney(item.totalFreeAid)}/yr`);
+    lines.push(`  Work-Study: ${formatMoney(item.workStudy)}/yr`);
+    lines.push(`  True Net Price: ${formatMoney(item.netPriceAnnual)}/yr`);
+    lines.push(`  Annual Loans: ${formatMoney(item.totalLoansAnnual)}/yr`);
+    lines.push(`  Total Debt at Graduation: ${formatMoney(item.totalDebtAtGrad)}`);
+    lines.push(`  Est. Monthly Repayment (10-Yr Standard): ${formatMoney(item.monthlyPayment)}/mo`);
+    if (item.isMostlyLoans) {
+      lines.push(`  * Advisory Note: ${item.loanPercentageOfPackage}% of aid package consists of borrowed debt.`);
+    }
+    lines.push("");
+  });
+
+  const s1 = calculatedOffers[0]?.offer.schoolName || "";
+  const s2 = calculatedOffers[1]?.offer.schoolName || "";
+  lines.push("--------------------------------------------------");
+  lines.push(
+    lang === "es"
+      ? "BORRADOR: SOLICITUD DE RECONSIDERACIÓN DE AYUDA FINANCIERA"
+      : "BONUS: FINANCIAL AID RECONSIDERATION REQUEST DRAFT"
+  );
+  lines.push("--------------------------------------------------");
+  lines.push("");
+  lines.push(buildAppealLetter(s1, s2, lang));
+  lines.push("");
+  lines.push("--------------------------------------------------");
+  lines.push("Prepared with Grad Loan Navigator (gradloannavigator.com)");
+  return lines.join("\n");
 }
 
 const INITIAL_OFFERS: AidOffer[] = [
   {
     id: "offer-1",
-    schoolName: "State University (In-State)",
+    schoolName: "",
     programYears: 2,
-    coa: 28500,
-    scholarships: 6000,
-    waivers: 4500,
-    workStudy: 2500,
-    loansDirect: 12000,
-    loansPlus: 3500,
+    coa: "",
+    scholarships: "",
+    waivers: "",
+    workStudy: "",
+    loansDirect: "",
+    loansPlus: "",
   },
   {
     id: "offer-2",
-    schoolName: "Private University (Metro)",
+    schoolName: "",
     programYears: 2,
-    coa: 58000,
-    scholarships: 18000,
-    waivers: 0,
-    workStudy: 3000,
-    loansDirect: 20500,
-    loansPlus: 16500,
+    coa: "",
+    scholarships: "",
+    waivers: "",
+    workStudy: "",
+    loansDirect: "",
+    loansPlus: "",
   },
 ];
 
 export function AidOfferComparisonTool() {
   const { t, lang } = useI18n();
   const [offers, setOffers] = useState<AidOffer[]>(INITIAL_OFFERS);
-  const [copiedLetter, setCopiedLetter] = useState(false);
+
+  // Email modal state
+  const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
+  const [emailName, setEmailName] = useState("");
+  const [emailAddress, setEmailAddress] = useState("");
+  const [emailStatus, setEmailStatus] = useState<"idle" | "sending" | "success">("idle");
+  const [emailErrorMsg, setEmailErrorMsg] = useState("");
+
+  // Appeal draft email state
+  const [appealEmail, setAppealEmail] = useState("");
+  const [appealStatus, setAppealStatus] = useState<"idle" | "sending" | "success">("idle");
+  const [appealError, setAppealError] = useState("");
 
   // Search state for autocomplete per school
   const [activeSearchIndex, setActiveSearchIndex] = useState<number | null>(null);
@@ -235,35 +355,15 @@ export function AidOfferComparisonTool() {
   const validDebts = calculatedOffers.filter((o) => o.coa > 0).map((o) => o.totalDebtAtGrad);
   const minDebt = validDebts.length > 0 ? Math.min(...validDebts) : null;
 
-  // Appeal Letter Copy Function
-  const appealLetterText = `Dear Financial Aid Committee at [Name of University],
-
-I am honored to have been accepted into the [Degree / Program Name] program for the upcoming academic year. [Name of University] remains my top choice due to [specific faculty, research center, or curriculum strength].
-
-I am writing to respectfully request a reconsideration of my financial aid award. While I am deeply grateful for the [mention any grant/scholarship received, e.g. $5,000 scholarship], the current net cost creates a significant funding gap for my family.
-
-[Select Option A or B:]
-Option A (Competing Offer): I have received an aid offer from [Competing Peer University], which provides [mention competing award, e.g. a $15,000 annual scholarship / graduate assistantship waiver], bringing my remaining out-of-pocket tuition obligation to $[Amount].
-
-Option B (Changed Financial Circumstances): Since filing my financial aid documents, our household's financial situation has materially changed due to [briefly describe job change, extraordinary medical expenses, or reduced income], resulting in [briefly state impact, e.g., an unexpected loss of $X in annual household earnings].
-
-If [Name of University] is able to narrow this funding gap by [specific reasonable amount, e.g. $4,000 to $6,000 per year], I would enthusiastically commit and submit my enrollment deposit immediately.
-
-Thank you very much for your time, consideration, and dedication to supporting graduate students.
-
-Sincerely,
-[Your Full Name]
-[Your Student ID / Application Number]
-[Phone Number] | [Email Address]`;
-
-  const copyAppealLetter = () => {
-    navigator.clipboard.writeText(appealLetterText);
-    setCopiedLetter(true);
-    setTimeout(() => setCopiedLetter(false), 3000);
-  };
-
   return (
     <div className="aoc-tool-wrapper">
+      {/* Hero Header */}
+      <div className="tool-header">
+        <span className="eyebrow">{t("aoc.hero.tag")}</span>
+        <h1>{t("aoc.hero.title")}</h1>
+        <p className="sub">{t("aoc.hero.subtitle")}</p>
+      </div>
+
       {/* Top Controls Bar */}
       <div className="aoc-controls-bar">
         <div className="aoc-controls-left">
@@ -281,6 +381,18 @@ Sincerely,
         </div>
 
         <div className="aoc-controls-right">
+          <button
+            type="button"
+            className="btn-primary aoc-email-btn"
+            onClick={() => {
+              setEmailStatus("idle");
+              setEmailErrorMsg("");
+              setIsEmailModalOpen(true);
+            }}
+          >
+            <MailIcon />
+            <span>{t("aoc.btn.emailMe")}</span>
+          </button>
           <button type="button" className="btn-secondary aoc-print-btn" onClick={handlePrint}>
             <PrintIcon />
             <span>{t("aoc.btn.printPdf")}</span>
@@ -290,6 +402,157 @@ Sincerely,
           </button>
         </div>
       </div>
+
+      {/* Email Modal Dialog */}
+      {isEmailModalOpen && (
+        <div
+          className="aoc-modal-backdrop"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) setIsEmailModalOpen(false);
+          }}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="aoc-modal-title"
+        >
+          <div className="aoc-modal-card">
+            <div className="aoc-modal-header">
+              <h3 id="aoc-modal-title" className="aoc-modal-title">
+                {emailStatus === "success" ? t("aoc.modal.successTitle") : t("aoc.modal.title")}
+              </h3>
+              <button
+                type="button"
+                className="aoc-modal-close"
+                onClick={() => setIsEmailModalOpen(false)}
+                aria-label={t("aoc.modal.close")}
+              >
+                <CloseIcon />
+              </button>
+            </div>
+
+            <div className="aoc-modal-body">
+              {emailStatus === "success" ? (
+                <div className="aoc-modal-success">
+                  <div className="aoc-success-icon-wrap">
+                    <CheckIcon />
+                  </div>
+                  <p className="aoc-modal-desc">{t("aoc.modal.successDesc")}</p>
+                  <div className="aoc-modal-actions">
+                    <a
+                      href={`mailto:${encodeURIComponent(emailAddress.trim())}?subject=${encodeURIComponent(
+                        "Grad Loan Navigator: Financial Aid Offer Comparison"
+                      )}&body=${encodeURIComponent(buildComparisonSummary(calculatedOffers, lang))}`}
+                      className="btn-primary aoc-modal-action-btn"
+                    >
+                      <MailIcon />
+                      <span>{t("aoc.modal.openEmailBtn")}</span>
+                    </a>
+                    <button
+                      type="button"
+                      className="btn-secondary aoc-modal-action-btn"
+                      onClick={() => {
+                        setIsEmailModalOpen(false);
+                        handlePrint();
+                      }}
+                    >
+                      <PrintIcon />
+                      <span>{t("aoc.modal.printBtn")}</span>
+                    </button>
+                    <button
+                      type="button"
+                      className="aoc-modal-close-btn"
+                      onClick={() => setIsEmailModalOpen(false)}
+                    >
+                      {t("aoc.modal.close")}
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <form
+                  onSubmit={async (e) => {
+                    e.preventDefault();
+                    const trimmedEmail = emailAddress.trim();
+                    if (!trimmedEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail)) {
+                      setEmailErrorMsg(t("aoc.modal.error"));
+                      return;
+                    }
+                    setEmailErrorMsg("");
+                    setEmailStatus("sending");
+
+                    const summaryText = buildComparisonSummary(calculatedOffers, lang);
+                    const payload = {
+                      id: typeof crypto !== "undefined" && crypto.randomUUID ? crypto.randomUUID() : undefined,
+                      name: emailName.trim() || "Student",
+                      email: trimmedEmail,
+                      reason: "aid_offer_comparison",
+                      message: summaryText,
+                      created_at: new Date().toISOString(),
+                    };
+
+                    try {
+                      const { error } = await supabase.from("contact_messages").insert(payload);
+                      if (error) {
+                        await fetch("/api/contact", {
+                          method: "POST",
+                          headers: { "Content-Type": "application/json" },
+                          body: JSON.stringify(payload),
+                        }).catch(() => null);
+                      }
+                    } catch (err) {
+                      console.warn("[AOC] Email save notice:", err);
+                    }
+                    setEmailStatus("success");
+                  }}
+                  className="aoc-modal-form"
+                >
+                  <p className="aoc-modal-desc">{t("aoc.modal.desc")}</p>
+
+                  <div className="aoc-modal-field">
+                    <label className="aoc-label-sm">{t("aoc.modal.nameLabel")}</label>
+                    <input
+                      type="text"
+                      className="aoc-input"
+                      value={emailName}
+                      onChange={(e) => setEmailName(e.target.value)}
+                      placeholder="Jane Doe"
+                    />
+                  </div>
+
+                  <div className="aoc-modal-field">
+                    <label className="aoc-label-sm">
+                      {t("aoc.modal.emailLabel")} <span className="req">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      required
+                      className="aoc-input"
+                      value={emailAddress}
+                      onChange={(e) => {
+                        setEmailAddress(e.target.value);
+                        if (emailErrorMsg) setEmailErrorMsg("");
+                      }}
+                      placeholder={t("aoc.modal.emailPlaceholder")}
+                    />
+                    {emailErrorMsg && <span className="aoc-modal-error">{emailErrorMsg}</span>}
+                  </div>
+
+                  <div className="aoc-modal-footer">
+                    <button
+                      type="submit"
+                      disabled={emailStatus === "sending"}
+                      className="btn-primary aoc-modal-submit"
+                    >
+                      <MailIcon />
+                      <span>
+                        {emailStatus === "sending" ? t("aoc.modal.sending") : t("aoc.modal.submitBtn")}
+                      </span>
+                    </button>
+                  </div>
+                </form>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Printable Report Header (Active on print) */}
       <div className="aoc-print-only aoc-print-header">
@@ -333,7 +596,9 @@ Sincerely,
                 {/* School Name Input with Autocomplete */}
                 <div
                   className="aoc-name-search-wrap"
-                  ref={(el) => (searchWrapperRefs.current[idx] = el)}
+                  ref={(el) => {
+                    searchWrapperRefs.current[idx] = el;
+                  }}
                 >
                   <label className="aoc-label-sm">{t("aoc.field.schoolName")}</label>
                   <input
@@ -667,7 +932,9 @@ Sincerely,
                 <th className="aoc-th-metric">{t("aoc.matrix.colMetric")}</th>
                 {calculatedOffers.map((o, idx) => (
                   <th key={o.offer.id} className="aoc-th-school">
-                    <div className="aoc-th-name">{o.offer.schoolName || `School ${idx + 1}`}</div>
+                    <div className="aoc-th-name">
+                      {o.offer.schoolName || (lang === "es" ? `Universidad ${idx + 1}` : `School ${idx + 1}`)}
+                    </div>
                     <div className="aoc-th-years">
                       {o.years} {lang === "es" ? "años" : "years"}
                     </div>
@@ -745,50 +1012,179 @@ Sincerely,
         </div>
       </section>
 
-      {/* Guide: How to Read Your Aid Offer & Appeal Template (Step 06) */}
-      <section className="aoc-guide-section">
-        <div className="aoc-guide-header">
-          <span className="eyebrow">{t("aoc.guide.tag")}</span>
-          <h2>{t("aoc.guide.title")}</h2>
-          <p className="sub">{t("aoc.guide.subtitle")}</p>
+      {/* Common terms in your aid offer Section */}
+      <section className="aoc-terms-section">
+        <div className="aoc-terms-header">
+          <span className="eyebrow">{lang === "es" ? "GLOSARIO DE AYUDA" : "AID GLOSSARY"}</span>
+          <h2>{t("aoc.terms.title")}</h2>
+          <p className="sub">{t("aoc.terms.intro")}</p>
         </div>
 
-        <div className="aoc-guide-points">
-          <div className="aoc-guide-point">
-            <h4>{t("aoc.guide.p1.title")}</h4>
-            <p>{t("aoc.guide.p1.body")}</p>
+        <div className="aoc-terms-grid">
+          <div className="aoc-term-card">
+            <div className="aoc-term-pill blue-pill">COA</div>
+            <h4>{t("aoc.terms.coa.title")}</h4>
+            <p>{t("aoc.terms.coa.desc")}</p>
           </div>
 
-          <div className="aoc-guide-point">
-            <h4>{t("aoc.guide.p2.title")}</h4>
-            <p>{t("aoc.guide.p2.body")}</p>
+          <div className="aoc-term-card">
+            <div className="aoc-term-pill purple-pill">SAI</div>
+            <h4>{t("aoc.terms.sai.title")}</h4>
+            <p>{t("aoc.terms.sai.desc")}</p>
           </div>
 
-          <div className="aoc-guide-point">
-            <h4>{t("aoc.guide.p3.title")}</h4>
-            <p>{t("aoc.guide.p3.body")}</p>
+          <div className="aoc-term-card">
+            <div className="aoc-term-pill amber-pill">NEED</div>
+            <h4>{t("aoc.terms.need.title")}</h4>
+            <p>{t("aoc.terms.need.desc")}</p>
+          </div>
+
+          <div className="aoc-term-card">
+            <div className="aoc-term-pill teal-pill">WORK-STUDY</div>
+            <h4>{t("aoc.terms.workStudy.title")}</h4>
+            <p>{t("aoc.terms.workStudy.desc")}</p>
+          </div>
+
+          <div className="aoc-term-card">
+            <div className="aoc-term-pill green-pill">GIFT AID</div>
+            <h4>{t("aoc.terms.giftAid.title")}</h4>
+            <p>{t("aoc.terms.giftAid.desc")}</p>
+          </div>
+
+          <div className="aoc-term-card">
+            <div className="aoc-term-pill red-pill">LOANS</div>
+            <h4>{t("aoc.terms.loans.title")}</h4>
+            <p>{t("aoc.terms.loans.desc")}</p>
           </div>
         </div>
+      </section>
 
-        {/* Appeal Letter Template Card */}
-        <div className="aoc-letter-card">
-          <div className="aoc-letter-header">
-            <div>
-              <h3>{t("aoc.letter.title")}</h3>
-              <p>{t("aoc.letter.desc")}</p>
+      {/* Financial Aid Reconsideration Request Email Draft Section */}
+      <section className="aoc-appeal-section">
+        <div className="aoc-appeal-card">
+          <div className="aoc-appeal-header">
+            <span className="eyebrow">{t("aoc.appeal.tag")}</span>
+            <h2>{t("aoc.appeal.title")}</h2>
+            <p className="sub">{t("aoc.appeal.desc")}</p>
+          </div>
+
+          <div className="aoc-appeal-action-box">
+            {appealStatus === "success" ? (
+              <div className="aoc-appeal-success">
+                <div className="aoc-success-icon-wrap sm">
+                  <CheckIcon />
+                </div>
+                <div className="aoc-appeal-success-text">
+                  <strong>{t("aoc.appeal.success")}</strong>
+                  <div className="aoc-appeal-success-actions">
+                    <a
+                      href={`mailto:${encodeURIComponent(appealEmail.trim())}?subject=${encodeURIComponent(
+                        lang === "es"
+                          ? "Borrador de reconsideracion de ayuda financiera"
+                          : "Financial Aid Reconsideration Request Email Draft"
+                      )}&body=${encodeURIComponent(
+                        buildAppealLetter(
+                          calculatedOffers[0]?.offer.schoolName || "",
+                          calculatedOffers[1]?.offer.schoolName || "",
+                          lang
+                        )
+                      )}`}
+                      className="btn-primary aoc-open-mail-btn"
+                    >
+                      <MailIcon />
+                      <span>{t("aoc.appeal.openMail")}</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <form
+                className="aoc-appeal-form"
+                onSubmit={async (e) => {
+                  e.preventDefault();
+                  const trimmed = appealEmail.trim();
+                  if (!trimmed || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed)) {
+                    setAppealError(t("aoc.modal.error"));
+                    return;
+                  }
+                  setAppealError("");
+                  setAppealStatus("sending");
+
+                  const s1 = calculatedOffers[0]?.offer.schoolName || "";
+                  const s2 = calculatedOffers[1]?.offer.schoolName || "";
+                  const letter = buildAppealLetter(s1, s2, lang);
+                  const summaryText = buildComparisonSummary(calculatedOffers, lang);
+
+                  const payload = {
+                    id: typeof crypto !== "undefined" && crypto.randomUUID ? crypto.randomUUID() : undefined,
+                    name: "Student",
+                    email: trimmed,
+                    reason: "appeal_letter_request",
+                    message: `${letter}\n\n====================\nCOMPARISON SUMMARY:\n====================\n${summaryText}`,
+                    created_at: new Date().toISOString(),
+                  };
+
+                  try {
+                    const { error } = await supabase.from("contact_messages").insert(payload);
+                    if (error) {
+                      await fetch("/api/contact", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(payload),
+                      }).catch(() => null);
+                    }
+                  } catch (err) {
+                    console.warn("[AOC] Appeal draft save notice:", err);
+                  }
+                  setAppealStatus("success");
+                }}
+              >
+                <div className="aoc-appeal-input-wrap">
+                  <input
+                    type="email"
+                    required
+                    className="aoc-input aoc-appeal-email-input"
+                    value={appealEmail}
+                    onChange={(e) => {
+                      setAppealEmail(e.target.value);
+                      if (appealError) setAppealError("");
+                    }}
+                    placeholder={t("aoc.appeal.inputPlaceholder")}
+                  />
+                  <button
+                    type="submit"
+                    disabled={appealStatus === "sending"}
+                    className="btn-primary aoc-appeal-submit-btn"
+                  >
+                    <MailIcon />
+                    <span>
+                      {appealStatus === "sending" ? t("aoc.appeal.sending") : t("aoc.appeal.btnSend")}
+                    </span>
+                  </button>
+                </div>
+                {appealError && <span className="aoc-modal-error">{appealError}</span>}
+              </form>
+            )}
+          </div>
+
+          {/* Expandable Preview Accordion (No raw copy text required) */}
+          <details className="aoc-appeal-preview-details">
+            <summary className="aoc-appeal-preview-summary">
+              {t("aoc.appeal.previewTitle")}
+            </summary>
+            <div className="aoc-appeal-preview-content">
+              <p className="aoc-appeal-preview-notice">{t("aoc.appeal.previewNotice")}</p>
+              <pre className="aoc-letter-pre">
+                <code>
+                  {buildAppealLetter(
+                    calculatedOffers[0]?.offer.schoolName || "",
+                    calculatedOffers[1]?.offer.schoolName || "",
+                    lang
+                  )}
+                </code>
+              </pre>
             </div>
-            <button
-              type="button"
-              className="btn-primary aoc-copy-btn"
-              onClick={copyAppealLetter}
-            >
-              <CopyIcon />
-              <span>{copiedLetter ? t("aoc.letter.copied") : t("aoc.letter.btnCopy")}</span>
-            </button>
-          </div>
-          <pre className="aoc-letter-pre">
-            <code>{appealLetterText}</code>
-          </pre>
+          </details>
         </div>
       </section>
     </div>

@@ -6477,32 +6477,112 @@ article.syndicated-body {
   margin: 0;
 }
 
-/* Appeal Letter Card */
-.aoc-letter-card {
+/* Terms Glossary Section */
+.aoc-terms-section {
+  background: var(--card-paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.aoc-terms-header h2 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+
+.aoc-terms-header p {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin: 0 0 24px;
+  line-height: 1.55;
+  max-width: 820px;
+}
+
+.aoc-terms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.aoc-term-card {
   background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 20px;
-}
-
-.aoc-letter-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 14px;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.aoc-letter-header h3 {
+.aoc-term-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.aoc-term-pill {
+  display: inline-block;
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.blue-pill {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.purple-pill {
+  background: #f3e8ff;
+  color: #6b21a8;
+}
+
+.amber-pill {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.teal-pill {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+.green-pill {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.red-pill {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.aoc-term-card h4 {
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--ink);
+  margin: 0 0 8px;
+}
+
+.aoc-term-card p {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--ink-soft);
   margin: 0;
 }
 
-.btn-primary.aoc-copy-btn {
+/* Email Action Button & Modal Styles */
+.btn-primary.aoc-email-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -6517,22 +6597,339 @@ article.syndicated-body {
   transition: opacity 0.15s ease;
 }
 
-.btn-primary.aoc-copy-btn:hover {
+.btn-primary.aoc-email-btn:hover {
   opacity: 0.9;
 }
 
-.aoc-letter-pre {
-  white-space: pre-wrap;
-  font-family: var(--font-mono);
-  font-size: 12.5px;
-  line-height: 1.6;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 6px;
+.aoc-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 16px;
-  margin: 0;
+}
+
+.aoc-modal-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: aocModalFade 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes aocModalFade {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.aoc-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--line);
+  background: var(--card-paper);
+}
+
+.aoc-modal-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
   color: var(--ink);
-  overflow-x: auto;
+  margin: 0;
+}
+
+.aoc-modal-close {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--ink-soft);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aoc-modal-close:hover {
+  color: var(--ink);
+}
+
+.aoc-modal-body {
+  padding: 22px;
+}
+
+.aoc-modal-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0 0 18px;
+}
+
+.aoc-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.aoc-modal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.aoc-modal-field .req {
+  color: #dc2626;
+}
+
+.aoc-modal-error {
+  font-size: 12px;
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.aoc-modal-footer {
+  margin-top: 8px;
+}
+
+.aoc-modal-submit {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  background: var(--ink);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.aoc-modal-submit:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.aoc-modal-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.aoc-modal-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.aoc-success-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #15803d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.aoc-modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.aoc-modal-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-size: 13.5px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.aoc-modal-close-btn {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  padding: 8px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.aoc-modal-close-btn:hover {
+  color: var(--ink);
+  background: var(--card-paper);
+}
+
+/* Financial Aid Reconsideration Request Email Draft Section */
+.aoc-appeal-section {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.aoc-appeal-card {
+  background: var(--card-paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 28px;
+}
+
+.aoc-appeal-header h2 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+
+.aoc-appeal-header p.sub {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin: 0 0 20px;
+  line-height: 1.55;
+  max-width: 820px;
+}
+
+.aoc-appeal-action-box {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 18px;
+}
+
+.aoc-appeal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.aoc-appeal-input-wrap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.aoc-appeal-email-input {
+  flex: 1;
+  min-width: 240px;
+}
+
+.aoc-appeal-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.aoc-appeal-success {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 4px 0;
+}
+
+.aoc-success-icon-wrap.sm {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  margin-bottom: 0;
+}
+
+.aoc-appeal-success-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.aoc-open-mail-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 12.5px;
+  width: fit-content;
+  text-decoration: none;
+}
+
+.aoc-appeal-preview-details {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.aoc-appeal-preview-summary {
+  padding: 12px 18px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  background: var(--paper);
+  user-select: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aoc-appeal-preview-summary::-webkit-details-marker {
+  display: none;
+}
+
+.aoc-appeal-preview-summary::after {
+  content: "↓";
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.aoc-appeal-preview-details[open] .aoc-appeal-preview-summary::after {
+  transform: rotate(180deg);
+}
+
+.aoc-appeal-preview-content {
+  padding: 16px 18px;
+  background: #ffffff;
+  border-top: 1px solid var(--line);
+}
+
+.aoc-appeal-preview-notice {
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin: 0 0 12px;
+  font-family: var(--font-mono);
 }
 
 /* Print Only & Media Print */

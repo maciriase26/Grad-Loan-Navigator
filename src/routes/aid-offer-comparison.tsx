@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { AidOfferComparisonTool } from "@/components/calculator/AidOfferComparisonTool";
 
-const TITLE = "Aid Offer Comparison — Compare Real Graduate School Costs | Grad Loan Navigator";
+const TITLE = "Aid Offer Comparison: Compare Real Graduate School Costs | Grad Loan Navigator";
 const DESCRIPTION =
   "Compare financial aid offers from up to 4 graduate schools side-by-side. Separate loans masquerading as aid, compare real net prices and graduation debt, and export a free browser PDF.";
 const URL = "https://www.graduationnavigator.com/aid-offer-comparison";
