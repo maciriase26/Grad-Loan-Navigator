@@ -178,8 +178,8 @@ function buildComparisonSummary(calculatedOffers: any[], lang: string): string {
   lines.push("--------------------------------------------------");
   lines.push(
     lang === "es"
-      ? "BORRADOR: SOLICITUD DE RECONSIDERACIÓN DE AYUDA FINANCIERA"
-      : "BONUS: FINANCIAL AID RECONSIDERATION REQUEST DRAFT"
+      ? "SOLICITUD DE RECONSIDERACIÓN DE AYUDA FINANCIERA"
+      : "FINANCIAL AID RECONSIDERATION REQUEST LETTER"
   );
   lines.push("--------------------------------------------------");
   lines.push("");
@@ -224,11 +224,13 @@ export function AidOfferComparisonTool() {
   const [emailName, setEmailName] = useState("");
   const [emailAddress, setEmailAddress] = useState("");
   const [emailStatus, setEmailStatus] = useState<"idle" | "sending" | "success">("idle");
+  const [emailDelivered, setEmailDelivered] = useState(false);
   const [emailErrorMsg, setEmailErrorMsg] = useState("");
 
   // Appeal draft email state
   const [appealEmail, setAppealEmail] = useState("");
   const [appealStatus, setAppealStatus] = useState<"idle" | "sending" | "success">("idle");
+  const [appealDelivered, setAppealDelivered] = useState(false);
   const [appealError, setAppealError] = useState("");
 
   // Search state for autocomplete per school
@@ -435,13 +437,39 @@ export function AidOfferComparisonTool() {
                   <div className="aoc-success-icon-wrap">
                     <CheckIcon />
                   </div>
-                  <p className="aoc-modal-desc">{t("aoc.modal.successDesc")}</p>
+                  <strong style={{ display: "block", fontSize: "16px", marginBottom: "6px" }}>
+                    {emailDelivered
+                      ? t("aoc.appeal.deliveredTitle")
+                      : t("aoc.appeal.savedTitle")}
+                  </strong>
+                  <p className="aoc-modal-desc">
+                    {emailDelivered
+                      ? t("aoc.appeal.deliveredDesc").replace("{email}", emailAddress.trim())
+                      : t("aoc.appeal.savedDesc")}
+                  </p>
                   <div className="aoc-modal-actions">
                     <a
-                      href={`mailto:${encodeURIComponent(emailAddress.trim())}?subject=${encodeURIComponent(
-                        "Grad Loan Navigator: Financial Aid Offer Comparison"
+                      href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+                        emailAddress.trim()
+                      )}&su=${encodeURIComponent(
+                        lang === "es"
+                          ? "Grad Loan Navigator: Resumen de Comparativa de Ofertas de Ayuda"
+                          : "Grad Loan Navigator: Financial Aid Offer Comparison Summary"
                       )}&body=${encodeURIComponent(buildComparisonSummary(calculatedOffers, lang))}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="btn-primary aoc-modal-action-btn"
+                    >
+                      <MailIcon />
+                      <span>{t("aoc.appeal.openGmail")}</span>
+                    </a>
+                    <a
+                      href={`mailto:${encodeURIComponent(emailAddress.trim())}?subject=${encodeURIComponent(
+                        lang === "es"
+                          ? "Grad Loan Navigator: Resumen de Comparativa de Ofertas de Ayuda"
+                          : "Grad Loan Navigator: Financial Aid Offer Comparison Summary"
+                      )}&body=${encodeURIComponent(buildComparisonSummary(calculatedOffers, lang))}`}
+                      className="btn-secondary aoc-modal-action-btn"
                     >
                       <MailIcon />
                       <span>{t("aoc.modal.openEmailBtn")}</span>
@@ -479,27 +507,57 @@ export function AidOfferComparisonTool() {
                     setEmailStatus("sending");
 
                     const summaryText = buildComparisonSummary(calculatedOffers, lang);
+                    const subject =
+                      lang === "es"
+                        ? "Grad Loan Navigator: Resumen de Comparativa de Ofertas de Ayuda"
+                        : "Grad Loan Navigator: Financial Aid Offer Comparison Summary";
                     const payload = {
                       id: typeof crypto !== "undefined" && crypto.randomUUID ? crypto.randomUUID() : undefined,
                       name: emailName.trim() || "Student",
                       email: trimmedEmail,
                       reason: "aid_offer_comparison",
+                      subject,
                       message: summaryText,
                       created_at: new Date().toISOString(),
                     };
 
+                    let wasSentViaApi = false;
                     try {
-                      const { error } = await supabase.from("contact_messages").insert(payload);
-                      if (error) {
-                        await fetch("/api/contact", {
-                          method: "POST",
-                          headers: { "Content-Type": "application/json" },
-                          body: JSON.stringify(payload),
-                        }).catch(() => null);
+                      const res = await fetch("/api/contact", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(payload),
+                      });
+                      if (res.ok) {
+                        const json = await res.json().catch(() => null);
+                        if (json?.emailSent) {
+                          wasSentViaApi = true;
+                        }
+                      } else {
+                        await supabase.from("contact_messages").insert({
+                          id: payload.id,
+                          name: payload.name,
+                          email: payload.email,
+                          reason: payload.reason,
+                          message: summaryText.slice(0, 1990),
+                          created_at: payload.created_at,
+                        });
                       }
                     } catch (err) {
-                      console.warn("[AOC] Email save notice:", err);
+                      console.warn("[AOC] Email endpoint error, falling back to Supabase client:", err);
+                      try {
+                        await supabase.from("contact_messages").insert({
+                          id: payload.id,
+                          name: payload.name,
+                          email: payload.email,
+                          reason: payload.reason,
+                          message: summaryText.slice(0, 1990),
+                          created_at: payload.created_at,
+                        });
+                      } catch {}
                     }
+
+                    setEmailDelivered(wasSentViaApi);
                     setEmailStatus("success");
                   }}
                   className="aoc-modal-form"
@@ -1075,12 +1133,21 @@ export function AidOfferComparisonTool() {
                   <CheckIcon />
                 </div>
                 <div className="aoc-appeal-success-text">
-                  <strong>{t("aoc.appeal.success")}</strong>
-                  <div className="aoc-appeal-success-actions">
+                  <strong style={{ display: "block", fontSize: "15px", marginBottom: "4px" }}>
+                    {appealDelivered
+                      ? t("aoc.appeal.deliveredTitle")
+                      : t("aoc.appeal.savedTitle")}
+                  </strong>
+                  <p style={{ margin: "0 0 10px 0", fontSize: "13px", color: "var(--color-muted-text)" }}>
+                    {appealDelivered
+                      ? t("aoc.appeal.deliveredDesc").replace("{email}", appealEmail.trim())
+                      : t("aoc.appeal.savedDesc")}
+                  </p>
+                  <div className="aoc-appeal-success-actions" style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
                     <a
-                      href={`mailto:${encodeURIComponent(appealEmail.trim())}?subject=${encodeURIComponent(
+                      href={`https://mail.google.com/mail/?view=cm&fs=1&to=&su=${encodeURIComponent(
                         lang === "es"
-                          ? "Borrador de reconsideracion de ayuda financiera"
+                          ? "Borrador de solicitud de reconsideracion de ayuda financiera"
                           : "Financial Aid Reconsideration Request Email Draft"
                       )}&body=${encodeURIComponent(
                         buildAppealLetter(
@@ -1089,7 +1156,26 @@ export function AidOfferComparisonTool() {
                           lang
                         )
                       )}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="btn-primary aoc-open-mail-btn"
+                    >
+                      <MailIcon />
+                      <span>{t("aoc.appeal.openGmail")}</span>
+                    </a>
+                    <a
+                      href={`mailto:${encodeURIComponent(appealEmail.trim())}?subject=${encodeURIComponent(
+                        lang === "es"
+                          ? "Borrador de solicitud de reconsideracion de ayuda financiera"
+                          : "Financial Aid Reconsideration Request Email Draft"
+                      )}&body=${encodeURIComponent(
+                        buildAppealLetter(
+                          calculatedOffers[0]?.offer.schoolName || "",
+                          calculatedOffers[1]?.offer.schoolName || "",
+                          lang
+                        )
+                      )}`}
+                      className="btn-secondary aoc-open-mail-btn"
                     >
                       <MailIcon />
                       <span>{t("aoc.appeal.openMail")}</span>
@@ -1115,27 +1201,60 @@ export function AidOfferComparisonTool() {
                   const letter = buildAppealLetter(s1, s2, lang);
                   const summaryText = buildComparisonSummary(calculatedOffers, lang);
 
+                  const subject =
+                    lang === "es"
+                      ? "Carta para solicitar reconsideracion de ayuda financiera"
+                      : "Financial Aid Reconsideration Request Letter";
+
+                  const message = `${letter}\n\n====================\nCOMPARISON SUMMARY:\n====================\n${summaryText}`;
+
                   const payload = {
                     id: typeof crypto !== "undefined" && crypto.randomUUID ? crypto.randomUUID() : undefined,
                     name: "Student",
                     email: trimmed,
                     reason: "appeal_letter_request",
-                    message: `${letter}\n\n====================\nCOMPARISON SUMMARY:\n====================\n${summaryText}`,
+                    subject,
+                    message,
                     created_at: new Date().toISOString(),
                   };
 
+                  let wasSentViaApi = false;
                   try {
-                    const { error } = await supabase.from("contact_messages").insert(payload);
-                    if (error) {
-                      await fetch("/api/contact", {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify(payload),
-                      }).catch(() => null);
+                    const res = await fetch("/api/contact", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify(payload),
+                    });
+                    if (res.ok) {
+                      const json = await res.json().catch(() => null);
+                      if (json?.emailSent) {
+                        wasSentViaApi = true;
+                      }
+                    } else {
+                      await supabase.from("contact_messages").insert({
+                        id: payload.id,
+                        name: payload.name,
+                        email: payload.email,
+                        reason: payload.reason,
+                        message: message.slice(0, 1990),
+                        created_at: payload.created_at,
+                      });
                     }
                   } catch (err) {
-                    console.warn("[AOC] Appeal draft save notice:", err);
+                    console.warn("[AOC] Appeal draft API error, falling back to Supabase client:", err);
+                    try {
+                      await supabase.from("contact_messages").insert({
+                        id: payload.id,
+                        name: payload.name,
+                        email: payload.email,
+                        reason: payload.reason,
+                        message: message.slice(0, 1990),
+                        created_at: payload.created_at,
+                      });
+                    } catch {}
                   }
+
+                  setAppealDelivered(wasSentViaApi);
                   setAppealStatus("success");
                 }}
               >
