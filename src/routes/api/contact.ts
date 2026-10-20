@@ -30,14 +30,14 @@ export const Route = createFileRoute("/api/contact")({
             ? parsed.data.message.slice(0, 1990)
             : null;
 
-          const { data, error } = await supabase.from("contact_messages").insert({
-            id: typeof crypto !== "undefined" && crypto.randomUUID ? crypto.randomUUID() : undefined,
+          const { error } = await supabase.from("contact_messages").insert({
+            id: typeof crypto !== "undefined" && typeof crypto.randomUUID === "function" ? crypto.randomUUID() : undefined,
             name: parsed.data.name || "Student",
             email: parsed.data.email,
             reason: parsed.data.reason,
             message: dbMessage,
             created_at: new Date().toISOString(),
-          }).select();
+          });
 
           if (error) {
             console.error("[API Contact Route Error]:", error);
@@ -104,7 +104,7 @@ export const Route = createFileRoute("/api/contact")({
 
           return Response.json({
             success: true,
-            data,
+            savedToDatabase: !error,
             emailSent,
             emailError,
             hasResendKey: Boolean(resendKey),
