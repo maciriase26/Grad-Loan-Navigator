@@ -521,6 +521,21 @@ export function AidOfferComparisonTool() {
                       created_at: new Date().toISOString(),
                     };
 
+                    // 1. Guaranteed direct Supabase insertion
+                    try {
+                      await supabase.from("contact_messages").insert({
+                        id: typeof crypto !== "undefined" && typeof crypto.randomUUID === "function" ? crypto.randomUUID() : undefined,
+                        name: payload.name,
+                        email: payload.email,
+                        reason: payload.reason,
+                        message: summaryText.slice(0, 1990),
+                        created_at: payload.created_at,
+                      });
+                    } catch (dbErr) {
+                      console.warn("[AOC] Direct Supabase save notice:", dbErr);
+                    }
+
+                    // 2. Dispatch email via /api/contact
                     let wasSentViaApi = false;
                     try {
                       const res = await fetch("/api/contact", {
@@ -533,28 +548,9 @@ export function AidOfferComparisonTool() {
                         if (json?.emailSent) {
                           wasSentViaApi = true;
                         }
-                      } else {
-                        await supabase.from("contact_messages").insert({
-                          id: payload.id,
-                          name: payload.name,
-                          email: payload.email,
-                          reason: payload.reason,
-                          message: summaryText.slice(0, 1990),
-                          created_at: payload.created_at,
-                        });
                       }
                     } catch (err) {
-                      console.warn("[AOC] Email endpoint error, falling back to Supabase client:", err);
-                      try {
-                        await supabase.from("contact_messages").insert({
-                          id: payload.id,
-                          name: payload.name,
-                          email: payload.email,
-                          reason: payload.reason,
-                          message: summaryText.slice(0, 1990),
-                          created_at: payload.created_at,
-                        });
-                      } catch {}
+                      console.warn("[AOC] Email endpoint error:", err);
                     }
 
                     setEmailDelivered(wasSentViaApi);
@@ -1218,6 +1214,21 @@ export function AidOfferComparisonTool() {
                     created_at: new Date().toISOString(),
                   };
 
+                  // 1. Guaranteed direct Supabase insertion
+                  try {
+                    await supabase.from("contact_messages").insert({
+                      id: typeof crypto !== "undefined" && typeof crypto.randomUUID === "function" ? crypto.randomUUID() : undefined,
+                      name: payload.name,
+                      email: payload.email,
+                      reason: payload.reason,
+                      message: message.slice(0, 1990),
+                      created_at: payload.created_at,
+                    });
+                  } catch (dbErr) {
+                    console.warn("[AOC] Direct Supabase save notice:", dbErr);
+                  }
+
+                  // 2. Dispatch email via /api/contact
                   let wasSentViaApi = false;
                   try {
                     const res = await fetch("/api/contact", {
@@ -1230,28 +1241,9 @@ export function AidOfferComparisonTool() {
                       if (json?.emailSent) {
                         wasSentViaApi = true;
                       }
-                    } else {
-                      await supabase.from("contact_messages").insert({
-                        id: payload.id,
-                        name: payload.name,
-                        email: payload.email,
-                        reason: payload.reason,
-                        message: message.slice(0, 1990),
-                        created_at: payload.created_at,
-                      });
                     }
                   } catch (err) {
-                    console.warn("[AOC] Appeal draft API error, falling back to Supabase client:", err);
-                    try {
-                      await supabase.from("contact_messages").insert({
-                        id: payload.id,
-                        name: payload.name,
-                        email: payload.email,
-                        reason: payload.reason,
-                        message: message.slice(0, 1990),
-                        created_at: payload.created_at,
-                      });
-                    } catch {}
+                    console.warn("[AOC] Appeal letter API error:", err);
                   }
 
                   setAppealDelivered(wasSentViaApi);
