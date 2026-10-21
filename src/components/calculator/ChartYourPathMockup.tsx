@@ -581,7 +581,7 @@ export function ChartYourPathMockup() {
           <h3>{t("cyp.ready.title")}</h3>
           <p>{t("cyp.ready.desc")}</p>
         </div>
-        <Link to="/apply" className="cyp-ready-btn">
+        <Link to="/aid-offer-comparison" className="cyp-ready-btn">
           {t("cyp.ready.cta")}
         </Link>
       </div>

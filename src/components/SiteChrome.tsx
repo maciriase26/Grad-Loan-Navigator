@@ -1,8 +1,22 @@
-import { Link } from "@tanstack/react-router";
+import { useState, useRef, useEffect } from "react";
+import { Link, useLocation } from "@tanstack/react-router";
 import { LANGUAGES, useI18n } from "@/i18n";
 import { ContactDialog, openContactDialog } from "@/components/contact/ContactDialog";
 import { SearchNavigationDialog } from "@/components/search/SearchNavigationDialog";
 import { openSearchDialog } from "@/components/search/searchEvents";
+import {
+  ChevronDown,
+  Menu,
+  X,
+  Calculator,
+  Gift,
+  GraduationCap,
+  ShieldCheck,
+  TrendingUp,
+  BookOpen,
+  FileText,
+  Scale,
+} from "lucide-react";
 
 function SearchIcon() {
   return (
@@ -54,8 +68,151 @@ export function LanguageSwitcher() {
     </div>
   );
 }
+
+interface NavItem {
+  to: string;
+  titleKey: string;
+  descKey: string;
+  badgeKey?: string;
+  icon: React.ComponentType<{ size?: number; className?: string }>;
+}
+
+interface NavGroup {
+  id: "pay" | "manage" | "resources";
+  labelKey: string;
+  hubTo: string;
+  items: NavItem[];
+}
+
+const NAV_GROUPS: NavGroup[] = [
+  {
+    id: "pay",
+    labelKey: "nav.dropdown.pay.title",
+    hubTo: "/pay-for-school",
+    items: [
+      {
+        to: "/aid-offer-comparison",
+        titleKey: "nav.dropdown.pay.compareTitle",
+        descKey: "nav.dropdown.pay.compareDesc",
+        badgeKey: "nav.dropdown.toolBadge",
+        icon: Calculator,
+      },
+      {
+        to: "/free-money-first",
+        titleKey: "nav.dropdown.pay.freeMoneyTitle",
+        descKey: "nav.dropdown.pay.freeMoneyDesc",
+        icon: Gift,
+      },
+      {
+        to: "/pay-for-school",
+        titleKey: "nav.dropdown.pay.hubTitle",
+        descKey: "nav.dropdown.pay.hubDesc",
+        icon: GraduationCap,
+      },
+    ],
+  },
+  {
+    id: "manage",
+    labelKey: "nav.dropdown.manage.title",
+    hubTo: "/manage-loans",
+    items: [
+      {
+        to: "/manage-loans",
+        titleKey: "nav.dropdown.manage.repayTitle",
+        descKey: "nav.dropdown.manage.repayDesc",
+        icon: ShieldCheck,
+      },
+      {
+        to: "/in-depth-analysis",
+        titleKey: "nav.dropdown.manage.analysisTitle",
+        descKey: "nav.dropdown.manage.analysisDesc",
+        icon: TrendingUp,
+      },
+    ],
+  },
+  {
+    id: "resources",
+    labelKey: "nav.dropdown.resources.title",
+    hubTo: "/educational-resources",
+    items: [
+      {
+        to: "/educational-resources",
+        titleKey: "nav.dropdown.resources.loans101Title",
+        descKey: "nav.dropdown.resources.loans101Desc",
+        icon: BookOpen,
+      },
+      {
+        to: "/blog",
+        titleKey: "nav.dropdown.resources.blogTitle",
+        descKey: "nav.dropdown.resources.blogDesc",
+        icon: FileText,
+      },
+      {
+        to: "/editorial-standards",
+        titleKey: "nav.dropdown.resources.standardsTitle",
+        descKey: "nav.dropdown.resources.standardsDesc",
+        icon: Scale,
+      },
+    ],
+  },
+];
+
 export function SiteHeader() {
   const { lang, t } = useI18n();
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileExpanded, setMobileExpanded] = useState<Record<string, boolean>>({
+    pay: true,
+    manage: true,
+    resources: true,
+  });
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const location = useLocation();
+  useEffect(() => {
+    setMobileOpen(false);
+    setActiveDropdown(null);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setActiveDropdown(null);
+        setMobileOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+  const handleMouseEnter = (id: string) => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+    setActiveDropdown(id);
+  };
+
+  const handleMouseLeave = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    timeoutRef.current = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 160);
+  };
+
   return (
     <>
       <header className="site-header">
@@ -67,11 +224,75 @@ export function SiteHeader() {
             </span>
             r
           </Link>
+
+          {/* Desktop Hover Dropdowns */}
           <div className="navlinks">
-            <Link to="/educational-resources">{t("nav.understand")}</Link>
-            <Link to="/pay-for-school">{t("nav.pay")}</Link>
-            <Link to="/manage-loans">{t("nav.manage")}</Link>
+            {NAV_GROUPS.map((group) => {
+              const isOpen = activeDropdown === group.id;
+              return (
+                <div
+                  key={group.id}
+                  className={`nav-dropdown-wrapper ${isOpen ? "open" : ""}`}
+                  onMouseEnter={() => handleMouseEnter(group.id)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <Link
+                    to={group.hubTo}
+                    className={`nav-dropdown-trigger ${isOpen ? "active" : ""}`}
+                    aria-expanded={isOpen}
+                    aria-haspopup="true"
+                    onClick={() => setActiveDropdown(null)}
+                  >
+                    <span>{t(group.labelKey)}</span>
+                    <ChevronDown
+                      size={14}
+                      className={`nav-chevron ${isOpen ? "rotate" : ""}`}
+                      aria-hidden="true"
+                    />
+                  </Link>
+
+                  {isOpen && (
+                    <div
+                      className="nav-dropdown-menu"
+                      role="menu"
+                      onMouseEnter={() => handleMouseEnter(group.id)}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      <div className="nav-dropdown-inner">
+                        {group.items.map((item) => {
+                          const IconComponent = item.icon;
+                          return (
+                            <Link
+                              key={item.to}
+                              to={item.to}
+                              className="nav-dropdown-item"
+                              role="menuitem"
+                              onClick={() => setActiveDropdown(null)}
+                            >
+                              <div className="nav-dropdown-icon">
+                                <IconComponent size={18} />
+                              </div>
+                              <div className="nav-dropdown-text">
+                                <div className="nav-dropdown-title-row">
+                                  <span className="nav-dropdown-title">{t(item.titleKey)}</span>
+                                  {item.badgeKey && (
+                                    <span className="nav-dropdown-badge">{t(item.badgeKey)}</span>
+                                  )}
+                                </div>
+                                <p className="nav-dropdown-desc">{t(item.descKey)}</p>
+                              </div>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
+
+          {/* Header Right Actions */}
           <div className="nav-right">
             <button
               type="button"
@@ -86,9 +307,133 @@ export function SiteHeader() {
             <Link className="nav-cta" to="/chart-your-path">
               {t("nav.cta")}
             </Link>
+
+            {/* Mobile Hamburger Toggle */}
+            <button
+              type="button"
+              className="nav-mobile-toggle"
+              onClick={() => setMobileOpen((prev) => !prev)}
+              aria-label={mobileOpen ? t("nav.mobile.close") : t("nav.mobile.menu")}
+              aria-expanded={mobileOpen}
+            >
+              {mobileOpen ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
+            </button>
           </div>
         </nav>
       </header>
+
+      {/* Mobile Off-Canvas Navigation Drawer */}
+      {mobileOpen && (
+        <div className="mobile-nav-overlay" onClick={() => setMobileOpen(false)}>
+          <div
+            className="mobile-nav-drawer"
+            onClick={(e) => e.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Navigation Menu"
+          >
+            <div className="mobile-nav-header">
+              <Link to="/" className="logo" onClick={() => setMobileOpen(false)}>
+                Grad Navigat
+                <span className="logo-o">
+                  <CompassMark />
+                </span>
+                r
+              </Link>
+              <button
+                type="button"
+                className="mobile-nav-close-btn"
+                onClick={() => setMobileOpen(false)}
+                aria-label={t("nav.mobile.close")}
+              >
+                <X size={22} aria-hidden="true" />
+              </button>
+            </div>
+
+            <div className="mobile-nav-content">
+              {NAV_GROUPS.map((group) => {
+                const isExpanded = mobileExpanded[group.id] ?? true;
+                return (
+                  <div key={group.id} className="mobile-nav-group">
+                    <button
+                      type="button"
+                      className="mobile-nav-group-title"
+                      onClick={() =>
+                        setMobileExpanded((prev) => ({
+                          ...prev,
+                          [group.id]: !prev[group.id],
+                        }))
+                      }
+                      aria-expanded={isExpanded}
+                    >
+                      <span>{t(group.labelKey)}</span>
+                      <ChevronDown
+                        size={16}
+                        className={`mobile-chevron ${isExpanded ? "rotate" : ""}`}
+                        aria-hidden="true"
+                      />
+                    </button>
+
+                    {isExpanded && (
+                      <div className="mobile-nav-items">
+                        {group.items.map((item) => {
+                          const IconComponent = item.icon;
+                          return (
+                            <Link
+                              key={item.to}
+                              to={item.to}
+                              className="mobile-nav-item"
+                              onClick={() => setMobileOpen(false)}
+                            >
+                              <div className="mobile-nav-item-icon">
+                                <IconComponent size={18} />
+                              </div>
+                              <div className="mobile-nav-item-text">
+                                <div className="mobile-nav-item-title-row">
+                                  <span className="mobile-nav-item-title">{t(item.titleKey)}</span>
+                                  {item.badgeKey && (
+                                    <span className="nav-dropdown-badge">{t(item.badgeKey)}</span>
+                                  )}
+                                </div>
+                                <span className="mobile-nav-item-desc">{t(item.descKey)}</span>
+                              </div>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="mobile-nav-footer">
+              <div className="mobile-nav-controls">
+                <button
+                  type="button"
+                  className="mobile-search-btn"
+                  onClick={() => {
+                    setMobileOpen(false);
+                    openSearchDialog();
+                  }}
+                >
+                  <SearchIcon />
+                  <span>{t("search.btn")}</span>
+                </button>
+                <LanguageSwitcher />
+              </div>
+              <Link
+                className="mobile-nav-cta"
+                to="/chart-your-path"
+                onClick={() => setMobileOpen(false)}
+              >
+                {t("nav.cta")}
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
+
       <SearchNavigationDialog />
     </>
   );
