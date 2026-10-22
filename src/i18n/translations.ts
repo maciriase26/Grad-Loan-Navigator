@@ -2702,7 +2702,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "home.h1.line2em": "exactamente",
   "home.h1.line2b": " lo que debes hacer ahora.",
   "home.sub":
-    "Una guía en lenguaje claro sobre los nuevos límites de préstamo, las reglas de exención y cómo cubrir la diferencia — creada por personas que leen la letra pequeña para que tú no tengas que hacerlo.",
+    "Grad Navigator convierte la matrícula, la ayuda y los préstamos en un plan que realmente puedes seguir. Herramientas gratuitas, cifras respaldadas y cero letra pequeña.",
   "home.cta.rate": "Encuentra tu tasa ↓",
   "home.cta.loans101": "Recursos Educativos",
   "home.cta.freeMoney": "Dinero gratis primero →",
