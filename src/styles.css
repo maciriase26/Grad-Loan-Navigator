@@ -7414,4 +7414,143 @@ article.syndicated-body {
   }
 }
 
+/* ==========================================================================
+   Grad Navigator Animated SVGs
+   ========================================================================== */
+
+/* 1 & 5: Chart Your Path & Plan Complete */
+.cyp-hero-animation {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  margin: 0 auto 16px;
+  filter: drop-shadow(0 6px 18px rgba(14, 159, 110, 0.08));
+}
+
+.cyp-result-animation {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  margin: 0 auto 16px;
+  filter: drop-shadow(0 6px 20px rgba(14, 159, 110, 0.12));
+}
+
+/* 2: Free Money First Hero */
+.fmf-hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.fmf-hero-text {
+  flex: 1 1 65%;
+  min-width: 0;
+}
+
+.fmf-hero-media {
+  flex: 0 0 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fmf-hero-animation {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  filter: drop-shadow(0 8px 24px rgba(14, 159, 110, 0.08));
+}
+
+@media (max-width: 768px) {
+  .fmf-hero-flex {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .fmf-hero-media {
+    flex: 0 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
+  .fmf-hero-animation {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+/* 3: Educational Resources Banner */
+.resources-banner-animation {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  margin: 0 auto 18px;
+  filter: drop-shadow(0 6px 18px rgba(14, 159, 110, 0.08));
+}
+
+/* 4: Aid Offer Comparison Tool Header */
+.aoc-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.aoc-header-text {
+  flex: 1 1 70%;
+  min-width: 0;
+}
+
+.aoc-header-media {
+  flex: 0 0 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aoc-tool-animation {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  filter: drop-shadow(0 8px 24px rgba(14, 159, 110, 0.08));
+}
+
+@media (max-width: 768px) {
+  .aoc-header-flex {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .aoc-header-media {
+    flex: 0 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
+  .aoc-tool-animation {
+    max-width: 190px;
+    margin: 0 auto;
+  }
+}
+
+/* Hide animations in print mode */
+@media print {
+  .cyp-hero-animation,
+  .cyp-result-animation,
+  .fmf-hero-animation,
+  .resources-banner-animation,
+  .aoc-tool-animation {
+    display: none !important;
+  }
+}
+
 

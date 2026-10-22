@@ -2238,6 +2238,11 @@ export const en = {
   "refi.sources.label": "Sources:",
   "refi.sources.text":
     "U.S. Department of Education, Federal Student Aid; U.S. News & World Report",
+  "alt.anim.chartYourPath": "Student looking through a telescope at a path to the summit",
+  "alt.anim.freeMoneyFirst": "Student using a magnifying glass to find scholarships and free money",
+  "alt.anim.understandLoans": "Student reading a guide next to a signpost",
+  "alt.anim.compareOffers": "Student with a compass choosing between two paths",
+  "alt.anim.planComplete": "Graduate celebrating on the summit next to a completed checklist",
 } as const;
 
 export type TranslationKey = keyof typeof en;
@@ -4499,6 +4504,11 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "wmd.major.studentCounseling": "Orientación estudiantil",
   "wmd.major.psychology": "Psicología clínica/aplicada",
   "wmd.major.socialWork": "Trabajo social",
+  "alt.anim.chartYourPath": "Estudiante mirando a través de un telescopio hacia un camino a la cumbre",
+  "alt.anim.freeMoneyFirst": "Estudiante usando una lupa para encontrar becas y dinero gratis",
+  "alt.anim.understandLoans": "Estudiante leyendo una guía junto a una señalización",
+  "alt.anim.compareOffers": "Estudiante con una brújula eligiendo entre dos caminos",
+  "alt.anim.planComplete": "Graduado celebrando en la cumbre junto a una lista de verificación completada",
 };
 
 export const LANGUAGES = [

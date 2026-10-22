@@ -89,6 +89,14 @@ function EducationalResources() {
 
       <main>
         <section className="wrap resources-banner">
+          <img
+            src="/images/gn-animation-understand-loans.svg"
+            width="800"
+            height="600"
+            alt={t("alt.anim.understandLoans")}
+            loading="lazy"
+            className="resources-banner-animation"
+          />
           <div className="eyebrow">{t("er.eyebrow")}</div>
           <h1>{t("er.h1")}</h1>
           <p className="sub">{t("er.sub")}</p>

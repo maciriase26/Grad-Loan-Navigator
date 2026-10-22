@@ -73,25 +73,39 @@ export default function FreeMoneyFirstPage() {
       <main className="fmf-page">
         {/* Hero Section */}
         <section className="wrap fmf-hero">
-          <div className="eyebrow">{t("fmf.hero.tag")}</div>
-          <h1 className="fmf-title">{t("fmf.hero.title")}</h1>
-          <p className="sub fmf-sub">{t("fmf.hero.subtitle")}</p>
+          <div className="fmf-hero-flex">
+            <div className="fmf-hero-text">
+              <div className="eyebrow">{t("fmf.hero.tag")}</div>
+              <h1 className="fmf-title">{t("fmf.hero.title")}</h1>
+              <p className="sub fmf-sub">{t("fmf.hero.subtitle")}</p>
 
-          <div className="fmf-meta-bar">
-            <span className="fmf-badge-review">
-              <span className="fmf-sym" aria-hidden="true">
-                <CheckIcon />
-              </span>
-              {t("fmf.badge.reviewed")}
-            </span>
-            <span className="fmf-badge-source">
-              <span className="fmf-sym" aria-hidden="true">◆</span>
-              {t("fmf.badge.verified")}
-            </span>
-            <span className="fmf-badge-entities">
-              <span className="fmf-sym" aria-hidden="true">§</span>
-              CGS • NSF • StudentAid.gov • IRS § 127 • FTC
-            </span>
+              <div className="fmf-meta-bar">
+                <span className="fmf-badge-review">
+                  <span className="fmf-sym" aria-hidden="true">
+                    <CheckIcon />
+                  </span>
+                  {t("fmf.badge.reviewed")}
+                </span>
+                <span className="fmf-badge-source">
+                  <span className="fmf-sym" aria-hidden="true">◆</span>
+                  {t("fmf.badge.verified")}
+                </span>
+                <span className="fmf-badge-entities">
+                  <span className="fmf-sym" aria-hidden="true">§</span>
+                  CGS • NSF • StudentAid.gov • IRS § 127 • FTC
+                </span>
+              </div>
+            </div>
+            <div className="fmf-hero-media">
+              <img
+                src="/images/gn-animation-free-money-first.svg"
+                width="800"
+                height="600"
+                alt={t("alt.anim.freeMoneyFirst")}
+                loading="lazy"
+                className="fmf-hero-animation"
+              />
+            </div>
           </div>
         </section>
 

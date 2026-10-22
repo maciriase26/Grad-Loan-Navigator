@@ -361,9 +361,23 @@ export function AidOfferComparisonTool() {
     <div className="aoc-tool-wrapper">
       {/* Hero Header */}
       <div className="tool-header">
-        <span className="eyebrow">{t("aoc.hero.tag")}</span>
-        <h1>{t("aoc.hero.title")}</h1>
-        <p className="sub">{t("aoc.hero.subtitle")}</p>
+        <div className="aoc-header-flex">
+          <div className="aoc-header-text">
+            <span className="eyebrow">{t("aoc.hero.tag")}</span>
+            <h1>{t("aoc.hero.title")}</h1>
+            <p className="sub">{t("aoc.hero.subtitle")}</p>
+          </div>
+          <div className="aoc-header-media">
+            <img
+              src="/images/gn-animation-compare-offers.svg"
+              width="800"
+              height="600"
+              alt={t("alt.anim.compareOffers")}
+              loading="lazy"
+              className="aoc-tool-animation"
+            />
+          </div>
+        </div>
       </div>
 
       {/* Top Controls Bar */}
