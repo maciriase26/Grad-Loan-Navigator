@@ -131,16 +131,22 @@ export function ChartYourPathMockup() {
     <div className="cyp-wrap">
       {/* 1. CHART YOUR PATH - STEP 1 INPUTS */}
       <div className="cyp-hero">
-        <img
-          src="/images/gn-animation-chart-your-path.svg"
-          width="800"
-          height="600"
-          alt={t("alt.anim.chartYourPath")}
-          loading="lazy"
-          className="cyp-hero-animation"
-        />
-        <h1>{t("cyp.h1")}</h1>
-        <p className="cyp-sub">{t("cyp.sub")}</p>
+        <div className="cyp-hero-flex">
+          <div className="cyp-hero-text">
+            <h1>{t("cyp.h1")}</h1>
+            <p className="cyp-sub">{t("cyp.sub")}</p>
+          </div>
+          <div className="cyp-hero-media">
+            <img
+              src="/images/gn-animation-chart-your-path.svg"
+              width="800"
+              height="600"
+              alt={t("alt.anim.chartYourPath")}
+              loading="lazy"
+              className="cyp-hero-animation"
+            />
+          </div>
+        </div>
       </div>
 
       {/* Main Mockup Card Container */}
@@ -513,17 +519,21 @@ export function ChartYourPathMockup() {
       {/* 2. FUNDING GAP RESULT SECTION */}
       {hasCalculated && (
         <div className="cyp-result-step" ref={resultRef}>
-          <div className="cyp-hero">
-            <img
-              src="/images/gn-animation-plan-complete.svg"
-              width="800"
-              height="600"
-              alt={t("alt.anim.planComplete")}
-              loading="lazy"
-              className="cyp-result-animation"
-            />
-            <h2>{t("cyp.res.h2")}</h2>
-            <p className="cyp-sub">{t("cyp.res.sub")}</p>
+          <div className="cyp-result-header-flex">
+            <div className="cyp-result-header-text">
+              <h2>{t("cyp.res.h2")}</h2>
+              <p className="cyp-sub">{t("cyp.res.sub")}</p>
+            </div>
+            <div className="cyp-result-header-media">
+              <img
+                src="/images/gn-animation-plan-complete.svg"
+                width="800"
+                height="600"
+                alt={t("alt.anim.planComplete")}
+                loading="lazy"
+                className="cyp-result-animation"
+              />
+            </div>
           </div>
 
           <div className="cyp-result-grid">

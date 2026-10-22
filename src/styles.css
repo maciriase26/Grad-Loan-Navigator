@@ -7418,25 +7418,130 @@ article.syndicated-body {
    Grad Navigator Animated SVGs
    ========================================================================== */
 
-/* 1 & 5: Chart Your Path & Plan Complete */
+/* 1: Chart Your Path Hero (Side-by-Side) */
+.cyp-hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  text-align: left;
+}
+
+.cyp-hero-text {
+  flex: 1 1 70%;
+  min-width: 0;
+}
+
+.cyp-hero-text h1 {
+  text-align: left;
+  margin: 0 0 10px;
+}
+
+.cyp-hero-text .cyp-sub {
+  text-align: left;
+  margin: 0;
+  max-width: 680px;
+}
+
+.cyp-hero-media {
+  flex: 0 0 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .cyp-hero-animation {
   display: block;
   width: 100%;
-  max-width: 220px;
+  max-width: 210px;
   height: auto;
   aspect-ratio: 4 / 3;
-  margin: 0 auto 16px;
   filter: drop-shadow(0 6px 18px rgba(14, 159, 110, 0.08));
+}
+
+@media (max-width: 768px) {
+  .cyp-hero-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  .cyp-hero-text h1,
+  .cyp-hero-text .cyp-sub {
+    text-align: center;
+  }
+  .cyp-hero-media {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .cyp-hero-animation {
+    max-width: 170px;
+    margin: 0 auto;
+  }
+}
+
+/* 5: Plan Complete Result Header (Side-by-Side) */
+.cyp-result-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 24px;
+}
+
+.cyp-result-header-text {
+  flex: 1 1 70%;
+  min-width: 0;
+}
+
+.cyp-result-header-text h2 {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.8vw, 36px);
+  font-weight: 700;
+  color: var(--ink);
+  text-align: left;
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+
+.cyp-result-header-text .cyp-sub {
+  text-align: left;
+  margin: 0;
+}
+
+.cyp-result-header-media {
+  flex: 0 0 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cyp-result-animation {
   display: block;
   width: 100%;
-  max-width: 240px;
+  max-width: 200px;
   height: auto;
   aspect-ratio: 4 / 3;
-  margin: 0 auto 16px;
   filter: drop-shadow(0 6px 20px rgba(14, 159, 110, 0.12));
+}
+
+@media (max-width: 768px) {
+  .cyp-result-header-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  .cyp-result-header-text h2,
+  .cyp-result-header-text .cyp-sub {
+    text-align: center;
+  }
+  .cyp-result-header-media {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .cyp-result-animation {
+    max-width: 170px;
+    margin: 0 auto;
+  }
 }
 
 /* 2: Free Money First Hero */
@@ -7470,7 +7575,7 @@ article.syndicated-body {
 
 @media (max-width: 768px) {
   .fmf-hero-flex {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
     gap: 20px;
   }
@@ -7480,19 +7585,24 @@ article.syndicated-body {
     justify-content: center;
   }
   .fmf-hero-animation {
-    max-width: 200px;
+    max-width: 180px;
     margin: 0 auto;
   }
 }
 
-/* 3: Educational Resources Banner */
+/* 3: Educational Resources Banner & Decision Bridge */
+.resources-banner-bridge {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
 .resources-banner-animation {
   display: block;
   width: 100%;
-  max-width: 220px;
+  max-width: 200px;
   height: auto;
   aspect-ratio: 4 / 3;
-  margin: 0 auto 18px;
   filter: drop-shadow(0 6px 18px rgba(14, 159, 110, 0.08));
 }
 
@@ -7527,7 +7637,7 @@ article.syndicated-body {
 
 @media (max-width: 768px) {
   .aoc-header-flex {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
     gap: 16px;
   }
@@ -7537,7 +7647,7 @@ article.syndicated-body {
     justify-content: center;
   }
   .aoc-tool-animation {
-    max-width: 190px;
+    max-width: 180px;
     margin: 0 auto;
   }
 }

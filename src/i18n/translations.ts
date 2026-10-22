@@ -1611,7 +1611,7 @@ export const en = {
   "home.h1.line2em": "exactly",
   "home.h1.line2b": " what to do next.",
   "home.sub":
-    "A plain-language guide to the new borrowing caps, the grandfather rules, and how to fill the gap — built by people who read the fine print so you don't have to.",
+    "Grad Navigator turns tuition, aid and loans into a plan you can actually follow. Free tools, sourced numbers and zero fine print.",
   "home.cta.rate": "Chart your path ↓",
   "home.cta.loans101": "Educational Resources",
   "home.cta.freeMoney": "Free money first →",
