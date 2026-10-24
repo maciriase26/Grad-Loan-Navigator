@@ -2238,7 +2238,7 @@ export const en = {
   "refi.sources.label": "Sources:",
   "refi.sources.text":
     "U.S. Department of Education, Federal Student Aid; U.S. News & World Report",
-  "alt.anim.chartYourPath": "Student looking through a telescope at a path to the summit",
+  "alt.anim.chartYourPath": "Student holding a pocket compass stepping along a guided pathway toward a campus dome",
   "alt.anim.freeMoneyFirst": "Student using a magnifying glass to find scholarships and free money",
   "alt.anim.understandLoans": "Student reading a guide next to a signpost",
   "alt.anim.compareOffers": "Student with a compass choosing between two paths",
@@ -4504,7 +4504,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "wmd.major.studentCounseling": "Orientación estudiantil",
   "wmd.major.psychology": "Psicología clínica/aplicada",
   "wmd.major.socialWork": "Trabajo social",
-  "alt.anim.chartYourPath": "Estudiante mirando a través de un telescopio hacia un camino a la cumbre",
+  "alt.anim.chartYourPath": "Estudiante sosteniendo una brújula de bolsillo avanzando por un camino guiado hacia una cúpula universitaria",
   "alt.anim.freeMoneyFirst": "Estudiante usando una lupa para encontrar becas y dinero gratis",
   "alt.anim.understandLoans": "Estudiante leyendo una guía junto a una señalización",
   "alt.anim.compareOffers": "Estudiante con una brújula eligiendo entre dos caminos",

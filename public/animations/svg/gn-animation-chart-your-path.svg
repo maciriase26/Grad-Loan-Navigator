@@ -1,32 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="t"><title id="t">Animated: student looking through a telescope at a path to the summit</title><style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="t">
+<title id="t">Animated: student holding a compass stepping along a guided pathway toward a campus dome</title>
+<style>
 *{transform-box:view-box}
 @keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 @keyframes wave{0%,100%{transform:scaleX(1) skewY(0deg)}25%{transform:scaleX(.82) skewY(4deg)}50%{transform:scaleX(1) skewY(-2deg)}75%{transform:scaleX(.9) skewY(3deg)}}
 @keyframes march{to{stroke-dashoffset:-72}}
 @keyframes twinkle{0%,100%{transform:scale(0);opacity:0}20%{transform:scale(1);opacity:1}40%{transform:scale(0);opacity:0}}
+@keyframes needle{0%,100%{transform:rotate(-28deg)}50%{transform:rotate(28deg)}}
 @keyframes pulse{0%,70%,100%{transform:scale(1)}80%{transform:scale(1.18)}90%{transform:scale(.96)}}
-@keyframes spin{0%,40%,100%{transform:scaleX(1)}55%{transform:scaleX(.08)}70%{transform:scaleX(1)}}
-@keyframes sweep{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(6deg)}}
-@keyframes needle{0%,100%{transform:rotate(-26deg)}50%{transform:rotate(26deg)}}
-@keyframes swing{0%,100%{transform:rotate(0)}30%{transform:rotate(2.5deg)}70%{transform:rotate(-2.5deg)}}
-@keyframes flip{0%{transform:scaleX(1);opacity:0}10%,40%{transform:scaleX(1);opacity:1}65%,88%{transform:scaleX(-1);opacity:1}100%{transform:scaleX(-1);opacity:0}}
-@keyframes jump{0%,50%,100%{transform:translateY(0)}20%{transform:translateY(-30px)}35%{transform:translateY(-6px)}}
-@keyframes fall{0%{transform:translateY(-60px) rotate(0deg);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translateY(150px) rotate(320deg);opacity:0}}
-@keyframes bounce{0%,60%,100%{transform:translateY(0)}75%{transform:translateY(-10px)}}
 .sway{animation:sway 3s ease-in-out infinite}
 .bob{animation:bob 3s ease-in-out infinite}
 .wave{animation:wave 2s ease-in-out infinite}
 .march{animation:march 1.5s linear infinite}
 .twinkle{animation:twinkle 2s ease-in-out infinite}
-.pulse{animation:pulse 3s ease-in-out infinite}
-.spin{animation:spin 3s ease-in-out infinite}
-.sweep{animation:sweep 3s ease-in-out infinite}
 .needle{animation:needle 3s ease-in-out infinite}
-.swing{animation:swing 3s ease-in-out infinite}
-.flip{animation:flip 2s ease-in-out infinite}
-.jump{animation:jump 1.5s cubic-bezier(.3,0,.3,1) infinite}
-.fall{animation:fall 3s linear infinite}
-.bounce{animation:bounce 2s ease-in-out infinite}
+.pulse{animation:pulse 3s ease-in-out infinite}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
-</style><path d="M330 540 C300 420 340 250 470 170 C560 115 680 120 720 200 C760 290 720 470 640 520 C560 570 380 600 330 540Z" fill="#DDF3EA" /><path d="M360 540 C350 430 400 330 470 300 C540 270 600 320 610 380 C630 470 600 530 540 548 C480 565 380 570 360 540Z" fill="#3A5486" /><path d="M500 548 C520 470 560 320 600 230 C640 150 690 150 720 210 C750 300 720 480 640 525 C600 545 540 552 500 548Z" fill="#0E9F6E" /><path d="M455 552 C470 470 510 400 560 330 C600 270 640 210 668 168 L684 176 C660 222 624 286 588 346 C548 412 512 480 500 552Z" fill="#FFF3C9" /><path class="march" d="M478 548 C492 474 528 408 572 342 C608 286 644 222 674 174" fill="none" stroke="#0B7A55" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 16" opacity="0.45" style="animation-delay:0s"/><ellipse cx="676" cy="168" rx="34" ry="10" fill="#FFF3C9"/><path d="M676 168 L676 106" fill="none" stroke="#16233F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><g class="wave" style="transform-origin:676px 117px;"><path d="M676 106 L714 116 L676 128Z" fill="#F2B33D" /></g><ellipse cx="612" cy="250" rx="6" ry="11" fill="#0B7A55" transform="rotate(20 612 250)"/><ellipse cx="640" cy="300" rx="6" ry="11" fill="#0B7A55" transform="rotate(20 640 300)"/><ellipse cx="680" cy="270" rx="6" ry="11" fill="#0B7A55" transform="rotate(20 680 270)"/><ellipse cx="700" cy="330" rx="6" ry="11" fill="#0B7A55" transform="rotate(20 700 330)"/><g class="twinkle" style="transform-origin:736px 120px;"><path d="M736 106 Q736 120 750 120 Q736 120 736 134 Q736 120 722 120 Q736 120 736 106Z" fill="#F2B33D" /></g><g class="twinkle" style="transform-origin:620px 110px;animation-delay:-0.7s;"><path d="M620 101 Q620 110 629 110 Q620 110 620 119 Q620 110 611 110 Q620 110 620 101Z" fill="#5CC79E" /></g><g class="twinkle" style="transform-origin:712px 70px;animation-delay:-1.3s;"><path d="M712 62 Q712 70 720 70 Q712 70 712 78 Q712 70 704 70 Q712 70 712 62Z" fill="#F2B33D" /></g><g class="sway" style="transform-origin:391.4px 548px;"><path d="M391.4 548 C366.4 516.1 374.4 493.77 380.4 484.2 C388.4 496.96 394.4 519.29 391.4 548Z" fill="#0B7A55" /></g><g class="sway" style="transform-origin:411.2px 548px;animation-delay:-0.4s;"><path d="M411.2 548 C392.8 505.1 400.8 475.07 406.8 462.2 C414.8 479.36 420.8 509.39 411.2 548Z" fill="#0E9F6E" /></g><g class="sway" style="transform-origin:431.0px 548px;animation-delay:-0.8s;"><path d="M431.0 548 C423.6 512.8 431.6 488.15999999999997 437.6 477.6 C445.6 491.68 451.6 516.32 431.0 548Z" fill="#5CC79E" /></g><g class="sway" style="transform-origin:448.6px 548px;animation-delay:-1.2000000000000002s;"><path d="M448.6 548 C447.8 522.7 455.8 504.99 461.8 497.4 C469.8 507.52 475.8 525.23 448.6 548Z" fill="#3A5486" /></g><g class="sway" style="transform-origin:539.2px 552px;animation-delay:-1.1s;"><path d="M539.2 552 C517.2 528.8 525.2 512.56 531.2 505.6 C539.2 514.88 545.2 531.12 539.2 552Z" fill="#0B7A55" /></g><g class="sway" style="transform-origin:553.6px 552px;animation-delay:-1.5s;"><path d="M553.6 552 C536.4 520.8 544.4 498.96 550.4 489.6 C558.4 502.08 564.4 523.92 553.6 552Z" fill="#0E9F6E" /></g><g class="sway" style="transform-origin:568.0px 552px;animation-delay:-1.9000000000000001s;"><path d="M568.0 552 C558.8 526.4 566.8 508.48 572.8 500.8 C580.8 511.03999999999996 586.8 528.96 568.0 552Z" fill="#5CC79E" /></g><g class="sway" style="transform-origin:580.8px 552px;animation-delay:-2.3000000000000003s;"><path d="M580.8 552 C576.4 533.6 584.4 520.72 590.4 515.2 C598.4 522.56 604.4 535.44 580.8 552Z" fill="#3A5486" /></g><g class="bob" style="transform-origin:260px 500px;"><path d="M250 352 L214 430 L190 506" fill="none" stroke="#7F8AA3" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="200" cy="514" rx="22" ry="12" fill="#16233F"/><path d="M262 238 L300 270 L334 222" fill="none" stroke="#E8B48F" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><rect x="216" y="246" width="40" height="78" rx="16" fill="#16233F"/><path d="M262 252 L250 344" fill="none" stroke="#0E9F6E" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/><path d="M248 350 L252 354" fill="none" stroke="#A9B4C8" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/><path d="M250 352 L318 392 L330 470" fill="none" stroke="#A9B4C8" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="340" cy="478" rx="22" ry="12" fill="#16233F"/><path d="M256 240 L258 284" fill="none" stroke="#16233F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M262 238 L296 286 L318 238" fill="none" stroke="#E8B48F" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><path d="M238 199 C216 235 224 271 254 267 C266 245 260 215 238 199Z" fill="#5A3A2E" /><path d="M262 238 L268 225" fill="none" stroke="#E8B48F" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><circle cx="268" cy="205" r="27" fill="#E8B48F"/><path d="M240 207 C238 179 262 169 280 175 C294 179 298 191 296 197 C278 191 262 193 254 209Z" fill="#5A3A2E" transform="translate(0,0) scale(1,1)"/><circle cx="280" cy="207" r="3" fill="#16233F"/><path d="M274 218 Q282 224 288 217" fill="none" stroke="#16233F" stroke-width="3" stroke-linecap="round"/><path d="M300 216 L392 186" fill="none" stroke="#24365E" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><path d="M392 186 L410 180" fill="none" stroke="#F2B33D" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+</style>
+
+<!-- Organic Backdrop Blob -->
+<path d="M120 520 C90 380 180 210 370 190 C560 170 710 240 700 400 C690 510 590 565 450 568 C290 572 140 600 120 520Z" fill="#DDF3EA" />
+
+<!-- Rolling campus hill landscape -->
+<path d="M260 564 C300 440 400 360 520 350 C630 340 700 420 720 564Z" fill="#3A5486" />
+<path d="M180 564 C230 460 340 380 470 380 C600 380 670 450 690 564Z" fill="#0E9F6E" />
+
+<!-- Campus Rotunda / Graduation Hall in Distance -->
+<g class="bob" style="transform-origin:590px 320px;animation-delay:-1.2s;">
+  <!-- Classical portico columns -->
+  <rect x="548" y="290" width="84" height="60" rx="4" fill="#FFFFFF"/>
+  <rect x="542" y="282" width="96" height="10" rx="2" fill="#16233F"/>
+  <rect x="540" y="346" width="100" height="8" rx="2" fill="#16233F"/>
+  <!-- Columns -->
+  <line x1="558" y1="292" x2="558" y2="346" stroke="#A9B4C8" stroke-width="6" stroke-linecap="round"/>
+  <line x1="578" y1="292" x2="578" y2="346" stroke="#A9B4C8" stroke-width="6" stroke-linecap="round"/>
+  <line x1="602" y1="292" x2="602" y2="346" stroke="#A9B4C8" stroke-width="6" stroke-linecap="round"/>
+  <line x1="622" y1="292" x2="622" y2="346" stroke="#A9B4C8" stroke-width="6" stroke-linecap="round"/>
+  <!-- Rotunda Dome -->
+  <path d="M552 282 C552 240 628 240 628 282 Z" fill="#F2B33D"/>
+  <!-- Lantern spire & flag -->
+  <line x1="590" y1="240" x2="590" y2="210" stroke="#16233F" stroke-width="3" stroke-linecap="round"/>
+  <g class="wave" style="transform-origin:590px 216px;">
+    <path d="M590 210 L620 220 L590 230Z" fill="#0E9F6E"/>
+  </g>
+</g>
+
+<!-- Winding Path with stepping stone milestones -->
+<path d="M290 560 C320 480 370 430 440 410 C500 390 540 370 580 354 L594 370 C550 388 510 410 454 430 C390 454 344 500 326 560Z" fill="#FFF3C9" />
+
+<!-- Marching dotted path -->
+<path class="march" d="M308 560 C334 486 380 438 448 420 C504 400 546 380 586 362" fill="none" stroke="#0B7A55" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 16" opacity="0.5"/>
+
+<!-- Stepping Stone Milestones along path -->
+<ellipse cx="370" cy="486" rx="22" ry="8" fill="#FFFFFF" stroke="#DCE1DA" stroke-width="2"/>
+<ellipse cx="442" cy="442" rx="18" ry="7" fill="#FFFFFF" stroke="#DCE1DA" stroke-width="2"/>
+<ellipse cx="512" cy="408" rx="15" ry="6" fill="#FFFFFF" stroke="#DCE1DA" stroke-width="2"/>
+
+<!-- Student Character holding pocket compass (matches suite 100%) -->
+<g class="bob" style="transform-origin:230px 500px;">
+  <!-- Back leg -->
+  <path d="M220 370 L190 440 L180 514" fill="none" stroke="#7F8AA3" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="190" cy="522" rx="22" ry="12" fill="#16233F"/>
+
+  <!-- Back arm -->
+  <path d="M236 260 L204 310 L214 360" fill="none" stroke="#C68862" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Backpack -->
+  <rect x="186" y="260" width="40" height="78" rx="16" fill="#16233F"/>
+
+  <!-- Torso (Navy pullover with Emerald accents) -->
+  <path d="M236 264 L230 360" fill="none" stroke="#24365E" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M228 366 L234 370" fill="none" stroke="#0E9F6E" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Front stepping leg -->
+  <path d="M230 370 L274 430 L290 504" fill="none" stroke="#0E9F6E" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="300" cy="512" rx="22" ry="12" fill="#16233F"/>
+
+  <!-- Front arm holding glowing golden compass forward -->
+  <path d="M236 260 L286 288 L320 280" fill="none" stroke="#C68862" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Pocket Compass in Hand -->
+  <g class="bob" style="transform-origin:336px 274px;animation-delay:-0.7s;">
+    <circle cx="336" cy="274" r="28" fill="#F2B33D" stroke="#16233F" stroke-width="5"/>
+    <circle cx="336" cy="274" r="20" fill="#FFFFFF"/>
+    <!-- Animated Compass Needle -->
+    <g class="needle" style="transform-origin:336px 274px;">
+      <path d="M336 258 L340 274 L336 284 L332 274Z" fill="#0E9F6E"/>
+      <path d="M336 258 L340 274 L332 274Z" fill="#0B7A55"/>
+    </g>
+    <circle cx="336" cy="274" r="3" fill="#16233F"/>
+    <!-- Compass loop -->
+    <ellipse cx="336" cy="242" rx="6" ry="4" fill="none" stroke="#F2B33D" stroke-width="3"/>
+  </g>
+
+  <!-- Neck & Head -->
+  <path d="M236 254 L240 238" fill="none" stroke="#C68862" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="242" cy="216" r="27" fill="#C68862"/>
+
+  <!-- Hair (Curled style matching suite) -->
+  <path d="M214 218 C212 190 236 180 254 186 C268 190 272 202 270 208 C252 202 236 204 228 220Z" fill="#7A4A2A"/>
+  <path d="M214 210 C192 246 200 282 230 278 C242 256 236 226 214 210Z" fill="#7A4A2A"/>
+
+  <!-- Face features -->
+  <circle cx="254" cy="218" r="3" fill="#16233F"/>
+  <path d="M248 229 Q256 235 262 228" fill="none" stroke="#16233F" stroke-width="3" stroke-linecap="round"/>
+</g>
+
+<!-- Twinkling stars -->
+<g class="twinkle" style="transform-origin:660px 180px;"><path d="M660 168 Q660 180 672 180 Q660 180 660 192 Q660 180 648 180 Q660 180 660 168Z" fill="#F2B33D"/></g>
+<g class="twinkle" style="transform-origin:490px 160px;animation-delay:-0.9s;"><path d="M490 151 Q490 160 499 160 Q490 160 490 169 Q490 160 481 160 Q490 160 490 151Z" fill="#5CC79E"/></g>
+
+<!-- Swaying botanicals in foreground -->
+<g class="sway" style="transform-origin:190px 540px;"><path d="M190 540 C168 512 176 492 182 484 C190 494 196 514 190 540Z" fill="#0B7A55" /></g>
+<g class="sway" style="transform-origin:208px 540px;animation-delay:-0.5s;"><path d="M208 540 C190 504 198 478 204 468 C212 482 218 508 208 540Z" fill="#0E9F6E" /></g>
+<g class="sway" style="transform-origin:630px 540px;animation-delay:-1.2s;"><path d="M630 540 C608 514 616 496 622 488 C630 498 636 516 630 540Z" fill="#0B7A55" /></g>
+<g class="sway" style="transform-origin:648px 540px;animation-delay:-1.7s;"><path d="M648 540 C630 506 638 482 644 472 C652 486 658 510 648 540Z" fill="#0E9F6E" /></g>
+</svg>

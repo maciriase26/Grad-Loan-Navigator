@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="t">
+<title id="t">Animated: student studying a route map with a compass pointing the way forward</title>
+<style>
+*{transform-box:view-box}
+@keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes wave{0%,100%{transform:scaleX(1) skewY(0deg)}25%{transform:scaleX(.82) skewY(4deg)}50%{transform:scaleX(1) skewY(-2deg)}75%{transform:scaleX(.9) skewY(3deg)}}
+@keyframes march{to{stroke-dashoffset:-72}}
+@keyframes twinkle{0%,100%{transform:scale(0);opacity:0}20%{transform:scale(1);opacity:1}40%{transform:scale(0);opacity:0}}
+@keyframes pulse{0%,70%,100%{transform:scale(1)}80%{transform:scale(1.18)}90%{transform:scale(.96)}}
+@keyframes needle{0%,100%{transform:rotate(-28deg)}50%{transform:rotate(28deg)}}
+@keyframes bounce{0%,60%,100%{transform:translateY(0)}75%{transform:translateY(-8px)}}
+.sway{animation:sway 3s ease-in-out infinite}
+.bob{animation:bob 3s ease-in-out infinite}
+.wave{animation:wave 2s ease-in-out infinite}
+.march{animation:march 1.5s linear infinite}
+.twinkle{animation:twinkle 2s ease-in-out infinite}
+.pulse{animation:pulse 3s ease-in-out infinite}
+.needle{animation:needle 3s ease-in-out infinite}
+.bounce{animation:bounce 2s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+
+<!-- Background organic backdrop blob (matches all other 4 SVGs) -->
+<path d="M130 520 C95 390 180 230 380 200 C580 170 720 250 710 400 C700 510 590 565 440 568 C280 572 150 600 130 520Z" fill="#DDF3EA" />
+
+<!-- Rolling gentle campus hill (navy depth) -->
+<path d="M340 560 C380 430 460 340 560 320 C640 304 710 370 730 450 C740 490 730 540 710 560Z" fill="#3A5486" />
+
+<!-- Main verdant rolling hill (brand emerald) -->
+<path d="M220 564 C250 440 350 350 480 340 C600 330 680 410 700 564Z" fill="#0E9F6E" />
+
+<!-- University Gateway / Graduation Archway on the horizon -->
+<g class="bob" style="transform-origin:620px 300px;animation-delay:-1.5s;">
+  <!-- Arch columns -->
+  <path d="M578 350 L578 260 C578 220 662 220 662 260 L662 350" fill="none" stroke="#16233F" stroke-width="14" stroke-linecap="round"/>
+  <!-- Arch capital band -->
+  <rect x="568" y="248" width="104" height="12" rx="4" fill="#0B7A55"/>
+  <!-- Graduation cap icon resting atop the archway -->
+  <path d="M600 220 L620 208 L640 220 L620 228Z" fill="#F2B33D"/>
+  <rect x="612" y="224" width="16" height="6" rx="2" fill="#F2B33D"/>
+  <path d="M620 216 L632 222 L632 232" fill="none" stroke="#16233F" stroke-width="2" stroke-linecap="round"/>
+  <!-- Waving gold pennant flag -->
+  <path d="M620 208 L620 178" fill="none" stroke="#16233F" stroke-width="3" stroke-linecap="round"/>
+  <g class="wave" style="transform-origin:620px 186px;">
+    <path d="M620 178 L650 187 L620 196Z" fill="#F2B33D"/>
+  </g>
+</g>
+
+<!-- Clear winding pathway leading forward from student to archway -->
+<path d="M260 560 C280 470 330 420 400 390 C470 360 530 340 590 320 L604 336 C546 356 488 376 422 408 C360 438 318 490 300 560Z" fill="#FFF3C9" />
+
+<!-- Marching dotted path guide line -->
+<path class="march" d="M280 560 C298 480 344 430 410 400 C478 368 538 348 596 328" fill="none" stroke="#0B7A55" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 16" opacity="0.5"/>
+
+<!-- Navigational pedestal & compass rose (Grad Navigator brand motif) -->
+<g class="bob" style="transform-origin:470px 480px;animation-delay:-0.5s;">
+  <!-- Stone milestone pedestal -->
+  <path d="M456 540 L452 460 L488 460 L484 540Z" fill="#A9B4C8" />
+  <ellipse cx="470" cy="460" rx="24" ry="8" fill="#7F8AA3" />
+  <!-- Golden Compass Case -->
+  <circle cx="470" cy="426" r="32" fill="#F2B33D" stroke="#16233F" stroke-width="6"/>
+  <circle cx="470" cy="426" r="24" fill="#FFFFFF"/>
+  <!-- Compass dial marks -->
+  <circle cx="470" cy="426" r="2" fill="#16233F"/>
+  <path d="M470 406 L470 412 M470 440 L470 446 M450 426 L456 426 M484 426 L490 426" stroke="#A9B4C8" stroke-width="2" stroke-linecap="round"/>
+  <!-- Animated Compass Needle -->
+  <g class="needle" style="transform-origin:470px 426px;">
+    <path d="M470 408 L475 426 L470 436 L465 426Z" fill="#0E9F6E"/>
+    <path d="M470 408 L475 426 L465 426Z" fill="#0B7A55"/>
+  </g>
+  <circle cx="470" cy="426" r="3" fill="#16233F"/>
+  <!-- Top loop of compass -->
+  <ellipse cx="470" cy="390" rx="8" ry="5" fill="none" stroke="#F2B33D" stroke-width="4"/>
+</g>
+
+<!-- Student character holding navigational roadmap/plan (matches character style 100%) -->
+<g class="bob" style="transform-origin:210px 500px;">
+  <!-- Back leg -->
+  <path d="M190 380 L166 450 L154 524" fill="none" stroke="#7F8AA3" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="164" cy="532" rx="22" ry="12" fill="#16233F"/>
+  
+  <!-- Back arm holding map corner -->
+  <path d="M210 270 L176 320 L214 340" fill="none" stroke="#E8B48F" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Backpack -->
+  <rect x="156" y="270" width="40" height="78" rx="16" fill="#16233F"/>
+
+  <!-- Torso (Emerald sweater) -->
+  <path d="M206 274 L200 370" fill="none" stroke="#0E9F6E" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M198 376 L204 380" fill="none" stroke="#A9B4C8" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Front leg -->
+  <path d="M200 380 L234 446 L244 524" fill="none" stroke="#A9B4C8" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="254" cy="532" rx="22" ry="12" fill="#16233F"/>
+
+  <!-- Front arm holding map -->
+  <path d="M210 270 L256 326 L290 320" fill="none" stroke="#E8B48F" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Unfolded Road Map / Chart Plan in hands -->
+  <g class="pulse" style="transform-origin:256px 334px;animation-delay:-1s;">
+    <!-- Map parchment folds -->
+    <path d="M208 316 L246 304 L246 364 L208 374Z" fill="#FFFFFF" stroke="#DCE1DA" stroke-width="2"/>
+    <path d="M246 304 L288 316 L288 374 L246 364Z" fill="#F3F6F2" stroke="#DCE1DA" stroke-width="2"/>
+    <path d="M288 316 L326 306 L326 364 L288 374Z" fill="#FFFFFF" stroke="#DCE1DA" stroke-width="2"/>
+    <!-- Drawn path on map -->
+    <path d="M218 348 Q240 330 260 342 T308 330" fill="none" stroke="#0E9F6E" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="2 6"/>
+    <!-- Destination star on map -->
+    <circle cx="312" cy="328" r="4" fill="#F2B33D"/>
+  </g>
+
+  <!-- Neck & Head -->
+  <path d="M206 264 L210 248" fill="none" stroke="#E8B48F" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="212" cy="226" r="27" fill="#E8B48F"/>
+
+  <!-- Hair (Swoop matching suite) -->
+  <path d="M184 228 C182 200 206 190 224 196 C238 200 242 212 240 218 C222 212 206 214 198 230Z" fill="#5A3A2E"/>
+  <path d="M184 220 C162 256 170 292 200 288 C212 266 206 236 184 220Z" fill="#5A3A2E"/>
+
+  <!-- Friendly Face (dot eye + smile) -->
+  <circle cx="224" cy="228" r="3" fill="#16233F"/>
+  <path d="M218 239 Q226 245 232 238" fill="none" stroke="#16233F" stroke-width="3" stroke-linecap="round"/>
+</g>
+
+<!-- Guiding Twinkling Stars in Sky -->
+<g class="twinkle" style="transform-origin:690px 180px;"><path d="M690 168 Q690 180 702 180 Q690 180 690 192 Q690 180 678 180 Q690 180 690 168Z" fill="#F2B33D"/></g>
+<g class="twinkle" style="transform-origin:540px 160px;animation-delay:-0.8s;"><path d="M540 151 Q540 160 549 160 Q540 160 540 169 Q540 160 531 160 Q540 160 540 151Z" fill="#5CC79E"/></g>
+<g class="twinkle" style="transform-origin:430px 180px;animation-delay:-1.4s;"><path d="M430 172 Q430 180 438 180 Q430 180 430 188 Q430 180 422 180 Q430 180 430 172Z" fill="#F2B33D"/></g>
+
+<!-- Swaying botanicals in foreground (identical botanical structure to suite) -->
+<g class="sway" style="transform-origin:170px 550px;"><path d="M170 550 C148 522 156 502 162 494 C170 504 176 524 170 550Z" fill="#0B7A55" /></g>
+<g class="sway" style="transform-origin:188px 550px;animation-delay:-0.5s;"><path d="M188 550 C170 514 178 488 184 478 C192 492 198 518 188 550Z" fill="#0E9F6E" /></g>
+<g class="sway" style="transform-origin:206px 550px;animation-delay:-1.0s;"><path d="M206 550 C198 520 206 498 212 490 C220 502 226 522 206 550Z" fill="#5CC79E" /></g>
+
+<g class="sway" style="transform-origin:640px 550px;animation-delay:-1.2s;"><path d="M640 550 C618 524 626 506 632 498 C640 508 646 526 640 550Z" fill="#0B7A55" /></g>
+<g class="sway" style="transform-origin:656px 550px;animation-delay:-1.7s;"><path d="M656 550 C638 516 646 492 652 482 C660 496 666 520 656 550Z" fill="#0E9F6E" /></g>
+<g class="sway" style="transform-origin:672px 550px;animation-delay:-2.1s;"><path d="M672 550 C664 522 672 502 678 494 C686 504 692 522 672 550Z" fill="#3A5486" /></g>
+</svg>

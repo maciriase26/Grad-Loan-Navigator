@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="t">
+<title id="t">Animated: student at a navigation drafting table charting degree milestones with a compass rose</title>
+<style>
+*{transform-box:view-box}
+@keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes wave{0%,100%{transform:scaleX(1) skewY(0deg)}25%{transform:scaleX(.82) skewY(4deg)}50%{transform:scaleX(1) skewY(-2deg)}75%{transform:scaleX(.9) skewY(3deg)}}
+@keyframes march{to{stroke-dashoffset:-72}}
+@keyframes twinkle{0%,100%{transform:scale(0);opacity:0}20%{transform:scale(1);opacity:1}40%{transform:scale(0);opacity:0}}
+@keyframes needle{0%,100%{transform:rotate(-28deg)}50%{transform:rotate(28deg)}}
+@keyframes pulse{0%,70%,100%{transform:scale(1)}80%{transform:scale(1.18)}90%{transform:scale(.96)}}
+.sway{animation:sway 3s ease-in-out infinite}
+.bob{animation:bob 3s ease-in-out infinite}
+.wave{animation:wave 2s ease-in-out infinite}
+.march{animation:march 1.5s linear infinite}
+.twinkle{animation:twinkle 2s ease-in-out infinite}
+.needle{animation:needle 3s ease-in-out infinite}
+.pulse{animation:pulse 3s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+
+<!-- Organic Backdrop Blob -->
+<path d="M110 520 C80 390 170 220 360 200 C560 180 720 240 710 400 C700 510 600 565 450 568 C290 572 130 600 110 520Z" fill="#DDF3EA" />
+
+<!-- Rolling hills -->
+<path d="M280 564 C330 450 430 380 540 370 C640 360 700 430 720 564Z" fill="#3A5486" />
+<path d="M160 564 C220 450 330 370 470 370 C590 370 660 440 680 564Z" fill="#0E9F6E" />
+
+<!-- Graduation Milestone Tower in background -->
+<g class="bob" style="transform-origin:610px 330px;animation-delay:-1s;">
+  <rect x="586" y="270" width="48" height="90" rx="4" fill="#FFFFFF"/>
+  <rect x="580" y="262" width="60" height="10" rx="2" fill="#16233F"/>
+  <path d="M584 262 L610 224 L636 262 Z" fill="#F2B33D"/>
+  <rect x="600" y="290" width="20" height="30" rx="10" fill="#0E9F6E"/>
+  <!-- Tower Flag -->
+  <line x1="610" y1="224" x2="610" y2="194" stroke="#16233F" stroke-width="3" stroke-linecap="round"/>
+  <g class="wave" style="transform-origin:610px 200px;">
+    <path d="M610 194 L638 204 L610 214Z" fill="#F2B33D"/>
+  </g>
+</g>
+
+<!-- Clear pathway leading forward -->
+<path d="M260 560 C300 480 370 430 450 420 C520 410 560 390 600 366 L612 384 C568 408 524 430 456 440 C380 450 320 500 290 560Z" fill="#FFF3C9" />
+<path class="march" d="M276 560 C312 486 378 438 454 428 C522 418 564 398 604 374" fill="none" stroke="#0B7A55" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 16" opacity="0.5"/>
+
+<!-- Navigational Compass Rose Stand -->
+<g class="bob" style="transform-origin:460px 450px;animation-delay:-0.4s;">
+  <line x1="460" y1="520" x2="460" y2="440" stroke="#16233F" stroke-width="8" stroke-linecap="round"/>
+  <ellipse cx="460" cy="520" rx="20" ry="7" fill="#16233F"/>
+  <circle cx="460" cy="420" r="30" fill="#F2B33D" stroke="#16233F" stroke-width="5"/>
+  <circle cx="460" cy="420" r="22" fill="#FFFFFF"/>
+  <!-- Needle -->
+  <g class="needle" style="transform-origin:460px 420px;">
+    <path d="M460 404 L465 420 L460 430 L455 420Z" fill="#0E9F6E"/>
+    <path d="M460 404 L465 420 L455 420Z" fill="#0B7A55"/>
+  </g>
+  <circle cx="460" cy="420" r="3" fill="#16233F"/>
+</g>
+
+<!-- Student standing at navigational drafting stand (matches suite 100%) -->
+<g class="bob" style="transform-origin:220px 490px;">
+  <!-- Legs -->
+  <path d="M200 370 L180 440 L174 514" fill="none" stroke="#7F8AA3" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="184" cy="522" rx="22" ry="12" fill="#16233F"/>
+
+  <!-- Back arm -->
+  <path d="M216 260 L184 310 L220 340" fill="none" stroke="#F1C7A4" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Backpack -->
+  <rect x="166" y="260" width="40" height="78" rx="16" fill="#0B7A55"/>
+
+  <!-- Torso (Navy and Emerald) -->
+  <path d="M216 264 L210 360" fill="none" stroke="#0E9F6E" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M208 366 L214 370" fill="none" stroke="#A9B4C8" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Front leg -->
+  <path d="M210 370 L244 436 L254 514" fill="none" stroke="#A9B4C8" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="264" cy="522" rx="22" ry="12" fill="#16233F"/>
+
+  <!-- Front arm pointing toward the horizon path -->
+  <path d="M216 260 L266 294 L306 270" fill="none" stroke="#F1C7A4" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Head & Hair -->
+  <path d="M216 254 L220 238" fill="none" stroke="#F1C7A4" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="222" cy="216" r="27" fill="#F1C7A4"/>
+
+  <path d="M194 218 C192 190 216 180 234 186 C248 190 252 202 250 208 C232 202 216 204 208 220Z" fill="#2B2220"/>
+  <path d="M194 210 C172 246 180 282 210 278 C222 256 216 226 194 210Z" fill="#2B2220"/>
+
+  <circle cx="234" cy="218" r="3" fill="#16233F"/>
+  <path d="M228 229 Q236 235 242 228" fill="none" stroke="#16233F" stroke-width="3" stroke-linecap="round"/>
+</g>
+
+<!-- Milestone Checkmark / Plan Document resting on drafting table -->
+<g class="pulse" style="transform-origin:326px 360px;animation-delay:-1.2s;">
+  <!-- Drafting Stand -->
+  <path d="M310 470 L340 370 L356 374 L326 470 Z" fill="#7F8AA3"/>
+  <rect x="300" y="340" width="70" height="44" rx="4" fill="#FFFFFF" stroke="#16233F" stroke-width="3" transform="rotate(-12 300 340)"/>
+  <!-- Drawn route line on plan -->
+  <line x1="306" y1="360" x2="350" y2="350" stroke="#0E9F6E" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 6"/>
+  <circle cx="352" cy="349" r="4" fill="#F2B33D"/>
+</g>
+
+<!-- Twinkling stars -->
+<g class="twinkle" style="transform-origin:670px 170px;"><path d="M670 158 Q670 170 682 170 Q670 170 670 182 Q670 170 658 170 Q670 170 670 158Z" fill="#F2B33D"/></g>
+<g class="twinkle" style="transform-origin:510px 160px;animation-delay:-0.8s;"><path d="M510 151 Q510 160 519 160 Q510 160 510 169 Q510 160 501 160 Q510 160 510 151Z" fill="#5CC79E"/></g>
+
+<!-- Foreground botanicals -->
+<g class="sway" style="transform-origin:160px 540px;"><path d="M160 540 C138 512 146 492 152 484 C160 494 166 514 160 540Z" fill="#0B7A55" /></g>
+<g class="sway" style="transform-origin:178px 540px;animation-delay:-0.5s;"><path d="M178 540 C160 504 168 478 174 468 C182 482 188 508 178 540Z" fill="#0E9F6E" /></g>
+<g class="sway" style="transform-origin:640px 540px;animation-delay:-1.2s;"><path d="M640 540 C618 514 626 496 632 488 C640 498 646 516 640 540Z" fill="#0B7A55" /></g>
+<g class="sway" style="transform-origin:658px 540px;animation-delay:-1.7s;"><path d="M658 540 C640 506 648 482 654 472 C662 486 668 510 658 540Z" fill="#0E9F6E" /></g>
+</svg>

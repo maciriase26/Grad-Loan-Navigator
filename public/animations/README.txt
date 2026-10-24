@@ -1,7 +1,7 @@
 GRAD NAVIGATOR ANIMATIONS
 Five looping animations (6-second seamless loop) matching the static illustration set.
 
-1. chart-your-path      Path marches up the hill, flag waves, stars twinkle
+1. chart-your-path      Compass needle searches, path marches past stepping stones, dome flag waves
 2. free-money-first     Magnifier sweeps the scholarship, coin spins, coins bounce
 3. understand-loans     Pages turn, signposts swing gently
 4. compare-offers       Compass needle searches, both paths march, flags wave
@@ -18,7 +18,7 @@ gif/    600x450 on white. For email newsletters only.
 WEBSITE CODE
 Animated SVG (recommended):
 <img src="/images/gn-animation-chart-your-path.svg" width="800" height="600"
-     alt="Student looking through a telescope at a path to the summit" loading="lazy">
+     alt="Student holding a pocket compass stepping along a guided pathway toward a campus dome" loading="lazy">
 
 Video (if your builder won't accept SVG):
 <video autoplay muted loop playsinline width="800" height="600">
@@ -27,7 +27,7 @@ Video (if your builder won't accept SVG):
 </video>
 
 ALT TEXT
-chart-your-path    Student looking through a telescope at a path to the summit
+chart-your-path    Student holding a pocket compass stepping along a guided pathway toward a campus dome
 free-money-first   Student using a magnifying glass to find scholarships and free money
 understand-loans   Student reading a guide next to a signpost
 compare-offers     Student with a compass choosing between two paths

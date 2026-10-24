@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="t">
+<title id="t">Animated: student holding a compass stepping along a guided pathway toward a campus dome</title>
+<style>
+*{transform-box:view-box}
+@keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes wave{0%,100%{transform:scaleX(1) skewY(0deg)}25%{transform:scaleX(.82) skewY(4deg)}50%{transform:scaleX(1) skewY(-2deg)}75%{transform:scaleX(.9) skewY(3deg)}}
+@keyframes march{to{stroke-dashoffset:-72}}
+@keyframes twinkle{0%,100%{transform:scale(0);opacity:0}20%{transform:scale(1);opacity:1}40%{transform:scale(0);opacity:0}}
+@keyframes needle{0%,100%{transform:rotate(-28deg)}50%{transform:rotate(28deg)}}
+@keyframes pulse{0%,70%,100%{transform:scale(1)}80%{transform:scale(1.18)}90%{transform:scale(.96)}}
+.sway{animation:sway 3s ease-in-out infinite}
+.bob{animation:bob 3s ease-in-out infinite}
+.wave{animation:wave 2s ease-in-out infinite}
+.march{animation:march 1.5s linear infinite}
+.twinkle{animation:twinkle 2s ease-in-out infinite}
+.needle{animation:needle 3s ease-in-out infinite}
+.pulse{animation:pulse 3s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+
+<!-- Organic Backdrop Blob -->
+<path d="M120 520 C90 380 180 210 370 190 C560 170 710 240 700 400 C690 510 590 565 450 568 C290 572 140 600 120 520Z" fill="#DDF3EA" />
+
+<!-- Rolling campus hill landscape -->
+<path d="M260 564 C300 440 400 360 520 350 C630 340 700 420 720 564Z" fill="#3A5486" />
+<path d="M180 564 C230 460 340 380 470 380 C600 380 670 450 690 564Z" fill="#0E9F6E" />
+
+<!-- Campus Rotunda / Graduation Hall in Distance -->
+<g class="bob" style="transform-origin:590px 320px;animation-delay:-1.2s;">
+  <!-- Classical portico columns -->
+  <rect x="548" y="290" width="84" height="60" rx="4" fill="#FFFFFF"/>
+  <rect x="542" y="282" width="96" height="10" rx="2" fill="#16233F"/>
+  <rect x="540" y="346" width="100" height="8" rx="2" fill="#16233F"/>
+  <!-- Columns -->
+  <line x1="558" y1="292" x2="558" y2="346" stroke="#A9B4C8" stroke-width="6" stroke-linecap="round"/>
+  <line x1="578" y1="292" x2="578" y2="346" stroke="#A9B4C8" stroke-width="6" stroke-linecap="round"/>
+  <line x1="602" y1="292" x2="602" y2="346" stroke="#A9B4C8" stroke-width="6" stroke-linecap="round"/>
+  <line x1="622" y1="292" x2="622" y2="346" stroke="#A9B4C8" stroke-width="6" stroke-linecap="round"/>
+  <!-- Rotunda Dome -->
+  <path d="M552 282 C552 240 628 240 628 282 Z" fill="#F2B33D"/>
+  <!-- Lantern spire & flag -->
+  <line x1="590" y1="240" x2="590" y2="210" stroke="#16233F" stroke-width="3" stroke-linecap="round"/>
+  <g class="wave" style="transform-origin:590px 216px;">
+    <path d="M590 210 L620 220 L590 230Z" fill="#0E9F6E"/>
+  </g>
+</g>
+
+<!-- Winding Path with stepping stone milestones -->
+<path d="M290 560 C320 480 370 430 440 410 C500 390 540 370 580 354 L594 370 C550 388 510 410 454 430 C390 454 344 500 326 560Z" fill="#FFF3C9" />
+
+<!-- Marching dotted path -->
+<path class="march" d="M308 560 C334 486 380 438 448 420 C504 400 546 380 586 362" fill="none" stroke="#0B7A55" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 16" opacity="0.5"/>
+
+<!-- Stepping Stone Milestones along path -->
+<ellipse cx="370" cy="486" rx="22" ry="8" fill="#FFFFFF" stroke="#DCE1DA" stroke-width="2"/>
+<ellipse cx="442" cy="442" rx="18" ry="7" fill="#FFFFFF" stroke="#DCE1DA" stroke-width="2"/>
+<ellipse cx="512" cy="408" rx="15" ry="6" fill="#FFFFFF" stroke="#DCE1DA" stroke-width="2"/>
+
+<!-- Student Character holding pocket compass (matches suite 100%) -->
+<g class="bob" style="transform-origin:230px 500px;">
+  <!-- Back leg -->
+  <path d="M220 370 L190 440 L180 514" fill="none" stroke="#7F8AA3" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="190" cy="522" rx="22" ry="12" fill="#16233F"/>
+
+  <!-- Back arm -->
+  <path d="M236 260 L204 310 L214 360" fill="none" stroke="#C68862" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Backpack -->
+  <rect x="186" y="260" width="40" height="78" rx="16" fill="#16233F"/>
+
+  <!-- Torso (Navy pullover with Emerald accents) -->
+  <path d="M236 264 L230 360" fill="none" stroke="#24365E" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M228 366 L234 370" fill="none" stroke="#0E9F6E" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Front stepping leg -->
+  <path d="M230 370 L274 430 L290 504" fill="none" stroke="#0E9F6E" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="300" cy="512" rx="22" ry="12" fill="#16233F"/>
+
+  <!-- Front arm holding glowing golden compass forward -->
+  <path d="M236 260 L286 288 L320 280" fill="none" stroke="#C68862" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Pocket Compass in Hand -->
+  <g class="bob" style="transform-origin:336px 274px;animation-delay:-0.7s;">
+    <circle cx="336" cy="274" r="28" fill="#F2B33D" stroke="#16233F" stroke-width="5"/>
+    <circle cx="336" cy="274" r="20" fill="#FFFFFF"/>
+    <!-- Animated Compass Needle -->
+    <g class="needle" style="transform-origin:336px 274px;">
+      <path d="M336 258 L340 274 L336 284 L332 274Z" fill="#0E9F6E"/>
+      <path d="M336 258 L340 274 L332 274Z" fill="#0B7A55"/>
+    </g>
+    <circle cx="336" cy="274" r="3" fill="#16233F"/>
+    <!-- Compass loop -->
+    <ellipse cx="336" cy="242" rx="6" ry="4" fill="none" stroke="#F2B33D" stroke-width="3"/>
+  </g>
+
+  <!-- Neck & Head -->
+  <path d="M236 254 L240 238" fill="none" stroke="#C68862" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="242" cy="216" r="27" fill="#C68862"/>
+
+  <!-- Hair (Curled style matching suite) -->
+  <path d="M214 218 C212 190 236 180 254 186 C268 190 272 202 270 208 C252 202 236 204 228 220Z" fill="#7A4A2A"/>
+  <path d="M214 210 C192 246 200 282 230 278 C242 256 236 226 214 210Z" fill="#7A4A2A"/>
+
+  <!-- Face features -->
+  <circle cx="254" cy="218" r="3" fill="#16233F"/>
+  <path d="M248 229 Q256 235 262 228" fill="none" stroke="#16233F" stroke-width="3" stroke-linecap="round"/>
+</g>
+
+<!-- Twinkling stars -->
+<g class="twinkle" style="transform-origin:660px 180px;"><path d="M660 168 Q660 180 672 180 Q660 180 660 192 Q660 180 648 180 Q660 180 660 168Z" fill="#F2B33D"/></g>
+<g class="twinkle" style="transform-origin:490px 160px;animation-delay:-0.9s;"><path d="M490 151 Q490 160 499 160 Q490 160 490 169 Q490 160 481 160 Q490 160 490 151Z" fill="#5CC79E"/></g>
+
+<!-- Swaying botanicals in foreground -->
+<g class="sway" style="transform-origin:190px 540px;"><path d="M190 540 C168 512 176 492 182 484 C190 494 196 514 190 540Z" fill="#0B7A55" /></g>
+<g class="sway" style="transform-origin:208px 540px;animation-delay:-0.5s;"><path d="M208 540 C190 504 198 478 204 468 C212 482 218 508 208 540Z" fill="#0E9F6E" /></g>
+<g class="sway" style="transform-origin:630px 540px;animation-delay:-1.2s;"><path d="M630 540 C608 514 616 496 622 488 C630 498 636 516 630 540Z" fill="#0B7A55" /></g>
+<g class="sway" style="transform-origin:648px 540px;animation-delay:-1.7s;"><path d="M648 540 C630 506 638 482 644 472 C652 486 658 510 648 540Z" fill="#0E9F6E" /></g>
+</svg>
