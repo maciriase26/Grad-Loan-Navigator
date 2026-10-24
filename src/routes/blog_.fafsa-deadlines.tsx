@@ -4,7 +4,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "2027–2028 FAFSA: When Is Your Graduate School’s Deadline? — Grad Loan Navigator";
+const TITLE = "2027–2028 FAFSA: When Is Your Graduate School’s Deadline? | Grad Navigator";
 const DESCRIPTION =
   "Upcoming 2027–2028 FAFSA priority deadlines, school codes, assistantship policies, and financial aid rules for 10 notable graduate universities. Analysis by Peter Foulke.";
 const URL = "https://www.graduationnavigator.com/blog/fafsa-deadlines";
@@ -21,6 +21,24 @@ export const Route = createFileRoute("/blog_/fafsa-deadlines")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: FafsaDeadlinesArticlePage,
 });
@@ -536,8 +554,8 @@ const UNIVERSITIES: UniversityDeadlines[] = [
     institutionBadge: "Public Flagship · ~57,000 Students",
     institutionBadgeEs: "Pública Insignia · ~57,000 Estudiantes",
     code: "001535",
-    priorityDeadline: "No set deadline — Submit as early as possible",
-    priorityDeadlineEs: "Sin fecha fija — Enviar lo antes posible",
+    priorityDeadline: "No set deadline: Submit as early as possible",
+    priorityDeadlineEs: "Sin fecha fija: Enviar lo antes posible",
     deadlineSort: "2027-09-01",
     leadDesc:
       "With a student body numbering roughly 57,000, The University of Florida (UF) is one of the largest public universities in the country. UF offers extensive research opportunities and a wide range of graduate and professional programs.",
@@ -766,7 +784,7 @@ function FafsaDeadlinesArticlePage() {
                 <p>
                   {isEs
                     ? "La fecha límite federal de FAFSA suele ser el 30 de junio del año siguiente. Sin embargo, las universidades establecen fechas límite prioritarias (a menudo entre diciembre y abril) para asignar becas del campus, descuentos de matrícula y fondos de trabajo y estudio. Perder la fecha prioritaria no te descalifica para préstamos federales sin subsidio, pero puede costarte miles en subvenciones gratuitas."
-                    : "The federal FAFSA deadline is traditionally June 30 of the following year. However, universities set priority filing deadlines—often between December and April—to allocate limited campus grants, tuition discounts, and institutional work-study funds. Missing a school priority date does not disqualify you from federal unsubsidized loans, but it can cost you thousands in institutional grants."}
+                    : "The federal FAFSA deadline is traditionally June 30 of the following year. However, universities set priority filing deadlines (often between December and April) to allocate limited campus grants, tuition discounts, and institutional work-study funds. Missing a school priority date does not disqualify you from federal unsubsidized loans, but it can cost you thousands in institutional grants."}
                 </p>
               </div>
 
@@ -1278,7 +1296,7 @@ function FafsaDeadlinesArticlePage() {
                 <p>
                   {isEs
                     ? "No asumas que el FAFSA es tu única solicitud. Programas especializados, como la Facultad de Medicina de Boston University, exigen tanto el FAFSA como el CSS Profile del College Board para calcular las becas institucionales por necesidad económica."
-                    : "Do not assume the FAFSA is your only financial aid application. Specialized graduate schools—notably Boston University's School of Medicine—require both the FAFSA and the College Board CSS Profile to calculate institutional need-based scholarships."}
+                    : "Do not assume the FAFSA is your only financial aid application. Specialized graduate schools, notably Boston University's School of Medicine, require both the FAFSA and the College Board CSS Profile to calculate institutional need-based scholarships."}
                 </p>
               </div>
 
@@ -1370,14 +1388,14 @@ function FafsaDeadlinesArticlePage() {
 
           {/* Section 5: The Bottom Line */}
           <section className="doc-section" id="bottom-line">
-            <span className="section-num">{isEs ? "La Conclusión" : "The Takeaway"}</span>
+            <span className="section-num">{t("fafsa.part5")}</span>
             <h2>{isEs ? "En Conclusión" : "The Bottom Line"}</h2>
 
             <div className="refi-bottom-card">
               <blockquote className="refi-bottom-quote">
                 {isEs
                   ? "“En la escuela de posgrado, no cumplir con la fecha límite prioritaria de tu institución no solo significa perder préstamos federales: con frecuencia implica renunciar a subvenciones institucionales, exenciones de matrícula y paquetes de ayudantías que nunca se reponen.”"
-                  : "“In graduate school, missing your institution's priority FAFSA deadline doesn't just mean missing federal loans — it frequently forfeits access to institutional grants, tuition waivers, and assistantship packages that never get replenished.”"}
+                  : "“In graduate school, missing your institution's priority FAFSA deadline doesn't just mean missing federal loans: it frequently forfeits access to institutional grants, tuition waivers, and assistantship packages that never get replenished.”"}
               </blockquote>
             </div>
 

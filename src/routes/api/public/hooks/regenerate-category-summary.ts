@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { generateText } from "ai";
 import { createLovableAiGatewayProvider } from "@/lib/ai-gateway.server";
 
-const PROMPT_INTRO = `You write for Grad Loan Navigator, an independent plain-language guide to graduate student borrowing.
+const PROMPT_INTRO = `You write for Grad Navigator, an independent plain-language guide to graduate student borrowing.
 
 Your job: write a two-paragraph summary of one CATEGORY of explainer articles. This summary sits at the bottom of an expandable topic menu and helps a prospective graduate student decide whether this category of explainers covers what they need.
 

@@ -10,7 +10,7 @@ import {
 
 const HELP_EMAIL = "Applejason890@gmail.com";
 
-const SYSTEM_PROMPT = `You are the Grad Loan Navigator assistant, a calm, plain-spoken guide on a single-page editorial site about graduate student borrowing after the end of Grad PLUS loans.
+const SYSTEM_PROMPT = `You are the Grad Navigator assistant, a calm, plain-spoken guide on a single-page editorial site about graduate student borrowing after the end of Grad PLUS loans.
 
 The page has three stations you can send visitors to:
 - "understand" — what changed: Grad PLUS is gone for new borrowers; new federal caps apply.
@@ -61,7 +61,7 @@ export const Route = createFileRoute("/api/chat")({
 
             navigateToSection: tool({
               description:
-                "Scroll the visitor's page to a section of the Grad Loan Navigator page.",
+                "Scroll the visitor's page to a section of the Grad Navigator page.",
               inputSchema: z.object({
                 section: z.enum(["understand", "learn", "apply", "quiz"]),
                 reason: z.string().describe("Short reason shown to the visitor."),

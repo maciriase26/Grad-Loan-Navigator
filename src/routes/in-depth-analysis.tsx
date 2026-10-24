@@ -3,9 +3,9 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "In-Depth Analysis — Grad Loan Navigator";
+const TITLE = "In-Depth Analysis | Grad Navigator";
 const DESCRIPTION =
-  "Long-form explainers, PDF consumer guides, and syndicated Experian resources on credit, borrowing, and repayment.";
+  "PDF consumer guides and curated resources on credit, borrowing, and repayment.";
 const URL = "https://www.graduationnavigator.com/in-depth-analysis";
 
 export const Route = createFileRoute("/in-depth-analysis")({
@@ -13,6 +13,7 @@ export const Route = createFileRoute("/in-depth-analysis")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESCRIPTION },
+      { name: "robots", content: "noindex, follow" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "website" },
@@ -214,69 +215,6 @@ function InDepthAnalysis() {
           </div>
         </section>
 
-        {/* Syndicated Article Layout Mockup */}
-        <section className="wrap depth-section">
-          <div className="syndicated-mockup-wrap">
-            <div className="wrap meta">
-              <div className="tag">Borrowing Basics</div>
-              <h1>The Different Types of Student Loans, Explained</h1>
-
-              <div className="source-block">
-                <div className="exp-badge">Exp</div>
-                <div className="text">
-                  <b>Sourced from Experian.</b> This article is syndicated with permission from Experian's Ask Experian blog.
-                  <a
-                    href="https://www.experian.com/blogs/ask-experian/what-are-the-different-types-of-student-loans/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    Read the original on Experian.com →
-                  </a>
-                </div>
-              </div>
-
-              <div className="byline">
-                <div className="avatar">Exp</div>
-                <span>
-                  <b>Ask Experian Editorial Team</b> · Experian
-                </span>
-                <span className="dot"></span>
-                <span>Published 2026 · Republished on Grad Navigator</span>
-              </div>
-            </div>
-
-            <article className="syndicated-body">
-              <p className="placeholder-note">
-                [This is where the licensed article content would appear, reproduced exactly as published by Experian, with their formatting, headers, and author attribution intact — pending an actual syndication agreement. Nothing below this line is real Experian content.]
-              </p>
-
-              <h2>Types of Federal Student Loans</h2>
-              <p>
-                Federal student loans are funded by the federal government and come with benefits like fixed interest rates, income-driven repayment plans, and loan forgiveness programs. The primary federal loan options include Direct Subsidized Loans for undergraduates with financial need, Direct Unsubsidized Loans for undergraduate and graduate students, and Direct PLUS Loans for parents and graduate borrowers.
-              </p>
-
-              <h2>Private Student Loans vs. Federal Loans</h2>
-              <p>
-                Private student loans are issued by banks, credit unions, and online lenders rather than the government. While private loans can offer competitive fixed or variable interest rates for creditworthy borrowers or those with a strong cosigner, they generally lack federal protections such as income-driven repayment caps and Public Service Loan Forgiveness (PSLF).
-              </p>
-
-              <div className="end-attribution">
-                <span>This article originally appeared on Experian's Ask Experian blog.</span>
-                <a
-                  href="https://www.experian.com/blogs/ask-experian/what-are-the-different-types-of-student-loans/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  View the original article on Experian.com →
-                </a>
-              </div>
-            </article>
-
-            <div className="layout-review-footer">
-              © 2026 Grad Loan Navigator · Layout mockup for internal review — pending syndication agreement
-            </div>
-          </div>
-        </section>
       </main>
 
       <SiteFooter />

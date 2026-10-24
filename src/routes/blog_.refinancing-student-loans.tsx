@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Refinancing Student Loans, Explained — Grad Loan Navigator";
+const TITLE = "Refinancing Student Loans, Explained | Grad Navigator";
 const DESCRIPTION =
   "Refinancing can cut your interest rate or lower monthly payments, but permanently costs federal protections. Understand the tradeoffs, steps, rates, and alternatives.";
 const URL = "https://www.graduationnavigator.com/blog/refinancing-student-loans";
@@ -20,6 +20,24 @@ export const Route = createFileRoute("/blog_/refinancing-student-loans")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: RefinancingArticlePage,
 });
@@ -360,8 +378,7 @@ function RefinancingArticlePage() {
                 <p>{t("refi.cta.p")}</p>
               </div>
               <Link
-                to="/"
-                hash="quiz"
+                to="/chart-your-path"
                 className="btn-primary"
                 style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}
               >

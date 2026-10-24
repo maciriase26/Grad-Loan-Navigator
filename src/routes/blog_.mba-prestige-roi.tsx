@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "MBA Programs: Does Prestige Matter? — Grad Loan Navigator";
+const TITLE = "MBA Programs: Does Prestige Matter? | Grad Navigator";
 const DESCRIPTION =
   "How much does ranking and name recognition influence your MBA ROI? A data analysis comparing Top 10 highest ROI MBA programs and Top 10 Value MBA programs. By Jaylen Peng.";
 const URL = "https://www.graduationnavigator.com/blog/mba-prestige-roi";
@@ -20,6 +20,24 @@ export const Route = createFileRoute("/blog_/mba-prestige-roi")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: MbaPrestigeRoiArticlePage,
 });

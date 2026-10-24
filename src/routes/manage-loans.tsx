@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Manage Loans — Grad Loan Navigator";
+const TITLE = "Manage Loans | Grad Navigator";
 const DESCRIPTION = "Manage your loans, explore refinancing, and track what is coming next.";
 const URL = "https://www.graduationnavigator.com/manage-loans";
 

@@ -1,13 +1,28 @@
 import rawSchools from "./tuitionSchools.json";
 
+export interface ProgramTuition {
+  id: string;
+  program: string;
+  level: "Graduate" | "Professional" | string;
+  inStateTuition: number;
+  inStateFees: number;
+  inState: number;
+  outOfStateTuition: number;
+  outOfStateFees: number;
+  outOfState: number;
+  source: string;
+  note?: string;
+}
+
 export interface SchoolTuitionRecord {
   id: string;
   name: string;
+  state: string;
+  isPublic: boolean;
+  ipedsId?: string;
   inState: number;
   outOfState: number;
-  netPrice: number;
-  isPublic: boolean;
-  year: string;
+  programs: ProgramTuition[];
 }
 
 export const TUITION_SCHOOLS: SchoolTuitionRecord[] = rawSchools as SchoolTuitionRecord[];

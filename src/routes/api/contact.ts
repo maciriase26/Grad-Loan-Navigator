@@ -70,7 +70,7 @@ function formatRichEmailHtml({
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grad Loan Navigator</title>
+  <title>Grad Navigator</title>
 </head>
 <body style="margin: 0; padding: 0; background-color: #f1f5f9; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased;">
   <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f1f5f9; padding: 32px 16px;">
@@ -82,7 +82,7 @@ function formatRichEmailHtml({
               <div style="display: inline-block; background: #0369a1; color: #ffffff; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 9999px; margin-bottom: 8px;">
                 Official Resource
               </div>
-              <h1 style="margin: 0; color: #ffffff; font-size: 24px; font-weight: 800; letter-spacing: -0.02em;">Grad Loan Navigator</h1>
+              <h1 style="margin: 0; color: #ffffff; font-size: 24px; font-weight: 800; letter-spacing: -0.02em;">Grad Navigator</h1>
               <p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 14px;">
                 ${title}
               </p>
@@ -96,7 +96,7 @@ function formatRichEmailHtml({
               <p style="margin: 0; font-size: 14.5px; color: #475569; line-height: 1.6;">
                 ${isAppeal
                   ? "Here is your personalized Financial Aid Reconsideration Request Letter and comprehensive aid offer breakdown. You can forward or copy this letter directly to your university financial aid office. Customize the highlighted bracketed fields before sending."
-                  : "Here is your complete Financial Aid Offer Comparison breakdown prepared with the Grad Loan Navigator comparison tool."}
+                  : "Here is your complete Financial Aid Offer Comparison breakdown prepared with the Grad Navigator comparison tool."}
               </p>
             </td>
           </tr>
@@ -141,7 +141,7 @@ function formatRichEmailHtml({
           <tr>
             <td style="background-color: #f8fafc; border-top: 1px solid #e2e8f0; padding: 20px 32px; text-align: center;">
               <p style="margin: 0; font-size: 12px; color: #64748b;">
-                Prepared for you with <a href="https://www.gradloannavigator.com" style="color: #0369a1; text-decoration: none; font-weight: 600;">Grad Loan Navigator</a>.
+                Prepared for you with <a href="https://www.graduationnavigator.com" style="color: #0369a1; text-decoration: none; font-weight: 600;">Grad Navigator</a>.
               </p>
               <p style="margin: 6px 0 0 0; font-size: 11.5px; color: #94a3b8;">
                 This email was requested from the interactive Aid Offer Comparison tool.
@@ -236,7 +236,7 @@ export const Route = createFileRoute("/api/contact")({
               const verifiedSender =
                 rawSender && !rawSender.includes("onboarding@resend.dev") && rawSender.includes("@")
                   ? rawSender
-                  : "Grad Loan Navigator <noreply@graduationnavigator.com>";
+                  : "Grad Navigator <noreply@graduationnavigator.com>";
 
               const resendRes = await fetch("https://api.resend.com/emails", {
                 method: "POST",

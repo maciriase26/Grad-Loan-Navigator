@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Which Law Schools Are Worth It? — Grad Loan Navigator";
+const TITLE = "Which Law Schools Are Worth It? | Grad Navigator";
 const DESCRIPTION =
   "A J.D. can lead to high future earnings but also comes at high cost. Here's where you can get the most out of your law degree.";
 const URL = "https://www.graduationnavigator.com/blog/which-law-schools-are-worth-it";
@@ -20,6 +20,24 @@ export const Route = createFileRoute("/blog_/which-law-schools-are-worth-it")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: LawSchoolsWorthItArticlePage,
 });
@@ -109,7 +127,7 @@ const HEAVY_HITTERS = [
   { rank: 4, name: "New York University", acceptance: "13.39%", tuition: "$251,856", earnings: "$487,693", roi: "$6,018,643" },
   { rank: 5, name: "University of Virginia", acceptance: "10.17%", tuition: "$229,188", earnings: "$460,924", roi: "$6,015,656" },
   { rank: 6, name: "University of Chicago", acceptance: "9.74%", tuition: "$249,948", earnings: "$475,259", roi: "$5,993,689" },
-  { rank: 7, name: "Harvard University", acceptance: "9.20%", tuition: "$231,300", earnings: "$460,924", roi: "$5,763,003" },
+  { rank: 7, name: "Harvard University", acceptance: "9.20%", tuition: "$231,300", earnings: "$465,248", roi: "$5,763,003" },
   { rank: 8, name: "Stanford University", acceptance: "6.10%", tuition: "$232,362", earnings: "$454,333", roi: "$5,330,191" },
   { rank: 9, name: "University of California, Berkeley", acceptance: "14.84%", tuition: "$228,447", earnings: "$396,065", roi: "$4,568,943" },
   { rank: 10, name: "University of Michigan", acceptance: "8.57%", tuition: "$237,324", earnings: "$365,426", roi: "$4,530,900" },

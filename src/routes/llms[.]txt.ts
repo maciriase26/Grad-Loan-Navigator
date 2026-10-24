@@ -1,15 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-const LLMS_TXT = `# Graduation Navigator
+const LLMS_TXT = `# Grad Navigator
 
-> Graduation Navigator provides evidence-based financial aid calculators, student loan comparison tools, federal borrowing limit tracking, interest rate analysis, and educational resources for undergraduate and graduate students.
+> Grad Navigator provides evidence-based financial aid calculators, student loan comparison tools, federal borrowing limit tracking, interest rate analysis, and educational resources for undergraduate and graduate students.
 
 ## Core Tools & Calculators
 - [/chart-your-path](https://www.graduationnavigator.com/chart-your-path): Interactive college loan need calculator, degree aggregate borrowing limit tracker, and personalized financial planning.
 - [/aid-offer-comparison](https://www.graduationnavigator.com/aid-offer-comparison): Multi-school financial aid offer comparison tool. Strips disguised loans from aid totals, compares real net cost and debt at graduation, and exports a clean zero-server browser PDF summary.
 - [/pay-for-school](https://www.graduationnavigator.com/pay-for-school): Step-by-step guide to funding higher education through FAFSA, federal loans, grants, and scholarships.
 - [/free-money-first](https://www.graduationnavigator.com/free-money-first): The strategic graduate funding order of operations: assistantships and tuition waivers, fellowships, need-based grants, scholarships, employer aid, FTC scam warning guidance, and verified non-commercial search tools.
-- [/lenders](https://www.graduationnavigator.com/lenders): Vetted index of federal and private student loan providers, rates, terms, and eligibility rules.
 - [/manage-loans](https://www.graduationnavigator.com/manage-loans): Debt management guidance, repayment strategy analysis, income-driven repayment information, and loan consolidation resources.
 - [/educational-resources](https://www.graduationnavigator.com/educational-resources): Explanations of borrowing terminology, loan types, and interest calculations.
 

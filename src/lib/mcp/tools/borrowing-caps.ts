@@ -10,7 +10,7 @@ export default defineTool({
   name: "borrowing_caps",
   title: "Look up federal borrowing caps",
   description:
-    "Return the post-Grad PLUS federal annual and lifetime graduate borrowing caps for a degree type, as published on Grad Loan Navigator. Educational information, not financial advice.",
+    "Return the post-Grad PLUS federal annual and lifetime graduate borrowing caps for a degree type, as published on Grad Navigator. Educational information, not financial advice.",
   inputSchema: {
     degreeType: z
       .enum(["standard", "professional"])

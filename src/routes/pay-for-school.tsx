@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Pay for School — Grad Loan Navigator";
+const TITLE = "Pay for School | Grad Navigator";
 const DESCRIPTION =
   "Start with the question that matches where you are: estimate your funding gap, prepare your loan checklist, or browse graduate student lenders.";
 const URL = "https://www.graduationnavigator.com/pay-for-school";

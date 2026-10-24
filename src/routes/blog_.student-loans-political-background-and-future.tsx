@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Student Loans Political Background and Future — Grad Loan Navigator";
+const TITLE = "Student Loans Political Background and Future | Grad Navigator";
 const DESCRIPTION =
   "The One Big Beautiful Bill Act made significant changes to student loan programs. Here's why that happened, and what's to come.";
 const URL = "https://www.graduationnavigator.com/blog/student-loans-political-background-and-future";
@@ -22,6 +22,24 @@ export const Route = createFileRoute(
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: StudentLoansPoliticalBackgroundPage,
 });

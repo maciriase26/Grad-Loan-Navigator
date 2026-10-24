@@ -8,13 +8,13 @@ import { useI18n } from "@/i18n";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Grad Loan Navigator — Life After Grad PLUS" },
+      { title: "Grad Navigator: Pay for Grad School With a Plan" },
       {
         name: "description",
         content:
           "Plain-language guide to the new graduate borrowing caps, grandfather rules, and how to compare private lenders after Grad PLUS ended.",
       },
-      { property: "og:title", content: "Grad Loan Navigator — Life After Grad PLUS" },
+      { property: "og:title", content: "Grad Navigator: Pay for Grad School With a Plan" },
       {
         property: "og:description",
         content:
@@ -24,6 +24,24 @@ export const Route = createFileRoute("/")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "https://www.graduationnavigator.com/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Grad Navigator",
+          url: "https://www.graduationnavigator.com",
+          logo: "https://www.graduationnavigator.com/regular-compass.png",
+          sameAs: [
+            "https://www.linkedin.com/company/grad-navigator/",
+            "https://www.instagram.com/graduationnavigator/",
+            "https://www.facebook.com/profile.php?id=61594019007088",
+            "https://www.tiktok.com/@gradnavigator",
+          ],
+        }),
+      },
+    ],
   }),
   component: Index,
   errorComponent: () => <IndexError />,

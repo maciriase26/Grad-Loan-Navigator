@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "AI Use in Higher Education — Grad Loan Navigator";
+const TITLE = "AI Use in Higher Education | Grad Navigator";
 const DESCRIPTION =
   "The advent of AI is not only changing the value of higher education, but also what the experience within degree-granting programs looks like. A data analysis by Jaylen Peng.";
 const URL = "https://www.graduationnavigator.com/blog/ai-use-in-higher-education";
@@ -22,6 +22,24 @@ export const Route = createFileRoute(
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: AiUseInHigherEducationArticlePage,
 });
@@ -180,7 +198,7 @@ function AiUseInHigherEducationArticlePage() {
 
           {/* Section 1: How Students Use AI */}
           <section className="doc-section" id="how-students-use-ai">
-            <span className="section-num">Part 1 of 4</span>
+            <span className="section-num">{t("ai.part1")}</span>
             <h2>How Students Use AI</h2>
             <p className="lead">
               Students use a variety of AI tools. Popular ones include <strong>ChatGPT</strong>, <strong>Claude</strong>, <strong>Grammarly</strong>, and <strong>Microsoft Copilot</strong>. Common applications include:
@@ -233,7 +251,7 @@ function AiUseInHigherEducationArticlePage() {
 
           {/* Section 2: Who Uses It Most? */}
           <section className="doc-section" id="who-uses-it-most">
-            <span className="section-num">Part 2 of 4</span>
+            <span className="section-num">{t("ai.part2")}</span>
             <h2>Who Uses It Most?</h2>
             <p className="lead">
               Male students report more frequent use than female students. Students in <strong>business</strong>, <strong>technology</strong>, and <strong>engineering</strong> programs report more frequent AI use when compared to students in other fields.
@@ -276,7 +294,7 @@ function AiUseInHigherEducationArticlePage() {
 
           {/* Section 3: How Schools Are Responding */}
           <section className="doc-section" id="how-schools-respond">
-            <span className="section-num">Part 3 of 4</span>
+            <span className="section-num">{t("ai.part3")}</span>
             <h2>How Schools Are Responding</h2>
             <p className="lead">
               <strong>The Short Answer:</strong> Not consistently or clearly enough.
@@ -315,7 +333,7 @@ function AiUseInHigherEducationArticlePage() {
 
           {/* Section 4: What You Should Keep in Mind */}
           <section className="doc-section" id="keep-in-mind">
-            <span className="section-num">Part 4 of 4</span>
+            <span className="section-num">{t("ai.part4")}</span>
             <h2>What You Should Keep in Mind</h2>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "16px", margin: "24px 0" }}>
@@ -371,7 +389,7 @@ function AiUseInHigherEducationArticlePage() {
 
           {/* Section 5: The Bottom Line */}
           <section className="doc-section" id="bottom-line">
-            <span className="section-num">Conclusion</span>
+            <span className="section-num">{t("ai.part5")}</span>
             <h2>The Bottom Line</h2>
             <div className="refi-bottom-card">
               <p className="refi-bottom-quote">

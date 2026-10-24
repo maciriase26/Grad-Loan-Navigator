@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Free Money First: Before You Borrow Graduate Aid Guide — Grad Loan Navigator";
+const TITLE = "Free Money First: Before You Borrow Graduate Aid Guide | Grad Navigator";
 const DESCRIPTION =
   "A 'Before You Borrow' guide walking graduate students through funding they never repay: assistantships, fellowships, grants, scholarships, and employer aid.";
 const URL = "https://www.graduationnavigator.com/free-money-first";

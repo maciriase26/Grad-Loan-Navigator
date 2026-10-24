@@ -3,9 +3,9 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Student Loan Interest: by the numbers — Grad Loan Navigator";
+const TITLE = "Student Loan Interest: by the numbers | Grad Navigator";
 const DESCRIPTION =
-  "Federal student loan rates climbed for the third straight year. Here's what that actually costs you, how rates are set, and what changed for graduate borrowers.";
+  "Federal student loan rates rose again for 2026–27. Here's what that actually costs you, how rates are set, and what changed for graduate borrowers.";
 const URL = "https://www.graduationnavigator.com/blog/student-loan-interest-by-the-numbers";
 
 export const Route = createFileRoute("/blog_/student-loan-interest-by-the-numbers")({
@@ -20,6 +20,24 @@ export const Route = createFileRoute("/blog_/student-loan-interest-by-the-number
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: StudentLoanInterestArticlePage,
 });
@@ -291,8 +309,7 @@ function StudentLoanInterestArticlePage() {
                 <p>{t("rates.cta.p")}</p>
               </div>
               <Link
-                to="/"
-                hash="quiz"
+                to="/chart-your-path"
                 className="btn-primary"
                 style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}
               >

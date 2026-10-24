@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Clemson: The Best of Both Worlds — Grad Loan Navigator";
+const TITLE = "Clemson: The Best of Both Worlds | Grad Navigator";
 const DESCRIPTION =
   "Clemson delivers a well-rounded college experience through excellent academics, storied traditions, and vibrant campus life. A data analysis by the Student Editorial Board.";
 const URL = "https://www.graduationnavigator.com/blog/clemson-university-the-best-of-both-worlds";
@@ -22,6 +22,24 @@ export const Route = createFileRoute(
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: ClemsonArticlePage,
 });
@@ -411,6 +429,18 @@ function ClemsonArticlePage() {
                 </div>
                 <p style={{ margin: 0, fontSize: "15px", lineHeight: "1.65", color: "var(--ink-soft)" }}>
                   Clemson students report high rates of success in finding internships, gainful employment, and networking opportunities after graduation.
+                </p>
+              </div>
+
+              <div className="rates-diff-card" style={{ padding: "24px", borderRadius: "12px", background: "var(--card)", border: "1px solid var(--line)", borderTop: "#522D80 3px solid" }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginBottom: "12px" }}>
+                  <span className="rates-diff-tag" style={{ alignSelf: "flex-start", background: "color-mix(in srgb, #522D80 15%, transparent)", color: "#522D80" }}>
+                    Advantage 04
+                  </span>
+                  <h3 style={{ margin: 0, fontSize: "18.5px", fontWeight: 700, color: "#522D80" }}>Graduate Value & Research Assistantships</h3>
+                </div>
+                <p style={{ margin: 0, fontSize: "15px", lineHeight: "1.65", color: "var(--ink-soft)" }}>
+                  Clemson graduate tuition and required fees are <strong>$12,646 in-state</strong> and <strong>$24,798 out-of-state</strong> (IPEDS 2024–25). In addition, Clemson's extensive R1 research infrastructure funds competitive Graduate Research Assistantships (GRAs) and Teaching Assistantships (GTAs) that provide substantial tuition waivers and monthly stipends across engineering, science, and agriculture.
                 </p>
               </div>
             </div>

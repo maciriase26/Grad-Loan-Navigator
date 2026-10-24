@@ -242,9 +242,11 @@ export function CollegeLoanNeedCalculator() {
 
               {/* In-State vs Out-of-State Toggle */}
               {selectedSchool && (
-                <div className="cyp-residency-toggle" style={{ marginTop: "6px" }}>
+                <div className="cyp-residency-toggle" style={{ marginTop: "6px" }} role="group" aria-label={t("cyp.residency.label")}>
                   <button
                     type="button"
+                    aria-label={`${t("cyp.residency.inState")}: ${formatCurrency(selectedSchool.inState)} per year`}
+                    aria-pressed={residency === "inState"}
                     className={`cyp-residency-btn ${residency === "inState" ? "active" : ""}`}
                     onClick={() => handleResidencyChange("inState")}
                   >
@@ -253,6 +255,8 @@ export function CollegeLoanNeedCalculator() {
                   </button>
                   <button
                     type="button"
+                    aria-label={`${t("cyp.residency.outOfState")}: ${formatCurrency(selectedSchool.outOfState)} per year`}
+                    aria-pressed={residency === "outOfState"}
                     className={`cyp-residency-btn ${residency === "outOfState" ? "active" : ""}`}
                     onClick={() => handleResidencyChange("outOfState")}
                   >
@@ -618,7 +622,7 @@ export function CollegeLoanNeedCalculator() {
           </div>
           <p>{t("cyp.citation.body")}</p>
           <a
-            href="https://www.tuitiontracker.org/"
+            href="https://nces.ed.gov/ipeds/"
             target="_blank"
             rel="noreferrer noopener"
           >

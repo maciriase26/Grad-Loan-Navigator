@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "The FAFSA Explained — Grad Loan Navigator";
+const TITLE = "The FAFSA Explained | Grad Navigator";
 const DESCRIPTION =
   "How the Student Aid Index (SAI) works, Pell Grant eligibility thresholds, federal loan caps, and who still misses out. Analysis by Carson Jung.";
 const URL = "https://www.graduationnavigator.com/blog/fafsa-explained";
@@ -20,6 +20,24 @@ export const Route = createFileRoute("/blog_/fafsa-explained")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: FafsaExplainedArticlePage,
 });

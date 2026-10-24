@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Student Loan Interest Rates History — Grad Loan Navigator";
+const TITLE = "Student Loan Interest Rates History | Grad Navigator";
 const DESCRIPTION =
   "A 60-year history of federal student loan interest rates: from flat statutory rates in 1965 to variable formulas, the 2013 Certainty Act, pandemic 0% freeze, and 2026 rates. Analysis by Carson Jung.";
 const URL = "https://www.graduationnavigator.com/blog/student-loan-interest-rates-history";
@@ -22,6 +22,24 @@ export const Route = createFileRoute(
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: StudentLoanInterestRatesHistoryPage,
 });
@@ -691,6 +709,7 @@ function StudentLoanInterestRatesHistoryPage() {
 
           {/* Section 5: The Bottom Line */}
           <section className="doc-section" id="bottom-line" style={{ scrollMarginTop: "80px" }}>
+            <span className="section-num">{t("irh.part5")}</span>
             <h2>{t("irh.bottomline.h2")}</h2>
 
             <div className="refi-bottom-card">

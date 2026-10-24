@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Graduate School: Public vs. Private — Grad Loan Navigator";
+const TITLE = "Graduate School: Public vs. Private | Grad Navigator";
 const DESCRIPTION =
   "There are over 1,000 universities in the U.S. that offer graduate programs. Understanding the difference between public and private institutions can set you up for success. By Jaylen Peng.";
 const URL = "https://www.graduationnavigator.com/blog/public-vs-private-grad-school";
@@ -22,6 +22,24 @@ export const Route = createFileRoute(
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: PublicVsPrivateGradSchoolArticlePage,
 });
@@ -108,25 +126,25 @@ function ArrowRightIcon() {
 const TUITION_TABLE = [
   {
     type: "Public",
-    tuition: "In-state: $11,766\nOut-of-state: $21,165",
-    inState: "$11,766",
-    outOfState: "$21,165",
+    tuition: "In-state: $12,045\nOut-of-state: $21,487",
+    inState: "$12,045",
+    outOfState: "$21,487",
     schools: "University of California, Berkeley\nUniversity of California, Los Angeles\nUniversity of Michigan–Ann Arbor",
     accent: "var(--teal)",
   },
   {
     type: "Private nonprofit",
-    tuition: "$20,184",
-    inState: "$20,184",
-    outOfState: "$20,184",
+    tuition: "$20,936",
+    inState: "$20,936",
+    outOfState: "$20,936",
     schools: "Princeton University\nMassachusetts Institute of Technology\nHarvard University",
     accent: "var(--ink)",
   },
   {
     type: "Private for-profit",
-    tuition: "$17,672",
-    inState: "$17,672",
-    outOfState: "$17,672",
+    tuition: "$17,531",
+    inState: "$17,531",
+    outOfState: "$17,531",
     schools: "Grand Canyon University\nUniversity of Phoenix\nDeVry University",
     accent: "#D99B26",
   },
@@ -229,7 +247,7 @@ function PublicVsPrivateGradSchoolArticlePage() {
 
           {/* Section 2: What It Means for You (Tuition Table) */}
           <section className="doc-section" id="tuition-comparison">
-            <span className="section-num">Part 2 of 4</span>
+            <span className="section-num">{t("pvp.part2")}</span>
             <h2>What It Means for You</h2>
             <p className="lead">
               The money public universities receive from state government allows them to offer lower in-state tuition for residents. Out-of-state tuition is higher, often comparable to private schools. On average, private for-profit is slightly cheaper than nonprofit.
@@ -254,8 +272,8 @@ function PublicVsPrivateGradSchoolArticlePage() {
                       <td style={{ textAlign: "center" }} className="roi-mono">
                         {row.type === "Public" ? (
                           <div>
-                            <div style={{ color: "var(--teal)", fontWeight: 700 }}>In-state: $11,766</div>
-                            <div style={{ color: "var(--ink)", fontWeight: 600, marginTop: "4px" }}>Out-of-state: $21,165</div>
+                            <div style={{ color: "var(--teal)", fontWeight: 700 }}>In-state: {row.inState}</div>
+                            <div style={{ color: "var(--ink)", fontWeight: 600, marginTop: "4px" }}>Out-of-state: {row.outOfState}</div>
                           </div>
                         ) : (
                           <div className="roi-highlight">{row.tuition}</div>
@@ -273,13 +291,13 @@ function PublicVsPrivateGradSchoolArticlePage() {
             </div>
 
             <p style={{ fontSize: "13px", color: "var(--ink-soft)", fontStyle: "italic", marginTop: "8px" }}>
-              Note: Tuition figures are 2023–24 institutional averages.
+              Note: Tuition figures are 2024–25 institutional averages (IPEDS / National Center for Education Statistics).
             </p>
           </section>
 
           {/* Section 3: Differences Beyond Cost of Attendance */}
           <section className="doc-section" id="beyond-cost" style={{ scrollMarginTop: "80px" }}>
-            <span className="section-num">Part 3 of 4</span>
+            <span className="section-num">{t("pvp.part3")}</span>
             <h2>Differences Beyond Cost of Attendance</h2>
             <p className="lead" style={{ fontSize: "17px", lineHeight: "1.65", marginBottom: "24px" }}>
               There are also structural differences beyond tuition and cost of attendance.
@@ -350,7 +368,7 @@ function PublicVsPrivateGradSchoolArticlePage() {
 
           {/* Section 4: Keep In Mind... */}
           <section className="doc-section" id="keep-in-mind" style={{ scrollMarginTop: "80px" }}>
-            <span className="section-num">Part 4 of 4</span>
+            <span className="section-num">{t("pvp.part4")}</span>
             <h2>Keep In Mind…</h2>
 
             <div className="rates-diff-grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px", marginTop: "24px" }}>
@@ -406,7 +424,7 @@ function PublicVsPrivateGradSchoolArticlePage() {
 
           {/* Section 5: The Bottom Line */}
           <section className="doc-section" id="bottom-line" style={{ scrollMarginTop: "80px" }}>
-            <span className="section-num">Conclusion</span>
+            <span className="section-num">{t("pvp.part5")}</span>
             <h2>The Bottom Line</h2>
             <p className="lead" style={{ fontSize: "18px", lineHeight: "1.65", fontWeight: 600, color: "var(--ink)", marginBottom: "20px" }}>
               For in-state residents, public is usually the cheapest. Funding packages for private can narrow the gap. Choose based on program outcomes, career fit, and location.
@@ -415,7 +433,7 @@ function PublicVsPrivateGradSchoolArticlePage() {
             {/* Sources Attribution matching PDF */}
             <div style={{ margin: "32px 0 24px 0", padding: "16px 20px", background: "color-mix(in srgb, var(--line) 40%, transparent)", borderRadius: "10px", border: "1px solid var(--line)" }}>
               <p style={{ margin: 0, fontSize: "14px", color: "var(--ink-soft)", fontStyle: "italic" }}>
-                <strong>Sources:</strong> U.S. News & World Reports, National Center for Educational Statistics. <em>Reviewed as of Sept. 11, 2026.</em>
+                <strong>Sources:</strong> U.S. News & World Report, National Center for Education Statistics. <em>Reviewed as of Sept. 11, 2026.</em>
               </p>
             </div>
 

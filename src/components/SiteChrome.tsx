@@ -217,7 +217,7 @@ export function SiteHeader() {
     <>
       <header className="site-header">
         <nav className="site-nav">
-          <Link to="/" className="logo">
+          <Link to="/" className="logo" aria-label="Grad Navigator">
             Grad Navigat
             <span className="logo-o">
               <CompassMark />
@@ -239,6 +239,7 @@ export function SiteHeader() {
                   <Link
                     to={group.hubTo}
                     className={`nav-dropdown-trigger ${isOpen ? "active" : ""}`}
+                    aria-label={t(group.labelKey)}
                     aria-expanded={isOpen}
                     aria-haspopup="true"
                     onClick={() => setActiveDropdown(null)}
@@ -333,7 +334,12 @@ export function SiteHeader() {
             aria-label="Navigation Menu"
           >
             <div className="mobile-nav-header">
-              <Link to="/" className="logo" onClick={() => setMobileOpen(false)}>
+              <Link
+                to="/"
+                className="logo"
+                aria-label="Grad Navigator"
+                onClick={() => setMobileOpen(false)}
+              >
                 Grad Navigat
                 <span className="logo-o">
                   <CompassMark />
@@ -539,7 +545,7 @@ export function SiteFooter() {
               <TikTokIcon />
             </a>
             <a
-              href="https://www.linkedin.com/company/grad-navigator/?viewAsMember=true"
+              href="https://www.linkedin.com/company/grad-navigator/"
               target="_blank"
               rel="noopener noreferrer"
               className="foot-social-icon-btn li"
@@ -567,6 +573,12 @@ export function SiteFooter() {
             </Link>
             <Link to="/editorial-standards" hash="disclosure">
               {t("footer.about.disclosure")}
+            </Link>
+            <Link to="/privacy">
+              {t("footer.about.privacy")}
+            </Link>
+            <Link to="/terms">
+              {t("footer.about.terms")}
             </Link>
             <button type="button" className="foot-link-btn" onClick={openContactDialog}>
               {t("footer.about.contact")}

@@ -186,7 +186,7 @@ function buildComparisonSummary(calculatedOffers: any[], lang: string): string {
   lines.push(buildAppealLetter(s1, s2, lang));
   lines.push("");
   lines.push("--------------------------------------------------");
-  lines.push("Prepared with Grad Loan Navigator (gradloannavigator.com)");
+  lines.push("Prepared with Grad Navigator (graduationnavigator.com)");
   return lines.join("\n");
 }
 
@@ -226,6 +226,17 @@ export function AidOfferComparisonTool() {
   const [emailStatus, setEmailStatus] = useState<"idle" | "sending" | "success">("idle");
   const [emailDelivered, setEmailDelivered] = useState(false);
   const [emailErrorMsg, setEmailErrorMsg] = useState("");
+
+  useEffect(() => {
+    if (!isEmailModalOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setIsEmailModalOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isEmailModalOpen]);
 
   // Appeal draft email state
   const [appealEmail, setAppealEmail] = useState("");
@@ -307,8 +318,8 @@ export function AidOfferComparisonTool() {
     const uncoveredShortfall = Math.max(0, outOfPocketGapAnnual - totalLoansAnnual);
     const totalDebtAtGrad = totalLoansAnnual * years;
 
-    // Standard 10-year monthly loan repayment (120 months) at 8.08%
-    const rateMonthly = 0.0808 / 12;
+    // Standard 10-year monthly loan repayment (120 months) at 8.07%
+    const rateMonthly = 0.0807 / 12;
     const numPayments = 120;
     let monthlyPayment = 0;
     if (totalDebtAtGrad > 0) {
@@ -467,8 +478,8 @@ export function AidOfferComparisonTool() {
                         emailAddress.trim()
                       )}&su=${encodeURIComponent(
                         lang === "es"
-                          ? "Grad Loan Navigator: Resumen de Comparativa de Ofertas de Ayuda"
-                          : "Grad Loan Navigator: Financial Aid Offer Comparison Summary"
+                          ? "Grad Navigator: Resumen de Comparativa de Ofertas de Ayuda"
+                          : "Grad Navigator: Financial Aid Offer Comparison Summary"
                       )}&body=${encodeURIComponent(buildComparisonSummary(calculatedOffers, lang))}`}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -480,8 +491,8 @@ export function AidOfferComparisonTool() {
                     <a
                       href={`mailto:${encodeURIComponent(emailAddress.trim())}?subject=${encodeURIComponent(
                         lang === "es"
-                          ? "Grad Loan Navigator: Resumen de Comparativa de Ofertas de Ayuda"
-                          : "Grad Loan Navigator: Financial Aid Offer Comparison Summary"
+                          ? "Grad Navigator: Resumen de Comparativa de Ofertas de Ayuda"
+                          : "Grad Navigator: Financial Aid Offer Comparison Summary"
                       )}&body=${encodeURIComponent(buildComparisonSummary(calculatedOffers, lang))}`}
                       className="btn-secondary aoc-modal-action-btn"
                     >
@@ -523,8 +534,8 @@ export function AidOfferComparisonTool() {
                     const summaryText = buildComparisonSummary(calculatedOffers, lang);
                     const subject =
                       lang === "es"
-                        ? "Grad Loan Navigator: Resumen de Comparativa de Ofertas de Ayuda"
-                        : "Grad Loan Navigator: Financial Aid Offer Comparison Summary";
+                        ? "Grad Navigator: Resumen de Comparativa de Ofertas de Ayuda"
+                        : "Grad Navigator: Financial Aid Offer Comparison Summary";
                     const payload = {
                       id: typeof crypto !== "undefined" && crypto.randomUUID ? crypto.randomUUID() : undefined,
                       name: emailName.trim() || "Student",
@@ -601,6 +612,13 @@ export function AidOfferComparisonTool() {
                       placeholder={t("aoc.modal.emailPlaceholder")}
                     />
                     {emailErrorMsg && <span className="aoc-modal-error">{emailErrorMsg}</span>}
+                    <p style={{ fontSize: "11px", color: "var(--text-muted)", marginTop: "8px", lineHeight: "1.4" }}>
+                      {t("aoc.modal.privacyNote")}{" "}
+                      <Link to="/privacy" target="_blank" style={{ textDecoration: "underline", color: "var(--teal)" }}>
+                        {t("footer.about.privacy")}
+                      </Link>
+                      .
+                    </p>
                   </div>
 
                   <div className="aoc-modal-footer">
@@ -624,7 +642,7 @@ export function AidOfferComparisonTool() {
 
       {/* Printable Report Header (Active on print) */}
       <div className="aoc-print-only aoc-print-header">
-        <div className="aoc-print-logo">Grad Loan Navigator</div>
+        <div className="aoc-print-logo">Grad Navigator</div>
         <h2>{t("aoc.pdf.header")}</h2>
         <p className="aoc-print-sub">
           {t("aoc.pdf.sub")} • {new Date().toLocaleDateString()}
@@ -730,11 +748,11 @@ export function AidOfferComparisonTool() {
                     value={offer.programYears}
                     onChange={(e) => updateOffer(idx, "programYears", Number(e.target.value))}
                   >
-                    <option value={1}>1 Year (Accelerated)</option>
-                    <option value={2}>2 Years (Standard Master's)</option>
-                    <option value={3}>3 Years (Law / MFA / Dual)</option>
-                    <option value={4}>4 Years (Medical / Doctoral)</option>
-                    <option value={5}>5 Years (Ph.D.)</option>
+                    <option value={1}>{t("aoc.program.1yr")}</option>
+                    <option value={2}>{t("aoc.program.2yr")}</option>
+                    <option value={3}>{t("aoc.program.3yr")}</option>
+                    <option value={4}>{t("aoc.program.4yr")}</option>
+                    <option value={5}>{t("aoc.program.5yr")}</option>
                   </select>
                 </div>
               </div>
@@ -1288,6 +1306,13 @@ export function AidOfferComparisonTool() {
                   </button>
                 </div>
                 {appealError && <span className="aoc-modal-error">{appealError}</span>}
+                <p style={{ fontSize: "11px", color: "var(--text-muted)", marginTop: "8px", lineHeight: "1.4" }}>
+                  {t("aoc.modal.privacyNote")}{" "}
+                  <Link to="/privacy" target="_blank" style={{ textDecoration: "underline", color: "var(--teal)" }}>
+                    {t("footer.about.privacy")}
+                  </Link>
+                  .
+                </p>
               </form>
             )}
           </div>

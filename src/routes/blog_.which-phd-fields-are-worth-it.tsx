@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Which Ph.D. Fields Are Worth It? — Grad Loan Navigator";
+const TITLE = "Which Ph.D. Fields Are Worth It? | Grad Navigator";
 const DESCRIPTION =
   "A Ph.D. can significantly boost your career prospects but requires time and money. Here are the programs that have the best financial outcomes.";
 const URL = "https://www.graduationnavigator.com/blog/which-phd-fields-are-worth-it";
@@ -20,6 +20,24 @@ export const Route = createFileRoute("/blog_/which-phd-fields-are-worth-it")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: WhichPhdFieldsAreWorthItArticlePage,
 });

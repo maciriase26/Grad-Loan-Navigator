@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Student Loan Types — Grad Loan Navigator";
+const TITLE = "Student Loan Types | Grad Navigator";
 const DESCRIPTION =
   "There are three federal student loan programs and multiple private options. Here is a cheat sheet breakdown of subsidized, unsubsidized, PLUS, and private loans.";
 const URL = "https://www.graduationnavigator.com/blog/student-loan-types";
@@ -20,6 +20,24 @@ export const Route = createFileRoute("/blog_/student-loan-types")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: StudentLoanTypesArticlePage,
 });
@@ -219,8 +237,7 @@ function StudentLoanTypesArticlePage() {
                 <p>{t("types.cta.p")}</p>
               </div>
               <Link
-                to="/"
-                hash="quiz"
+                to="/chart-your-path"
                 className="btn-primary"
                 style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}
               >

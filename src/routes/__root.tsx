@@ -14,6 +14,10 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { I18nProvider } from "@/i18n";
 
 function NotFoundComponent() {
+  useEffect(() => {
+    document.title = "Page not found | Grad Navigator";
+  }, []);
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
@@ -80,15 +84,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
       { name: "googlebot", content: "index, follow" },
-      { title: "Grad Loan Navigator — Life After Grad PLUS" },
+      { title: "Grad Navigator: Pay for Grad School With a Plan" },
       { name: "description", content: "Plain-language guide to the new graduate borrowing caps, grandfather rules, and how to compare private lenders after Grad PLUS ended." },
-      { name: "author", content: "Grad" },
-      { property: "og:title", content: "Grad Loan Navigator — Life After Grad PLUS" },
+      { name: "author", content: "Grad Navigator" },
+      { property: "og:title", content: "Grad Navigator: Pay for Grad School With a Plan" },
       { property: "og:description", content: "Plain-language guide to the new graduate borrowing caps, grandfather rules, and how to compare private lenders after Grad PLUS ended." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Grad" },
-      { name: "twitter:title", content: "Grad Loan Navigator — Life After Grad PLUS" },
+      { name: "twitter:site", content: "@GradNavigator" },
+      { name: "twitter:title", content: "Grad Navigator: Pay for Grad School With a Plan" },
       { name: "twitter:description", content: "Plain-language guide to the new graduate borrowing caps, grandfather rules, and how to compare private lenders after Grad PLUS ended." },
       { property: "og:image", content: "https://www.graduationnavigator.com/favicon-512x512.png" },
       { name: "twitter:image", content: "https://www.graduationnavigator.com/favicon-512x512.png" },

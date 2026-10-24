@@ -5,7 +5,7 @@ export default defineTool({
   name: "list_explainers",
   title: "List Loans 101 explainers",
   description:
-    "List every Loans 101 explainer on Grad Loan Navigator with its id, topic tag, question and one-line summary.",
+    "List every Loans 101 explainer on Grad Navigator with its id, topic tag, question and one-line summary.",
   inputSchema: {},
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: () => {

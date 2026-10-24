@@ -5,7 +5,7 @@ import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 import type { TranslationKey } from "@/i18n/translations";
 
-const TITLE = "When Should You Get a Master’s Degree? — Grad Loan Navigator";
+const TITLE = "When Should You Get a Master’s Degree? | Grad Navigator";
 const DESCRIPTION =
   "A master's degree can boost long-term career prospects and future earnings. But when is it not worth it? Age, opportunity cost, and payoff analysis by Jaylen Peng.";
 const URL = "https://www.graduationnavigator.com/blog/when-to-get-masters-degree";
@@ -22,6 +22,24 @@ export const Route = createFileRoute("/blog_/when-to-get-masters-degree")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: WhenToGetMastersDegreeArticlePage,
 });
@@ -549,7 +567,7 @@ function WhenToGetMastersDegreeArticlePage() {
                 <div style={{ fontSize: "13px", color: "var(--ink-soft)", lineHeight: "1.4" }}>
                   {isEs
                     ? "Recuperación directa antes de contabilizar el costo de oportunidad."
-                    : "Direct recovery before accounting for foregone career earnings."}
+                    : "Direct recovery before accounting for forgone career earnings."}
                 </div>
               </div>
             </div>
@@ -560,11 +578,13 @@ function WhenToGetMastersDegreeArticlePage() {
             <span className="section-num">{t("wmd.part1")}</span>
             <h2>{t("wmd.payoff.h2")}</h2>
             <p className="lead">{t("wmd.payoff.p1")}</p>
+          </section>
 
-            <div id="opportunity-cost" style={{ scrollMarginTop: "80px", marginTop: "32px" }}>
-              <h3 style={{ fontSize: "19px", marginBottom: "12px", color: "var(--ink)" }}>
-                {t("wmd.oppcost.lead")}
-              </h3>
+          {/* Section 2: The Opportunity Cost Trap */}
+          <section className="doc-section" id="opportunity-cost" style={{ scrollMarginTop: "80px" }}>
+            <span className="section-num">{t("wmd.part2")}</span>
+            <h2>{t("wmd.oppcost.h2")}</h2>
+            <p className="lead">{t("wmd.oppcost.lead")}</p>
 
               <div
                 style={{
@@ -648,12 +668,11 @@ function WhenToGetMastersDegreeArticlePage() {
                   </p>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
 
-          {/* Section 2: How Does Your Age Matter? (Chart Section) */}
+          {/* Section 3: How Does Your Age Matter? (Chart Section) */}
           <section className="doc-section" id="age-matters" style={{ scrollMarginTop: "80px" }}>
-            <span className="section-num">{t("wmd.part2")}</span>
+            <span className="section-num">{t("wmd.part3")}</span>
             <h2>{t("wmd.age.h2")}</h2>
             <p className="lead">{t("wmd.age.lead")}</p>
 
@@ -1111,9 +1130,9 @@ function WhenToGetMastersDegreeArticlePage() {
             </div>
           </section>
 
-          {/* Section 3: Is It Too Late? */}
+          {/* Section 4: Is It Too Late? */}
           <section className="doc-section" id="is-it-too-late" style={{ scrollMarginTop: "80px" }}>
-            <span className="section-num">{t("wmd.part3")}</span>
+            <span className="section-num">{t("wmd.part4")}</span>
             <h2>{t("wmd.toolate.h2")}</h2>
             <p className="lead">{t("wmd.toolate.lead")}</p>
 
@@ -1230,9 +1249,9 @@ function WhenToGetMastersDegreeArticlePage() {
             </div>
           </section>
 
-          {/* Section 4: The Bottom Line */}
+          {/* Section 5: The Bottom Line */}
           <section className="doc-section" id="the-bottom-line" style={{ scrollMarginTop: "80px" }}>
-            <span className="section-num">{t("wmd.part4")}</span>
+            <span className="section-num">{t("wmd.part5")}</span>
             <h2>{t("wmd.bottomline.h2")}</h2>
             <div
               style={{

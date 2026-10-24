@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Educational Resources — Grad Loan Navigator";
+const TITLE = "Educational Resources | Grad Navigator";
 const DESCRIPTION =
   "Two ways to learn about graduate borrowing: long-form in-depth analysis, or short student-written blog posts.";
 const URL = "https://www.graduationnavigator.com/educational-resources";

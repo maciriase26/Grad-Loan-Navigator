@@ -3,7 +3,7 @@ import { defineTool } from "@lovable.dev/mcp-js";
 const PAGES = [
   {
     path: "/",
-    title: "Grad Loan Navigator — Life After Grad PLUS",
+    title: "Grad Navigator: Pay for Grad School With a Plan",
     description:
       "Home. Guided route with three stations: Understand, Learn, Apply. Includes a multi-step borrowing-position assessment (#quiz).",
     sections: ["understand", "learn", "apply", "quiz"],
@@ -16,19 +16,13 @@ const PAGES = [
     sections: [],
   },
 
-  {
-    path: "/apply",
-    title: "Apply",
-    description: "Coming soon page for the application flow.",
-    sections: [],
-  },
 ];
 
 export default defineTool({
   name: "site_map",
   title: "Map the site",
   description:
-    "List the pages and in-page section anchors of Grad Loan Navigator so a caller can link visitors to the right place.",
+    "List the pages and in-page section anchors of Grad Navigator so a caller can link visitors to the right place.",
   inputSchema: {},
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: () => ({

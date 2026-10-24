@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "University of Florida: A Top-Tier Value — Grad Loan Navigator";
+const TITLE = "University of Florida: A Top-Tier Value | Grad Navigator";
 const DESCRIPTION =
   "The University of Florida (UF) offers nationally ranked academic programs, competitive post-graduation placement and a robust alumni network all at a fraction of the price.";
 const URL = "https://www.graduationnavigator.com/blog/university-of-florida-top-tier-value";
@@ -22,6 +22,24 @@ export const Route = createFileRoute(
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: UniversityOfFloridaArticlePage,
 });
@@ -282,8 +300,26 @@ function UniversityOfFloridaArticlePage() {
               </table>
             </div>
             <p style={{ fontSize: "12px", color: "var(--ink-soft)", marginTop: "8px", fontStyle: "italic" }}>
-              Notes: Tuition and fee figures are for 2026–27 and include required fees for full-time undergraduates at the main campus. Earnings are median earnings 8 years after entry for federally aided undergraduates, from U.S. Department of Education College Scorecard.
+              Notes: Table shows undergraduate comparison metrics (2026–27). Earnings are median earnings 8 years after entry for federally aided undergraduates, from U.S. Department of Education College Scorecard.
             </p>
+
+            {/* Graduate Tuition & Assistantships Callout */}
+            <div
+              style={{
+                marginTop: "20px",
+                padding: "20px 24px",
+                background: "color-mix(in srgb, #0021A5 8%, var(--card))",
+                borderRadius: "12px",
+                borderLeft: "4px solid #0021A5",
+              }}
+            >
+              <h4 style={{ margin: "0 0 6px 0", fontSize: "16px", fontWeight: 700, color: "#0021A5" }}>
+                Graduate Tuition & Assistantships
+              </h4>
+              <p style={{ margin: 0, fontSize: "14.5px", lineHeight: "1.6" }}>
+                For graduate and professional students, base tuition and required fees are <strong>$12,737</strong> for Florida residents and <strong>$30,130</strong> for out-of-state students (IPEDS 2024–25). Furthermore, UF awards competitive Graduate Assistantships (GAs, TAs, and RAs) that provide full or partial tuition waivers alongside living stipends and subsidized health insurance.
+              </p>
+            </div>
           </section>
 
           {/* Section 5: Bottom Line */}

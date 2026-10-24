@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Tuition vs. Inflation: Which Has Grown More? — Grad Loan Navigator";
+const TITLE = "Tuition vs. Inflation: Which Has Grown More? | Grad Navigator";
 const DESCRIPTION =
   "As inflation occurs, the price of everything increases. Has the rise in higher education tuition outpaced inflation? A 1990–2026 data analysis by Jaylen Peng.";
 const URL = "https://www.graduationnavigator.com/blog/tuition-vs-inflation-which-has-grown-more";
@@ -22,6 +22,24 @@ export const Route = createFileRoute(
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: TuitionVsInflationArticlePage,
 });
@@ -109,8 +127,8 @@ const DECADE_DATA = [
   { decade: "1990s", inflation: "31.8%", undergrad: "78.3%", grad: "87.8%" },
   { decade: "2000s", inflation: "26.6%", undergrad: "78.1%", grad: "78.2%" },
   { decade: "2010s", inflation: "18.7%", undergrad: "42.8%", grad: "31.5%" },
-  { decade: "2020–2026", inflation: "27.8%", undergrad: "23.8%", grad: "17.9%" },
-  { decade: "Total 1990–2026", inflation: "153.0%", undergrad: "461.5%", grad: "418.7%", isTotal: true },
+  { decade: "2020–2026 (Est.)", inflation: "27.8%", undergrad: "23.8%", grad: "17.9%" },
+  { decade: "Total 1990–2026 (Est.)", inflation: "153.0%", undergrad: "461.5%", grad: "418.7%", isTotal: true },
 ];
 
 function TuitionVsInflationArticlePage() {
@@ -161,6 +179,7 @@ function TuitionVsInflationArticlePage() {
         <div className="wrap doc-content">
           {/* Stat Banner & By the Numbers */}
           <section className="doc-section" id="by-the-numbers">
+            <span className="section-num">{t("tvi.part1")}</span>
             <div className="rates-callout-zoom">
               <div className="rates-callout-zoom-icon">
                 <TrendingUpIcon />
@@ -214,14 +233,14 @@ function TuitionVsInflationArticlePage() {
                 The Short Answer
               </h4>
               <p style={{ margin: 0, fontSize: "16px", lineHeight: "1.6", fontWeight: 600 }}>
-                Both undergraduate and graduate education is comparatively more expensive than 30+ years ago.
+                Both undergraduate and graduate education are comparatively more expensive than 30+ years ago.
               </p>
             </div>
           </section>
 
           {/* Section 1: Undergraduate vs. Graduate */}
           <section className="doc-section" id="undergrad-vs-grad">
-            <span className="section-num">{t("tvi.part1")}</span>
+            <span className="section-num">{t("tvi.part2")}</span>
             <h2>Undergraduate vs. Graduate</h2>
             <p className="lead">
               Tuition for both degree levels have outpaced inflation. Tuition now costs more compared to overall consumer prices.
@@ -273,7 +292,7 @@ function TuitionVsInflationArticlePage() {
               <div style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
                 <CheckCircleIcon />
                 <p style={{ margin: 0, fontSize: "16px", lineHeight: "1.6" }}>
-                  <strong>Undergraduate Pace:</strong> Undergraduate tuition is still rising faster than ever (+461.5% total increase since 1990).
+                  <strong>Undergraduate Pace:</strong> Undergraduate tuition continues to rise steadily (+461.5% total increase since 1990).
                 </p>
               </div>
 
@@ -288,7 +307,7 @@ function TuitionVsInflationArticlePage() {
 
           {/* Section 2: Visual Chart */}
           <section className="doc-section" id="chart-section" style={{ scrollMarginTop: "80px" }}>
-            <span className="section-num">Part 2 of 4</span>
+            <span className="section-num">{t("tvi.part3")}</span>
             <h2>Cumulative Growth Comparison (1990–2026)</h2>
 
             {/* SVG Visual Chart Matching Original PDF */}
@@ -468,7 +487,7 @@ function TuitionVsInflationArticlePage() {
 
           {/* Section 3: What Does This Mean? */}
           <section className="doc-section" id="what-this-means" style={{ scrollMarginTop: "80px" }}>
-            <span className="section-num">Part 3 of 4</span>
+            <span className="section-num">{t("tvi.part4")}</span>
             <h2>What Does This Mean?</h2>
             <p className="lead" style={{ fontSize: "17px", lineHeight: "1.65", marginBottom: "24px" }}>
               The rapid rise in AI is actively changing the job market. An advanced degree can make you stand out. If tuition is also becoming relatively cheaper, that means the value of a graduate degree could potentially increase. However, still consider:
@@ -527,7 +546,7 @@ function TuitionVsInflationArticlePage() {
 
           {/* Section 4: The Bottom Line */}
           <section className="doc-section" id="bottom-line" style={{ scrollMarginTop: "80px" }}>
-            <span className="section-num">Part 4 of 4</span>
+            <span className="section-num">{t("tvi.part5")}</span>
             <h2>The Bottom Line</h2>
             <p className="lead" style={{ fontSize: "18px", lineHeight: "1.65", fontWeight: 600, color: "var(--ink)", marginBottom: "20px" }}>
               Tuition has outpaced inflation, though graduate tuition growth has slowed. In an AI-driven economy, an advanced degree could mean more, but the margin for choosing the wrong program has narrowed.

@@ -166,7 +166,7 @@ export const SEARCH_INDEX: SearchItem[] = [
     descEs:
       "Haz seguimiento de préstamos existentes, explora la refinanciación y revisa opciones de pago.",
     url: "/manage-loans",
-    badgeEn: "Deck",
+    badgeEn: "Guide",
     badgeEs: "Guía",
     keywords: [
       "manage",
@@ -1004,6 +1004,52 @@ export const SEARCH_INDEX: SearchItem[] = [
       "primer crédito",
       "construir historial",
       "guía pdf",
+    ],
+  },
+  {
+    id: "privacy-policy",
+    category: "pages",
+    titleEn: "Privacy Policy",
+    titleEs: "Política de Privacidad",
+    descEn:
+      "Understand how Grad Navigator protects your privacy, performs client-side calculations, and handles communications.",
+    descEs:
+      "Conoce cómo Grad Navigator protege tu privacidad, realiza cálculos en tu navegador y gestiona comunicaciones.",
+    url: "/privacy",
+    badgeEn: "Legal",
+    badgeEs: "Legal",
+    keywords: [
+      "privacy",
+      "data protection",
+      "client side",
+      "security",
+      "privacidad",
+      "datos",
+      "seguridad",
+      "política",
+    ],
+  },
+  {
+    id: "terms-of-use",
+    category: "pages",
+    titleEn: "Terms of Use",
+    titleEs: "Términos de Uso",
+    descEn:
+      "Terms of Use, disclaimers, intellectual property rules, and terms for accessing Grad Navigator resources.",
+    descEs:
+      "Términos de uso, descargos de responsabilidad, normas de propiedad intelectual y acceso a recursos.",
+    url: "/terms",
+    badgeEn: "Legal",
+    badgeEs: "Legal",
+    keywords: [
+      "terms",
+      "terms of service",
+      "legal",
+      "disclaimer",
+      "términos",
+      "condiciones",
+      "legal",
+      "aviso",
     ],
   },
 ];

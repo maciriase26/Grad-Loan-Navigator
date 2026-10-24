@@ -19,7 +19,7 @@ export const Route = createFileRoute("/faq/$slug")({
   },
   head: ({ loaderData }) => {
     const article = loaderData as Article | undefined;
-    const title = article ? `${article.title} — Grad Loan Navigator` : "Grad Loan Navigator";
+    const title = article ? `${article.title} | Grad Navigator` : "Grad Navigator";
     const description = article?.content?.slice(0, 155) ?? "Plain-language graduate loan guidance.";
     return {
       meta: [

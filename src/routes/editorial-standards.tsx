@@ -4,7 +4,7 @@ import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 import { openContactDialog } from "@/components/contact/ContactDialog";
 
-const TITLE = "Editorial Standards & Disclosure Policy — Grad Loan Navigator";
+const TITLE = "Editorial Standards & Disclosure Policy | Grad Navigator";
 const DESCRIPTION =
   "How we decide what to publish, how we choose which lenders to show you, and exactly how we get paid.";
 const URL = "https://www.graduationnavigator.com/editorial-standards";

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { Mail, X, CheckCircle2 } from "lucide-react";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
@@ -239,7 +240,17 @@ export function ContactDialog() {
           >
             {status === "sending" ? t("contact.sending") : t("contact.send")}
           </button>
-          <p className="text-[11px] text-muted-foreground">{t("contact.privacy")}</p>
+          <p className="text-[11px] text-muted-foreground">
+            {t("contact.privacy")}{" "}
+            <Link
+              to="/privacy"
+              onClick={() => setOpen(false)}
+              className="underline transition-colors hover:text-foreground"
+            >
+              {t("footer.about.privacy")}
+            </Link>
+            .
+          </p>
         </form>
       )}
     </div>

@@ -3,9 +3,9 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Federal Cuts to Financial Aid for Low-Earning Programs — Grad Loan Navigator";
+const TITLE = "Federal Cuts to Financial Aid for Low-Earning Programs | Grad Navigator";
 const DESCRIPTION =
-  "The Department of Education's final rule eliminates federal loans and Pell Grants for programs failing earnings tests. Analysis by Jaylen Peng.";
+  "The Department of Education's final rule targets federal student loans and aid for programs failing earnings tests. Analysis by Jaylen Peng.";
 const URL = "https://www.graduationnavigator.com/blog/federal-aid-cuts-low-earning-programs";
 
 export const Route = createFileRoute("/blog_/federal-aid-cuts-low-earning-programs")({
@@ -20,6 +20,24 @@ export const Route = createFileRoute("/blog_/federal-aid-cuts-low-earning-progra
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: FederalAidCutsArticlePage,
 });

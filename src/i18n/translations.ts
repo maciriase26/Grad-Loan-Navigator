@@ -17,7 +17,7 @@ export const en = {
   "nav.dropdown.pay.hubDesc": "Comprehensive roadmap for funding graduate school",
   "nav.dropdown.manage.title": "Manage Loans",
   "nav.dropdown.manage.repayTitle": "Repayment & Forgiveness",
-  "nav.dropdown.manage.repayDesc": "IDR plans, SAVE updates, forgiveness, and repayment options",
+  "nav.dropdown.manage.repayDesc": "IDR plans, RAP, forgiveness, and repayment options",
   "nav.dropdown.manage.analysisTitle": "In-Depth Analysis",
   "nav.dropdown.manage.analysisDesc": "Experian-partnered student loan and credit reports",
   "nav.dropdown.resources.title": "Educational Resources",
@@ -50,12 +50,12 @@ export const en = {
   "table.medianSalary": "Median Annual Salary",
   "table.projectedGrowth": "Projected Employment Growth",
 
-  "footer.brand": "Grad Loan Navigator",
+  "footer.brand": "Grad Navigator",
   "footer.blurb":
     "An independent guide to graduate borrowing, built for the post–Grad PLUS landscape. Reviewed for accuracy, updated as the rules change.",
   "footer.learn": "Learn",
   "er.eyebrow": "Learn",
-  "er.h1": "The Navigation hub",
+  "er.h1": "Navigation Hub",
   "er.sub":
     "Two ways in, depending on how you like to learn — pick whichever fits how you're feeling today.",
   "er.card1.sub": "Presented by Experian",
@@ -65,7 +65,7 @@ export const en = {
   "er.card1.cta": "Start reading",
   "er.card2.sub": "Written by students, for students",
   "er.card2.title": "Grad Navigator Blog",
-  "er.card2.desc": "Direct, visual explainers – written in plain language by people in your shoes",
+  "er.card2.desc": "Direct, visual explainers written in plain language by people in your shoes.",
   "er.card2.cta": "Browse the blog",
 
   "mfa.tag": "MOST FREQUENTLY ASKED",
@@ -90,7 +90,7 @@ export const en = {
   "pfs.card3.tag": "COMPARE OPTIONS",
   "pfs.card3.title": "Browse lenders",
   "pfs.card3.desc": "Explore lenders when ready.",
-  "pfs.card4.tag": "INTERACTIVE TOOL",
+  "pfs.card4.tag": "AID COMPARISON TOOL",
   "pfs.card4.title": "Aid offer comparison",
   "pfs.card4.desc": "Compare offers from up to 4 schools side by side. Separate real gift aid from disguised loans, calculate net price, and see your true debt at graduation.",
   "pfs.mfa.label": "Most frequently asked",
@@ -100,17 +100,17 @@ export const en = {
   "pfs.mfa.link4": "How to get",
 
   /* Free Money First / Before You Borrow Hub */
-  "fmf.meta.title": "Free Money First: Before You Borrow Graduate Aid Guide — Grad Loan Navigator",
+  "fmf.meta.title": "Free Money First: Before You Borrow Graduate Aid Guide | Grad Navigator",
   "fmf.meta.desc": "The strategic funding order of operations: exhaust assistantships, fellowships, grants, scholarships, and employer aid before borrowing student loans.",
-  "fmf.hero.tag": "BUILD 3 OF 6 · CONTENT HUB",
+  "fmf.hero.tag": "Free Money First · Funding Guide",
   "fmf.hero.title": "Free money first",
   "fmf.hero.subtitle": "A \"Before you borrow\" guide that walks students through money they don't repay, in the order to chase it. Every dollar found here is one the gap calculator no longer counts as borrowing.",
   "fmf.badge.reviewed": "Reviewed as of October 2026",
   "fmf.badge.verified": "Official Source Verified",
   "fmf.rule.tag": "STRATEGIC BENCHMARK",
-  "fmf.rule.title": "The $1 : $1.85 Gap Calculator Rule",
-  "fmf.rule.desc": "Every dollar of gift aid or tuition remission you lock in reduces your borrowing principal directly. Over a standard 10 to 20-year repayment term at current graduate interest rates, each $1,000 of free money found spares you roughly $1,850 in total lifetime principal and accrued interest.",
-  "fmf.order.eyebrow": "KEY STEP 01 · THE 5-TIER HIERARCHY",
+  "fmf.rule.title": "The $1 : $1.46 Gap Calculator Rule",
+  "fmf.rule.desc": "Every dollar of gift aid or tuition remission you lock in reduces your borrowing principal directly. Over a standard 10-year repayment term at the 2026–27 federal graduate interest rate of 8.07%, each $1,000 of free money found saves you about $1,460 in total principal and interest payments (or over $2,010 over a 20-year term).",
+  "fmf.order.eyebrow": "STEP 01 · THE 5-TIER HIERARCHY",
   "fmf.order.title": "The Funding Order of Operations",
   "fmf.order.subtitle": "Pursue funding strictly from top to bottom. Tiers 1 and 2 offer full tuition coverage and stipends; Tiers 3, 4, and 5 cover critical residual costs without incurring debt.",
   "fmf.tier1.badge": "TIER 01 · HIGHEST VALUE",
@@ -150,7 +150,7 @@ export const en = {
   "fmf.tier5.desc": "Under Internal Revenue Code Section 127, employers can pay up to $5,250 annually toward an employee's graduate education expenses tax-free. Many companies offer expanded reimbursement programs of $10,000 to $25,000+ per year for related degree programs.",
   "fmf.tier5.how": "How to secure it: Review your company handbook or HR portal under 'Educational Assistance'. Confirm course grade requirements (typically B or higher) and any required post-completion retention period.",
   "fmf.tier5.source": "Official source: Internal Revenue Service (IRS Publication 970, Section 127).",
-  "fmf.scam.tag": "KEY STEP 04 · FTC CONSUMER ALERT",
+  "fmf.scam.tag": "STEP 02 · FTC CONSUMER ALERT",
   "fmf.scam.title": "Beware of Scholarship & Financial Aid Scams",
   "fmf.scam.desc": "The Federal Trade Commission (FTC) warns students that dishonest services often masquerade as official scholarship foundations or grant registries. Keep this immutable rule in mind: legitimate scholarship and aid programs never charge money.",
   "fmf.scam.flag1.title": "Application or Processing Fees",
@@ -162,7 +162,7 @@ export const en = {
   "fmf.scam.flag4.title": "\"Exclusive\" Paid Databases",
   "fmf.scam.flag4.desc": "Companies claiming to have 'secret' or 'exclusive' access to billions in unclaimed grants are deceiving you. All real opportunities are published in open, free databases.",
   "fmf.scam.link": "Read the FTC's official scholarship scam guidance at consumer.ftc.gov →",
-  "fmf.tools.tag": "KEY STEP 03 · VERIFIED FREE TOOLS ONLY",
+  "fmf.tools.tag": "STEP 03 · VERIFIED FREE TOOLS ONLY",
   "fmf.tools.title": "Official, Non-Commercial Search Tools",
   "fmf.tools.desc": "Per federal consumer protection standards, we only link free tools maintained by government bodies and verified non-profits. Zero affiliate marketing, zero paid leads.",
   "fmf.tool1.name": "CareerOneStop Scholarship Finder",
@@ -181,7 +181,7 @@ export const en = {
   "fmf.tool4.agency": "Internal Revenue Service",
   "fmf.tool4.desc": "Official guidance detailing Section 127 employer educational assistance exclusion limits and rules for tax-free scholarships and fellowships.",
   "fmf.tool4.cta": "Read IRS Publication 970 →",
-  "fmf.blog.tag": "KEY STEP 06 · RESEARCH & SPOTLIGHTS",
+  "fmf.blog.tag": "STEP 04 · RESEARCH & SPOTLIGHTS",
   "fmf.blog.title": "FAFSA Guides & University Aid Spotlights",
   "fmf.blog.desc": "Explore detailed institutional analyses, assistantship packages, and priority deadlines from our editorial research desk.",
   "fmf.blog.card1.tag": "FAFSA GUIDE",
@@ -202,18 +202,18 @@ export const en = {
   "fmf.blog.card6.tag": "SCHOOL SPOTLIGHT",
   "fmf.blog.card6.title": "Clemson University: Research Fellowships & Value",
   "fmf.blog.card6.desc": "Analyzing engineering and business graduate assistantship packages and South Carolina resident rates.",
-  "fmf.bridge.tag": "KEY STEP 05 · GAP CALCULATOR BRIDGE",
+  "fmf.bridge.tag": "STEP 05 · GAP CALCULATOR BRIDGE",
   "fmf.bridge.title": "Every Dollar Found Is One the Gap Calculator Won't Borrow",
   "fmf.bridge.desc": "Once you tally your assistantship waivers, fellowships, grants, and employer assistance, plug them straight into Chart Your Path. Watch your annual borrowing gap drop to zero.",
   "fmf.bridge.cta": "Calculate Your Gap in Chart Your Path →",
 
   /* Aid Offer Comparison Tool */
-  "aoc.meta.title": "Aid Offer Comparison Tool: Compare College Financial Aid Letters | Grad Loan Navigator",
+  "aoc.meta.title": "Aid Offer Comparison Tool: Compare College Financial Aid Letters | Grad Navigator",
   "aoc.meta.desc": "Compare financial aid offers from up to 4 schools side by side. Unmask loans disguised as aid, calculate true net price, remaining gaps, debt at graduation, and monthly loan payments.",
   "aoc.hero.tag": "FINANCIAL AID COMPARISON",
   "aoc.hero.title": "Aid Offer Comparison",
   "aoc.hero.subtitle": "Compare financial aid offers from up to four schools side by side to see what each will really cost and uncover hidden loan debt.",
-  "aoc.hero.privacy": "100% Client-Side · Nothing is stored on our servers",
+  "aoc.hero.privacy": "100% Client-Side Calculations · Financial data remains in your browser unless you email yourself a copy",
   "aoc.btn.addSchool": "+ Add School (up to 4)",
   "aoc.btn.removeSchool": "Remove",
   "aoc.btn.emailMe": "Email to Me",
@@ -222,6 +222,12 @@ export const en = {
   "aoc.field.schoolName": "School name",
   "aoc.field.schoolSearchPlaceholder": "Search school or type name...",
   "aoc.field.programYears": "Program length (years)",
+  "aoc.program.1yr": "1 Year (Accelerated)",
+  "aoc.program.2yr": "2 Years (Standard Master's)",
+  "aoc.program.3yr": "3 Years (Law / MFA / Dual)",
+  "aoc.program.4yr": "4 Years (Medical / Doctoral)",
+  "aoc.program.5yr": "5 Years (Ph.D.)",
+  "aoc.modal.privacyNote": "Calculations run locally in your browser. We only use your email to deliver your requested breakdown.",
   "aoc.field.coa": "Annual Cost of Attendance (COA)",
   "aoc.field.coaHelp": "Tuition, fees, housing, food, books & supplies.",
   "aoc.section.giftAid": "Free Money (Gift Aid: Never Repaid)",
@@ -232,7 +238,7 @@ export const en = {
   "aoc.field.workStudyHelp": "Earned as paychecks for working hours during the term. Not an upfront invoice deduction.",
   "aoc.section.loans": "Loans (Debt You Must Repay With Interest)",
   "aoc.field.loansDirect": "Federal Direct Loans offered",
-  "aoc.field.loansPlus": "Grad PLUS or private loans offered",
+  "aoc.field.loansPlus": "Private loans (or Grad PLUS if you're grandfathered)",
   "aoc.loansWarningNotice": "Notice: Loans are legally binding debt obligations with interest and origination fees. They do not reduce the cost of college.",
   "aoc.res.title": "Real Cost Breakdown",
   "aoc.res.totalFreeAid": "Total Free Money",
@@ -248,7 +254,7 @@ export const en = {
   "aoc.badge.lowestNetPrice": "Lowest Net Price",
   "aoc.badge.lowestDebt": "Lowest Debt Burden",
   "aoc.flag.mostlyLoans": "Debt Alert: {percent}% of this school's package is debt you must repay with interest, not gift aid.",
-  "aoc.flag.loansDisguised": "Deceptive Aid Unmasked: School advertised ${schoolTotal} in 'aid', but ${loanAmount} is actually loans.",
+  "aoc.flag.loansDisguised": "Deceptive Aid Unmasked: School advertised {schoolTotal} in 'aid', but {loanAmount} is actually loans.",
   "aoc.matrix.title": "Side-by-Side Offer Summary",
   "aoc.matrix.colMetric": "Financial Metric",
   "aoc.matrix.coa": "Cost of Attendance (Annual)",
@@ -301,8 +307,8 @@ export const en = {
   "aoc.appeal.openMail": "Open in Mail App",
   "aoc.appeal.previewTitle": "Preview Appeal Letter",
   "aoc.appeal.previewNotice": "This customizable letter is included in your email along with your full aid comparison breakdown.",
-  "aoc.pdf.header": "Grad Loan Navigator · Official Aid Offer Comparison Report",
-  "aoc.pdf.sub": "Prepared client-side in the browser · No financial data is stored on our servers",
+  "aoc.pdf.header": "Grad Navigator · Aid Offer Comparison Report",
+  "aoc.pdf.sub": "Prepared in your browser · Financial calculations are not stored unless emailed",
 
   /* Browse Lenders Page */
   "lenders.h1": "Browse & Compare Graduate Lenders",
@@ -380,7 +386,7 @@ export const en = {
   "blog.card2.tag": "Interest Rates · 4 min read",
   "blog.card2.title": "Student Loan Interest: by the numbers",
   "blog.card2.excerpt":
-    "Federal student loan rates went up again this year, the third straight year they've climbed. Here's what that actually costs you, and the one loan type that's now gone for good.",
+    "Federal student loan rates rose again for the 2026–27 academic year. Here's what that actually costs you, and the one loan type that's now gone for good.",
   "blog.card2.author": "Student Editorial Board\nUpdated 2026",
   "blog.card2.cta": "Read article",
   "blog.card3.tag": "Borrowing 101 · 3 min read",
@@ -408,17 +414,17 @@ export const en = {
   "blog.card6.author": "Peter Foulke\nUpdated Sept 2026",
   "blog.card6.cta": "Read article",
 
-  "uf.meta.title": "University of Florida: A Top-Tier Value — Grad Loan Navigator",
+  "uf.meta.title": "University of Florida: A Top-Tier Value | Grad Navigator",
   "uf.meta.desc":
     "The University of Florida (UF) offers nationally ranked academic programs, competitive post-graduation placement and a robust alumni network all at a fraction of the price.",
   "uf.eyebrow": "UF Spotlight · Gator Value",
   "uf.h1": "University of Florida: A Top-Tier Value",
   "uf.sub":
     "The University of Florida (UF) offers nationally ranked academic programs, competitive post-graduation placement and a robust alumni network all at a fraction of the price.",
-  "uf.updated": "Peter Foulke Reviewed as of September 4th, 2026",
+  "uf.updated": "Peter Foulke Reviewed as of Sept. 4, 2026",
   "uf.why.title": "Nationally Ranked Academics",
   "uf.why.p":
-    "Tuition at UF for the 2026-2027 academic year is $6,440 for Florida residents and $34,620 for nonresidents. Despite this low cost, the university offers great value both during college and after graduation. These rankings speak for themselves and show that UF's lower price tag does not mean a lesser education for students.",
+    "Tuition at UF for the 2026–2027 academic year is $6,440 for Florida undergraduates ($34,620 out-of-state), while graduate tuition and fees average $12,737 in-state and $30,130 out-of-state. Furthermore, UF awards competitive graduate assistantships with full tuition waivers and research stipends across its 16 colleges.",
   "uf.stat.banner":
     "By the Numbers: UF is ranked No. 7 among all public universities, while its education program is ranked No. 2, its real estate program No. 4, its tax law program No. 3 and its accounting program No. 16 in the country.",
   "uf.nav.academics": "1. Ranked Academics",
@@ -480,14 +486,14 @@ export const en = {
   "blog.card7.author": "Jaylen Peng\nUpdated Sept 2026",
   "blog.card7.cta": "Read article",
 
-  "phd.meta.title": "Which Ph.D. Fields Are Worth It? — Grad Loan Navigator",
+  "phd.meta.title": "Which Ph.D. Fields Are Worth It? | Grad Navigator",
   "phd.meta.desc":
     "A Ph.D. can significantly boost your career prospects but requires time and money. Here are the programs that have the best financial outcomes.",
   "phd.eyebrow": "Ph.D. ROI · 5 min read",
   "phd.h1": "Which Ph.D. Fields Are Worth It?",
   "phd.sub":
     "A Ph.D. can significantly boost your career prospects but requires time and money. Here are the programs that have the best financial outcomes.",
-  "phd.updated": "Jaylen Peng Revised as of September, 2026",
+  "phd.updated": "Jaylen Peng Revised as of Sept. 4, 2026",
   "phd.why.title": "Why it matters",
   "phd.why.p":
     "When deciding between fields of study, you need to understand the potential earnings of your degree. Understanding the potential salaries of each Ph.D. degree sets you up for success.",
@@ -548,7 +554,7 @@ export const en = {
   "blog.card8.author": "Jaylen Peng\nUpdated Sept 2026",
   "blog.card8.cta": "Read article",
 
-  "tvi.meta.title": "Tuition vs. Inflation: Which Has Grown More? — Grad Loan Navigator",
+  "tvi.meta.title": "Tuition vs. Inflation: Which Has Grown More? | Grad Navigator",
   "tvi.meta.desc":
     "As inflation occurs, the price of everything increases. Has the rise in higher education tuition outpaced inflation? A 1990–2026 data breakdown.",
   "tvi.eyebrow": "Tuition & Inflation · 4 min read",
@@ -570,16 +576,17 @@ export const en = {
   "tvi.shortanswer.title": "The short answer",
   "tvi.shortanswer.text":
     "Both undergraduate and graduate education is comparatively more expensive than 30+ years ago.",
-  "tvi.part1": "Part 1 of 4",
+  "tvi.part1": "Part 1 of 5",
   "tvi.undergrad.h2": "Undergraduate vs. Graduate",
   "tvi.undergrad.lead":
     "Tuition for both degree levels have outpaced inflation. Tuition now costs more compared to overall consumer prices.",
-  "tvi.part2": "Part 2 of 4",
-  "tvi.part3": "Part 3 of 4",
+  "tvi.part2": "Part 2 of 5",
+  "tvi.part3": "Part 3 of 5",
   "tvi.meaning.h2": "What Does This Mean?",
   "tvi.meaning.lead":
     "The rapid rise in AI is actively changing the job market. An advanced degree can make you stand out. If tuition is also becoming relatively cheaper, that means the value of a graduate degree could potentially increase.",
-  "tvi.part4": "Part 4 of 4",
+  "tvi.part4": "Part 4 of 5",
+  "tvi.part5": "Part 5 of 5",
   "tvi.bottomline.h2": "The Bottom Line",
   "tvi.bottomline.lead":
     "Tuition has outpaced inflation, though graduate tuition growth has slowed. In an AI-driven economy, an advanced degree could mean more, but the margin for choosing the wrong program has narrowed.",
@@ -611,7 +618,11 @@ export const en = {
   "pvp.nav.beyond": "3. Beyond Cost",
   "pvp.nav.mind": "4. Keep In Mind…",
   "pvp.nav.bottomline": "5. The Bottom Line",
-  "pvp.part1": "Part 1 of 4",
+  "pvp.part1": "Part 1 of 5",
+  "pvp.part2": "Part 2 of 5",
+  "pvp.part3": "Part 3 of 5",
+  "pvp.part4": "Part 4 of 5",
+  "pvp.part5": "Part 5 of 5",
 
   /* ---------- MBA Prestige ROI Article (English) ---------- */
   "blog.card10.tag": "MBA ROI · 5 min read",
@@ -662,7 +673,7 @@ export const en = {
   "blog.card12.author": "Jaylen Peng\nUpdated Sept 2026",
   "blog.card12.cta": "Read article",
 
-  "ai.meta.title": "AI Use in Higher Education — Grad Loan Navigator",
+  "ai.meta.title": "AI Use in Higher Education | Grad Navigator",
   "ai.meta.desc":
     "Understanding how AI is being implemented into college coursework can set you up for success. Learn how students use AI, who uses it most, and how schools respond.",
   "ai.eyebrow": "AI & Education · 4 min read",
@@ -678,6 +689,11 @@ export const en = {
   "ai.nav.schools": "3. How Schools Are Responding",
   "ai.nav.mind": "4. What You Should Keep in Mind",
   "ai.nav.bottomline": "5. The Bottom Line",
+  "ai.part1": "Part 1 of 5",
+  "ai.part2": "Part 2 of 5",
+  "ai.part3": "Part 3 of 5",
+  "ai.part4": "Part 4 of 5",
+  "ai.part5": "Part 5 of 5",
 
   /* ---------- FAFSA Deadlines Article (English) ---------- */
   "blog.card13.tag": "Financial Aid · 5 min read",
@@ -688,7 +704,7 @@ export const en = {
   "blog.card13.cta": "Read article",
 
   "fafsa.meta.title":
-    "2027-2028 FAFSA: When Is Your Graduate School’s Deadline? — Grad Loan Navigator",
+    "2027-2028 FAFSA: When Is Your Graduate School’s Deadline? | Grad Navigator",
   "fafsa.meta.desc":
     "Recommended 2027-2028 FAFSA filing dates, school codes, assistantship policies, and financial aid rules for 10 notable graduate universities by Peter Foulke.",
   "fafsa.eyebrow": "Financial Aid & Deadlines · 5 min read",
@@ -706,10 +722,11 @@ export const en = {
   "fafsa.nav.bottomline": "5. The Bottom Line",
   "fafsa.stat.banner":
     "Key Takeaway: Graduate school priority filing deadlines range from December 1 to April 1 — months ahead of the federal June 30 submission cutoff.",
-  "fafsa.part1": "Part 1 of 4",
-  "fafsa.part2": "Part 2 of 4",
-  "fafsa.part3": "Part 3 of 4",
-  "fafsa.part4": "Conclusion",
+  "fafsa.part1": "Part 1 of 5",
+  "fafsa.part2": "Part 2 of 5",
+  "fafsa.part3": "Part 3 of 5",
+  "fafsa.part4": "Part 4 of 5",
+  "fafsa.part5": "Part 5 of 5",
 
   /* ---------- FAFSA Explainer Article (English) ---------- */
   "blog.card14.tag": "FAFSA 101 · 5 min read",
@@ -719,7 +736,7 @@ export const en = {
   "blog.card14.author": "Carson Jung\nUpdated Oct 2026",
   "blog.card14.cta": "Read article",
 
-  "fexp.meta.title": "The FAFSA Explained — Grad Loan Navigator",
+  "fexp.meta.title": "The FAFSA Explained | Grad Navigator",
   "fexp.meta.desc":
     "How the Student Aid Index (SAI) works, Pell Grant eligibility thresholds, federal loan caps, and who still misses out. Analysis by Carson Jung.",
   "fexp.eyebrow": "FAFSA 101 · 5 min read",
@@ -738,12 +755,12 @@ export const en = {
   "fexp.nav.apply": "5. Where Do I Apply?",
   "fexp.nav.bottomline": "6. The Bottom Line",
 
-  "fexp.part1": "Part 1 of 5",
-  "fexp.part2": "Part 2 of 5",
-  "fexp.part3": "Part 3 of 5",
-  "fexp.part4": "Part 4 of 5",
-  "fexp.part5": "Part 5 of 5",
-  "fexp.part6": "Conclusion",
+  "fexp.part1": "Part 1 of 6",
+  "fexp.part2": "Part 2 of 6",
+  "fexp.part3": "Part 3 of 6",
+  "fexp.part4": "Part 4 of 6",
+  "fexp.part5": "Part 5 of 6",
+  "fexp.part6": "Part 6 of 6",
 
   "fexp.what.h2": "What Is The FAFSA",
   "fexp.what.lead":
@@ -858,7 +875,7 @@ export const en = {
   "blog.card15.author": "Peter Foulke\nUpdated Sept 2026",
   "blog.card15.cta": "Read article",
 
-  "vlaw.meta.title": "Value Law Schools for Elite Outcomes — Grad Loan Navigator",
+  "vlaw.meta.title": "Value Law Schools for Elite Outcomes | Grad Navigator",
   "vlaw.meta.desc":
     "Top value law schools delivering BigLaw placement and federal clerkships without six-figure debt. Analysis by Peter Foulke.",
   "vlaw.eyebrow": "Law School ROI · 5 min read",
@@ -960,7 +977,7 @@ export const en = {
 
   "vlaw.bottomline.h2": "The Bottom Line",
   "vlaw.bottomline.quote":
-    "You do not need to take on $300,000+ in non-dischargeable debt to reach BigLaw partnership or a federal judgeship. Choosing an elite value law school allows you to maximize your career trajectory while protecting your financial freedom.",
+    "You do not need to take on $300,000+ in debt that is very hard to discharge in bankruptcy to reach BigLaw partnership or a federal judgeship. Choosing an elite value law school allows you to maximize your career trajectory while protecting your financial freedom.",
   "vlaw.sources.label": "Sources & References:",
   "vlaw.sources.text":
     "American Bar Association (ABA 509 disclosures); U.S. News & World Report; University of Georgia School of Law; University of Alabama School of Law; University of Florida Levin College of Law; Washington and Lee University School of Law; University of Texas School of Law. Reviewed as of Sept. 25, 2026.",
@@ -974,7 +991,7 @@ export const en = {
   "blog.card16.cta": "Read article",
 
   "aidcuts.meta.title":
-    "Federal Cuts to Financial Aid for Low-Earning Programs — Grad Loan Navigator",
+    "Federal Cuts to Financial Aid for Low-Earning Programs | Grad Navigator",
   "aidcuts.meta.desc":
     "The Department of Education's final rule eliminates federal loans and Pell Grants for programs failing earnings tests. Analysis by Jaylen Peng.",
   "aidcuts.eyebrow": "Policy & Accountability · 5 min read",
@@ -1073,14 +1090,14 @@ export const en = {
   "blog.card17.author": "Peter Foulke\nUpdated Sept 2026",
   "blog.card17.cta": "Read article",
 
-  "osu.meta.title": "Ohio State: A National Leader in Graduate Study — Grad Loan Navigator",
+  "osu.meta.title": "Ohio State: A National Leader in Graduate Study | Grad Navigator",
   "osu.meta.desc":
     "The Ohio State University offers 289 graduate degrees, $1.68B in research expenditures, top-ranked law and pharmacy programs, and competitive graduate funding. Analysis by Peter Foulke.",
   "osu.banner": "THE OHIO STATE UNIVERSITY SPOTLIGHT · BUCKEYE EXCELLENCE",
   "osu.eyebrow": "OSU Spotlight · Buckeye Excellence",
   "osu.h1": "Ohio State: A National Leader in Graduate Study",
   "osu.sub":
-    "Ohio State is more than college gameday, fraternity parties and tailgates. The Midwest flagship is home to some of the nation's top graduate programs and provides strong outcomes for students across a wide variety of disciplines.",
+    "Ohio State is more than college gameday and Saturday tailgates. The Midwest flagship is home to some of the nation's top graduate programs and provides strong outcomes for students across a wide variety of disciplines.",
   "osu.updated": "Peter Foulke Reviewed as of Sept. 25, 2026",
 
   "osu.callout.title": "Academic Scope & Unmatched Opportunities",
@@ -1149,7 +1166,7 @@ export const en = {
     "Columbus's centrality to major midwestern economic centers places OSU graduate students in a unique position to take advantage of high-growth tech, healthcare, and finance sectors in the region.",
   "osu.outside.c3.title": "Cosmopolitan Columbus",
   "osu.outside.c3.desc":
-    "A vibrant city of 1 million residents, Columbus offers students thriving nightlife, culinary culture, entertainment, and historic neighborhoods while retaining trademark midwestern charm.",
+    "A vibrant city of roughly 900,000 residents (2.2 million metro), Columbus offers students thriving nightlife, culinary culture, entertainment, and historic neighborhoods while retaining trademark midwestern charm.",
   "osu.outside.c4.title": "Game Day Atmosphere",
   "osu.outside.c4.desc":
     "The Buckeyes field one of college football's elite programs, bringing over 100,000 passionate fans into legendary Ohio Stadium ('The Horseshoe') every Saturday in the fall.",
@@ -1173,7 +1190,7 @@ export const en = {
   "blog.card18.author": "Carson Jung\nUpdated Sept 2026",
   "blog.card18.cta": "Read article",
 
-  "irh.meta.title": "Student Loan Interest Rates History — Grad Loan Navigator",
+  "irh.meta.title": "Student Loan Interest Rates History | Grad Navigator",
   "irh.meta.desc":
     "A 60-year history of federal student loan interest rates: from flat statutory rates in 1965 to variable formulas, the 2013 Certainty Act, pandemic 0% freeze, and 2026 rates. Analysis by Carson Jung.",
   "irh.eyebrow": "Historical Analysis · 5 min read",
@@ -1190,7 +1207,7 @@ export const en = {
   "irh.nav.formula": "4. Certainty Act & Modern Swings (2013–Present)",
   "irh.nav.bottomline": "5. The Bottom Line",
 
-  "irh.part1": "Part 1 of 4",
+  "irh.part1": "Part 1 of 5",
   "irh.flat.h2": "From Flat Rate to Formula (1965–1992)",
   "irh.flat.lead":
     "When the Higher Education Act created the modern loan system in 1965, Congress simply set the rate by statute at 6% for federally backed loans issued through the Federal Family Education Loan (FFEL) Program.",
@@ -1204,7 +1221,7 @@ export const en = {
   "irh.flat.p3.text":
     "In 1988, Congress set the fixed rate to 8% while a student was in school and 10% after graduation.",
 
-  "irh.part2": "Part 2 of 4",
+  "irh.part2": "Part 2 of 5",
   "irh.variable.h2": "Variable Rates Arrive with Direct Lending (1992–2006)",
   "irh.variable.lead":
     "In 1992, Congress introduced the Direct Loan pilot program with the first variable-rate federal student loans: set to the short-term Treasury bill plus 3.1%, capped at 9%.",
@@ -1218,7 +1235,7 @@ export const en = {
   "irh.variable.p3.text":
     "Subsidized Stafford loans hit their lowest variable rate on record in 2003–2004, dropping to roughly 3.4%, before the formula was retired in 2006.",
 
-  "irh.part3": "Part 3 of 4",
+  "irh.part3": "Part 3 of 5",
   "irh.fixed.h2": "Fixed Rates Return, Then Get Overhauled (2006–2013)",
   "irh.fixed.lead":
     "Loans first disbursed after June 30, 2006, switched back to fixed rates, locked at the year's statutory rate, initially 6.8% for undergraduate Stafford loans.",
@@ -1232,7 +1249,8 @@ export const en = {
   "irh.fixed.p3.text":
     "That rate cut was set to expire and return to 6.8% in July 2013, prompting a last-minute standoff in Congress over how to fix rates permanently.",
 
-  "irh.part4": "Part 4 of 4",
+  "irh.part4": "Part 4 of 5",
+  "irh.part5": "Part 5 of 5",
   "irh.formula.h2": "Pandemic Dip and Climb Back Up (2020–present)",
   "irh.formula.lead":
     "The Bipartisan Student Loan Certainty Act of 2013 ended that standoff by tying new loans each year to the 10-year Treasury note auction plus a fixed add-on.",
@@ -1251,17 +1269,17 @@ export const en = {
     "Undergraduate rates fell to a record low of 2.75% for 2020–21 as Treasury yields collapsed during the pandemic. All federal loan interest was set to 0% from March 2020 through September 2023 under emergency relief.",
   "irh.inflation.title": "Inflation Surge to 2026–27",
   "irh.inflation.text":
-    "As Treasury yields rose with inflation, undergraduate rates more than doubled to 6.53% by 2024–25, before easing slightly to 6.52% for 2026–27. Graduate and PLUS borrowers have faced steeper rates throughout, with 2026–27 rates set at 8.07% for graduate unsubsidized loans and 9.07% for PLUS loans.",
+    "As Treasury yields rose with inflation, undergraduate rates more than doubled to 6.53% by 2024–25, dipped to 6.39% for 2025–26, before rising slightly to 6.52% for 2026–27. Graduate and PLUS borrowers have faced steeper rates throughout, with 2026–27 rates set at 8.07% for graduate unsubsidized loans and 9.07% for PLUS loans.",
   "irh.obb.title": "One Big Beautiful Bill Elimination (2026)",
   "irh.obb.text":
     "On July 1, 2026, Grad PLUS loans were eliminated for new borrowers under the One Big Beautiful Bill, separate from the rate formula but part of the same broader overhaul of federal borrowing.",
 
   "irh.bottomline.h2": "The bottom line",
   "irh.bottomline.quote":
-    "Every major rate change has followed the same pattern: a crunch year forces Congress to act. Lawmakers either lock in a temporary fix or hand rate-setting off to a formula. They continuously postpone the issue only for market conditions or political pressure eventually brings it up again.",
+    "Every major rate change has followed the same pattern: a crunch year forces Congress to act. Lawmakers either lock in a temporary fix or hand rate-setting off to a formula, postponing comprehensive reform until changing market conditions or political pressure forces the issue back onto the table.",
   "irh.sources.label": "Sources & References:",
   "irh.sources.text":
-    "Finaid.org; The College Investor; SavingForCollege.com; EducationData.org; Federal Student Aid, U.S. Department of Education; Congress.gov; Congressional Research Service; U.S. Senate Committee on Health, Education, Labor and Pensions. Revised as of Sept. 26, 2026.",
+    "Finaid.org; The College Investor; SavingForCollege.com; EducationData.org; Federal Student Aid, U.S. Department of Education; Congress.gov; Congressional Research Service; U.S. Senate Committee on Health, Education, Labor and Pensions. Revised as of Sept. 28, 2026.",
   "irh.cta.h2": "Explore your repayment scenarios under current rates",
   "irh.cta.p":
     "Model your estimated borrowing gap, payoff schedule, and total interest charges using our interactive borrowing calculator.",
@@ -1275,7 +1293,7 @@ export const en = {
   "blog.card19.author": "Jaylen Peng\nReviewed Sept 2026",
   "blog.card19.cta": "Read article",
 
-  "wmd.meta.title": "When Should You Get a Master’s Degree? — Grad Loan Navigator",
+  "wmd.meta.title": "When Should You Get a Master’s Degree? | Grad Navigator",
   "wmd.meta.desc":
     "A master's degree can boost long-term career prospects and future earnings. But when is it not worth it? Age, opportunity cost, and payoff analysis by Jaylen Peng.",
   "wmd.eyebrow": "Graduate Degree ROI · 4 min read",
@@ -1306,26 +1324,27 @@ export const en = {
   "wmd.nav.toolate": "4. Is It Too Late?",
   "wmd.nav.bottomline": "5. The Bottom Line",
 
-  "wmd.part1": "Part 1 of 4",
+  "wmd.part1": "Part 1 of 5",
   "wmd.payoff.h2": "How Long Will It Take You to Pay It Off?",
   "wmd.payoff.p1":
     "On average, a master’s degree costs $62,820 and comes with an annual $17,250 wage premium. This means, on average, it will take you 3.64 years to get a return on your investment, but this does not account for what you give up by going back to school.",
+  "wmd.oppcost.h2": "The Opportunity Cost Trap",
   "wmd.oppcost.lead":
     "You must also consider the opportunity cost of how long it takes you to complete the degree (usually two years):",
   "wmd.oppcost.item1.title": "1. Forgone wages",
   "wmd.oppcost.item1.desc":
     "The income you would have received had you continued working full time instead of enrolling.",
-  "wmd.oppcost.item2.title": "2. Foregone professional development",
+  "wmd.oppcost.item2.title": "2. Forgone professional development",
   "wmd.oppcost.item2.desc":
     "The skills, experience, relationships, and seniority you would have accumulated in your organization or industry.",
 
-  "wmd.part2": "Part 2 of 4",
+  "wmd.part2": "Part 2 of 5",
   "wmd.age.h2": "How Does Your Age Matter?",
   "wmd.age.lead":
     "Your age and career status impact the cost-benefit analysis of a master’s degree.",
   "wmd.age.chart.title": "Years to Pay Off vs. Age When Starting the Degree",
   "wmd.age.chart.formula":
-    "Estimated payoff time equals total master’s cost ($62,820 in tuition plus earnings forgone while enrolled) divided by the $17,250 annual wage premium. Foregone earnings reflect average earnings without a graduate degree at each starting age; results are rounded to the nearest 0.1 year.",
+    "Estimated payoff time equals total master’s cost ($62,820 in tuition plus earnings forgone while enrolled) divided by the $17,250 annual wage premium. Forgone earnings reflect average earnings without a graduate degree at each starting age; results are rounded to the nearest 0.1 year.",
   "wmd.age.chart.yAxis": "Years to Pay Off",
   "wmd.age.chart.xAxis": "Age When Starting the Degree",
   "wmd.age.chart.allMajors": "All Fields",
@@ -1345,7 +1364,7 @@ export const en = {
   "wmd.table.colAge50": "Age 50",
   "wmd.table.colAge60": "Age 60",
 
-  "wmd.part3": "Part 3 of 4",
+  "wmd.part3": "Part 3 of 5",
   "wmd.toolate.h2": "Is It Too Late?",
   "wmd.toolate.lead":
     "Despite the higher opportunity costs, there are still benefits to getting a master’s degree later on. The degree can still lead to higher lifetime earnings. However, the outcome is less clear. You should consider:",
@@ -1365,7 +1384,8 @@ export const en = {
   "wmd.toolate.c5.desc":
     "A master’s degree can help you achieve other nonfinancial goals such as access to research or academic fulfillment.",
 
-  "wmd.part4": "Part 4 of 4",
+  "wmd.part4": "Part 4 of 5",
+  "wmd.part5": "Part 5 of 5",
   "wmd.bottomline.h2": "The Bottom Line",
   "wmd.bottomline.lead":
     "Typically, earlier is better. You give up less and have more time to collect the benefits. However, being older doesn’t disqualify you, and a master’s degree could still offer a meaningful boost. Consider where you are in your career and both your professional and personal goals.",
@@ -1390,26 +1410,26 @@ export const en = {
   "wmd.major.socialWork": "Social work",
 
 
-  "pol.meta.title": "Student Loans Political Background and Future — Grad Loan Navigator",
+  "pol.meta.title": "Student Loans Political Background and Future | Grad Navigator",
   "pol.meta.desc":
     "The One Big Beautiful Bill Act made significant changes to student loan programs. Here's why that happened, and what's to come.",
   "pol.eyebrow": "Policy & Future · 4 min read",
   "pol.h1": "Student Loans Political Background and Future",
   "pol.sub":
-    "The One Big Beautiful Act made significant changes to student loan programs. Here's why that happened, and what's to come.",
+    "The One Big Beautiful Bill Act made significant changes to student loan programs. Here's why that happened, and what's to come.",
   "pol.updated": "Carson Jung Reviewed as of Sept. 4, 2026",
   "pol.why.title": "Why it matters",
   "pol.why.p":
     "The changes to student loans made by the One Big Beautiful Bill Act are scheduled to take effect in yearly installments. The first changes took effect July 1, 2026, and the final set takes effect July 1, 2028.",
   "pol.stat.banner":
-    "By the numbers: In 2025 almost 54% of student loan borrowers were a part of federal student loan programs.",
+    "By the numbers: Federal student loans account for roughly 9 in 10 dollars of all student debt in the United States.",
   "pol.nav.history": "1. History of Federal Loans",
   "pol.nav.july2026": "2. What Changed July 1, 2026",
   "pol.nav.july2027": "3. Changes Coming July 1, 2027",
   "pol.nav.july2028": "4. Changes Coming July 1, 2028",
   "pol.nav.bottomline": "5. The Bottom Line",
 
-  "pol.part1": "Part 1 of 4",
+  "pol.part1": "Part 1 of 5",
   "pol.history.h2": "The History of Federal Student Loans",
   "pol.history.lead":
     "The first major Federal student loan program was established in 1958 with the passage of the National Defense Education Act (NDEA).",
@@ -1422,7 +1442,7 @@ export const en = {
   "pol.history.p3.title": "Bipartisan Support",
   "pol.history.p3.text": "The bill was passed with bipartisan support at the time.",
 
-  "pol.part2": "Part 2 of 4",
+  "pol.part2": "Part 2 of 5",
   "pol.july2026.h2": "What changed on July 1, 2026",
   "pol.july2026.lead":
     "The One Big Beautiful Bill eliminated Grad PLUS for anyone starting a new program on or after July 1, 2026. It's not gone for everyone, though. A legacy provision keeps it open for a limited group of continuing borrowers.",
@@ -1440,14 +1460,14 @@ export const en = {
     "Grad PLUS balances count toward the new $257,500 lifetime cap on federal student loans.",
   "pol.july2026.politics.title": "Political Context & Party Lines",
   "pol.july2026.politics.text":
-    "Democrats have generally opposed these changes. The One Big Beautiful Bill passed almost completely down party lines in the House of Representatives. It barely passed in the Senate with some more moderate Republicans opposing the bill. Budget hawk Republicans have opposed all federal student loans, with more moderate ones seeking to reform. Democrats have generally wanted an expansion of the system, with more leniency for borrowers. President Biden’s administration brought waves of loan repayment pauses and forgiveness.",
+    "The One Big Beautiful Bill Act passed amid intense political debate. Some Republicans favored reducing federal lending footprints and eliminating uncapped Grad PLUS borrowing, while others sought structural reform; Democrats generally favored broader borrower protections and debt cancellation. The legislation enacted hard statutory caps across all degree categories while preserving standard and income-adjusted repayment pathways.",
   "pol.july2026.who.title": "Who this actually affects",
   "pol.july2026.who.text":
     "Students in high-cost programs where tuition can exceed $50,000 a year, who counted on Grad PLUS to close the gap. Without it, that gap now falls to savings, assistantships, or private loans.",
   "pol.july2026.who.link":
     "Check whether you fall under the legacy provision here: StudentAid.gov →",
 
-  "pol.part3": "Part 3 of 4",
+  "pol.part3": "Part 3 of 5",
   "pol.july2027.h2": "Changes Coming July 1, 2027",
   "pol.july2027.lead":
     "In 2027, there will be changes to programs that offer temporary pauses in student loan repayment.",
@@ -1460,20 +1480,20 @@ export const en = {
   "pol.july2027.c3.text":
     "The pause period, or forbearance will be reduced to every nine months out of a two-year period, down from 12.",
 
-  "pol.part4": "Part 4 of 4",
+  "pol.part4": "Part 4 of 5",
   "pol.july2028.h2": "Changes coming July 1, 2028",
   "pol.july2028.lead": "The final installment takes effect in 2028.",
   "pol.july2028.i1.title": "Ending PAYE and ICR Programs",
   "pol.july2028.i1.text":
-    "On July 1, 2028, the Department of Education will be ending the PAYE and Income-Contingent Repayment (ICR) programs.",
+    "By July 1, 2028, the Department of Education will officially sunset the PAYE and Income-Contingent Repayment (ICR) programs. Enrolled borrowers must transition to Income-Based Repayment (IBR) or the Repayment Assistance Plan (RAP).",
   "pol.july2028.i2.title": "Legacy Repayment Protections",
   "pol.july2028.i2.text":
-    "Legacy borrowers can keep using these repayment programs, but new enrollments will not be allowed.",
+    "Under the One Big Beautiful Bill Act, new borrowers post-July 1, 2026 choose between standard repayment and RAP. Existing borrowers in closing legacy plans can switch into IBR or RAP. RAP provides income-adjusted payments with forgiveness after 30 years for graduate borrowers.",
   "pol.july2028.i3.title": "Enrollment Deadline",
   "pol.july2028.i3.text":
-    "The final deadline for enrollment in these programs has not been set, but it will likely be in late 2027 or early 2028.",
+    "By July 1, 2028, PAYE and ICR will be fully closed. Servicers will transition remaining enrolled borrowers to eligible alternative plans.",
 
-  "pol.part5": "Conclusion",
+  "pol.part5": "Part 5 of 5",
   "pol.bottomline.h2": "The Bottom Line",
   "pol.bottomline.quote":
     "Major changes to federal borrowing are unfolding in staged installments through 2028. Knowing where you stand today protects your financial future.",
@@ -1485,7 +1505,7 @@ export const en = {
   "pol.sources.text":
     "TheCollegeInvestor.com, Encyclopedia Britannica, EducationData.com, U.S. Department of Education, Federal Student Aid; NASFAA; The Institute for College Access & Success. Reviewed as of Sept. 4, 2026.",
 
-  "law.meta.title": "Which Law Schools Are Worth It? — Grad Loan Navigator",
+  "law.meta.title": "Which Law Schools Are Worth It? | Grad Navigator",
   "law.meta.desc":
     "A J.D. can lead to high future earnings but also comes at high cost. Here's where you can get the most out of your law degree.",
   "law.eyebrow": "Law School ROI · 5 min read",
@@ -1550,7 +1570,7 @@ export const en = {
   "manage.card1.sub": "Federal & Private Loan Tracking",
   "manage.card1.title": "Managing Existing Loans",
   "manage.card1.desc":
-    "Managing existing student loan debt requires taking inventory of your federal loan servicers, cumulative principal balances, weighted interest rates, and available repayment plans. Whether you are navigating standard 10-year repayment, income-driven repayment options like SAVE, PAYE, or IBR, or evaluating interest rate caps, understanding your total debt structure is essential to minimizing total interest costs and preventing default.",
+    "Managing existing student loan debt requires taking inventory of your federal loan servicers, cumulative principal balances, weighted interest rates, and available repayment plans. Whether you are navigating standard 10-year repayment, the new Repayment Assistance Plan (RAP), legacy IBR, or the sunsetting of SAVE and PAYE, understanding your total debt structure is essential to minimizing total interest costs and preventing default.",
   "manage.card1.cta": "Review Repayment Options",
   "manage.card2.sub": "Interest Rate Optimization",
   "manage.card2.title": "Refinancing Student Loans",
@@ -1559,7 +1579,7 @@ export const en = {
   "manage.card2.cta": "Read Refinancing Guide",
   "manage.section.idr.title": "Understanding Income-Driven Repayment (IDR)",
   "manage.section.idr.text":
-    "Federal IDR plans set monthly payments based on discretionary income and family size rather than total loan balance. Remaining balances may be eligible for loan forgiveness after 20 to 25 years of qualifying payments.",
+    "Federal IDR plans cap monthly payments based on discretionary income and family size. Under the One Big Beautiful Bill Act, new loans made post-July 1, 2026 use the Repayment Assistance Plan (RAP) with forgiveness after 30 years of qualifying payments. Legacy borrowers transitioning from closing plans can enroll in IBR or RAP.",
   "manage.section.consolidation.title": "Direct Consolidation vs. Private Refinancing",
   "manage.section.consolidation.text":
     "Federal Direct Consolidation combines multiple federal student loans into a single direct loan with a weighted-average interest rate, preserving federal benefits. Private refinancing replaces federal or private loans with a new private loan, which may lower your interest rate but removes federal borrower safety nets.",
@@ -1578,10 +1598,12 @@ export const en = {
   "footer.about": "About",
   "footer.about.editorial": "Editorial standards",
   "footer.about.disclosure": "Disclosure policy",
+  "footer.about.privacy": "Privacy policy",
+  "footer.about.terms": "Terms of use",
   "footer.about.contact": "Contact",
   "footer.social": "Social",
   "footer.copyright":
-    "© 2026 Grad Loan Navigator. Not affiliated with the U.S. Department of Education.",
+    "© 2026 Grad Navigator. Not affiliated with the U.S. Department of Education.",
   "footer.rates": "Rates shown are illustrative for this preview.",
 
   /* ---------- contact pop-up ---------- */
@@ -1612,7 +1634,7 @@ export const en = {
   "home.h1.line2b": " what to do next.",
   "home.sub":
     "Grad Navigator turns tuition, aid and loans into a plan you can actually follow. Free tools, sourced numbers and zero fine print.",
-  "home.cta.rate": "Chart your path ↓",
+  "home.cta.rate": "Chart your path →",
   "home.cta.loans101": "Educational Resources",
   "home.cta.freeMoney": "Free money first →",
   "home.cta.compareOffers": "Compare aid offers →",
@@ -1680,16 +1702,16 @@ export const en = {
   "understand.stat2.label":
     "Average lifetime earnings increase from attending graduate school across all fields of study.",
   "understand.stat2.source":
-    "Source: Inside Higher Ed, reporting on American University's Postsecondary Education & Economics Research Center",
+    "Source: Inside Higher Ed, reporting on American University's Postsecondary Equity & Economics Research (PEER) Center",
   "understand.stat3.label":
     "Additional earnings a master's degree can generate during the first 20 years of a career.",
-  "understand.stat3.source": "Source: OnlineMastersColleges 2026 Salary Report",
+  "understand.stat3.source": "Source: Georgetown University Center on Education and the Workforce (CEW), 'The College Payoff'",
   "understand.cta": "See what your degree could mean →",
 
   /* ---------- learn station ---------- */
   "station.learn": "Learn",
   "learn.h2": "Explainers for every decision point",
-  "learn.desc": "Short and specific — written to meet you right where you are.",
+  "learn.desc": "Short and specific, written to meet you right where you are.",
   "learn.empty.tag": "Loans 101",
   "learn.empty.title": "Browse every topic",
   "learn.empty.body": "Topic summaries are loading — open Loans 101 to see them all.",
@@ -1724,11 +1746,11 @@ export const en = {
   /* ---------- apply page ---------- */
   "apply.eyebrow": "Apply",
   "apply.pageTitle": "Browse Lenders",
-  "apply.pageSubtitle": "More lenders coming soon...",
+  "apply.pageSubtitle": "Compare graduate loan options tailored to your degree program.",
   "apply.body":
     "We bridge the gap when traditional lenders have denied your student loan, providing the financial support you need to continue your education and build a brighter future.",
   "apply.cta": "Apply Now",
-  "apply.headline": "Second Chances,",
+  "apply.headline": "Second Chances",
   "apply.headline.alt": "Brighter Futures.",
 
   /* ---------- editorial standards ---------- */
@@ -1742,23 +1764,23 @@ export const en = {
   "ed.part1": "Part One",
   "ed.p1.h2": "Editorial Standards",
   "ed.p1.lead":
-    "Grad Navigator exists to explain a confusing, fast-changing part of the loan system in plain language. That only works if the explanations are accurate and kept current — so here's exactly how we hold ourselves to that.",
+    "Grad Navigator exists to explain a confusing, fast-changing part of the loan system in plain language. That only works if the explanations are accurate and kept current. Here's exactly how we hold ourselves to that.",
   "ed.review.h3": "How content gets reviewed",
   "ed.review.p":
-    "Every explainer on this site is drafted, then reviewed by a named person before it's published — not just spell-checked, but checked against the actual source: federal guidance, lender disclosures, and studentaid.gov. Nothing goes live without a reviewer's name attached to it.",
+    "Every explainer on this site is drafted, then reviewed by a named person before it's published: not just spell-checked, but checked against the actual source including federal guidance, lender disclosures, and studentaid.gov. Nothing goes live without a reviewer's name attached to it.",
   "ed.team1.role": "Content & Research",
   "ed.team.name": "Editorial Team",
   "ed.team1.p":
-    "Drafts every explainer directly from primary sources — federal rule text, lender rate sheets, and disclosure documents.",
+    "Drafts every explainer directly from primary sources: federal rule text, lender rate sheets, and disclosure documents.",
   "ed.team2.role": "Accuracy Review",
   "ed.team2.p":
     "Checks every published page against current source material before and after it goes live.",
   "ed.sourcing.h3": "Sourcing & citations",
   "ed.sourcing.p":
-    "We link to the primary source wherever one exists — studentaid.gov for federal rules, a lender's own published rate disclosures for anything comparison-related. If we can't verify a number against a primary source, we don't publish it.",
+    "We link to the primary source wherever one exists: studentaid.gov for federal rules, a lender's own published rate disclosures for anything comparison-related. If we can't verify a number against a primary source, we don't publish it.",
   "ed.current.h3": "Keeping content current",
   "ed.current.p":
-    "Every page carries a \u201creviewed as of\u201d date. Grad loan rules have changed meaningfully this year, and they'll likely change again — pages get re-checked on a regular cycle, and immediately whenever we learn of a rule change that affects them.",
+    "Every page carries a \u201creviewed as of\u201d date. Grad loan rules have changed meaningfully this year, and they'll likely change again; pages get re-checked on a regular cycle, and immediately whenever we learn of a rule change that affects them.",
   "ed.corrections.h3": "Corrections",
   "ed.corrections.p1":
     "If something on this site is wrong, we want to know before you do something costly based on it. Corrections are made promptly, and material corrections are noted on the page itself rather than silently edited away.",
@@ -1771,7 +1793,7 @@ export const en = {
   "ed.part2": "Part Two",
   "ed.p2.h2": "Disclosure Policy",
   "ed.p2.lead":
-    "This site is free to use and makes money the way most independent comparison sites do — through partner relationships with lenders. Here's exactly how that works.",
+    "This site is free to use and makes money the way most independent comparison sites do: through partner relationships with lenders. Here's exactly how that works.",
   "ed.callout.strong": "Short version:",
   "ed.callout.p":
     " if you're approved through a lender we link to, we may earn a commission. It costs you nothing extra, and it doesn't change your rate or how we rank lenders.",
@@ -1790,7 +1812,7 @@ export const en = {
     "Your interest rate, your approval odds, and your loan terms are set entirely by the lender based on your application. We have no ability to influence any of that, and being a partner of ours never results in a better or worse rate for you.",
   "ed.ads.h3": "Advertising & sponsored content",
   "ed.ads.p":
-    "Any sponsored content, if it ever appears, will be clearly labeled as such — never blended into an explainer as if it were independent editorial.",
+    "Any sponsored content, if it ever appears, will be clearly labeled as such, never blended into an explainer as if it were independent editorial.",
   "ed.cta.h2": "Have a question this didn't answer?",
   "ed.cta.p": "We're glad to explain anything about how this site works.",
   "ed.cta.btn": "Contact us →",
@@ -1823,13 +1845,13 @@ export const en = {
   "chat.section.quiz": "the borrowing quiz",
 
   /* ---------- student loan interest rates blog post ---------- */
-  "rates.meta.title": "Student Loan Interest: by the numbers — Grad Loan Navigator",
+  "rates.meta.title": "Student Loan Interest: by the numbers | Grad Navigator",
   "rates.meta.desc":
-    "Federal student loan rates climbed for the third straight year. Here's what that actually costs you, how rates are set, and what changed for graduate borrowers.",
+    "Federal student loan rates rose again for 2026–27. Here's what that actually costs you, how rates are set, and what changed for graduate borrowers.",
   "rates.eyebrow": "Student Perspectives · Guide",
   "rates.h1": "Student Loan Interest: by the numbers",
   "rates.sub":
-    "Federal student loan rates went up again this year, the third straight year they've climbed. Here's what that actually costs you, and the one loan type that's now gone for good.",
+    "Federal student loan rates rose again for the 2026–27 academic year. Here's what that actually costs you, and the one loan type that's now gone for good.",
   "rates.updated": "Updated for 2026–27 Academic Year",
 
   "rates.why.title": "Why it matters",
@@ -1860,7 +1882,7 @@ export const en = {
 
   "rates.zoom.title": "Zoom out:",
   "rates.zoom.p":
-    "Rates have climbed three years running. The undergrad rate alone is up roughly 65% since 2021.",
+    "Federal rates rose again for 2026–27 (8.07% for graduate loans). The undergrad rate alone is up roughly 75% since 2021 (3.73% to 6.52%).",
 
   "rates.mean.title": "What does this mean for you?",
   "rates.mean.p":
@@ -1884,7 +1906,7 @@ export const en = {
 
   "rates.vs.r2.title": "Status",
   "rates.vs.r2.desc":
-    "Grad PLUS has been eliminated for new borrowers. Parent PLUS is still around, now capped at $20,500 a year and $65,000 total per student.",
+    "Grad PLUS has been eliminated for new borrowers. Parent PLUS is still around, now capped at $20,000 a year and $65,000 total per student for new borrowers from July 1, 2026.",
 
   "rates.vs.r3.title": "Who owes the money",
   "rates.vs.r3.desc":
@@ -1896,7 +1918,7 @@ export const en = {
   "rates.part4": "Part 04",
   "rates.costs.h2": "What it costs in real terms",
   "rates.costs.p1":
-    "A private lender might offer a fixed rate in the mid-4% range to a borrower with strong credit. On a $10,000 loan over 10 years, the gap between a 6.52% federal rate and a 4.25% private rate adds up to roughly $1,345 in extra interest. For grad borrowers, the gap is wider still, since federal grad rates start nearly two points higher than undergrad.",
+    "A private lender might offer a fixed rate in the mid-4% range to a borrower with strong credit. On a $10,000 loan over 10 years, the gap between a 6.52% federal rate and a 4.25% private rate adds up to roughly $1,345 in extra interest. For grad borrowers, the gap is wider still, since federal grad rates start 1.55 points higher than undergrad (8.07% vs. 6.52%).",
   "rates.calc.label": "10-Year Extra Interest Gap (Federal 6.52% vs. Private 4.25% on $10k):",
 
   "rates.part5": "Conclusion",
@@ -1922,8 +1944,8 @@ export const en = {
   "cyp.school.clear": "Change school",
   "cyp.school.public": "Public",
   "cyp.school.private": "Private",
-  "cyp.school.autofilled": "Autofilled from Tuition Tracker (2026–27)",
-  "cyp.school.netPriceNote": "Tuition Tracker average net price after grants & aid: {amount}/yr",
+  "cyp.school.autofilled": "Autofilled from IPEDS Graduate Cost Survey (2024–25)",
+  "cyp.school.netPriceNote": "IPEDS average graduate tuition & fees: {amount}/yr",
   "cyp.residency.label": "Residency Status",
   "cyp.residency.inState": "In-State",
   "cyp.residency.outOfState": "Out-of-State",
@@ -1943,8 +1965,8 @@ export const en = {
   "cyp.totalExpenses.label": "Annual total college expenses",
   "cyp.citation.title": "Data Sources & Methodology",
   "cyp.citation.body":
-    "Tuition and net price data are powered by Tuition Tracker (tuitiontracker.org), an interactive higher education tool created by The Hechinger Report, The Dallas Morning News, and the Education Writers Association using U.S. Department of Education IPEDS data. Housing and room & board benchmarks reflect 2025–2026 national averages from the College Board's Trends in College Pricing report.",
-  "cyp.citation.visitLink": "Visit TuitionTracker.org for historical datasets →",
+    "Tuition and required fee benchmarks are sourced directly from the U.S. Department of Education's Integrated Postsecondary Education Data System (IPEDS) 2024–25 Cost Survey, encompassing general graduate school averages and degree-specific professional programs (Law, Medicine, Dentistry, Pharmacy, Veterinary Medicine). Housing and living expense benchmarks reflect 2025–2026 national student budget standards from the College Board's Trends in College Pricing report.",
+  "cyp.citation.visitLink": "Visit NCES IPEDS Data Center →",
   "calc.school.search": "Search your school to autofill tuition",
   "calc.housing.preset": "Autofill housing from national statistics",
   "cyp.years.q": "How many years to graduate?",
@@ -1954,7 +1976,7 @@ export const en = {
   "cyp.btn.calc": "Calculate the gap ↓",
   "cyp.limits.tag": "FEDERAL LOAN LIMITS",
   "cyp.limits.desc":
-    "Show the applicable annual federal borrowing limit here, then calculate what remains.",
+    "Federal Direct Unsubsidized loans for graduate students are capped at $20,500 per year ($100,000 program aggregate).",
   "cyp.topics.h2": "Recommended guides for your path",
   "cyp.topic1.title": "How loans work",
   "cyp.topic1.desc":
@@ -2039,12 +2061,12 @@ export const en = {
   "calc.status.zero": "No borrowing needed! Your available funding covers your cost of attendance.",
   "calc.status.ok": "Within 2026 federal borrowing limits.",
   "calc.status.exceed":
-    "Exceeds federal borrowing cap by ${amount}. Additional gap must be covered by private loans or savings.",
+    "Exceeds federal borrowing cap by {amount}. Additional gap must be covered by private loans or savings.",
   "calc.status.lifetimeExceed":
-    "Combined prior undergraduate and projected borrowing (${combined}) exceeds the $257,500 lifetime federal aggregate ceiling by ${amount}. Additional gap must be covered by private loans or savings.",
+    "Combined prior undergraduate and projected borrowing ({combined}) exceeds the $257,500 lifetime federal aggregate ceiling by {amount}. Additional gap must be covered by private loans or savings.",
 
   /* ---------- student loan types blog post ---------- */
-  "types.meta.title": "Student Loan Types — Grad Loan Navigator",
+  "types.meta.title": "Student Loan Types | Grad Navigator",
   "types.meta.desc":
     "There are three federal student loan programs and multiple private options. Here is a cheat sheet breakdown of subsidized, unsubsidized, PLUS, and private loans.",
   "types.eyebrow": "Student Perspectives · Cheat Sheet",
@@ -2084,7 +2106,7 @@ export const en = {
 
   "types.plus.r2.title": "Status",
   "types.plus.r2.desc":
-    "Grad PLUS has been eliminated for new borrowers. Parent PLUS is still around, now capped at $20,500 a year and $65,000 total per student.",
+    "Grad PLUS has been eliminated for new borrowers. Parent PLUS is still around, now capped at $20,000 a year and $65,000 total per student for new borrowers from July 1, 2026.",
 
   "types.plus.r3.title": "Who owes the money",
   "types.plus.r3.desc":
@@ -2096,7 +2118,7 @@ export const en = {
   "types.part3": "Part 03",
   "types.private.h2": "Private Student Loans vs. Federal",
   "types.private.p1":
-    "A private lender might offer a fixed rate in the mid-4% range to a borrower with strong credit. On a $10,000 loan over 10 years, the gap between a 6.52% federal rate and a 4.25% private rate adds up to roughly $1,345 in extra interest. For grad borrowers, the gap is wider still, since federal grad rates start nearly two points higher than undergrad.",
+    "A private lender might offer a fixed rate in the mid-4% range to a borrower with strong credit. On a $10,000 loan over 10 years, the gap between a 6.52% federal rate and a 4.25% private rate adds up to roughly $1,345 in extra interest. For grad borrowers, the gap is wider still, since federal grad rates start 1.55 points higher than undergrad (8.07% vs. 6.52%).",
 
   "types.part4": "Conclusion",
   "types.bottomline.h2": "The bottom line",
@@ -2118,7 +2140,7 @@ export const en = {
     "Experian; U.S. Department of Education, Federal Student Aid; The Institute for College Access & Success (TICAS)",
 
   /* ---------- refinancing loans page ---------- */
-  "refi.meta.title": "Refinancing Student Loans, Explained — Grad Loan Navigator",
+  "refi.meta.title": "Refinancing Student Loans, Explained | Grad Navigator",
   "refi.meta.desc":
     "Refinancing can cut your interest rate or lower monthly payments, but permanently costs federal protections. Understand the tradeoffs, steps, rates, and alternatives.",
   "refi.eyebrow": "Manage Loans · Explainer",
@@ -2177,7 +2199,7 @@ export const en = {
 
   "refi.lost.idr.title": "Income-driven repayment plans",
   "refi.lost.idr.desc":
-    "Federal income-driven plans (like SAVE, IBR, and PAYE) that cap your monthly payment based on income and family size.",
+    "Federal income-driven plans (such as the new Repayment Assistance Plan [RAP] and legacy IBR) that cap your monthly payment based on income and family size.",
 
   "refi.lost.pslf.title": "Public Service Loan Forgiveness (PSLF)",
   "refi.lost.pslf.desc":
@@ -2243,6 +2265,66 @@ export const en = {
   "alt.anim.understandLoans": "Student reading a guide next to a signpost",
   "alt.anim.compareOffers": "Student with a compass choosing between two paths",
   "alt.anim.planComplete": "Graduate celebrating on the summit next to a completed checklist",
+
+  /* ---------- privacy policy ---------- */
+  "privacy.eyebrow": "Transparency & Privacy",
+  "privacy.h1": "Privacy Policy",
+  "privacy.sub":
+    "How Grad Navigator handles your data, respects your privacy, and safeguards your personal information.",
+  "privacy.updated": "Effective as of October 2026",
+  "privacy.s1.title": "1. Our Commitment to Your Privacy",
+  "privacy.s1.text":
+    "Grad Navigator provides free, transparent financial tools and educational resources for graduate and professional students. We believe that exploring graduate school financing should not require surrendering your personal privacy. This Privacy Policy details what information we collect, how it is used, and how we protect your rights.",
+  "privacy.s2.title": "2. Client-Side Financial Calculations",
+  "privacy.s2.text":
+    "All borrowing calculators, federal cap projections, financial aid offer comparisons, and repayment estimates run entirely in your local browser. Your financial figures, income estimates, tuition numbers, and loan balances are never sent to or stored on our servers.",
+  "privacy.s3.title": "3. Information We Collect",
+  "privacy.s3.text":
+    "We collect personal information only when you explicitly provide it in three specific interactions on our website: (1) submitting our Contact Us form, (2) requesting a saved PDF breakdown of your Financial Aid Offer Comparison, or (3) sending yourself an editable Financial Aid Appeal Letter. In these instances, we collect your name and email address solely to deliver the communication or document you requested.",
+  "privacy.s3.subtext":
+    "We never sell, rent, trade, or monetize your personal contact information with third-party advertisers or lenders.",
+  "privacy.s4.title": "4. Analytics & Cookies",
+  "privacy.s4.text":
+    "We use Google Analytics to monitor aggregate website traffic, understand which guides and tools are most helpful, and improve site performance. Google Analytics uses standard cookies to collect pseudonymous technical data, including browser type, device characteristics, referral sources, and pages visited. You can block or disable cookies via your browser settings without affecting your ability to use any calculator or read our guides.",
+  "privacy.s5.title": "5. External Links & Educational Partners",
+  "privacy.s5.text":
+    "Our website contains links to external educational resources, government databases (including StudentAid.gov and NCES IPEDS), and partnered consumer materials (including Experian Consumer Education brochures). When you click an external link, you leave Grad Navigator and are subject to the privacy practices and terms of that external site.",
+  "privacy.s6.title": "6. Data Security & Your Rights",
+  "privacy.s6.text":
+    "We use modern encryption protocols (HTTPS/TLS) for all data in transit. Inquiries sent through our contact form or email delivery tools are retained only as long as necessary to complete your request. You have the right to request access to, correction of, or deletion of any contact details you have submitted by messaging us through our contact form.",
+  "privacy.cta.title": "Have questions about our privacy practices?",
+  "privacy.cta.desc":
+    "We are always available to clarify how our tools operate or answer inquiries.",
+  "privacy.cta.btn": "Contact Us",
+
+  /* ---------- terms of use ---------- */
+  "terms.eyebrow": "User Agreement",
+  "terms.h1": "Terms of Use",
+  "terms.sub":
+    "Terms and conditions governing your access to and use of Grad Navigator tools, calculators, and educational guides.",
+  "terms.updated": "Effective as of October 2026",
+  "terms.s1.title": "1. Acceptance of Terms",
+  "terms.s1.text":
+    "By accessing or using the Grad Navigator website, interactive calculators, financial comparison tools, or educational articles, you agree to be bound by these Terms of Use and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.",
+  "terms.s2.title": "2. Educational & Informational Purpose Only",
+  "terms.s2.text":
+    "All calculators, loan cap projections, monthly payment estimates, and aid comparison breakdowns provided on Grad Navigator are for general educational and informational purposes only. Grad Navigator is not a lender, loan servicer, credit counselor, or financial advisory institution. Our tools provide projections based on publicly available statutory benchmarks, and should not be construed as legal, tax, or financial advice.",
+  "terms.s3.title": "3. Accuracy of Data & Public Benchmarks",
+  "terms.s3.text":
+    "We strive to maintain accurate and up-to-date information by citing primary sources, including U.S. Department of Education IPEDS surveys, the One Big Beautiful Bill Act federal loan rules, and official American Bar Association disclosures. However, tuition figures, institutional fees, living costs, and private lender interest rates are subject to change. Always verify official figures with your university financial aid office and StudentAid.gov before making financial commitments.",
+  "terms.s4.title": "4. Third-Party Links & Advertiser Disclosures",
+  "terms.s4.text":
+    "Grad Navigator may contain links to third-party websites, including loan servicers, private lenders, and consumer credit education providers such as Experian. We do not control, guarantee, or assume responsibility for the content, rates, underwriting criteria, or privacy policies of third-party platforms. Any loan application or agreement you enter into is strictly between you and that independent financial institution.",
+  "terms.s5.title": "5. Intellectual Property Rights",
+  "terms.s5.text":
+    "All original content, interactive software tools, visual charts, design layouts, and trademarks displayed on Grad Navigator are the intellectual property of Grad Navigator or its licensors. You may use our calculators and download resources for personal, non-commercial use, provided you do not modify, redistribute, or reverse-engineer the underlying materials.",
+  "terms.s6.title": "6. Limitation of Liability & Updates",
+  "terms.s6.text":
+    "Under no circumstances shall Grad Navigator, its creators, or contributors be held liable for any direct, indirect, incidental, or consequential damages resulting from your use of or inability to use the site or reliance on estimates generated by our calculators. We reserve the right to revise or update these Terms of Use at any time without prior notice.",
+  "terms.cta.title": "Questions regarding our terms?",
+  "terms.cta.desc":
+    "Reach out to the Grad Navigator editorial and operations team anytime.",
+  "terms.cta.btn": "Contact Us",
 } as const;
 
 export type TranslationKey = keyof typeof en;
@@ -2265,7 +2347,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "nav.dropdown.pay.hubDesc": "Hoja de ruta integral para financiar estudios de posgrado",
   "nav.dropdown.manage.title": "Gestionar préstamos",
   "nav.dropdown.manage.repayTitle": "Reembolso y condonación",
-  "nav.dropdown.manage.repayDesc": "Planes IDR, novedades de SAVE, condonación y opciones de pago",
+  "nav.dropdown.manage.repayDesc": "Planes IDR, RAP, condonación y opciones de pago",
   "nav.dropdown.manage.analysisTitle": "Análisis a fondo",
   "nav.dropdown.manage.analysisDesc": "Informes de crédito y préstamos estudiantiles con Experian",
   "nav.dropdown.resources.title": "Recursos Educativos",
@@ -2298,7 +2380,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "table.medianSalary": "Salario Anual Mediano",
   "table.projectedGrowth": "Crecimiento Proyectado del Empleo",
 
-  "footer.brand": "Grad Loan Navigator",
+  "footer.brand": "Grad Navigator",
   "footer.blurb":
     "Una guía independiente sobre el endeudamiento para posgrado, creada para el panorama posterior a Grad PLUS. Revisada para garantizar su exactitud y actualizada cuando cambian las reglas.",
   "footer.learn": "Aprender",
@@ -2339,7 +2421,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "pfs.card3.tag": "COMPARAR OPCIONES",
   "pfs.card3.title": "Explorar prestamistas",
   "pfs.card3.desc": "Explora prestamistas cuando estés listo.",
-  "pfs.card4.tag": "HERRAMIENTA INTERACTIVA",
+  "pfs.card4.tag": "HERRAMIENTA DE COMPARACIÓN DE AYUDA",
   "pfs.card4.title": "Comparador de ofertas de ayuda",
   "pfs.card4.desc": "Compara ofertas de hasta 4 universidades en paralelo. Separa becas reales de préstamos disfrazados, calcula tu precio neto y tu deuda al graduarte.",
   "pfs.mfa.label": "Más frecuentemente consultado",
@@ -2349,17 +2431,17 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "pfs.mfa.link4": "Cómo obtenerlos",
 
   /* Free Money First / Before You Borrow Hub (Spanish) */
-  "fmf.meta.title": "Dinero Gratis Primero: Guía de Ayuda de Posgrado Antes de Endeudarte — Grad Loan Navigator",
+  "fmf.meta.title": "Dinero Gratis Primero: Guía de Ayuda de Posgrado Antes de Endeudarte | Grad Navigator",
   "fmf.meta.desc": "El orden estratégico de financiamiento: aprovecha asistencias, becas, subvenciones y ayuda de empleador antes de solicitar préstamos estudiantiles.",
-  "fmf.hero.tag": "MÓDULO 3 DE 6 · CENTRO DE CONTENIDO",
+  "fmf.hero.tag": "Primero el dinero gratuito · Guía de financiamiento",
   "fmf.hero.title": "Dinero gratis primero",
   "fmf.hero.subtitle": "Una guía 'Antes de pedir prestado' que orienta a los estudiantes a través del financiamiento que no se devuelve, en el orden exacto para buscarlo. Cada dólar conseguido aquí es un dólar que la calculadora de brecha ya no cuenta como deuda.",
   "fmf.badge.reviewed": "Revisado a octubre de 2026",
   "fmf.badge.verified": "Verificado con Fuentes Oficiales",
   "fmf.rule.tag": "REFERENCIA ESTRATÉGICA",
-  "fmf.rule.title": "La Regla de la Calculadora de Brecha: $1 : $1.85",
+  "fmf.rule.title": "La Regla de la Calculadora de Brecha: $1 : $1.46",
   "fmf.rule.desc": "Cada dólar de beca o exención de matrícula que obtienes reduce directamente el monto de tu préstamo. En un plazo estándar de pago de 10 a 20 años con las tasas actuales de posgrado, cada $1,000 de dinero gratis conseguido te ahorra cerca de $1,850 en capital e intereses acumulados.",
-  "fmf.order.eyebrow": "PASO CLAVE 01 · LA JERARQUÍA DE 5 NIVELES",
+  "fmf.order.eyebrow": "PASO 01 · LA JERARQUÍA DE 5 NIVELES",
   "fmf.order.title": "El Orden de Operaciones de Financiamiento",
   "fmf.order.subtitle": "Busca financiamiento estrictamente de arriba hacia abajo. Los niveles 1 y 2 cubren matrícula completa y estipendios; los niveles 3, 4 y 5 cubren gastos residuales esenciales sin endeudarte.",
   "fmf.tier1.badge": "NIVEL 01 · MAYOR VALOR MONETARIO",
@@ -2399,7 +2481,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "fmf.tier5.desc": "Conforme a la Sección 127 del Código del IRS, las empresas pueden aportar hasta $5,250 al año en asistencia educativa exenta de impuestos. Numerosas organizaciones ofrecen convenios corporativos con reembolsos de $10,000 a $25,000+ anuales.",
   "fmf.tier5.how": "Cómo conseguirlo: Consulta el portal de beneficios de tu empresa en 'Educational Assistance'. Revisa las calificaciones mínimas exigidas (usualmente calificación B o superior) y cláusulas de permanencia.",
   "fmf.tier5.source": "Fuente oficial: Internal Revenue Service (Publicación 970 del IRS, Sección 127).",
-  "fmf.scam.tag": "PASO CLAVE 04 · ALERTA AL CONSUMIDOR DE LA FTC",
+  "fmf.scam.tag": "PASO 02 · ALERTA AL CONSUMIDOR DE LA FTC",
   "fmf.scam.title": "Cuidado con las Estafas de Becas y Ayuda Financiera",
   "fmf.scam.desc": "La Comisión Federal de Comercio (FTC) advierte que existen servicios fraudulentos que se hacen pasar por entidades oficiales o registros de subvenciones. Recuerda esta regla de oro: las becas y la ayuda financiera legítimas nunca te cobran dinero.",
   "fmf.scam.flag1.title": "Tarifas de solicitud o procesamiento",
@@ -2411,7 +2493,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "fmf.scam.flag4.title": "Bases de datos \"exclusivas\" de pago",
   "fmf.scam.flag4.desc": "Quienes afirman tener acceso 'secreto' a miles de millones en subsidios no reclamados están engañando. Todas las oportunidades reales están en bases de datos públicas y gratuitas.",
   "fmf.scam.link": "Lee la guía oficial de la FTC contra estafas de becas en consumer.ftc.gov →",
-  "fmf.tools.tag": "PASO CLAVE 03 · SOLO HERRAMIENTAS GRATUITAS VERIFICADAS",
+  "fmf.tools.tag": "PASO 03 · SOLO HERRAMIENTAS GRATUITAS VERIFICADAS",
   "fmf.tools.title": "Buscadores Oficiales y No Comerciales",
   "fmf.tools.desc": "Siguiendo los estándares federales de protección al consumidor, solo enlazamos herramientas gratuitas mantenidas por agencias del gobierno y organizaciones verificadas sin fines de lucro. Cero comisiones de afiliados, cero intermediarios de pago.",
   "fmf.tool1.name": "Buscador de Becas CareerOneStop",
@@ -2457,12 +2539,12 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "fmf.bridge.cta": "Calcula tu Brecha en Traza tu Camino →",
 
   /* Aid Offer Comparison Tool (Spanish) */
-  "aoc.meta.title": "Comparador de Ofertas de Ayuda Financiera: Analiza Cartas Universitarias | Grad Loan Navigator",
+  "aoc.meta.title": "Comparador de Ofertas de Ayuda Financiera: Analiza Cartas Universitarias | Grad Navigator",
   "aoc.meta.desc": "Compara ofertas de ayuda financiera de hasta 4 universidades en paralelo. Desarma préstamos disfrazados de ayuda, calcula el precio neto real, la brecha restante y las cuotas de deuda.",
   "aoc.hero.tag": "COMPARATIVA DE AYUDA FINANCIERA",
   "aoc.hero.title": "Comparador de ofertas de ayuda",
   "aoc.hero.subtitle": "Compara las ofertas de ayuda financiera de hasta cuatro universidades para descubrir el costo real y desenmascarar préstamos disfrazados de ayuda.",
-  "aoc.hero.privacy": "100% en tu navegador · Ningún dato se guarda en nuestros servidores",
+  "aoc.hero.privacy": "Cálculos 100% en tu navegador · Los datos financieros permanecen en tu navegador salvo que te envíes una copia por correo",
   "aoc.btn.addSchool": "+ Agregar Universidad (hasta 4)",
   "aoc.btn.removeSchool": "Eliminar",
   "aoc.btn.emailMe": "Enviármelo por correo",
@@ -2471,6 +2553,12 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "aoc.field.schoolName": "Nombre de la universidad",
   "aoc.field.schoolSearchPlaceholder": "Busca universidad o escribe su nombre...",
   "aoc.field.programYears": "Duración del programa (años)",
+  "aoc.program.1yr": "1 año (Acelerado)",
+  "aoc.program.2yr": "2 años (Maestría estándar)",
+  "aoc.program.3yr": "3 años (Derecho / MFA / Dual)",
+  "aoc.program.4yr": "4 años (Medicina / Doctoral)",
+  "aoc.program.5yr": "5 años (Doctorado)",
+  "aoc.modal.privacyNote": "Los cálculos se procesan en tu navegador. Solo usamos tu correo para enviar el desglose solicitado.",
   "aoc.field.coa": "Costo de Asistencia Anual (COA)",
   "aoc.field.coaHelp": "Matrícula, tarifas, vivienda, alimentos, libros y suministros.",
   "aoc.section.giftAid": "Dinero Gratis (Subvenciones y Becas: Nunca se Devuelve)",
@@ -2481,7 +2569,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "aoc.field.workStudyHelp": "Se percibe como cheque salarial por horas trabajadas durante el periodo. No es una deducción previa de la factura.",
   "aoc.section.loans": "Préstamos (Deuda que Debes Devolver con Intereses)",
   "aoc.field.loansDirect": "Préstamos Federales Directos ofrecidos",
-  "aoc.field.loansPlus": "Préstamos Grad PLUS o privados ofrecidos",
+  "aoc.field.loansPlus": "Préstamos privados (o Grad PLUS si mantienes derechos anteriores)",
   "aoc.loansWarningNotice": "Aviso: Los préstamos son obligaciones de deuda legalmente vinculantes con intereses y comisiones de emisión. No reducen el costo de la educación.",
   "aoc.res.title": "Desglose de Costo Real",
   "aoc.res.totalFreeAid": "Dinero Gratis Total",
@@ -2497,7 +2585,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "aoc.badge.lowestNetPrice": "Precio Neto Más Bajo",
   "aoc.badge.lowestDebt": "Menor Carga de Deuda",
   "aoc.flag.mostlyLoans": "Alerta de Deuda: El {percent}% de esta oferta es deuda que debes devolver con intereses, no dinero gratis.",
-  "aoc.flag.loansDisguised": "Engaño al descubierto: La universidad anunció ${schoolTotal} como 'ayuda', pero ${loanAmount} son realmente préstamos.",
+  "aoc.flag.loansDisguised": "Engaño al descubierto: La universidad anunció {schoolTotal} como 'ayuda', pero {loanAmount} son realmente préstamos.",
   "aoc.matrix.title": "Resumen Comparativo en Paralelo",
   "aoc.matrix.colMetric": "Métrica Financiera",
   "aoc.matrix.coa": "Costo de Asistencia (Anual)",
@@ -2550,8 +2638,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "aoc.appeal.openMail": "Abrir en app de correo",
   "aoc.appeal.previewTitle": "Vista previa de la carta de apelación",
   "aoc.appeal.previewNotice": "Esta plantilla editable se incluye en tu correo junto con el desglose completo de tu comparativa de ayuda.",
-  "aoc.pdf.header": "Grad Loan Navigator · Reporte Oficial de Comparativa de Ayuda Financiera",
-  "aoc.pdf.sub": "Generado en el navegador · Ningún dato financiero se almacena en nuestros servidores",
+  "aoc.pdf.header": "Grad Navigator · Reporte de Comparativa de Ofertas de Ayuda",
+  "aoc.pdf.sub": "Generado en tu navegador · Los cálculos financieros no se almacenan a menos que se envíen por correo",
 
   /* Browse Lenders Page (Spanish) */
   "lenders.h1": "Explorar y Comparar Prestamistas de Posgrado",
@@ -2647,7 +2735,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "manage.card1.sub": "Seguimiento de Préstamos Federales y Privados",
   "manage.card1.title": "Gestión de Préstamos Existentes",
   "manage.card1.desc":
-    "Gestionar la deuda de préstamos estudiantiles existentes requiere hacer un inventario de sus administradores de préstamos federales, saldos acumulados de principal, tasas de interés ponderadas y planes de pago disponibles. Ya sea que navegue por el pago estándar a 10 años, planes basados en ingresos (IDR) o evalúe topes de tasas de interés, comprender la estructura de su deuda es esencial para minimizar costos de interés y evitar incumplimientos.",
+    "Gestionar la deuda de préstamos estudiantiles existentes requiere hacer un inventario de sus administradores de préstamos federales, saldos acumulados de principal, tasas de interés ponderadas y planes de pago disponibles. Ya sea que navegue por el pago estándar a 10 años, el nuevo Plan de Asistencia para el Pago (RAP), el IBR para prestatarios existentes o la transición tras el cierre de SAVE y PAYE, comprender la estructura de su deuda es esencial para minimizar costos de interés y evitar el incumplimiento.",
   "manage.card1.cta": "Revisar Opciones de Pago",
   "manage.card2.sub": "Optimización de Tasas de Interés",
   "manage.card2.title": "Refinanciación de Préstamos Estudiantiles",
@@ -2656,7 +2744,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "manage.card2.cta": "Leer Guía de Refinanciación",
   "manage.section.idr.title": "Comprensión del Pago Basado en Ingresos (IDR)",
   "manage.section.idr.text":
-    "Los planes federales de IDR establecen pagos mensuales basados en el ingreso discrecional y el tamaño de la familia en lugar del saldo total del préstamo. Los saldos restantes pueden ser elegibles para condonación después de 20 a 25 años de pagos calificativos.",
+    "Los planes federales de IDR limitan los pagos según ingresos y tamaño familiar. Bajo la Ley One Big Beautiful Bill, los nuevos préstamos posteriores al 1 de julio de 2026 utilizan el Plan de Asistencia para el Pago (RAP) con condonación tras 30 años de pagos calificativos. Los prestatarios en planes extintos pueden inscribirse en IBR o RAP.",
   "manage.section.consolidation.title": "Consolidación Directa vs. Refinanciación Privada",
   "manage.section.consolidation.text":
     "La Consolidación Directa Federal combina múltiples préstamos federales en un solo préstamo directo con una tasa de interés promedio ponderada, conservando los beneficios federales. La refinanciación privada reemplaza préstamos por uno nuevo privado, lo que puede reducir su tasa pero elimina las redes de seguridad federales.",
@@ -2675,10 +2763,12 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "footer.about": "Acerca de",
   "footer.about.editorial": "Estándares editoriales",
   "footer.about.disclosure": "Política de divulgación",
+  "footer.about.privacy": "Política de privacidad",
+  "footer.about.terms": "Términos de uso",
   "footer.about.contact": "Contacto",
   "footer.social": "Redes sociales",
   "footer.copyright":
-    "© 2026 Grad Loan Navigator. No está afiliado al Departamento de Educación de EE. UU.",
+    "© 2026 Grad Navigator. No afiliado al Departamento de Educación de EE. UU.",
   "footer.rates": "Las tasas mostradas son ilustrativas para esta vista previa.",
 
   /* ---------- contact pop-up ---------- */
@@ -2708,7 +2798,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "home.h1.line2b": " lo que debes hacer ahora.",
   "home.sub":
     "Grad Navigator convierte la matrícula, la ayuda y los préstamos en un plan que realmente puedes seguir. Herramientas gratuitas, cifras respaldadas y cero letra pequeña.",
-  "home.cta.rate": "Encuentra tu tasa ↓",
+  "home.cta.rate": "Traza tu ruta →",
   "home.cta.loans101": "Recursos Educativos",
   "home.cta.freeMoney": "Dinero gratis primero →",
   "home.cta.compareOffers": "Comparar ofertas de ayuda →",
@@ -2775,10 +2865,10 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "understand.stat2.label":
     "Aumento promedio en los ingresos de por vida por cursar estudios de posgrado en todas las áreas de estudio.",
   "understand.stat2.source":
-    "Fuente: Inside Higher Ed, con información del Postsecondary Education & Economics Research Center de American University",
+    "Fuente: Inside Higher Ed, con información del Postsecondary Equity & Economics Research (PEER) Center de American University",
   "understand.stat3.label":
     "Ingresos adicionales que una maestría puede generar durante los primeros 20 años de carrera.",
-  "understand.stat3.source": "Fuente: Informe salarial 2026 de OnlineMastersColleges",
+  "understand.stat3.source": "Fuente: Centro de Educación y Fuerza Laboral de Georgetown University (CEW), 'The College Payoff'",
   "understand.cta": "Descubre lo que tu título puede significar →",
 
   /* ---------- learn station ---------- */
@@ -2820,11 +2910,11 @@ export const es: Partial<Record<TranslationKey, string>> = {
 
   "apply.eyebrow": "Solicitar",
   "apply.pageTitle": "Ver prestamistas",
-  "apply.pageSubtitle": "Más prestamistas próximamente...",
+  "apply.pageSubtitle": "Compara opciones de préstamos para posgrado según tu programa.",
   "apply.body":
     "Cubrimos la diferencia cuando los prestamistas tradicionales han rechazado tu préstamo estudiantil, brindándote el apoyo financiero que necesitas para continuar tus estudios y construir un futuro mejor.",
   "apply.cta": "Solicitar ahora",
-  "apply.headline": "Segundas oportunidades,",
+  "apply.headline": "Segundas oportunidades",
   "apply.headline.alt": "Futuros más brillantes.",
 
   "ed.eyebrow": "Confianza y transparencia",
@@ -2919,13 +3009,13 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "chat.section.quiz": "el test de límites",
 
   /* ---------- student loan interest rates blog post (Spanish) ---------- */
-  "rates.meta.title": "Intereses de Préstamos Estudiantiles: En Cifras — Grad Loan Navigator",
+  "rates.meta.title": "Intereses de Préstamos Estudiantiles: En Cifras | Grad Navigator",
   "rates.meta.desc":
-    "Las tasas de préstamos federales subieron por tercer año consecutivo. Esto es lo que cuesta, cómo se fijan las tasas y qué cambió para prestatarios de posgrado.",
+    "Las tasas de préstamos federales subieron nuevamente para 2026–27. Esto es lo que cuesta, cómo se fijan las tasas y qué cambió para prestatarios de posgrado.",
   "rates.eyebrow": "Perspectivas de Estudiantes · Guía",
   "rates.h1": "Intereses de Préstamos Estudiantiles, En Cifras",
   "rates.sub":
-    "Las tasas de los préstamos estudiantiles federales subieron nuevamente este año, por tercer año consecutivo. Esto es lo que realmente te cuesta y el tipo de préstamo que ha desaparecido definitivamente.",
+    "Las tasas de los préstamos estudiantiles federales subieron nuevamente para el año académico 2026–27. Esto es lo que realmente te cuesta y el tipo de préstamo que ha desaparecido definitivamente.",
   "rates.updated": "Actualizado para el año académico 2026–27",
 
   "rates.why.title": "Por qué es importante",
@@ -2956,7 +3046,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
 
   "rates.zoom.title": "Panorama general:",
   "rates.zoom.p":
-    "Las tasas han subido tres años consecutivos. La tasa de pregrado por sí sola ha aumentado aproximadamente un 65% desde 2021.",
+    "Las tasas federales subieron de nuevo para 2026–27 (8.07% para posgrado). La tasa de pregrado ha subido cerca de un 75% desde 2021 (de 3.73% a 6.52%).",
 
   "rates.mean.title": "¿Qué significa esto para ti?",
   "rates.mean.p":
@@ -2980,7 +3070,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
 
   "rates.vs.r2.title": "Estado actual",
   "rates.vs.r2.desc":
-    "Grad PLUS fue eliminado para nuevos prestatarios. Parent PLUS sigue disponible, ahora limitado a $20,500 al año y $65,000 en total por estudiante.",
+    "Grad PLUS fue eliminado para nuevos prestatarios. Parent PLUS sigue disponible, ahora limitado a $20,000 al año y $65,000 en total por estudiante para nuevos prestatarios a partir del 1 de julio de 2026.",
 
   "rates.vs.r3.title": "Quién debe el dinero",
   "rates.vs.r3.desc":
@@ -3020,8 +3110,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "cyp.school.clear": "Cambiar universidad",
   "cyp.school.public": "Pública",
   "cyp.school.private": "Privada",
-  "cyp.school.autofilled": "Autocompletado desde Tuition Tracker (2026–27)",
-  "cyp.school.netPriceNote": "Precio neto promedio en Tuition Tracker tras becas y ayuda: {amount}/año",
+  "cyp.school.autofilled": "Autocompletado desde la Encuesta de Costos de Posgrado IPEDS (2024–25)",
+  "cyp.school.netPriceNote": "Matrícula y tarifas promedio de posgrado IPEDS: {amount}/año",
   "cyp.residency.label": "Estado de residencia",
   "cyp.residency.inState": "Dentro del estado",
   "cyp.residency.outOfState": "Fuera del estado",
@@ -3041,8 +3131,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "cyp.totalExpenses.label": "Gastos universitarios anuales totales",
   "cyp.citation.title": "Fuentes de datos y metodología",
   "cyp.citation.body":
-    "Los datos de matrícula y precio neto provienen de Tuition Tracker (tuitiontracker.org), una herramienta interactiva creada por The Hechinger Report, The Dallas Morning News y la Education Writers Association utilizando datos del IPEDS del Departamento de Educación de EE. UU. Los datos de alojamiento y manutención reflejan los promedios nacionales de 2025–2026 del informe Trends in College Pricing del College Board.",
-  "cyp.citation.visitLink": "Visita TuitionTracker.org para consultar datos históricos →",
+    "Los datos de matrícula y tarifas obligatorias provienen directamente de la Encuesta de Costos 2024–25 del Sistema Integrado de Datos sobre Educación Postsecundaria (IPEDS) del Departamento de Educación de EE. UU., abarcando promedios generales de escuelas de posgrado y programas profesionales específicos (Derecho, Medicina, Odontología, Farmacia, Medicina Veterinaria). Los datos de alojamiento y manutención reflejan los estándares presupuestarios de 2025–2026 del informe Trends in College Pricing del College Board.",
+  "cyp.citation.visitLink": "Visita el Centro de Datos IPEDS de NCES →",
   "calc.school.search": "Busca tu universidad para autocompletar la matrícula",
   "calc.housing.preset": "Autocompletar alojamiento con estadísticas nacionales",
   "cyp.years.q": "¿Cuántos años para graduarte?",
@@ -3139,12 +3229,12 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "calc.status.zero": "¡No necesitas pedir prestado! Tus fondos cubren el costo de asistencia.",
   "calc.status.ok": "Dentro de los límites federales de endeudamiento de 2026.",
   "calc.status.exceed":
-    "Excede el límite federal por ${amount}. La brecha restante deberá cubrirse con préstamos privados o ahorros.",
+    "Excede el límite federal por {amount}. La brecha restante deberá cubrirse con préstamos privados o ahorros.",
   "calc.status.lifetimeExceed":
-    "Su endeudamiento acumulado proyectado y de pregrado anterior (${combined}) supera el tope federal de por vida de $257,500 por ${amount}. La brecha restante deberá cubrirse con préstamos privados o ahorros.",
+    "Su endeudamiento acumulado proyectado y de pregrado anterior ({combined}) supera el tope federal de por vida de $257,500 por {amount}. La brecha restante deberá cubrirse con préstamos privados o ahorros.",
 
   /* ---------- student loan types blog post (Spanish) ---------- */
-  "types.meta.title": "Tipos de Préstamos Estudiantiles — Grad Loan Navigator",
+  "types.meta.title": "Tipos de Préstamos Estudiantiles | Grad Navigator",
   "types.meta.desc":
     "Existen tres programas de préstamos federales y diversas opciones privadas. Esta es una guía rápida de préstamos subsidiados, no subsidiados, PLUS y privados.",
   "types.eyebrow": "Perspectivas de Estudiantes · Guía Rápida",
@@ -3185,7 +3275,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
 
   "types.plus.r2.title": "Estado actual",
   "types.plus.r2.desc":
-    "Grad PLUS fue eliminado para nuevos prestatarios. Parent PLUS sigue disponible, ahora limitado a $20,500 al año y $65,000 en total por estudiante.",
+    "Grad PLUS fue eliminado para nuevos prestatarios. Parent PLUS sigue disponible, ahora limitado a $20,000 al año y $65,000 en total por estudiante para nuevos prestatarios a partir del 1 de julio de 2026.",
 
   "types.plus.r3.title": "Quién debe el dinero",
   "types.plus.r3.desc":
@@ -3220,7 +3310,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
     "Experian; U.S. Department of Education, Federal Student Aid; The Institute for College Access & Success (TICAS)",
 
   /* ---------- refinancing loans page (Spanish) ---------- */
-  "refi.meta.title": "Refinanciación de Préstamos Estudiantiles, Explicada — Grad Loan Navigator",
+  "refi.meta.title": "Refinanciación de Préstamos Estudiantiles, Explicada | Grad Navigator",
   "refi.meta.desc":
     "La refinanciación puede reducir tu tasa de interés o bajar tu pago mensual, pero cuesta permanentemente las protecciones federales. Comprende los pros, contras, pasos y alternativas.",
   "refi.eyebrow": "Gestionar Préstamos · Guía",
@@ -3279,7 +3369,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
 
   "refi.lost.idr.title": "Planes de pago basados en los ingresos",
   "refi.lost.idr.desc":
-    "Acceso a planes federales (como SAVE, IBR y PAYE) que limitan tu pago mensual según tus ingresos y el tamaño de tu familia.",
+    "Acceso a planes federales basados en ingresos (como el nuevo Plan de Asistencia para el Pago [RAP] e IBR) que limitan tu pago mensual según tus ingresos y el tamaño de tu familia.",
 
   "refi.lost.pslf.title": "Condonación de Préstamos por Servicio Público (PSLF)",
   "refi.lost.pslf.desc":
@@ -3350,7 +3440,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card4.cta": "Leer artículo",
 
   /* ---------- law school ROI blog page (Spanish) ---------- */
-  "law.meta.title": "¿Qué Escuelas de Derecho Valen la Pena? — Grad Loan Navigator",
+  "law.meta.title": "¿Qué Escuelas de Derecho Valen la Pena? | Grad Navigator",
   "law.meta.desc":
     "Un J.D. puede generar altos ingresos futuros pero también un alto costo. Descubre dónde aprovechar al máximo tu título en derecho.",
   "law.eyebrow": "ROI de Derecho · 5 min lectura",
@@ -3419,7 +3509,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card5.cta": "Leer artículo",
 
   "pol.meta.title":
-    "Antecedentes Políticos y Futuro de los Préstamos Estudiantiles — Grad Loan Navigator",
+    "Antecedentes Políticos y Futuro de los Préstamos Estudiantiles | Grad Navigator",
   "pol.meta.desc":
     "La Ley 'One Big Beautiful Bill' realizó cambios significativos en los programas de préstamos estudiantiles. Explicación de las razones y lo que está por venir.",
   "pol.eyebrow": "Política y Futuro · 4 min lectura",
@@ -3438,7 +3528,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "pol.nav.july2028": "4. Cambios el 1 de Julio de 2028",
   "pol.nav.bottomline": "5. En conclusión",
 
-  "pol.part1": "Primera parte",
+  "pol.part1": "Parte 1 de 5",
   "pol.history.h2": "La Historia de los Préstamos Estudiantiles Federales",
   "pol.history.lead":
     "El primer gran programa de préstamos estudiantiles federales se estableció en 1958 con la aprobación de la Ley de Educación de Defensa Nacional (NDEA).",
@@ -3451,7 +3541,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "pol.history.p3.title": "Apoyo Bipartidista",
   "pol.history.p3.text": "El proyecto de ley se aprobó con apoyo bipartidista en ese momento.",
 
-  "pol.part2": "Segunda parte",
+  "pol.part2": "Parte 2 de 5",
   "pol.july2026.h2": "Qué cambió el 1 de julio de 2026",
   "pol.july2026.lead":
     "La ley eliminó Grad PLUS para cualquier persona que comience un nuevo programa a partir del 1 de julio de 2026. Sin embargo, no desapareció para todos: una cláusula de legado lo mantiene abierto para un grupo limitado de prestatarios continuos.",
@@ -3476,7 +3566,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "pol.july2026.who.link":
     "Consulta si estás cubierto por la cláusula de legado en StudentAid.gov →",
 
-  "pol.part3": "Tercera parte",
+  "pol.part3": "Parte 3 de 5",
   "pol.july2027.h2": "Cambios programados para el 1 de julio de 2027",
   "pol.july2027.lead":
     "En 2027, habrá cambios en los programas que ofrecen pausas temporales en el pago de préstamos estudiantiles.",
@@ -3489,20 +3579,20 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "pol.july2027.c3.text":
     "El período de aplazamiento o forbearance se reducirá a 9 meses dentro de un período de dos años, frente a los 12 anteriores.",
 
-  "pol.part4": "Cuarta parte",
+  "pol.part4": "Parte 4 de 5",
   "pol.july2028.h2": "Cambios programados para el 1 de julio de 2028",
   "pol.july2028.lead": "El conjunto final de cambios entrará en vigor en 2028.",
   "pol.july2028.i1.title": "Fin de los Programas PAYE e ICR",
   "pol.july2028.i1.text":
-    "El 1 de julio de 2028, el Departamento de Educación finalizará los programas PAYE e ICR (Income-Contingent Repayment).",
-  "pol.july2028.i2.title": "Protecciones para Prestatarios Actuales",
+    "Para el 1 de julio de 2028, el Departamento de Educación finalizará oficialmente los programas PAYE e ICR. Los prestatarios inscritos deberán realizar la transición a IBR o al Plan de Asistencia para el Pago (RAP).",
+  "pol.july2028.i2.title": "Protecciones de Pago para Préstamos Existentes",
   "pol.july2028.i2.text":
-    "Los prestatarios actuales pueden seguir utilizando estos programas de pago, pero no se permitirán nuevas inscripciones.",
-  "pol.july2028.i3.title": "Plazo Límite de Inscripción",
+    "Bajo la Ley One Big Beautiful Bill, los nuevos prestatarios posteriores al 1 de julio de 2026 eligen entre el pago estándar y el RAP. Los prestatarios en planes heredados en cierre pueden cambiarse a IBR o RAP. El RAP ofrece pagos ajustados a los ingresos con condonación tras 30 años para prestatarios de posgrado.",
+  "pol.july2028.i3.title": "Fecha Límite de Inscripción",
   "pol.july2028.i3.text":
-    "La fecha límite final para inscribirse en estos programas aún no se ha fijado, pero es probable que sea a finales de 2027 o principios de 2028.",
+    "Para el 1 de julio de 2028, PAYE e ICR estarán totalmente clausurados. Los administradores transferirán a los prestatarios restantes a planes alternativos elegibles.",
 
-  "pol.part5": "Conclusión",
+  "pol.part5": "Parte 5 de 5",
   "pol.bottomline.h2": "En conclusión",
   "pol.bottomline.quote":
     "Los cambios importantes en los préstamos federales se desarrollan en etapas hasta 2028. Saber dónde estás hoy protege tu futuro financiero.",
@@ -3522,7 +3612,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card6.author": "Peter Foulke\nActualizado Sep 2026",
   "blog.card6.cta": "Leer artículo",
 
-  "uf.meta.title": "Universidad de Florida: Valor de Primer Nivel — Grad Loan Navigator",
+  "uf.meta.title": "Universidad de Florida: Valor de Primer Nivel | Grad Navigator",
   "uf.meta.desc":
     "La Universidad de Florida (UF) ofrece programas académicos clasificados a nivel nacional y excelente retorno de inversión.",
   "uf.eyebrow": "Destacado UF · Valor Gator",
@@ -3594,14 +3684,14 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card7.author": "Jaylen Peng\nActualizado Sep 2026",
   "blog.card7.cta": "Leer artículo",
 
-  "phd.meta.title": "¿Qué Campos de Doctorado Valen la Pena? — Grad Loan Navigator",
+  "phd.meta.title": "¿Qué Campos de Doctorado Valen la Pena? | Grad Navigator",
   "phd.meta.desc":
     "Un Ph.D. puede mejorar tus perspectivas profesionales pero requiere tiempo y dinero. Estos son los programas con mejores resultados financieros.",
   "phd.eyebrow": "ROI de Doctorado · 5 min lectura",
   "phd.h1": "¿Qué Campos de Doctorado Valen la Pena?",
   "phd.sub":
     "Un Ph.D. puede mejorar significativamente tus perspectivas profesionales pero requiere tiempo y dinero. Aquí están los programas con mejores resultados financieros.",
-  "phd.updated": "Jaylen Peng Revised as of September, 2026",
+  "phd.updated": "Jaylen Peng Revised as of Sept. 4, 2026",
   "phd.why.title": "Por qué es importante",
   "phd.why.p":
     "Al decidir entre áreas de estudio, debes entender los ingresos potenciales de tu título. Comprender los salarios potenciales de cada Ph.D. te prepara para el éxito.",
@@ -3662,7 +3752,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card8.author": "Jaylen Peng\nActualizado Sep 2026",
   "blog.card8.cta": "Leer artículo",
 
-  "tvi.meta.title": "Matrícula vs. Inflación: ¿Cuál ha Crecido Más? — Grad Loan Navigator",
+  "tvi.meta.title": "Matrícula vs. Inflación: ¿Cuál ha Crecido Más? | Grad Navigator",
   "tvi.meta.desc":
     "Con la inflación, el precio de todo aumenta. ¿Ha superado el aumento de la matrícula universitaria a la inflación? Desglose de datos de 1990 a 2026.",
   "tvi.eyebrow": "Matrícula e Inflación · 4 min de lectura",
@@ -3684,16 +3774,17 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "tvi.shortanswer.title": "La respuesta corta",
   "tvi.shortanswer.text":
     "Tanto la educación de pregrado como la de posgrado son comparativamente más costosas que hace más de 30 años.",
-  "tvi.part1": "Primera parte",
+  "tvi.part1": "Parte 1 de 5",
   "tvi.undergrad.h2": "Pregrado vs. Posgrado",
   "tvi.undergrad.lead":
     "La matrícula para ambos niveles de titulación ha superado a la inflación. La educación ahora cuesta más en comparación con los precios generales al consumidor.",
-  "tvi.part2": "Segunda parte",
-  "tvi.part3": "Tercera parte",
+  "tvi.part2": "Parte 2 de 5",
+  "tvi.part3": "Parte 3 de 5",
   "tvi.meaning.h2": "¿Qué Significa Esto?",
   "tvi.meaning.lead":
     "El rápido avance de la IA está cambiando el mercado laboral. Un título avanzado puede hacerte destacar. Si el crecimiento de la matrícula se desacelera, el valor potencial de un posgrado podría aumentar.",
-  "tvi.part4": "Cuarta parte",
+  "tvi.part4": "Parte 4 de 5",
+  "tvi.part5": "Parte 5 de 5",
   "tvi.bottomline.h2": "En conclusión",
   "tvi.bottomline.lead":
     "La matrícula ha superado a la inflación, aunque el crecimiento de posgrado se ha desacelerado. En una economía impulsada por la IA, un título avanzado vale más, pero el margen de error al elegir programa se ha reducido.",
@@ -3725,7 +3816,11 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "pvp.nav.beyond": "3. Más Allá del Costo",
   "pvp.nav.mind": "4. Ten en Cuenta…",
   "pvp.nav.bottomline": "5. En conclusión",
-  "pvp.part1": "Primera parte",
+  "pvp.part1": "Parte 1 de 5",
+  "pvp.part2": "Parte 2 de 5",
+  "pvp.part3": "Parte 3 de 5",
+  "pvp.part4": "Parte 4 de 5",
+  "pvp.part5": "Parte 5 de 5",
 
   /* ---------- MBA Prestige ROI Article (Spanish) ---------- */
   "blog.card10.tag": "ROI de MBA · 5 min de lectura",
@@ -3776,7 +3871,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card12.author": "Jaylen Peng\nActualizado Sep 2026",
   "blog.card12.cta": "Leer artículo",
 
-  "ai.meta.title": "Uso de la IA en la Educación Superior — Grad Loan Navigator",
+  "ai.meta.title": "Uso de la IA en la Educación Superior | Grad Navigator",
   "ai.meta.desc":
     "Entender cómo se implementa la IA en los cursos universitarios te prepara para el éxito. Conoce cómo la usan los estudiantes, quiénes la usan más y cómo responden las universidades.",
   "ai.eyebrow": "IA y Educación · 4 min de lectura",
@@ -3792,6 +3887,11 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "ai.nav.schools": "3. Cómo Responden las Universidades",
   "ai.nav.mind": "4. Lo que Debes Tener en Cuenta",
   "ai.nav.bottomline": "5. En conclusión",
+  "ai.part1": "Parte 1 de 5",
+  "ai.part2": "Parte 2 de 5",
+  "ai.part3": "Parte 3 de 5",
+  "ai.part4": "Parte 4 de 5",
+  "ai.part5": "Parte 5 de 5",
 
   /* ---------- FAFSA Deadlines Article (Spanish) ---------- */
   "blog.card13.tag": "Ayuda Financiera · 5 min de lectura",
@@ -3802,7 +3902,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card13.cta": "Leer artículo",
 
   "fafsa.meta.title":
-    "FAFSA 2027-2028: ¿Cuándo es la Fecha Límite de tu Posgrado? — Grad Loan Navigator",
+    "FAFSA 2027-2028: ¿Cuándo es la Fecha Límite de tu Posgrado? | Grad Navigator",
   "fafsa.meta.desc":
     "Fechas límite recomendadas del FAFSA 2027-2028, códigos de escuela, políticas de ayudantías y ayuda financiera para 10 universidades de posgrado por Peter Foulke.",
   "fafsa.eyebrow": "Ayuda Financiera y Fechas Límite · 5 min de lectura",
@@ -3820,10 +3920,11 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "fafsa.nav.bottomline": "5. En conclusión",
   "fafsa.stat.banner":
     "Dato clave: Las fechas prioritarias de posgrado van del 1 de diciembre al 1 de abril, meses antes de la fecha límite federal final del 30 de junio.",
-  "fafsa.part1": "Parte 1 de 4",
-  "fafsa.part2": "Parte 2 de 4",
-  "fafsa.part3": "Parte 3 de 4",
-  "fafsa.part4": "Conclusión",
+  "fafsa.part1": "Parte 1 de 5",
+  "fafsa.part2": "Parte 2 de 5",
+  "fafsa.part3": "Parte 3 de 5",
+  "fafsa.part4": "Parte 4 de 5",
+  "fafsa.part5": "Parte 5 de 5",
 
   /* ---------- FAFSA Explainer Article (Spanish) ---------- */
   "blog.card14.tag": "FAFSA 101 · Lectura de 5 min",
@@ -3833,7 +3934,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card14.author": "Carson Jung\nActualizado Oct 2026",
   "blog.card14.cta": "Leer artículo",
 
-  "fexp.meta.title": "La FAFSA Explicada — Grad Loan Navigator",
+  "fexp.meta.title": "La FAFSA Explicada | Grad Navigator",
   "fexp.meta.desc":
     "Cómo funciona el Índice de Ayuda Estudiantil (SAI), umbrales de elegibilidad para la Beca Pell, límites de préstamos federales y quiénes quedan fuera. Análisis por Carson Jung.",
   "fexp.eyebrow": "FAFSA 101 · Lectura de 5 min",
@@ -3852,12 +3953,12 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "fexp.nav.apply": "5. Dónde solicitar",
   "fexp.nav.bottomline": "6. En conclusión",
 
-  "fexp.part1": "Parte 1 de 5",
-  "fexp.part2": "Parte 2 de 5",
-  "fexp.part3": "Parte 3 de 5",
-  "fexp.part4": "Parte 4 de 5",
-  "fexp.part5": "Parte 5 de 5",
-  "fexp.part6": "Conclusión",
+  "fexp.part1": "Parte 1 de 6",
+  "fexp.part2": "Parte 2 de 6",
+  "fexp.part3": "Parte 3 de 6",
+  "fexp.part4": "Parte 4 de 6",
+  "fexp.part5": "Parte 5 de 6",
+  "fexp.part6": "Parte 6 de 6",
 
   "fexp.what.h2": "Qué es la FAFSA",
   "fexp.what.lead":
@@ -3975,7 +4076,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card15.cta": "Leer artículo",
 
   "vlaw.meta.title":
-    "Facultades de Derecho de Gran Valor para Resultados de Élite — Grad Loan Navigator",
+    "Facultades de Derecho de Gran Valor para Resultados de Élite | Grad Navigator",
   "vlaw.meta.desc":
     "Las mejores facultades de derecho de gran valor que ofrecen colocación en BigLaw y secretarías federales sin deudas de seis cifras. Análisis por Peter Foulke.",
   "vlaw.eyebrow": "Retorno de Facultad de Derecho · Lectura de 5 min",
@@ -4077,7 +4178,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
 
   "vlaw.bottomline.h2": "En Conclusión",
   "vlaw.bottomline.quote":
-    "No es indispensable acumular más de $300,000 en deuda no descargable para alcanzar una sociedad en BigLaw o una secretaría judicial federal. Elegir una facultad de derecho de gran valor te permite maximizar tu potencial profesional protegiendo al mismo tiempo tu solvencia y libertad financiera.",
+    "No es indispensable acumular más de $300,000 en deuda casi imposible de condonar en bancarrota para alcanzar una sociedad en BigLaw o una secretaría judicial federal. Elegir una facultad de derecho de gran valor te permite maximizar tu potencial profesional protegiendo al mismo tiempo tu solvencia y libertad financiera.",
   "vlaw.sources.label": "Fuentes y referencias:",
   "vlaw.sources.text":
     "American Bar Association (informes ABA 509); U.S. News & World Report; University of Georgia School of Law; University of Alabama School of Law; University of Florida Levin College of Law; Washington and Lee University School of Law; University of Texas School of Law. Revisado al 25 de septiembre de 2026.",
@@ -4091,7 +4192,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card16.cta": "Leer artículo",
 
   "aidcuts.meta.title":
-    "Recortes Federales de Ayuda Financiera para Programas de Bajos Ingresos — Grad Loan Navigator",
+    "Recortes Federales de Ayuda Financiera para Programas de Bajos Ingresos | Grad Navigator",
   "aidcuts.meta.desc":
     "La regla final del Departamento de Educación elimina préstamos federales y Becas Pell para programas que no superen las pruebas de ingresos. Análisis por Jaylen Peng.",
   "aidcuts.eyebrow": "Política y Rendición de Cuentas · Lectura de 5 min",
@@ -4189,7 +4290,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card17.author": "Peter Foulke\nActualizado Sep 2026",
   "blog.card17.cta": "Leer artículo",
 
-  "osu.meta.title": "Ohio State: Líder Nacional en Estudios de Posgrado — Grad Loan Navigator",
+  "osu.meta.title": "Ohio State: Líder Nacional en Estudios de Posgrado | Grad Navigator",
   "osu.meta.desc":
     "The Ohio State University ofrece 289 títulos de posgrado, $1.68 mil millones en investigación, facultades de derecho y farmacia de élite y financiamiento para ayudantías. Análisis por Peter Foulke.",
   "osu.banner": "DESTACADO THE OHIO STATE UNIVERSITY · EXCELENCIA BUCKEYE",
@@ -4265,7 +4366,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
     "La ubicación céntrica de Columbus respecto a otras metrópolis del Medio Oeste sitúa a los posgraduados de OSU en una posición inmejorable para aprovechar una economía regional en constante crecimiento.",
   "osu.outside.c3.title": "Columbus Cosmopolita",
   "osu.outside.c3.desc":
-    "Una ciudad dinámica de 1 millón de habitantes, Columbus ofrece a los estudiantes animada vida nocturna, cultura gastronómica, entretenimiento y barrios históricos con el tradicional encanto hospitalario del Medio Oeste.",
+    "Una ciudad dinámica de aproximadamente 900,000 habitantes (2.2 millones en el área metropolitana), Columbus ofrece a los estudiantes animada vida nocturna, cultura gastronómica, entretenimiento y barrios históricos con el tradicional encanto hospitalario del Medio Oeste.",
   "osu.outside.c4.title": "Ambiente de Gameday",
   "osu.outside.c4.desc":
     "Los Buckeyes cuentan con uno de los equipos de fútbol americano más destacados del país, congregando a más de 100,000 apasionados aficionados en el icónico Ohio Stadium ('The Horseshoe') cada sábado de otoño.",
@@ -4289,7 +4390,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card18.author": "Carson Jung\nActualizado Sep 2026",
   "blog.card18.cta": "Leer artículo",
 
-  "irh.meta.title": "Historia de las Tasas de Interés de Préstamos Estudiantiles — Grad Loan Navigator",
+  "irh.meta.title": "Historia de las Tasas de Interés de Préstamos Estudiantiles | Grad Navigator",
   "irh.meta.desc":
     "Una historia de 60 años de tasas de préstamos federales: de tasas legales fijas en 1965 a fórmulas variables, la Ley de Certeza de 2013, pausa al 0% y tasas de 2026. Análisis de Carson Jung.",
   "irh.eyebrow": "Análisis Histórico · Lectura de 5 min",
@@ -4306,7 +4407,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "irh.nav.formula": "4. Ley de Certeza y Oscilaciones Modernas (2013–Presente)",
   "irh.nav.bottomline": "5. En Conclusión",
 
-  "irh.part1": "Parte 1 de 4",
+  "irh.part1": "Parte 1 de 5",
   "irh.flat.h2": "De Tasa Fija a Fórmula (1965–1992)",
   "irh.flat.lead":
     "Cuando la Ley de Educación Superior creó el sistema moderno de préstamos en 1965, el Congreso simplemente fijó la tasa por estatuto en un 6% para los préstamos con respaldo federal emitidos a través del Programa Federal Family Education Loan (FFEL).",
@@ -4320,7 +4421,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "irh.flat.p3.text":
     "En 1988, el Congreso fijó la tasa fija en 8% mientras el estudiante asistía a clases y en 10% después de la graduación.",
 
-  "irh.part2": "Parte 2 de 4",
+  "irh.part2": "Parte 2 de 5",
   "irh.variable.h2": "Las Tasas Variables Llegan con los Préstamos Directos (1992–2006)",
   "irh.variable.lead":
     "En 1992, el Congreso introdujo el programa piloto Direct Loan con los primeros préstamos estudiantiles federales de tasa variable: vinculados a la letra del Tesoro a corto plazo más 3.1%, con un tope del 9%.",
@@ -4334,7 +4435,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "irh.variable.p3.text":
     "Los préstamos Stafford subsidiados alcanzaron su tasa variable más baja registrada en 2003–2004, cayendo a aproximadamente el 3.4%, antes de que la fórmula fuera retirada en 2006.",
 
-  "irh.part3": "Parte 3 de 4",
+  "irh.part3": "Parte 3 de 5",
   "irh.fixed.h2": "Regresan las Tasas Fijas y Luego se Reforman (2006–2013)",
   "irh.fixed.lead":
     "Los préstamos desembolsados por primera vez después del 30 de junio de 2006 volvieron a tasas fijas, bloqueadas a la tasa legal del año, inicialmente del 6.8% para préstamos Stafford de pregrado.",
@@ -4348,7 +4449,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "irh.fixed.p3.text":
     "Ese recorte de tasa estaba previsto para expirar y regresar al 6.8% en julio de 2013, provocando un estancamiento de último minuto en el Congreso sobre cómo fijar las tasas de forma permanente.",
 
-  "irh.part4": "Parte 4 de 4",
+  "irh.part4": "Parte 4 de 5",
+  "irh.part5": "Parte 5 de 5",
   "irh.formula.h2": "Caída Pandémica y Nueva Escalada (2020–presente)",
   "irh.formula.lead":
     "La Ley Bipartidista de Certeza de Préstamos Estudiantiles de 2013 puso fin a ese estancamiento al vincular los nuevos préstamos de cada año a la subasta de bonos del Tesoro a 10 años más un margen fijo.",
@@ -4367,17 +4469,17 @@ export const es: Partial<Record<TranslationKey, string>> = {
     "Las tasas de pregrado cayeron a un mínimo histórico del 2.75% para 2020–21 cuando los rendimientos del Tesoro se desplomaron durante la pandemia. Todo interés de préstamos federales se estableció en 0% desde marzo de 2020 hasta septiembre de 2023 bajo alivio de emergencia.",
   "irh.inflation.title": "Escalada por Inflación hasta 2026–27",
   "irh.inflation.text":
-    "A medida que los rendimientos del Tesoro subieron con la inflación, las tasas de pregrado se duplicaron a más del 6.53% en 2024–25, antes de moderarse levemente a 6.52% para 2026–27. Los prestatarios de posgrado y PLUS han enfrentado tasas más altas, con tasas de 2026–27 fijadas en 8.07% para posgrado no subsidiado y 9.07% para préstamos PLUS.",
+    "A medida que los rendimientos del Tesoro subieron con la inflación, las tasas de pregrado se duplicaron a más del 6.53% en 2024–25, bajaron al 6.39% para 2025–26, antes de subir levemente a 6.52% para 2026–27. Los prestatarios de posgrado y PLUS han enfrentado tasas más altas, con tasas de 2026–27 fijadas en 8.07% para posgrado no subsidiado y 9.07% para préstamos PLUS.",
   "irh.obb.title": "Eliminación Bajo One Big Beautiful Bill (2026)",
   "irh.obb.text":
     "El 1 de julio de 2026, los préstamos Grad PLUS fueron eliminados para nuevos prestatarios bajo la ley One Big Beautiful Bill, aparte de la fórmula de tasas pero como parte de la misma reestructuración general de los préstamos federales.",
 
   "irh.bottomline.h2": "En conclusión",
   "irh.bottomline.quote":
-    "Cada cambio importante en las tasas ha seguido el mismo patrón: un año crítico obliga al Congreso a actuar. Los legisladores aplican una solución temporal o delegan la fijación de tasas a una fórmula. Postergan continuamente el tema solo para que las condiciones del mercado o la presión política lo vuelvan a plantear.",
+    "Cada cambio importante en las tasas ha seguido el mismo patrón: un año crítico obliga al Congreso a actuar. Los legisladores aplican una solución temporal o delegan la fijación de tasas a una fórmula, postergando la reforma de fondo hasta que las condiciones de mercado o la presión política fuerzan el tema nuevamente a la mesa.",
   "irh.sources.label": "Fuentes y referencias:",
   "irh.sources.text":
-    "Finaid.org; The College Investor; SavingForCollege.com; EducationData.org; Ayuda Federal para Estudiantes, Departamento de Educación de EE. UU.; Congress.gov; Servicio de Investigación del Congreso; Comité de Salud, Educación, Trabajo y Pensiones del Senado de EE. UU. Revisado al 26 de sept, 2026.",
+    "Finaid.org; The College Investor; SavingForCollege.com; EducationData.org; Ayuda Federal para Estudiantes, Departamento de Educación de EE. UU.; Congress.gov; Servicio de Investigación del Congreso; Comité de Salud, Educación, Trabajo y Pensiones del Senado de EE. UU. Revisado al 28 de sept, 2026.",
   "irh.cta.h2": "Explora tus escenarios de amortización con las tasas actuales",
   "irh.cta.p":
     "Modela tu brecha estimada de financiamiento, calendario de pago e intereses totales con nuestra calculadora de préstamos interactiva.",
@@ -4391,7 +4493,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card19.author": "Jaylen Peng\nRevisado Sep 2026",
   "blog.card19.cta": "Leer artículo",
 
-  "wmd.meta.title": "¿Cuándo Deberías Obtener una Maestría? — Grad Loan Navigator",
+  "wmd.meta.title": "¿Cuándo Deberías Obtener una Maestría? | Grad Navigator",
   "wmd.meta.desc":
     "Una maestría puede impulsar tus perspectivas profesionales y tus ingresos futuros. ¿Pero cuándo no vale la pena? Análisis de edad, costo de oportunidad y amortización de Jaylen Peng.",
   "wmd.eyebrow": "ROI de Posgrado · Lectura de 4 min",
@@ -4422,10 +4524,11 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "wmd.nav.toolate": "4. ¿Es Demasiado Tarde?",
   "wmd.nav.bottomline": "5. En Conclusión",
 
-  "wmd.part1": "Parte 1 de 4",
+  "wmd.part1": "Parte 1 de 5",
   "wmd.payoff.h2": "¿Cuánto Tiempo Te Tomará Pagarlor?",
   "wmd.payoff.p1":
     "En promedio, una maestría cuesta $62,820 y conlleva una prima salarial anual de $17,250. Esto significa que, en promedio, te tomará 3.64 años recuperar tu inversión, pero esto no tiene en cuenta lo que sacrificas al volver a estudiar.",
+  "wmd.oppcost.h2": "La trampa del costo de oportunidad",
   "wmd.oppcost.lead":
     "También debes considerar el costo de oportunidad del tiempo que tardas en completar el título (generalmente dos años):",
   "wmd.oppcost.item1.title": "1. Salarios no percibidos",
@@ -4435,7 +4538,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "wmd.oppcost.item2.desc":
     "Las habilidades, experiencia, relaciones y antigüedad que habrías acumulado en tu organización o industria.",
 
-  "wmd.part2": "Parte 2 de 4",
+  "wmd.part2": "Parte 2 de 5",
   "wmd.age.h2": "¿Cómo Influye Tu Edad?",
   "wmd.age.lead":
     "Tu edad y etapa laboral impactan el análisis costo-beneficio de una maestría.",
@@ -4461,7 +4564,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "wmd.table.colAge50": "Edad 50",
   "wmd.table.colAge60": "Edad 60",
 
-  "wmd.part3": "Parte 3 de 4",
+  "wmd.part3": "Parte 3 de 5",
   "wmd.toolate.h2": "¿Es Demasiado Tarde?",
   "wmd.toolate.lead":
     "A pesar de los mayores costos de oportunidad, todavía existen beneficios de cursar una maestría en etapas más tardías. El título aún puede conducir a mayores ganancias a lo largo de la vida. Sin embargo, el resultado es menos predecible. Debes considerar:",
@@ -4481,7 +4584,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "wmd.toolate.c5.desc":
     "Una maestría puede ayudarte a cumplir otros objetivos no financieros, como la satisfacción intelectual o el acceso a la investigación académica.",
 
-  "wmd.part4": "Parte 4 de 4",
+  "wmd.part4": "Parte 4 de 5",
+  "wmd.part5": "Parte 5 de 5",
   "wmd.bottomline.h2": "En Conclusión",
   "wmd.bottomline.lead":
     "Por lo general, cuanto antes, mejor. Renuncias a menos y disfrutas de más tiempo para cosechar los beneficios. No obstante, tener más años no te descalifica, y una maestría todavía puede brindarte un salto relevante. Evalúa tu posición laboral y tus aspiraciones profesionales y personales.",
@@ -4509,6 +4613,66 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "alt.anim.understandLoans": "Estudiante leyendo una guía junto a una señalización",
   "alt.anim.compareOffers": "Estudiante con una brújula eligiendo entre dos caminos",
   "alt.anim.planComplete": "Graduado celebrando en la cumbre junto a una lista de verificación completada",
+
+  /* ---------- privacy policy (Spanish) ---------- */
+  "privacy.eyebrow": "Transparencia y Privacidad",
+  "privacy.h1": "Política de Privacidad",
+  "privacy.sub":
+    "Cómo Grad Navigator gestiona tus datos, respeta tu privacidad y protege tu información personal.",
+  "privacy.updated": "Vigente a partir de octubre de 2026",
+  "privacy.s1.title": "1. Nuestro Compromiso con tu Privacidad",
+  "privacy.s1.text":
+    "Grad Navigator ofrece herramientas financieras y recursos educativos gratuitos y transparentes para estudiantes de posgrado y programas profesionales. Creemos que planificar el financiamiento universitario no debe requerir renunciar a tu privacidad. Esta Política de Privacidad explica qué información recopilamos, cómo se utiliza y cómo protegemos tus derechos.",
+  "privacy.s2.title": "2. Cálculos Financieros en tu Navegador",
+  "privacy.s2.text":
+    "Todas las calculadoras de préstamos, proyecciones de topes federales, comparativas de ofertas de ayuda y estimaciones de pago se ejecutan exclusivamente en tu navegador (lado del cliente). Tus cifras financieras, ingresos, montos de matrícula y saldos de deuda nunca se envían ni se almacenan en nuestros servidores.",
+  "privacy.s3.title": "3. Información que Recopilamos",
+  "privacy.s3.text":
+    "Solo recopilamos información personal cuando nos la proporcionas voluntariamente en tres interacciones específicas del sitio: (1) al enviar nuestro formulario de contacto, (2) al solicitar el envío por correo del desglose en PDF de tu comparativa de ayuda financiera, o (3) al generar una carta editable de apelación de ayuda. En estos casos, solicitamos tu nombre y correo electrónico únicamente para entregar el documento o responder a tu consulta.",
+  "privacy.s3.subtext":
+    "Nunca vendemos, alquilamos ni comercializamos tu información personal de contacto con anunciantes o prestamistas externos.",
+  "privacy.s4.title": "4. Análisis Web y Cookies",
+  "privacy.s4.text":
+    "Utilizamos Google Analytics para analizar tendencias agregadas de uso, comprender qué guías y herramientas resultan más útiles y optimizar el rendimiento técnico. Google Analytics emplea cookies estándar para recopilar datos técnicos anónimos, tales como tipo de navegador, dispositivo, páginas de procedencia y secciones visitadas. Puedes deshabilitar las cookies desde la configuración de tu navegador sin que ello afecte el uso de nuestras calculadoras o guías.",
+  "privacy.s5.title": "5. Enlaces Externos y Aliados Educativos",
+  "privacy.s5.text":
+    "Nuestro portal incluye enlaces a sitios educativos externos, bases de datos gubernamentales (incluyendo StudentAid.gov e IPEDS de NCES) y materiales informativos (incluyendo folletos de educación al consumidor de Experian). Al hacer clic en un enlace externo, abandonas Grad Navigator y pasas a regirte por las políticas y términos de dicho sitio.",
+  "privacy.s6.title": "6. Seguridad de los Datos y tus Derechos",
+  "privacy.s6.text":
+    "Implementamos protocolos modernos de cifrado (HTTPS/TLS) para proteger todos los datos en tránsito. Las consultas enviadas mediante el formulario de contacto o las solicitudes de envío de documentos se conservan solo el tiempo necesario para responder o completar el envío. Tienes derecho a solicitar el acceso, corrección o eliminación de tus datos de contacto enviándonos un mensaje mediante el formulario de contacto.",
+  "privacy.cta.title": "¿Tienes preguntas sobre nuestras prácticas de privacidad?",
+  "privacy.cta.desc":
+    "Estamos a tu disposición para aclarar el funcionamiento de nuestras herramientas o resolver cualquier duda.",
+  "privacy.cta.btn": "Contáctanos",
+
+  /* ---------- terms of use (Spanish) ---------- */
+  "terms.eyebrow": "Acuerdo del Usuario",
+  "terms.h1": "Términos de Uso",
+  "terms.sub":
+    "Términos y condiciones que rigen el acceso y uso de las herramientas, calculadoras y guías de Grad Navigator.",
+  "terms.updated": "Vigente a partir de octubre de 2026",
+  "terms.s1.title": "1. Aceptación de los Términos",
+  "terms.s1.text":
+    "Al acceder o utilizar el sitio web de Grad Navigator, sus calculadoras interactivas, herramientas de comparativa financiera o artículos informativos, aceptas cumplir con estos Términos de Uso y todas las leyes y regulaciones aplicables. Si no estás de acuerdo con alguna de estas condiciones, debes abstenerte de utilizar este sitio.",
+  "terms.s2.title": "2. Propósito Exclusivamente Informativo y Educativo",
+  "terms.s2.text":
+    "Todas las calculadoras, proyecciones de topes de préstamos, estimaciones de pago mensual y comparativas de ayuda ofrecidas en Grad Navigator tienen un fin estrictamente educativo e informativo. Grad Navigator no es un prestamista, administrador de préstamos, asesor de crédito ni entidad de asesoría financiera. Nuestras herramientas generan proyecciones basadas en referencias normativas públicas y no deben interpretarse como asesoramiento legal, fiscal o financiero.",
+  "terms.s3.title": "3. Exactitud de los Datos y Fuentes Públicas",
+  "terms.s3.text":
+    "Nos esforzamos por ofrecer información precisa y actualizada consultando fuentes primarias como los informes IPEDS del Departamento de Educación de EE. UU., las disposiciones de la Ley One Big Beautiful Bill y los datos oficiales de la American Bar Association. No obstante, las tarifas de matrícula, costos de vida y tasas de interés privadas pueden variar. Verifica siempre las cifras oficiales con la oficina de ayuda financiera de tu universidad y en StudentAid.gov antes de asumir compromisos.",
+  "terms.s4.title": "4. Enlaces a Terceros y Divulgación de Socios",
+  "terms.s4.text":
+    "Grad Navigator puede incluir enlaces a sitios web de terceros, tales como administradores de préstamos, prestamistas privados y plataformas de educación crediticia como Experian. No controlamos ni asumimos responsabilidad por los contenidos, tasas de interés, criterios de aprobación o políticas de privacidad de entidades externas. Cualquier solicitud o contrato de préstamo se suscribe exclusivamente entre tú y la institución financiera correspondiente.",
+  "terms.s5.title": "5. Derechos de Propiedad Intelectual",
+  "terms.s5.text":
+    "Todo el contenido original, herramientas de software interactivas, gráficos, diseño y marcas presentes en Grad Navigator son propiedad intelectual de Grad Navigator o de sus licenciantes. Puedes utilizar nuestras calculadoras y descargar materiales para uso personal y no comercial, siempre que no modifiques, redistribuyas ni realices ingeniería inversa sobre dichos recursos.",
+  "terms.s6.title": "6. Limitación de Responsabilidad y Modificaciones",
+  "terms.s6.text":
+    "En ningún caso Grad Navigator, sus creadores o colaboradores serán responsables por daños directos, indirectos, incidentales o derivados del uso o imposibilidad de uso del sitio o de las estimaciones generadas por nuestras herramientas. Nos reservamos el derecho de modificar estos Términos de Uso en cualquier momento y sin previo aviso.",
+  "terms.cta.title": "¿Preguntas sobre nuestros términos?",
+  "terms.cta.desc":
+    "Comunícate con el equipo editorial y de operaciones de Grad Navigator en cualquier momento.",
+  "terms.cta.btn": "Contáctanos",
 };
 
 export const LANGUAGES = [

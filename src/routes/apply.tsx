@@ -5,9 +5,9 @@ import gradbridgeLogo from "@/assets/GradBridge_logo.png";
 import brighterFutures from "@/assets/brighter_futures.png";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Apply — Grad Loan Navigator";
+const TITLE = "Apply | Grad Navigator";
 const DESCRIPTION =
-  "Applications open soon. Grad Loan Navigator will guide you from your borrowing cap to a completed grad loan application.";
+  "Applications open soon. Grad Navigator will guide you from your borrowing cap to a completed grad loan application.";
 const URL = "https://www.graduationnavigator.com/apply";
 
 export const Route = createFileRoute("/apply")({
@@ -15,6 +15,7 @@ export const Route = createFileRoute("/apply")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESCRIPTION },
+      { name: "robots", content: "noindex, nofollow" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "website" },

@@ -3,7 +3,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
-const TITLE = "Value Law Schools for Elite Outcomes — Grad Loan Navigator";
+const TITLE = "Value Law Schools for Elite Outcomes | Grad Navigator";
 const DESCRIPTION =
   "Top value law schools delivering BigLaw placement and federal clerkships without six-figure debt. Analysis by Peter Foulke.";
 const URL = "https://www.graduationnavigator.com/blog/value-law-schools";
@@ -20,6 +20,24 @@ export const Route = createFileRoute("/blog_/value-law-schools")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          url: URL,
+          publisher: {
+            "@type": "Organization",
+            name: "Grad Navigator",
+            url: "https://www.graduationnavigator.com",
+            logo: "https://www.graduationnavigator.com/regular-compass.png",
+          },
+        }),
+      },
+    ],
   }),
   component: ValueLawSchoolsArticlePage,
 });
@@ -344,6 +362,12 @@ function ValueLawSchoolsArticlePage() {
                 </tbody>
               </table>
             </div>
+
+            <p style={{ fontSize: "12.5px", color: "var(--ink-soft)", marginTop: "10px", fontStyle: "italic" }}>
+              {isEs
+                ? "Nota: Matrícula y tarifas según los informes ABA Standard 509 para 2025–26 (las tarifas obligatorias adicionales varían según la institución)."
+                : "Note: Figures reflect 2025–26 tuition and required fees from ABA Standard 509 disclosures (additional campus fees vary)."}
+            </p>
           </section>
 
           {/* School #1: University of Georgia */}
