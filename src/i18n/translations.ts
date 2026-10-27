@@ -23,11 +23,14 @@ export const en = {
   "nav.dropdown.resources.title": "Educational Resources",
   "nav.dropdown.resources.loans101Title": "Loans 101 & What Changed",
   "nav.dropdown.resources.loans101Desc": "Graduate borrowing caps and the end of Grad PLUS",
+  "nav.dropdown.resources.cosignerTitle": "Cosigner Hub",
+  "nav.dropdown.resources.cosignerDesc": "Rules, federal endorsers, 2026 caps, and cosigner release",
   "nav.dropdown.resources.blogTitle": "Articles & Guides",
   "nav.dropdown.resources.blogDesc": "Degree ROI analyses, FAFSA deadlines, and policy updates",
   "nav.dropdown.resources.standardsTitle": "Editorial Standards",
   "nav.dropdown.resources.standardsDesc": "Our research methodology, sources, and disclosures",
   "nav.dropdown.toolBadge": "Interactive Tool",
+  "nav.dropdown.newBadge": "New Guide",
   "nav.mobile.menu": "Menu",
   "nav.mobile.close": "Close navigation menu",
   "search.title": "Search Navigation",
@@ -54,10 +57,16 @@ export const en = {
   "footer.blurb":
     "An independent guide to graduate borrowing, built for the post–Grad PLUS landscape. Reviewed for accuracy, updated as the rules change.",
   "footer.learn": "Learn",
+  "footer.learn.cosigner": "Cosigner Hub",
   "er.eyebrow": "Learn",
-  "er.h1": "Navigation Hub",
+  "er.h1": "Educational Resources",
   "er.sub":
-    "Two ways in, depending on how you like to learn — pick whichever fits how you're feeling today.",
+    "Three essential pathways to explore borrowing, credit, and repayment — pick whichever fits where you are today.",
+  "er.card3.sub": "Federal endorsers, private cosigners & 2026 rules",
+  "er.card3.title": "Cosigner Hub",
+  "er.card3.desc":
+    "Understand federal endorsers, private loan cosigning, CFPB release data, auto-default protections, and 2026 borrowing cap shifts.",
+  "er.card3.cta": "Explore Cosigner Hub",
   "er.card1.sub": "Presented by Experian",
   "er.card1.title": "In-Depth Analysis",
   "er.card1.desc":
@@ -2325,6 +2334,243 @@ export const en = {
   "terms.cta.desc":
     "Reach out to the Grad Navigator editorial and operations team anytime.",
   "terms.cta.btn": "Contact Us",
+
+  /* ---------- cosigner hub ---------- */
+  "cosign.meta.title": "Cosigning for Student Loans | Cosigner Hub | Grad Navigator",
+  "cosign.meta.desc":
+    "Complete guide to student loan cosigners: federal endorsers vs. private cosigners, 2026 loan cap impacts, lender release streaks, CFPB rejection rates, auto-default rules, and bankruptcy protections.",
+  "cosign.breadcrumb.home": "Home",
+  "cosign.breadcrumb.resources": "Educational Resources",
+  "cosign.breadcrumb.current": "Cosigner Hub",
+
+  "cosign.eyebrow": "CO-BORROWING & CREDIT GUIDE",
+  "cosign.title": "Cosigning for student loans",
+  "cosign.subtitle":
+    "Most federal student loans never involve a cosigner, while most private ones do, and the 2026 changes to federal borrowing limits are pushing a new wave of parents, relatives, and friends toward the private side of the ledger.",
+  "cosign.badge.reviewed": "Expert Reviewed",
+  "cosign.badge.verified": "Verified Against 2026 Federal Limits",
+  "cosign.badge.sources": "ED · CFPB · Philly Fed · PEER Center · AEI",
+
+  "cosign.why.tag": "CORE LEGAL DISTINCTION",
+  "cosign.why.title": "Why it matters: A cosigner is a co-borrower, not a reference",
+  "cosign.why.body":
+    "A cosigner is not a reference or a backup, but a second borrower with the same legal obligation, and the rules for getting out of that obligation, or for what happens if the student dies or goes bankrupt, depend entirely on whether the loan is federal or private.",
+
+  "cosign.stats.title": "Cosigning by the Numbers",
+  "cosign.stat1.val": ">90%",
+  "cosign.stat1.label": "Private loans cosigned",
+  "cosign.stat1.sub": "CFPB found over 90% of new private student loans were cosigned by 2011",
+  "cosign.stat2.val": "56.8%",
+  "cosign.stat2.label": "Reported credit damage",
+  "cosign.stat2.sub": "2017 LendEDU survey: cosigners who said the loan hurt their credit",
+  "cosign.stat3.val": "35%",
+  "cosign.stat3.label": "Regretted cosigning",
+  "cosign.stat3.sub": "Cosigners in the LendEDU survey who actively regretted their decision",
+  "cosign.stat4.val": "90%",
+  "cosign.stat4.label": "Release applications rejected",
+  "cosign.stat4.sub": "CFPB reported private lenders rejected 90% of release applications",
+  "cosign.stat5.val": "+85%",
+  "cosign.stat5.label": "Projected private loan surge",
+  "cosign.stat5.sub": "Expert Mark Kantrowitz's estimate of private loan growth as 2026 caps phase in",
+  "cosign.stat6.val": "Nearly 4 in 10",
+  "cosign.stat6.label": "Subprime or thin credit",
+  "cosign.stat6.sub": "Affected grad borrowers who need a cosigner to access private loans (Philly Fed & PEER)",
+
+  "cosign.compare.tag": "SIDE-BY-SIDE MATRIX",
+  "cosign.compare.title": "How Co-Borrowing Differs Across Loan Types",
+  "cosign.compare.desc":
+    "Cosigning rules depend entirely on whether the debt is direct federal, federal PLUS, or private.",
+  "cosign.compare.col1.title": "Direct Federal Loans",
+  "cosign.compare.col1.sub": "Subsidized & Unsubsidized",
+  "cosign.compare.col2.title": "Direct PLUS Loans",
+  "cosign.compare.col2.sub": "Parent PLUS & Legacy Grad PLUS",
+  "cosign.compare.col3.title": "Private Student Loans",
+  "cosign.compare.col3.sub": "Banks, Credit Unions & Online Lenders",
+  "cosign.compare.row1.label": "Cosigner required?",
+  "cosign.compare.row1.c1": "Never. Students qualify independently.",
+  "cosign.compare.row1.c2": "Only if primary applicant has adverse credit.",
+  "cosign.compare.row1.c3": "Required for >90% of undergraduate/thin-file applicants.",
+  "cosign.compare.row2.label": "Credit check criteria",
+  "cosign.compare.row2.c1": "None. No credit history check.",
+  "cosign.compare.row2.c2": "Adverse credit check only (no score minimum; thin file passes).",
+  "cosign.compare.row2.c3": "Strict credit score and income underwriting.",
+  "cosign.compare.row3.label": "Co-signer legal term",
+  "cosign.compare.row3.c1": "N/A (No co-signer permitted or needed)",
+  "cosign.compare.row3.c2": "Endorser (must complete addendum on StudentAid.gov)",
+  "cosign.compare.row3.c3": "Cosigner (equally legally liable co-borrower)",
+  "cosign.compare.row4.label": "Impact on cosigner's credit",
+  "cosign.compare.row4.c1": "None",
+  "cosign.compare.row4.c2": "Pursued only if primary borrower defaults or falls behind",
+  "cosign.compare.row4.c3": "Appears on credit report immediately; raises DTI ratio",
+  "cosign.compare.row5.label": "Discharge upon death",
+  "cosign.compare.row5.c1": "Discharged on borrower death",
+  "cosign.compare.row5.c2": "Discharged if parent or student dies; endorser death does not cancel debt",
+  "cosign.compare.row5.c3": "Mandatory cosigner release on student death (loans post-Nov 20, 2018)",
+  "cosign.compare.row6.label": "Exit / release option",
+  "cosign.compare.row6.c1": "N/A",
+  "cosign.compare.row6.c2": "No release process exists; endorser remains bound",
+  "cosign.compare.row6.c3": "Conditional release after 12–48 months, or solo private refinance",
+
+  "cosign.basic.tag": "FEDERAL FOUNDATIONS",
+  "cosign.basic.title": "The basic rule: federal loans mostly don't use cosigners",
+  "cosign.basic.p1":
+    "Direct Subsidized and Unsubsidized Loans, the federal loans most undergraduates use, require no cosigner, and neither one checks credit, whether the borrower is an undergraduate or a graduate student, so a student with no credit history qualifies on their own.",
+  "cosign.basic.p2": "The only federal loans that check credit are Direct PLUS Loans.",
+  "cosign.basic.p3":
+    "The test is not a credit score, since the Department of Education looks for a defined list of negative events, such as a recent bankruptcy discharge, repossession, foreclosure, or serious delinquencies, rather than ranking applicants by score.",
+  "cosign.basic.p4":
+    "Having no credit history at all is not treated as adverse credit, so a thin file alone will not disqualify a PLUS applicant.",
+  "cosign.basic.p5":
+    "The federal word for a cosigner is endorser, and it applies only when a PLUS applicant fails the credit check and chooses to add an endorser rather than appeal.",
+
+  "cosign.endorser.tag": "FEDERAL ENDORSERS",
+  "cosign.endorser.title": "How a federal endorser works",
+  "cosign.endorser.li1":
+    "An endorser must agree to repay the PLUS loan if the borrower does not, must not have an adverse credit history of their own, and must be an adult U.S. citizen or permanent resident.",
+  "cosign.endorser.li2":
+    "The endorser completes an addendum online at studentaid.gov, and the borrower must also finish PLUS credit counseling before any money is released.",
+  "cosign.endorser.li3":
+    "A student cannot serve as the endorser on a parent's loan for that same student, which rules out the obvious shortcut.",
+  "cosign.endorser.li4":
+    "Endorsers do not get all of a borrower's benefits, and an endorser cannot consolidate the loan they endorsed, which limits how they can restructure it later.",
+  "cosign.endorser.li5":
+    "The arrangement is specific to the loan it was signed for, so a borrower who needs another PLUS loan later and fails the credit check again needs a new endorser agreement.",
+  "cosign.endorser.li6":
+    "The risk is real: if the borrower falls behind, the servicer will pursue the endorser for payment.",
+  "cosign.endorser.li7":
+    "There is a second route that needs no endorser at all, which is to appeal the credit decision by documenting that the credit report is wrong or that extenuating circumstances caused the negative item.",
+  "cosign.endorser.li8":
+    "If a parent is denied a Parent PLUS loan, the student can request additional Direct Unsubsidized Loan eligibility for that year, which needs no cosigner.",
+  "cosign.endorser.who.title": "Who this actually affects",
+  "cosign.endorser.who.p":
+    "Parents with a past bankruptcy, foreclosure, or collection account who want to borrow for a child, and graduate students who already hold a Grad PLUS loan and need to keep borrowing under the legacy provision.",
+
+  "cosign.changes2026.tag": "2026 STATUTORY CHANGES",
+  "cosign.changes2026.title": "What changed for federal PLUS loans in 2026",
+  "cosign.changes2026.li1":
+    "Since July 1, 2026, Grad PLUS loans have been eliminated for new borrowers, which means the endorser route for graduate students survives only for those covered by the legacy provision.",
+  "cosign.changes2026.li2":
+    "Parent PLUS loans are now capped at $20,000 per student per year and $65,000 per student in total, a limit that applies per student rather than per parent, so two parents borrowing for one child share the same ceiling.",
+  "cosign.changes2026.li3":
+    "Parents who borrowed before July 1, 2026 keep the old limits for up to three more years or until the student's program ends, which softens the cliff for current families.",
+  "cosign.changes2026.li4":
+    "A new Parent PLUS loan taken out after that date can be repaid only under the tiered standard plan, and taking out any new federal loan after that date removes income-driven repayment eligibility from all of the parent's PLUS loans, which matters to any endorser backing the loan.",
+  "cosign.changes2026.li5":
+    "New graduate borrowing is limited to $20,500 per year and $100,000 in total, or $50,000 per year and $200,000 in total for designated professional programs.",
+
+  "cosign.private.tag": "PRIVATE BORROWING",
+  "cosign.private.title": "How private student loan cosigning works",
+  "cosign.private.li1":
+    "Private lenders judge a student's credit and income, and because most students have thin credit files and little income, the lender often approves the loan only on the strength of a cosigner's credit.",
+  "cosign.private.li2":
+    "The cosigner is equally legally responsible for the debt, the loan appears on the cosigner's credit report, and late payments by the student damage the cosigner's credit as well.",
+  "cosign.private.li3":
+    "A cosigner can also lower the interest rate, and even a student who qualifies alone may receive a better offer by applying with a creditworthy cosigner.",
+  "cosign.private.li4":
+    "Private loans are missing the federal safety net, since lenders typically do not offer income-driven repayment or forgiveness, and many charge variable rates.",
+  "cosign.private.li5":
+    "Cosigned debt can crowd out a cosigner's other borrowing, because it counts toward their debt-to-income ratio when they apply for a mortgage, a car loan, or a refinance.",
+
+  "cosign.release.tag": "RELEASE CRITERIA & REALITY",
+  "cosign.release.title": "Getting a cosigner off the loan",
+  "cosign.release.p1":
+    "Cosigner release lets a lender remove the cosigner after the borrower makes a set number of consecutive on-time payments and qualifies on their own credit and income.",
+  "cosign.release.p2":
+    "The payment streak ranges from 12 to 48 months depending on the lender, with Sallie Mae and SoFi at 12 payments, Navy Federal at 24, Citizens at 36, and MEFA at 48.",
+  "cosign.release.p3":
+    "Payments generally must be full principal and interest, so interest-only payments or reduced payments during a hardship plan do not count toward the streak.",
+  "cosign.release.p4":
+    "Release is a privilege, not a right, and lenders are not required by law to offer it or to approve it.",
+  "cosign.release.p5":
+    "The CFPB reported in 2015 that lenders rejected 90% of applications, often because borrowers did not meet unstated pre-application requirements, and found that lenders rarely told borrowers when they became eligible, as described in the agency's report.",
+  "cosign.release.p6":
+    "Using a lender's forbearance can permanently bar a borrower from release on some loans, according to the same report.",
+  "cosign.release.p7":
+    "The more reliable exit is to refinance the loan into the borrower's name alone once their credit and income allow it, which replaces the old loan entirely.",
+  "cosign.release.between":
+    "Between the lines: Most federal loans have nothing to release, since there is no cosigner in the first place, and the Department of Education's endorser rules describe no release process, so a PLUS endorser should assume they stay responsible until the loan is repaid or discharged.",
+
+  "cosign.table.lender": "Lender",
+  "cosign.table.streak": "Required Payment Streak",
+  "cosign.table.notes": "Requirements & Notes",
+  "cosign.table.sallie": "Sallie Mae",
+  "cosign.table.sallie.streak": "12 consecutive payments",
+  "cosign.table.sallie.notes": "Full principal & interest; borrower must pass solo credit and income underwriting.",
+  "cosign.table.sofi": "SoFi",
+  "cosign.table.sofi.streak": "12 consecutive payments",
+  "cosign.table.sofi.notes": "Continuous on-time full payments; primary borrower must meet credit criteria.",
+  "cosign.table.navy": "Navy Federal Credit Union",
+  "cosign.table.navy.streak": "24 consecutive payments",
+  "cosign.table.navy.notes": "Two full years of flawless on-time payments with solo credit qualification.",
+  "cosign.table.citizens": "Citizens Bank",
+  "cosign.table.citizens.streak": "36 consecutive payments",
+  "cosign.table.citizens.notes": "Three full years of payments; stringent income and credit re-evaluation.",
+  "cosign.table.mefa": "MEFA",
+  "cosign.table.mefa.streak": "48 consecutive payments",
+  "cosign.table.mefa.notes": "Four full years of on-time payments required before release is considered.",
+
+  "cosign.worst.tag": "CRITICAL PROTECTIONS & LEGAL RISKS",
+  "cosign.worst.title": "What happens if someone dies, defaults, or files for bankruptcy",
+  "cosign.worst.li1":
+    "A federal loan is discharged when the borrower dies, and a Parent PLUS loan is discharged if either the parent or the student dies, but an endorser's death alone does not cancel the debt.",
+  "cosign.worst.li2":
+    "Private lenders are not required to cancel a loan when the borrower dies, although some do, and for private loans made on or after November 20, 2018, federal law requires the lender to release the cosigner when the student dies.",
+  "cosign.worst.li3":
+    "Before that, many contracts contained “auto-default” clauses that demanded full repayment if a cosigner died or filed for bankruptcy even when the loan was current, and the same 2018 law bars lenders from declaring default solely for that reason on loans made on or after November 20, 2018.",
+  "cosign.worst.li4":
+    "Tax law now excludes student debt discharged because of the student borrower's death from income for discharges after December 31, 2025, so the canceled amount is not taxed as income.",
+  "cosign.worst.li5":
+    "A borrower's bankruptcy does not release the cosigner, because federal bankruptcy law says a discharge does not affect anyone else liable on the same debt, and a filing can accelerate the full balance against the cosigner.",
+  "cosign.worst.li6":
+    "Older contracts, signed before November 20, 2018, may still trigger default on a cosigner's death, so it is worth reading the promissory note and asking the lender about replacement or release options early.",
+
+  "cosign.whyMore.tag": "2026 MARKET IMPACT",
+  "cosign.whyMore.title": "Why more families are being asked to cosign now",
+  "cosign.whyMore.li1":
+    "With Grad PLUS gone and federal caps in place, the Department of Education's own limits are pushing students above the cap toward private lenders, and higher education expert Mark Kantrowitz estimated private student loan volume could rise by as much as 85%, nearly doubling, as the new limits phase in.",
+  "cosign.whyMore.li2":
+    "Private lenders will not generally replace lending to students with thin or poor credit, according to a 2026 American Enterprise Institute primer, which noted that Grad PLUS reached borrowers without cosigners.",
+  "cosign.whyMore.li3":
+    "An analysis by the Federal Reserve Bank of Philadelphia and American University's PEER Center found that among affected graduate borrowers, nearly 4 in 10 have a subprime credit score or no credit history at all, which makes a private loan hard to get without a cosigner.",
+  "cosign.whyMore.li4":
+    "The new Parent PLUS cap also leaves a gap for families whose costs exceed $65,000 per student, and filling it with private borrowing is where a cosigner is the norm.",
+
+  "cosign.questions.tag": "PROTECTIVE CHECKLIST",
+  "cosign.questions.title": "Questions to ask before signing",
+  "cosign.questions.intro": "Check off each critical term before agreeing to cosign or endorsing any loan application:",
+  "cosign.q1.title": "1. Cosigner release terms in writing",
+  "cosign.q1.desc":
+    "Ask for the lender's cosigner release terms in writing, including the payment count, credit score, and income thresholds, and whether forbearance affects eligibility.",
+  "cosign.q2.title": "2. Death and disability discharge policy",
+  "cosign.q2.desc":
+    "Ask whether the loan is discharged on the borrower's death or disability, and whether it is released from the cosigner on the student's death.",
+  "cosign.q3.title": "3. Immediate online account access for the cosigner",
+  "cosign.q3.desc":
+    "Ask for the cosigner to have online access to the account, so they see missed payments immediately instead of learning of them from a collector.",
+  "cosign.q4.title": "4. Exhaust all federal borrowing options first",
+  "cosign.q4.desc":
+    "Compare against the federal options first, since a federal loan needs no cosigner, carries repayment and discharge protections, and can leave a family's credit untouched.",
+  "cosign.q5.title": "5. Verify rate type and budget for the worst case",
+  "cosign.q5.desc":
+    "Check the rate type and budget for the worst case, since a variable rate can rise and the cosigner is the one who pays if the student cannot.",
+
+  "cosign.bottom.tag": "THE BOTTOM LINE",
+  "cosign.bottom.title": "A cosigner is a full borrower in everything but name",
+  "cosign.bottom.p":
+    "A cosigner on a private loan, or an endorser on a PLUS loan, is a full borrower in everything but name, so the decision should rest on whether the cosigner could afford the entire loan and whether the lender's exit terms, and not just its rate, are clear before anything is signed.",
+
+  "cosign.sources.title": "Sources & Regulatory Documentation",
+  "cosign.sources.body":
+    "Sources: U.S. Department of Education, Federal Student Aid and FSA Handbook; Consumer Financial Protection Bureau; Federal Reserve Bank of Philadelphia; American University PEER Center; American Enterprise Institute; CNBC; Harvard, Tufts, Washington State University, Northwestern University and University of Texas at Arlington financial aid offices; Experian; SavingForCollege.com; Credible; LendEDU; Edvisors; SoFi; FedLaws; The College Investor.",
+
+  "cosign.bridge.tag": "NEXT STEPS & PLANNING TOOLS",
+  "cosign.bridge.title": "Explore Your Options Before Signing",
+  "cosign.bridge.desc":
+    "Before committing your credit or asking a relative to cosign, calculate your funding gap, check gift aid options, or compare aid offers side by side.",
+  "cosign.bridge.btn.chart": "Calculate Funding Gap",
+  "cosign.bridge.btn.freeMoney": "Free Money First Guide",
+  "cosign.bridge.btn.aid": "Compare Aid Offers",
+  "cosign.bridge.btn.resources": "Educational Resources Hub",
 } as const;
 
 export type TranslationKey = keyof typeof en;
@@ -2353,11 +2599,14 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "nav.dropdown.resources.title": "Recursos Educativos",
   "nav.dropdown.resources.loans101Title": "Préstamos 101 y cambios clave",
   "nav.dropdown.resources.loans101Desc": "Límites de préstamos de posgrado y el fin de Grad PLUS",
+  "nav.dropdown.resources.cosignerTitle": "Centro de Avales",
+  "nav.dropdown.resources.cosignerDesc": "Normas, avales federales, límites 2026 y liberación de aval",
   "nav.dropdown.resources.blogTitle": "Artículos y guías",
   "nav.dropdown.resources.blogDesc": "Análisis de ROI por titulación, fechas FAFSA y novedades",
   "nav.dropdown.resources.standardsTitle": "Estándares editoriales",
   "nav.dropdown.resources.standardsDesc": "Nuestra metodología de investigación, fuentes y divulgaciones",
   "nav.dropdown.toolBadge": "Herramienta Interactiva",
+  "nav.dropdown.newBadge": "Nueva Guía",
   "nav.mobile.menu": "Menú",
   "nav.mobile.close": "Cerrar menú de navegación",
   "search.title": "Navegación de Búsqueda",
@@ -2384,10 +2633,16 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "footer.blurb":
     "Una guía independiente sobre el endeudamiento para posgrado, creada para el panorama posterior a Grad PLUS. Revisada para garantizar su exactitud y actualizada cuando cambian las reglas.",
   "footer.learn": "Aprender",
+  "footer.learn.cosigner": "Centro de Avales",
   "er.eyebrow": "Aprender",
   "er.h1": "Recursos educativos",
   "er.sub":
-    "Dos maneras de empezar, según cómo prefieras aprender — elige la que mejor te siente hoy.",
+    "Tres vías fundamentales para explorar endeudamiento, crédito y planes de pago — elige la guía que mejor se adapte a tu situación hoy.",
+  "er.card3.sub": "Avales federales, avales privados y normas de 2026",
+  "er.card3.title": "Centro de Avales",
+  "er.card3.desc":
+    "Comprende los avales federales, avales en préstamos privados, datos de liberación del CFPB, normas de impago automático y los cambios de 2026.",
+  "er.card3.cta": "Explorar Centro de Avales",
   "er.card1.sub": "Presentado por Experian",
   "er.card1.title": "Análisis a fondo",
   "er.card1.desc":
@@ -4673,6 +4928,244 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "terms.cta.desc":
     "Comunícate con el equipo editorial y de operaciones de Grad Navigator en cualquier momento.",
   "terms.cta.btn": "Contáctanos",
+
+  /* ---------- cosigner hub (Spanish) ---------- */
+  "cosign.meta.title": "Firmar como Aval en Préstamos Estudiantiles | Centro de Avales | Grad Navigator",
+  "cosign.meta.desc":
+    "Guía completa sobre avales de préstamos estudiantiles: endosantes federales vs avales privados, impacto de los límites de 2026, requisitos de liberación, tasas de rechazo del CFPB y quiebra.",
+  "cosign.breadcrumb.home": "Inicio",
+  "cosign.breadcrumb.resources": "Recursos Educativos",
+  "cosign.breadcrumb.current": "Centro de Avales",
+
+  "cosign.eyebrow": "GUÍA DE CO-PRESTATARIOS Y CRÉDITO",
+  "cosign.title": "Firmar como aval en préstamos estudiantiles",
+  "cosign.subtitle":
+    "La mayoría de los préstamos federales nunca requieren un aval, mientras que la mayoría de los privados sí lo hacen; además, los cambios de 2026 en los límites federales de endeudamiento están empujando a una nueva ola de padres, familiares y amigos hacia el sector privado.",
+  "cosign.badge.reviewed": "Revisado por expertos",
+  "cosign.badge.verified": "Verificado con los límites federales de 2026",
+  "cosign.badge.sources": "ED · CFPB · Fed de Filadelfia · PEER Center · AEI",
+
+  "cosign.why.tag": "DISTINCIÓN LEGAL FUNDAMENTAL",
+  "cosign.why.title": "Por qué importa: Un aval es un co-prestatario, no una referencia",
+  "cosign.why.body":
+    "Un aval no es una referencia ni un respaldo, sino un segundo prestatario con exactamente la misma obligación legal. Las reglas para liberarse de esa obligación, o lo que sucede si el estudiante fallece o se declara en bancarrota, dependen completamente de si el préstamo es federal o privado.",
+
+  "cosign.stats.title": "El aval en cifras",
+  "cosign.stat1.val": ">90%",
+  "cosign.stat1.label": "Préstamos privados con aval",
+  "cosign.stat1.sub": "El CFPB determinó que más del 90% de los nuevos préstamos privados contaban con aval hacia 2011",
+  "cosign.stat2.val": "56.8%",
+  "cosign.stat2.label": "Reportó daño en su crédito",
+  "cosign.stat2.sub": "Encuesta de LendEDU de 2017: avales que afirmaron que el préstamo perjudicó su puntaje crediticio",
+  "cosign.stat3.val": "35%",
+  "cosign.stat3.label": "Lamentó haber sido aval",
+  "cosign.stat3.sub": "Avales en la encuesta de LendEDU que se arrepintieron activamente de su decisión",
+  "cosign.stat4.val": "90%",
+  "cosign.stat4.label": "Solicitudes de liberación rechazadas",
+  "cosign.stat4.sub": "El CFPB informó que los prestamistas privados rechazaron el 90% de las solicitudes de liberación de aval",
+  "cosign.stat5.val": "+85%",
+  "cosign.stat5.label": "Aumento proyectado en préstamos privados",
+  "cosign.stat5.sub": "Estimación del experto Mark Kantrowitz sobre el crecimiento de deuda privada con los límites de 2026",
+  "cosign.stat6.val": "Casi 4 de cada 10",
+  "cosign.stat6.label": "Crédito subprime o sin historial",
+  "cosign.stat6.sub": "Estudiantes de posgrado afectados que necesitan un aval para acceder a préstamos privados (Fed de Filadelfia y PEER)",
+
+  "cosign.compare.tag": "MATRIZ COMPARATIVA",
+  "cosign.compare.title": "Cómo difiere el aval según el tipo de préstamo",
+  "cosign.compare.desc":
+    "Las normas para avales dependen enteramente de si el préstamo es federal directo, federal PLUS o privado.",
+  "cosign.compare.col1.title": "Préstamos Federales Directos",
+  "cosign.compare.col1.sub": "Subsidiados y No Subsidiados",
+  "cosign.compare.col2.title": "Préstamos Direct PLUS",
+  "cosign.compare.col2.sub": "Parent PLUS y Grad PLUS previo a 2026",
+  "cosign.compare.col3.title": "Préstamos Privados",
+  "cosign.compare.col3.sub": "Bancos, Cooperativas y Prestamistas en Línea",
+  "cosign.compare.row1.label": "¿Requiere aval?",
+  "cosign.compare.row1.c1": "Nunca. Los estudiantes califican por su cuenta.",
+  "cosign.compare.row1.c2": "Solo si el solicitante principal tiene crédito adverso.",
+  "cosign.compare.row1.c3": "Requerido para más del 90% de solicitantes jóvenes o con poco historial.",
+  "cosign.compare.row2.label": "Criterio de evaluación crediticia",
+  "cosign.compare.row2.c1": "Ninguno. No se revisa el historial crediticio.",
+  "cosign.compare.row2.c2": "Solo verificación de crédito adverso (sin puntaje mínimo; historial en blanco aprueba).",
+  "cosign.compare.row2.c3": "Evaluación estricta de puntaje crediticio e ingresos.",
+  "cosign.compare.row3.label": "Término legal del co-firmante",
+  "cosign.compare.row3.c1": "N/A (No se permite ni requiere aval)",
+  "cosign.compare.row3.c2": "Endosante ('Endorser' en StudentAid.gov)",
+  "cosign.compare.row3.c3": "Aval / Co-firmante ('Cosigner' con responsabilidad solidaria)",
+  "cosign.compare.row4.label": "Impacto en el crédito del aval",
+  "cosign.compare.row4.c1": "Ninguno",
+  "cosign.compare.row4.c2": "Se cobra solo si el prestatario principal incumple o cae en mora",
+  "cosign.compare.row4.c3": "Aparece en el reporte de crédito de inmediato; eleva la relación deuda-ingreso (DTI)",
+  "cosign.compare.row5.label": "Condonación por fallecimiento",
+  "cosign.compare.row5.c1": "Se condona al fallecer el prestatario",
+  "cosign.compare.row5.c2": "Se condona si fallece el padre o el estudiante; la muerte del endosante no cancela la deuda",
+  "cosign.compare.row5.c3": "Liberación obligatoria del aval si fallece el estudiante (préstamos desde el 20/nov/2018)",
+  "cosign.compare.row6.label": "Opción de liberación / salida",
+  "cosign.compare.row6.c1": "N/A",
+  "cosign.compare.row6.c2": "No existe proceso de liberación; el endosante permanece obligado",
+  "cosign.compare.row6.c3": "Liberación condicional tras 12 a 48 meses de pagos puntuales, o refinanciamiento individual",
+
+  "cosign.basic.tag": "BASES FEDERALES",
+  "cosign.basic.title": "La regla básica: los préstamos federales generalmente no usan avales",
+  "cosign.basic.p1":
+    "Los Préstamos Directos Subsidiados y No Subsidiados, los préstamos federales que la mayoría de los estudiantes de pregrado utilizan, no requieren aval y ninguno de los dos verifica el historial crediticio, ya sea para un estudiante de pregrado o posgrado, por lo que un estudiante sin historial califica por sí mismo.",
+  "cosign.basic.p2": "Los únicos préstamos federales que verifican el crédito son los Préstamos Direct PLUS.",
+  "cosign.basic.p3":
+    "La evaluación no se basa en un puntaje crediticio, ya que el Departamento de Educación busca una lista definida de eventos negativos, como una quiebra reciente, embargo, ejecución hipotecaria o morosidades graves, en lugar de clasificar a los solicitantes por puntaje.",
+  "cosign.basic.p4":
+    "No tener historial crediticio no se considera crédito adverso, por lo que un expediente en blanco por sí solo no descalificará a un solicitante de PLUS.",
+  "cosign.basic.p5":
+    "El término federal para un aval es endosante (endorser), y solo se aplica cuando un solicitante de PLUS reprueba la verificación crediticia y decide agregar un endosante en lugar de apelar.",
+
+  "cosign.endorser.tag": "ENDOSANTES FEDERALES",
+  "cosign.endorser.title": "Cómo funciona un endosante federal",
+  "cosign.endorser.li1":
+    "Un endosante debe aceptar pagar el préstamo PLUS si el prestatario no lo hace, no debe tener antecedentes de crédito adverso propios, y debe ser un adulto ciudadano estadounidense o residente permanente.",
+  "cosign.endorser.li2":
+    "El endosante completa un anexo en línea en studentaid.gov, y el prestatario también debe completar el asesoramiento crediticio PLUS antes de que se desembolse el dinero.",
+  "cosign.endorser.li3":
+    "Un estudiante no puede actuar como endosante en el préstamo de sus padres tomado para ese mismo estudiante, lo que descarta el atajo más evidente.",
+  "cosign.endorser.li4":
+    "Los endosantes no reciben todos los beneficios de un prestatario, y un endosante no puede consolidar el préstamo que endosó, lo que limita cómo reestructurarlo más adelante.",
+  "cosign.endorser.li5":
+    "El acuerdo es específico para el préstamo firmado, por lo que un prestatario que necesite otro préstamo PLUS más adelante y vuelva a reprobar la revisión crediticia necesitará un nuevo acuerdo de endosante.",
+  "cosign.endorser.li6":
+    "El riesgo es real: si el prestatario se atrasa, el administrador del préstamo exigirá el pago directamente al endosante.",
+  "cosign.endorser.li7":
+    "Existe una segunda vía que no requiere ningún endosante: apelar la decisión crediticia demostrando que el informe de crédito contiene errores o que circunstancias atenuantes causaron la anotación negativa.",
+  "cosign.endorser.li8":
+    "Si a un padre se le deniega un préstamo Parent PLUS, el estudiante puede solicitar elegibilidad adicional para Préstamos Directos No Subsidiados ese año, lo cual no requiere ningún aval.",
+  "cosign.endorser.who.title": "¿A quién afecta esto realmente?",
+  "cosign.endorser.who.p":
+    "A padres con bancarrotas, ejecuciones hipotecarias o cuentas de cobranza pasadas que desean pedir un préstamo para un hijo, y a estudiantes de posgrado que ya tenían un préstamo Grad PLUS y necesitan continuar endeudándose bajo la cláusula de derechos adquiridos (legacy).",
+
+  "cosign.changes2026.tag": "REFORMA LEGAL DE 2026",
+  "cosign.changes2026.title": "Qué cambió para los préstamos federales PLUS en 2026",
+  "cosign.changes2026.li1":
+    "Desde el 1 de julio de 2026, los préstamos Grad PLUS han sido eliminados para nuevos prestatarios, lo que significa que la vía del endosante para estudiantes de posgrado solo sobrevive para aquellos protegidos por la cláusula de derechos adquiridos.",
+  "cosign.changes2026.li2":
+    "Los préstamos Parent PLUS ahora tienen un tope de $20,000 por estudiante al año y $65,000 por estudiante en total; este límite se aplica por estudiante y no por padre, por lo que dos padres que pidan préstamos para un mismo hijo comparten el mismo techo.",
+  "cosign.changes2026.li3":
+    "Los padres que solicitaron préstamos antes del 1 de julio de 2026 conservan los límites anteriores por hasta tres años más o hasta que termine el programa del estudiante, lo que amortigua el impacto en las familias actuales.",
+  "cosign.changes2026.li4":
+    "Un nuevo préstamo Parent PLUS tomado después de esa fecha solo puede pagarse bajo el plan estándar escalonado, y tomar cualquier nuevo préstamo federal después de esa fecha elimina la elegibilidad de pago basado en ingresos (IDR) de todos los préstamos PLUS del padre, lo que afecta de lleno a cualquier endosante que respalde la deuda.",
+  "cosign.changes2026.li5":
+    "El nuevo endeudamiento federal para posgrados está limitado a $20,500 al año y $100,000 en total, o $50,000 al año y $200,000 en total para programas profesionales designados.",
+
+  "cosign.private.tag": "ENDEUDAMIENTO PRIVADO",
+  "cosign.private.title": "Cómo funciona el aval en préstamos estudiantiles privados",
+  "cosign.private.li1":
+    "Los prestamistas privados evalúan el crédito y los ingresos del estudiante; debido a que la mayoría de los estudiantes tienen historiales delgados y pocos ingresos, el prestamista a menudo aprueba el préstamo únicamente por la solvencia crediticia del aval.",
+  "cosign.private.li2":
+    "El aval es legalmente igual de responsable de la deuda; el préstamo aparece en su informe crediticio y los pagos atrasados del estudiante dañan también el crédito del aval.",
+  "cosign.private.li3":
+    "Un aval también puede reducir la tasa de interés, e incluso un estudiante que califique por su cuenta puede recibir una oferta mucho más favorable si presenta la solicitud con un aval de excelente crédito.",
+  "cosign.private.li4":
+    "Los préstamos privados carecen de la red de seguridad federal, ya que los prestamistas rara vez ofrecen planes de pago según ingresos o condonación, y muchos aplican tasas de interés variables.",
+  "cosign.private.li5":
+    "La deuda con aval puede desplazar otras necesidades de endeudamiento del aval, porque cuenta en su relación deuda-ingreso (DTI) cuando solicita una hipoteca, un préstamo para automóvil o un refinanciamiento.",
+
+  "cosign.release.tag": "CRITERIOS DE SALIDA Y REALIDAD",
+  "cosign.release.title": "Cómo liberar a un aval del préstamo",
+  "cosign.release.p1":
+    "La liberación del aval permite que el prestamista retire al aval después de que el prestatario realice una cantidad determinada de pagos consecutivos a tiempo y califique con su propio crédito e ingresos.",
+  "cosign.release.p2":
+    "La racha de pagos requerida oscila entre 12 y 48 meses según el prestamista: Sallie Mae y SoFi exigen 12 pagos, Navy Federal 24, Citizens 36 y MEFA 48.",
+  "cosign.release.p3":
+    "Los pagos generalmente deben ser de capital e intereses completos; los pagos de solo interés o reducidos durante un plan de dificultades económicas no cuentan para la racha.",
+  "cosign.release.p4":
+    "La liberación es un privilegio, no un derecho legal, y la ley no exige a los prestamistas ofrecerla ni aprobarla.",
+  "cosign.release.p5":
+    "El CFPB informó en 2015 que los prestamistas rechazaron el 90% de las solicitudes de liberación, a menudo porque los prestatarios no cumplían requisitos no revelados previamente, y comprobó que rara vez avisaban a los prestatarios cuando se volvían elegibles.",
+  "cosign.release.p6":
+    "Hacer uso de una prórroga o aplazamiento (forbearance) del prestamista puede impedir permanentemente que el prestatario obtenga la liberación en ciertos préstamos, según el mismo informe.",
+  "cosign.release.p7":
+    "La salida más fiable es refinanciar el préstamo únicamente a nombre del prestatario una vez que sus ingresos y crédito lo permitan, lo que reemplaza el préstamo anterior por completo.",
+  "cosign.release.between":
+    "Entre líneas: La mayoría de los préstamos federales no tienen nada que liberar, ya que no hubo aval desde el inicio; además, las normas para endosantes de PLUS del Departamento de Educación no contemplan ningún proceso de liberación, por lo que un endosante de PLUS debe asumir que seguirá siendo responsable hasta que el préstamo se pague o se condone.",
+
+  "cosign.table.lender": "Prestamista",
+  "cosign.table.streak": "Racha de pagos requerida",
+  "cosign.table.notes": "Requisitos y observaciones",
+  "cosign.table.sallie": "Sallie Mae",
+  "cosign.table.sallie.streak": "12 pagos consecutivos",
+  "cosign.table.sallie.notes": "Capital e intereses completos; el prestatario debe aprobar la evaluación de crédito e ingresos en solitario.",
+  "cosign.table.sofi": "SoFi",
+  "cosign.table.sofi.streak": "12 pagos consecutivos",
+  "cosign.table.sofi.notes": "Pagos completos continuos a tiempo; el prestatario principal debe cumplir los requisitos crediticios.",
+  "cosign.table.navy": "Navy Federal Credit Union",
+  "cosign.table.navy.streak": "24 pagos consecutivos",
+  "cosign.table.navy.notes": "Dos años completos de pagos intachables a tiempo con calificación crediticia independiente.",
+  "cosign.table.citizens": "Citizens Bank",
+  "cosign.table.citizens.streak": "36 pagos consecutivos",
+  "cosign.table.citizens.notes": "Tres años completos de pagos; reevaluación estricta de ingresos y crédito.",
+  "cosign.table.mefa": "MEFA",
+  "cosign.table.mefa.streak": "48 pagos consecutivos",
+  "cosign.table.mefa.notes": "Cuatro años completos de pagos puntuales antes de evaluar la liberación.",
+
+  "cosign.worst.tag": "PROTECCIONES CLAVE Y RIESGOS LEGALES",
+  "cosign.worst.title": "Qué sucede si alguien fallece, entra en mora o se declara en bancarrota",
+  "cosign.worst.li1":
+    "Un préstamo federal se condona cuando el prestatario fallece, y un préstamo Parent PLUS se condona si fallece el padre o el estudiante, pero el fallecimiento del endosante por sí solo no cancela la deuda.",
+  "cosign.worst.li2":
+    "Los prestamistas privados no están obligados a cancelar el préstamo al morir el prestatario (aunque algunos lo hacen); no obstante, para préstamos privados otorgados a partir del 20 de noviembre de 2018, la ley federal exige al prestamista liberar al aval si el estudiante fallece.",
+  "cosign.worst.li3":
+    "Antes de eso, muchos contratos contenían cláusulas de “impago automático” (auto-default) que exigían el reembolso total inmediato si el aval moría o se declaraba en bancarrota aun cuando el préstamo estuviera al día; esa misma ley de 2018 prohíbe declarar el impago únicamente por esa razón en préstamos otorgados desde el 20 de noviembre de 2018.",
+  "cosign.worst.li4":
+    "La legislación fiscal ahora excluye de los ingresos imponibles la deuda estudiantil condonada debido al fallecimiento del prestatario estudiante para condonaciones posteriores al 31 de diciembre de 2025, por lo que el monto perdonado no genera impuestos.",
+  "cosign.worst.li5":
+    "La bancarrota del prestatario no libera al aval, porque la ley federal de quiebras establece que una condonación no beneficia a terceros responsables de la misma deuda, y una solicitud de quiebra puede acelerar el cobro del saldo total contra el aval.",
+  "cosign.worst.li6":
+    "Los contratos más antiguos, firmados antes del 20 de noviembre de 2018, aún pueden activar el impago automático tras la muerte de un aval, por lo que vale la pena leer el pagaré y preguntar anticipadamente sobre opciones de reemplazo o liberación.",
+
+  "cosign.whyMore.tag": "IMPACTO EN EL MERCADO 2026",
+  "cosign.whyMore.title": "Por qué se está pidiendo a más familias que actúen como avales hoy",
+  "cosign.whyMore.li1":
+    "Con la eliminación de Grad PLUS y los límites federales en vigor, las propias restricciones del Departamento de Educación empujan a los estudiantes por encima del tope hacia prestamistas privados; el experto en educación superior Mark Kantrowitz estimó que el volumen de préstamos privados podría aumentar hasta un 85%, casi duplicándose a medida que se implementen los límites.",
+  "cosign.whyMore.li2":
+    "Los prestamistas privados generalmente no cubrirán las necesidades de estudiantes con crédito escaso o deficiente, según un informe de 2026 del American Enterprise Institute, que señaló que Grad PLUS llegaba a prestatarios sin necesidad de avales.",
+  "cosign.whyMore.li3":
+    "Un análisis del Banco de la Reserva Federal de Filadelfia y del PEER Center de la American University determinó que entre los prestatarios de posgrado afectados, casi 4 de cada 10 tienen un puntaje crediticio subprime o carecen de historial, lo que dificulta enormemente obtener un préstamo privado sin un aval.",
+  "cosign.whyMore.li4":
+    "El nuevo tope de Parent PLUS también deja un vacío para familias cuyos costos superan los $65,000 por estudiante, y recurrir al crédito privado para cubrir esa brecha es donde el aval es la norma.",
+
+  "cosign.questions.tag": "LISTA DE VERIFICACIÓN PROTECTORA",
+  "cosign.questions.title": "Preguntas que debes hacer antes de firmar",
+  "cosign.questions.intro":
+    "Verifica cada uno de estos puntos clave antes de aceptar ser aval o endosar una solicitud de préstamo:",
+  "cosign.q1.title": "1. Condiciones de liberación del aval por escrito",
+  "cosign.q1.desc":
+    "Pide por escrito los términos de liberación del aval, incluyendo la cantidad exacta de pagos requeridos, los umbrales de crédito e ingresos, y si el uso de aplazamientos (forbearance) anula la elegibilidad.",
+  "cosign.q2.title": "2. Política de condonación por fallecimiento e incapacidad",
+  "cosign.q2.desc":
+    "Pregunta si el préstamo se cancela por muerte o discapacidad del prestatario, y si el aval queda legalmente liberado si el estudiante fallece.",
+  "cosign.q3.title": "3. Acceso en línea directo para el aval a la cuenta",
+  "cosign.q3.desc":
+    "Exige que el aval tenga acceso digital propio a la cuenta, para que vea cualquier retraso de pago de inmediato en lugar de enterarse por una agencia de cobranzas.",
+  "cosign.q4.title": "4. Agota primero todas las opciones federales",
+  "cosign.q4.desc":
+    "Compara primero con las opciones federales, ya que un préstamo federal no necesita aval, cuenta con sólidas protecciones de pago y condonación, y mantiene intacto el crédito familiar.",
+  "cosign.q5.title": "5. Verifica el tipo de tasa y presupuesta para el peor escenario",
+  "cosign.q5.desc":
+    "Revisa si la tasa es fija o variable y calcula el presupuesto ante subidas de interés, ya que una tasa variable puede aumentar y el aval es quien pagará si el estudiante no puede hacerlo.",
+
+  "cosign.bottom.tag": "CONCLUSIÓN DEFINITIVA",
+  "cosign.bottom.title": "Un aval es un prestatario en toda regla, excepto en el nombre",
+  "cosign.bottom.p":
+    "Un aval en un préstamo privado, o un endosante en un préstamo PLUS, es un prestatario con todas las responsabilidades excepto en el nombre; por ello, la decisión debe basarse en si el aval podría asumir el pago total de la deuda y en si las condiciones de salida del prestamista, y no solo su tasa de interés, están completamente claras antes de firmar nada.",
+
+  "cosign.sources.title": "Fuentes y documentación regulatoria",
+  "cosign.sources.body":
+    "Fuentes: Departamento de Educación de EE. UU., Federal Student Aid y Manual FSA; Oficina para la Protección Financiera del Consumidor (CFPB); Banco de la Reserva Federal de Filadelfia; PEER Center de la American University; American Enterprise Institute; CNBC; oficinas de ayuda financiera de Harvard, Tufts, Washington State University, Northwestern University y University of Texas en Arlington; Experian; SavingForCollege.com; Credible; LendEDU; Edvisors; SoFi; FedLaws; The College Investor.",
+
+  "cosign.bridge.tag": "PRÓXIMOS PASOS Y HERRAMIENTAS",
+  "cosign.bridge.title": "Explora tus opciones antes de firmar",
+  "cosign.bridge.desc":
+    "Antes de comprometer tu crédito o pedirle a un familiar que actúe como aval, calcula tu brecha financiera, busca ayuda gratuita o compara ofertas de ayuda institucional.",
+  "cosign.bridge.btn.chart": "Calcular brecha de fondos",
+  "cosign.bridge.btn.freeMoney": "Guía de dinero gratis primero",
+  "cosign.bridge.btn.aid": "Comparar ofertas de ayuda",
+  "cosign.bridge.btn.resources": "Centro de Recursos Educativos",
 };
 
 export const LANGUAGES = [

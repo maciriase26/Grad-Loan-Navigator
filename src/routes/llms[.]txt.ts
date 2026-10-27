@@ -11,6 +11,7 @@ const LLMS_TXT = `# Grad Navigator
 - [/free-money-first](https://www.graduationnavigator.com/free-money-first): The strategic graduate funding order of operations: assistantships and tuition waivers, fellowships, need-based grants, scholarships, employer aid, FTC scam warning guidance, and verified non-commercial search tools.
 - [/manage-loans](https://www.graduationnavigator.com/manage-loans): Debt management guidance, repayment strategy analysis, income-driven repayment information, and loan consolidation resources.
 - [/educational-resources](https://www.graduationnavigator.com/educational-resources): Explanations of borrowing terminology, loan types, and interest calculations.
+- [/cosigner-hub](https://www.graduationnavigator.com/cosigner-hub): Comprehensive guide to student loan cosigners: federal endorsers vs. private cosigners, 2026 cap changes, CFPB release statistics, auto-default rules, death/bankruptcy discharge protections, and key questions to ask before signing.
 
 ## Articles & Data Analysis
 - [/blog/student-loan-interest-by-the-numbers](https://www.graduationnavigator.com/blog/student-loan-interest-by-the-numbers): Quantitative analysis of federal vs. private loan interest accrual and long-term costs.

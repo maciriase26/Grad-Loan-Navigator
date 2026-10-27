@@ -16,6 +16,8 @@ import { Route as BeforeYouBorrowRouteImport } from './routes/before-you-borrow'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ChartYourPathRouteImport } from './routes/chart-your-path'
 import { Route as CompareAidOffersRouteImport } from './routes/compare-aid-offers'
+import { Route as CosignerHubRouteImport } from './routes/cosigner-hub'
+import { Route as CosigningForStudentLoansRouteImport } from './routes/cosigning-for-student-loans'
 import { Route as EditorialStandardsRouteImport } from './routes/editorial-standards'
 import { Route as EducationalResourcesRouteImport } from './routes/educational-resources'
 import { Route as FreeMoneyFirstRouteImport } from './routes/free-money-first'
@@ -93,6 +95,17 @@ const CompareAidOffersRoute = CompareAidOffersRouteImport.update({
   path: '/compare-aid-offers',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CosignerHubRoute = CosignerHubRouteImport.update({
+  id: '/cosigner-hub',
+  path: '/cosigner-hub',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CosigningForStudentLoansRoute =
+  CosigningForStudentLoansRouteImport.update({
+    id: '/cosigning-for-student-loans',
+    path: '/cosigning-for-student-loans',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const EditorialStandardsRoute = EditorialStandardsRouteImport.update({
   id: '/editorial-standards',
   path: '/editorial-standards',
@@ -326,6 +339,8 @@ export interface FileRoutesByFullPath {
   '/blog': typeof BlogRoute
   '/chart-your-path': typeof ChartYourPathRoute
   '/compare-aid-offers': typeof CompareAidOffersRoute
+  '/cosigner-hub': typeof CosignerHubRoute
+  '/cosigning-for-student-loans': typeof CosigningForStudentLoansRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/educational-resources': typeof EducationalResourcesRoute
   '/free-money-first': typeof FreeMoneyFirstRoute
@@ -376,6 +391,8 @@ export interface FileRoutesByTo {
   '/blog': typeof BlogRoute
   '/chart-your-path': typeof ChartYourPathRoute
   '/compare-aid-offers': typeof CompareAidOffersRoute
+  '/cosigner-hub': typeof CosignerHubRoute
+  '/cosigning-for-student-loans': typeof CosigningForStudentLoansRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/educational-resources': typeof EducationalResourcesRoute
   '/free-money-first': typeof FreeMoneyFirstRoute
@@ -427,6 +444,8 @@ export interface FileRoutesById {
   '/blog': typeof BlogRoute
   '/chart-your-path': typeof ChartYourPathRoute
   '/compare-aid-offers': typeof CompareAidOffersRoute
+  '/cosigner-hub': typeof CosignerHubRoute
+  '/cosigning-for-student-loans': typeof CosigningForStudentLoansRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/educational-resources': typeof EducationalResourcesRoute
   '/free-money-first': typeof FreeMoneyFirstRoute
@@ -479,6 +498,8 @@ export interface FileRouteTypes {
     | '/blog'
     | '/chart-your-path'
     | '/compare-aid-offers'
+    | '/cosigner-hub'
+    | '/cosigning-for-student-loans'
     | '/editorial-standards'
     | '/educational-resources'
     | '/free-money-first'
@@ -529,6 +550,8 @@ export interface FileRouteTypes {
     | '/blog'
     | '/chart-your-path'
     | '/compare-aid-offers'
+    | '/cosigner-hub'
+    | '/cosigning-for-student-loans'
     | '/editorial-standards'
     | '/educational-resources'
     | '/free-money-first'
@@ -579,6 +602,8 @@ export interface FileRouteTypes {
     | '/blog'
     | '/chart-your-path'
     | '/compare-aid-offers'
+    | '/cosigner-hub'
+    | '/cosigning-for-student-loans'
     | '/editorial-standards'
     | '/educational-resources'
     | '/free-money-first'
@@ -630,6 +655,8 @@ export interface RootRouteChildren {
   BlogRoute: typeof BlogRoute
   ChartYourPathRoute: typeof ChartYourPathRoute
   CompareAidOffersRoute: typeof CompareAidOffersRoute
+  CosignerHubRoute: typeof CosignerHubRoute
+  CosigningForStudentLoansRoute: typeof CosigningForStudentLoansRoute
   EditorialStandardsRoute: typeof EditorialStandardsRoute
   EducationalResourcesRoute: typeof EducationalResourcesRoute
   FreeMoneyFirstRoute: typeof FreeMoneyFirstRoute
@@ -722,6 +749,20 @@ declare module '@tanstack/react-router' {
       path: '/compare-aid-offers'
       fullPath: '/compare-aid-offers'
       preLoaderRoute: typeof CompareAidOffersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cosigner-hub': {
+      id: '/cosigner-hub'
+      path: '/cosigner-hub'
+      fullPath: '/cosigner-hub'
+      preLoaderRoute: typeof CosignerHubRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cosigning-for-student-loans': {
+      id: '/cosigning-for-student-loans'
+      path: '/cosigning-for-student-loans'
+      fullPath: '/cosigning-for-student-loans'
+      preLoaderRoute: typeof CosigningForStudentLoansRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/editorial-standards': {
@@ -1022,6 +1063,8 @@ const rootRouteChildren: RootRouteChildren = {
   BlogRoute: BlogRoute,
   ChartYourPathRoute: ChartYourPathRoute,
   CompareAidOffersRoute: CompareAidOffersRoute,
+  CosignerHubRoute: CosignerHubRoute,
+  CosigningForStudentLoansRoute: CosigningForStudentLoansRoute,
   EditorialStandardsRoute: EditorialStandardsRoute,
   EducationalResourcesRoute: EducationalResourcesRoute,
   FreeMoneyFirstRoute: FreeMoneyFirstRoute,

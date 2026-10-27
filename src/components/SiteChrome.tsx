@@ -16,6 +16,7 @@ import {
   BookOpen,
   FileText,
   Scale,
+  Users,
 } from "lucide-react";
 
 function SearchIcon() {
@@ -140,6 +141,13 @@ const NAV_GROUPS: NavGroup[] = [
         titleKey: "nav.dropdown.resources.loans101Title",
         descKey: "nav.dropdown.resources.loans101Desc",
         icon: BookOpen,
+      },
+      {
+        to: "/cosigner-hub",
+        titleKey: "nav.dropdown.resources.cosignerTitle",
+        descKey: "nav.dropdown.resources.cosignerDesc",
+        badgeKey: "nav.dropdown.newBadge",
+        icon: Users,
       },
       {
         to: "/blog",
@@ -564,6 +572,7 @@ export function SiteFooter() {
               </Link>
             </h4>
             <Link to="/educational-resources">{t("footer.learn.resources")}</Link>
+            <Link to="/cosigner-hub">{t("footer.learn.cosigner")}</Link>
           </div>
 
           <div className="foot-col">

@@ -1052,9 +1052,44 @@ export const SEARCH_INDEX: SearchItem[] = [
       "aviso",
     ],
   },
+  {
+    id: "cosigner-hub",
+    category: "resources",
+    titleEn: "Cosigner Hub: Cosigning for Student Loans",
+    titleEs: "Centro de Avales: Firmar como Aval en Préstamos Estudiantiles",
+    descEn:
+      "Complete guide to student loan cosigners: federal endorsers vs. private cosigners, 2026 cap changes, CFPB release data, auto-default rules, and discharge protections.",
+    descEs:
+      "Guía completa sobre avales de préstamos estudiantiles: endosantes federales vs avales privados, cambios de límites 2026, datos de liberación del CFPB y protecciones de impago.",
+    url: "/cosigner-hub",
+    badgeEn: "Educational Guide",
+    badgeEs: "Guía Educativa",
+    keywords: [
+      "cosigner",
+      "cosigning",
+      "cosigner hub",
+      "endorser",
+      "parent plus",
+      "grad plus",
+      "cosigner release",
+      "private loans",
+      "adverse credit",
+      "credit check",
+      "auto default",
+      "bankruptcy",
+      "debt to income",
+      "aval",
+      "avales",
+      "endosante",
+      "liberación de aval",
+      "crédito adverso",
+      "préstamo con aval",
+    ],
+  },
 ];
 
 export const POPULAR_SEARCHES = [
+  { labelEn: "Cosigner Rules & Release", labelEs: "Reglas de Avales y Liberación", query: "cosigner" },
   { labelEn: "Calculate Funding Gap", labelEs: "Calcular Brecha de Fondos", query: "calculator" },
   {
     labelEn: "Refinancing Tradeoffs",
