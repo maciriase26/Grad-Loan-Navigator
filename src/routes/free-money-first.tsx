@@ -63,7 +63,7 @@ function CrossIcon() {
   );
 }
 
-export default function FreeMoneyFirstPage() {
+function FreeMoneyFirstPage() {
   const { t } = useI18n();
 
   return (

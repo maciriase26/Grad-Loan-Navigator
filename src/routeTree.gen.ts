@@ -52,6 +52,8 @@ import { Route as BlogStudentLoansPoliticalBackgroundAndFutureRouteImport } from
 import { Route as BlogTuitionVsInflationWhichHasGrownMoreRouteImport } from './routes/blog_.tuition-vs-inflation-which-has-grown-more'
 import { Route as BlogUniversityOfFloridaTopTierValueRouteImport } from './routes/blog_.university-of-florida-top-tier-value'
 import { Route as BlogValueLawSchoolsRouteImport } from './routes/blog_.value-law-schools'
+import { Route as BlogWhatsHappeningWithPslfRouteImport } from './routes/blog_.whats-happening-with-pslf'
+import { Route as BlogWhatsHappeningWithPublicServiceLoanForgivenessRouteImport } from './routes/blog_.whats-happening-with-public-service-loan-forgiveness'
 import { Route as BlogWhenShouldYouGetAMastersDegreeRouteImport } from './routes/blog_.when-should-you-get-a-masters-degree'
 import { Route as BlogWhenToGetMastersDegreeRouteImport } from './routes/blog_.when-to-get-masters-degree'
 import { Route as BlogWhichLawSchoolsAreWorthItRouteImport } from './routes/blog_.which-law-schools-are-worth-it'
@@ -289,6 +291,18 @@ const BlogValueLawSchoolsRoute = BlogValueLawSchoolsRouteImport.update({
   path: '/blog/value-law-schools',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogWhatsHappeningWithPslfRoute =
+  BlogWhatsHappeningWithPslfRouteImport.update({
+    id: '/blog_/whats-happening-with-pslf',
+    path: '/blog/whats-happening-with-pslf',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogWhatsHappeningWithPublicServiceLoanForgivenessRoute =
+  BlogWhatsHappeningWithPublicServiceLoanForgivenessRouteImport.update({
+    id: '/blog_/whats-happening-with-public-service-loan-forgiveness',
+    path: '/blog/whats-happening-with-public-service-loan-forgiveness',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogWhenShouldYouGetAMastersDegreeRoute =
   BlogWhenShouldYouGetAMastersDegreeRouteImport.update({
     id: '/blog_/when-should-you-get-a-masters-degree',
@@ -375,6 +389,8 @@ export interface FileRoutesByFullPath {
   '/blog/tuition-vs-inflation-which-has-grown-more': typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   '/blog/university-of-florida-top-tier-value': typeof BlogUniversityOfFloridaTopTierValueRoute
   '/blog/value-law-schools': typeof BlogValueLawSchoolsRoute
+  '/blog/whats-happening-with-pslf': typeof BlogWhatsHappeningWithPslfRoute
+  '/blog/whats-happening-with-public-service-loan-forgiveness': typeof BlogWhatsHappeningWithPublicServiceLoanForgivenessRoute
   '/blog/when-should-you-get-a-masters-degree': typeof BlogWhenShouldYouGetAMastersDegreeRoute
   '/blog/when-to-get-masters-degree': typeof BlogWhenToGetMastersDegreeRoute
   '/blog/which-law-schools-are-worth-it': typeof BlogWhichLawSchoolsAreWorthItRoute
@@ -427,6 +443,8 @@ export interface FileRoutesByTo {
   '/blog/tuition-vs-inflation-which-has-grown-more': typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   '/blog/university-of-florida-top-tier-value': typeof BlogUniversityOfFloridaTopTierValueRoute
   '/blog/value-law-schools': typeof BlogValueLawSchoolsRoute
+  '/blog/whats-happening-with-pslf': typeof BlogWhatsHappeningWithPslfRoute
+  '/blog/whats-happening-with-public-service-loan-forgiveness': typeof BlogWhatsHappeningWithPublicServiceLoanForgivenessRoute
   '/blog/when-should-you-get-a-masters-degree': typeof BlogWhenShouldYouGetAMastersDegreeRoute
   '/blog/when-to-get-masters-degree': typeof BlogWhenToGetMastersDegreeRoute
   '/blog/which-law-schools-are-worth-it': typeof BlogWhichLawSchoolsAreWorthItRoute
@@ -480,6 +498,8 @@ export interface FileRoutesById {
   '/blog_/tuition-vs-inflation-which-has-grown-more': typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   '/blog_/university-of-florida-top-tier-value': typeof BlogUniversityOfFloridaTopTierValueRoute
   '/blog_/value-law-schools': typeof BlogValueLawSchoolsRoute
+  '/blog_/whats-happening-with-pslf': typeof BlogWhatsHappeningWithPslfRoute
+  '/blog_/whats-happening-with-public-service-loan-forgiveness': typeof BlogWhatsHappeningWithPublicServiceLoanForgivenessRoute
   '/blog_/when-should-you-get-a-masters-degree': typeof BlogWhenShouldYouGetAMastersDegreeRoute
   '/blog_/when-to-get-masters-degree': typeof BlogWhenToGetMastersDegreeRoute
   '/blog_/which-law-schools-are-worth-it': typeof BlogWhichLawSchoolsAreWorthItRoute
@@ -534,6 +554,8 @@ export interface FileRouteTypes {
     | '/blog/tuition-vs-inflation-which-has-grown-more'
     | '/blog/university-of-florida-top-tier-value'
     | '/blog/value-law-schools'
+    | '/blog/whats-happening-with-pslf'
+    | '/blog/whats-happening-with-public-service-loan-forgiveness'
     | '/blog/when-should-you-get-a-masters-degree'
     | '/blog/when-to-get-masters-degree'
     | '/blog/which-law-schools-are-worth-it'
@@ -586,6 +608,8 @@ export interface FileRouteTypes {
     | '/blog/tuition-vs-inflation-which-has-grown-more'
     | '/blog/university-of-florida-top-tier-value'
     | '/blog/value-law-schools'
+    | '/blog/whats-happening-with-pslf'
+    | '/blog/whats-happening-with-public-service-loan-forgiveness'
     | '/blog/when-should-you-get-a-masters-degree'
     | '/blog/when-to-get-masters-degree'
     | '/blog/which-law-schools-are-worth-it'
@@ -638,6 +662,8 @@ export interface FileRouteTypes {
     | '/blog_/tuition-vs-inflation-which-has-grown-more'
     | '/blog_/university-of-florida-top-tier-value'
     | '/blog_/value-law-schools'
+    | '/blog_/whats-happening-with-pslf'
+    | '/blog_/whats-happening-with-public-service-loan-forgiveness'
     | '/blog_/when-should-you-get-a-masters-degree'
     | '/blog_/when-to-get-masters-degree'
     | '/blog_/which-law-schools-are-worth-it'
@@ -691,6 +717,8 @@ export interface RootRouteChildren {
   BlogTuitionVsInflationWhichHasGrownMoreRoute: typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   BlogUniversityOfFloridaTopTierValueRoute: typeof BlogUniversityOfFloridaTopTierValueRoute
   BlogValueLawSchoolsRoute: typeof BlogValueLawSchoolsRoute
+  BlogWhatsHappeningWithPslfRoute: typeof BlogWhatsHappeningWithPslfRoute
+  BlogWhatsHappeningWithPublicServiceLoanForgivenessRoute: typeof BlogWhatsHappeningWithPublicServiceLoanForgivenessRoute
   BlogWhenShouldYouGetAMastersDegreeRoute: typeof BlogWhenShouldYouGetAMastersDegreeRoute
   BlogWhenToGetMastersDegreeRoute: typeof BlogWhenToGetMastersDegreeRoute
   BlogWhichLawSchoolsAreWorthItRoute: typeof BlogWhichLawSchoolsAreWorthItRoute
@@ -1003,6 +1031,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogValueLawSchoolsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog_/whats-happening-with-pslf': {
+      id: '/blog_/whats-happening-with-pslf'
+      path: '/blog/whats-happening-with-pslf'
+      fullPath: '/blog/whats-happening-with-pslf'
+      preLoaderRoute: typeof BlogWhatsHappeningWithPslfRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog_/whats-happening-with-public-service-loan-forgiveness': {
+      id: '/blog_/whats-happening-with-public-service-loan-forgiveness'
+      path: '/blog/whats-happening-with-public-service-loan-forgiveness'
+      fullPath: '/blog/whats-happening-with-public-service-loan-forgiveness'
+      preLoaderRoute: typeof BlogWhatsHappeningWithPublicServiceLoanForgivenessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog_/when-should-you-get-a-masters-degree': {
       id: '/blog_/when-should-you-get-a-masters-degree'
       path: '/blog/when-should-you-get-a-masters-degree'
@@ -1108,6 +1150,9 @@ const rootRouteChildren: RootRouteChildren = {
   BlogUniversityOfFloridaTopTierValueRoute:
     BlogUniversityOfFloridaTopTierValueRoute,
   BlogValueLawSchoolsRoute: BlogValueLawSchoolsRoute,
+  BlogWhatsHappeningWithPslfRoute: BlogWhatsHappeningWithPslfRoute,
+  BlogWhatsHappeningWithPublicServiceLoanForgivenessRoute:
+    BlogWhatsHappeningWithPublicServiceLoanForgivenessRoute,
   BlogWhenShouldYouGetAMastersDegreeRoute:
     BlogWhenShouldYouGetAMastersDegreeRoute,
   BlogWhenToGetMastersDegreeRoute: BlogWhenToGetMastersDegreeRoute,

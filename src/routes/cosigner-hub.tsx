@@ -39,7 +39,7 @@ export const Route = createFileRoute("/cosigner-hub")({
   component: CosignerHubPage,
 });
 
-export default function CosignerHubPage() {
+function CosignerHubPage() {
   const { t } = useI18n();
 
   // Interactive state for 5 Questions Checklist

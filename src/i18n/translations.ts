@@ -1302,6 +1302,14 @@ export const en = {
   "blog.card19.author": "Jaylen Peng\nReviewed Sept 2026",
   "blog.card19.cta": "Read article",
 
+  /* ---------- What's Happening with PSLF Article (English) ---------- */
+  "blog.card20.tag": "Public Service · 5 min read",
+  "blog.card20.title": "What’s Happening with Public Service Loan Forgiveness (PSLF)?",
+  "blog.card20.excerpt":
+    "Processing delays, payment tracker backlogs, and changing rules are creating uncertainty for public servants. Complete data analysis and status report by Jaylen Peng & Carson Foulke.",
+  "blog.card20.author": "Jaylen Peng & Carson Foulke\nReviewed Oct 2026",
+  "blog.card20.cta": "Read article",
+
   "wmd.meta.title": "When Should You Get a Master’s Degree? | Grad Navigator",
   "wmd.meta.desc":
     "A master's degree can boost long-term career prospects and future earnings. But when is it not worth it? Age, opportunity cost, and payoff analysis by Jaylen Peng.",
@@ -1417,6 +1425,211 @@ export const en = {
   "wmd.major.studentCounseling": "Student counseling",
   "wmd.major.psychology": "Clinical/applied psychology",
   "wmd.major.socialWork": "Social work",
+
+  /* ---------- What's Happening with PSLF Article Full Keys (English) ---------- */
+  "pslf.meta.title": "What’s Happening with Public Service Loan Forgiveness (PSLF)? | Grad Navigator",
+  "pslf.meta.desc":
+    "Processing delays, payment tracker backlogs, and changing rules are creating uncertainty for public servants. Complete data analysis by Jaylen Peng & Carson Foulke.",
+  "pslf.eyebrow": "Public Service Loan Forgiveness · 5 min read",
+  "pslf.h1": "What’s Happening with Public Service Loan Forgiveness (PSLF)?",
+  "pslf.sub":
+    "The Public Service Loan Forgiveness (PSLF) program is a popular student loan forgiveness program created to benefit those working in the public service. However, processing delays, backlogs, and changing rules are blocking relief and creating uncertainty for borrowers.",
+  "pslf.updated": "Jaylen Peng & Carson Foulke Reviewed as of Oct. 24, 2026",
+
+  "pslf.alert.title": "Why it matters",
+  "pslf.alert.p":
+    "Borrowers pursuing forgiveness come from diverse backgrounds but share a common struggle: financial uncertainty driven by delays in PSLF forgiveness. Many agreed to lower-paying public-service careers expecting debt relief after 10 years, but delays have placed retirements and life plans on hold.",
+
+  "pslf.stat.cumulative": "1,197,997",
+  "pslf.stat.cumulative.label": "Cumulative Loans Forgiven (2025)",
+  "pslf.stat.payments": "120 Payments",
+  "pslf.stat.payments.label": "Qualifying Monthly Payments (10 Yrs)",
+  "pslf.stat.delay": "1+ Year",
+  "pslf.stat.delay.label": "Current Buyback & Tracker Delays",
+  "pslf.stat.response": "0 Responses",
+  "pslf.stat.response.label": "Dept. of Education Comment Received",
+
+  "pslf.nav.how": "1. How PSLF Works",
+  "pslf.nav.delays": "2. Delays & Backlogs",
+  "pslf.nav.matters": "3. Why It Matters",
+  "pslf.nav.chart": "4. Cumulative Forgiveness Data",
+  "pslf.nav.why": "5. Why Is This Happening?",
+  "pslf.nav.action": "6. Action Guide & Self-Check",
+  "pslf.nav.bottomline": "7. The Bottom Line",
+
+  "pslf.part1": "Part 1 of 7",
+  "pslf.how.h2": "How Does PSLF Work?",
+  "pslf.how.p1":
+    "Public Service Loan Forgiveness (PSLF) is a federal program that forgives student loans for eligible borrowers. The program was a bipartisan effort to encourage borrowers to take lower-paying but essential public service jobs.",
+  "pslf.how.p2":
+    "To qualify for forgiveness, borrowers must work full time for a government agency, 501(c)(3) nonprofit, or other qualifying organization. They must also have direct federal loans and make 120 qualifying monthly payments (minimum 10 years) on their remaining balance to be discharged. Finally, they must be on an eligible repayment plan.",
+  "pslf.how.p3":
+    "The Department of Education recommends borrowers submit employment certification annually to keep their qualifying payment records up to date. PSLF Buyback programs allow borrowers to buy back periods of nonpayment to reach the 120 qualifying payments requirement.",
+
+  "pslf.req.emp.title": "1. Qualifying Employer",
+  "pslf.req.emp.desc": "Full-time employment at a government agency (federal, state, local, or tribal) or 501(c)(3) non-profit organization.",
+  "pslf.req.loans.title": "2. Direct Federal Loans",
+  "pslf.req.loans.desc": "Direct Subsidized, Unsubsidized, PLUS, or Consolidation loans. Older FFEL or Perkins loans must be consolidated into Direct Loans.",
+  "pslf.req.pmt.title": "3. 120 Monthly Payments",
+  "pslf.req.pmt.desc": "120 separate, full, on-time qualifying monthly payments made under an approved repayment plan while employed in public service.",
+  "pslf.req.plan.title": "4. Eligible Repayment Plan",
+  "pslf.req.plan.desc": "Enrollment in an Income-Driven Repayment (IDR) plan (such as SAVE, PAYE, IBR, or ICR) or the standard 10-year repayment plan.",
+
+  "pslf.how.cert.title": "Annual Employment Certification Form (ECF)",
+  "pslf.how.cert.desc":
+    "FSA strongly recommends submitting an updated PSLF Form annually and each time you change employers. Doing so permanently locks in verified payment counts, preventing surprises years later.",
+
+  "pslf.how.buyback.title": "The PSLF Buyback Opportunity",
+  "pslf.how.buyback.desc":
+    "The Department of Education's buyback initiative lets borrowers with 120 months of certified qualifying public service buy back past months spent in deferment or forbearance, paying what they would have owed under an IDR plan to attain full forgiveness immediately.",
+
+  "pslf.companion.badge": "Companion Piece",
+  "pslf.companion.title": "The Current State of Student Loan Forgiveness",
+  "pslf.companion.desc":
+    "You can learn more about the broader landscape of federal forgiveness programs, court challenges, and repayment relief in Carson Foulke's upcoming companion report.",
+  "pslf.companion.link": "Read our latest student loan guides →",
+
+  "pslf.part2": "Part 2 of 7",
+  "pslf.delays.h2": "What’s Happening with PSLF?",
+  "pslf.delays.lead":
+    "Many are experiencing significant delays, particularly in payment tracking and buyback requests. Borrowers who previously expected processing in days or weeks now face delays of months, and in some cases, over a year.",
+
+  "pslf.tracker.title": "Payment Tracker Delays",
+  "pslf.tracker.desc":
+    "Borrowers pursuing PSLF loan forgiveness rely on tracking software that automatically updates to reflect an accurate count of qualifying monthly payments toward the 120 requirements. Many borrowers report waiting months for their count to update, leaving some to keep making payments even after meeting the forgiveness threshold.",
+
+  "pslf.buyback.title": "PSLF Buyback Backlogs",
+  "pslf.buyback.desc":
+    "Borrowers seeking buyback months, which count toward the 120 months required for forgiveness, face similar delays. Buyback requests often receive little to no communication about their processing status, leaving many borrowers unsure whether they will count.",
+
+  "pslf.delays.table.title": "Processing Timeline Comparison: Expected vs. Current Reality",
+  "pslf.delays.table.colProcess": "FSA Service Request",
+  "pslf.delays.table.colExpected": "Historical Expected Timeline",
+  "pslf.delays.table.colActual": "Current Documented Timeline",
+  "pslf.delays.table.colImpact": "Borrower Impact",
+
+  "pslf.delays.row1.process": "Employment Certification (ECF) Processing",
+  "pslf.delays.row1.expected": "2 to 4 weeks",
+  "pslf.delays.row1.actual": "3 to 6+ months",
+  "pslf.delays.row1.impact": "Delayed payment count audits, servicer sync lag",
+
+  "pslf.delays.row2.process": "PSLF Payment Tracker Updates",
+  "pslf.delays.row2.expected": "Automated monthly sync",
+  "pslf.delays.row2.actual": "Months of stalled counter displays",
+  "pslf.delays.row2.impact": "Borrowers uncertain whether monthly payments count",
+
+  "pslf.delays.row3.process": "PSLF Buyback Adjudication",
+  "pslf.delays.row3.expected": "30 to 60 days",
+  "pslf.delays.row3.actual": "12 to 18+ months (dating to Jan 2025)",
+  "pslf.delays.row3.impact": "Career lock-in, delayed retirements, continued out-of-pocket payments",
+
+  "pslf.part3": "Part 3 of 7",
+  "pslf.matters.h2": "Why It Matters",
+  "pslf.matters.p1":
+    "Borrowers pursuing forgiveness come from diverse backgrounds but share a common struggle: financial uncertainty driven by delays in PSLF forgiveness.",
+  "pslf.matters.p2":
+    "Many PSLF borrowers agreed to take on lower-paying, demanding public-service jobs expecting their remaining student loan balances would be forgiven at the end of the 10-year period. Some viewed this promise as an integral step in their career, allowing them to pivot into higher-paying private-sector jobs without significant student loan debts. However, prolonged delays have complicated those plans, as borrowers are hesitant to leave their public-sector jobs, unsure whether their previous months of service will count toward forgiveness.",
+
+  "pslf.matters.case.tag": "Case Study · Public Service in Limbo",
+  "pslf.matters.case.title": "A 13-Year Public-School Teacher & Mother of Three",
+  "pslf.matters.case.p1":
+    "One public-school teacher of 13 years and mother of three we spoke to says she has been waiting since January 2025 for a decision regarding her buyback request. Despite regularly monitoring her application and reaching out to both the Department of Education and her local Congressperson, she has received very little information.",
+  "pslf.matters.case.quote1": "“I get the same answer every time: that I'll hear when I hear.”",
+  "pslf.matters.case.quote1.attr": "Public-school teacher of 13 years, describing FSA communication",
+  "pslf.matters.case.p2":
+    "She also explained that, as she attended college later in life, she is nearing retirement age. However, uncertainty about her current loan-forgiveness status has put her plans on hold.",
+  "pslf.matters.case.quote2": "“I can’t even think about retiring until this is handled.”",
+  "pslf.matters.case.quote2.attr": "Mother of three approaching retirement age",
+
+  "pslf.matters.trap.title": "The Public Sector Lock-In Dilemma",
+  "pslf.matters.trap.desc":
+    "Public service employees sacrifice higher compensation for stability and debt relief. When buyback decisions take over a year, leaving for a private-sector offer risks forfeiting forgiveness entirely, forcing professionals to turn down life-changing career steps.",
+
+  "pslf.part4": "Part 4 of 7",
+  "pslf.chart.h2": "Reported Federal Student Loans Forgiven, Cumulative",
+  "pslf.chart.lead":
+    "Federal student loan forgiveness remained virtually nonexistent from 2007 through 2020 due to stringent servicer denials. The introduction of the Limited PSLF Waiver and temporary flexibilities in 2021 sparked a dramatic exponential surge, discharging over 1.19 million loans by 2025 before processing bottlenecks took hold.",
+  "pslf.chart.growthNote": "Total loans forgiven grew 1,064% between 2021 and 2025, surging from 102,910 to 1,197,997 before staffing reductions slowed processing.",
+  "pslf.chart.legendLabel": "Reported Federal Student Loans Forgiven, Cumulative",
+  "pslf.chart.source": "Source: Education Data Initiative; U.S. Department of Education, Office of Federal Student Aid.",
+  "pslf.chart.tableToggleShow": "View Cumulative Data Table",
+  "pslf.chart.tableToggleHide": "Hide Data Table",
+  "pslf.chart.colYear": "Year",
+  "pslf.chart.colCumulative": "Cumulative Loans Forgiven",
+  "pslf.chart.colAnnualChange": "Annual Increase",
+  "pslf.chart.colMilestone": "Policy & Implementation Context",
+
+  "pslf.milestone.2018": "First cohort eligible; 99% initial rejection rate under strict rules",
+  "pslf.milestone.2019": "TEPSLF expansion begins modest discharge approvals",
+  "pslf.milestone.2020": "Pandemic payment pause begins with 0% interest; counts continue",
+  "pslf.milestone.2021": "Limited PSLF Waiver announced; eligibility criteria expanded",
+  "pslf.milestone.2022": "Waiver implementation triggers rapid 200% year-over-year jump",
+  "pslf.milestone.2023": "IDR Account Adjustment credit additions; buyback program established",
+  "pslf.milestone.2024": "Major processing milestone: discharges surpass 980,000 cumulative loans",
+  "pslf.milestone.2025": "Approaching 1.2M discharges as processing delays & staffing cuts mount",
+
+  "pslf.part5": "Part 5 of 7",
+  "pslf.why.h2": "Why Is This Happening?",
+  "pslf.why.lead":
+    "The current paralysis is the collision of a historic surge in eligible borrowers and deliberate administrative restructuring, creating a system that cannot keep pace with its mandate.",
+  "pslf.why.biden.tag": "Policy Shift 2021–2024",
+  "pslf.why.biden.title": "Expansion Under the Biden Administration",
+  "pslf.why.biden.desc":
+    "Changes under the Biden administration expanded access to loan forgiveness and led to a surge of applications and relief. The Department of Education expanded eligibility by offering a temporary period in which borrowers could receive credit for payments that previously didn't qualify.",
+  "pslf.why.trump.tag": "Operational Reality 2025–2026",
+  "pslf.why.trump.title": "Struggles and Staffing Cuts Under the Trump Administration",
+  "pslf.why.trump.desc":
+    "The Trump administration has struggled to manage this inherited program amid high application rates and staffing reductions at the Department of Education. These challenges contributed to system glitches, processing delays, and reversals of previously credited qualifying payments. The Department has also made a deliberate effort to curtail relief with new regulations.",
+  "pslf.why.noresponse": "The Department of Education did not respond to our request for comment.",
+
+  "pslf.part6": "Part 6 of 7",
+  "pslf.action.h2": "PSLF Status Diagnostic & Action Guide",
+  "pslf.action.lead":
+    "Select your current situation below to see verified best practices, audit steps, and protections while applications work through the backlog:",
+
+  "pslf.action.tab1": "Payment Tracker Stalled",
+  "pslf.action.tab2": "Waiting on Buyback",
+  "pslf.action.tab3": "Considering Career Change",
+  "pslf.action.tab4": "Overpaid Past 120",
+
+  "pslf.action.tab1.title": "If Your Qualifying Payment Counter Has Not Updated",
+  "pslf.action.tab1.desc": "Tracking software transitions between MOHELA and StudentAid.gov have created synchronization delays for hundreds of thousands of borrowers.",
+  "pslf.action.tab1.step1": "Download your raw 'My Student Aid' data text file from your StudentAid.gov dashboard to verify loan history and repayment status codes.",
+  "pslf.action.tab1.step2": "Maintain written documentation and bank statements proving each monthly payment was withdrawn on schedule.",
+  "pslf.action.tab1.step3": "File an FSA Feedback Case or FSA Ombudsman inquiry with your employer's EIN and signed certification form attached.",
+
+  "pslf.action.tab2.title": "If Your Buyback Application Has Been Pending for Months",
+  "pslf.action.tab2.desc": "Buyback requests are adjudicated manually and face the most severe backlog in the department, with wait times exceeding 12 months.",
+  "pslf.action.tab2.step1": "Confirm you have at least 120 cumulative months of verified qualifying public-service employment certified on file with FSA.",
+  "pslf.action.tab2.step2": "Calculate what your IDR payment would have been during each requested buyback month so you have funds set aside when the buyback agreement arrives.",
+  "pslf.action.tab2.step3": "Do not submit duplicate buyback requests, which can reset your processing queue position; instead, request a case status update via FSA Feedback.",
+
+  "pslf.action.tab3.title": "If You Are Planning to Transition to the Private Sector",
+  "pslf.action.tab3.desc": "The timing of your departure from a qualifying employer is critical to protecting your forgiveness rights.",
+  "pslf.action.tab3.step1": "Under current rules, you must remain employed by a qualifying employer at the time you submit your final PSLF application.",
+  "pslf.action.tab3.step2": "Ensure your employer signs your final PSLF form before your official last day of employment.",
+  "pslf.action.tab3.step3": "If awaiting a buyback decision, consider remaining in qualifying employment until written approval is issued to avoid technical disqualification.",
+
+  "pslf.action.tab4.title": "If You Continued Making Payments Beyond 120",
+  "pslf.action.tab4.desc": "Borrowers who made monthly payments after hitting the 120-payment threshold during processing delays are entitled to refunds.",
+  "pslf.action.tab4.step1": "Direct Loan borrowers automatically receive refunds for payments made past the 120th payment once discharge is finalized.",
+  "pslf.action.tab4.step2": "Confirm your bank direct deposit details are current in your servicer portal to avoid delayed physical check mailings.",
+  "pslf.action.tab4.step3": "Request administrative forbearance while your final forgiveness application is pending if you prefer not to front additional money.",
+
+  "pslf.part7": "Part 7 of 7",
+  "pslf.bottomline.h2": "The Bottom Line",
+  "pslf.bottomline.lead": "A program intended to reward public commitment is currently paralyzing those who answered the call.",
+  "pslf.bottomline.box":
+    "The bottom line: PSLF was intended to incentivize public service through loan forgiveness, but the current system is overwhelmed. Delays and backlogs are creating uncertainty for borrowers who were counting on relief, affecting real people's lives.",
+
+  "pslf.sources.title": "Sources & Investigative References",
+  "pslf.sources.text":
+    "Sources: Federal Student Aid; Student Loan Planner; Brookings Institution; National Association of Student Financial Aid Administrators; American Bar Association; Forbes; NerdWallet; Education Data Initiative; The Washington Post. Reviewed as of Oct. 24, 2026.",
+
+  "pslf.cta.h2": "Plan your borrowing and repayment with precision",
+  "pslf.cta.p":
+    "Whether evaluating graduate school debt or mapping public-service loan strategies, model your exact numbers with our free calculators.",
+  "pslf.cta.btn": "Chart your path",
 
 
   "pol.meta.title": "Student Loans Political Background and Future | Grad Navigator",
@@ -4748,6 +4961,14 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card19.author": "Jaylen Peng\nRevisado Sep 2026",
   "blog.card19.cta": "Leer artículo",
 
+  /* ---------- What's Happening with PSLF Article (Spanish) ---------- */
+  "blog.card20.tag": "Servicio Público · Lectura de 5 min",
+  "blog.card20.title": "¿Qué Está Pasando con la Condonación de Préstamos por Servicio Público (PSLF)?",
+  "blog.card20.excerpt":
+    "Los retrasos en el procesamiento, acumulaciones en el rastreador de pagos y reglas cambiantes generan incertidumbre para los servidores públicos. Análisis de datos y reporte por Jaylen Peng y Carson Foulke.",
+  "blog.card20.author": "Jaylen Peng y Carson Foulke\nRevisado Oct 2026",
+  "blog.card20.cta": "Leer artículo",
+
   "wmd.meta.title": "¿Cuándo Deberías Obtener una Maestría? | Grad Navigator",
   "wmd.meta.desc":
     "Una maestría puede impulsar tus perspectivas profesionales y tus ingresos futuros. ¿Pero cuándo no vale la pena? Análisis de edad, costo de oportunidad y amortización de Jaylen Peng.",
@@ -4863,6 +5084,211 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "wmd.major.studentCounseling": "Orientación estudiantil",
   "wmd.major.psychology": "Psicología clínica/aplicada",
   "wmd.major.socialWork": "Trabajo social",
+
+  /* ---------- What's Happening with PSLF Article Full Keys (Spanish) ---------- */
+  "pslf.meta.title": "¿Qué Está Pasando con la Condonación de Préstamos por Servicio Público (PSLF)? | Grad Navigator",
+  "pslf.meta.desc":
+    "Los retrasos en el procesamiento, acumulaciones de recompras y cambios en las reglas bloquean el alivio para los servidores públicos. Análisis de datos exhaustivo por Jaylen Peng y Carson Foulke.",
+  "pslf.eyebrow": "Condonación de Préstamos por Servicio Público · Lectura de 5 min",
+  "pslf.h1": "¿Qué Está Pasando con la Condonación de Préstamos por Servicio Público (PSLF)?",
+  "pslf.sub":
+    "El programa de Condonación de Préstamos por Servicio Público (PSLF) es un programa popular de condonación de préstamos estudiantiles creado para beneficiar a quienes trabajan en el servicio público. Sin embargo, los retrasos en el procesamiento, las acumulaciones y las reglas cambiantes están bloqueando el alivio y creando incertidumbre para los prestatarios.",
+  "pslf.updated": "Jaylen Peng y Carson Foulke Revisado al 24 de oct, 2026",
+
+  "pslf.alert.title": "Por qué es importante",
+  "pslf.alert.p":
+    "Los prestatarios que buscan la condonación provienen de diversos orígenes pero comparten una lucha común: la incertidumbre financiera provocada por las demoras en la condonación de PSLF. Muchos aceptaron emprender carreras de servicio público con salarios más bajos esperando el alivio de su deuda después de 10 años, pero los retrasos han paralizado sus planes de vida y jubilación.",
+
+  "pslf.stat.cumulative": "1,197,997",
+  "pslf.stat.cumulative.label": "Préstamos Condonados Acumulados (2025)",
+  "pslf.stat.payments": "120 Pagos",
+  "pslf.stat.payments.label": "Pagos Mensuales Calificados (10 Años)",
+  "pslf.stat.delay": "1+ Año",
+  "pslf.stat.delay.label": "Retrasos Actuales en Recompras y Conteo",
+  "pslf.stat.response": "0 Respuestas",
+  "pslf.stat.response.label": "Comentarios Recibidos del Dpto. de Educación",
+
+  "pslf.nav.how": "1. Cómo Funciona el PSLF",
+  "pslf.nav.delays": "2. Retrasos y Acumulaciones",
+  "pslf.nav.matters": "3. Impacto en los Prestatarios",
+  "pslf.nav.chart": "4. Datos de Condonación Acumulada",
+  "pslf.nav.why": "5. ¿Por Qué Está Ocurriendo?",
+  "pslf.nav.action": "6. Guía de Acción y Diagnóstico",
+  "pslf.nav.bottomline": "7. Conclusión",
+
+  "pslf.part1": "Parte 1 de 7",
+  "pslf.how.h2": "¿Cómo Funciona el PSLF?",
+  "pslf.how.p1":
+    "La Condonación de Préstamos por Servicio Público (PSLF) es un programa federal que condona préstamos estudiantiles a prestatarios elegibles. El programa fue una iniciativa bipartidista para incentivar a los prestatarios a asumir empleos esenciales pero con salarios más bajos en el servicio público.",
+  "pslf.how.p2":
+    "Para calificar para la condonación, los prestatarios deben trabajar a tiempo completo para una agencia gubernamental, una organización sin fines de lucro 501(c)(3) u otra organización calificada. También deben tener préstamos federales directos y realizar 120 pagos mensuales calificados (un mínimo de 10 años) para que se cancele su saldo restante. Por último, deben estar en un plan de pago elegible.",
+  "pslf.how.p3":
+    "El Departamento de Educación recomienda a los prestatarios presentar una certificación de empleo anualmente para mantener actualizados sus registros de pagos calificados. Los programas de Recompra de PSLF permiten a los prestatarios recomprar períodos de no pago para alcanzar el requisito de 120 pagos calificados.",
+
+  "pslf.req.emp.title": "1. Empleador Calificado",
+  "pslf.req.emp.desc": "Empleo a tiempo completo en una agencia gubernamental (federal, estatal, local o tribal) o una organización sin fines de lucro 501(c)(3).",
+  "pslf.req.loans.title": "2. Préstamos Federales Directos",
+  "pslf.req.loans.desc": "Préstamos Directos Subsidiados, No Subsidiados, PLUS o de Consolidación. Los préstamos antiguos FFEL o Perkins deben consolidarse en Préstamos Directos.",
+  "pslf.req.pmt.title": "3. 120 Pagos Mensuales",
+  "pslf.req.pmt.desc": "120 pagos mensuales calificados, separados, completos y puntuales bajo un plan de pago aprobado mientras se trabaja en el servicio público.",
+  "pslf.req.plan.title": "4. Plan de Pago Elegible",
+  "pslf.req.plan.desc": "Inscripción en un plan de pago basado en los ingresos (IDR) (como SAVE, PAYE, IBR o ICR) o en el plan de pago estándar a 10 años.",
+
+  "pslf.how.cert.title": "Formulario Anual de Certificación de Empleo (ECF)",
+  "pslf.how.cert.desc":
+    "FSA recomienda encarecidamente presentar un Formulario PSLF actualizado cada año y cada vez que cambies de empleador. Hacerlo certifica de manera permanente los pagos completados, evitando sorpresas años después.",
+
+  "pslf.how.buyback.title": "La Oportunidad de Recompra de PSLF",
+  "pslf.how.buyback.desc":
+    "La iniciativa de recompra del Departamento de Educación permite a los prestatarios con 120 meses de servicio público calificado certificado recomprar meses pasados en aplazamiento o indulgencia, pagando lo que habrían adeudado bajo un plan IDR para lograr la condonación total inmediata.",
+
+  "pslf.companion.badge": "Artículo Complementario",
+  "pslf.companion.title": "El Estado Actual de la Condonación de Préstamos Estudiantiles",
+  "pslf.companion.desc":
+    "Puedes obtener más información sobre el panorama general de los programas de condonación federal, disputas judiciales y alivio de pagos en el próximo informe complementario de Carson Foulke.",
+  "pslf.companion.link": "Lee nuestras guías de préstamos estudiantiles →",
+
+  "pslf.part2": "Parte 2 de 7",
+  "pslf.delays.h2": "¿Qué Está Pasando con el PSLF?",
+  "pslf.delays.lead":
+    "Muchos están experimentando demoras significativas, particularmente en el seguimiento de pagos y en las solicitudes de recompra. Prestatarios que antes esperaban procesamiento en días o semanas ahora enfrentan retrasos de meses y, en algunos casos, de más de un año.",
+
+  "pslf.tracker.title": "Retrasos en el Rastreador de Pagos",
+  "pslf.tracker.desc":
+    "Los prestatarios que buscan la condonación de préstamos mediante PSLF dependen del software de seguimiento que se actualiza automáticamente para reflejar un conteo exacto de los pagos mensuales calificados hacia los 120 requeridos. Muchos prestatarios reportan esperar meses para que su conteo se actualice, lo que lleva a algunos a seguir haciendo pagos incluso después de alcanzar el umbral de condonación.",
+
+  "pslf.buyback.title": "Acumulaciones en Recompras de PSLF",
+  "pslf.buyback.desc":
+    "Los prestatarios que solicitan meses de recompra, que cuentan hacia los 120 meses requeridos para la condonación, enfrentan retrasos similares. Las solicitudes de recompra a menudo reciben poca o ninguna comunicación sobre su estado de procesamiento, dejando a muchos prestatarios sin saber si serán contabilizados.",
+
+  "pslf.delays.table.title": "Comparativa de Tiempos de Procesamiento: Esperado vs. Realidad Actual",
+  "pslf.delays.table.colProcess": "Solicitud ante FSA",
+  "pslf.delays.table.colExpected": "Tiempo Histórico Esperado",
+  "pslf.delays.table.colActual": "Tiempo Real Documentado",
+  "pslf.delays.table.colImpact": "Impacto en el Prestatario",
+
+  "pslf.delays.row1.process": "Procesamiento de Certificación de Empleo (ECF)",
+  "pslf.delays.row1.expected": "2 a 4 semanas",
+  "pslf.delays.row1.actual": "3 a más de 6 meses",
+  "pslf.delays.row1.impact": "Auditorías de conteo de pagos demoradas, desincronización con administradores",
+
+  "pslf.delays.row2.process": "Actualizaciones del Rastreador de Pagos PSLF",
+  "pslf.delays.row2.expected": "Sincronización mensual automática",
+  "pslf.delays.row2.actual": "Meses con el contador congelado",
+  "pslf.delays.row2.impact": "Prestatarios con incertidumbre de si sus pagos mensuales cuentan",
+
+  "pslf.delays.row3.process": "Adjudicación de Recompras de PSLF",
+  "pslf.delays.row3.expected": "30 a 60 días",
+  "pslf.delays.row3.actual": "12 a más de 18 meses (esperando desde enero 2025)",
+  "pslf.delays.row3.impact": "Atrapados en sus puestos, jubilaciones pospuestas, pagos de bolsillo continuos",
+
+  "pslf.part3": "Parte 3 de 7",
+  "pslf.matters.h2": "Por Qué Es Importante",
+  "pslf.matters.p1":
+    "Los prestatarios que buscan la condonación provienen de diversos orígenes pero comparten una lucha común: la incertidumbre financiera provocada por las demoras en la condonación de PSLF.",
+  "pslf.matters.p2":
+    "Muchos prestatarios de PSLF aceptaron empleos demandantes y peor remunerados en el servicio público con la expectativa de que el saldo restante de sus préstamos fuera condonado al cabo del período de 10 años. Algunos vieron esta promesa como un paso integral en sus carreras, permitiéndoles pasar a trabajos mejor pagados en el sector privado sin deudas estudiantiles considerables. Sin embargo, los retrasos prolongados han complicado esos planes, ya que los prestatarios dudan en dejar sus empleos del sector público por la incertidumbre de si sus meses de servicio contarán para la condonación.",
+
+  "pslf.matters.case.tag": "Estudio de Caso · Servicio Público en el Limbo",
+  "pslf.matters.case.title": "Maestra de Escuela Pública con 13 Años de Servicio y Madre de Tres Hijos",
+  "pslf.matters.case.p1":
+    "Una maestra de escuela pública con 13 años de experiencia y madre de tres hijos con quien hablamos afirma que ha estado esperando desde enero de 2025 una decisión respecto a su solicitud de recompra. A pesar de monitorear periódicamente su solicitud y comunicarse tanto con el Departamento de Educación como con su congresista local, ha recibido muy poca información.",
+  "pslf.matters.case.quote1": "“Recibo la misma respuesta cada vez: que me enteraré cuando me entere.”",
+  "pslf.matters.case.quote1.attr": "Maestra de escuela pública con 13 años de servicio, sobre las respuestas de FSA",
+  "pslf.matters.case.p2":
+    "También explicó que, como asistió a la universidad más tarde en su vida, se está acercando a la edad de jubilación. Sin embargo, la incertidumbre sobre el estado actual de la condonación de su préstamo ha puesto sus planes en pausa.",
+  "pslf.matters.case.quote2": "“Ni siquiera puedo pensar en jubilarme hasta que esto se resuelva.”",
+  "pslf.matters.case.quote2.attr": "Madre de tres hijos acercándose a la edad de jubilación",
+
+  "pslf.matters.trap.title": "El Dilema del Atrapamiento en el Sector Público",
+  "pslf.matters.trap.desc":
+    "Los empleados del servicio público sacrifican salarios más altos a cambio de estabilidad y condonación de deuda. Cuando las resoluciones de recompra tardan más de un año, marcharse a una oferta privada conlleva el riesgo de perder la condonación por completo, forzándolos a rechazar oportunidades profesionales decisivas.",
+
+  "pslf.part4": "Parte 4 de 7",
+  "pslf.chart.h2": "Préstamos Estudiantiles Federales Condonados Reportados, Acumulado",
+  "pslf.chart.lead":
+    "La condonación de préstamos estudiantiles federales permaneció prácticamente estancada desde 2007 hasta 2020 debido a los rechazos rigurosos de los administradores. La llegada de la Exención Limitada de PSLF y las flexibilidades temporales en 2021 detonó un crecimiento exponencial que superó los 1.19 millones de préstamos condonados para 2025 antes de que los atascos operativos frenaran el avance.",
+  "pslf.chart.growthNote": "El total de préstamos condonados creció un 1,064% entre 2021 y 2025, pasando de 102,910 a 1,197,997 antes de que las reducciones de personal ralentizaran las aprobaciones.",
+  "pslf.chart.legendLabel": "Préstamos Estudiantiles Federales Condonados Reportados, Acumulado",
+  "pslf.chart.source": "Fuente: Education Data Initiative; Departamento de Educación de EE. UU., Oficina de Ayuda Federal para Estudiantes.",
+  "pslf.chart.tableToggleShow": "Ver Tabla de Datos Acumulados",
+  "pslf.chart.tableToggleHide": "Ocultar Tabla de Datos",
+  "pslf.chart.colYear": "Año",
+  "pslf.chart.colCumulative": "Préstamos Condonados Acumulados",
+  "pslf.chart.colAnnualChange": "Incremento Anual",
+  "pslf.chart.colMilestone": "Contexto Político e Histórico",
+
+  "pslf.milestone.2018": "Primera cohorte elegible; 99% de rechazo inicial bajo regulaciones estrictas",
+  "pslf.milestone.2019": "Expansión TEPSLF inicia modestas aprobaciones de condonación",
+  "pslf.milestone.2020": "Pausa pandémica al 0% de interés; los meses cuentan para el requisito",
+  "pslf.milestone.2021": "Anuncio de la Exención Limitada de PSLF; flexibilización de criterios",
+  "pslf.milestone.2022": "Implementación de exenciones genera un salto interanual del 200%",
+  "pslf.milestone.2023": "Ajustes de cuentas IDR y creación formal del programa de recompra",
+  "pslf.milestone.2024": "Hito histórico: las condonaciones superan los 980,000 préstamos acumulados",
+  "pslf.milestone.2025": "Se alcanza casi 1.2M de préstamos antes de los recortes de personal y retrasos",
+
+  "pslf.part5": "Parte 5 de 7",
+  "pslf.why.h2": "¿Por Qué Está Ocurriendo?",
+  "pslf.why.lead":
+    "La parálisis actual es el resultado del choque entre un número histórico de prestatarios elegibles y reestructuraciones administrativas deliberadas, creando un sistema incapaz de responder a su mandato legal.",
+  "pslf.why.biden.tag": "Cambio Político 2021–2024",
+  "pslf.why.biden.title": "Expansión Bajo la Administración Biden",
+  "pslf.why.biden.desc":
+    "Los cambios bajo la administración Biden ampliaron el acceso a la condonación de préstamos y provocaron una oleada de solicitudes y alivio. El Departamento de Educación amplió la elegibilidad al ofrecer un período temporal en el que los prestatarios podían recibir crédito por pagos que antes no calificaban.",
+  "pslf.why.trump.tag": "Realidad Operativa 2025–2026",
+  "pslf.why.trump.title": "Dificultades y Reducciones de Personal Bajo la Administración Trump",
+  "pslf.why.trump.desc":
+    "La administración Trump ha tenido dificultades para gestionar este programa heredado en medio de altas tasas de solicitudes y reducciones de personal en el Departamento de Educación. Estos desafíos contribuyeron a fallas en el sistema, retrasos en el procesamiento y reversiones de pagos calificados previamente acreditados. El Departamento también ha hecho un esfuerzo deliberado para restringir el alivio con nuevas regulaciones.",
+  "pslf.why.noresponse": "El Departamento de Educación no respondió a nuestra solicitud de comentarios.",
+
+  "pslf.part6": "Parte 6 de 7",
+  "pslf.action.h2": "Diagnóstico de Estado de PSLF y Guía de Acción",
+  "pslf.action.lead":
+    "Selecciona tu situación actual a continuación para ver prácticas verificadas, pasos de auditoría y medidas de protección mientras las solicitudes atraviesan la acumulación:",
+
+  "pslf.action.tab1": "Contador Congelado",
+  "pslf.action.tab2": "Esperando Recompra",
+  "pslf.action.tab3": "Pensando Cambiar de Empleo",
+  "pslf.action.tab4": "Pagos Superiores a 120",
+
+  "pslf.action.tab1.title": "Si Tu Contador de Pagos Calificados No Se Ha Actualizado",
+  "pslf.action.tab1.desc": "Las transiciones de software de seguimiento entre MOHELA y StudentAid.gov generaron desfases de sincronización para cientos de miles de prestatarios.",
+  "pslf.action.tab1.step1": "Descarga tu archivo de texto de datos sin procesar 'My Student Aid' en tu panel de StudentAid.gov para corroborar el historial de préstamos y códigos de estado.",
+  "pslf.action.tab1.step2": "Conserva estados de cuenta bancarios y comprobantes escritos que demuestren que cada pago mensual se debitó puntualmente.",
+  "pslf.action.tab1.step3": "Presenta un caso formal en FSA Feedback o ante el Defensor del Pueblo de FSA (Ombudsman) adjuntando el EIN de tu empleador y el formulario firmado.",
+
+  "pslf.action.tab2.title": "Si Tu Solicitud de Recompra Lleva Meses Pendiente",
+  "pslf.action.tab2.desc": "Las solicitudes de recompra se adjudican manualmente y sufren el cuello de botella más grave del departamento, superando los 12 meses de espera.",
+  "pslf.action.tab2.step1": "Confirma que tienes al menos 120 meses acumulados de empleo público calificado debidamente certificados y archivados en FSA.",
+  "pslf.action.tab2.step2": "Calcula cuánto habría sido tu pago mensual bajo un plan IDR durante cada mes solicitado para apartar esos fondos cuando llegue el acuerdo de recompra.",
+  "pslf.action.tab2.step3": "No envíes solicitudes duplicadas de recompra, ya que pueden reiniciar tu posición en la lista; en su lugar, solicita una actualización de estado mediante FSA Feedback.",
+
+  "pslf.action.tab3.title": "Si Planeas Cambiarte al Sector Privado",
+  "pslf.action.tab3.desc": "El momento exacto de tu salida de un empleador calificado es crucial para resguardar tus derechos de condonación.",
+  "pslf.action.tab3.step1": "Bajo las reglas vigentes, debes permanecer empleado en un empleador calificado en el momento en que presentas tu solicitud definitiva de PSLF.",
+  "pslf.action.tab3.step2": "Asegúrate de que tu empleador firme tu formulario final de PSLF antes de tu último día oficial de empleo.",
+  "pslf.action.tab3.step3": "Si estás esperando una decisión de recompra, considera permanecer en el empleo calificado hasta recibir la confirmación por escrito para evitar descalificaciones técnicas.",
+
+  "pslf.action.tab4.title": "Si Continuaste Pagando Más Allá del Pago 120",
+  "pslf.action.tab4.desc": "Los prestatarios que realizaron pagos mensuales después de alcanzar el umbral de 120 pagos debido a las demoras tienen derecho a reembolsos.",
+  "pslf.action.tab4.step1": "Los prestatarios con Préstamos Directos reciben automáticamente reembolsos por los pagos realizados después del pago 120 una vez liquidada la condonación.",
+  "pslf.action.tab4.step2": "Verifica que tus datos bancarios para depósito directo estén actualizados en el portal de tu administrador para evitar demoras con cheques postales.",
+  "pslf.action.tab4.step3": "Solicita una indulgencia administrativa mientras tu solicitud final de condonación esté en trámite si prefieres no adelantar dinero extra.",
+
+  "pslf.part7": "Parte 7 de 7",
+  "pslf.bottomline.h2": "Conclusión",
+  "pslf.bottomline.lead": "Un programa diseñado para recompensar el servicio a la comunidad mantiene en vilo a quienes respondieron al llamado.",
+  "pslf.bottomline.box":
+    "La conclusión: el PSLF fue creado para incentivar el servicio público mediante la condonación de préstamos, pero el sistema actual está desbordado. Los retrasos y las acumulaciones están creando incertidumbre para los prestatarios que contaban con el alivio, afectando vidas reales.",
+
+  "pslf.sources.title": "Fuentes y Referencias de Investigación",
+  "pslf.sources.text":
+    "Fuentes: Ayuda Federal para Estudiantes; Student Loan Planner; Brookings Institution; Asociación Nacional de Administradores de Ayuda Financiera Estudiantil; American Bar Association; Forbes; NerdWallet; Education Data Initiative; The Washington Post. Revisado al 24 de oct, 2026.",
+
+  "pslf.cta.h2": "Planifica tu endeudamiento y pago con total precisión",
+  "pslf.cta.p":
+    "Ya sea que estés evaluando deuda de posgrado o estructurando estrategias de servicio público, modela tus cifras exactas con nuestras calculadoras gratuitas.",
+  "pslf.cta.btn": "Traza tu camino",
   "alt.anim.chartYourPath": "Estudiante sosteniendo una brújula de bolsillo avanzando por un camino guiado hacia una cúpula universitaria",
   "alt.anim.freeMoneyFirst": "Estudiante usando una lupa para encontrar becas y dinero gratis",
   "alt.anim.understandLoans": "Estudiante leyendo una guía junto a una señalización",

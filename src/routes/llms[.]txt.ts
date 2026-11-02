@@ -30,6 +30,7 @@ const LLMS_TXT = `# Grad Navigator
 - [/blog/ohio-state-national-leader-graduate-study](https://www.graduationnavigator.com/blog/ohio-state-national-leader-graduate-study): The Ohio State University spotlight analyzing 289 graduate degrees, $1.68B in research expenditures, Moritz Law and Pharmacy rankings, and Graduate Associateships.
 - [/blog/student-loan-interest-rates-history](https://www.graduationnavigator.com/blog/student-loan-interest-rates-history): A 60-year history of federal student loan interest rates: flat statutory rates in 1965, variable Direct Loans in 1992, the 2013 Certainty Act formula, pandemic 0% freeze, and 2026–27 rates.
 - [/blog/when-to-get-masters-degree](https://www.graduationnavigator.com/blog/when-to-get-masters-degree): Analysis of master's degree payoff timelines by starting age across 10 fields of study, tuition vs. forgone wage opportunity costs, and career timing trade-offs.
+- [/blog/whats-happening-with-pslf](https://www.graduationnavigator.com/blog/whats-happening-with-pslf): Analysis of Public Service Loan Forgiveness (PSLF) processing delays, buyback backlogs, 2018–2025 cumulative loan forgiveness surge data, and public servant career impacts by Jaylen Peng & Carson Foulke.
 `;
 
 export const Route = createFileRoute("/llms.txt")({
