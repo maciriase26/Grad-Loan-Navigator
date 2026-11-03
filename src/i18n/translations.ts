@@ -1306,8 +1306,8 @@ export const en = {
   "blog.card20.tag": "Public Service · 5 min read",
   "blog.card20.title": "What’s Happening with Public Service Loan Forgiveness (PSLF)?",
   "blog.card20.excerpt":
-    "Processing delays, payment tracker backlogs, and changing rules are creating uncertainty for public servants. Complete data analysis and status report by Jaylen Peng & Peter Foulk.",
-  "blog.card20.author": "Jaylen Peng & Peter Foulk\nReviewed Oct 2026",
+    "Processing delays, payment tracker backlogs, and changing rules are creating uncertainty for public servants. Complete data analysis and status report by Jaylen Peng & Peter Foulke.",
+  "blog.card20.author": "Jaylen Peng & Peter Foulke\nReviewed Oct 2026",
   "blog.card20.cta": "Read article",
 
   "wmd.meta.title": "When Should You Get a Master’s Degree? | Grad Navigator",
@@ -1429,12 +1429,12 @@ export const en = {
   /* ---------- What's Happening with PSLF Article Full Keys (English) ---------- */
   "pslf.meta.title": "What’s Happening with Public Service Loan Forgiveness (PSLF)? | Grad Navigator",
   "pslf.meta.desc":
-    "Processing delays, payment tracker backlogs, and changing rules are creating uncertainty for public servants. Complete data analysis by Jaylen Peng & Peter Foulk.",
+    "Processing delays, payment tracker backlogs, and changing rules are creating uncertainty for public servants. Complete data analysis by Jaylen Peng & Peter Foulke.",
   "pslf.eyebrow": "Public Service Loan Forgiveness · 5 min read",
   "pslf.h1": "What’s Happening with Public Service Loan Forgiveness (PSLF)?",
   "pslf.sub":
     "The Public Service Loan Forgiveness (PSLF) program is a popular student loan forgiveness program created to benefit those working in the public service. However, processing delays, backlogs, and changing rules are blocking relief and creating uncertainty for borrowers.",
-  "pslf.updated": "Jaylen Peng & Peter Foulk Reviewed as of Oct. 24, 2026",
+  "pslf.updated": "Jaylen Peng & Peter Foulke Reviewed as of Oct. 24, 2026",
 
   "pslf.alert.title": "Why it matters",
   "pslf.alert.p":
@@ -1486,7 +1486,7 @@ export const en = {
   "pslf.companion.badge": "Companion Piece",
   "pslf.companion.title": "The Current State of Student Loan Forgiveness",
   "pslf.companion.desc":
-    "You can learn more about the broader landscape of federal forgiveness programs, court challenges, and repayment relief in Peter Foulk's upcoming companion report.",
+    "You can learn more about the broader landscape of federal forgiveness programs, court challenges, and repayment relief in Peter Foulke's upcoming companion report.",
   "pslf.companion.link": "Read our latest student loan guides →",
 
   "pslf.part2": "Part 2 of 7",
@@ -4965,8 +4965,8 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "blog.card20.tag": "Servicio Público · Lectura de 5 min",
   "blog.card20.title": "¿Qué Está Pasando con la Condonación de Préstamos por Servicio Público (PSLF)?",
   "blog.card20.excerpt":
-    "Los retrasos en el procesamiento, acumulaciones en el rastreador de pagos y reglas cambiantes generan incertidumbre para los servidores públicos. Análisis de datos y reporte por Jaylen Peng y Peter Foulk.",
-  "blog.card20.author": "Jaylen Peng y Peter Foulk\nRevisado Oct 2026",
+    "Los retrasos en el procesamiento, acumulaciones en el rastreador de pagos y reglas cambiantes generan incertidumbre para los servidores públicos. Análisis de datos y reporte por Jaylen Peng y Peter Foulke.",
+  "blog.card20.author": "Jaylen Peng y Peter Foulke\nRevisado Oct 2026",
   "blog.card20.cta": "Leer artículo",
 
   "wmd.meta.title": "¿Cuándo Deberías Obtener una Maestría? | Grad Navigator",
@@ -5088,12 +5088,12 @@ export const es: Partial<Record<TranslationKey, string>> = {
   /* ---------- What's Happening with PSLF Article Full Keys (Spanish) ---------- */
   "pslf.meta.title": "¿Qué Está Pasando con la Condonación de Préstamos por Servicio Público (PSLF)? | Grad Navigator",
   "pslf.meta.desc":
-    "Los retrasos en el procesamiento, acumulaciones de recompras y cambios en las reglas bloquean el alivio para los servidores públicos. Análisis de datos exhaustivo por Jaylen Peng y Peter Foulk.",
+    "Los retrasos en el procesamiento, acumulaciones de recompras y cambios en las reglas bloquean el alivio para los servidores públicos. Análisis de datos exhaustivo por Jaylen Peng y Peter Foulke.",
   "pslf.eyebrow": "Condonación de Préstamos por Servicio Público · Lectura de 5 min",
   "pslf.h1": "¿Qué Está Pasando con la Condonación de Préstamos por Servicio Público (PSLF)?",
   "pslf.sub":
     "El programa de Condonación de Préstamos por Servicio Público (PSLF) es un programa popular de condonación de préstamos estudiantiles creado para beneficiar a quienes trabajan en el servicio público. Sin embargo, los retrasos en el procesamiento, las acumulaciones y las reglas cambiantes están bloqueando el alivio y creando incertidumbre para los prestatarios.",
-  "pslf.updated": "Jaylen Peng y Peter Foulk Revisado al 24 de oct, 2026",
+  "pslf.updated": "Jaylen Peng y Peter Foulke Revisado al 24 de oct, 2026",
 
   "pslf.alert.title": "Por qué es importante",
   "pslf.alert.p":
@@ -5145,7 +5145,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "pslf.companion.badge": "Artículo Complementario",
   "pslf.companion.title": "El Estado Actual de la Condonación de Préstamos Estudiantiles",
   "pslf.companion.desc":
-    "Puedes obtener más información sobre el panorama general de los programas de condonación federal, disputas judiciales y alivio de pagos en el próximo informe complementario de Peter Foulk.",
+    "Puedes obtener más información sobre el panorama general de los programas de condonación federal, disputas judiciales y alivio de pagos en el próximo informe complementario de Peter Foulke.",
   "pslf.companion.link": "Lee nuestras guías de préstamos estudiantiles →",
 
   "pslf.part2": "Parte 2 de 7",

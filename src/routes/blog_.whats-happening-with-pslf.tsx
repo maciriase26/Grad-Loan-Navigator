@@ -7,7 +7,7 @@ import type { TranslationKey } from "@/i18n/translations";
 
 const TITLE = "What’s Happening with Public Service Loan Forgiveness (PSLF)? | Grad Navigator";
 const DESCRIPTION =
-  "Processing delays, payment tracker backlogs, and changing rules are creating uncertainty for public servants. Complete data analysis by Jaylen Peng & Peter Foulk.";
+  "Processing delays, payment tracker backlogs, and changing rules are creating uncertainty for public servants. Complete data analysis by Jaylen Peng & Peter Foulke.";
 const URL = "https://www.graduationnavigator.com/blog/whats-happening-with-pslf";
 
 export const Route = createFileRoute("/blog_/whats-happening-with-pslf")({
@@ -38,7 +38,7 @@ export const Route = createFileRoute("/blog_/whats-happening-with-pslf")({
             },
             {
               "@type": "Person",
-              name: "Peter Foulk",
+              name: "Peter Foulke",
             },
           ],
           publisher: {
