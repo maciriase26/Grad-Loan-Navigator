@@ -854,9 +854,9 @@ export const SEARCH_INDEX: SearchItem[] = [
     titleEn: "What’s Happening with Public Service Loan Forgiveness (PSLF)?",
     titleEs: "¿Qué Está Pasando con la Condonación de Préstamos por Servicio Público (PSLF)?",
     descEn:
-      "Processing delays, payment tracker backlogs, and shifting rules are blocking relief for public servants. Complete data analysis by Jaylen Peng & Carson Foulke.",
+      "Processing delays, payment tracker backlogs, and shifting rules are blocking relief for public servants. Complete data analysis by Jaylen Peng & Peter Foulk.",
     descEs:
-      "Los retrasos en el procesamiento, acumulaciones en el rastreador de pagos y reglas cambiantes bloquean el alivio para servidores públicos. Análisis de datos por Jaylen Peng y Carson Foulke.",
+      "Los retrasos en el procesamiento, acumulaciones en el rastreador de pagos y reglas cambiantes bloquean el alivio para servidores públicos. Análisis de datos por Jaylen Peng y Peter Foulk.",
     url: "/blog/whats-happening-with-pslf",
     badgeEn: "5 min read",
     badgeEs: "5 min lectura",
@@ -870,7 +870,7 @@ export const SEARCH_INDEX: SearchItem[] = [
       "pslf buyback",
       "payment tracker delays",
       "jaylen peng",
-      "carson foulke",
+      "peter foulk",
       "120 payments",
       "studentaid.gov pslf tracker",
       "mohela pslf delay",
