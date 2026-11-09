@@ -155,19 +155,22 @@ function Index() {
 
       <main>
         <section className="hero wrap">
-          <svg className="hero-deco" viewBox="0 0 320 220" fill="none" aria-hidden="true">
+          <svg className="hero-deco" viewBox="0 0 540 420" fill="none" aria-hidden="true">
             <path
-              d="M14 18 C 90 10, 120 70, 90 110 S 40 170, 110 178 S 240 150, 230 90 S 300 40, 296 8"
+              d="M 18 30 C 125 18, 165 95, 118 158 S 55 245, 138 262 S 275 235, 255 155 S 335 78, 395 150 S 360 325, 445 315 S 515 190, 502 22"
               stroke="var(--gold)"
-              strokeWidth="2"
-              strokeDasharray="1 9"
+              strokeWidth="2.8"
+              strokeDasharray="1.5 11"
               strokeLinecap="round"
             />
-            <circle cx="14" cy="18" r="5" fill="var(--gold)" />
-            <circle cx="90" cy="110" r="4" fill="var(--ink)" opacity="0.35" />
-            <circle cx="110" cy="178" r="4" fill="var(--ink)" opacity="0.35" />
-            <circle cx="296" cy="8" r="6" fill="var(--gold)" />
-            <circle cx="296" cy="8" r="10" stroke="var(--gold)" strokeWidth="1.4" opacity="0.5" />
+            <circle cx="18" cy="30" r="6.5" fill="var(--gold)" />
+            <circle cx="118" cy="158" r="5" fill="var(--ink)" opacity="0.35" />
+            <circle cx="138" cy="262" r="5" fill="var(--ink)" opacity="0.35" />
+            <circle cx="255" cy="155" r="5" fill="var(--ink)" opacity="0.35" />
+            <circle cx="395" cy="150" r="5" fill="var(--ink)" opacity="0.35" />
+            <circle cx="445" cy="315" r="5" fill="var(--ink)" opacity="0.35" />
+            <circle cx="502" cy="22" r="8" fill="var(--gold)" />
+            <circle cx="502" cy="22" r="14" stroke="var(--gold)" strokeWidth="1.8" opacity="0.5" />
           </svg>
 
           <div className="eyebrow">{t("home.eyebrow")}</div>

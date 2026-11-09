@@ -578,18 +578,18 @@
   position: absolute;
   top: 6px;
   right: 0;
-  width: 220px;
+  width: clamp(340px, 38vw, 440px);
   height: auto;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.9;
+  opacity: 0.92;
 }
 .hero-deco path {
-  animation: decoDraw 6s linear infinite;
+  animation: decoDraw 8s linear infinite;
 }
 @keyframes decoDraw {
   to {
-    stroke-dashoffset: -200;
+    stroke-dashoffset: -250;
   }
 }
 @media (max-width: 900px) {
