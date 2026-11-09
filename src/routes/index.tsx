@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { ChatWidget } from "@/components/chat/ChatWidget";
-import { CompassMark, SiteFooter, SiteHeader } from "@/components/SiteChrome";
+import { CompassMark, SiteFooter, SiteHeader, TopRouteDeco } from "@/components/SiteChrome";
 
 import { useI18n } from "@/i18n";
 
@@ -155,23 +155,7 @@ function Index() {
 
       <main>
         <section className="hero wrap">
-          <svg className="hero-deco" viewBox="0 0 540 420" fill="none" aria-hidden="true">
-            <path
-              d="M 18 30 C 125 18, 165 95, 118 158 S 55 245, 138 262 S 275 235, 255 155 S 335 78, 395 150 S 360 325, 445 315 S 515 190, 502 22"
-              stroke="var(--gold)"
-              strokeWidth="2.8"
-              strokeDasharray="1.5 11"
-              strokeLinecap="round"
-            />
-            <circle cx="18" cy="30" r="6.5" fill="var(--gold)" />
-            <circle cx="118" cy="158" r="5" fill="var(--ink)" opacity="0.35" />
-            <circle cx="138" cy="262" r="5" fill="var(--ink)" opacity="0.35" />
-            <circle cx="255" cy="155" r="5" fill="var(--ink)" opacity="0.35" />
-            <circle cx="395" cy="150" r="5" fill="var(--ink)" opacity="0.35" />
-            <circle cx="445" cy="315" r="5" fill="var(--ink)" opacity="0.35" />
-            <circle cx="502" cy="22" r="8" fill="var(--gold)" />
-            <circle cx="502" cy="22" r="14" stroke="var(--gold)" strokeWidth="1.8" opacity="0.5" />
-          </svg>
+          <TopRouteDeco variant="hero" />
 
           <div className="eyebrow">{t("home.eyebrow")}</div>
           <h1>

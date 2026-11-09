@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
+import { SiteFooter, SiteHeader, TopRouteDeco } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
@@ -52,6 +52,7 @@ function BlogPage() {
 
       <main>
         <section className="wrap resources-banner">
+          <TopRouteDeco variant="banner" />
           <div className="eyebrow">{t("blog.eyebrow")}</div>
           <h1>{t("blog.h1")}</h1>
           <p className="sub">{t("blog.sub")}</p>

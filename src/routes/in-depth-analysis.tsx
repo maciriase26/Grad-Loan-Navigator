@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
+import { SiteFooter, SiteHeader, TopRouteDeco } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
@@ -74,6 +74,7 @@ function InDepthAnalysis() {
       <main>
         {/* Banner Section */}
         <section className="wrap resources-banner">
+          <TopRouteDeco variant="banner" />
           <div className="eyebrow">{t("depth.eyebrow")}</div>
           <h1>{t("depth.h1")}</h1>
           <p className="sub">{t("depth.sub")}</p>

@@ -602,3 +602,85 @@ export function SiteFooter() {
     </footer>
   );
 }
+
+/**
+ * Full-width decorative dotted route trail across the top of a hero or banner section.
+ * All variants keep the top horizontal stretch strictly in the upper padding band (above the eyebrow/title)
+ * and only loop downward in the empty side margins so the line never crosses or covers any text.
+ */
+/**
+ * Decorative winding map-path trail across the top of a hero or banner section.
+ * Built with explicit C1-continuous cubic Bezier tangents at every waypoint so there are
+ * zero sharp kinks, deep sweeping curves across the entire width, and waypoint circles
+ * that sit dead-center on the smooth path.
+ */
+export function TopRouteDeco({ variant = "banner" }: { variant?: "hero" | "banner" | "doc" }) {
+  if (variant === "hero") {
+    return (
+      <svg className="hero-deco" viewBox="0 0 1120 360" fill="none" aria-hidden="true">
+        <path
+          d="M 24 64 C 95 6, 175 6, 235 42 C 295 78, 365 82, 435 42 C 505 2, 585 6, 655 44 C 725 82, 805 78, 865 36 C 925 -6, 985 45, 928 118 C 871 191, 865 258, 938 268 C 1011 278, 1068 205, 1028 134 C 988 63, 1062 48, 1094 20"
+          stroke="var(--gold)"
+          strokeWidth="2.4"
+          strokeDasharray="1.5 10.5"
+          strokeLinecap="round"
+        />
+        <circle cx="24" cy="64" r="5.5" fill="var(--gold)" />
+        <circle cx="235" cy="42" r="4" fill="var(--ink)" opacity="0.35" />
+        <circle cx="435" cy="42" r="4" fill="var(--ink)" opacity="0.35" />
+        <circle cx="655" cy="44" r="4" fill="var(--ink)" opacity="0.35" />
+        <circle cx="865" cy="36" r="4" fill="var(--ink)" opacity="0.35" />
+        <circle cx="928" cy="118" r="4.5" fill="var(--ink)" opacity="0.35" />
+        <circle cx="938" cy="268" r="4.5" fill="var(--ink)" opacity="0.35" />
+        <circle cx="1028" cy="134" r="4.5" fill="var(--ink)" opacity="0.35" />
+        <circle cx="1094" cy="20" r="7" fill="var(--gold)" />
+        <circle cx="1094" cy="20" r="12.5" stroke="var(--gold)" strokeWidth="1.6" opacity="0.5" />
+      </svg>
+    );
+  }
+
+  if (variant === "doc") {
+    return (
+      <svg className="banner-route-deco banner-route-deco-doc" viewBox="0 0 920 220" fill="none" aria-hidden="true">
+        <path
+          d="M 18 58 C 75 6, 145 6, 198 38 C 251 70, 315 74, 375 38 C 435 2, 505 6, 565 40 C 625 74, 695 70, 748 34 C 801 -2, 848 52, 792 112 C 736 172, 795 202, 852 162 C 909 122, 878 58, 900 20"
+          stroke="var(--gold)"
+          strokeWidth="2.2"
+          strokeDasharray="1.5 10"
+          strokeLinecap="round"
+        />
+        <circle cx="18" cy="58" r="5" fill="var(--gold)" />
+        <circle cx="198" cy="38" r="3.8" fill="var(--ink)" opacity="0.35" />
+        <circle cx="375" cy="38" r="3.8" fill="var(--ink)" opacity="0.35" />
+        <circle cx="565" cy="40" r="4" fill="var(--ink)" opacity="0.35" />
+        <circle cx="748" cy="34" r="4" fill="var(--ink)" opacity="0.35" />
+        <circle cx="792" cy="112" r="4" fill="var(--ink)" opacity="0.35" />
+        <circle cx="852" cy="162" r="4" fill="var(--ink)" opacity="0.35" />
+        <circle cx="900" cy="20" r="6" fill="var(--gold)" />
+        <circle cx="900" cy="20" r="11" stroke="var(--gold)" strokeWidth="1.5" opacity="0.5" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg className="banner-route-deco" viewBox="0 0 1120 260" fill="none" aria-hidden="true">
+      <path
+        d="M 22 222 C 2 158, 72 132, 46 76 C 20 20, 125 4, 215 36 C 305 68, 375 72, 455 34 C 535 -4, 615 -4, 695 34 C 775 72, 845 68, 925 32 C 1005 -4, 1094 42, 1054 114 C 1014 186, 1048 228, 1084 176 C 1120 124, 1078 62, 1098 20"
+        stroke="var(--gold)"
+        strokeWidth="2.3"
+        strokeDasharray="1.5 10.5"
+        strokeLinecap="round"
+      />
+      <circle cx="22" cy="222" r="5.5" fill="var(--gold)" />
+      <circle cx="46" cy="76" r="4" fill="var(--ink)" opacity="0.35" />
+      <circle cx="215" cy="36" r="4" fill="var(--ink)" opacity="0.35" />
+      <circle cx="455" cy="34" r="4" fill="var(--ink)" opacity="0.35" />
+      <circle cx="695" cy="34" r="4" fill="var(--ink)" opacity="0.35" />
+      <circle cx="925" cy="32" r="4" fill="var(--ink)" opacity="0.35" />
+      <circle cx="1054" cy="114" r="4.2" fill="var(--ink)" opacity="0.35" />
+      <circle cx="1084" cy="176" r="4.2" fill="var(--ink)" opacity="0.35" />
+      <circle cx="1098" cy="20" r="6.5" fill="var(--gold)" />
+      <circle cx="1098" cy="20" r="12" stroke="var(--gold)" strokeWidth="1.6" opacity="0.5" />
+    </svg>
+  );
+}

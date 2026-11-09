@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
+import { SiteFooter, SiteHeader, TopRouteDeco } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
@@ -51,6 +51,7 @@ function ManageLoansPage() {
 
       <main>
         <section className="wrap resources-banner">
+          <TopRouteDeco variant="banner" />
           <div className="eyebrow">{t("manage.eyebrow")}</div>
           <h1>{t("manage.h1")}</h1>
           <p className="sub">{t("manage.sub")}</p>

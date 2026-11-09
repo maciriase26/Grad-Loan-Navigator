@@ -571,20 +571,22 @@
 
 /* ---------- HERO ---------- */
 .hero {
-  padding-block: clamp(48px, 9vw, 88px) 64px;
+  padding-block: clamp(72px, 10vw, 104px) 64px;
   position: relative;
 }
 .hero-deco {
   position: absolute;
   top: 6px;
+  left: 0;
   right: 0;
-  width: clamp(340px, 38vw, 440px);
+  width: 100%;
   height: auto;
   z-index: 0;
   pointer-events: none;
   opacity: 0.92;
 }
-.hero-deco path {
+.hero-deco path,
+.banner-route-deco path {
   animation: decoDraw 8s linear infinite;
 }
 @keyframes decoDraw {
@@ -593,9 +595,24 @@
   }
 }
 @media (max-width: 900px) {
-  .hero-deco {
+  .hero-deco,
+  .banner-route-deco {
     display: none;
   }
+}
+.banner-route-deco {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.9;
+}
+.banner-route-deco-doc {
+  top: 4px;
 }
 .eyebrow {
   position: relative;
@@ -1942,8 +1959,15 @@ a.article-card {
 /* ---- Editorial standards & disclosure policy ---- */
 .doc-hero {
   max-width: 920px;
-  padding-block: clamp(32px, 5vw, 56px) 36px;
+  padding-block: clamp(72px, 8vw, 92px) 36px;
   border-bottom: 1px solid var(--line);
+  position: relative;
+}
+.doc-hero h1,
+.doc-hero .sub,
+.doc-hero .updated {
+  position: relative;
+  z-index: 1;
 }
 .doc-hero h1 {
   font-family: var(--font-display);
@@ -2222,16 +2246,23 @@ a.article-card {
 
 /* ---------- Educational Resources ---------- */
 .resources-banner {
-  padding: 56px 0 46px;
+  padding: 96px 0 48px;
   text-align: center;
   border-bottom: 1px solid var(--line);
+  position: relative;
+}
+.resources-banner h1,
+.resources-banner .sub {
+  position: relative;
+  z-index: 1;
 }
 .resources-banner h1 {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(32px, 5vw, 46px);
   letter-spacing: -0.01em;
-  margin: 0 0 14px;
+  max-width: 780px;
+  margin: 0 auto 14px;
 }
 .resources-banner .sub {
   font-size: 16px;

@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
+import { SiteFooter, SiteHeader, TopRouteDeco } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 import { openContactDialog } from "@/components/contact/ContactDialog";
@@ -33,6 +33,7 @@ function EditorialStandards() {
 
       <main>
         <section className="wrap doc-hero">
+          <TopRouteDeco variant="doc" />
           <div className="eyebrow">{t("ed.eyebrow")}</div>
           <h1>{t("ed.h1")}</h1>
           <p className="sub">{t("ed.sub")}</p>

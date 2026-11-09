@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
+import { SiteFooter, SiteHeader, TopRouteDeco } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { useI18n } from "@/i18n";
 
@@ -53,6 +53,7 @@ function PayForSchoolPage() {
       <main>
         {/* Banner Section */}
         <section className="wrap resources-banner">
+          <TopRouteDeco variant="banner" />
           <div className="eyebrow">{t("pfs.eyebrow")}</div>
           <h1>{t("pfs.h1")}</h1>
           <p className="sub">{t("pfs.sub")}</p>
