@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="t"><title id="t">Animated: umbrella keeping a savings stack dry in the rain</title><style>
+*{transform-box:view-box}
+@keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes wave{0%,100%{transform:scaleX(1) skewY(0deg)}25%{transform:scaleX(.82) skewY(4deg)}50%{transform:scaleX(1) skewY(-2deg)}75%{transform:scaleX(.9) skewY(3deg)}}
+@keyframes march{to{stroke-dashoffset:-72}}
+@keyframes twinkle{0%,100%{transform:scale(0);opacity:0}20%{transform:scale(1);opacity:1}40%{transform:scale(0);opacity:0}}
+@keyframes pulse{0%,70%,100%{transform:scale(1)}80%{transform:scale(1.18)}90%{transform:scale(.96)}}
+@keyframes spin{0%,40%,100%{transform:scaleX(1)}55%{transform:scaleX(.08)}70%{transform:scaleX(1)}}
+@keyframes sweep{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(6deg)}}
+@keyframes needle{0%,100%{transform:rotate(-26deg)}50%{transform:rotate(26deg)}}
+@keyframes swing{0%,100%{transform:rotate(0)}30%{transform:rotate(2.5deg)}70%{transform:rotate(-2.5deg)}}
+@keyframes flip{0%{transform:scaleX(1);opacity:0}10%,40%{transform:scaleX(1);opacity:1}65%,88%{transform:scaleX(-1);opacity:1}100%{transform:scaleX(-1);opacity:0}}
+@keyframes jump{0%,50%,100%{transform:translateY(0)}20%{transform:translateY(-30px)}35%{transform:translateY(-6px)}}
+@keyframes fall{0%{transform:translateY(-60px) rotate(0deg);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translateY(150px) rotate(320deg);opacity:0}}
+@keyframes bounce{0%,60%,100%{transform:translateY(0)}75%{transform:translateY(-10px)}}
+.sway{animation:sway 3s ease-in-out infinite}
+.bob{animation:bob 3s ease-in-out infinite}
+.wave{animation:wave 2s ease-in-out infinite}
+.march{animation:march 1.5s linear infinite}
+.twinkle{animation:twinkle 2s ease-in-out infinite}
+.pulse{animation:pulse 3s ease-in-out infinite}
+.spin{animation:spin 3s ease-in-out infinite}
+.sweep{animation:sweep 3s ease-in-out infinite}
+.needle{animation:needle 3s ease-in-out infinite}
+.swing{animation:swing 3s ease-in-out infinite}
+.flip{animation:flip 2s ease-in-out infinite}
+.jump{animation:jump 1.5s cubic-bezier(.3,0,.3,1) infinite}
+.fall{animation:fall 3s linear infinite}
+.bounce{animation:bounce 2s ease-in-out infinite}
+
+@keyframes fly{0%{transform:translate(0,0) scale(.4);opacity:0}12%{opacity:1}70%{transform:translate(130px,-115px) scale(1);opacity:1}82%,100%{transform:translate(150px,-132px) scale(1);opacity:0}}
+@keyframes tick{to{transform:rotate(360deg)}}
+@keyframes grow{0%,15%{transform:scale(0);opacity:0}30%,85%{transform:scale(1);opacity:1}100%{transform:scale(1);opacity:0}}
+@keyframes drop{0%{transform:translateY(0);opacity:0}10%{opacity:1}45%{transform:translateY(78px);opacity:1}52%,100%{transform:translateY(84px);opacity:0}}
+@keyframes thump{0%,45%,70%,100%{transform:translateY(0) scale(1)}52%{transform:translateY(4px) scale(1.03,.96)}60%{transform:translateY(-6px) scale(1)}}
+@keyframes draw{0%{stroke-dashoffset:220;opacity:1}40%,85%{stroke-dashoffset:0;opacity:1}95%,100%{stroke-dashoffset:0;opacity:0}}
+@keyframes write{0%{transform:translate(-110px,0)}40%,100%{transform:translate(0,0)}}
+.fly{animation:fly 3s ease-in-out infinite}
+.tick{animation:tick 6s linear infinite}
+.tickh{animation:tick 6s linear infinite;animation-duration:6s}
+.grow{animation:grow 3s ease-out infinite}
+.drop{animation:drop 2s cubic-bezier(.5,0,.8,.6) infinite}
+.thump{animation:thump 2s ease-out infinite}
+.draw{animation:draw 3s ease-in-out infinite}
+
+@keyframes rain{0%{transform:translateY(-40px);opacity:0}15%{opacity:.9}80%{opacity:.9}100%{transform:translateY(90px);opacity:0}}
+@keyframes rise{0%{transform:translateY(20px);opacity:0}25%,80%{transform:translateY(0);opacity:1}100%{transform:translateY(-6px);opacity:0}}
+.rain{animation:rain 1.5s linear infinite}
+.rise{animation:rise 3s ease-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><path d="M130 520 C100 390 190 230 370 200 C540 172 700 230 710 370 C718 480 640 552 500 562 C350 572 160 600 130 520Z" fill="#DDF3EA" /><ellipse cx="560" cy="520" rx="40" ry="12" fill="#F2B33D"/><ellipse cx="560" cy="505" rx="40" ry="12" fill="#E7A633"/><ellipse cx="560" cy="490" rx="40" ry="12" fill="#F2B33D"/><ellipse cx="560" cy="475" rx="40" ry="12" fill="#E7A633"/><ellipse cx="560" cy="460" rx="40" ry="12" fill="#F2B33D"/><ellipse cx="640" cy="524" rx="34" ry="11" fill="#E7A633"/><ellipse cx="640" cy="509" rx="34" ry="11" fill="#F2B33D"/><ellipse cx="640" cy="494" rx="34" ry="11" fill="#E7A633"/><g class="sway" style="transform-origin:565px 450px;"><path d="M440 300 C450 200 680 200 690 300 C670 284 650 284 627 300 C605 284 585 284 565 300 C545 284 525 284 503 300 C482 284 462 284 440 300Z" fill="#0E9F6E" /><path d="M565 300 C560 240 580 214 565 214 C550 214 570 240 565 300Z" fill="#0B7A55" /><path d="M565 214 L565 200" fill="none" stroke="#16233F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M565 300 L565 450 L548 466 L536 452" fill="none" stroke="#16233F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g><g class="rain" style="transform-origin:420px 130px;"><path d="M420 130 C415 140 415 146 420 146 C425 146 425 140 420 130Z" fill="#3A5486" opacity=".7"/></g><g class="rain" style="transform-origin:470px 160px;animation-delay:-0.19s;"><path d="M470 160 C465 170 465 176 470 176 C475 176 475 170 470 160Z" fill="#3A5486" opacity=".7"/></g><g class="rain" style="transform-origin:520px 190px;animation-delay:-0.38s;"><path d="M520 190 C515 200 515 206 520 206 C525 206 525 200 520 190Z" fill="#3A5486" opacity=".7"/></g><g class="rain" style="transform-origin:610px 130px;animation-delay:-0.5700000000000001s;"><path d="M610 130 C605 140 605 146 610 146 C615 146 615 140 610 130Z" fill="#3A5486" opacity=".7"/></g><g class="rain" style="transform-origin:660px 160px;animation-delay:-0.76s;"><path d="M660 160 C655 170 655 176 660 176 C665 176 665 170 660 160Z" fill="#3A5486" opacity=".7"/></g><g class="rain" style="transform-origin:710px 190px;animation-delay:-0.95s;"><path d="M710 190 C705 200 705 206 710 206 C715 206 715 200 710 190Z" fill="#3A5486" opacity=".7"/></g><g class="rain" style="transform-origin:450px 130px;animation-delay:-1.1400000000000001s;"><path d="M450 130 C445 140 445 146 450 146 C455 146 455 140 450 130Z" fill="#3A5486" opacity=".7"/></g><g class="rain" style="transform-origin:690px 160px;animation-delay:-1.33s;"><path d="M690 160 C685 170 685 176 690 176 C695 176 695 170 690 160Z" fill="#3A5486" opacity=".7"/></g><g class="bob" style="transform-origin:230px 520px;"><path d="M230 374 L210 452 L202 520" fill="none" stroke="#7F8AA3" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="212" cy="528" rx="22" ry="12" fill="#16233F"/><path d="M230 261 L196 314 L204 360" fill="none" stroke="#C68862" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><rect x="184" y="269" width="40" height="78" rx="16" fill="#0E9F6E"/><path d="M230 275 L230 366" fill="none" stroke="#24365E" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/><path d="M228 372 L232 376" fill="none" stroke="#A9B4C8" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/><path d="M230 374 L256 452 L264 520" fill="none" stroke="#A9B4C8" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="274" cy="528" rx="22" ry="12" fill="#16233F"/><path d="M224 263 L226 307" fill="none" stroke="#0E9F6E" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M230 261 L272 320 L318 318" fill="none" stroke="#C68862" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><path d="M230 261 L230 248" fill="none" stroke="#C68862" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><circle cx="230" cy="228" r="27" fill="#C68862"/><path d="M202 230 C200 202 224 192 242 198 C256 202 260 214 258 220 C240 214 224 216 216 232Z" fill="#1E1A1A" transform="translate(0,0) scale(1,1)"/><circle cx="242" cy="230" r="3" fill="#16233F"/><path d="M236 241 Q244 247 250 240" fill="none" stroke="#16233F" stroke-width="3" stroke-linecap="round"/></g><g class="twinkle" style="transform-origin:330px 180px;animation-delay:-0.5s;"><path d="M330 171 Q330 180 339 180 Q330 180 330 189 Q330 180 321 180 Q330 180 330 171Z" fill="#F2B33D" /></g><g class="twinkle" style="transform-origin:740px 480px;animation-delay:-1.3s;"><path d="M740 472 Q740 480 748 480 Q740 480 740 488 Q740 480 732 480 Q740 480 740 472Z" fill="#5CC79E" /></g><g class="sway" style="transform-origin:127.9px 548px;"><path d="M127.9 548 C105.4 523.35 113.4 506.095 119.4 498.7 C127.4 508.56 133.4 525.815 127.9 548Z" fill="#0B7A55" /></g><g class="sway" style="transform-origin:143.2px 548px;animation-delay:-0.4s;"><path d="M143.2 548 C125.79999999999998 514.85 133.79999999999998 491.645 139.79999999999998 481.7 C147.79999999999998 494.96 153.79999999999998 518.165 143.2 548Z" fill="#0E9F6E" /></g><g class="sway" style="transform-origin:158.5px 548px;animation-delay:-0.8s;"><path d="M158.5 548 C149.6 520.8 157.6 501.76 163.6 493.6 C171.6 504.48 177.6 523.52 158.5 548Z" fill="#5CC79E" /></g><g class="sway" style="transform-origin:172.1px 548px;animation-delay:-1.2000000000000002s;"><path d="M172.1 548 C168.29999999999998 528.45 176.29999999999998 514.765 182.29999999999998 508.9 C190.29999999999998 516.72 196.29999999999998 530.405 172.1 548Z" fill="#3A5486" /></g></svg>

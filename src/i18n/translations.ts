@@ -2512,6 +2512,11 @@ export const en = {
   "alt.anim.understandLoans": "Student reading a guide next to a signpost",
   "alt.anim.compareOffers": "Student with a compass choosing between two paths",
   "alt.anim.planComplete": "Graduate celebrating on the summit next to a completed checklist",
+  "alt.anim.assistantship": "Graduate assistant teaching at a whiteboard while coins fill a jar",
+  "alt.anim.emergencyFund": "Umbrella keeping a savings stack dry in the rain",
+  "alt.anim.publicService": "Public service worker checking off monthly payments on a calendar",
+  "alt.anim.refinance": "Student on a phone as a new, lower interest rate tag appears",
+  "alt.anim.scholarshipSearch": "Student searching a board of scholarships with a magnifying glass",
 
   /* ---------- privacy policy ---------- */
   "privacy.eyebrow": "Transparency & Privacy",
@@ -5344,6 +5349,11 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "alt.anim.understandLoans": "Estudiante leyendo una guía junto a una señalización",
   "alt.anim.compareOffers": "Estudiante con una brújula eligiendo entre dos caminos",
   "alt.anim.planComplete": "Graduado celebrando en la cumbre junto a una lista de verificación completada",
+  "alt.anim.assistantship": "Asistente de posgrado enseñando frente a una pizarra mientras monedas llenan un frasco",
+  "alt.anim.emergencyFund": "Paraguas manteniendo seca una pila de ahorros bajo la lluvia",
+  "alt.anim.publicService": "Trabajador de servicio público marcando pagos mensuales en un calendario",
+  "alt.anim.refinance": "Estudiante con un teléfono mientras aparece una etiqueta con una tasa de interés más baja",
+  "alt.anim.scholarshipSearch": "Estudiante buscando en un tablero de becas con una lupa",
 
   /* ---------- privacy policy (Spanish) ---------- */
   "privacy.eyebrow": "Transparencia y Privacidad",
