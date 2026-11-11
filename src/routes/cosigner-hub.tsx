@@ -456,9 +456,21 @@ function CosignerHubPage() {
 
         {/* Section: Death, Defaults, and Bankruptcy */}
         <section className="wrap cosign-section">
-          <div className="cosign-section-header">
-            <span className="cosign-section-tag">{t("cosign.worst.tag")}</span>
-            <h2>{t("cosign.worst.title")}</h2>
+          <div className="cosign-section-header gn-section-flex">
+            <div className="gn-section-text">
+              <span className="cosign-section-tag">{t("cosign.worst.tag")}</span>
+              <h2>{t("cosign.worst.title")}</h2>
+            </div>
+            <div className="gn-section-media">
+              <img
+                src="/images/gn-animation-emergency-fund.svg"
+                width="800"
+                height="600"
+                alt={t("alt.anim.emergencyFund")}
+                loading="lazy"
+                className="gn-section-animation"
+              />
+            </div>
           </div>
 
           <div className="cosign-card">

@@ -131,10 +131,22 @@ function FreeMoneyFirstPage() {
 
         {/* 5-Tier Hierarchy Section (Key Step 01 & 02) */}
         <section className="wrap fmf-tiers-section" id="order-of-operations">
-          <div className="fmf-section-header">
-            <div className="eyebrow">{t("fmf.order.eyebrow")}</div>
-            <h2>{t("fmf.order.title")}</h2>
-            <p className="sub">{t("fmf.order.subtitle")}</p>
+          <div className="fmf-section-header gn-section-flex">
+            <div className="gn-section-text">
+              <div className="eyebrow">{t("fmf.order.eyebrow")}</div>
+              <h2>{t("fmf.order.title")}</h2>
+              <p className="sub">{t("fmf.order.subtitle")}</p>
+            </div>
+            <div className="gn-section-media">
+              <img
+                src="/images/gn-animation-assistantship.svg"
+                width="800"
+                height="600"
+                alt={t("alt.anim.assistantship")}
+                loading="lazy"
+                className="gn-section-animation"
+              />
+            </div>
           </div>
 
           <div className="fmf-tiers-stack">
@@ -338,13 +350,25 @@ function FreeMoneyFirstPage() {
         {/* FTC Scam Guidance Warning Box (Key Step 04) */}
         <section className="wrap fmf-scam-section">
           <div className="fmf-scam-card">
-            <div className="fmf-scam-header">
-              <div className="fmf-scam-badge">
-                <span className="fmf-alert-sym" aria-hidden="true">!</span>
-                <span>{t("fmf.scam.tag")}</span>
+            <div className="fmf-scam-header gn-section-flex">
+              <div className="gn-section-text">
+                <div className="fmf-scam-badge">
+                  <span className="fmf-alert-sym" aria-hidden="true">!</span>
+                  <span>{t("fmf.scam.tag")}</span>
+                </div>
+                <h2>{t("fmf.scam.title")}</h2>
+                <p className="fmf-scam-intro">{t("fmf.scam.desc")}</p>
               </div>
-              <h2>{t("fmf.scam.title")}</h2>
-              <p className="fmf-scam-intro">{t("fmf.scam.desc")}</p>
+              <div className="gn-section-media">
+                <img
+                  src="/images/gn-animation-emergency-fund.svg"
+                  width="800"
+                  height="600"
+                  alt={t("alt.anim.emergencyFund")}
+                  loading="lazy"
+                  className="gn-section-animation"
+                />
+              </div>
             </div>
 
             <div className="fmf-scam-grid">
@@ -404,10 +428,22 @@ function FreeMoneyFirstPage() {
 
         {/* Free Tools Only Directory (Key Step 03) */}
         <section className="wrap fmf-tools-section">
-          <div className="fmf-section-header">
-            <div className="eyebrow">{t("fmf.tools.tag")}</div>
-            <h2>{t("fmf.tools.title")}</h2>
-            <p className="sub">{t("fmf.tools.desc")}</p>
+          <div className="fmf-section-header gn-section-flex">
+            <div className="gn-section-text">
+              <div className="eyebrow">{t("fmf.tools.tag")}</div>
+              <h2>{t("fmf.tools.title")}</h2>
+              <p className="sub">{t("fmf.tools.desc")}</p>
+            </div>
+            <div className="gn-section-media">
+              <img
+                src="/images/gn-animation-scholarship-search.svg"
+                width="800"
+                height="600"
+                alt={t("alt.anim.scholarshipSearch")}
+                loading="lazy"
+                className="gn-section-animation"
+              />
+            </div>
           </div>
 
           <div className="fmf-tools-grid">

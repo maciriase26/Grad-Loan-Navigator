@@ -134,12 +134,26 @@ function RefinancingArticlePage() {
               ← {t("blog.h1")}
             </Link>
           </div>
-          <div className="eyebrow">{t("refi.eyebrow")}</div>
-          <h1>{t("refi.h1")}</h1>
-          <p className="sub">{t("refi.sub")}</p>
-          <div className="updated">
-            <span className="dot" />
-            {t("refi.updated")}
+          <div className="doc-hero-flex">
+            <div className="doc-hero-text">
+              <div className="eyebrow">{t("refi.eyebrow")}</div>
+              <h1>{t("refi.h1")}</h1>
+              <p className="sub">{t("refi.sub")}</p>
+              <div className="updated">
+                <span className="dot" />
+                {t("refi.updated")}
+              </div>
+            </div>
+            <div className="doc-hero-media">
+              <img
+                src="/images/gn-animation-refinance.svg"
+                width="800"
+                height="600"
+                alt={t("alt.anim.refinance")}
+                loading="lazy"
+                className="doc-hero-animation"
+              />
+            </div>
           </div>
 
           {/* Why it matters callout */}

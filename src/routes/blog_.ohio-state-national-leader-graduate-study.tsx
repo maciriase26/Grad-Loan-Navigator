@@ -730,11 +730,25 @@ function OhioStateArticlePage() {
 
           {/* Section 3: Competitive Tuition and Aid */}
           <section className="doc-section" id="tuition-aid" style={{ scrollMarginTop: "80px" }}>
-            <span className="section-num" style={{ color: "#BA0C2F" }}>{t("osu.part3")}</span>
-            <h2 style={{ color: "#111827" }}>{t("osu.aid.h2")}</h2>
-            <p className="lead" style={{ fontSize: "17.5px", lineHeight: "1.65", marginBottom: "24px" }}>
-              {t("osu.aid.lead")}
-            </p>
+            <div className="gn-section-flex" style={{ marginBottom: "16px" }}>
+              <div className="gn-section-text">
+                <span className="section-num" style={{ color: "#BA0C2F" }}>{t("osu.part3")}</span>
+                <h2 style={{ color: "#111827" }}>{t("osu.aid.h2")}</h2>
+                <p className="lead" style={{ fontSize: "17.5px", lineHeight: "1.65", marginBottom: 0 }}>
+                  {t("osu.aid.lead")}
+                </p>
+              </div>
+              <div className="gn-section-media">
+                <img
+                  src="/images/gn-animation-assistantship.svg"
+                  width="800"
+                  height="600"
+                  alt={t("alt.anim.assistantship")}
+                  loading="lazy"
+                  className="gn-section-animation"
+                />
+              </div>
+            </div>
 
             <div
               style={{

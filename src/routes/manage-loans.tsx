@@ -55,6 +55,17 @@ function ManageLoansPage() {
           <div className="eyebrow">{t("manage.eyebrow")}</div>
           <h1>{t("manage.h1")}</h1>
           <p className="sub">{t("manage.sub")}</p>
+
+          <div className="resources-banner-bridge">
+            <img
+              src="/images/gn-animation-refinance.svg"
+              width="800"
+              height="600"
+              alt={t("alt.anim.refinance")}
+              loading="lazy"
+              className="resources-banner-animation"
+            />
+          </div>
         </section>
 
         <section className="wrap resources-section">

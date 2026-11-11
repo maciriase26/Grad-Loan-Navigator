@@ -351,16 +351,30 @@ function WhatsHappeningWithPslfArticlePage() {
               ← {t("blog.h1")}
             </Link>
           </div>
-          <div className="eyebrow">{t("pslf.eyebrow")}</div>
-          <h1 style={{ fontSize: "clamp(26px, 4vw, 36px)", lineHeight: "1.25", marginBottom: "14px" }}>
-            {t("pslf.h1")}
-          </h1>
-          <p className="sub" style={{ fontSize: "17px", lineHeight: "1.65", maxWidth: "760px", color: "var(--ink-soft)" }}>
-            {t("pslf.sub")}
-          </p>
-          <div className="updated" style={{ marginTop: "16px", marginBottom: "28px" }}>
-            <span className="dot" />
-            {t("pslf.updated")}
+          <div className="doc-hero-flex">
+            <div className="doc-hero-text">
+              <div className="eyebrow">{t("pslf.eyebrow")}</div>
+              <h1 style={{ fontSize: "clamp(26px, 4vw, 36px)", lineHeight: "1.25", marginBottom: "14px" }}>
+                {t("pslf.h1")}
+              </h1>
+              <p className="sub" style={{ fontSize: "17px", lineHeight: "1.65", maxWidth: "760px", color: "var(--ink-soft)" }}>
+                {t("pslf.sub")}
+              </p>
+              <div className="updated" style={{ marginTop: "16px", marginBottom: "28px" }}>
+                <span className="dot" />
+                {t("pslf.updated")}
+              </div>
+            </div>
+            <div className="doc-hero-media">
+              <img
+                src="/images/gn-animation-public-service.svg"
+                width="800"
+                height="600"
+                alt={t("alt.anim.publicService")}
+                loading="lazy"
+                className="doc-hero-animation"
+              />
+            </div>
           </div>
 
           {/* Quick Metrics Bar */}

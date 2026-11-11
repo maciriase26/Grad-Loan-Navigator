@@ -57,6 +57,17 @@ function PayForSchoolPage() {
           <div className="eyebrow">{t("pfs.eyebrow")}</div>
           <h1>{t("pfs.h1")}</h1>
           <p className="sub">{t("pfs.sub")}</p>
+
+          <div className="resources-banner-bridge">
+            <img
+              src="/images/gn-animation-scholarship-search.svg"
+              width="800"
+              height="600"
+              alt={t("alt.anim.scholarshipSearch")}
+              loading="lazy"
+              className="resources-banner-animation"
+            />
+          </div>
         </section>
 
         {/* Cards Row */}
