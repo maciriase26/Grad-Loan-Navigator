@@ -52,6 +52,7 @@ import { Route as BlogStudentLoansPoliticalBackgroundAndFutureRouteImport } from
 import { Route as BlogTuitionVsInflationWhichHasGrownMoreRouteImport } from './routes/blog_.tuition-vs-inflation-which-has-grown-more'
 import { Route as BlogUniversityOfFloridaTopTierValueRouteImport } from './routes/blog_.university-of-florida-top-tier-value'
 import { Route as BlogValueLawSchoolsRouteImport } from './routes/blog_.value-law-schools'
+import { Route as BlogWhatMakesAGoodMbaProgramRouteImport } from './routes/blog_.what-makes-a-good-mba-program'
 import { Route as BlogWhatsHappeningWithPslfRouteImport } from './routes/blog_.whats-happening-with-pslf'
 import { Route as BlogWhatsHappeningWithPublicServiceLoanForgivenessRouteImport } from './routes/blog_.whats-happening-with-public-service-loan-forgiveness'
 import { Route as BlogWhenShouldYouGetAMastersDegreeRouteImport } from './routes/blog_.when-should-you-get-a-masters-degree'
@@ -291,6 +292,12 @@ const BlogValueLawSchoolsRoute = BlogValueLawSchoolsRouteImport.update({
   path: '/blog/value-law-schools',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogWhatMakesAGoodMbaProgramRoute =
+  BlogWhatMakesAGoodMbaProgramRouteImport.update({
+    id: '/blog_/what-makes-a-good-mba-program',
+    path: '/blog/what-makes-a-good-mba-program',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogWhatsHappeningWithPslfRoute =
   BlogWhatsHappeningWithPslfRouteImport.update({
     id: '/blog_/whats-happening-with-pslf',
@@ -389,6 +396,7 @@ export interface FileRoutesByFullPath {
   '/blog/tuition-vs-inflation-which-has-grown-more': typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   '/blog/university-of-florida-top-tier-value': typeof BlogUniversityOfFloridaTopTierValueRoute
   '/blog/value-law-schools': typeof BlogValueLawSchoolsRoute
+  '/blog/what-makes-a-good-mba-program': typeof BlogWhatMakesAGoodMbaProgramRoute
   '/blog/whats-happening-with-pslf': typeof BlogWhatsHappeningWithPslfRoute
   '/blog/whats-happening-with-public-service-loan-forgiveness': typeof BlogWhatsHappeningWithPublicServiceLoanForgivenessRoute
   '/blog/when-should-you-get-a-masters-degree': typeof BlogWhenShouldYouGetAMastersDegreeRoute
@@ -443,6 +451,7 @@ export interface FileRoutesByTo {
   '/blog/tuition-vs-inflation-which-has-grown-more': typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   '/blog/university-of-florida-top-tier-value': typeof BlogUniversityOfFloridaTopTierValueRoute
   '/blog/value-law-schools': typeof BlogValueLawSchoolsRoute
+  '/blog/what-makes-a-good-mba-program': typeof BlogWhatMakesAGoodMbaProgramRoute
   '/blog/whats-happening-with-pslf': typeof BlogWhatsHappeningWithPslfRoute
   '/blog/whats-happening-with-public-service-loan-forgiveness': typeof BlogWhatsHappeningWithPublicServiceLoanForgivenessRoute
   '/blog/when-should-you-get-a-masters-degree': typeof BlogWhenShouldYouGetAMastersDegreeRoute
@@ -498,6 +507,7 @@ export interface FileRoutesById {
   '/blog_/tuition-vs-inflation-which-has-grown-more': typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   '/blog_/university-of-florida-top-tier-value': typeof BlogUniversityOfFloridaTopTierValueRoute
   '/blog_/value-law-schools': typeof BlogValueLawSchoolsRoute
+  '/blog_/what-makes-a-good-mba-program': typeof BlogWhatMakesAGoodMbaProgramRoute
   '/blog_/whats-happening-with-pslf': typeof BlogWhatsHappeningWithPslfRoute
   '/blog_/whats-happening-with-public-service-loan-forgiveness': typeof BlogWhatsHappeningWithPublicServiceLoanForgivenessRoute
   '/blog_/when-should-you-get-a-masters-degree': typeof BlogWhenShouldYouGetAMastersDegreeRoute
@@ -554,6 +564,7 @@ export interface FileRouteTypes {
     | '/blog/tuition-vs-inflation-which-has-grown-more'
     | '/blog/university-of-florida-top-tier-value'
     | '/blog/value-law-schools'
+    | '/blog/what-makes-a-good-mba-program'
     | '/blog/whats-happening-with-pslf'
     | '/blog/whats-happening-with-public-service-loan-forgiveness'
     | '/blog/when-should-you-get-a-masters-degree'
@@ -608,6 +619,7 @@ export interface FileRouteTypes {
     | '/blog/tuition-vs-inflation-which-has-grown-more'
     | '/blog/university-of-florida-top-tier-value'
     | '/blog/value-law-schools'
+    | '/blog/what-makes-a-good-mba-program'
     | '/blog/whats-happening-with-pslf'
     | '/blog/whats-happening-with-public-service-loan-forgiveness'
     | '/blog/when-should-you-get-a-masters-degree'
@@ -662,6 +674,7 @@ export interface FileRouteTypes {
     | '/blog_/tuition-vs-inflation-which-has-grown-more'
     | '/blog_/university-of-florida-top-tier-value'
     | '/blog_/value-law-schools'
+    | '/blog_/what-makes-a-good-mba-program'
     | '/blog_/whats-happening-with-pslf'
     | '/blog_/whats-happening-with-public-service-loan-forgiveness'
     | '/blog_/when-should-you-get-a-masters-degree'
@@ -717,6 +730,7 @@ export interface RootRouteChildren {
   BlogTuitionVsInflationWhichHasGrownMoreRoute: typeof BlogTuitionVsInflationWhichHasGrownMoreRoute
   BlogUniversityOfFloridaTopTierValueRoute: typeof BlogUniversityOfFloridaTopTierValueRoute
   BlogValueLawSchoolsRoute: typeof BlogValueLawSchoolsRoute
+  BlogWhatMakesAGoodMbaProgramRoute: typeof BlogWhatMakesAGoodMbaProgramRoute
   BlogWhatsHappeningWithPslfRoute: typeof BlogWhatsHappeningWithPslfRoute
   BlogWhatsHappeningWithPublicServiceLoanForgivenessRoute: typeof BlogWhatsHappeningWithPublicServiceLoanForgivenessRoute
   BlogWhenShouldYouGetAMastersDegreeRoute: typeof BlogWhenShouldYouGetAMastersDegreeRoute
@@ -1031,6 +1045,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogValueLawSchoolsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog_/what-makes-a-good-mba-program': {
+      id: '/blog_/what-makes-a-good-mba-program'
+      path: '/blog/what-makes-a-good-mba-program'
+      fullPath: '/blog/what-makes-a-good-mba-program'
+      preLoaderRoute: typeof BlogWhatMakesAGoodMbaProgramRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog_/whats-happening-with-pslf': {
       id: '/blog_/whats-happening-with-pslf'
       path: '/blog/whats-happening-with-pslf'
@@ -1150,6 +1171,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogUniversityOfFloridaTopTierValueRoute:
     BlogUniversityOfFloridaTopTierValueRoute,
   BlogValueLawSchoolsRoute: BlogValueLawSchoolsRoute,
+  BlogWhatMakesAGoodMbaProgramRoute: BlogWhatMakesAGoodMbaProgramRoute,
   BlogWhatsHappeningWithPslfRoute: BlogWhatsHappeningWithPslfRoute,
   BlogWhatsHappeningWithPublicServiceLoanForgivenessRoute:
     BlogWhatsHappeningWithPublicServiceLoanForgivenessRoute,

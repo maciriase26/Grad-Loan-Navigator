@@ -1310,6 +1310,31 @@ export const en = {
   "blog.card20.author": "Jaylen Peng & Peter Foulke\nReviewed Oct 2026",
   "blog.card20.cta": "Read article",
 
+  /* ---------- What Makes a Good MBA Program? Article (English) ---------- */
+  "blog.card21.tag": "MBA Guide & ROI · 4 min read",
+  "blog.card21.title": "What Makes a Good MBA Program?",
+  "blog.card21.excerpt":
+    "Here’s what to consider when choosing the best MBA program for you — from accreditation and rankings to comparing costs ($63k–$200k+), graduate outcomes, and 2027 federal loan rules.",
+  "blog.card21.author": "Carson Jung · Revised by Jaylen Peng\nRevised Nov 2026",
+  "blog.card21.cta": "Read article",
+
+  "gmba.meta.title": "What Makes a Good MBA Program? | Grad Navigator",
+  "gmba.meta.desc":
+    "Here’s what to consider when choosing the best MBA program for you: accreditation, rankings, comparing costs, graduate outcomes, and personal career fit. By Carson Jung, revised by Jaylen Peng.",
+  "gmba.eyebrow": "MBA Guide & ROI · 4 min read",
+  "gmba.h1": "What Makes a Good MBA Program?",
+  "gmba.sub": "Here’s what to consider when choosing the best MBA program for you.",
+  "gmba.updated": "Carson Jung · Revised by Jaylen Peng · Revised as of Nov. 3, 2026",
+  "gmba.why.title": "Why it matters",
+  "gmba.why.p":
+    "With two-year MBA costs ranging from an average of $63,000 to over $200,000—and new federal loan caps limiting how much you can borrow—choosing the right program requires looking beyond headline rankings to accreditation, net cost, and real graduate outcomes.",
+  "gmba.nav.accreditation": "1. Accreditation Comes First",
+  "gmba.nav.rank": "2. Program Rank",
+  "gmba.nav.costs": "3. Comparing Costs",
+  "gmba.nav.outcomes": "4. Graduate Outcomes",
+  "gmba.nav.consider": "5. What Else to Consider",
+  "gmba.nav.bottomline": "6. The Bottom Line",
+
   "wmd.meta.title": "When Should You Get a Master’s Degree? | Grad Navigator",
   "wmd.meta.desc":
     "A master's degree can boost long-term career prospects and future earnings. But when is it not worth it? Age, opportunity cost, and payoff analysis by Jaylen Peng.",
@@ -4968,6 +4993,31 @@ export const es: Partial<Record<TranslationKey, string>> = {
     "Los retrasos en el procesamiento, acumulaciones en el rastreador de pagos y reglas cambiantes generan incertidumbre para los servidores públicos. Análisis de datos y reporte por Jaylen Peng y Peter Foulke.",
   "blog.card20.author": "Jaylen Peng y Peter Foulke\nRevisado Oct 2026",
   "blog.card20.cta": "Leer artículo",
+
+  /* ---------- What Makes a Good MBA Program? Article (Spanish) ---------- */
+  "blog.card21.tag": "Guía de MBA y ROI · Lectura de 4 min",
+  "blog.card21.title": "¿Qué Hace que un Programa de MBA Sea Bueno?",
+  "blog.card21.excerpt":
+    "Esto es lo que debes considerar al elegir el mejor programa de MBA para ti: desde la acreditación y los rankings hasta la comparación de costos ($63k–$200k+), resultados de graduados y reglas federales de 2027.",
+  "blog.card21.author": "Carson Jung · Revisado por Jaylen Peng\nRevisado Nov 2026",
+  "blog.card21.cta": "Leer artículo",
+
+  "gmba.meta.title": "¿Qué Hace que un Programa de MBA Sea Bueno? | Grad Navigator",
+  "gmba.meta.desc":
+    "Qué considerar al elegir el mejor programa de MBA para ti: acreditación, clasificaciones, comparación de costos, resultados de graduados y ajuste profesional. Por Carson Jung, revisado por Jaylen Peng.",
+  "gmba.eyebrow": "Guía de MBA y ROI · Lectura de 4 min",
+  "gmba.h1": "¿Qué Hace que un Programa de MBA Sea Bueno?",
+  "gmba.sub": "Esto es lo que debes considerar al elegir el mejor programa de MBA para ti.",
+  "gmba.updated": "Carson Jung · Revisado por Jaylen Peng · Revisado al 3 de nov. de 2026",
+  "gmba.why.title": "Por qué es importante",
+  "gmba.why.p":
+    "Con costos de MBA de dos años que van desde un promedio de $63,000 hasta más de $200,000 —y nuevos límites de préstamos federales que restringen cuánto puedes pedir prestado— elegir el programa adecuado exige mirar más allá de los rankings hacia la acreditación, el costo neto y los resultados laborales reales.",
+  "gmba.nav.accreditation": "1. La Acreditación Primero",
+  "gmba.nav.rank": "2. Clasificación del Programa",
+  "gmba.nav.costs": "3. Comparación de Costos",
+  "gmba.nav.outcomes": "4. Resultados de Graduados",
+  "gmba.nav.consider": "5. Qué Más Considerar",
+  "gmba.nav.bottomline": "6. En Conclusión",
 
   "wmd.meta.title": "¿Cuándo Deberías Obtener una Maestría? | Grad Navigator",
   "wmd.meta.desc":
