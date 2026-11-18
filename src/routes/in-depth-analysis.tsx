@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteFooter, SiteHeader, TopRouteDeco } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
+import { ExperianVideoEmbed } from "@/components/ExperianVideoEmbed";
+import { buildVideoObjectSchema } from "@/data/experianVideos";
 import { useI18n } from "@/i18n";
 
 const TITLE = "In-Depth Analysis | Grad Navigator";
@@ -20,6 +22,12 @@ export const Route = createFileRoute("/in-depth-analysis")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(buildVideoObjectSchema("ficoFiveFactors")),
+      },
+    ],
   }),
   component: InDepthAnalysis,
 });
@@ -85,7 +93,9 @@ function InDepthAnalysis() {
           <h2 className="depth-section-title">{t("depth.consumer.title")}</h2>
           <p className="depth-section-desc">{t("depth.consumer.desc")}</p>
 
-          <div className="depth-grid">
+          <ExperianVideoEmbed videoKey="ficoFiveFactors" />
+
+          <div className="depth-grid" style={{ marginTop: "28px" }}>
             {/* Brochure 1 */}
             <div className="depth-card">
               <span className="depth-card-tag">{t("depth.pdf1.tag")}</span>

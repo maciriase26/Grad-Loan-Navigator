@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
+import { ExperianVideoEmbed } from "@/components/ExperianVideoEmbed";
+import { buildVideoObjectSchema } from "@/data/experianVideos";
 import { useI18n } from "@/i18n";
 
 const TITLE = "Student Loan Interest Rates History | Grad Navigator";
@@ -38,6 +40,10 @@ export const Route = createFileRoute(
             logo: "https://www.graduationnavigator.com/regular-compass.png",
           },
         }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(buildVideoObjectSchema("highInterestDebt")),
       },
     ],
   }),
@@ -648,7 +654,7 @@ function StudentLoanInterestRatesHistoryPage() {
               </div>
             </div>
 
-            {/* Pandemic & Recent Developments */}
+            {/* Pandemic & Inflation Surge Subsections */}
             <div
               style={{
                 display: "grid",
@@ -688,22 +694,27 @@ function StudentLoanInterestRatesHistoryPage() {
                   {t("irh.inflation.text")}
                 </p>
               </div>
+            </div>
 
-              <div
-                style={{
-                  padding: "24px",
-                  background: "var(--card)",
-                  borderRadius: "14px",
-                  border: "1px solid var(--line)",
-                }}
-              >
-                <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>
-                  {t("irh.obb.title")}
-                </h3>
-                <p style={{ margin: 0, fontSize: "15px", lineHeight: "1.65", color: "var(--ink-soft)" }}>
-                  {t("irh.obb.text")}
-                </p>
-              </div>
+            {/* Experian Short: What Is Considered High Interest Debt (Vertical Card) */}
+            <ExperianVideoEmbed videoKey="highInterestDebt" />
+
+            {/* One Big Beautiful Bill Elimination */}
+            <div
+              style={{
+                padding: "24px",
+                background: "var(--card)",
+                borderRadius: "14px",
+                border: "1px solid var(--line)",
+                marginTop: "20px",
+              }}
+            >
+              <h3 style={{ margin: "0 0 10px 0", fontSize: "19px", fontWeight: 700, color: "var(--ink)" }}>
+                {t("irh.obb.title")}
+              </h3>
+              <p style={{ margin: 0, fontSize: "15px", lineHeight: "1.65", color: "var(--ink-soft)" }}>
+                {t("irh.obb.text")}
+              </p>
             </div>
           </section>
 

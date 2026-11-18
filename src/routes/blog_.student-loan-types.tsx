@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
+import { ExperianVideoEmbed } from "@/components/ExperianVideoEmbed";
+import { buildVideoObjectSchema } from "@/data/experianVideos";
 import { useI18n } from "@/i18n";
 
 const TITLE = "Student Loan Types | Grad Navigator";
@@ -36,6 +38,10 @@ export const Route = createFileRoute("/blog_/student-loan-types")({
             logo: "https://www.graduationnavigator.com/regular-compass.png",
           },
         }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(buildVideoObjectSchema("establishCredit")),
       },
     ],
   }),
@@ -202,6 +208,16 @@ function StudentLoanTypesArticlePage() {
                 <span className="rates-calc-gap">+$1,345</span>
               </div>
             </div>
+
+            <ExperianVideoEmbed
+              videoKey="establishCredit"
+              footerNote={
+                <>
+                  <strong>{t("types.cosignerNote.label")}</strong> {t("types.cosignerNote.pre")}
+                  <Link to="/cosigner-hub">{t("types.cosignerNote.link")}</Link>
+                </>
+              }
+            />
           </section>
 
           {/* Section 4: The Bottom Line */}

@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
+import { ExperianVideoEmbed } from "@/components/ExperianVideoEmbed";
+import { buildVideoObjectSchema } from "@/data/experianVideos";
 import { useI18n } from "@/i18n";
 
 const TITLE = "Refinancing Student Loans, Explained | Grad Navigator";
@@ -36,6 +38,10 @@ export const Route = createFileRoute("/blog_/refinancing-student-loans")({
             logo: "https://www.graduationnavigator.com/regular-compass.png",
           },
         }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(buildVideoObjectSchema("checkCreditScore")),
       },
     ],
   }),
@@ -246,6 +252,8 @@ function RefinancingArticlePage() {
                 <p>{t("refi.numbers.desc")}</p>
               </div>
             </div>
+
+            <ExperianVideoEmbed videoKey="checkCreditScore" />
           </section>
 
           {/* Section 2: The Catch (Federal Protections Lost) */}

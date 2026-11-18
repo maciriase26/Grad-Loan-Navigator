@@ -2814,6 +2814,22 @@ export const en = {
   "cosign.bridge.btn.freeMoney": "Free Money First Guide",
   "cosign.bridge.btn.aid": "Compare Aid Offers",
   "cosign.bridge.btn.resources": "Educational Resources Hub",
+
+  /* ---------- Experian Video Embeds ---------- */
+  "video.watchBadge": "Experian Explainer Video",
+  "video.shortBadge": "Experian Short",
+  "video.credit": "Video: Experian",
+  "video.watchOnYouTube": "Watch on YouTube",
+  "video.takeaways": "Key Takeaways",
+  "video.transcript": "Read the transcript",
+  "manage.pslfNote.label": "PSLF exception:",
+  "manage.pslfNote.pre":
+    "If you are pursuing Public Service Loan Forgiveness (PSLF), do not make extra principal payments with the debt avalanche method—extra payments shrink the balance that can be forgiven tax-free after 120 qualifying payments. ",
+  "manage.pslfNote.link": "Read our PSLF guide →",
+  "types.cosignerNote.label": "Still building credit?",
+  "types.cosignerNote.pre":
+    "Most graduate and professional students with limited credit history compare rates with a creditworthy cosigner before choosing a private loan. ",
+  "types.cosignerNote.link": "Explore the Cosigner Hub →",
 } as const;
 
 export type TranslationKey = keyof typeof en;
@@ -5652,6 +5668,22 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "cosign.bridge.btn.freeMoney": "Guía de dinero gratis primero",
   "cosign.bridge.btn.aid": "Comparar ofertas de ayuda",
   "cosign.bridge.btn.resources": "Centro de Recursos Educativos",
+
+  /* ---------- Experian Video Embeds ---------- */
+  "video.watchBadge": "Video explicativo de Experian",
+  "video.shortBadge": "Short de Experian",
+  "video.credit": "Video: Experian",
+  "video.watchOnYouTube": "Ver en YouTube",
+  "video.takeaways": "Puntos clave",
+  "video.transcript": "Leer la transcripción",
+  "manage.pslfNote.label": "Excepción de PSLF:",
+  "manage.pslfNote.pre":
+    "Si buscas la Condonación de Préstamos por Servicio Público (PSLF), no hagas pagos adicionales al capital con el método de avalancha: los pagos extra reducen el saldo elegible para condonación libre de impuestos tras 120 pagos calificados. ",
+  "manage.pslfNote.link": "Leer nuestra guía de PSLF →",
+  "types.cosignerNote.label": "¿Aún estás construyendo tu crédito?",
+  "types.cosignerNote.pre":
+    "La mayoría de los estudiantes de posgrado con historial crediticio limitado comparan tasas con un aval solvente antes de elegir un préstamo privado. ",
+  "types.cosignerNote.link": "Explorar el Centro para Avales →",
 };
 
 export const LANGUAGES = [

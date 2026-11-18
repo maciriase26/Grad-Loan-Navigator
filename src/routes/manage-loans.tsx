@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteFooter, SiteHeader, TopRouteDeco } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
+import { ExperianVideoEmbed } from "@/components/ExperianVideoEmbed";
+import { buildVideoObjectSchema } from "@/data/experianVideos";
 import { useI18n } from "@/i18n";
 
 const TITLE = "Manage Loans | Grad Navigator";
@@ -19,6 +21,12 @@ export const Route = createFileRoute("/manage-loans")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(buildVideoObjectSchema("debtAvalanche")),
+      },
+    ],
   }),
   component: ManageLoansPage,
 });
@@ -69,45 +77,77 @@ function ManageLoansPage() {
         </section>
 
         <section className="wrap resources-section">
-          <div className="path-grid">
-            <Link className="path-card card-a" to="/educational-resources">
-              <span className="path-subheader">{t("manage.card1.sub")}</span>
-              <h2>{t("manage.card1.title")}</h2>
-              <p className="desc">{t("manage.card1.desc")}</p>
-              <span className="path-cta">
-                {t("manage.card1.cta")}
-                <Arrow />
-              </span>
-            </Link>
+          {/* Managing Existing Loans Section */}
+          <div id="managing-existing-loans">
+            <div style={{ display: "grid", gap: "18px" }}>
+              <Link className="path-card card-a" to="/educational-resources">
+                <span className="path-subheader">{t("manage.card1.sub")}</span>
+                <h2>{t("manage.card1.title")}</h2>
+                <p className="desc">{t("manage.card1.desc")}</p>
+                <span className="path-cta">
+                  {t("manage.card1.cta")}
+                  <Arrow />
+                </span>
+              </Link>
 
-            <Link className="path-card card-b" to="/blog/refinancing-student-loans">
-              <span className="path-subheader">{t("manage.card2.sub")}</span>
-              <h2>{t("manage.card2.title")}</h2>
-              <p className="desc">{t("manage.card2.desc")}</p>
-              <span className="path-cta">
-                {t("manage.card2.cta")}
-                <Arrow />
-              </span>
-            </Link>
-          </div>
-
-          <div style={{ marginTop: "24px", display: "grid", gap: "16px", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-            <div style={{ background: "rgba(248, 250, 252, 0.7)", padding: "14px 18px", borderRadius: "8px", border: "1px solid #e2e8f0", borderLeft: "3px solid #cbd5e1" }}>
-              <div style={{ fontSize: "0.825rem", fontWeight: "600", color: "#475569", marginBottom: "4px" }}>
-                {t("manage.section.idr.title")}
+              <div
+                style={{
+                  background: "rgba(248, 250, 252, 0.7)",
+                  padding: "14px 18px",
+                  borderRadius: "8px",
+                  border: "1px solid #e2e8f0",
+                  borderLeft: "3px solid #cbd5e1",
+                }}
+              >
+                <div style={{ fontSize: "0.825rem", fontWeight: "600", color: "#475569", marginBottom: "4px" }}>
+                  {t("manage.section.idr.title")}
+                </div>
+                <p style={{ color: "#64748b", lineHeight: "1.45", fontSize: "0.8rem", margin: 0 }}>
+                  {t("manage.section.idr.text")}
+                </p>
               </div>
-              <p style={{ color: "#64748b", lineHeight: "1.45", fontSize: "0.8rem", margin: 0 }}>
-                {t("manage.section.idr.text")}
-              </p>
             </div>
 
-            <div style={{ background: "rgba(248, 250, 252, 0.7)", padding: "14px 18px", borderRadius: "8px", border: "1px solid #e2e8f0", borderLeft: "3px solid #cbd5e1" }}>
-              <div style={{ fontSize: "0.825rem", fontWeight: "600", color: "#475569", marginBottom: "4px" }}>
-                {t("manage.section.consolidation.title")}
+            <ExperianVideoEmbed
+              videoKey="debtAvalanche"
+              footerNote={
+                <>
+                  <strong>{t("manage.pslfNote.label")}</strong> {t("manage.pslfNote.pre")}
+                  <Link to="/blog/whats-happening-with-pslf">{t("manage.pslfNote.link")}</Link>
+                </>
+              }
+            />
+          </div>
+
+          {/* Refinancing Student Loans Section */}
+          <div id="refinancing-student-loans" className="manage-subsection">
+            <div style={{ display: "grid", gap: "18px" }}>
+              <Link className="path-card card-b" to="/blog/refinancing-student-loans">
+                <span className="path-subheader">{t("manage.card2.sub")}</span>
+                <h2>{t("manage.card2.title")}</h2>
+                <p className="desc">{t("manage.card2.desc")}</p>
+                <span className="path-cta">
+                  {t("manage.card2.cta")}
+                  <Arrow />
+                </span>
+              </Link>
+
+              <div
+                style={{
+                  background: "rgba(248, 250, 252, 0.7)",
+                  padding: "14px 18px",
+                  borderRadius: "8px",
+                  border: "1px solid #e2e8f0",
+                  borderLeft: "3px solid #cbd5e1",
+                }}
+              >
+                <div style={{ fontSize: "0.825rem", fontWeight: "600", color: "#475569", marginBottom: "4px" }}>
+                  {t("manage.section.consolidation.title")}
+                </div>
+                <p style={{ color: "#64748b", lineHeight: "1.45", fontSize: "0.8rem", margin: 0 }}>
+                  {t("manage.section.consolidation.text")}
+                </p>
               </div>
-              <p style={{ color: "#64748b", lineHeight: "1.45", fontSize: "0.8rem", margin: 0 }}>
-                {t("manage.section.consolidation.text")}
-              </p>
             </div>
           </div>
         </section>

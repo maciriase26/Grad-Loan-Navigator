@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { ChatWidget } from "@/components/chat/ChatWidget";
+import { ExperianVideoEmbed } from "@/components/ExperianVideoEmbed";
+import { buildVideoObjectSchema } from "@/data/experianVideos";
 import { useI18n } from "@/i18n";
 
 const TITLE = "Student Loan Interest: by the numbers | Grad Navigator";
@@ -36,6 +38,10 @@ export const Route = createFileRoute("/blog_/student-loan-interest-by-the-number
             logo: "https://www.graduationnavigator.com/regular-compass.png",
           },
         }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(buildVideoObjectSchema("aprVsInterestRate")),
       },
     ],
   }),
@@ -291,6 +297,8 @@ function StudentLoanInterestArticlePage() {
                 <span className="rates-calc-gap">+$1,345</span>
               </div>
             </div>
+
+            <ExperianVideoEmbed videoKey="aprVsInterestRate" />
           </section>
 
           {/* Section 5: The Bottom Line */}
