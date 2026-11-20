@@ -9,7 +9,7 @@ import { useI18n } from "@/i18n";
 
 const TITLE = "In-Depth Analysis | Grad Navigator";
 const DESCRIPTION =
-"Embedded consumer guides, PDF brochures, and curated resources on credit, borrowing, and repayment — powered by Experian.";
+  "Embedded consumer guides, PDF brochures, and curated resources on credit, borrowing, and repayment — powered by Experian.";
 const URL = "https://www.graduationnavigator.com/in-depth-analysis";
 
 export const Route = createFileRoute("/in-depth-analysis")({
@@ -165,19 +165,15 @@ function InDepthAnalysis() {
             style={{
               display: "inline-flex",
               alignItems: "center",
-              gap: "10px",
-              padding: "6px 14px",
-              borderRadius: "20px",
-              background: "color-mix(in srgb, var(--card) 90%, transparent)",
-              border: "1px solid var(--line)",
+              gap: "8px",
             }}
           >
+            <span>{t("depth.eyebrow")}</span>
             <img
               src="/images/experian-logo.svg"
               alt="Experian"
-              style={{ height: "18px", width: "auto", display: "block" }}
+              style={{ height: "15px", width: "auto", display: "inline-block" }}
             />
-            <span style={{ fontWeight: 600 }}>{t("depth.eyebrow")}</span>
           </div>
           <h1>{t("depth.h1")}</h1>
           <p className="sub">{t("depth.sub")}</p>
@@ -332,143 +328,143 @@ function InDepthAnalysis() {
           </div>
         </section>
 
-          {/* Ask Experian Articles (Embedded Library) */}
-          <section className="wrap depth-section" id="experian-articles">
+        {/* Ask Experian Articles (Embedded Library) */}
+        <section className="wrap depth-section" id="experian-articles">
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              flexWrap: "wrap",
+              gap: "14px",
+              marginBottom: "8px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <img
+                src="/images/experian-logo.svg"
+                alt="Experian"
+                style={{ height: "28px", width: "auto", display: "block" }}
+              />
+              <h2 className="depth-section-title" style={{ margin: 0 }}>
+                {t("depth.ask.title")}
+              </h2>
+            </div>
+
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                flexWrap: "wrap",
-                gap: "14px",
-                marginBottom: "8px",
+                fontFamily: "var(--font-mono)",
+                fontSize: "12px",
+                color: "var(--teal)",
+                background: "color-mix(in srgb, var(--teal) 10%, transparent)",
+                padding: "4px 12px",
+                borderRadius: "6px",
+                fontWeight: 600,
               }}
             >
-              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                <img
-                  src="/images/experian-logo.svg"
-                  alt="Experian"
-                  style={{ height: "28px", width: "auto", display: "block" }}
-                />
-                <h2 className="depth-section-title" style={{ margin: 0 }}>
-                  {t("depth.ask.title")}
-                </h2>
-              </div>
+              {isEs ? "✓ Distribuido con Autorización" : "✓ Syndicated with Permission"}
+            </div>
+          </div>
+
+          <p className="depth-section-desc" style={{ marginBottom: "20px" }}>
+            {t("depth.ask.embedNote")}
+          </p>
+
+          {/* 4 Article Grid Cards */}
+          <div className="depth-grid">
+            {EXPERIAN_ARTICLES.map((article) => {
+              const isActive = isReaderVisible && activeArticleId === article.id;
+              const title = isEs ? article.titleEs : article.titleEn;
+              const desc = isEs ? article.descEs : article.descEn;
+              const tag = isEs ? article.tagEs : article.tagEn;
+
+              return (
+                <div
+                  key={article.id}
+                  className="depth-card"
+                  style={{
+                    borderColor: isActive ? "var(--teal)" : undefined,
+                    boxShadow: isActive
+                      ? "0 0 0 2px color-mix(in srgb, var(--teal) 35%, transparent)"
+                      : undefined,
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      marginBottom: "12px",
+                    }}
+                  >
+                    <span className="depth-card-tag">{tag}</span>
+                    <img
+                      src="/images/experian-logo.svg"
+                      alt="Experian"
+                      style={{ height: "18px", width: "auto", display: "block" }}
+                    />
+                  </div>
+
+                  <h3>{title}</h3>
+                  <p>{desc}</p>
 
                   <div
                     style={{
-                      fontFamily: "var(--font-mono)",
-                      fontSize: "12px",
-                      color: "var(--teal)",
-                      background: "color-mix(in srgb, var(--teal) 10%, transparent)",
-                      padding: "4px 12px",
-                      borderRadius: "6px",
-                      fontWeight: 600,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      gap: "12px",
+                      marginTop: "auto",
+                      paddingTop: "14px",
+                      borderTop: "1px solid var(--line)",
+                      flexWrap: "wrap",
                     }}
                   >
-                    {isEs ? "✓ Distribuido con Autorización" : "✓ Syndicated with Permission"}
+                    <button
+                      type="button"
+                      onClick={() => handleOpenArticle(article.id)}
+                      className="depth-card-link"
+                      style={{
+                        background: "none",
+                        border: "none",
+                        cursor: "pointer",
+                        padding: 0,
+                        fontFamily: "inherit",
+                        fontSize: "13.5px",
+                        fontWeight: 700,
+                        color: "var(--teal)",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "6px",
+                      }}
+                    >
+                      <BookOpenIcon />
+                      <span>{t("depth.reader.readButton")}</span>
+                    </button>
+
+                    <a
+                      href={article.sourceUrl}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      style={{
+                        fontSize: "12px",
+                        color: "var(--ink-soft)",
+                        textDecoration: "none",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "4px",
+                      }}
+                    >
+                      {t("depth.reader.viewOriginal")}
+                    </a>
                   </div>
                 </div>
+              );
+            })}
+          </div>
 
-          <p className="depth-section-desc" style={{ marginBottom: "20px" }}>
-                    {t("depth.ask.embedNote")}
-                  </p>
-
-                  {/* 4 Article Grid Cards */}
-                  <div className="depth-grid">
-                    {EXPERIAN_ARTICLES.map((article) => {
-                      const isActive = isReaderVisible && activeArticleId === article.id;
-                      const title = isEs ? article.titleEs : article.titleEn;
-                      const desc = isEs ? article.descEs : article.descEn;
-                      const tag = isEs ? article.tagEs : article.tagEn;
-
-                      return (
-                        <div
-                          key={article.id}
-                          className="depth-card"
-                          style={{
-                            borderColor: isActive ? "var(--teal)" : undefined,
-                            boxShadow: isActive
-                              ? "0 0 0 2px color-mix(in srgb, var(--teal) 35%, transparent)"
-                              : undefined,
-                          }}
-                        >
-                          <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              alignItems: "center",
-                              marginBottom: "12px",
-                            }}
-                          >
-                            <span className="depth-card-tag">{tag}</span>
-                            <img
-                              src="/images/experian-logo.svg"
-                              alt="Experian"
-                              style={{ height: "18px", width: "auto", display: "block" }}
-                            />
-                          </div>
-
-                          <h3>{title}</h3>
-                          <p>{desc}</p>
-
-                          <div
-                            style={{
-                              display: "flex",
-                              alignItems: "center",
-                              justifyContent: "space-between",
-                              gap: "12px",
-                              marginTop: "auto",
-                              paddingTop: "14px",
-                              borderTop: "1px solid var(--line)",
-                              flexWrap: "wrap",
-                            }}
-                          >
-                            <button
-                              type="button"
-                              onClick={() => handleOpenArticle(article.id)}
-                              className="depth-card-link"
-                              style={{
-                                background: "none",
-                                border: "none",
-                                cursor: "pointer",
-                                padding: 0,
-                                fontFamily: "inherit",
-                                fontSize: "13.5px",
-                                fontWeight: 700,
-                                color: "var(--teal)",
-                                display: "inline-flex",
-                                alignItems: "center",
-                                gap: "6px",
-                              }}
-                            >
-                              <BookOpenIcon />
-                              <span>{t("depth.reader.readButton")}</span>
-                            </button>
-
-                            <a
-                              href={article.sourceUrl}
-                              target="_blank"
-                              rel="noreferrer noopener"
-                              style={{
-                                fontSize: "12px",
-                                color: "var(--ink-soft)",
-                                textDecoration: "none",
-                                display: "inline-flex",
-                                alignItems: "center",
-                                gap: "4px",
-                              }}
-                            >
-                              {t("depth.reader.viewOriginal")}
-                            </a>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-
-                  {/* Embedded Article Reader */}
-                  {isReaderVisible && (
+          {/* Embedded Article Reader */}
+          {isReaderVisible && (
             <div
               ref={readerRef}
               className="syndicated-mockup-wrap"
@@ -514,40 +510,40 @@ function InDepthAnalysis() {
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                      <button
-                        type="button"
-                        onClick={() => setIsReaderVisible(false)}
-                        style={{
-                          display: "inline-flex",
-                          alignItems: "center",
-                          gap: "6px",
-                          background: "transparent",
-                          border: "1px solid var(--line)",
-                          padding: "6px 12px",
-                          borderRadius: "6px",
-                          fontSize: "12.5px",
-                          fontWeight: 600,
-                          color: "var(--ink-soft)",
-                          cursor: "pointer",
-                        }}
-                      >
-                        <CloseIcon />
-                        <span>{t("depth.reader.close")}</span>
-                      </button>
-                    </div>
-                  </div>
-
-                  {/* Tab Selector for all 4 articles */}
-                  <div
+                  <button
+                    type="button"
+                    onClick={() => setIsReaderVisible(false)}
                     style={{
-                      display: "flex",
-                      gap: "8px",
-                      padding: "12px 28px",
-                      background: "color-mix(in srgb, var(--card) 95%, transparent)",
-                      borderBottom: "1px solid var(--line)",
-                      overflowX: "auto",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "6px",
+                      background: "transparent",
+                      border: "1px solid var(--line)",
+                      padding: "6px 12px",
+                      borderRadius: "6px",
+                      fontSize: "12.5px",
+                      fontWeight: 600,
+                      color: "var(--ink-soft)",
+                      cursor: "pointer",
                     }}
                   >
+                    <CloseIcon />
+                    <span>{t("depth.reader.close")}</span>
+                  </button>
+                </div>
+              </div>
+
+              {/* Tab Selector for all 4 articles */}
+              <div
+                style={{
+                  display: "flex",
+                  gap: "8px",
+                  padding: "12px 28px",
+                  background: "color-mix(in srgb, var(--card) 95%, transparent)",
+                  borderBottom: "1px solid var(--line)",
+                  overflowX: "auto",
+                }}
+              >
                 {EXPERIAN_ARTICLES.map((article) => {
                   const isSelected = activeArticleId === article.id;
                   const title = isEs ? article.titleEs : article.titleEn;
@@ -578,213 +574,213 @@ function InDepthAnalysis() {
                 })}
               </div>
 
-                {/* Article Header Meta */}
-                <div className="wrap meta" style={{ padding: "28px 36px 20px" }}>
-                  <div className="tag">{isEs ? activeArticle.tagEs : activeArticle.tagEn}</div>
-                  <h1 style={{ margin: "0 0 16px 0", fontSize: "clamp(24px, 3.5vw, 30px)" }}>
-                    {isEs ? activeArticle.titleEs : activeArticle.titleEn}
-                  </h1>
+              {/* Article Header Meta */}
+              <div className="wrap meta" style={{ padding: "28px 36px 20px" }}>
+                <div className="tag">{isEs ? activeArticle.tagEs : activeArticle.tagEn}</div>
+                <h1 style={{ margin: "0 0 16px 0", fontSize: "clamp(24px, 3.5vw, 30px)" }}>
+                  {isEs ? activeArticle.titleEs : activeArticle.titleEn}
+                </h1>
 
-                  {/* Syndication Source Callout */}
-                  <div className="source-block" style={{ margin: "18px 0" }}>
-                    <img
-                      src="/images/experian-logo.svg"
-                      alt="Experian"
-                      style={{ height: "20px", width: "auto", flexShrink: 0 }}
-                    />
-                    <div className="text">
-                      <strong>{isEs ? "Fuente: Experian." : "Sourced from Experian."}</strong>{" "}
-                      {isEs
-                        ? "Esta guía está distribuida con autorización de la biblioteca educativa Ask Experian de Experian."
-                        : "This article is syndicated with permission from Experian's Ask Experian resource library."}
-                      <a
-                        href={activeArticle.sourceUrl}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        style={{ marginLeft: "6px", fontWeight: 600 }}
-                      >
-                        {isEs ? "Ver artículo original en Experian.com →" : "Read the original on Experian.com →"}
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="byline">
-                    <div
-                      className="avatar"
-                      style={{
-                        background: "color-mix(in srgb, var(--teal) 15%, transparent)",
-                        color: "var(--teal)",
-                      }}
-                    >
-                      Exp
-                    </div>
-                    <span>
-                      <strong>{isEs ? activeArticle.authorEs : activeArticle.authorEn}</strong>
-                    </span>
-                    <span className="dot" />
-                    <span>{isEs ? activeArticle.publishDateEs : activeArticle.publishDateEn}</span>
-                    <span className="dot" />
-                    <span>{activeArticle.readTime}</span>
-                  </div>
-                </div>
-
-                {/* Full Article Body */}
-                <article className="syndicated-body" style={{ padding: "28px 36px 36px" }}>
-                  {/* Quick Answer Box */}
-                  <div
-                    style={{
-                      padding: "20px 24px",
-                      background: "color-mix(in srgb, var(--teal) 8%, var(--card))",
-                      borderRadius: "10px",
-                      border: "1px solid color-mix(in srgb, var(--teal) 30%, var(--line))",
-                      marginBottom: "32px",
-                    }}
-                  >
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "10px",
-                        marginBottom: "8px",
-                      }}
-                    >
-                      <CheckCircleIcon />
-                      <h3
-                        style={{
-                          margin: 0,
-                          fontSize: "16.5px",
-                          fontWeight: 700,
-                          color: "var(--ink)",
-                        }}
-                      >
-                        {t("depth.reader.quickAnswer")}
-                      </h3>
-                    </div>
-                    <p
-                      style={{
-                        margin: 0,
-                        fontSize: "14.5px",
-                        lineHeight: "1.65",
-                        color: "var(--ink)",
-                      }}
-                    >
-                      {isEs ? activeArticle.quickAnswerEs : activeArticle.quickAnswerEn}
-                    </p>
-                  </div>
-
-                  {/* Dynamic Article Sections */}
-                  {activeArticle.sections.map((section, sIdx) => {
-                    const sTitle = isEs ? section.titleEs : section.titleEn;
-                    const paras = isEs ? section.paragraphsEs : section.paragraphsEn;
-                    const bullets = isEs ? section.bulletsEs : section.bulletsEn;
-
-                    return (
-                      <div key={sIdx} style={{ marginBottom: "28px" }}>
-                        <h2
-                          style={{
-                            fontSize: "20px",
-                            fontWeight: 700,
-                            color: "var(--ink)",
-                            margin: "0 0 12px 0",
-                          }}
-                        >
-                          {sTitle}
-                        </h2>
-
-                        {paras.map((p, pIdx) => (
-                          <p
-                            key={pIdx}
-                            style={{
-                              fontSize: "15px",
-                              lineHeight: "1.7",
-                              color: "var(--ink-soft)",
-                              marginBottom: "14px",
-                            }}
-                          >
-                            {p}
-                          </p>
-                        ))}
-
-                        {bullets && bullets.length > 0 && (
-                          <ul
-                            style={{
-                              paddingLeft: "22px",
-                              margin: "12px 0 18px",
-                              fontSize: "14.5px",
-                              lineHeight: "1.65",
-                              color: "var(--ink)",
-                            }}
-                          >
-                            {bullets.map((b, bIdx) => (
-                              <li key={bIdx} style={{ marginBottom: "6px" }}>
-                                {b}
-                              </li>
-                            ))}
-                          </ul>
-                        )}
-                      </div>
-                    );
-                  })}
-
-                  {/* The Bottom Line Summary Box */}
-                  <div
-                    style={{
-                      padding: "20px 24px",
-                      background: "var(--card)",
-                      border: "1px solid var(--line)",
-                      borderLeft: "4px solid var(--teal)",
-                      borderRadius: "10px",
-                      margin: "32px 0 24px",
-                    }}
-                  >
-                    <h4
-                      style={{
-                        margin: "0 0 8px 0",
-                        fontSize: "16px",
-                        fontWeight: 700,
-                        color: "var(--ink)",
-                      }}
-                    >
-                      {t("depth.reader.bottomLine")}
-                    </h4>
-                    <p
-                      style={{
-                        margin: 0,
-                        fontSize: "14.5px",
-                        lineHeight: "1.65",
-                        color: "var(--ink-soft)",
-                      }}
-                    >
-                      {isEs ? activeArticle.bottomLineEs : activeArticle.bottomLineEn}
-                    </p>
-                  </div>
-
-                  {/* End Attribution & Link */}
-                  <div className="end-attribution">
-                    <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                      <img
-                        src="/images/experian-logo.svg"
-                        alt="Experian"
-                        style={{ height: "20px", width: "auto" }}
-                      />
-                      <span>
-                        {isEs
-                          ? "Este artículo fue publicado originalmente en el blog Ask Experian y se reproduce con autorización."
-                          : "This article originally appeared on Experian's Ask Experian blog and is republished with permission."}
-                      </span>
-                    </div>
+                {/* Syndication Source Callout */}
+                <div className="source-block" style={{ margin: "18px 0" }}>
+                  <img
+                    src="/images/experian-logo.svg"
+                    alt="Experian"
+                    style={{ height: "20px", width: "auto", flexShrink: 0 }}
+                  />
+                  <div className="text">
+                    <strong>{isEs ? "Fuente: Experian." : "Sourced from Experian."}</strong>{" "}
+                    {isEs
+                      ? "Esta guía está distribuida con autorización de la biblioteca educativa Ask Experian de Experian."
+                      : "This article is syndicated with permission from Experian's Ask Experian resource library."}
                     <a
                       href={activeArticle.sourceUrl}
                       target="_blank"
                       rel="noreferrer noopener"
+                      style={{ marginLeft: "6px", fontWeight: 600 }}
                     >
-                      {isEs ? "Ver artículo original en Experian.com →" : "View the original article on Experian.com →"}
+                      {isEs ? "Ver artículo original en Experian.com →" : "Read the original on Experian.com →"}
                     </a>
                   </div>
-                </article>
+                </div>
+
+                <div className="byline">
+                  <div
+                    className="avatar"
+                    style={{
+                      background: "color-mix(in srgb, var(--teal) 15%, transparent)",
+                      color: "var(--teal)",
+                    }}
+                  >
+                    Exp
+                  </div>
+                  <span>
+                    <strong>{isEs ? activeArticle.authorEs : activeArticle.authorEn}</strong>
+                  </span>
+                  <span className="dot" />
+                  <span>{isEs ? activeArticle.publishDateEs : activeArticle.publishDateEn}</span>
+                  <span className="dot" />
+                  <span>{activeArticle.readTime}</span>
+                </div>
               </div>
+
+              {/* Full Article Body */}
+              <article className="syndicated-body" style={{ padding: "28px 36px 36px" }}>
+                {/* Quick Answer Box */}
+                <div
+                  style={{
+                    padding: "20px 24px",
+                    background: "color-mix(in srgb, var(--teal) 8%, var(--card))",
+                    borderRadius: "10px",
+                    border: "1px solid color-mix(in srgb, var(--teal) 30%, var(--line))",
+                    marginBottom: "32px",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "10px",
+                      marginBottom: "8px",
+                    }}
+                  >
+                    <CheckCircleIcon />
+                    <h3
+                      style={{
+                        margin: 0,
+                        fontSize: "16.5px",
+                        fontWeight: 700,
+                        color: "var(--ink)",
+                      }}
+                    >
+                      {t("depth.reader.quickAnswer")}
+                    </h3>
+                  </div>
+                  <p
+                    style={{
+                      margin: 0,
+                      fontSize: "14.5px",
+                      lineHeight: "1.65",
+                      color: "var(--ink)",
+                    }}
+                  >
+                    {isEs ? activeArticle.quickAnswerEs : activeArticle.quickAnswerEn}
+                  </p>
+                </div>
+
+                {/* Dynamic Article Sections */}
+                {activeArticle.sections.map((section, sIdx) => {
+                  const sTitle = isEs ? section.titleEs : section.titleEn;
+                  const paras = isEs ? section.paragraphsEs : section.paragraphsEn;
+                  const bullets = isEs ? section.bulletsEs : section.bulletsEn;
+
+                  return (
+                    <div key={sIdx} style={{ marginBottom: "28px" }}>
+                      <h2
+                        style={{
+                          fontSize: "20px",
+                          fontWeight: 700,
+                          color: "var(--ink)",
+                          margin: "0 0 12px 0",
+                        }}
+                      >
+                        {sTitle}
+                      </h2>
+
+                      {paras.map((p, pIdx) => (
+                        <p
+                          key={pIdx}
+                          style={{
+                            fontSize: "15px",
+                            lineHeight: "1.7",
+                            color: "var(--ink-soft)",
+                            marginBottom: "14px",
+                          }}
+                        >
+                          {p}
+                        </p>
+                      ))}
+
+                      {bullets && bullets.length > 0 && (
+                        <ul
+                          style={{
+                            paddingLeft: "22px",
+                            margin: "12px 0 18px",
+                            fontSize: "14.5px",
+                            lineHeight: "1.65",
+                            color: "var(--ink)",
+                          }}
+                        >
+                          {bullets.map((b, bIdx) => (
+                            <li key={bIdx} style={{ marginBottom: "6px" }}>
+                              {b}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  );
+                })}
+
+                {/* The Bottom Line Summary Box */}
+                <div
+                  style={{
+                    padding: "20px 24px",
+                    background: "var(--card)",
+                    border: "1px solid var(--line)",
+                    borderLeft: "4px solid var(--teal)",
+                    borderRadius: "10px",
+                    margin: "32px 0 24px",
+                  }}
+                >
+                  <h4
+                    style={{
+                      margin: "0 0 8px 0",
+                      fontSize: "16px",
+                      fontWeight: 700,
+                      color: "var(--ink)",
+                    }}
+                  >
+                    {t("depth.reader.bottomLine")}
+                  </h4>
+                  <p
+                    style={{
+                      margin: 0,
+                      fontSize: "14.5px",
+                      lineHeight: "1.65",
+                      color: "var(--ink-soft)",
+                    }}
+                  >
+                    {isEs ? activeArticle.bottomLineEs : activeArticle.bottomLineEn}
+                  </p>
+                </div>
+
+                {/* End Attribution & Link */}
+                <div className="end-attribution">
+                  <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                    <img
+                      src="/images/experian-logo.svg"
+                      alt="Experian"
+                      style={{ height: "20px", width: "auto" }}
+                    />
+                    <span>
+                      {isEs
+                        ? "Este artículo fue publicado originalmente en el blog Ask Experian y se reproduce con autorización."
+                        : "This article originally appeared on Experian's Ask Experian blog and is republished with permission."}
+                    </span>
+                  </div>
+                  <a
+                    href={activeArticle.sourceUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    {isEs ? "Ver artículo original en Experian.com →" : "View the original article on Experian.com →"}
+                  </a>
+                </div>
+              </article>
+            </div>
           )}
-          </section>
+        </section>
       </main>
 
       <SiteFooter />

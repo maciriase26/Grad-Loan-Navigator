@@ -331,7 +331,7 @@ export const en = {
   /* Manage Loans Refinance Banner */
   "manage.refiBanner.title": "Ready to compare refinance lenders?",
   "manage.refiBanner.btn": "Find a lender",
-  "depth.eyebrow": "Presented by Experian",
+  "depth.eyebrow": "Presented by",
   "depth.h1": "In-Depth Analysis",
   "depth.sub":
     "Comprehensive breakdowns, PDF brochures, and syndicated guides on credit, student borrowing, and repayment — powered by Experian.",
@@ -3309,7 +3309,7 @@ export const es: Partial<Record<TranslationKey, string>> = {
   /* Manage Loans Refinance Banner (Spanish) */
   "manage.refiBanner.title": "¿Listo para comparar prestamistas de refinanciación?",
   "manage.refiBanner.btn": "Buscar prestamista",
-  "depth.eyebrow": "Presentado por Experian",
+  "depth.eyebrow": "Presentado por",
   "depth.h1": "Análisis a Fondo",
   "depth.sub":
     "Desgloses exhaustivos, folletos en PDF y guías sobre crédito, préstamos estudiantiles y pagos — en colaboración con Experian.",
