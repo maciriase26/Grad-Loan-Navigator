@@ -362,6 +362,16 @@ export const en = {
 
   "depth.ask.title": "Ask Experian Articles",
   "depth.ask.desc": "Updated to reflect recent borrowing rules and student loan guidelines.",
+  "depth.ask.embedNote":
+    "Syndicated with permission from Experian's Ask Experian library. Read the complete verified guides directly on Grad Navigator without leaving the site.",
+  "depth.reader.badge": "Embedded Ask Experian Guide",
+  "depth.reader.close": "Close Reader",
+  "depth.reader.readButton": "Read Embedded Guide ↓",
+  "depth.reader.source":
+    "Sourced from Experian. This guide is syndicated with permission from the Ask Experian education library.",
+  "depth.reader.viewOriginal": "View original on Experian.com ↗",
+  "depth.reader.quickAnswer": "Quick Answer",
+  "depth.reader.bottomLine": "The Bottom Line",
 
   "depth.article1.tag": "Ask Experian · Guide",
   "depth.article1.title": "Types of Student Loans and How to Choose One",
@@ -1334,6 +1344,138 @@ export const en = {
   "gmba.nav.outcomes": "4. Graduate Outcomes",
   "gmba.nav.consider": "5. What Else to Consider",
   "gmba.nav.bottomline": "6. The Bottom Line",
+
+  /* ---------- 5 Liberal Arts Colleges That Punch Above Their Weight for Graduate School (English) ---------- */
+  "blog.card22.tag": "College ROI & Graduate Pathways · 5 min read",
+  "blog.card22.title": "5 Liberal Arts Colleges That Punch Above Their Weight for Graduate School",
+  "blog.card22.excerpt":
+    "Students planning for advanced degrees often overlook small liberal arts colleges. Here is how Wooster, Haverford, St. John's, Union, and Colorado College deliver elite research mentorship, Ivy League 4+1 partnerships, and standout graduate admissions.",
+  "blog.card22.author": "Peter Foulke & Jaylen Peng\nReviewed Nov 2026",
+  "blog.card22.cta": "Read article",
+
+  "lac.meta.title": "5 Liberal Arts Colleges That Punch Above Their Weight for Graduate School | Grad Navigator",
+  "lac.meta.desc":
+    "Discover 5 value liberal arts colleges that prepare undergraduates exceptionally well for graduate school: The College of Wooster, Haverford, St. John's College, Union College, and Colorado College. Analysis by Peter Foulke & Jaylen Peng.",
+  "lac.eyebrow": "College ROI & Graduate Pathways · 5 min read",
+  "lac.h1": "5 Liberal Arts Colleges That Punch Above Their Weight for Graduate School",
+  "lac.sub": "Students planning to pursue graduate degrees often overlook small, private liberal arts colleges. Here is why they shouldn't.",
+  "lac.updated": "Peter Foulke & Jaylen Peng · Reviewed as of Nov. 8, 2026",
+  "lac.why.title": "The Undergraduate LAC Advantage",
+  "lac.why.p":
+    "Undergrads planning to earn advanced degrees often default to massive public research powerhouses or elite brand names. But while some liberal arts colleges have smaller endowments, they counter with something research universities rarely offer: zero graduate students competing for lab instruments, direct faculty mentorship, mandatory senior research, and accelerated 4+1 and 3+2 dual-degree pathways with institutions like UPenn, Columbia, and Johns Hopkins.",
+  "lac.nav.wooster": "1. The College of Wooster",
+  "lac.nav.haverford": "2. Haverford College",
+  "lac.nav.stjohns": "3. St. John's College",
+  "lac.nav.union": "4. Union College",
+  "lac.nav.cc": "5. Colorado College",
+  "lac.nav.matrix": "6. Comparative Matrix",
+  "lac.nav.checklist": "7. Grad Readiness Checklist",
+  "lac.nav.bottomline": "8. The Bottom Line",
+
+  /* ---------- Professional Degree Loan Limits (English) ---------- */
+  "blog.card23.tag": "Federal Borrowing Caps · 5 min read",
+  "blog.card23.title": "Which 11 Professional Degrees Qualify for Higher Federal Student Loan Limits?",
+  "blog.card23.excerpt":
+    "The Department of Education has established new two-tier graduate borrowing limits under the One Big Beautiful Bill Act. Here are the 11 qualifying fields ($50k/year, $200k total), cost of attendance, mean debt, and how to bridge funding gaps.",
+  "blog.card23.author": "Peter Foulke\nReviewed Nov 2026",
+  "blog.card23.cta": "Read article",
+
+  "pdl.meta.title": "Which 11 Professional Degrees Qualify for Higher Federal Loan Limits? | Grad Navigator",
+  "pdl.meta.desc":
+    "Complete breakdown of new federal student loan borrowing limits: 11 qualifying professional degrees ($50,000/yr, $200,000 aggregate), elimination of Grad PLUS, cost of attendance, mean graduate debt, and funding strategies. By Peter Foulke.",
+  "pdl.eyebrow": "Federal Borrowing Caps & Policy · 5 min read",
+  "pdl.h1": "Which 11 Professional Degrees Qualify for Higher Federal Student Loan Limits?",
+  "pdl.sub":
+    "The Department of Education has established new federal borrowing limits for graduate and professional students, with 11 degree fields qualifying for significantly higher loan limits.",
+  "pdl.updated": "Peter Foulke · Reviewed as of Nov. 15, 2026",
+  "pdl.why.title": "Why it matters",
+  "pdl.why.p":
+    "Students pursuing certain qualifying degrees will have access to higher federal borrowing limits ($50,000 annually and $200,000 overall). Those in other graduate programs face stricter caps ($20,500 annually and $100,000 overall) and may struggle to cover tuition and living costs with federal loans alone, forcing them to rely on private loans, institutional grants, or reconsider their education plans.",
+  "pdl.nav.tiers": "1. Two-Tier Borrowing Limits",
+  "pdl.nav.degrees": "2. The 11 Qualifying Degrees",
+  "pdl.nav.gaps": "3. What If Limits Aren't Enough?",
+  "pdl.nav.consider": "4. Strategic Considerations & ROI",
+  "pdl.nav.court": "5. Legal Challenges & Expansions",
+  "pdl.nav.calculator": "6. Funding Gap Estimator",
+  "pdl.nav.sources": "7. Sources & Related Articles",
+
+  /* ---------- Can You Replace Grad PLUS with Private Loans? (English) ---------- */
+  "blog.card24.tag": "Graduate Borrowing & Lending · 4 min read",
+  "blog.card24.title": "Can You Replace Grad PLUS with Private Loans?",
+  "blog.card24.excerpt":
+    "With Grad PLUS eliminated as of July 1, 2026, private lending originations at Sallie Mae (+119%) and Navient (+173%) have skyrocketed. Here is how private loans compare on interest rates, cosigners, and lost federal protections.",
+  "blog.card24.author": "Jaylen Peng\nReviewed Nov 2026",
+  "blog.card24.cta": "Read article",
+
+  "gpp.meta.title": "Can You Replace Grad PLUS with Private Loans? | Grad Navigator",
+  "gpp.meta.desc":
+    "Federal student loan changes eliminated Grad PLUS for new borrowers as of July 1, 2026, triggering a surge in private student loans (+119% at Sallie Mae, +173% at Navient). Comprehensive analysis by Jaylen Peng.",
+  "gpp.eyebrow": "Graduate Borrowing & Lending · 4 min read",
+  "gpp.h1": "Can You Replace Grad PLUS with Private Loans?",
+  "gpp.sub":
+    "Traditionally, federal student loans have been the safer, cheaper option. However, recent changes to federal graduate student loans have left borrowers with fewer financing options. Should you turn to private lenders instead?",
+  "gpp.updated": "Jaylen Peng · Reviewed as of Nov. 15, 2026",
+  "gpp.why.title": "Why it matters",
+  "gpp.why.p":
+    "Grad PLUS loans previously allowed graduate and professional students to borrow up to the total cost of attendance, closing the gap between tuition and essential living costs (textbooks, housing, transportation). With Grad PLUS eliminated for new borrowers under the One Big Beautiful Bill Act, students face hard federal borrowing caps and many are turning to private loans to fund the remainder.",
+  "gpp.nav.policy": "1. Policy Change: Grad PLUS",
+  "gpp.nav.surge": "2. The Private Lending Surge",
+  "gpp.nav.eval": "3. Are Private Loans Right for You?",
+  "gpp.nav.compare": "4. Comparing the Full Cost",
+  "gpp.nav.calculator": "5. Federal vs. Private Loan Comparison",
+  "gpp.nav.sources": "6. The Bottom Line & Sources",
+
+  /* ---------- Elite Liberal Arts Colleges: A Hidden Bargain (English) ---------- */
+  "blog.card25.tag": "College ROI & Financial Aid · 4 min read",
+  "blog.card25.title": "Elite Liberal Arts Colleges: A Hidden Bargain",
+  "blog.card25.excerpt":
+    "Sticker prices topping $75,000 can scare families away, but elite liberal arts colleges offer transformative financial aid — with free tuition for families earning under $200,000. Data analysis of net prices vs. public flagships by Jaylen Peng.",
+  "blog.card25.author": "Jaylen Peng\nReviewed Nov 2026",
+  "blog.card25.cta": "Read article",
+
+  "lacb.meta.title": "Elite Liberal Arts Colleges: A Hidden Bargain | Grad Navigator",
+  "lacb.meta.desc":
+    "Discover how elite liberal arts colleges offer transformative financial aid, free tuition under $200k, and 10-year post-grad earnings of $88,220 that out-earn top public flagships. Analysis by Jaylen Peng.",
+  "lacb.eyebrow": "College ROI & Financial Aid · 4 min read",
+  "lacb.h1": "Elite Liberal Arts Colleges: A Hidden Bargain",
+  "lacb.sub":
+    "Some associate liberal arts colleges (LACs) with high price tags, limited resources, and low returns on investment. However, with generous financial aid initiatives and strong graduate outcomes, some LACs offer exceptional value and deserve consideration from prospective undergrads.",
+  "lacb.updated": "Jaylen Peng · Reviewed as of Nov. 8, 2026",
+  "lacb.why.title": "Why it matters",
+  "lacb.why.p":
+    "Don't let the sticker price scare you. While the top 10 private liberal arts colleges have an average annual tuition of $75,417, their endowments fund aggressive financial aid programs that make them significantly cheaper than state flagships for low- and middle-income families, with free tuition for households making up to $200,000.",
+  "lacb.nav.tuition": "1. At First Glance: Sticker Price",
+  "lacb.nav.aid": "2. Generous Financial Aid",
+  "lacb.nav.table": "3. LAC vs. Public Net Price",
+  "lacb.nav.earnings": "4. 10-Year Post-Grad Earnings",
+  "lacb.nav.experience": "5. The Liberal Arts Experience",
+  "lacb.nav.sources": "6. The Bottom Line & Sources",
+
+  /* ---------- Do Small Liberal Arts Colleges Feed into Top Careers? (English) ---------- */
+  "blog.card26.tag": "Career Pathways & Outcomes · 5 min read",
+  "blog.card26.title": "Do Small Liberal Arts Colleges Feed into Top Careers?",
+  "blog.card26.excerpt":
+    "A handful of small colleges send an outsized share of graduates into banking, consulting, tech, and top graduate programs. Here's what the data shows.",
+  "blog.card26.author": "Carson Jung\nRevised Nov 9, 2026",
+  "blog.card26.cta": "Read article",
+
+  "latc.meta.title": "Do Small Liberal Arts Colleges Feed into Top Careers? | Grad Navigator",
+  "latc.meta.desc":
+    "Discover how small liberal arts colleges place an outsized share of graduates into investment banking, big tech, management consulting, and top PhD, MBA, and law programs. Analysis by Carson Jung.",
+  "latc.eyebrow": "Career Pathways & Outcomes · 5 min read",
+  "latc.h1": "Do Small Liberal Arts Colleges Feed into Top Careers?",
+  "latc.sub":
+    "A handful of small colleges send an outsized share of graduates into banking, consulting, tech, and top graduate programs. Here's what the data shows.",
+  "latc.updated": "Carson Jung · Revised as of Nov. 9, 2026",
+  "latc.why.title": "Why it matters",
+  "latc.why.p":
+    "These small colleges place alongside much larger universities. Undergraduate students can use post-graduation employment numbers to decide what school best supports their career goals.",
+  "latc.nav.finance": "1. Investment Banking",
+  "latc.nav.tech": "2. Consulting & Tech",
+  "latc.nav.grad": "3. The Graduate School Path",
+  "latc.nav.service": "4. Public Service",
+  "latc.nav.context": "5. What Else You Need to Know",
+  "latc.nav.sources": "6. The Bottom Line & Sources",
 
   "wmd.meta.title": "When Should You Get a Master’s Degree? | Grad Navigator",
   "wmd.meta.desc":
@@ -3199,6 +3341,16 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "depth.ask.title": "Artículos de Ask Experian",
   "depth.ask.desc":
     "Actualizados para reflejar las normas de endeudamiento y guías de préstamos recientes.",
+  "depth.ask.embedNote":
+    "Distribuido con autorización de la biblioteca Ask Experian de Experian. Lee las guías completas verificadas directamente en Grad Navigator sin salir del sitio.",
+  "depth.reader.badge": "Guía Integrada de Ask Experian",
+  "depth.reader.close": "Cerrar Lector",
+  "depth.reader.readButton": "Leer Guía Completa ↓",
+  "depth.reader.source":
+    "Obtenido de Experian. Esta guía está distribuida con autorización de la biblioteca educativa Ask Experian.",
+  "depth.reader.viewOriginal": "Ver original en Experian.com ↗",
+  "depth.reader.quickAnswer": "Resumen Rápido",
+  "depth.reader.bottomLine": "El Veredicto Final",
 
   "depth.article1.tag": "Ask Experian · Guía",
   "depth.article1.title": "Tipos de Préstamos Estudiantiles y Cómo Elegir Uno",
@@ -5039,6 +5191,138 @@ export const es: Partial<Record<TranslationKey, string>> = {
   "gmba.nav.outcomes": "4. Resultados de Graduados",
   "gmba.nav.consider": "5. Qué Más Considerar",
   "gmba.nav.bottomline": "6. En Conclusión",
+
+  /* ---------- 5 Liberal Arts Colleges That Punch Above Their Weight for Graduate School (Spanish) ---------- */
+  "blog.card22.tag": "ROI Universitario y Posgrados · Lectura de 5 min",
+  "blog.card22.title": "5 Universidades de Artes Liberales que se Destacan en Preparación para el Posgrado",
+  "blog.card22.excerpt":
+    "Los estudiantes que planean posgrados suelen pasar por alto las universidades de artes liberales. Descubre cómo Wooster, Haverford, St. John's, Union y Colorado College ofrecen investigación de primer nivel, convenios 4+1 con la Ivy League y resultados sobresalientes.",
+  "blog.card22.author": "Peter Foulke y Jaylen Peng\nRevisado Nov 2026",
+  "blog.card22.cta": "Leer artículo",
+
+  "lac.meta.title": "5 Universidades de Artes Liberales Destacadas para el Posgrado | Grad Navigator",
+  "lac.meta.desc":
+    "Descubre 5 universidades de artes liberales que preparan excepcionalmente a sus alumnos para el posgrado: The College of Wooster, Haverford, St. John's College, Union College y Colorado College. Análisis de Peter Foulke y Jaylen Peng.",
+  "lac.eyebrow": "ROI Universitario y Posgrados · Lectura de 5 min",
+  "lac.h1": "5 Universidades de Artes Liberales que se Destacan en Preparación para el Posgrado",
+  "lac.sub": "Los estudiantes que planean realizar estudios de posgrado a menudo pasan por alto las pequeñas universidades privadas de artes liberales. He aquí por qué no deberían hacerlo.",
+  "lac.updated": "Peter Foulke y Jaylen Peng · Revisado al 8 de nov. de 2026",
+  "lac.why.title": "La Ventaja del Enfoque Exclusivo en Pregrado",
+  "lac.why.p":
+    "Muchos aspirantes a posgrado eligen grandes universidades públicas de investigación o instituciones privadas con gran reconocimiento de marca. Sin embargo, aunque las facultades de artes liberales tienen menor tamaño, lo compensan con algo que las megas universidades rara vez ofrecen: cero estudiantes de posgrado compitiendo por instrumentos de laboratorio, tutoría docente directa, tesis de investigación obligatoria y programas duales acelerados 4+1 y 3+2 con instituciones como UPenn, Columbia y Johns Hopkins.",
+  "lac.nav.wooster": "1. The College of Wooster",
+  "lac.nav.haverford": "2. Haverford College",
+  "lac.nav.stjohns": "3. St. John's College",
+  "lac.nav.union": "4. Union College",
+  "lac.nav.cc": "5. Colorado College",
+  "lac.nav.matrix": "6. Matriz Comparativa",
+  "lac.nav.checklist": "7. Lista de Preparación",
+  "lac.nav.bottomline": "8. En Conclusión",
+
+  /* ---------- Professional Degree Loan Limits (Spanish) ---------- */
+  "blog.card23.tag": "Límites Federales de Préstamo · Lectura de 5 min",
+  "blog.card23.title": "¿Cuáles son los 11 Títulos Profesionales que Califican para Límites de Préstamos Federales Más Altos?",
+  "blog.card23.excerpt":
+    "El Departamento de Educación estableció nuevos límites federales de endeudamiento en dos niveles bajo la Ley One Big Beautiful Bill. Conoce las 11 carreras elegibles ($50k/año, $200k total), costos de asistencia, deuda promedio y cómo cubrir brechas financieras.",
+  "blog.card23.author": "Peter Foulke\nRevisado Nov 2026",
+  "blog.card23.cta": "Leer artículo",
+
+  "pdl.meta.title": "¿Cuáles son los 11 Títulos Profesionales con Límites de Préstamos Más Altos? | Grad Navigator",
+  "pdl.meta.desc":
+    "Análisis completo de los nuevos límites de préstamos estudiantiles federales: 11 títulos profesionales elegibles ($50,000/año, $200,000 total), eliminación de Grad PLUS, costo de asistencia, deuda promedio y estrategias de financiamiento. Por Peter Foulke.",
+  "pdl.eyebrow": "Límites Federales de Préstamo y Política · Lectura de 5 min",
+  "pdl.h1": "¿Cuáles son los 11 Títulos Profesionales que Califican para Límites de Préstamos Federales Más Altos?",
+  "pdl.sub":
+    "El Departamento de Educación ha establecido nuevos límites de endeudamiento federal para estudiantes de posgrado y profesionales, con 11 carreras que califican para límites significativamente más altos.",
+  "pdl.updated": "Peter Foulke · Revisado al 15 de nov. de 2026",
+  "pdl.why.title": "Por qué es importante",
+  "pdl.why.p":
+    "Los estudiantes de ciertas carreras elegibles tendrán acceso a límites de endeudamiento federal más altos ($50,000 anuales y $200,000 en total). Quienes cursen otros programas enfrentan topes más estrictos ($20,500 anuales y $100,000 en total) y podrían tener dificultades para cubrir matrícula y costo de vida únicamente con fondos federales, viéndose obligados a recurrir a préstamos privados, becas institucionales o replantear sus planes educativos.",
+  "pdl.nav.tiers": "1. Límites Federales en Dos Niveles",
+  "pdl.nav.degrees": "2. Las 11 Carreras Elegibles",
+  "pdl.nav.gaps": "3. ¿Qué Hacer si los Límites no Alcanzan?",
+  "pdl.nav.consider": "4. Consideraciones Estratégicas y ROI",
+  "pdl.nav.court": "5. Fallos Judiciales y Expansiones",
+  "pdl.nav.calculator": "6. Estimador de Brecha Financiera",
+  "pdl.nav.sources": "7. Fuentes y Artículos Relacionados",
+
+  /* ---------- Can You Replace Grad PLUS with Private Loans? (Spanish) ---------- */
+  "blog.card24.tag": "Préstamos de Posgrado · Lectura de 4 min",
+  "blog.card24.title": "¿Se Puede Reemplazar Grad PLUS con Préstamos Privados?",
+  "blog.card24.excerpt":
+    "Tras la eliminación de Grad PLUS el 1 de julio de 2026, las emisiones de préstamos privados en Sallie Mae (+119%) y Navient (+173%) se han disparado. Descubre cómo se comparan los préstamos privados en tasas, codeudores y protecciones perdidas.",
+  "blog.card24.author": "Jaylen Peng\nRevisado Nov 2026",
+  "blog.card24.cta": "Leer artículo",
+
+  "gpp.meta.title": "¿Se Puede Reemplazar Grad PLUS con Préstamos Privados? | Grad Navigator",
+  "gpp.meta.desc":
+    "Las reformas federales eliminaron Grad PLUS para nuevos prestatarios a partir del 1 de julio de 2026, provocando un aumento en préstamos privados (+119% en Sallie Mae, +173% en Navient). Análisis detallado por Jaylen Peng.",
+  "gpp.eyebrow": "Préstamos de Posgrado y Política · Lectura de 4 min",
+  "gpp.h1": "¿Se Puede Reemplazar Grad PLUS con Préstamos Privados?",
+  "gpp.sub":
+    "Tradicionalmente, los préstamos federales han sido la opción más segura y económica. Sin embargo, los cambios recientes en los préstamos federales para posgrado han dejado a los prestatarios con menos opciones de financiamiento. ¿Deberías recurrir a prestamistas privados?",
+  "gpp.updated": "Jaylen Peng · Revisado al 15 de nov. de 2026",
+  "gpp.why.title": "Por qué es importante",
+  "gpp.why.p":
+    "Los préstamos Grad PLUS anteriormente permitían a los estudiantes de posgrado financiar hasta el costo total de asistencia, cubriendo la brecha entre la matrícula y los gastos vitales de manutención (vivienda, libros, transporte). Al eliminarse para nuevos prestatarios bajo la Ley One Big Beautiful Bill, los estudiantes enfrentan topes federales fijos y muchos recurren a préstamos privados para cubrir el saldo restante.",
+  "gpp.nav.policy": "1. Cambio de Política: Grad PLUS",
+  "gpp.nav.surge": "2. El Auge del Crédito Privado",
+  "gpp.nav.eval": "3. ¿Te Convienen los Préstamos Privados?",
+  "gpp.nav.compare": "4. Comparando el Costo Total",
+  "gpp.nav.calculator": "5. Comparador Federal vs. Privado",
+  "gpp.nav.sources": "6. Conclusión y Fuentes",
+
+  /* ---------- Elite Liberal Arts Colleges: A Hidden Bargain (Spanish) ---------- */
+  "blog.card25.tag": "ROI Universitario y Ayuda Financiera · Lectura de 4 min",
+  "blog.card25.title": "Colegios Universitarios de Artes Liberales de Élite: Una Ganga Oculta",
+  "blog.card25.excerpt":
+    "Los precios de lista que superan los $75,000 asustan a las familias, pero los colegios de artes liberales de élite ofrecen una ayuda financiera transformadora: matrícula gratuita para familias con ingresos inferiores a $200,000. Análisis de precios netos por Jaylen Peng.",
+  "blog.card25.author": "Jaylen Peng\nRevisado Nov 2026",
+  "blog.card25.cta": "Leer artículo",
+
+  "lacb.meta.title": "Colegios de Artes Liberales de Élite: Una Ganga Oculta | Grad Navigator",
+  "lacb.meta.desc":
+    "Descubre cómo las facultades de artes liberales de élite ofrecen ayuda financiera transformadora, matrícula gratuita bajo $200k e ingresos a 10 años ($88,220) que superan a las mejores universidades públicas. Análisis por Jaylen Peng.",
+  "lacb.eyebrow": "ROI Universitario y Ayuda Financiera · Lectura de 4 min",
+  "lacb.h1": "Colegios Universitarios de Artes Liberales de Élite: Una Ganga Oculta",
+  "lacb.sub":
+    "Algunos asocian los colegios de artes liberales (LAC) con precios altos, recursos limitados y bajos retornos de inversión. Sin embargo, con iniciativas generosas de ayuda financiera y sólidos resultados de graduación, algunos LAC ofrecen un valor excepcional y merecen la consideración de los futuros universitarios.",
+  "lacb.updated": "Jaylen Peng · Revisado al 8 de nov. de 2026",
+  "lacb.why.title": "Por qué es importante",
+  "lacb.why.p":
+    "No permitas que el precio de etiqueta te intimide. Aunque los 10 mejores colegios de artes liberales privados tienen una matrícula promedio de $75,417, sus fondos patrimoniales financian programas agresivos de ayuda que los hacen significativamente más asequibles que las universidades públicas para familias de ingresos bajos y medios, con matrícula gratuita para hogares que ganan hasta $200,000.",
+  "lacb.nav.tuition": "1. A Primera Vista: Precio de Lista",
+  "lacb.nav.aid": "2. Ayuda Financiera Generosa",
+  "lacb.nav.table": "3. Precio Neto LAC vs. Universidades Públicas",
+  "lacb.nav.earnings": "4. Ingresos a 10 Años de Graduación",
+  "lacb.nav.experience": "5. La Experiencia de Artes Liberales",
+  "lacb.nav.sources": "6. Conclusión y Fuentes",
+
+  /* ---------- Do Small Liberal Arts Colleges Feed into Top Careers? (Spanish) ---------- */
+  "blog.card26.tag": "Salidas Profesionales y Resultados · Lectura de 5 min",
+  "blog.card26.title": "¿Abren las Universidades de Artes Liberales las Puertas a las Mejores Carreras?",
+  "blog.card26.excerpt":
+    "Un selecto grupo de universidades pequeñas envía una proporción extraordinaria de graduados a banca, consultoría, tecnología y posgrados de élite. Esto revelan los datos.",
+  "blog.card26.author": "Carson Jung\nRevisado 9 Nov, 2026",
+  "blog.card26.cta": "Leer artículo",
+
+  "latc.meta.title": "¿Abren las Universidades de Artes Liberales las Puertas a las Mejores Carreras? | Grad Navigator",
+  "latc.meta.desc":
+    "Descubre cómo las pequeñas universidades de artes liberales envían una proporción sobresaliente de graduados a banca de inversión, tecnología, consultoría y programas de élite de doctorado, MBA y leyes. Análisis de Carson Jung.",
+  "latc.eyebrow": "Salidas Profesionales y Resultados · Lectura de 5 min",
+  "latc.h1": "¿Abren las Universidades de Artes Liberales las Puertas a las Mejores Carreras?",
+  "latc.sub":
+    "Un selecto grupo de universidades pequeñas envía una proporción extraordinaria de graduados a banca de inversión, consultoría, tecnología y posgrados de élite. Esto revelan los datos.",
+  "latc.updated": "Carson Jung · Revisado al 9 de nov. de 2026",
+  "latc.why.title": "Por qué es importante",
+  "latc.why.p":
+    "Estas pequeñas universidades se posicionan al nivel de instituciones mucho más grandes. Los estudiantes universitarios pueden utilizar las cifras de empleo posteriores a la graduación para decidir qué institución apoya mejor sus metas profesionales.",
+  "latc.nav.finance": "1. Banca de Inversión",
+  "latc.nav.tech": "2. Consultoría y Tecnología",
+  "latc.nav.grad": "3. Vía de Estudios de Posgrado",
+  "latc.nav.service": "4. Servicio Público",
+  "latc.nav.context": "5. Lo Que También Debes Saber",
+  "latc.nav.sources": "6. Conclusión y Fuentes",
 
   "wmd.meta.title": "¿Cuándo Deberías Obtener una Maestría? | Grad Navigator",
   "wmd.meta.desc":

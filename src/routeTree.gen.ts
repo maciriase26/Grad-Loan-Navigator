@@ -36,13 +36,18 @@ import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as ApiContactRouteImport } from './routes/api/contact'
+import { Route as Blog5LiberalArtsCollegesGraduateSchoolRouteImport } from './routes/blog_.5-liberal-arts-colleges-graduate-school'
 import { Route as BlogAiUseInHigherEducationRouteImport } from './routes/blog_.ai-use-in-higher-education'
+import { Route as BlogCanYouReplaceGradPlusWithPrivateLoansRouteImport } from './routes/blog_.can-you-replace-grad-plus-with-private-loans'
 import { Route as BlogClemsonUniversityTheBestOfBothWorldsRouteImport } from './routes/blog_.clemson-university-the-best-of-both-worlds'
+import { Route as BlogDoSmallLiberalArtsCollegesFeedIntoTopCareersRouteImport } from './routes/blog_.do-small-liberal-arts-colleges-feed-into-top-careers'
+import { Route as BlogEliteLiberalArtsCollegesHiddenBargainRouteImport } from './routes/blog_.elite-liberal-arts-colleges-hidden-bargain'
 import { Route as BlogFafsaDeadlinesRouteImport } from './routes/blog_.fafsa-deadlines'
 import { Route as BlogFafsaExplainedRouteImport } from './routes/blog_.fafsa-explained'
 import { Route as BlogFederalAidCutsLowEarningProgramsRouteImport } from './routes/blog_.federal-aid-cuts-low-earning-programs'
 import { Route as BlogMbaPrestigeRoiRouteImport } from './routes/blog_.mba-prestige-roi'
 import { Route as BlogOhioStateNationalLeaderGraduateStudyRouteImport } from './routes/blog_.ohio-state-national-leader-graduate-study'
+import { Route as BlogProfessionalDegreeLoanLimitsRouteImport } from './routes/blog_.professional-degree-loan-limits'
 import { Route as BlogPublicVsPrivateGradSchoolRouteImport } from './routes/blog_.public-vs-private-grad-school'
 import { Route as BlogRefinancingStudentLoansRouteImport } from './routes/blog_.refinancing-student-loans'
 import { Route as BlogStudentLoanInterestByTheNumbersRouteImport } from './routes/blog_.student-loan-interest-by-the-numbers'
@@ -201,16 +206,40 @@ const ApiContactRoute = ApiContactRouteImport.update({
   path: '/api/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const Blog5LiberalArtsCollegesGraduateSchoolRoute =
+  Blog5LiberalArtsCollegesGraduateSchoolRouteImport.update({
+    id: '/blog_/5-liberal-arts-colleges-graduate-school',
+    path: '/blog/5-liberal-arts-colleges-graduate-school',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogAiUseInHigherEducationRoute =
   BlogAiUseInHigherEducationRouteImport.update({
     id: '/blog_/ai-use-in-higher-education',
     path: '/blog/ai-use-in-higher-education',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogCanYouReplaceGradPlusWithPrivateLoansRoute =
+  BlogCanYouReplaceGradPlusWithPrivateLoansRouteImport.update({
+    id: '/blog_/can-you-replace-grad-plus-with-private-loans',
+    path: '/blog/can-you-replace-grad-plus-with-private-loans',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogClemsonUniversityTheBestOfBothWorldsRoute =
   BlogClemsonUniversityTheBestOfBothWorldsRouteImport.update({
     id: '/blog_/clemson-university-the-best-of-both-worlds',
     path: '/blog/clemson-university-the-best-of-both-worlds',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogDoSmallLiberalArtsCollegesFeedIntoTopCareersRoute =
+  BlogDoSmallLiberalArtsCollegesFeedIntoTopCareersRouteImport.update({
+    id: '/blog_/do-small-liberal-arts-colleges-feed-into-top-careers',
+    path: '/blog/do-small-liberal-arts-colleges-feed-into-top-careers',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogEliteLiberalArtsCollegesHiddenBargainRoute =
+  BlogEliteLiberalArtsCollegesHiddenBargainRouteImport.update({
+    id: '/blog_/elite-liberal-arts-colleges-hidden-bargain',
+    path: '/blog/elite-liberal-arts-colleges-hidden-bargain',
     getParentRoute: () => rootRouteImport,
   } as any)
 const BlogFafsaDeadlinesRoute = BlogFafsaDeadlinesRouteImport.update({
@@ -238,6 +267,12 @@ const BlogOhioStateNationalLeaderGraduateStudyRoute =
   BlogOhioStateNationalLeaderGraduateStudyRouteImport.update({
     id: '/blog_/ohio-state-national-leader-graduate-study',
     path: '/blog/ohio-state-national-leader-graduate-study',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogProfessionalDegreeLoanLimitsRoute =
+  BlogProfessionalDegreeLoanLimitsRouteImport.update({
+    id: '/blog_/professional-degree-loan-limits',
+    path: '/blog/professional-degree-loan-limits',
     getParentRoute: () => rootRouteImport,
   } as any)
 const BlogPublicVsPrivateGradSchoolRoute =
@@ -380,13 +415,18 @@ export interface FileRoutesByFullPath {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/api/chat': typeof ApiChatRoute
   '/api/contact': typeof ApiContactRoute
+  '/blog/5-liberal-arts-colleges-graduate-school': typeof Blog5LiberalArtsCollegesGraduateSchoolRoute
   '/blog/ai-use-in-higher-education': typeof BlogAiUseInHigherEducationRoute
+  '/blog/can-you-replace-grad-plus-with-private-loans': typeof BlogCanYouReplaceGradPlusWithPrivateLoansRoute
   '/blog/clemson-university-the-best-of-both-worlds': typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
+  '/blog/do-small-liberal-arts-colleges-feed-into-top-careers': typeof BlogDoSmallLiberalArtsCollegesFeedIntoTopCareersRoute
+  '/blog/elite-liberal-arts-colleges-hidden-bargain': typeof BlogEliteLiberalArtsCollegesHiddenBargainRoute
   '/blog/fafsa-deadlines': typeof BlogFafsaDeadlinesRoute
   '/blog/fafsa-explained': typeof BlogFafsaExplainedRoute
   '/blog/federal-aid-cuts-low-earning-programs': typeof BlogFederalAidCutsLowEarningProgramsRoute
   '/blog/mba-prestige-roi': typeof BlogMbaPrestigeRoiRoute
   '/blog/ohio-state-national-leader-graduate-study': typeof BlogOhioStateNationalLeaderGraduateStudyRoute
+  '/blog/professional-degree-loan-limits': typeof BlogProfessionalDegreeLoanLimitsRoute
   '/blog/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
@@ -435,13 +475,18 @@ export interface FileRoutesByTo {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/api/chat': typeof ApiChatRoute
   '/api/contact': typeof ApiContactRoute
+  '/blog/5-liberal-arts-colleges-graduate-school': typeof Blog5LiberalArtsCollegesGraduateSchoolRoute
   '/blog/ai-use-in-higher-education': typeof BlogAiUseInHigherEducationRoute
+  '/blog/can-you-replace-grad-plus-with-private-loans': typeof BlogCanYouReplaceGradPlusWithPrivateLoansRoute
   '/blog/clemson-university-the-best-of-both-worlds': typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
+  '/blog/do-small-liberal-arts-colleges-feed-into-top-careers': typeof BlogDoSmallLiberalArtsCollegesFeedIntoTopCareersRoute
+  '/blog/elite-liberal-arts-colleges-hidden-bargain': typeof BlogEliteLiberalArtsCollegesHiddenBargainRoute
   '/blog/fafsa-deadlines': typeof BlogFafsaDeadlinesRoute
   '/blog/fafsa-explained': typeof BlogFafsaExplainedRoute
   '/blog/federal-aid-cuts-low-earning-programs': typeof BlogFederalAidCutsLowEarningProgramsRoute
   '/blog/mba-prestige-roi': typeof BlogMbaPrestigeRoiRoute
   '/blog/ohio-state-national-leader-graduate-study': typeof BlogOhioStateNationalLeaderGraduateStudyRoute
+  '/blog/professional-degree-loan-limits': typeof BlogProfessionalDegreeLoanLimitsRoute
   '/blog/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
@@ -491,13 +536,18 @@ export interface FileRoutesById {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/api/chat': typeof ApiChatRoute
   '/api/contact': typeof ApiContactRoute
+  '/blog_/5-liberal-arts-colleges-graduate-school': typeof Blog5LiberalArtsCollegesGraduateSchoolRoute
   '/blog_/ai-use-in-higher-education': typeof BlogAiUseInHigherEducationRoute
+  '/blog_/can-you-replace-grad-plus-with-private-loans': typeof BlogCanYouReplaceGradPlusWithPrivateLoansRoute
   '/blog_/clemson-university-the-best-of-both-worlds': typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
+  '/blog_/do-small-liberal-arts-colleges-feed-into-top-careers': typeof BlogDoSmallLiberalArtsCollegesFeedIntoTopCareersRoute
+  '/blog_/elite-liberal-arts-colleges-hidden-bargain': typeof BlogEliteLiberalArtsCollegesHiddenBargainRoute
   '/blog_/fafsa-deadlines': typeof BlogFafsaDeadlinesRoute
   '/blog_/fafsa-explained': typeof BlogFafsaExplainedRoute
   '/blog_/federal-aid-cuts-low-earning-programs': typeof BlogFederalAidCutsLowEarningProgramsRoute
   '/blog_/mba-prestige-roi': typeof BlogMbaPrestigeRoiRoute
   '/blog_/ohio-state-national-leader-graduate-study': typeof BlogOhioStateNationalLeaderGraduateStudyRoute
+  '/blog_/professional-degree-loan-limits': typeof BlogProfessionalDegreeLoanLimitsRoute
   '/blog_/public-vs-private-grad-school': typeof BlogPublicVsPrivateGradSchoolRoute
   '/blog_/refinancing-student-loans': typeof BlogRefinancingStudentLoansRoute
   '/blog_/student-loan-interest-by-the-numbers': typeof BlogStudentLoanInterestByTheNumbersRoute
@@ -548,13 +598,18 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/api/chat'
     | '/api/contact'
+    | '/blog/5-liberal-arts-colleges-graduate-school'
     | '/blog/ai-use-in-higher-education'
+    | '/blog/can-you-replace-grad-plus-with-private-loans'
     | '/blog/clemson-university-the-best-of-both-worlds'
+    | '/blog/do-small-liberal-arts-colleges-feed-into-top-careers'
+    | '/blog/elite-liberal-arts-colleges-hidden-bargain'
     | '/blog/fafsa-deadlines'
     | '/blog/fafsa-explained'
     | '/blog/federal-aid-cuts-low-earning-programs'
     | '/blog/mba-prestige-roi'
     | '/blog/ohio-state-national-leader-graduate-study'
+    | '/blog/professional-degree-loan-limits'
     | '/blog/public-vs-private-grad-school'
     | '/blog/refinancing-student-loans'
     | '/blog/student-loan-interest-by-the-numbers'
@@ -603,13 +658,18 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/api/chat'
     | '/api/contact'
+    | '/blog/5-liberal-arts-colleges-graduate-school'
     | '/blog/ai-use-in-higher-education'
+    | '/blog/can-you-replace-grad-plus-with-private-loans'
     | '/blog/clemson-university-the-best-of-both-worlds'
+    | '/blog/do-small-liberal-arts-colleges-feed-into-top-careers'
+    | '/blog/elite-liberal-arts-colleges-hidden-bargain'
     | '/blog/fafsa-deadlines'
     | '/blog/fafsa-explained'
     | '/blog/federal-aid-cuts-low-earning-programs'
     | '/blog/mba-prestige-roi'
     | '/blog/ohio-state-national-leader-graduate-study'
+    | '/blog/professional-degree-loan-limits'
     | '/blog/public-vs-private-grad-school'
     | '/blog/refinancing-student-loans'
     | '/blog/student-loan-interest-by-the-numbers'
@@ -658,13 +718,18 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/api/chat'
     | '/api/contact'
+    | '/blog_/5-liberal-arts-colleges-graduate-school'
     | '/blog_/ai-use-in-higher-education'
+    | '/blog_/can-you-replace-grad-plus-with-private-loans'
     | '/blog_/clemson-university-the-best-of-both-worlds'
+    | '/blog_/do-small-liberal-arts-colleges-feed-into-top-careers'
+    | '/blog_/elite-liberal-arts-colleges-hidden-bargain'
     | '/blog_/fafsa-deadlines'
     | '/blog_/fafsa-explained'
     | '/blog_/federal-aid-cuts-low-earning-programs'
     | '/blog_/mba-prestige-roi'
     | '/blog_/ohio-state-national-leader-graduate-study'
+    | '/blog_/professional-degree-loan-limits'
     | '/blog_/public-vs-private-grad-school'
     | '/blog_/refinancing-student-loans'
     | '/blog_/student-loan-interest-by-the-numbers'
@@ -714,13 +779,18 @@ export interface RootRouteChildren {
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   ApiChatRoute: typeof ApiChatRoute
   ApiContactRoute: typeof ApiContactRoute
+  Blog5LiberalArtsCollegesGraduateSchoolRoute: typeof Blog5LiberalArtsCollegesGraduateSchoolRoute
   BlogAiUseInHigherEducationRoute: typeof BlogAiUseInHigherEducationRoute
+  BlogCanYouReplaceGradPlusWithPrivateLoansRoute: typeof BlogCanYouReplaceGradPlusWithPrivateLoansRoute
   BlogClemsonUniversityTheBestOfBothWorldsRoute: typeof BlogClemsonUniversityTheBestOfBothWorldsRoute
+  BlogDoSmallLiberalArtsCollegesFeedIntoTopCareersRoute: typeof BlogDoSmallLiberalArtsCollegesFeedIntoTopCareersRoute
+  BlogEliteLiberalArtsCollegesHiddenBargainRoute: typeof BlogEliteLiberalArtsCollegesHiddenBargainRoute
   BlogFafsaDeadlinesRoute: typeof BlogFafsaDeadlinesRoute
   BlogFafsaExplainedRoute: typeof BlogFafsaExplainedRoute
   BlogFederalAidCutsLowEarningProgramsRoute: typeof BlogFederalAidCutsLowEarningProgramsRoute
   BlogMbaPrestigeRoiRoute: typeof BlogMbaPrestigeRoiRoute
   BlogOhioStateNationalLeaderGraduateStudyRoute: typeof BlogOhioStateNationalLeaderGraduateStudyRoute
+  BlogProfessionalDegreeLoanLimitsRoute: typeof BlogProfessionalDegreeLoanLimitsRoute
   BlogPublicVsPrivateGradSchoolRoute: typeof BlogPublicVsPrivateGradSchoolRoute
   BlogRefinancingStudentLoansRoute: typeof BlogRefinancingStudentLoansRoute
   BlogStudentLoanInterestByTheNumbersRoute: typeof BlogStudentLoanInterestByTheNumbersRoute
@@ -933,6 +1003,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog_/5-liberal-arts-colleges-graduate-school': {
+      id: '/blog_/5-liberal-arts-colleges-graduate-school'
+      path: '/blog/5-liberal-arts-colleges-graduate-school'
+      fullPath: '/blog/5-liberal-arts-colleges-graduate-school'
+      preLoaderRoute: typeof Blog5LiberalArtsCollegesGraduateSchoolRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog_/ai-use-in-higher-education': {
       id: '/blog_/ai-use-in-higher-education'
       path: '/blog/ai-use-in-higher-education'
@@ -940,11 +1017,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogAiUseInHigherEducationRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog_/can-you-replace-grad-plus-with-private-loans': {
+      id: '/blog_/can-you-replace-grad-plus-with-private-loans'
+      path: '/blog/can-you-replace-grad-plus-with-private-loans'
+      fullPath: '/blog/can-you-replace-grad-plus-with-private-loans'
+      preLoaderRoute: typeof BlogCanYouReplaceGradPlusWithPrivateLoansRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog_/clemson-university-the-best-of-both-worlds': {
       id: '/blog_/clemson-university-the-best-of-both-worlds'
       path: '/blog/clemson-university-the-best-of-both-worlds'
       fullPath: '/blog/clemson-university-the-best-of-both-worlds'
       preLoaderRoute: typeof BlogClemsonUniversityTheBestOfBothWorldsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog_/do-small-liberal-arts-colleges-feed-into-top-careers': {
+      id: '/blog_/do-small-liberal-arts-colleges-feed-into-top-careers'
+      path: '/blog/do-small-liberal-arts-colleges-feed-into-top-careers'
+      fullPath: '/blog/do-small-liberal-arts-colleges-feed-into-top-careers'
+      preLoaderRoute: typeof BlogDoSmallLiberalArtsCollegesFeedIntoTopCareersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog_/elite-liberal-arts-colleges-hidden-bargain': {
+      id: '/blog_/elite-liberal-arts-colleges-hidden-bargain'
+      path: '/blog/elite-liberal-arts-colleges-hidden-bargain'
+      fullPath: '/blog/elite-liberal-arts-colleges-hidden-bargain'
+      preLoaderRoute: typeof BlogEliteLiberalArtsCollegesHiddenBargainRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog_/fafsa-deadlines': {
@@ -980,6 +1078,13 @@ declare module '@tanstack/react-router' {
       path: '/blog/ohio-state-national-leader-graduate-study'
       fullPath: '/blog/ohio-state-national-leader-graduate-study'
       preLoaderRoute: typeof BlogOhioStateNationalLeaderGraduateStudyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog_/professional-degree-loan-limits': {
+      id: '/blog_/professional-degree-loan-limits'
+      path: '/blog/professional-degree-loan-limits'
+      fullPath: '/blog/professional-degree-loan-limits'
+      preLoaderRoute: typeof BlogProfessionalDegreeLoanLimitsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog_/public-vs-private-grad-school': {
@@ -1147,9 +1252,17 @@ const rootRouteChildren: RootRouteChildren = {
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
   ApiChatRoute: ApiChatRoute,
   ApiContactRoute: ApiContactRoute,
+  Blog5LiberalArtsCollegesGraduateSchoolRoute:
+    Blog5LiberalArtsCollegesGraduateSchoolRoute,
   BlogAiUseInHigherEducationRoute: BlogAiUseInHigherEducationRoute,
+  BlogCanYouReplaceGradPlusWithPrivateLoansRoute:
+    BlogCanYouReplaceGradPlusWithPrivateLoansRoute,
   BlogClemsonUniversityTheBestOfBothWorldsRoute:
     BlogClemsonUniversityTheBestOfBothWorldsRoute,
+  BlogDoSmallLiberalArtsCollegesFeedIntoTopCareersRoute:
+    BlogDoSmallLiberalArtsCollegesFeedIntoTopCareersRoute,
+  BlogEliteLiberalArtsCollegesHiddenBargainRoute:
+    BlogEliteLiberalArtsCollegesHiddenBargainRoute,
   BlogFafsaDeadlinesRoute: BlogFafsaDeadlinesRoute,
   BlogFafsaExplainedRoute: BlogFafsaExplainedRoute,
   BlogFederalAidCutsLowEarningProgramsRoute:
@@ -1157,6 +1270,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogMbaPrestigeRoiRoute: BlogMbaPrestigeRoiRoute,
   BlogOhioStateNationalLeaderGraduateStudyRoute:
     BlogOhioStateNationalLeaderGraduateStudyRoute,
+  BlogProfessionalDegreeLoanLimitsRoute: BlogProfessionalDegreeLoanLimitsRoute,
   BlogPublicVsPrivateGradSchoolRoute: BlogPublicVsPrivateGradSchoolRoute,
   BlogRefinancingStudentLoansRoute: BlogRefinancingStudentLoansRoute,
   BlogStudentLoanInterestByTheNumbersRoute:

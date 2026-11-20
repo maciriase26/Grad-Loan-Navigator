@@ -985,6 +985,216 @@ function BlogPage() {
                 </span>
               </div>
             </Link>
+
+            {/* 5 Liberal Arts Colleges That Punch Above Their Weight for Graduate School */}
+            <Link
+              className="path-card card-b"
+              to="/blog/5-liberal-arts-colleges-graduate-school"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <span className="path-subheader">{t("blog.card22.tag")}</span>
+              <h2>{t("blog.card22.title")}</h2>
+              <p className="desc">{t("blog.card22.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-end",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                  gap: "12px",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
+                  }}
+                >
+                  {t("blog.card22.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card22.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
+
+            {/* Which 11 Professional Degrees Qualify for Higher Federal Student Loan Limits? */}
+            <Link
+              className="path-card card-a"
+              to="/blog/professional-degree-loan-limits"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <span className="path-subheader">{t("blog.card23.tag")}</span>
+              <h2>{t("blog.card23.title")}</h2>
+              <p className="desc">{t("blog.card23.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-end",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                  gap: "12px",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
+                  }}
+                >
+                  {t("blog.card23.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card23.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
+
+            {/* Can You Replace Grad PLUS with Private Loans? */}
+            <Link
+              className="path-card card-b"
+              to="/blog/can-you-replace-grad-plus-with-private-loans"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <span className="path-subheader">{t("blog.card24.tag")}</span>
+              <h2>{t("blog.card24.title")}</h2>
+              <p className="desc">{t("blog.card24.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-end",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                  gap: "12px",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
+                  }}
+                >
+                  {t("blog.card24.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card24.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
+
+            {/* Elite Liberal Arts Colleges: A Hidden Bargain */}
+            <Link
+              className="path-card card-a"
+              to="/blog/elite-liberal-arts-colleges-hidden-bargain"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <span className="path-subheader">{t("blog.card25.tag")}</span>
+              <h2>{t("blog.card25.title")}</h2>
+              <p className="desc">{t("blog.card25.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-end",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                  gap: "12px",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
+                  }}
+                >
+                  {t("blog.card25.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card25.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
+
+            {/* Do Small Liberal Arts Colleges Feed into Top Careers? */}
+            <Link
+              className="path-card card-b"
+              to="/blog/do-small-liberal-arts-colleges-feed-into-top-careers"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <span className="path-subheader">{t("blog.card26.tag")}</span>
+              <h2>{t("blog.card26.title")}</h2>
+              <p className="desc">{t("blog.card26.excerpt")}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-end",
+                  marginTop: "auto",
+                  paddingTop: "16px",
+                  borderTop: "1px solid var(--line)",
+                  gap: "12px",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11.5px",
+                    color: "var(--ink-soft)",
+                    whiteSpace: "pre-line",
+                    lineHeight: "1.35",
+                  }}
+                >
+                  {t("blog.card26.author")}
+                </span>
+                <span className="path-cta">
+                  {t("blog.card26.cta")}
+                  <Arrow />
+                </span>
+              </div>
+            </Link>
           </div>
         </section>
       </main>
