@@ -38,6 +38,7 @@ export const Route = createFileRoute("/")({
             "https://www.instagram.com/graduationnavigator/",
             "https://www.facebook.com/profile.php?id=61594019007088",
             "https://www.tiktok.com/@gradnavigator",
+            "https://youtube.com/@graduationnavigator?si=jh6Iwt_hfaWw3_vK",
           ],
         }),
       },

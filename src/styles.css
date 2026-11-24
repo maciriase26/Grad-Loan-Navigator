@@ -1563,6 +1563,11 @@
   border-color: #0a66c2;
   background-color: color-mix(in srgb, #0a66c2 8%, var(--card-paper));
 }
+.foot-social-icon-btn.yt:hover {
+  color: #ff0000;
+  border-color: #ff0000;
+  background-color: color-mix(in srgb, #ff0000 8%, var(--card-paper));
+}
 
 .foot-bottom {
   margin-top: 44px;
