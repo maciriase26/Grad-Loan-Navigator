@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aid Letter Upload Prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16233F; --ink-soft:#54607A; --paper:#EEF0EC; --card:#FBFBF9; --line:#D7D9D1;
+  --green:#0E9F6E; --green-soft:#BEEBDA; --green-ink:#0A7552;
+  --amber:#A86A12; --amber-soft:#FCEFD6; --amber-line:#E9C27A;
+  --red:#B4412F; --red-soft:#F8E1DC;
+  --radius:2px; --shadow:0 1px 0 rgba(22,35,63,.04),0 8px 24px -16px rgba(22,35,63,.25);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-.01em;margin:0}
+.mono,.num{font-family:'IBM Plex Mono',ui-monospace,monospace}
+button{font:inherit;cursor:pointer}
+input,select{font:inherit;color:inherit}
+a{color:var(--green-ink)}
+
+.top{position:sticky;top:0;z-index:20;background:var(--ink);color:#fff;display:flex;align-items:center;gap:12px;padding:10px 20px}
+.brand{font-family:'Fraunces',serif;font-weight:600;font-size:18px;display:flex;align-items:center;gap:8px}
+.tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;background:rgba(255,255,255,.12);padding:3px 8px;border-radius:var(--radius)}
+.top .spacer{flex:1}
+.devbtn{background:var(--green);color:#fff;border:0;padding:7px 12px;border-radius:var(--radius);font-weight:600;font-size:13px}
+
+.layout{display:grid;grid-template-columns:1fr;min-height:calc(100vh - 50px)}
+body.dev-open .layout{grid-template-columns:minmax(0,1fr) 420px}
+main{padding:32px 20px 80px;max-width:1120px;width:100%;margin:0 auto;min-width:0}
+
+.stepper{display:flex;gap:6px;margin:0 0 24px}
+.stepper div{flex:1;border-top:3px solid var(--line);padding-top:6px;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft)}
+.stepper div.on{border-color:var(--green);color:var(--ink)}
+.stepper div.done{border-color:var(--green-soft)}
+
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--green-ink);margin-bottom:6px}
+.lede{color:var(--ink-soft);max-width:640px;margin:8px 0 24px}
+h1{font-size:clamp(28px,4vw,38px);line-height:1.1}
+h2{font-size:22px}
+h3{font-size:17px}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.pad{padding:24px}
+.btn{border:1px solid var(--ink);background:var(--ink);color:#fff;padding:11px 18px;border-radius:var(--radius);font-weight:600}
+.btn:disabled{opacity:.35;cursor:not-allowed}
+.btn.green{background:var(--green);border-color:var(--green)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.sm{padding:6px 10px;font-size:13px}
+.linkbtn{background:none;border:0;padding:0;color:var(--green-ink);text-decoration:underline;font-weight:500}
+
+/* upload */
+.upgrid{display:grid;grid-template-columns:1.45fr 1fr;gap:20px;align-items:start}
+.drop{border:2px dashed #B9BDB1;border-radius:var(--radius);padding:32px 20px;text-align:center;background:#fff;transition:.15s}
+.drop.over{border-color:var(--green);background:#F2FBF7}
+.drop .icon{width:52px;height:52px;margin:0 auto 12px;border-radius:50%;background:var(--green-soft);display:grid;place-items:center}
+.drop h3{margin-bottom:4px}
+.drop p{margin:0 0 16px;color:var(--ink-soft);font-size:14px}
+.drop .row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.privacy{display:flex;gap:10px;align-items:flex-start;background:#F2FBF7;border:1px solid var(--green-soft);padding:10px 12px;border-radius:var(--radius);font-size:13.5px;margin-bottom:14px}
+.privacy svg{flex:none;margin-top:2px}
+.letters{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:8px}
+.letters li{background:#fff;border:1px solid var(--line);padding:10px 12px;border-radius:var(--radius)}
+.letters .lh{display:flex;align-items:center;gap:10px}
+.letters .no{font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:600;background:var(--ink);color:#fff;padding:2px 7px;border-radius:var(--radius);flex:none}
+.letters .pages{flex:1;min-width:0;display:flex;gap:6px;flex-wrap:wrap}
+.letters .pg{display:inline-flex;align-items:center;gap:6px;background:var(--paper);border:1px solid var(--line);padding:2px 4px 2px 2px;font-size:12.5px;max-width:100%;border-radius:var(--radius)}
+.letters .pg .th{width:22px;height:28px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;font-size:8px;font-family:'IBM Plex Mono',monospace;color:var(--ink-soft);overflow:hidden;flex:none}
+.letters .pg .th img{width:100%;height:100%;object-fit:cover}
+.letters .pg span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:170px}
+.letters .pg button,.letters .x{border:0;background:none;color:var(--ink-soft);font-size:16px;line-height:1;padding:0 2px}
+.letters .addpg{font-size:12.5px}
+.hint{font-size:12.5px;color:var(--ink-soft);margin-top:6px}
+.actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:18px}
+.side h3{margin-bottom:8px}
+.side ol{margin:0;padding-left:20px;color:var(--ink-soft);font-size:14px}
+.side ol li{margin-bottom:6px}
+.proto{margin-top:20px;border:1px dashed var(--ink-soft);padding:14px 16px;border-radius:var(--radius);background:rgba(255,255,255,.5)}
+.proto .eyebrow{color:var(--ink-soft)}
+.proto .row{display:flex;gap:8px;flex-wrap:wrap}
+
+/* reading */
+.reading{padding:40px 28px;max-width:640px;margin:0 auto}
+.reading h2{text-align:center}
+.reading .lede{text-align:center;margin:6px auto 22px}
+.rlist{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.rlist li{display:flex;align-items:center;gap:12px;border:1px solid var(--line);background:#fff;padding:12px 14px;border-radius:var(--radius)}
+.rlist .st{width:22px;height:22px;flex:none;border-radius:50%;border:3px solid var(--green-soft);border-top-color:var(--green);animation:spin .8s linear infinite}
+.rlist li.ok .st{animation:none;border:0;background:var(--green);display:grid;place-items:center}
+.rlist li.ok .st::after{content:'';width:9px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg) translate(1px,-1px)}
+.rlist li.fail .st{animation:none;border:0;background:var(--red)}
+.rlist .t{flex:1;min-width:0}
+.rlist .t b{display:block;font-size:14.5px}
+.rlist .t span{font-size:12.5px;color:var(--ink-soft)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.bar{height:4px;background:var(--line);margin-top:18px;border-radius:2px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--green);width:0;transition:width .4s}
+
+/* review */
+.cgrid{display:grid;grid-template-columns:1fr 300px;gap:20px;align-items:start}
+.banner{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border-radius:var(--radius);font-size:14px;margin-bottom:12px}
+.banner.amber{background:var(--amber-soft);border:1px solid var(--amber-line)}
+.banner.info{background:#EAF0F8;border:1px solid #C8D5E8}
+.banner svg{flex:none;margin-top:2px}
+.meta{display:grid;grid-template-columns:2fr 1.4fr 1fr 1.2fr;gap:12px;margin-bottom:6px}
+label.f{display:block;font-size:12px;font-weight:600;color:var(--ink-soft);letter-spacing:.02em}
+label.f input,label.f select{display:block;width:100%;margin-top:4px;padding:8px 10px;border:1px solid var(--line);background:#fff;border-radius:var(--radius)}
+.group{margin-top:18px}
+.group-h{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:4px}
+.group-h .sum{font-family:'IBM Plex Mono',monospace;font-weight:600}
+.frow{display:grid;grid-template-columns:1fr 150px;gap:12px;align-items:center;padding:10px 8px;border-bottom:1px solid var(--line)}
+.frow.wide{grid-template-columns:1fr 170px 150px}
+.frow .lbl{font-weight:600;font-size:14.5px}
+.frow .lbl input{font-weight:600;border:1px solid transparent;background:transparent;padding:2px 4px;margin-left:-5px;width:100%;border-radius:var(--radius)}
+.frow .lbl input:hover,.frow .lbl input:focus{border-color:var(--line);background:#fff}
+.printed{font-size:12.5px;color:var(--ink-soft);margin-top:1px}
+.printed q{font-style:italic}
+.money{position:relative}
+.money span{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--ink-soft);font-family:'IBM Plex Mono',monospace}
+.money input{width:100%;padding:8px 10px 8px 22px;text-align:right;border:1px solid var(--line);background:#fff;font-family:'IBM Plex Mono',monospace;border-radius:var(--radius)}
+.frow select{width:100%;padding:8px;border:1px solid var(--line);background:#fff;border-radius:var(--radius);font-size:13.5px}
+.frow.check{background:var(--amber-soft);box-shadow:inset 3px 0 0 var(--amber)}
+.frow.check .money input,.frow.check select{border-color:var(--amber-line)}
+.flag{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--amber);margin-top:4px}
+.flag button{border:1px solid var(--amber-line);background:#fff;color:var(--amber);font-size:11.5px;padding:1px 7px;border-radius:var(--radius);font-weight:600}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:1px 7px;border-radius:99px;background:var(--paper);color:var(--ink-soft);margin-left:6px;vertical-align:1px}
+.pill.g{background:var(--green-soft);color:var(--green-ink)}
+.callout{grid-column:1/-1;font-size:13.5px;padding:10px 12px;border-radius:var(--radius);margin-top:4px;background:#fff}
+.callout.amber{border:1px solid var(--amber-line)}
+.callout.red{border:1px solid #E6B5AB}
+.addrow{margin-top:8px}
+.rm{border:0;background:none;color:var(--ink-soft);font-size:12.5px;text-decoration:underline;padding:0;margin-left:8px}
+.summary{position:sticky;top:70px}
+.summary .line{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
+.summary .line b{font-family:'IBM Plex Mono',monospace}
+.summary .big{display:flex;justify-content:space-between;align-items:baseline;padding:12px 0 4px}
+.summary .big b{font-family:'IBM Plex Mono',monospace;font-size:22px}
+.summary .note{font-size:12.5px;color:var(--ink-soft);margin:6px 0 14px}
+.summary .btn{width:100%}
+
+/* results */
+.rgrid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));align-items:stretch}
+.offer{display:flex;flex-direction:column;padding:20px;position:relative}
+.offer.best{border-color:var(--green);box-shadow:0 0 0 1px var(--green),var(--shadow)}
+.ribbon{position:absolute;top:-1px;right:16px;background:var(--green);color:#fff;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px}
+.offer h3{font-size:18px;line-height:1.2;min-height:44px}
+.offer .sub{font-size:13px;color:var(--ink-soft);margin:2px 0 10px}
+.chk{display:flex;align-items:center;gap:8px;font-size:12.5px;padding:6px 9px;background:var(--amber-soft);border:1px solid var(--amber-line);border-radius:var(--radius);margin-bottom:10px}
+.chk.ok{background:#F2FBF7;border-color:var(--green-soft);color:var(--green-ink)}
+.chk span{flex:1}
+.chk button{border:0;background:none;padding:0;font-weight:600;text-decoration:underline;color:inherit;font-size:12.5px}
+.offer .line{display:flex;justify-content:space-between;gap:8px;padding:7px 0;border-bottom:1px solid var(--line);font-size:14px}
+.offer .line b{font-family:'IBM Plex Mono',monospace;font-weight:600;white-space:nowrap}
+.offer .line.minus b{color:var(--green-ink)}
+.offer .line.zero b{color:var(--ink-soft);font-weight:500}
+.offer .line small{display:block;color:var(--ink-soft);font-size:11.5px}
+.offer .gap{margin-top:12px;padding:14px;background:var(--ink);color:#fff;border-radius:var(--radius)}
+.offer .gap.zero{background:var(--green)}
+.offer .gap small{display:block;font-size:11.5px;opacity:.85;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+.offer .gap b{font-family:'IBM Plex Mono',monospace;font-size:26px}
+.offer .gap p{margin:2px 0 0;font-size:12.5px;opacity:.9}
+.offer .loans{margin-top:12px;font-size:12.5px}
+.offer .loans div{display:flex;justify-content:space-between;gap:8px;padding:2px 0;color:var(--ink-soft)}
+.offer .warn{margin-top:8px;font-size:12.5px;background:var(--amber-soft);border:1px solid var(--amber-line);padding:7px 9px;border-radius:var(--radius)}
+.offer .foot{display:flex;gap:14px;margin-top:auto;padding-top:14px;font-size:13.5px}
+.offer.failed{background:#fff;border-style:dashed;justify-content:center;text-align:center;gap:8px}
+.offer.failed .ic{width:44px;height:44px;border-radius:50%;background:var(--red-soft);display:grid;place-items:center;margin:0 auto 4px}
+.addtile{border-style:dashed;background:transparent;text-align:center;color:var(--ink-soft);min-height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.diff{display:flex;gap:12px;align-items:flex-start;padding:16px 18px;margin-bottom:16px;border-left:4px solid var(--green)}
+.diff b.h{font-family:'Fraunces',serif;font-size:18px;font-weight:600;display:block;margin-bottom:2px}
+.diff svg{flex:none;margin-top:3px}
+.next{margin-top:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.next a{display:block;text-decoration:none;color:var(--ink);padding:16px 18px}
+.next a b{display:block;font-family:'Fraunces',serif;font-size:17px}
+.next a span{font-size:13.5px;color:var(--ink-soft)}
+.scrollhint{display:none;font-size:12.5px;color:var(--ink-soft);margin:-6px 0 10px}
+
+/* dev drawer */
+aside.dev{display:none;background:#0F1A31;color:#DCE2EE;border-left:1px solid #22304F;height:calc(100vh - 50px);position:sticky;top:50px;overflow:auto;padding:20px 20px 60px;font-size:13.5px}
+body.dev-open aside.dev{display:block}
+aside.dev h2{font-size:19px;color:#fff;margin-bottom:4px}
+aside.dev h4{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#7FD8B4;margin:22px 0 8px}
+aside.dev p,aside.dev li{color:#C3CBDA}
+aside.dev ul{padding-left:18px;margin:0}
+aside.dev li{margin-bottom:5px}
+aside.dev pre{background:#08101F;border:1px solid #22304F;padding:10px;font-size:11.5px;line-height:1.45;overflow:auto;white-space:pre;color:#DCE2EE;border-radius:var(--radius);max-height:320px}
+aside.dev code{font-family:'IBM Plex Mono',monospace;font-size:12px;color:#fff}
+.jump{display:flex;flex-wrap:wrap;gap:6px}
+.jump button{background:#1C2A48;color:#fff;border:1px solid #2E3F64;font-size:12px;padding:5px 9px;border-radius:var(--radius)}
+.evlog{font-family:'IBM Plex Mono',monospace;font-size:11.5px;background:#08101F;border:1px solid #22304F;padding:8px 10px;min-height:60px;max-height:220px;overflow:auto;border-radius:var(--radius)}
+.evlog div{padding:2px 0;border-bottom:1px dashed #1C2A48}
+.evlog .t{color:#7FD8B4}
+.copy{float:right;background:#1C2A48;border:1px solid #2E3F64;color:#fff;font-size:11px;padding:2px 8px;border-radius:var(--radius)}
+
+@media (max-width:900px){
+  body.dev-open .layout{grid-template-columns:1fr}
+  aside.dev{position:fixed;inset:50px 0 0 0;height:auto;z-index:30}
+  .upgrid,.cgrid{grid-template-columns:1fr}
+  .summary{position:static}
+}
+@media (max-width:640px){
+  main{padding:22px 16px 60px}
+  .meta{grid-template-columns:1fr 1fr}
+  .frow,.frow.wide{grid-template-columns:1fr}
+  .tag{display:none}
+  .pad{padding:18px}
+  /* keep offers side by side on phones: swipe between columns */
+  .rgrid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:82%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -16px;padding-left:16px;padding-right:16px}
+  .rgrid > *{scroll-snap-align:start}
+  .scrollhint{display:block}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 4 2 9l10 5 10-5-10-5Z" fill="#0E9F6E"/><path d="M6 11.2V15c0 1.7 2.7 3 6 3s6-1.3 6-3v-3.8l-6 3-6-3Z" fill="#fff"/></svg>
+    Grad Navigator
+  </div>
+  <span class="tag">Prototype · Aid letter upload</span>
+  <div class="spacer"></div>
+  <button class="devbtn" id="devToggle">Dev notes</button>
+</header>
+
+<div class="layout">
+<main id="app"></main>
+
+<aside class="dev" id="dev">
+  <h2>Developer notes</h2>
+  <p>Clickable model of the flow, not production code. AI reading is simulated with sample letters so every screen and state can be reviewed. Match it to the live site's components and styles.</p>
+
+  <h4>Jump to a state</h4>
+  <div class="jump">
+    <button data-jump="upload">Upload</button>
+    <button data-jump="reading">Reading 3 letters</button>
+    <button data-jump="results">Comparison (3 schools)</button>
+    <button data-jump="resultsFail">Comparison with 1 unreadable</button>
+    <button data-jump="review">Review numbers</button>
+  </div>
+
+  <h4>Flow</h4>
+  <ul>
+    <li><b>Upload</b>: up to 4 letters at once (one per school), up to 4 pages each. JPG, PNG, HEIC, PDF, 10 MB per file. Each dropped file starts a new letter; "+ Add page" attaches more pages to the same letter. Phone camera capture. Manual entry stays available.</li>
+    <li><b>Read</b>: one server-side extraction call per letter, run in parallel. Show per-letter progress. Never call the model from the browser.</li>
+    <li><b>Compare</b>: as soon as all calls return, go straight to the side-by-side comparison. No blocking confirm step.</li>
+    <li><b>Accuracy guardrail</b>: each column shows how many numbers were read with low confidence and what's missing, with a "Review" link. Editing recalculates the comparison. Cards with unchecked numbers say so until reviewed.</li>
+    <li><b>Partial failure</b>: if one letter can't be read, the others still show. The failed column offers "Try another file" or "Enter by hand".</li>
+    <li>"Smallest gap" badge goes on the lowest remaining gap. "Biggest difference" line compares net cost.</li>
+  </ul>
+
+  <h4>Privacy rules (must have)</h4>
+  <ul>
+    <li>Process files in memory or delete from storage right after extraction.</li>
+    <li>Never store images, raw model output, names, addresses, student IDs or SSNs.</li>
+    <li>Session only unless a logged-in user saves the comparison.</li>
+    <li>Rate limit: about 10 letters per hour per visitor.</li>
+    <li>Privacy copy and policy to be reviewed by our terms lawyer before launch.</li>
+  </ul>
+
+  <h4>Calculation (prototype logic)</h4>
+  <ul>
+    <li><code>net = COA − free money − assistantships/work-study</code></li>
+    <li><code>federal = min(annual Unsub limit, net)</code></li>
+    <li><code>gap = max(net − federal, 0)</code></li>
+    <li>Limits here are placeholders (<code>graduate 20,500 / professional 50,000</code>). Use the values already in our calculator config. Don't hardcode.</li>
+    <li>Loans printed on the letter are shown for reference only and never reduce the gap. Grad PLUS lines get a "closed" tag.</li>
+  </ul>
+
+  <h4>Extraction output schema (per letter) <button class="copy" data-copy="schema">Copy</button></h4>
+  <pre id="schema"></pre>
+
+  <h4>Model instructions <button class="copy" data-copy="instr">Copy</button></h4>
+  <pre id="instr">You are reading ONE graduate or professional school financial aid offer letter (all attached pages belong to the same letter).
+Return ONLY JSON matching the schema. Rules:
+1. Never invent numbers. If a value is not on the letter, return null.
+2. Anything that must be repaid is a loan, even if the letter calls it an "award" or "grant". Check footnotes.
+3. If amounts are per term/semester, set period="per_term", return number_of_terms, and convert every amount to annual.
+4. For each field, return printed_label exactly as written on the letter (include "per term" if shown).
+5. confidence="low" when text is blurry, cut off, ambiguous, or you inferred the category.
+6. Classify loans: direct_unsubsidized, grad_plus, private, institutional, other.
+7. Set program_level to "professional" for JD, MD, DO, DDS, PharmD, DVM and similar; otherwise "graduate".
+8. If the pages are not an aid offer or are unreadable, return {"readable": false, "reason": "..."}.
+9. Ignore and never return names, addresses, student IDs, SSNs or account numbers.
+10. Put anything you cannot classify in notes.</pre>
+
+  <h4>Analytics events (live)</h4>
+  <div class="evlog" id="evlog"><div style="color:#7C8AA5">Events appear here as you click through.</div></div>
+  <p style="font-size:12px;margin-top:6px">upload_started {letters} · extraction_succeeded / extraction_failed (per letter) · comparison_shown {schools} · review_opened · fields_edited {count}. No letter contents in events.</p>
+</aside>
+</div>
+
+<input type="file" id="fileInput" accept="image/jpeg,image/png,image/heic,application/pdf" multiple hidden>
+<input type="file" id="camInput" accept="image/*" capture="environment" hidden>
+
+<script>
+/* ---------- config ---------- */
+const UNSUB_LIMIT = { graduate: 20500, professional: 50000 }; // placeholder: pull from calculator config
+const MAX_LETTERS = 4, MAX_PAGES = 4, MAX_MB = 10;
+const LOAN_TYPES = { direct_unsubsidized:'Federal Direct Unsubsidized', grad_plus:'Grad PLUS', private:'Private loan', institutional:'School (institutional) loan', other:'Other loan' };
+const COA_KEYS = [
+  ['tuition','Tuition'],['fees','Fees'],['housing_and_food','Housing and food'],['books_and_supplies','Books and supplies'],
+  ['transportation','Transportation'],['health_insurance','Health insurance'],['personal_misc','Personal and other']
+];
+
+/* ---------- sample extractions (what the model returns, after per-term conversion) ---------- */
+const SAMPLES = {
+  A: {
+    school_name:'Westbrook University School of Law', program_name:'J.D.', academic_year:'2027-28',
+    program_level:'professional', period:'annual', number_of_terms:2,
+    coa:{
+      tuition:{amount:62400,printed:'Tuition',conf:'high'},
+      fees:{amount:1850,printed:'Mandatory Fees',conf:'high'},
+      housing_and_food:{amount:21600,printed:'Housing & Food (est.)',conf:'high'},
+      books_and_supplies:{amount:1400,printed:'Books & Supplies',conf:'high'},
+      transportation:{amount:2100,printed:'Transportation',conf:'high'},
+      health_insurance:{amount:3900,printed:'Student Health Insurance',conf:'high'},
+      personal_misc:{amount:3200,printed:'Personal Expenses',conf:'high'}
+    },
+    total_coa_as_printed:96450,
+    free_money:[
+      {label:"Dean's Merit Scholarship",amount:25000,printed:"Dean's Merit Scholarship (renewable with good academic standing)",renewable:'yes',conf:'high'},
+      {label:'Public Interest Grant',amount:3000,printed:'PI Grant',conf:'low',renewable:'unknown'}
+    ],
+    work:[],
+    loans:[
+      {label:'Federal Direct Unsubsidized Loan',amount:50000,printed:'Fed Direct Unsub Loan',type:'direct_unsubsidized',conf:'high'},
+      {label:'Federal Grad PLUS Loan',amount:18450,printed:'Federal Grad PLUS Loan',type:'grad_plus',conf:'high'}
+    ],
+    notes:['The letter\'s "Total Aid Awarded" line ($96,450) includes $68,450 in loans.']
+  },
+  B: {
+    school_name:'Harbor City Law School', program_name:'J.D.', academic_year:'2027-28',
+    program_level:'professional', period:'per_term', number_of_terms:2,
+    coa:{
+      tuition:{amount:49000,printed:'Tuition: $24,500 per term',conf:'high'},
+      fees:{amount:1300,printed:'Fees: $650 per term (partly cut off)',conf:'low'},
+      housing_and_food:{amount:null,printed:null,conf:'low'},
+      books_and_supplies:{amount:null,printed:null,conf:'low'},
+      transportation:{amount:null,printed:null,conf:'low'},
+      health_insurance:{amount:null,printed:null,conf:'low'},
+      personal_misc:{amount:null,printed:null,conf:'low'}
+    },
+    total_coa_as_printed:50300,
+    free_money:[
+      {label:'Harbor Scholars Award',amount:18000,printed:'Harbor Scholars Award: $9,000 per term. Renewable: see conditions',renewable:'unknown',conf:'low'}
+    ],
+    work:[
+      {label:'Research Assistantship',amount:4000,printed:'Research Assistantship: $2,000 per term, 10 hrs/week',conf:'high'}
+    ],
+    loans:[
+      {label:'Federal Direct Unsubsidized Loan',amount:50000,printed:'Direct Unsubsidized: $25,000 per term',type:'direct_unsubsidized',conf:'high'},
+      {label:'Harbor Access Award',amount:10000,printed:'Harbor Access Award*: $5,000 per term (*repayable beginning 6 months after graduation)',type:'institutional',conf:'low',
+       why:'Called an "award" on the letter, but the footnote says it must be repaid, so we counted it as a loan.'}
+    ],
+    notes:['Letter shows "Total Direct Costs" only. Living costs not listed.']
+  },
+  C: {
+    school_name:'Lakemont University College of Law', program_name:'J.D.', academic_year:'2027-28',
+    program_level:'professional', period:'annual', number_of_terms:2,
+    coa:{
+      tuition:{amount:54800,printed:'Tuition',conf:'high'},
+      fees:{amount:1200,printed:'Student Fees',conf:'high'},
+      housing_and_food:{amount:19800,printed:'Room & Board',conf:'high'},
+      books_and_supplies:{amount:1300,printed:'Books',conf:'high'},
+      transportation:{amount:1800,printed:'Transportation',conf:'high'},
+      health_insurance:{amount:3400,printed:'Health Insurance (waivable)',conf:'high'},
+      personal_misc:{amount:2900,printed:'Miscellaneous',conf:'high'}
+    },
+    total_coa_as_printed:85200,
+    free_money:[
+      {label:'Lakemont Excellence Scholarship',amount:30000,printed:'Lakemont Excellence Scholarship (renewable for 3 years)',renewable:'yes',conf:'high'}
+    ],
+    work:[],
+    loans:[
+      {label:'Federal Direct Unsubsidized Loan',amount:50000,printed:'Federal Direct Unsubsidized Loan',type:'direct_unsubsidized',conf:'high'}
+    ],
+    notes:[]
+  }
+};
+const SAMPLE_ORDER = ['A','B','C','A'];
+
+/* ---------- state ---------- */
+let uid = 0;
+const S = { screen:'upload', letters:[], offers:[], draft:null, editIndex:null, edits:0, pageTarget:null, failNext:false };
+const $ = s => document.querySelector(s);
+const app = $('#app');
+const clone = o => JSON.parse(JSON.stringify(o));
+const fmt = n => (n==null||isNaN(n)) ? '—' : '$' + Math.round(n).toLocaleString('en-US');
+const neg = n => n ? '−' + fmt(n).slice(1) : '$0';
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const okOffers = () => S.offers.filter(o => o.status === 'ok');
+
+function track(name, props={}){
+  const log = $('#evlog');
+  if (log.dataset.init !== '1'){ log.innerHTML=''; log.dataset.init='1'; }
+  const t = new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit',second:'2-digit'});
+  const d = document.createElement('div');
+  d.innerHTML = `<span class="t">${t}</span> ${name} ${Object.keys(props).length ? esc(JSON.stringify(props)) : ''}`;
+  log.prepend(d);
+  console.log('[analytics]', name, props);
+}
+function go(screen){ S.screen = screen; render(); window.scrollTo({top:0,behavior:'smooth'}); }
+
+/* ---------- calc ---------- */
+function totals(o){
+  const coa = COA_KEYS.reduce((s,[k]) => s + (+o.coa[k].amount || 0), 0);
+  const free = o.free_money.reduce((s,x) => s + (+x.amount || 0), 0);
+  const work = o.work.reduce((s,x) => s + (+x.amount || 0), 0);
+  const net = Math.max(coa - free - work, 0);
+  const limit = UNSUB_LIMIT[o.program_level] || UNSUB_LIMIT.graduate;
+  const fed = Math.min(limit, net);
+  const gap = Math.max(net - fed, 0);
+  const loans = o.loans.reduce((s,x) => s + (+x.amount || 0), 0);
+  const livingMissing = o.coa.housing_and_food.amount == null || o.coa.housing_and_food.amount === '';
+  return {coa, free, work, net, limit, fed, gap, loans, livingMissing};
+}
+// low-confidence numbers that were read but not yet checked
+function lowCount(o){
+  let n = 0;
+  COA_KEYS.forEach(([k]) => { const f=o.coa[k]; if (f.conf==='low' && !f.checked && f.amount!=null) n++; });
+  ['free_money','work','loans'].forEach(g => o[g].forEach(x => { if (x.conf==='low' && !x.checked) n++; }));
+  return n;
+}
+function missingCount(o){ return COA_KEYS.filter(([k]) => o.coa[k].amount == null && !o.coa[k].checked).length; }
+
+function stepper(i){
+  const names = ['Upload letters','Compare'];
+  return `<div class="stepper">${names.map((n,j)=>`<div class="${j===i?'on':j<i?'done':''}">${j+1}. ${n}</div>`).join('')}</div>`;
+}
+
+/* ---------- upload ---------- */
+function slotsLeft(){ return MAX_LETTERS - okOffers().length - S.letters.length; }
+
+function renderUpload(){
+  const have = okOffers().length;
+  const n = S.letters.length;
+  app.innerHTML = `
+    ${stepper(0)}
+    <div class="eyebrow">Aid offer comparison</div>
+    <h1>${have ? 'Add more aid offers' : 'Upload your aid offers. See them side by side.'}</h1>
+    <p class="lede">Drop in a letter from each school, up to ${MAX_LETTERS}. We'll read them all at once and show what each one really costs, how much federal loans cover, and the gap that's left.</p>
+
+    <div class="upgrid">
+      <div class="card pad">
+        <div class="privacy">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0A7552" stroke-width="2"><rect x="4" y="10" width="16" height="11" rx="1"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          <span>We only keep the dollar amounts. Your letter images are deleted as soon as they're read.</span>
+        </div>
+        <div class="drop" id="drop">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0A7552" stroke-width="2"><path d="M12 16V4M6 10l6-6 6 6"/><path d="M4 16v4h16v-4"/></svg></div>
+          <h3>Drop your aid letters here</h3>
+          <p>One file per school · photo, screenshot or PDF · ${slotsLeft()} of ${MAX_LETTERS} spots left</p>
+          <div class="row">
+            <button class="btn" id="pick" ${slotsLeft()<=0?'disabled':''}>Choose files</button>
+            <button class="btn ghost" id="cam" ${slotsLeft()<=0?'disabled':''}>Take a photo</button>
+          </div>
+        </div>
+        <ul class="letters">${S.letters.map((L,i)=>`
+          <li><div class="lh"><span class="no">Letter ${have+i+1}</span>
+            <div class="pages">${L.pages.map((p,j)=>`<span class="pg"><span class="th">${p.url?`<img src="${p.url}" alt="">`:esc(p.ext)}</span><span>${esc(p.name)}</span><button data-rmp="${i}.${j}" aria-label="Remove page">×</button></span>`).join('')}</div>
+            <button class="x" data-rml="${i}" aria-label="Remove letter">×</button></div>
+            ${L.pages.length < MAX_PAGES ? `<button class="linkbtn addpg" data-addpg="${i}">+ Add page to this letter</button>`:''}
+          </li>`).join('')}</ul>
+        <div id="fileErr" class="hint" style="color:var(--red)">${esc(S.fileErr||'')}</div>
+        <div class="actions">
+          <button class="btn green" id="read" ${n?'':'disabled'}>${n ? `Compare ${n} ${n===1?'offer':'offers'}` : 'Compare my offers'}</button>
+          <button class="linkbtn" id="manual">Enter numbers by hand instead</button>
+          ${have ? `<button class="linkbtn" id="back">Back to comparison</button>` : ''}
+        </div>
+      </div>
+
+      <div class="side">
+        <div class="card pad">
+          <h3>Tips for a clean read</h3>
+          <ol>
+            <li>Use the PDF or a screenshot from your school portal if you can.</li>
+            <li>Each file is treated as a different school. For a multi-page letter, use "+ Add page".</li>
+            <li>Include footnotes. That's where loans hide.</li>
+            <li>Lay paper letters flat in good light.</li>
+          </ol>
+        </div>
+        <div class="proto">
+          <div class="eyebrow">Prototype shortcuts</div>
+          <div class="row">
+            <button class="btn sm ghost" id="s3">Load 3 sample letters</button>
+            <button class="btn sm ghost" id="s3f">3 samples + 1 unreadable</button>
+          </div>
+          <div class="hint">Real uploads also work here; they're read as sample letters.</div>
+        </div>
+      </div>
+    </div>`;
+
+  const drop = $('#drop');
+  ['dragenter','dragover'].forEach(e => drop.addEventListener(e, ev => { ev.preventDefault(); drop.classList.add('over'); }));
+  ['dragleave','drop'].forEach(e => drop.addEventListener(e, ev => { ev.preventDefault(); drop.classList.remove('over'); }));
+  drop.addEventListener('drop', ev => addFiles(ev.dataTransfer.files, null));
+  $('#pick').onclick = () => { S.pageTarget = null; $('#fileInput').click(); };
+  $('#cam').onclick = () => { S.pageTarget = null; $('#camInput').click(); };
+  app.querySelectorAll('[data-addpg]').forEach(b => b.onclick = () => { S.pageTarget = +b.dataset.addpg; $('#fileInput').click(); });
+  app.querySelectorAll('[data-rml]').forEach(b => b.onclick = () => { S.letters.splice(+b.dataset.rml,1); S.fileErr=''; render(); });
+  app.querySelectorAll('[data-rmp]').forEach(b => b.onclick = () => {
+    const [i,j] = b.dataset.rmp.split('.').map(Number);
+    S.letters[i].pages.splice(j,1); if (!S.letters[i].pages.length) S.letters.splice(i,1); render();
+  });
+  $('#read').onclick = startReading;
+  $('#manual').onclick = () => { S.draft = blankDraft(); S.editIndex = null; S.edits=0; go('review'); };
+  const bk = $('#back'); if (bk) bk.onclick = () => go('results');
+  $('#s3').onclick = () => { loadSamples(3,false); startReading(); };
+  $('#s3f').onclick = () => { loadSamples(4,true); startReading(); };
+}
+
+function fakePage(name){ return { name, ext:name.split('.').pop().toUpperCase(), url:null }; }
+function loadSamples(count, withFail){
+  S.letters = []; S.offers = []; // shortcut starts a fresh comparison
+  const names = ['westbrook_aid_offer.pdf','harbor-city-award-letter.png','lakemont_finaid_2027.pdf','IMG_4471.HEIC'];
+  for (let i=0;i<count;i++){
+    const fail = withFail && i===count-1;
+    S.letters.push({ id:++uid, pages:[fakePage(names[i])], sample: fail ? 'FAIL' : SAMPLE_ORDER[i] });
+  }
+}
+
+function addFiles(list, target){
+  S.fileErr = '';
+  for (const f of list){
+    const ok = /\.(jpe?g|png|heic|pdf)$/i.test(f.name) || /^(image\/|application\/pdf)/.test(f.type);
+    if (!ok){ S.fileErr = `${f.name}: use a JPG, PNG, HEIC or PDF.`; continue; }
+    if (f.size > MAX_MB*1024*1024){ S.fileErr = `${f.name} is over ${MAX_MB} MB.`; continue; }
+    const page = { name:f.name, ext:(f.name.split('.').pop()||'').toUpperCase(), url: /^image\/(jpeg|png)/.test(f.type) ? URL.createObjectURL(f) : null };
+    if (target != null && S.letters[target]){
+      if (S.letters[target].pages.length >= MAX_PAGES){ S.fileErr = `Up to ${MAX_PAGES} pages per letter.`; break; }
+      S.letters[target].pages.push(page);
+    } else {
+      if (slotsLeft() <= 0){ S.fileErr = `You can compare up to ${MAX_LETTERS} schools at once.`; break; }
+      const used = okOffers().length + S.letters.length;
+      S.letters.push({ id:++uid, pages:[page], sample: SAMPLE_ORDER[used % SAMPLE_ORDER.length] });
+    }
+  }
+  S.pageTarget = null;
+  render();
+}
+$('#fileInput').onchange = e => { addFiles(e.target.files, S.pageTarget); e.target.value=''; };
+$('#camInput').onchange = e => { addFiles(e.target.files, null); e.target.value=''; };
+
+/* ---------- reading (parallel, per letter) ---------- */
+function startReading(){
+  if (!S.letters.length) return;
+  track('upload_started', {letters: S.letters.length, pages: S.letters.reduce((s,L)=>s+L.pages.length,0)});
+  S.reading = S.letters.map(L => ({...L, state:'reading'}));
+  S.letters = [];
+  go('reading');
+}
+
+function renderReading(){
+  const R = S.reading || [];
+  const have = okOffers().length;
+  app.innerHTML = `${stepper(0)}
+    <div class="card reading">
+      <h2>Reading ${R.length} ${R.length===1?'letter':'letters'}…</h2>
+      <p class="lede">About 10 seconds. Your comparison opens as soon as they're done.</p>
+      <ul class="rlist">${R.map((L,i)=>`
+        <li id="r${i}"><span class="st"></span><div class="t"><b>Letter ${have+i+1}</b><span>${esc(L.pages.map(p=>p.name).join(', '))}</span></div></li>`).join('')}</ul>
+      <div class="bar"><i id="bar"></i></div>
+    </div>`;
+  clearTimeout(S.timer);
+  let done = 0;
+  R.forEach((L,i) => {
+    const ms = 900 + i*450 + Math.random()*500;
+    setTimeout(() => {
+      if (S.screen !== 'reading') return;
+      const li = $('#r'+i); if (!li) return;
+      if (L.sample === 'FAIL'){
+        li.classList.add('fail'); li.querySelector('.t').innerHTML = `<b>Letter ${have+i+1}: couldn't read this one</b><span>${esc(L.pages[0].name)} · you can retry from the comparison</span>`;
+        track('extraction_failed', {letter: have+i+1, reason:'low_quality'});
+      } else {
+        const d = SAMPLES[L.sample];
+        li.classList.add('ok'); li.querySelector('.t').innerHTML = `<b>${esc(d.school_name)}</b><span>${esc(d.program_name)} · ${d.academic_year}</span>`;
+        track('extraction_succeeded', {letter: have+i+1, low_confidence_fields: lowCount(d), period: d.period});
+      }
+      done++; $('#bar').style.width = (done/R.length*100)+'%';
+      if (done === R.length) S.timer = setTimeout(finishReading, 600);
+    }, ms);
+  });
+}
+function finishReading(){
+  if (S.screen !== 'reading') return;
+  (S.reading||[]).forEach(L => {
+    if (L.sample === 'FAIL') S.offers.push({ status:'failed', fileName:L.pages[0].name, id:L.id });
+    else S.offers.push({ ...prep(clone(SAMPLES[L.sample])), status:'ok', id:L.id });
+  });
+  S.reading = null;
+  go('results');
+}
+
+function prep(d){ COA_KEYS.forEach(([k]) => { if (!d.coa[k]) d.coa[k] = {amount:null,printed:null,conf:'low'}; }); return d; }
+function blankDraft(){
+  const coa = {}; COA_KEYS.forEach(([k]) => coa[k] = {amount:null,printed:null,conf:'high'});
+  return { school_name:'', program_name:'', academic_year:'2027-28', program_level:'graduate', period:'annual', number_of_terms:2,
+    coa, total_coa_as_printed:null, free_money:[], work:[], loans:[], notes:[], manual:true, status:'ok' };
+}
+
+/* ---------- results (side by side) ---------- */
+function renderResults(){
+  if (!S.offers.length){ go('upload'); return; }
+  const ok = okOffers();
+  const rows = S.offers.map(o => o.status==='ok' ? {o, t:totals(o)} : {o});
+  const okRows = rows.filter(r => r.t);
+  // "Smallest gap" only goes to offers with living costs included, so an incomplete letter can't win
+  const complete = okRows.filter(r => !r.t.livingMissing);
+  const bestGap = okRows.length > 1 && complete.length ? Math.min(...complete.map(r => r.t.gap)) : null;
+  const bestCount = complete.filter(r => r.t.gap === bestGap).length;
+  let diff = '';
+  if (okRows.length >= 2){
+    const sorted = [...okRows].sort((a,b) => a.t.net - b.t.net);
+    const lo = sorted[0], hi = sorted[sorted.length-1];
+    const delta = hi.t.net - lo.t.net;
+    const yrs = lo.o.program_level==='professional' ? 3 : 2;
+    const miss = okRows.filter(r => r.t.livingMissing);
+    const caveat = miss.length ? `<div class="hint" style="color:var(--amber);font-weight:500">⚠ ${miss.map(r=>esc(r.o.school_name)).join(' and ')} ${miss.length>1?"don't":"doesn't"} include living costs yet, so this isn't apples to apples. <button class="linkbtn" data-review="${S.offers.indexOf(miss[0].o)}">Add them</button></div>` : '';
+    diff = `<div class="card diff"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E9F6E" stroke-width="2"><path d="M4 17l6-6 4 4 6-8"/></svg>
+      <div><b class="h">${esc(lo.o.school_name)} costs ${fmt(delta)} less per year than ${esc(hi.o.school_name)} after free money.</b>
+      <span style="font-size:14px;color:var(--ink-soft)">Over a ${yrs}-year program, that's about ${fmt(delta*yrs)}, before interest.</span>${caveat}</div></div>`;
+  }
+
+  app.innerHTML = `${stepper(1)}
+    <div class="eyebrow">Your comparison${ok[0]?' · '+esc(ok[0].academic_year):''}</div>
+    <h1>What each offer really costs you</h1>
+    <p class="lede">Net cost after free money, how much federal Direct Unsubsidized loans can cover, and the gap that's left. Numbers come straight from your letters. Check anything marked in amber.</p>
+    ${diff}
+    <div class="scrollhint">Swipe to see each school →</div>
+    <div class="rgrid">
+      ${rows.map(({o,t},i) => o.status !== 'ok' ? `
+        <div class="card offer failed">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B4412F" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></svg></div>
+          <h3 style="min-height:0">We couldn't read this letter</h3>
+          <div class="sub">${esc(o.fileName)}</div>
+          <p style="font-size:13.5px;color:var(--ink-soft);margin:0 0 6px">Try a sharper photo or the PDF from your school portal.</p>
+          <button class="btn sm" data-retry="${i}">Try another file</button>
+          <button class="linkbtn" data-manual="${i}" style="font-size:13.5px">Enter numbers by hand</button>
+          <button class="linkbtn" data-remove="${i}" style="font-size:12.5px;color:var(--ink-soft)">Remove</button>
+        </div>` : (() => {
+        const low = lowCount(o), miss = missingCount(o);
+        const best = bestGap !== null && !t.livingMissing && t.gap === bestGap && bestCount < okRows.length;
+        const gp = o.loans.some(l=>l.type==='grad_plus');
+        return `
+        <div class="card offer ${best?'best':''}">
+          ${best?'<span class="ribbon">Smallest gap</span>':''}
+          <h3>${esc(o.school_name)}</h3>
+          <div class="sub">${esc(o.program_name)} · ${o.program_level==='professional'?'Professional':'Graduate'}${o.period==='per_term'?' · converted from per-term':''}</div>
+          ${low||miss ? `<div class="chk"><span>⚠ ${[low?`${low} ${low===1?'number':'numbers'} to double-check`:'', miss?`${miss} cost ${miss===1?'item':'items'} missing`:''].filter(Boolean).join(' · ')}</span><button data-review="${i}">Review</button></div>`
+                       : `<div class="chk ok"><span>✓ All numbers ${o.reviewed?'checked':'read clearly'}</span><button data-review="${i}">Edit</button></div>`}
+          <div class="line"><span>Total cost</span><b>${fmt(t.coa)}</b></div>
+          <div class="line ${t.free?'minus':'zero'}"><span>Free money</span><b>${neg(t.free)}</b></div>
+          <div class="line ${t.work?'minus':'zero'}"><span>Assistantships</span><b>${neg(t.work)}</b></div>
+          <div class="line"><span style="font-weight:600">Net cost</span><b>${fmt(t.net)}</b></div>
+          <div class="line minus"><span>Federal Unsub covers<small>Annual limit ${fmt(t.limit)}</small></span><b>${neg(t.fed)}</b></div>
+          <div class="gap ${t.gap===0?'zero':''}">
+            <small>Remaining gap</small><b>${fmt(t.gap)}</b>
+            <p>${t.gap===0 ? 'Federal loans can cover the rest.' : 'Needs savings, private loans or more aid.'}</p>
+          </div>
+          ${o.loans.length?`<div class="loans"><div style="color:var(--ink);font-weight:600">Loans on the letter</div>
+            ${o.loans.map(l=>`<div><span>${esc(l.label)}${l.type==='grad_plus'?' <span class="pill" style="background:var(--red-soft);color:var(--red);margin-left:2px">closed</span>':''}</span><span class="num">${fmt(l.amount)}</span></div>`).join('')}</div>`:''}
+          ${gp && t.gap ? `<div class="warn">Lists Grad PLUS, which closed to new borrowers July 1, 2026. This gap likely needs private loans or other funding.</div>`:''}
+          ${t.livingMissing ? `<div class="warn">No living costs on this letter. The real gap is likely higher.</div>`:''}
+          <div class="foot"><button class="linkbtn" data-review="${i}">Edit numbers</button><button class="linkbtn" data-remove="${i}" style="color:var(--ink-soft)">Remove</button></div>
+        </div>`; })()).join('')}
+      ${S.offers.length < MAX_LETTERS ? `<button class="card pad addtile" id="addMore">
+        <div style="font-size:28px;color:var(--green);line-height:1">+</div><b style="color:var(--ink)">Add another school</b><span style="font-size:13px">Upload a letter or enter it by hand</span></button>`:''}
+    </div>
+
+    <div class="next">
+      <a class="card" href="#"><b>Covering your gap →</b><span>How private loans, cosigners and payment plans compare.</span></a>
+      <a class="card" href="#"><b>Life after Grad PLUS →</b><span>What changed on July 1, 2026 and what to do now.</span></a>
+      <a class="card" href="#"><b>Ask for more aid →</b><span>How to appeal using a competing offer.</span></a>
+    </div>`;
+
+  app.querySelectorAll('[data-review]').forEach(b => b.onclick = () => {
+    const i = +b.dataset.review; S.draft = clone(S.offers[i]); S.editIndex = i; S.edits = 0;
+    track('review_opened', {column: i+1}); go('review');
+  });
+  app.querySelectorAll('[data-remove]').forEach(b => b.onclick = () => { S.offers.splice(+b.dataset.remove,1); S.offers.length ? render() : go('upload'); });
+  app.querySelectorAll('[data-retry]').forEach(b => b.onclick = () => { S.offers.splice(+b.dataset.retry,1); go('upload'); });
+  app.querySelectorAll('[data-manual]').forEach(b => b.onclick = () => { const i=+b.dataset.manual; S.draft = blankDraft(); S.editIndex = i; S.edits=0; go('review'); });
+  const am = $('#addMore'); if (am) am.onclick = () => go('upload');
+  if (!S.shownOnce || S.lastShown !== S.offers.length){ track('comparison_shown', {schools: ok.length}); S.shownOnce = true; S.lastShown = S.offers.length; }
+}
+
+/* ---------- review / edit one offer ---------- */
+function rowFlag(f){
+  if (f.conf !== 'low' || f.checked) return '';
+  const missing = f.amount == null || f.amount === '';
+  return `<div class="flag">⚠ ${missing ? 'Not on your letter. Add it if you know it.' : 'Please check this.'} ${missing?'':'<button data-ok>Looks right</button>'}</div>`;
+}
+const printed = f => f.printed ? `<div class="printed">On your letter: <q>${esc(f.printed)}</q></div>` : '';
+const moneyInput = (path, val) => `<div class="money"><span>$</span><input inputmode="numeric" data-path="${path}" value="${val==null?'':Number(val).toLocaleString('en-US')}" placeholder="0"></div>`;
+
+function renderReview(){
+  const d = S.draft;
+  const t = totals(d);
+  const checks = lowCount(d);
+  const coaRows = COA_KEYS.map(([k,name]) => {
+    const f = d.coa[k]; const low = f.conf==='low' && !f.checked;
+    return `<div class="frow ${low?'check':''}" data-row="coa.${k}">
+      <div><div class="lbl">${name}</div>${printed(f)}${rowFlag(f)}</div>${moneyInput(`coa.${k}.amount`, f.amount)}</div>`;
+  }).join('');
+  const listRows = (g, extraFn) => d[g].map((x,i) => {
+    const low = x.conf==='low' && !x.checked;
+    return `<div class="frow ${extraFn?'wide':''} ${low?'check':''}" data-row="${g}.${i}">
+      <div><div class="lbl"><input data-path="${g}.${i}.label" value="${esc(x.label)}" placeholder="Name"></div>${printed(x)}${rowFlag(x)}
+        <button class="rm" data-del="${g}.${i}">Remove</button></div>
+      ${extraFn ? extraFn(x,i) : ''}${moneyInput(`${g}.${i}.amount`, x.amount)}
+      ${x.why ? `<div class="callout amber">${esc(x.why)}</div>` : ''}
+      ${x.type==='grad_plus' ? `<div class="callout red"><b>Grad PLUS closed to new borrowers on July 1, 2026.</b> This loan may not be available to you, so it doesn't count toward your coverage. <a href="#">Read: Life after Grad PLUS</a></div>` : ''}
+    </div>`;
+  }).join('');
+  const renewSel = (x,i) => `<select data-path="free_money.${i}.renewable">${[['yes','Renews each year'],['no','First year only'],['unknown','Not sure if it renews']].map(([v,l])=>`<option value="${v}" ${x.renewable===v?'selected':''}>${l}</option>`).join('')}</select>`;
+  const loanSel = (x,i) => `<select data-path="loans.${i}.type">${Object.entries(LOAN_TYPES).map(([v,l])=>`<option value="${v}" ${x.type===v?'selected':''}>${l}</option>`).join('')}</select>`;
+  const hasOthers = okOffers().length > 0 || S.editIndex != null;
+
+  app.innerHTML = `${stepper(1)}
+    <button class="linkbtn" id="back" style="margin-bottom:10px">← Back to comparison</button>
+    <h1>${d.manual ? 'Enter an aid offer' : 'Review ' + esc(d.school_name)}</h1>
+    <p class="lede">${d.manual ? "Copy the numbers from your letter. Leave anything blank that isn't listed." : 'Compare each number with your letter and fix anything we got wrong. Your comparison updates when you save.'}</p>
+    <div class="cgrid">
+      <div>
+        ${checks ? `<div class="banner amber"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A86A12" stroke-width="2"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4M12 17v.5"/></svg><span><b>${checks} ${checks===1?'number needs':'numbers need'} a quick check.</b> Highlighted below.</span></div>` : ''}
+        ${d.period==='per_term' ? `<div class="banner info"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B5A8C" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span>This letter showed <b>per-term</b> amounts. We converted everything to a full year (${d.number_of_terms} terms).</span></div>` : ''}
+        ${!d.manual && t.livingMissing ? `<div class="banner amber"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A86A12" stroke-width="2"><path d="M3 11 12 4l9 7v9H3v-9Z"/></svg><span><b>This letter may not include living costs.</b> Add rent, food and transportation for a more accurate gap. The school's cost of attendance page usually lists them.</span></div>` : ''}
+        <div class="card pad">
+          <div class="meta">
+            <label class="f">School<input data-path="school_name" value="${esc(d.school_name)}" placeholder="School name"></label>
+            <label class="f">Program<input data-path="program_name" value="${esc(d.program_name)}" placeholder="e.g. MBA"></label>
+            <label class="f">Year<input data-path="academic_year" value="${esc(d.academic_year)}"></label>
+            <label class="f">Program type<select data-path="program_level">
+              <option value="graduate" ${d.program_level==='graduate'?'selected':''}>Graduate</option>
+              <option value="professional" ${d.program_level==='professional'?'selected':''}>Professional (JD, MD…)</option></select></label>
+          </div>
+          <div class="group"><div class="group-h"><h3>Cost of attendance</h3><span class="sum">${fmt(t.coa)}</span></div>${coaRows}</div>
+          <div class="group"><div class="group-h"><h3>Free money <span class="pill g">no repayment</span></h3><span class="sum">${fmt(t.free)}</span></div>
+            ${listRows('free_money', renewSel) || '<div class="hint" style="padding:10px 8px">No grants or scholarships listed.</div>'}
+            <button class="linkbtn addrow" data-add="free_money">+ Add a grant or scholarship</button></div>
+          <div class="group"><div class="group-h"><h3>Work and assistantships <span class="pill">requires work</span></h3><span class="sum">${fmt(t.work)}</span></div>
+            ${listRows('work') || '<div class="hint" style="padding:10px 8px">None listed.</div>'}
+            <button class="linkbtn addrow" data-add="work">+ Add an assistantship or work-study</button></div>
+          <div class="group"><div class="group-h"><h3>Loans offered <span class="pill">must be repaid</span></h3><span class="sum">${fmt(t.loans)}</span></div>
+            ${listRows('loans', loanSel) || '<div class="hint" style="padding:10px 8px">None listed.</div>'}
+            <button class="linkbtn addrow" data-add="loans">+ Add a loan</button></div>
+          ${d.notes && d.notes.length ? `<div class="hint" style="margin-top:16px">${d.notes.map(esc).join('<br>')}</div>` : ''}
+        </div>
+      </div>
+      <div class="summary card pad">
+        <div class="eyebrow">This offer</div>
+        <div class="line"><span>Total cost</span><b>${fmt(t.coa)}</b></div>
+        <div class="line"><span>Free money</span><b>${neg(t.free)}</b></div>
+        <div class="line"><span>Assistantships</span><b>${neg(t.work)}</b></div>
+        <div class="big"><span>Net cost</span><b>${fmt(t.net)}</b></div>
+        <p class="note">Net cost is what you'd pay or borrow for the year. Loans don't reduce it.</p>
+        <button class="btn green" id="save" ${d.school_name ? '' : 'disabled'}>Save and update comparison</button>
+        ${d.school_name ? '' : '<p class="note" style="margin-top:8px">Add the school name to continue.</p>'}
+      </div>
+    </div>`;
+
+  app.querySelectorAll('[data-path]').forEach(el => {
+    el.addEventListener(el.tagName === 'SELECT' ? 'change' : 'input', () => {
+      setPath(el.dataset.path, el);
+      if (el.tagName === 'SELECT' || el.dataset.path==='school_name') renderKeepFocus(el.dataset.path); else refreshSummary();
+    });
+    el.addEventListener('change', () => {
+      S.edits++;
+      const row = el.closest('[data-row]');
+      if (row && el.dataset.path.endsWith('.amount')) markChecked(row.dataset.row);
+    });
+  });
+  app.querySelectorAll('[data-ok]').forEach(b => b.onclick = () => markChecked(b.closest('[data-row]').dataset.row));
+  app.querySelectorAll('[data-del]').forEach(b => b.onclick = () => { const [g,i] = b.dataset.del.split('.'); d[g].splice(+i,1); S.edits++; render(); });
+  app.querySelectorAll('[data-add]').forEach(b => b.onclick = () => {
+    const g = b.dataset.add, base = {label:'',amount:null,printed:null,conf:'high'};
+    if (g==='free_money') base.renewable='unknown'; if (g==='loans') base.type='private';
+    d[g].push(base); S.edits++; render();
+  });
+  $('#save').onclick = saveOffer;
+  $('#back').onclick = () => { S.draft=null; go(S.offers.length ? 'results' : 'upload'); };
+}
+function setPath(path, el){
+  const parts = path.split('.'); let o = S.draft;
+  for (let i=0;i<parts.length-1;i++) o = o[isNaN(parts[i]) ? parts[i] : +parts[i]];
+  const key = parts[parts.length-1];
+  if (key === 'amount'){ const raw = el.value.replace(/[^0-9.]/g,''); o[key] = raw === '' ? null : +raw; }
+  else o[key] = el.value;
+}
+function markChecked(rowPath){
+  const p = rowPath.split('.');
+  const f = p[0]==='coa' ? S.draft.coa[p[1]] : S.draft[p[0]][+p[1]];
+  if (f.conf==='low' && !f.checked){ f.checked = true; render(); }
+}
+function renderKeepFocus(path){
+  render();
+  const el = app.querySelector(`[data-path="${path}"]`);
+  if (el && el.tagName !== 'SELECT'){ el.focus(); const v=el.value; el.value=''; el.value=v; }
+}
+function refreshSummary(){
+  const t = totals(S.draft);
+  const L = app.querySelectorAll('.summary .line b');
+  L[0].textContent = fmt(t.coa); L[1].textContent = neg(t.free); L[2].textContent = neg(t.work);
+  app.querySelector('.summary .big b').textContent = fmt(t.net);
+  app.querySelectorAll('.group-h .sum').forEach((s,i) => s.textContent = fmt([t.coa,t.free,t.work,t.loans][i]));
+}
+function saveOffer(){
+  const d = S.draft; d.status = 'ok'; d.reviewed = true;
+  if (S.edits) track('fields_edited', {count: S.edits});
+  if (S.editIndex != null) S.offers[S.editIndex] = d; else S.offers.push(d);
+  S.draft = null; S.editIndex = null; S.edits = 0;
+  go('results');
+}
+
+/* ---------- router ---------- */
+function render(){ ({upload:renderUpload, reading:renderReading, results:renderResults, review:renderReview})[S.screen](); }
+
+/* ---------- dev drawer ---------- */
+$('#schema').textContent = JSON.stringify({
+  readable:"boolean", reason:"string|null (when readable=false)",
+  school_name:"string|null", program_name:"string|null", academic_year:"string|null",
+  program_level:"graduate|professional", period:"annual|per_term", number_of_terms:"number|null",
+  cost_of_attendance:Object.fromEntries([...COA_KEYS.map(([k])=>[k,{amount:"number|null (annual)",printed_label:"string|null",confidence:"high|low"}]),["total_coa_as_printed","number|null"]]),
+  free_money:[{label:"string",amount:"number",printed_label:"string",renewable:"yes|no|unknown",confidence:"high|low"}],
+  assistantships_and_stipends:[{label:"string",amount:"number",printed_label:"string",work_required:"yes|no|unknown",confidence:"high|low"}],
+  work_study:{amount:"number|null",printed_label:"string|null",confidence:"high|low"},
+  loans:[{label:"string",amount:"number",printed_label:"string",type:"direct_unsubsidized|grad_plus|private|institutional|other",confidence:"high|low"}],
+  notes:["string"]
+}, null, 2);
+$('#devToggle').onclick = () => document.body.classList.toggle('dev-open');
+document.querySelectorAll('[data-copy]').forEach(b => b.onclick = () => {
+  const txt = document.getElementById(b.dataset.copy).textContent;
+  try { navigator.clipboard.writeText(txt); b.textContent='Copied'; setTimeout(()=>b.textContent='Copy',1200); } catch(e){}
+});
+document.querySelectorAll('[data-jump]').forEach(b => b.onclick = () => {
+  const j = b.dataset.jump;
+  if (window.innerWidth < 900) document.body.classList.remove('dev-open');
+  const seed = fail => { S.offers = ['A','B','C'].map(k => ({...prep(clone(SAMPLES[k])), status:'ok'})); if (fail) S.offers.push({status:'failed', fileName:'IMG_4471.HEIC'}); };
+  if (j==='upload'){ S.offers=[]; S.letters=[]; go('upload'); }
+  else if (j==='reading'){ S.offers=[]; loadSamples(3,false); startReading(); }
+  else if (j==='results'){ seed(false); go('results'); }
+  else if (j==='resultsFail'){ seed(true); go('results'); }
+  else if (j==='review'){ seed(false); S.draft = clone(S.offers[1]); S.editIndex = 1; S.edits=0; go('review'); }
+});
+
+render();
+</script>
+</body>
+</html>

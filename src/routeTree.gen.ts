@@ -66,6 +66,7 @@ import { Route as BlogWhichLawSchoolsAreWorthItRouteImport } from './routes/blog
 import { Route as BlogWhichPhdFieldsAreWorthItRouteImport } from './routes/blog_.which-phd-fields-are-worth-it'
 import { Route as FaqSlugRouteImport } from './routes/faq/$slug'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
+import { Route as ApiAidOffersExtractRouteImport } from './routes/api/aid-offers/extract'
 import { Route as ApiPublicHooksRegenerateCategorySummaryRouteImport } from './routes/api/public/hooks/regenerate-category-summary'
 
 const IndexRoute = IndexRouteImport.update({
@@ -380,6 +381,11 @@ const Char91DotmcpChar93InvokeToolToolRoute =
     path: '/.mcp/invoke-tool/$tool',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ApiAidOffersExtractRoute = ApiAidOffersExtractRouteImport.update({
+  id: '/api/aid-offers/extract',
+  path: '/api/aid-offers/extract',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicHooksRegenerateCategorySummaryRoute =
   ApiPublicHooksRegenerateCategorySummaryRouteImport.update({
     id: '/api/public/hooks/regenerate-category-summary',
@@ -445,6 +451,7 @@ export interface FileRoutesByFullPath {
   '/blog/which-phd-fields-are-worth-it': typeof BlogWhichPhdFieldsAreWorthItRoute
   '/faq/$slug': typeof FaqSlugRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
+  '/api/aid-offers/extract': typeof ApiAidOffersExtractRoute
   '/api/public/hooks/regenerate-category-summary': typeof ApiPublicHooksRegenerateCategorySummaryRoute
 }
 export interface FileRoutesByTo {
@@ -505,6 +512,7 @@ export interface FileRoutesByTo {
   '/blog/which-phd-fields-are-worth-it': typeof BlogWhichPhdFieldsAreWorthItRoute
   '/faq/$slug': typeof FaqSlugRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
+  '/api/aid-offers/extract': typeof ApiAidOffersExtractRoute
   '/api/public/hooks/regenerate-category-summary': typeof ApiPublicHooksRegenerateCategorySummaryRoute
 }
 export interface FileRoutesById {
@@ -566,6 +574,7 @@ export interface FileRoutesById {
   '/blog_/which-phd-fields-are-worth-it': typeof BlogWhichPhdFieldsAreWorthItRoute
   '/faq/$slug': typeof FaqSlugRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
+  '/api/aid-offers/extract': typeof ApiAidOffersExtractRoute
   '/api/public/hooks/regenerate-category-summary': typeof ApiPublicHooksRegenerateCategorySummaryRoute
 }
 export interface FileRouteTypes {
@@ -628,6 +637,7 @@ export interface FileRouteTypes {
     | '/blog/which-phd-fields-are-worth-it'
     | '/faq/$slug'
     | '/.mcp/invoke-tool/$tool'
+    | '/api/aid-offers/extract'
     | '/api/public/hooks/regenerate-category-summary'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -688,6 +698,7 @@ export interface FileRouteTypes {
     | '/blog/which-phd-fields-are-worth-it'
     | '/faq/$slug'
     | '/.mcp/invoke-tool/$tool'
+    | '/api/aid-offers/extract'
     | '/api/public/hooks/regenerate-category-summary'
   id:
     | '__root__'
@@ -748,6 +759,7 @@ export interface FileRouteTypes {
     | '/blog_/which-phd-fields-are-worth-it'
     | '/faq/$slug'
     | '/.mcp/invoke-tool/$tool'
+    | '/api/aid-offers/extract'
     | '/api/public/hooks/regenerate-category-summary'
   fileRoutesById: FileRoutesById
 }
@@ -809,6 +821,7 @@ export interface RootRouteChildren {
   BlogWhichPhdFieldsAreWorthItRoute: typeof BlogWhichPhdFieldsAreWorthItRoute
   FaqSlugRoute: typeof FaqSlugRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
+  ApiAidOffersExtractRoute: typeof ApiAidOffersExtractRoute
   ApiPublicHooksRegenerateCategorySummaryRoute: typeof ApiPublicHooksRegenerateCategorySummaryRoute
 }
 
@@ -1213,6 +1226,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Char91DotmcpChar93InvokeToolToolRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/aid-offers/extract': {
+      id: '/api/aid-offers/extract'
+      path: '/api/aid-offers/extract'
+      fullPath: '/api/aid-offers/extract'
+      preLoaderRoute: typeof ApiAidOffersExtractRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/hooks/regenerate-category-summary': {
       id: '/api/public/hooks/regenerate-category-summary'
       path: '/api/public/hooks/regenerate-category-summary'
@@ -1296,6 +1316,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogWhichPhdFieldsAreWorthItRoute: BlogWhichPhdFieldsAreWorthItRoute,
   FaqSlugRoute: FaqSlugRoute,
   Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
+  ApiAidOffersExtractRoute: ApiAidOffersExtractRoute,
   ApiPublicHooksRegenerateCategorySummaryRoute:
     ApiPublicHooksRegenerateCategorySummaryRoute,
 }
